@@ -1,3 +1,3 @@
 # LillySkill VR
- This Repoistory is for the Android Version.
+ This Repository is for the Android Version.
 
