@@ -32,7 +32,7 @@ Transform:
   - {fileID: 3330859581489517261}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5767988827637893351
+--- !u!1 &3923355113901406618
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,10 +40,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3645873389287868484}
-  - component: {fileID: 6389402985562264491}
-  - component: {fileID: 5069275829571342501}
-  - component: {fileID: 5187375181542297185}
+  - component: {fileID: 6918984962763048473}
+  - component: {fileID: 7919516582955917456}
+  - component: {fileID: 2795105044098305524}
+  - component: {fileID: 3235600459008995285}
   m_Layer: 0
   m_Name: FadeScreen
   m_TagString: Untagged
@@ -51,13 +51,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3645873389287868484
+--- !u!4 &6918984962763048473
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5767988827637893351}
+  m_GameObject: {fileID: 3923355113901406618}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.011}
@@ -66,21 +66,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3330859581489517261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6389402985562264491
+--- !u!33 &7919516582955917456
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5767988827637893351}
+  m_GameObject: {fileID: 3923355113901406618}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5069275829571342501
+--- !u!23 &2795105044098305524
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5767988827637893351}
+  m_GameObject: {fileID: 3923355113901406618}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -116,13 +116,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5187375181542297185
+--- !u!114 &3235600459008995285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5767988827637893351}
+  m_GameObject: {fileID: 3923355113901406618}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60538af262fbf42479165215fdc50776, type: 3}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 4966632342610444903}
   - component: {fileID: 7610984363584118166}
   - component: {fileID: 1915285454345936118}
-  - component: {fileID: 372833788149929983}
+  - component: {fileID: 1675500736313157181}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -163,7 +163,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5124572054398777168}
-  - {fileID: 3645873389287868484}
+  - {fileID: 6918984962763048473}
   m_Father: {fileID: 8440848956785675149}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &4294646741754394271
@@ -175,7 +175,7 @@ Camera:
   m_GameObject: {fileID: 6220960299880227861}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_TrackingType: 0
   m_UpdateType: 0
   m_UseRelativeTransform: 0
---- !u!114 &372833788149929983
+--- !u!114 &1675500736313157181
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

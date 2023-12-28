@@ -256,8 +256,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1854249276268194182}
-        m_TargetAssemblyTypeName: UIManagerButtonPressedFunction, Assembly-CSharp
-        m_MethodName: UIButtonPress
+        m_TargetAssemblyTypeName: UIManagerButtonFunctions, Assembly-CSharp
+        m_MethodName: UsedBestAnswerButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -679,8 +679,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1854249276268194182}
-        m_TargetAssemblyTypeName: UIManagerButtonPressedFunction, Assembly-CSharp
-        m_MethodName: UIButtonPress
+        m_TargetAssemblyTypeName: UIManagerButtonFunctions, Assembly-CSharp
+        m_MethodName: UsedAverageAnswerButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1080,8 +1080,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1854249276268194182}
-        m_TargetAssemblyTypeName: UIManagerButtonPressedFunction, Assembly-CSharp
-        m_MethodName: UIButtonPress
+        m_TargetAssemblyTypeName: UIManagerButtonFunctions, Assembly-CSharp
+        m_MethodName: UsedWorstAnswerButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

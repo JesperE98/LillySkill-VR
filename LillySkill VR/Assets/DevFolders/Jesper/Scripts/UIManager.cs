@@ -1,26 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] UIPrefabs;
+    private static UIManager _uiManager;
+
+    [Header("UI")]
+    [Space()]
+    [Tooltip("Array for UI AnswerCanvas Prefabs here.")]
+    [SerializeField] private GameObject[] UIPrefabs;
+
+    private GameManager gameManager;
     private GameObject UIPrefabCopy;
-    [SerializeField]
     private bool uiPrefabIsActive = false;
-    [SerializeField]
     private bool interviewAreActive = true;
-    [SerializeField]
-    private byte index = 0; 
+    private byte index = 0;
+
+
+    private void Awake()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        if (_uiManager == null)
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Update()
     {
+        // If the conditions are rightfully met, call the function named CreateUIPrefab.
         if (interviewAreActive == true && uiPrefabIsActive == false)
         {
             CreateUIPrefab();
         }
-
     }
 
     /// <summary>
@@ -163,8 +182,36 @@ public class UIManager : MonoBehaviour
     /// </summary>
     public void UIButtonPressed()
     {
-        Debug.Log("Im active!");
-        StartCoroutine(DeleteUICopyRoutine());
+        if (gameManager.UsedWorstAnswer == true)
+        {
+            gameManager.UsedWorstAnswer = !gameManager.UsedWorstAnswer;
+            Debug.Log("Used Worst Answer");
+            StartCoroutine(DeleteUICopyRoutine());
+        }
+        else if (gameManager.UsedBadAnswer == true)
+        {
+            gameManager.UsedBadAnswer = !gameManager.UsedBadAnswer;
+            Debug.Log("Used Bad Answer");
+            StartCoroutine(DeleteUICopyRoutine());
+        }
+        else if (gameManager.UsedAverageAnswer == true)
+        {
+            gameManager.UsedAverageAnswer = !gameManager.UsedAverageAnswer;
+            Debug.Log("Used Average Answer");
+            StartCoroutine(DeleteUICopyRoutine());
+        }
+        else if (gameManager.UsedGoodAnswer == true)
+        {
+            gameManager.UsedGoodAnswer = !gameManager.UsedGoodAnswer;
+            Debug.Log("Used Good Answer");
+            StartCoroutine(DeleteUICopyRoutine());
+        }
+        else if (gameManager.UsedBestAnswer == true)
+        {
+            gameManager.UsedBestAnswer = !gameManager.UsedBestAnswer;
+            Debug.Log("Used Best Answer");
+            StartCoroutine(DeleteUICopyRoutine());
+        }
     }
 
 

@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
-public class Test : MonoBehaviour
+public class IGameFlow : MonoBehaviour
 {
-
-
     // Start is called before the first frame update
     void Start()
     {
