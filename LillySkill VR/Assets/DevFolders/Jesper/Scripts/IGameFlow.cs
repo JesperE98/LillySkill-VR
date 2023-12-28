@@ -2,17 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IGameFlow : MonoBehaviour
+public interface IGameFlow
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    int playerHealth { get; set; }
+    int playerScore { get; set; }
 }

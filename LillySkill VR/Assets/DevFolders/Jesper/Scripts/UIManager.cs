@@ -10,18 +10,18 @@ public class UIManager : MonoBehaviour
     [Header("UI")]
     [Space()]
     [Tooltip("Array for UI AnswerCanvas Prefabs here.")]
-    [SerializeField] private GameObject[] UIPrefabs;
+    public GameObject[] UIPrefabs;
 
     private GameManager gameManager;
     private GameObject UIPrefabCopy;
     private bool uiPrefabIsActive = false;
-    private bool interviewAreActive = true;
     private byte index = 0;
 
 
     private void Awake()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
 
         if (_uiManager == null)
         {
@@ -33,13 +33,34 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        gameManager.EasyMode = true;
+        gameManager.InterviewAreActive = true;
+
+        if (gameManager.EasyMode == true)
+        {
+            gameManager.PlayerLife = 5;
+        }
+    }
+
     private void Update()
     {
         // If the conditions are rightfully met, call the function named CreateUIPrefab.
-        if (interviewAreActive == true && uiPrefabIsActive == false)
+        if (gameManager.PlayerLife > 0)
         {
-            CreateUIPrefab();
+            if (gameManager.InterviewAreActive == true && uiPrefabIsActive == false)
+            {
+                CreateUIPrefab();
+            }
         }
+        else if(gameManager.PlayerLife <= 0 && gameManager.InterviewAreActive == true)
+        {
+            gameManager.InterviewAreActive = !gameManager.InterviewAreActive;
+            Debug.Log("THIS INTERVIEW IS OVER!!!!!");
+            UIPrefabCopy = Instantiate(UIPrefabs[1]);
+        }
+
     }
 
     /// <summary>
@@ -172,7 +193,9 @@ public class UIManager : MonoBehaviour
                 break;
 
             default:
-                interviewAreActive = !interviewAreActive;
+                gameManager.InterviewAreActive = !gameManager.InterviewAreActive;
+
+                UIPrefabCopy = Instantiate(UIPrefabs[1]); 
                 break;
         }
     }
@@ -182,36 +205,83 @@ public class UIManager : MonoBehaviour
     /// </summary>
     public void UIButtonPressed()
     {
-        if (gameManager.UsedWorstAnswer == true)
+        switch(gameManager.EasyMode)
         {
-            gameManager.UsedWorstAnswer = !gameManager.UsedWorstAnswer;
-            Debug.Log("Used Worst Answer");
-            StartCoroutine(DeleteUICopyRoutine());
+            case true:
+                Debug.Log("EasyMode Initiated.");
+                if (gameManager.UsedBadAnswer == true)
+                {
+                    gameManager.UsedBadAnswer = !gameManager.UsedBadAnswer;
+                    gameManager.PlayerLife -= 1;
+                    gameManager.PlayerScore += 0;
+                    Debug.Log("Used Bad Answer");
+                    StartCoroutine(DeleteUICopyRoutine());
+                }
+                else if (gameManager.UsedAverageAnswer == true)
+                {
+                    gameManager.UsedAverageAnswer = !gameManager.UsedAverageAnswer;
+                    gameManager.PlayerLife += 0;
+                    gameManager.PlayerScore += 1;
+                    Debug.Log("Used Average Answer");
+                    StartCoroutine(DeleteUICopyRoutine());
+                }
+                else if (gameManager.UsedGoodAnswer == true)
+                {
+                    gameManager.UsedGoodAnswer = !gameManager.UsedGoodAnswer;
+                    gameManager.PlayerLife += 1;
+                    gameManager.PlayerScore += 2;
+                    Debug.Log("Used Good Answer");
+                    StartCoroutine(DeleteUICopyRoutine());
+                }
+                break;
         }
-        else if (gameManager.UsedBadAnswer == true)
+
+        switch (gameManager.MediumMode)
         {
-            gameManager.UsedBadAnswer = !gameManager.UsedBadAnswer;
-            Debug.Log("Used Bad Answer");
-            StartCoroutine(DeleteUICopyRoutine());
-        }
-        else if (gameManager.UsedAverageAnswer == true)
-        {
-            gameManager.UsedAverageAnswer = !gameManager.UsedAverageAnswer;
-            Debug.Log("Used Average Answer");
-            StartCoroutine(DeleteUICopyRoutine());
-        }
-        else if (gameManager.UsedGoodAnswer == true)
-        {
-            gameManager.UsedGoodAnswer = !gameManager.UsedGoodAnswer;
-            Debug.Log("Used Good Answer");
-            StartCoroutine(DeleteUICopyRoutine());
-        }
-        else if (gameManager.UsedBestAnswer == true)
-        {
-            gameManager.UsedBestAnswer = !gameManager.UsedBestAnswer;
-            Debug.Log("Used Best Answer");
-            StartCoroutine(DeleteUICopyRoutine());
-        }
+            case true:
+                Debug.Log("MediumMode initiated.");
+                if (gameManager.UsedWorstAnswer == true)
+                {
+                    gameManager.UsedWorstAnswer = !gameManager.UsedWorstAnswer;
+                    gameManager.PlayerLife -= 1;
+                    gameManager.PlayerScore += 0;
+                    Debug.Log("Used Worst Answer");
+                    StartCoroutine(DeleteUICopyRoutine());
+                }
+                else if (gameManager.UsedBadAnswer == true)
+                {
+                    gameManager.UsedBadAnswer = !gameManager.UsedBadAnswer;
+                    gameManager.PlayerLife -= 1;
+                    gameManager.PlayerScore += 0;
+                    Debug.Log("Used Bad Answer");
+                    StartCoroutine(DeleteUICopyRoutine());
+                }
+                else if (gameManager.UsedAverageAnswer == true)
+                {
+                    gameManager.UsedAverageAnswer = !gameManager.UsedAverageAnswer;
+                    gameManager.PlayerLife += 0;
+                    gameManager.PlayerScore += 1;
+                    Debug.Log("Used Average Answer");
+                    StartCoroutine(DeleteUICopyRoutine());
+                }
+                else if (gameManager.UsedGoodAnswer == true)
+                {
+                    gameManager.UsedGoodAnswer = !gameManager.UsedGoodAnswer;
+                    gameManager.PlayerLife += 1;
+                    gameManager.PlayerScore += 2;
+                    Debug.Log("Used Good Answer");
+                    StartCoroutine(DeleteUICopyRoutine());
+                }
+                else if (gameManager.UsedBestAnswer == true)
+                {
+                    gameManager.UsedBestAnswer = !gameManager.UsedBestAnswer;
+                    gameManager.PlayerLife += 1;
+                    gameManager.PlayerScore += 3;
+                    Debug.Log("Used Best Answer");
+                    StartCoroutine(DeleteUICopyRoutine());
+                }
+                break;
+        }      
     }
 
 
@@ -219,10 +289,13 @@ public class UIManager : MonoBehaviour
     {
         Debug.Log("Coroutine started");
         Destroy(UIPrefabCopy);
+        Debug.Log(gameManager.PlayerLife);
+        Debug.Log(gameManager.PlayerScore);
         yield return new WaitForSeconds(5);
         index++;
         uiPrefabIsActive = !uiPrefabIsActive;
 
         Debug.Log("Coroutine ended");
+
     }
 }

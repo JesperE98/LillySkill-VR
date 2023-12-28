@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
     private static GameManager _gameManager;
 
     private void Awake()
-    {
-        if (_gameManager == null)
+    {      
+       if (_gameManager == null)
         {
             _gameManager = this;
             DontDestroyOnLoad(gameObject);
@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public bool InterviewAreActive { get; set; }
     public bool EasyMode { get; set; }
     public bool MediumMode { get; set; }
     public bool HardMode { get; set; }
@@ -27,4 +28,6 @@ public class GameManager : MonoBehaviour
     public bool UsedAverageAnswer {  get; set; }
     public bool UsedGoodAnswer {  get; set; }
     public bool UsedBestAnswer {  get; set; }
+    public int PlayerLife { get; set; }
+    public int PlayerScore { get; set; }
 }

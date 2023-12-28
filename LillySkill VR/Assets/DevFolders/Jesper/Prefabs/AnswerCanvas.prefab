@@ -257,7 +257,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1854249276268194182}
         m_TargetAssemblyTypeName: UIManagerButtonFunctions, Assembly-CSharp
-        m_MethodName: UsedBestAnswerButton
+        m_MethodName: UsedGoodAnswerButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &8707510344376256451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,7 +1081,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1854249276268194182}
         m_TargetAssemblyTypeName: UIManagerButtonFunctions, Assembly-CSharp
-        m_MethodName: UsedWorstAnswerButton
+        m_MethodName: UsedBadAnswerButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
