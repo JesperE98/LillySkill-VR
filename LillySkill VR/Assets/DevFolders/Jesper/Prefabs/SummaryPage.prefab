@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 2105199066495386202}
   - component: {fileID: 2433708143312359139}
   m_Layer: 5
-  m_Name: FeedbackPage2
+  m_Name: SummaryPage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

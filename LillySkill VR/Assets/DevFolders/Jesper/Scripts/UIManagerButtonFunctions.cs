@@ -2,57 +2,79 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIManagerButtonFunctions : MonoBehaviour
+namespace JespersCode
 {
-    private UIManager uiManager;
-    private GameManager gameManager;
-
-    void Awake()
+    public class UIManagerButtonFunctions : MonoBehaviour
     {
-        uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-    }
+        private UIManager uiManager;
+        private GameManager gameManager;
 
-    public void UsedWorstAnswerButton()
-    {
-        Debug.Log("Hi Worst Asnwer");
-        gameManager.UsedWorstAnswer = true;
-        uiManager.UIButtonPressed();
-    }
+        void Awake()
+        {
+            uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
+            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        }
 
-    public void UsedBadAnswerButton()
-    {
-        Debug.Log("Hi Bad Asnwer");
+        /// <summary>
+        /// Function for the Worst Answer Button alternative on the AnswerUIButton.
+        /// </summary>
+        public void UsedWorstAnswerButton()
+        {
+            Debug.Log("Hi Worst Asnwer");
+            gameManager.UsedWorstAnswer = true;
+            uiManager.UIButtonPressed();
+        }
 
-        gameManager.UsedBadAnswer = true;
-        uiManager.UIButtonPressed();
-    }
+        /// <summary>
+        /// Function for the Bad Answer Button alternative on the AnswerUIButton.
+        /// </summary>
+        public void UsedBadAnswerButton()
+        {
+            Debug.Log("Hi Bad Asnwer");
 
-    public void UsedAverageAnswerButton()
-    {
-        Debug.Log("Hi Average Asnwer");
-        gameManager.UsedAverageAnswer = true;
-        uiManager.UIButtonPressed();
-    }
+            gameManager.UsedBadAnswer = true;
+            uiManager.UIButtonPressed();
+        }
 
-    public void UsedGoodAnswerButton()
-    {
-        Debug.Log("Hi Good Asnwer");
-        gameManager.UsedGoodAnswer = true;
-        uiManager.UIButtonPressed();
-    }
+        /// <summary>
+        /// Function for the Average Answer Button alternative on the AnswerUIButton.
+        /// </summary>
+        public void UsedAverageAnswerButton()
+        {
+            Debug.Log("Hi Average Asnwer");
+            gameManager.UsedAverageAnswer = true;
+            uiManager.UIButtonPressed();
+        }
 
-    public void UsedBestAnswerButton()
-    {
-        Debug.Log("Hi Best Asnwer");
-        gameManager.UsedBestAnswer = true;
-        uiManager.UIButtonPressed();
-    }
+        /// <summary>
+        /// Function for the Good Answer Button alternative on the AnswerUIButton.
+        /// </summary>
+        public void UsedGoodAnswerButton()
+        {
+            Debug.Log("Hi Good Asnwer");
+            gameManager.UsedGoodAnswer = true;
+            uiManager.UIButtonPressed();
+        }
 
-    public void NextPageButton()
-    {
-        Destroy(gameObject);
+        /// <summary>
+        /// Function for the Best Answer Button alternative on the AnswerUIButton.
+        /// </summary>
+        public void UsedBestAnswerButton()
+        {
+            Debug.Log("Hi Best Asnwer");
+            gameManager.UsedBestAnswer = true;
+            uiManager.UIButtonPressed();
+        }
 
-        GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
+        /// <summary>
+        /// Function for a UI Button to go to the next page.
+        /// </summary>
+        public void NextPageButton()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
+        }
     }
 }
+
