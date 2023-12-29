@@ -2,16 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 namespace LillyCode
 {
     public class LillyUI : MonoBehaviour
     {
+        [SerializeField] private GameObject lillyHelpScreen;
         [SerializeField] private TextMeshProUGUI canvasText;
+        [Tooltip("A list containing all the different pictures of Lilly")]
         [SerializeField] private List<GameObject> picturesOfLilly;
+        [Tooltip("A list containing information from each screen element")]
         [SerializeField] private List<LillyInformationScreen> informationScreenContent;
 
         private int activeScreen;
+
 
         [System.Serializable]
         public class LillyInformationScreen
@@ -19,42 +24,61 @@ namespace LillyCode
             public string speechText;
             public int picture;
             public bool isActive;
+            public bool proceedToNextIndex;
         }
 
         /// <summary>
-        /// Updates the text shown on the Lilly help screen
+        /// Activates the Lilly help screen with the respective index number
         /// </summary>
-        private void ShowScreenInformation()
+        public void ActivateHelpScreen(int screenIndex)
+        {
+            lillyHelpScreen.SetActive(true);
+            activeScreen = screenIndex;
+            informationScreenContent[activeScreen].isActive = true;
+        }
+
+        /// <summary>
+        /// Shows the added text and picture of Lilly from the respective screen element
+        /// </summary>
+        public void ShowHelpScreenInformation()
         {
             canvasText.text = informationScreenContent[activeScreen].speechText;
             picturesOfLilly[informationScreenContent[activeScreen].picture].SetActive(true);
         }
 
         /// <summary>
-        /// Inactivates all active Lilly help screens in the scene
+        /// Proceeds to the next screen element if 'proceed to next image' is ticked
         /// </summary>
-        private void InactivateAllScreen()
+        public void ProceedToNextLillyHelpScreen()
         {
-            foreach (LillyInformationScreen activeScreen in informationScreenContent)
-            {
-                activeScreen.isActive = false;
-            }
+            informationScreenContent[activeScreen].isActive = false;
+            ActivateHelpScreen(activeScreen + 1);
+            activeScreen++;
         }
 
-        private void ActivateScreen()
+        /// <summary>
+        /// Deactivates the active help screen
+        /// </summary>
+        private void DeactivateLillyHelpScreen()
         {
-            this.gameObject.SetActive(true);
-            informationScreenContent[activeScreen].isActive = true;
-        }
+            informationScreenContent[activeScreen].isActive = false;
 
-        private void Start()
-        {
-            activeScreen = 0;
+            lillyHelpScreen.SetActive(false);
         }
 
         private void Update()
         {
-            ShowScreenInformation();
+            // Checks for the active screen and shows the information
+            if (informationScreenContent[activeScreen].isActive == true)
+            {
+                ShowHelpScreenInformation();
+            }
+
+            // Deactivates the active help screen
+            else
+            {
+                DeactivateLillyHelpScreen();
+            }
         }
     }
 }
