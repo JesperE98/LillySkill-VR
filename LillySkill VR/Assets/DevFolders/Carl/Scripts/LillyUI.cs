@@ -8,10 +8,15 @@ namespace LillyCode
 {
     public class LillyUI : MonoBehaviour
     {
+        [Tooltip("Reference to the parent of the image gameobject")]
         [SerializeField] private GameObject lillyHelpScreen;
+
+        [Tooltip("Reference to the information text")]
         [SerializeField] private TextMeshProUGUI canvasText;
+
         [Tooltip("A list containing all the different pictures of Lilly")]
         [SerializeField] private List<GameObject> picturesOfLilly;
+
         [Tooltip("A list containing information from each screen element")]
         [SerializeField] private List<LillyInformationScreen> informationScreenContent;
 
