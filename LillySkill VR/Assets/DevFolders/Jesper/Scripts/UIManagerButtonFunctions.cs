@@ -75,6 +75,13 @@ namespace JespersCode
 
             GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
         }
+
+        public void PreviousPageButton()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[0]);
+        }
     }
 }
 
