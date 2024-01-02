@@ -241,7 +241,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5260939757443071850}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5509987576163939345}
+        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
+        m_MethodName: StartMenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3108973941122331742
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.00172, y: 1.5981195}
+  m_AnchoredPosition: {x: -0.0017089844, y: 1.598114}
   m_SizeDelta: {x: 0.4, y: 0.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3349570005129387689
@@ -597,7 +609,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8062202537166325310
 MonoBehaviour:
   m_ObjectHideFlags: 0

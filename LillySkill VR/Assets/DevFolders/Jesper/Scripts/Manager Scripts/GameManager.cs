@@ -6,7 +6,7 @@ namespace JespersCode
 {
     public class GameManager : MonoBehaviour
     {
-        private static GameManager _gameManager;
+        protected static GameManager _gameManager;
 
         private void Awake()
         {
@@ -32,6 +32,7 @@ namespace JespersCode
         public bool UsedBestAnswer { get; set; }
         public int PlayerLife { get; set; }
         public int PlayerScore { get; set; }
+        public int LoadedScene { get; set; }
     }
 
 }

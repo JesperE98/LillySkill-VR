@@ -491,7 +491,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4154550898865414542}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3983132962335372752}
+        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
+        m_MethodName: SettingsPageButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4274414878771836796
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +882,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3304819650647921734}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3983132962335372752}
+        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
+        m_MethodName: ExercisesPageButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5432264783774601703
 GameObject:
   m_ObjectHideFlags: 0

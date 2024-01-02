@@ -389,7 +389,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7323477619101839726}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3557937065890186182}
+        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
+        m_MethodName: StartMenuButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5177320053927644860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,7 +1307,7 @@ GameObject:
   - component: {fileID: 4823640935751558297}
   - component: {fileID: 3557937065890186182}
   m_Layer: 5
-  m_Name: Tutorials Page
+  m_Name: Tutorial Page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1559,7 +1571,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1637949989389150209}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3557937065890186182}
+        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
+        m_MethodName: SettingsPageButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8982875379182260373
 GameObject:
   m_ObjectHideFlags: 0

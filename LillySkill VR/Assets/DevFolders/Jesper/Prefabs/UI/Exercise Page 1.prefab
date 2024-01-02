@@ -871,7 +871,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3334826526042903197}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8903225981249911054}
+        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
+        m_MethodName: SettingsPageButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5091824319545084343
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,7 +1004,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3978781626202856084}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8024557145836265433}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5147209751484382256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,7 +1138,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3926301038025051829}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8903225981249911054}
+        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
+        m_MethodName: ExercisesPageButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7167230330338304725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,7 +1526,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &7905142804823762938
 MonoBehaviour:
   m_ObjectHideFlags: 0

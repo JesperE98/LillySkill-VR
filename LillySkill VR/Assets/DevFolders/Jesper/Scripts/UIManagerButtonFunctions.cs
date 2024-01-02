@@ -6,8 +6,9 @@ namespace JespersCode
 {
     public class UIManagerButtonFunctions : MonoBehaviour
     {
-        private UIManager uiManager;
-        private GameManager gameManager;
+        protected UIManager uiManager;
+        protected GameManager gameManager;
+
 
         void Awake()
         {
@@ -66,6 +67,8 @@ namespace JespersCode
             uiManager.UIButtonPressed();
         }
 
+
+
         /// <summary>
         /// Function for a UI Button to go to the next page.
         /// </summary>
@@ -76,11 +79,108 @@ namespace JespersCode
             GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
         }
 
-        public void PreviousPageButton()
+        //////////////////////////////////////////////// The section below are code ONLY for the Start Menu Scene UI Prefabs /////////////////////////////////////////
+
+        /// <summary>
+        /// Function for a UI Button to go to the Start Menu page.
+        /// </summary>
+        public void StartMenuButton()
         {
             Destroy(gameObject);
 
             GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[0]);
+        }
+
+        /// <summary>
+        /// Function for a UI Button to go to the Exercises page.
+        /// </summary>
+        public void ExercisesPageButton()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[1]);
+        }
+
+        /// <summary>
+        /// Function for a UI Button to go to the tutorial page.
+        /// </summary>
+        public void TutorialPageButton()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
+        }
+
+        /// <summary>
+        /// Function for a UI Button to go to the About page.
+        /// </summary>
+        public void AboutPageButton()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[3]);
+        }
+
+        /// <summary>
+        /// Function for a UI Button to go to the Settings page.
+        /// </summary>
+        public void SettingsPageButton()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[4]);
+        }
+
+        /// <summary>
+        /// Function for a UI Button to go to the About page.
+        /// </summary>
+        public void QuitTheApplicationPage()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[5]);
+        }
+
+        /// <summary>
+        /// Function for a UI Button to go to the Exercise page 1.
+        /// </summary>
+        public void ExercisePage1Button()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[6]);
+        }
+
+        /// <summary>
+        /// Function for a UI Button to go to the Exercise page 2.
+        /// </summary>
+        public void ExercisePage2Button()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[7]);
+        }
+
+        /// <summary>
+        /// Function for a UI Button to go to the Exercise page 3.
+        /// </summary>
+        public void ExercisePage3Button()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[8]);
+        }
+
+
+
+        /// <summary>
+        /// Function for a UI Button to go to the Main Mode page.
+        /// </summary>
+        public void MainModeButton()
+        {
+            Destroy(gameObject);
+
+            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[9]);
         }
     }
 }
