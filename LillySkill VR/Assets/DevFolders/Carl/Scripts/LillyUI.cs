@@ -14,11 +14,18 @@ namespace LillyCode
         [Tooltip("Reference to the information text")]
         [SerializeField] private TextMeshProUGUI canvasText;
 
+        [Header("Bild 0: Lilly som vinkar, ler med öppna ögon.")]
+        [Space(10)]
+
         [Tooltip("A list containing all the different pictures of Lilly")]
         [SerializeField] private List<GameObject> picturesOfLilly;
 
+        [Header("Anropa \n''ActivateHelpScreen(index)''\n för att skapa en Lilly UI i scenen med vald index.")]
+        [Space(10)]
+
         [Tooltip("A list containing information from each screen element")]
         [SerializeField] private List<LillyInformationScreen> informationScreenContent;
+
 
         private int activeScreen;
 
