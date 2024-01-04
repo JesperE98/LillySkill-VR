@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using System.Linq;
 
 namespace LillyCode
 {
@@ -13,6 +14,12 @@ namespace LillyCode
 
         [Tooltip("Reference to the information text")]
         [SerializeField] private TextMeshProUGUI canvasText;
+
+        [Tooltip("reference to the ''Next Button'' gameobject")]
+        [SerializeField] private GameObject nextButtonGameObject;
+
+        [Tooltip("reference to the ''Close Button'' gameobject")]
+        [SerializeField] private GameObject closeButtonGameObject;
 
         [Header("Bild 0: Lilly som vinkar, ler med öppna ögon.")]
         [Space(10)]
@@ -26,7 +33,7 @@ namespace LillyCode
         [Tooltip("A list containing information from each screen element")]
         [SerializeField] private List<LillyInformationScreen> informationScreenContent;
 
-
+        // Keeps track of the active screen
         private int activeScreen;
 
 
@@ -63,19 +70,24 @@ namespace LillyCode
         /// </summary>
         public void ProceedToNextLillyHelpScreen()
         {
+            picturesOfLilly[informationScreenContent[activeScreen].picture].SetActive(false);
             informationScreenContent[activeScreen].isActive = false;
-            ActivateHelpScreen(activeScreen + 1);
             activeScreen++;
+            ActivateHelpScreen(activeScreen);
         }
 
         /// <summary>
         /// Deactivates the active help screen
         /// </summary>
-        private void DeactivateLillyHelpScreen()
+        public void DeactivateLillyHelpScreen()
         {
             informationScreenContent[activeScreen].isActive = false;
-
             lillyHelpScreen.SetActive(false);
+        }
+
+        private void Start()
+        {
+            ActivateHelpScreen(0);
         }
 
         private void Update()
@@ -84,6 +96,15 @@ namespace LillyCode
             if (informationScreenContent[activeScreen].isActive == true)
             {
                 ShowHelpScreenInformation();
+
+                if(informationScreenContent[activeScreen].proceedToNextIndex == true)
+                {
+                    nextButtonGameObject.SetActive(true);
+                }
+                else
+                {
+                    closeButtonGameObject.SetActive(true);
+                }
             }
 
             // Deactivates the active help screen
