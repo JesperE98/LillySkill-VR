@@ -36,7 +36,6 @@ namespace LillyCode
         // Keeps track of the active screen
         private int activeScreen;
 
-
         [System.Serializable]
         public class LillyInformationScreen
         {
