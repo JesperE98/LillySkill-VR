@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -41,7 +40,7 @@ namespace JespersCode
         {
             gameManager.EasyMode = true;
             gameManager.InterviewAreActive = true;
-
+            gameManager.LoadedScene = 1;
             if (gameManager.LoadedScene == 1)
             {
                 if (gameManager.EasyMode == true)

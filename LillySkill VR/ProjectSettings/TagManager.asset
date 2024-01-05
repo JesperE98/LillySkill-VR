@@ -7,14 +7,15 @@ TagManager:
   - UIManager
   - GameManager
   - AudioManager
+  - RaycastTrigger
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Interactable
+  - Interactive
   - Water
   - UI
-  - 
+  - RaycastLayer
   - 
   - 
   - 
