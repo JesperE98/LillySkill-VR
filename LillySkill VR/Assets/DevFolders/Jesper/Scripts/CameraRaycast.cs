@@ -1,3 +1,4 @@
+using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -9,7 +10,13 @@ public class CameraRaycast : MonoBehaviour
     [Tooltip("Timer that activates a GiveHintsRoutine IEnumerator after the given number.")]
     [SerializeField] private float timer;
 
+    private UIManager uiManager;
     private IEnumerator giveHints;
+
+    private void Awake()
+    {
+        uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+    }
 
     private void FixedUpdate()
     {
@@ -30,10 +37,12 @@ public class CameraRaycast : MonoBehaviour
         {
             if (giveHints != null)
             {
+                print("Coroutine stopped!");
                 StopCoroutine(giveHints);
             }
 
             giveHints = GiveHintsRoutine();
+            print("Coroutine Started!");
             StartCoroutine(giveHints);
         }
     }
@@ -53,6 +62,8 @@ public class CameraRaycast : MonoBehaviour
         }
 
         yield return new WaitForSeconds(timer);
-        Debug.Log("Keep in mind to look the interviewer in the eyes from time to time.");
+        GameObject prefabCopy = Instantiate(uiManager.UIPrefabs[3]);
+
+        Destroy(prefabCopy, 3);
     }
 }

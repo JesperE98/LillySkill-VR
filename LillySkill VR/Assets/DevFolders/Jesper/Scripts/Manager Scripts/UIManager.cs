@@ -326,7 +326,7 @@ namespace JespersCode
             Destroy(UIPrefabCopy);
             Debug.Log(gameManager.PlayerLife);
             Debug.Log(gameManager.PlayerScore);
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(2);
             index++;
             uiPrefabIsActive = !uiPrefabIsActive;
 
