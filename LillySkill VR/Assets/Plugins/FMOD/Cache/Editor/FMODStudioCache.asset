@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/FMOD/LillySkill VR/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638400398672894916
+  lastModified: 638403867914233700
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -41,7 +41,7 @@ MonoBehaviour:
   - {fileID: -2317138229509740251}
   StringsBanks:
   - {fileID: 7158677262717323947}
-  cacheTime: 638400398672950578
+  cacheTime: 638403867914259137
   cacheVersion: 131609
 --- !u!114 &7158677262717323947
 MonoBehaviour:
@@ -58,7 +58,7 @@ MonoBehaviour:
   Path: Assets/FMOD/LillySkill VR/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638400398672950578
+  lastModified: 638403867914259137
   FileSizes:
   - Name: Desktop
     Value: 712
