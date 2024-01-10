@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jesper Test Scenes/Jesper Test Scene.unity
     guid: 0acf13c200cee744c9b9f4201149a9bd
+  - enabled: 1
+    path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.23.0/Hello Cardboard/Scenes/HelloCardboard.unity
+    guid: 145a2a45d7bc746b19cb68410368bf96
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5db963afabe647b46a2b00b8ada3b6b4,
       type: 2}
