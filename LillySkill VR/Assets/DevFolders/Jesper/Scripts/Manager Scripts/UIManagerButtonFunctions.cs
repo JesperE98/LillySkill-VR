@@ -6,14 +6,17 @@ namespace JespersCode
 {
     public class UIManagerButtonFunctions : MonoBehaviour
     {
-        protected UIManager uiManager;
-        protected GameManager gameManager;
+        protected UIManager _uiManager;
+        protected GameManager _gameManager;
+        protected Animator _animator;
+        protected GameObject _uiPrefabCopy;
 
 
         void Awake()
         {
-            uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
-            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            _uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
+            _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            _animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>(); 
         }
 
         /// <summary>
@@ -21,9 +24,9 @@ namespace JespersCode
         /// </summary>
         public void UsedWorstAnswerButton()
         {
-            Debug.Log("Hi Worst Asnwer");
-            gameManager.UsedWorstAnswer = true;
-            uiManager.UIButtonPressed();
+            _animator.SetBool("AskingQuestion", true);
+            _gameManager.UsedWorstAnswer = true;
+            _uiManager.UIButtonPressed();
         }
 
         /// <summary>
@@ -31,10 +34,9 @@ namespace JespersCode
         /// </summary>
         public void UsedBadAnswerButton()
         {
-            Debug.Log("Hi Bad Asnwer");
-
-            gameManager.UsedBadAnswer = true;
-            uiManager.UIButtonPressed();
+            _animator.SetBool("AskingQuestion", true);
+            _gameManager.UsedBadAnswer = true;
+            _uiManager.UIButtonPressed();
         }
 
         /// <summary>
@@ -42,9 +44,9 @@ namespace JespersCode
         /// </summary>
         public void UsedAverageAnswerButton()
         {
-            Debug.Log("Hi Average Asnwer");
-            gameManager.UsedAverageAnswer = true;
-            uiManager.UIButtonPressed();
+            _animator.SetBool("AskingQuestion", true);
+            _gameManager.UsedAverageAnswer = true;
+            _uiManager.UIButtonPressed();
         }
 
         /// <summary>
@@ -52,9 +54,9 @@ namespace JespersCode
         /// </summary>
         public void UsedGoodAnswerButton()
         {
-            Debug.Log("Hi Good Asnwer");
-            gameManager.UsedGoodAnswer = true;
-            uiManager.UIButtonPressed();
+            _animator.SetBool("AskingQuestion", true);
+            _gameManager.UsedGoodAnswer = true;
+            _uiManager.UIButtonPressed();
         }
 
         /// <summary>
@@ -62,9 +64,9 @@ namespace JespersCode
         /// </summary>
         public void UsedBestAnswerButton()
         {
-            Debug.Log("Hi Best Asnwer");
-            gameManager.UsedBestAnswer = true;
-            uiManager.UIButtonPressed();
+            _animator.SetBool("AskingQuestion", true);
+            _gameManager.UsedBestAnswer = true;
+            _uiManager.UIButtonPressed();
         }
 
 
@@ -76,8 +78,10 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[2]);
         }
+
+
 
         //////////////////////////////////////////////// The section below are code ONLY for the Start Menu Scene UI Prefabs /////////////////////////////////////////
 
@@ -88,7 +92,7 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[0]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[0]);
         }
 
         /// <summary>
@@ -98,7 +102,7 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[1]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[1]);
         }
 
         /// <summary>
@@ -108,7 +112,7 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[2]);
         }
 
         /// <summary>
@@ -118,7 +122,7 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[3]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[3]);
         }
 
         /// <summary>
@@ -128,7 +132,7 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[4]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[4]);
         }
 
         /// <summary>
@@ -138,7 +142,7 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[5]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[5]);
         }
 
         /// <summary>
@@ -148,7 +152,7 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[6]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[6]);
         }
 
         /// <summary>
@@ -158,7 +162,7 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[7]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[7]);
         }
 
         /// <summary>
@@ -168,7 +172,7 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[8]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[8]);
         }
 
 
@@ -180,7 +184,7 @@ namespace JespersCode
         {
             Destroy(gameObject);
 
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[9]);
+            _uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[9]);
         }
     }
 }

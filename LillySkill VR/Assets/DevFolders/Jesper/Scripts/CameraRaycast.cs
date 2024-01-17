@@ -36,12 +36,10 @@ public class CameraRaycast : MonoBehaviour
         {
             if (giveHints != null)
             {
-                print("Coroutine stopped!");
                 StopCoroutine(giveHints);
             }
 
             giveHints = GiveHintsRoutine();
-            print("Coroutine Started!");
             StartCoroutine(giveHints);
         }
     }
