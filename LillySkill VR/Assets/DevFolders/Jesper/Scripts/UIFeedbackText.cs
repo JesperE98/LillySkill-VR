@@ -21,19 +21,19 @@ public class UIFeedbackText : MonoBehaviour
     {
         if (gameManager.InterviewAreActive == false)
         {
-            if (gameManager.PlayerScore < 3)
+            if (gameManager.InterviewerInterest < 3)
             {
                 text.text = "* You need to work on this.\n" +
                     "* You need to work on that.\n" +
                     "* And you need to work on how.";
             }
-            else if (gameManager.PlayerScore > 3 && gameManager.PlayerScore < 8)
+            else if (gameManager.InterviewerInterest > 3 && gameManager.InterviewerInterest < 8)
             {
                 text.text = "* You need to work on how.\n" +
                 "* You need to work on this.\n" +
                 "* And you need to work on that.";
             }
-            else if (gameManager.PlayerScore > 8)
+            else if (gameManager.InterviewerInterest > 8)
             {
                 text.text = "* You need to work on that. \n" +
                 "* You need to work on how \n" +

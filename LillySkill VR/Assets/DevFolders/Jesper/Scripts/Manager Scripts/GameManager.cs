@@ -31,7 +31,7 @@ namespace JespersCode
         public bool UsedGoodAnswer { get; set; }
         public bool UsedBestAnswer { get; set; }
         public int PlayerLife { get; set; }
-        public int PlayerScore { get; set; }
+        public int InterviewerInterest { get; set; }
         public int LoadedScene { get; set; }
     }
 

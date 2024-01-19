@@ -245,7 +245,7 @@ namespace JespersCode
                     {
                         gameManager.UsedBadAnswer = !gameManager.UsedBadAnswer;
                         gameManager.PlayerLife -= 1;
-                        gameManager.PlayerScore += 0;
+                        gameManager.InterviewerInterest += 0;
                         Debug.Log("Used Bad Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
@@ -253,7 +253,7 @@ namespace JespersCode
                     {
                         gameManager.UsedAverageAnswer = !gameManager.UsedAverageAnswer;
                         gameManager.PlayerLife += 0;
-                        gameManager.PlayerScore += 1;
+                        gameManager.InterviewerInterest += 1;
                         Debug.Log("Used Average Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
@@ -261,7 +261,7 @@ namespace JespersCode
                     {
                         gameManager.UsedGoodAnswer = !gameManager.UsedGoodAnswer;
                         gameManager.PlayerLife += 1;
-                        gameManager.PlayerScore += 2;
+                        gameManager.InterviewerInterest += 2;
                         Debug.Log("Used Good Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
@@ -276,7 +276,7 @@ namespace JespersCode
                     {
                         gameManager.UsedWorstAnswer = !gameManager.UsedWorstAnswer;
                         gameManager.PlayerLife -= 1;
-                        gameManager.PlayerScore += 0;
+                        gameManager.InterviewerInterest += 0;
                         Debug.Log("Used Worst Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
@@ -284,7 +284,7 @@ namespace JespersCode
                     {
                         gameManager.UsedBadAnswer = !gameManager.UsedBadAnswer;
                         gameManager.PlayerLife -= 1;
-                        gameManager.PlayerScore += 0;
+                        gameManager.InterviewerInterest += 0;
                         Debug.Log("Used Bad Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
@@ -292,7 +292,7 @@ namespace JespersCode
                     {
                         gameManager.UsedAverageAnswer = !gameManager.UsedAverageAnswer;
                         gameManager.PlayerLife += 0;
-                        gameManager.PlayerScore += 1;
+                        gameManager.InterviewerInterest += 1;
                         Debug.Log("Used Average Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
@@ -300,7 +300,7 @@ namespace JespersCode
                     {
                         gameManager.UsedGoodAnswer = !gameManager.UsedGoodAnswer;
                         gameManager.PlayerLife += 1;
-                        gameManager.PlayerScore += 2;
+                        gameManager.InterviewerInterest += 2;
                         Debug.Log("Used Good Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
@@ -308,7 +308,7 @@ namespace JespersCode
                     {
                         gameManager.UsedBestAnswer = !gameManager.UsedBestAnswer;
                         gameManager.PlayerLife += 1;
-                        gameManager.PlayerScore += 3;
+                        gameManager.InterviewerInterest += 3;
                         Debug.Log("Used Best Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
@@ -325,7 +325,7 @@ namespace JespersCode
             Debug.Log("Coroutine started");
             Destroy(UIPrefabCopy);
             Debug.Log(gameManager.PlayerLife);
-            Debug.Log(gameManager.PlayerScore);
+            Debug.Log(gameManager.InterviewerInterest);
             yield return new WaitForSeconds(5);
             index++;
             uiPrefabIsActive = !uiPrefabIsActive;
