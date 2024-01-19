@@ -2,6 +2,7 @@ using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class CameraRaycast : MonoBehaviour
@@ -9,12 +10,14 @@ public class CameraRaycast : MonoBehaviour
     [Tooltip("Timer that activates a GiveHintsRoutine IEnumerator after the given number.")]
     [SerializeField] private float timer;
 
-    private UIManager uiManager;
     private IEnumerator giveHints;
+    private UIManager _uiManager;
+
+    private GameObject uiPrefabCopy;
 
     private void Awake()
     {
-        uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+        _uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
     }
 
     private void FixedUpdate()
@@ -55,12 +58,12 @@ public class CameraRaycast : MonoBehaviour
 
         while (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitInfo, 10f, layerMask))
         {
+            print("Hit");
             yield return null;
         }
 
         yield return new WaitForSeconds(timer);
-        GameObject prefabCopy = Instantiate(uiManager.UIPrefabs[3]);
-
-        Destroy(prefabCopy, 3);
+        uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[3]);
+        Destroy(uiPrefabCopy, 5f);
     }
 }
