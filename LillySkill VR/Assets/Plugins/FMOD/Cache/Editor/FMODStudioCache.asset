@@ -1,5 +1,45 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6820688329178068521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/LillySkill VR/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638403867914259137
+  FileSizes:
+  - Name: Desktop
+    Value: 712
+  Exists: 1
+--- !u!114 &-4048483564740820181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/LillySkill VR/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638403867914233700
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
 --- !u!114 &-2317138229509740251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33,14 +73,14 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 7158677262717323947}
-  - {fileID: -2317138229509740251}
+  - {fileID: -6820688329178068521}
+  - {fileID: -4048483564740820181}
   EditorEvents: []
   EditorParameters: []
   MasterBanks:
-  - {fileID: -2317138229509740251}
+  - {fileID: -4048483564740820181}
   StringsBanks:
-  - {fileID: 7158677262717323947}
+  - {fileID: -6820688329178068521}
   cacheTime: 638403867914259137
   cacheVersion: 131609
 --- !u!114 &7158677262717323947
