@@ -1,3 +1,4 @@
+using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -10,6 +11,14 @@ public class CameraRaycast : MonoBehaviour
     [SerializeField] private float timer;
 
     private IEnumerator giveHints;
+    private UIManager _uiManager;
+
+    private GameObject uiPrefabCopy;
+
+    private void Awake()
+    {
+        _uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+    }
 
     private void FixedUpdate()
     {
@@ -49,10 +58,12 @@ public class CameraRaycast : MonoBehaviour
 
         while (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitInfo, 10f, layerMask))
         {
+            print("Hit");
             yield return null;
         }
 
         yield return new WaitForSeconds(timer);
-        Debug.Log("Keep in mind to look the interviewer in the eyes from time to time.");
+        uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[3]);
+        Destroy(uiPrefabCopy, 5f);
     }
 }

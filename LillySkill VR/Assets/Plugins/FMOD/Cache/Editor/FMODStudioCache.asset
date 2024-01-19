@@ -1,170 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5459514817311700317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mimetic/Interactables/Button press/Select 4
-  m_EditorClassIdentifier: 
-  Path: event:/Mimetic/Interactables/Button press/Select 4
-  Guid:
-    Data1: -448665631
-    Data2: 1218210735
-    Data3: -495907154
-    Data4: -1590594407
-  Banks:
-  - {fileID: -2317138229509740251}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 552
---- !u!114 &-3243393931948071430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Digetic/UI sounds/Fanfare (Interview complete)
-  m_EditorClassIdentifier: 
-  Path: event:/Digetic/UI sounds/Fanfare (Interview complete)
-  Guid:
-    Data1: -1382688754
-    Data2: 1318050608
-    Data3: 1449978295
-    Data4: -1667973642
-  Banks:
-  - {fileID: -2317138229509740251}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5064
---- !u!114 &-3057678982851984326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mimetic/Interactables/Button press/Select 6
-  m_EditorClassIdentifier: 
-  Path: event:/Mimetic/Interactables/Button press/Select 6
-  Guid:
-    Data1: 1571280832
-    Data2: 1159498898
-    Data3: -2092147560
-    Data4: -2064182362
-  Banks:
-  - {fileID: -2317138229509740251}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1560
---- !u!114 &-2317138229509740251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/LillySkill VR/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638412608139567174
-  FileSizes:
-  - Name: Desktop
-    Value: 1859168
-  Exists: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 7158677262717323947}
-  - {fileID: -2317138229509740251}
-  EditorEvents:
-  - {fileID: -3243393931948071430}
-  - {fileID: 926569132760635342}
-  - {fileID: 5935131447837996617}
-  - {fileID: 2582334817183288196}
-  - {fileID: 3167188275473726833}
-  - {fileID: 4589608481780473703}
-  - {fileID: 6790874393944083724}
-  - {fileID: 3485083585927541849}
-  - {fileID: 8682989687277791571}
-  - {fileID: 8661663099627481266}
-  - {fileID: 3484606161595090351}
-  - {fileID: -3057678982851984326}
-  - {fileID: -5459514817311700317}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -2317138229509740251}
-  StringsBanks:
-  - {fileID: 7158677262717323947}
-  cacheTime: 638412608139595342
-  cacheVersion: 131609
---- !u!114 &926569132760635342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mimetic/Interactables/Button press/Select 5
-  m_EditorClassIdentifier: 
-  Path: event:/Mimetic/Interactables/Button press/Select 5
-  Guid:
-    Data1: 1040938802
-    Data2: 1128277550
-    Data3: 2025796274
-    Data4: 1047341470
-  Banks:
-  - {fileID: -2317138229509740251}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1560
---- !u!114 &2582334817183288196
+--- !u!114 &-7710947665788745426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1056
---- !u!114 &3167188275473726833
+--- !u!114 &-6326532873481221250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,14 +37,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mimetic/Interactables/Button hover/Hover 2
+  m_Name: event:/Mimetic/Interactables/Button press/Select 5
   m_EditorClassIdentifier: 
-  Path: event:/Mimetic/Interactables/Button hover/Hover 2
+  Path: event:/Mimetic/Interactables/Button press/Select 5
   Guid:
-    Data1: 288638535
-    Data2: 1199047059
-    Data3: 2035713697
-    Data4: -1789197010
+    Data1: 1040938802
+    Data2: 1128277550
+    Data3: 2025796274
+    Data4: 1047341470
   Banks:
   - {fileID: -2317138229509740251}
   IsStream: 0
@@ -217,35 +53,8 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 552
---- !u!114 &3484606161595090351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mimetic/Interactables/Button press/Select 2
-  m_EditorClassIdentifier: 
-  Path: event:/Mimetic/Interactables/Button press/Select 2
-  Guid:
-    Data1: 738924219
-    Data2: 1166907591
-    Data3: -1508893510
-    Data4: 309945671
-  Banks:
-  - {fileID: -2317138229509740251}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 552
---- !u!114 &3485083585927541849
+  Length: 1560
+--- !u!114 &-6119366127729853841
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,7 +81,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1056
---- !u!114 &4589608481780473703
+--- !u!114 &-3650448741406322625
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -282,24 +91,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Non-Digetic/Ambience/Aircondition
+  m_Name: event:/Mimetic/Interactables/Button hover/Hover 2
   m_EditorClassIdentifier: 
-  Path: event:/Non-Digetic/Ambience/Aircondition
+  Path: event:/Mimetic/Interactables/Button hover/Hover 2
   Guid:
-    Data1: -801482166
-    Data2: 1293633747
-    Data3: -130078281
-    Data4: -1771818447
+    Data1: 288638535
+    Data2: 1199047059
+    Data3: 2035713697
+    Data4: -1789197010
   Banks:
   - {fileID: -2317138229509740251}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 51552
---- !u!114 &5935131447837996617
+  Length: 552
+--- !u!114 &-2611603994754333890
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -326,34 +135,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 552
---- !u!114 &6790874393944083724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Mimetic/Interactables/Button press/Start 1
-  m_EditorClassIdentifier: 
-  Path: event:/Mimetic/Interactables/Button press/Start 1
-  Guid:
-    Data1: -1602515614
-    Data2: 1149102123
-    Data3: -1311579718
-    Data4: -1985744979
-  Banks:
-  - {fileID: -2317138229509740251}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3552
---- !u!114 &7158677262717323947
+--- !u!114 &-2317138229509740251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,17 +145,188 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/LillySkill VR/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638412608139595342
+  Path: Assets/FMOD/LillySkill VR/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638412608139567174
   FileSizes:
   - Name: Desktop
-    Value: 1392
+    Value: 1859168
   Exists: 1
---- !u!114 &8661663099627481266
+--- !u!114 &-1458731295001403287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Non-Digetic/Ambience/Aircondition
+  m_EditorClassIdentifier: 
+  Path: event:/Non-Digetic/Ambience/Aircondition
+  Guid:
+    Data1: -801482166
+    Data2: 1293633747
+    Data3: -130078281
+    Data4: -1771818447
+  Banks:
+  - {fileID: -2317138229509740251}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 51552
+--- !u!114 &-1016022908065449802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mimetic/Interactables/Button press/Select 4
+  m_EditorClassIdentifier: 
+  Path: event:/Mimetic/Interactables/Button press/Select 4
+  Guid:
+    Data1: -448665631
+    Data2: 1218210735
+    Data3: -495907154
+    Data4: -1590594407
+  Banks:
+  - {fileID: -2317138229509740251}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 552
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 7158677262717323947}
+  - {fileID: -2317138229509740251}
+  EditorEvents:
+  - {fileID: 2309346080705041575}
+  - {fileID: -6326532873481221250}
+  - {fileID: -2611603994754333890}
+  - {fileID: -7710947665788745426}
+  - {fileID: -3650448741406322625}
+  - {fileID: -1458731295001403287}
+  - {fileID: 7462432298735186185}
+  - {fileID: -6119366127729853841}
+  - {fileID: 5885179374825771657}
+  - {fileID: 4388498291489001729}
+  - {fileID: 1205350403278369000}
+  - {fileID: 3238862202106145296}
+  - {fileID: -1016022908065449802}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -2317138229509740251}
+  StringsBanks:
+  - {fileID: 7158677262717323947}
+  cacheTime: 638412608139595342
+  cacheVersion: 131609
+--- !u!114 &1205350403278369000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mimetic/Interactables/Button press/Select 2
+  m_EditorClassIdentifier: 
+  Path: event:/Mimetic/Interactables/Button press/Select 2
+  Guid:
+    Data1: 738924219
+    Data2: 1166907591
+    Data3: -1508893510
+    Data4: 309945671
+  Banks:
+  - {fileID: -2317138229509740251}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 552
+--- !u!114 &2309346080705041575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Digetic/UI sounds/Fanfare (Interview complete)
+  m_EditorClassIdentifier: 
+  Path: event:/Digetic/UI sounds/Fanfare (Interview complete)
+  Guid:
+    Data1: -1382688754
+    Data2: 1318050608
+    Data3: 1449978295
+    Data4: -1667973642
+  Banks:
+  - {fileID: -2317138229509740251}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5064
+--- !u!114 &3238862202106145296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mimetic/Interactables/Button press/Select 6
+  m_EditorClassIdentifier: 
+  Path: event:/Mimetic/Interactables/Button press/Select 6
+  Guid:
+    Data1: 1571280832
+    Data2: 1159498898
+    Data3: -2092147560
+    Data4: -2064182362
+  Banks:
+  - {fileID: -2317138229509740251}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1560
+--- !u!114 &4388498291489001729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -400,7 +353,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 552
---- !u!114 &8682989687277791571
+--- !u!114 &5885179374825771657
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -427,3 +380,50 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 81048
+--- !u!114 &7158677262717323947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/LillySkill VR/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638412608139595342
+  FileSizes:
+  - Name: Desktop
+    Value: 1392
+  Exists: 1
+--- !u!114 &7462432298735186185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mimetic/Interactables/Button press/Start 1
+  m_EditorClassIdentifier: 
+  Path: event:/Mimetic/Interactables/Button press/Start 1
+  Guid:
+    Data1: -1602515614
+    Data2: 1149102123
+    Data3: -1311579718
+    Data4: -1985744979
+  Banks:
+  - {fileID: -2317138229509740251}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3552

@@ -45,13 +45,12 @@ namespace JespersCode
             {
                 if (gameManager.EasyMode == true)
                 {
-                    gameManager.PlayerLife = 5;
+                    gameManager.InterviewerInterest = 3;
                 }
             }
             else if (gameManager.LoadedScene == 0)
             {
                 CreateUIPrefab();
-                
             }
         }
 
@@ -60,21 +59,24 @@ namespace JespersCode
             // If the conditions are rightfully met, call the function named CreateUIPrefab.
             if (gameManager.LoadedScene == 1)
             {
-                if (gameManager.PlayerLife > 0)
+                if (gameManager.InterviewerInterest > 0)
                 {
                     if (gameManager.InterviewAreActive == true && uiPrefabIsActive == false)
                     {
                         CreateUIPrefab();
                     }
                 }
-                else if (gameManager.PlayerLife <= 0 && gameManager.InterviewAreActive == true)
+                else if (gameManager.InterviewerInterest <= 0 && gameManager.InterviewAreActive == true)
                 {
                     gameManager.InterviewAreActive = !gameManager.InterviewAreActive;
-                    Debug.Log("THIS INTERVIEW IS OVER!!!!!");
                     UIPrefabCopy = Instantiate(UIPrefabs[1]);
                 }
             }
 
+            if (gameManager.InterviewerInterest >= 5)
+                gameManager.InterviewerInterest = 5;
+            else if (gameManager.InterviewerInterest <= 1)
+                gameManager.InterviewerInterest = 1;
 
         }
 
@@ -87,7 +89,6 @@ namespace JespersCode
             switch(gameManager.LoadedScene)
             {
                 case 0:
-                    Debug.Log("Loaded Scene: " + gameManager.LoadedScene);
                     UIPrefabCopy = Instantiate(UIPrefabs[0]);
                     break;
 
@@ -103,7 +104,6 @@ namespace JespersCode
                                 if (uiPrefabIsActive == false)
                                 {
                                     // If all previous if statements meets the right condition, create a copy of the UI Prefab.
-                                    Debug.Log("Hi UI! " + index);
                                     UIPrefabCopy = Instantiate(UIPrefabs[0]);
 
                                 }
@@ -122,7 +122,6 @@ namespace JespersCode
                                 if (uiPrefabIsActive == false)
                                 {
                                     // If all previous if statements are true. Then create a copy of the UI Prefab.
-                                    Debug.Log("Hi UI! " + index);
                                     UIPrefabCopy = Instantiate(UIPrefabs[0]);
 
                                 }
@@ -140,7 +139,6 @@ namespace JespersCode
                                 if (uiPrefabIsActive == false)
                                 {
                                     // If all previous if statements are true. Then create a copy of the UI Prefab.
-                                    Debug.Log("Hi UI! " + index);
                                     UIPrefabCopy = Instantiate(UIPrefabs[0]);
                                 }
                                 // After UI copy was created then reverse bool statement to halter the instantiation.
@@ -157,7 +155,6 @@ namespace JespersCode
                                 if (uiPrefabIsActive == false)
                                 {
                                     // If all previous if statements are true. Then create a copy of the UI Prefab.
-                                    Debug.Log("Hi UI! " + index);
                                     UIPrefabCopy = Instantiate(UIPrefabs[0]);
                                 }
                                 // After UI copy was created then reverse bool statement to halter the instantiation.
@@ -174,7 +171,6 @@ namespace JespersCode
                                 if (uiPrefabIsActive == false)
                                 {
                                     // If all previous if statements are true. Then create a copy of the UI Prefab.
-                                    Debug.Log("Hi UI! " + index);
                                     UIPrefabCopy = Instantiate(UIPrefabs[0]);
                                 }
                                 // After UI copy was created then reverse bool statement to halter the instantiation.
@@ -191,7 +187,6 @@ namespace JespersCode
                                 if (uiPrefabIsActive == false)
                                 {
                                     // If all previous if statements are true. Then create a copy of the UI Prefab.
-                                    Debug.Log("Hi UI! " + index);
                                     UIPrefabCopy = Instantiate(UIPrefabs[0]);
                                 }
                                 // After UI copy was created then reverse bool statement to halter the instantiation.
@@ -208,7 +203,6 @@ namespace JespersCode
                                 if (uiPrefabIsActive == false)
                                 {
                                     // If all previous if statements are true. Then create a copy of the UI Prefab.
-                                    Debug.Log("Hi UI! " + index);
                                     UIPrefabCopy = Instantiate(UIPrefabs[0]);
                                 }
                                 // After UI copy was created then reverse bool statement to halter the instantiation.
@@ -240,29 +234,25 @@ namespace JespersCode
             switch (gameManager.EasyMode)
             {
                 case true:
-                    Debug.Log("EasyMode Initiated.");
                     if (gameManager.UsedBadAnswer == true)
                     {
                         gameManager.UsedBadAnswer = !gameManager.UsedBadAnswer;
-                        gameManager.PlayerLife -= 1;
+                        gameManager.InterviewerInterest -= 1;
                         gameManager.PlayerScore += 0;
-                        Debug.Log("Used Bad Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
                     else if (gameManager.UsedAverageAnswer == true)
                     {
                         gameManager.UsedAverageAnswer = !gameManager.UsedAverageAnswer;
-                        gameManager.PlayerLife += 0;
+                        gameManager.InterviewerInterest += 0;
                         gameManager.PlayerScore += 1;
-                        Debug.Log("Used Average Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
                     else if (gameManager.UsedGoodAnswer == true)
                     {
                         gameManager.UsedGoodAnswer = !gameManager.UsedGoodAnswer;
-                        gameManager.PlayerLife += 1;
+                        gameManager.InterviewerInterest += 1;
                         gameManager.PlayerScore += 2;
-                        Debug.Log("Used Good Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
                     break;
@@ -271,45 +261,39 @@ namespace JespersCode
             switch (gameManager.MediumMode)
             {
                 case true:
-                    Debug.Log("MediumMode initiated.");
                     if (gameManager.UsedWorstAnswer == true)
                     {
                         gameManager.UsedWorstAnswer = !gameManager.UsedWorstAnswer;
-                        gameManager.PlayerLife -= 1;
+                        gameManager.InterviewerInterest -= 1;
                         gameManager.PlayerScore += 0;
-                        Debug.Log("Used Worst Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
                     else if (gameManager.UsedBadAnswer == true)
                     {
                         gameManager.UsedBadAnswer = !gameManager.UsedBadAnswer;
-                        gameManager.PlayerLife -= 1;
+                        gameManager.InterviewerInterest -= 1;
                         gameManager.PlayerScore += 0;
-                        Debug.Log("Used Bad Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
                     else if (gameManager.UsedAverageAnswer == true)
                     {
                         gameManager.UsedAverageAnswer = !gameManager.UsedAverageAnswer;
-                        gameManager.PlayerLife += 0;
+                        gameManager.InterviewerInterest += 0;
                         gameManager.PlayerScore += 1;
-                        Debug.Log("Used Average Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
                     else if (gameManager.UsedGoodAnswer == true)
                     {
                         gameManager.UsedGoodAnswer = !gameManager.UsedGoodAnswer;
-                        gameManager.PlayerLife += 1;
+                        gameManager.InterviewerInterest += 1;
                         gameManager.PlayerScore += 2;
-                        Debug.Log("Used Good Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
                     else if (gameManager.UsedBestAnswer == true)
                     {
                         gameManager.UsedBestAnswer = !gameManager.UsedBestAnswer;
-                        gameManager.PlayerLife += 1;
+                        gameManager.InterviewerInterest += 1;
                         gameManager.PlayerScore += 3;
-                        Debug.Log("Used Best Answer");
                         StartCoroutine(DeleteUICopyRoutine());
                     }
                     break;
@@ -322,16 +306,12 @@ namespace JespersCode
         /// <returns></returns>
         private IEnumerator DeleteUICopyRoutine()
         {
-            Debug.Log("Coroutine started");
             Destroy(UIPrefabCopy);
-            Debug.Log(gameManager.PlayerLife);
+            Debug.Log(gameManager.InterviewerInterest);
             Debug.Log(gameManager.PlayerScore);
             yield return new WaitForSeconds(5);
             index++;
             uiPrefabIsActive = !uiPrefabIsActive;
-
-            Debug.Log("Coroutine ended");
-
         }
     }
 }
