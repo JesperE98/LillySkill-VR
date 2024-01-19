@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6874008862084696434}
   - component: {fileID: 6206198121034438779}
   - component: {fileID: 6769006567909948617}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 6696399095695748594}
   - component: {fileID: 2064280188057477848}
   - component: {fileID: 8165193239001463448}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: TryAgainButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 7965506549855497887}
   - component: {fileID: 3460761167908539717}
   - component: {fileID: 8560072210656653250}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -860,7 +860,7 @@ GameObject:
   - component: {fileID: 3160920549658835239}
   - component: {fileID: 6451994018760925206}
   - component: {fileID: 8677189525299491661}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &506022228703789608
 RectTransform:
   m_ObjectHideFlags: 0
