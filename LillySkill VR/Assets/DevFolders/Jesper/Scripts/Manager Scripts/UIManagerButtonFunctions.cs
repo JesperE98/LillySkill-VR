@@ -6,8 +6,10 @@ namespace JespersCode
 {
     public class UIManagerButtonFunctions : MonoBehaviour
     {
-        protected UIManager uiManager;
-        protected GameManager gameManager;
+        private UIManager uiManager;
+        private GameManager gameManager;
+
+        private GameObject uiPrefabCopy;
 
 
         void Awake()
@@ -21,7 +23,6 @@ namespace JespersCode
         /// </summary>
         public void UsedWorstAnswerButton()
         {
-            Debug.Log("Hi Worst Asnwer");
             gameManager.UsedWorstAnswer = true;
             uiManager.UIButtonPressed();
         }
@@ -31,8 +32,6 @@ namespace JespersCode
         /// </summary>
         public void UsedBadAnswerButton()
         {
-            Debug.Log("Hi Bad Asnwer");
-
             gameManager.UsedBadAnswer = true;
             uiManager.UIButtonPressed();
         }
@@ -42,7 +41,6 @@ namespace JespersCode
         /// </summary>
         public void UsedAverageAnswerButton()
         {
-            Debug.Log("Hi Average Asnwer");
             gameManager.UsedAverageAnswer = true;
             uiManager.UIButtonPressed();
         }
@@ -52,7 +50,6 @@ namespace JespersCode
         /// </summary>
         public void UsedGoodAnswerButton()
         {
-            Debug.Log("Hi Good Asnwer");
             gameManager.UsedGoodAnswer = true;
             uiManager.UIButtonPressed();
         }
@@ -62,7 +59,6 @@ namespace JespersCode
         /// </summary>
         public void UsedBestAnswerButton()
         {
-            Debug.Log("Hi Best Asnwer");
             gameManager.UsedBestAnswer = true;
             uiManager.UIButtonPressed();
         }
@@ -75,8 +71,7 @@ namespace JespersCode
         public void NextPageButton()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
         }
 
         //////////////////////////////////////////////// The section below are code ONLY for the Start Menu Scene UI Prefabs /////////////////////////////////////////
@@ -87,8 +82,7 @@ namespace JespersCode
         public void StartMenuButton()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[0]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[0]);
         }
 
         /// <summary>
@@ -97,8 +91,7 @@ namespace JespersCode
         public void ExercisesPageButton()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[1]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[1]);
         }
 
         /// <summary>
@@ -107,8 +100,7 @@ namespace JespersCode
         public void TutorialPageButton()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[2]);
         }
 
         /// <summary>
@@ -117,8 +109,7 @@ namespace JespersCode
         public void AboutPageButton()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[3]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[3]);
         }
 
         /// <summary>
@@ -127,8 +118,7 @@ namespace JespersCode
         public void SettingsPageButton()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[4]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[4]);
         }
 
         /// <summary>
@@ -137,8 +127,7 @@ namespace JespersCode
         public void QuitTheApplicationPage()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[5]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[5]);
         }
 
         /// <summary>
@@ -147,8 +136,7 @@ namespace JespersCode
         public void ExercisePage1Button()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[6]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[6]);
         }
 
         /// <summary>
@@ -157,8 +145,7 @@ namespace JespersCode
         public void ExercisePage2Button()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[7]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[7]);
         }
 
         /// <summary>
@@ -167,8 +154,7 @@ namespace JespersCode
         public void ExercisePage3Button()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[8]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[8]);
         }
 
 
@@ -179,8 +165,7 @@ namespace JespersCode
         public void MainModeButton()
         {
             Destroy(gameObject);
-
-            GameObject newUIPrefabCopy = Instantiate(uiManager.UIPrefabs[9]);
+            uiPrefabCopy = Instantiate(uiManager.UIPrefabs[9]);
         }
     }
 }

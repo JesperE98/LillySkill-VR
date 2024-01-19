@@ -6,11 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Jesper Start Menu Test Scene.unity
-    guid: 0f490942f0ef5f044a1d823180829195
-  - enabled: 1
-    path: Assets/Scenes/Jesper Test Scene.unity
-    guid: 0acf13c200cee744c9b9f4201149a9bd
+    path: Assets/Scenes/Main Scenes/InterviewTrainingEasyModeScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5db963afabe647b46a2b00b8ada3b6b4,
       type: 2}

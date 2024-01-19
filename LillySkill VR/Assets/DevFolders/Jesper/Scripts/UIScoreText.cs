@@ -22,7 +22,7 @@ public class UIScoreText : MonoBehaviour
     {
         if(gameManager.InterviewAreActive == false)
         {
-            text.text = $"{gameManager.InterviewerInterest} / 20";
+            text.text = $"{gameManager.PlayerScore} / 20";
         }
     }
 }
