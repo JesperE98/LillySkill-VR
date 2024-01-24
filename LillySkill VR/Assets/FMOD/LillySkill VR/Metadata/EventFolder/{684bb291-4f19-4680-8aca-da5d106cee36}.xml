@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{684bb291-4f19-4680-8aca-da5d106cee36}">
+		<property name="name">
+			<value>Mimetic</value>
+		</property>
+		<relationship name="folder">
+			<destination>{9ad25afc-3bbf-4d16-b63f-6acf4b3e8272}</destination>
+		</relationship>
+	</object>
+</objects>
