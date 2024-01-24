@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIFeedbackText : MonoBehaviour
+public class UITextUpdate : MonoBehaviour
 {
     private GameManager gameManager;
     private TMP_Text text;

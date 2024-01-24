@@ -26,8 +26,7 @@ public class UIController : Button
     /// </summary>
     public void OnPointerExit()
     {
-        if (gameObject == null)
-            return;
+        return;
     }
 
     /// <summary>
