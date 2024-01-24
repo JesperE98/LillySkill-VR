@@ -27,10 +27,8 @@ namespace LillyCode
         [Tooltip("A list containing all the different pictures of Lilly")]
         [SerializeField] private List<GameObject> picturesOfLilly;
 
-        [Header("Call function: \n''ActivateHelpScreen(index)''\n to create a Lilly UI in the scene with the chosen index.")]
-        [Space(10)]
-
-        [Tooltip("A list containing information from each screen element")]
+        [Tooltip("A list containing information from each screen element. \n\nCall function: ActivateHelpScreen(index) " +
+            "\nto create a Lilly UI in the scene with the chosen index.")]
         [SerializeField] private List<LillyInformationScreen> informationScreenContent;
 
         // Keeps track of the active screen
