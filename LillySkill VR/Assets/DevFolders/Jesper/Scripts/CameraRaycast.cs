@@ -2,7 +2,6 @@ using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class CameraRaycast : MonoBehaviour
@@ -58,7 +57,6 @@ public class CameraRaycast : MonoBehaviour
 
         while (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hitInfo, 10f, layerMask))
         {
-            print("Hit");
             yield return null;
         }
 

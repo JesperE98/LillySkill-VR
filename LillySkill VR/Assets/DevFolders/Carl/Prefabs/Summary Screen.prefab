@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6874008862084696434}
   - component: {fileID: 6206198121034438779}
   - component: {fileID: 6769006567909948617}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2977486561223810554}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: 0}
-  m_SizeDelta: {x: 0, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6206198121034438779
 CanvasRenderer:
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.9019608}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -447,8 +447,9 @@ GameObject:
   - component: {fileID: 2203351830758829951}
   - component: {fileID: 6696399095695748594}
   - component: {fileID: 2064280188057477848}
-  - component: {fileID: 8165193239001463448}
-  m_Layer: 5
+  - component: {fileID: 4417355604362195697}
+  - component: {fileID: 162711674067309018}
+  m_Layer: 3
   m_Name: TryAgainButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +514,28 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8165193239001463448
+--- !u!65 &4417355604362195697
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385387574317552603}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 70, y: 25, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &162711674067309018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -522,7 +544,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5385387574317552603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 4693dcc33483c5d43b0831d21b5185df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -557,14 +579,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6832263016684432425}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_pageToDisplay
-        m_Mode: 3
+      - m_Target: {fileID: 4378826914219533274}
+        m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
+        m_MethodName: LoadExercise1Scene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -580,8 +602,9 @@ GameObject:
   - component: {fileID: 2977486561223810554}
   - component: {fileID: 7965506549855497887}
   - component: {fileID: 3460761167908539717}
-  - component: {fileID: 8560072210656653250}
-  m_Layer: 5
+  - component: {fileID: 18143824660890244}
+  - component: {fileID: 8435094391669794220}
+  m_Layer: 3
   m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +669,28 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8560072210656653250
+--- !u!65 &18143824660890244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5861242660233870100}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 70, y: 25, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8435094391669794220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -655,7 +699,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5861242660233870100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 4693dcc33483c5d43b0831d21b5185df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -689,19 +733,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3460761167908539717}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6832263016684432425}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_pageToDisplay
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &6016168336483474874
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,6 +881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a2a60407bb0b64d88977c7ba99750b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AnswerTextObject: []
+  textList: []
 --- !u!1 &6292205104016081700
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,7 +894,7 @@ GameObject:
   - component: {fileID: 3160920549658835239}
   - component: {fileID: 6451994018760925206}
   - component: {fileID: 8677189525299491661}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,10 +915,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2203351830758829951}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000038146973, y: 0}
-  m_SizeDelta: {x: 0, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6451994018760925206
 CanvasRenderer:
@@ -1157,8 +1191,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8231613106727172875}
-  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: 0, y: 0, z: -0.6}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.678}
   m_LocalScale: {x: 0.0019913318, y: 0.0019913318, z: 0.028447598}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1169,10 +1203,10 @@ RectTransform:
   - {fileID: 2203351830758829951}
   - {fileID: 6723636118565259922}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.8499756, y: 1.1300049}
+  m_AnchoredPosition: {x: 0.7160034, y: 1.227005}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2340012511465449372
@@ -1192,7 +1226,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
