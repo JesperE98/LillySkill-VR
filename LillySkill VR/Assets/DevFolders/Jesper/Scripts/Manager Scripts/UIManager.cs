@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using static Unity.Burst.Intrinsics.X86.Avx;
@@ -10,27 +12,22 @@ namespace JespersCode
     public class UIManager : MonoBehaviour
     {
         private static UIManager _uiManager;
-        private static UIManager SharedInstance;
 
-        [Header("UI")]
-        [Tooltip("Array for UI Prefabs.")]
-        public GameObject[] UIPrefabs;
+        [Header("UI Generic Lists")]
+        [Tooltip("Generic List to add UI Prefabs.")]
+        public List<GameObject> UIPrefabs;
 
+        [Tooltip("Generic List with UI Prefab copies")]
+        public List<GameObject> _uiPrefabCopyList;
+
+        private int listIndex;
+
+        [Tooltip("Choose what GameObject in the hierarchy to store the UI copies")]
         [SerializeField]
         private GameObject UIPrefabCollector;
 
         private GameManager _gameManager;
-        private GameObject _uiPrefabCopy;
-        private Animator _animator;
-
-
-        [SerializeField]
-        private List<GameObject> pooledUIObjects = new List<GameObject>();
-        [SerializeField]
-        private GameObject objectToPool;
-        [SerializeField]
-        private int amountToPool;
-         
+        private Animator _animator;     
         private bool uiPrefabIsActive = false;
         private int index = 0;
 
@@ -41,28 +38,37 @@ namespace JespersCode
             _animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
 
 
-            if (_uiManager == null) // Moves the UIManager GameObject to the DontDestroyOnLoad page when loading in the play mode.
+            //if (_uiManager == null) // Moves the UIManager GameObject to the DontDestroyOnLoad page when loading in the play mode.
+            //{
+            //    DontDestroyOnLoad(gameObject);
+            //}
+            //else if(_uiManager != null)
+            //{
+            //    Destroy(gameObject);
+            //}
+
+            // Instantiate all the prefab copys before start and move them to an empty gameobject.
+            for (listIndex = 0; listIndex < UIPrefabs.Count; listIndex++)
             {
-                DontDestroyOnLoad(gameObject);
-            }
-            else if(_uiManager != null)
-            {
-                Destroy(gameObject);
+                Instantiate(UIPrefabs[listIndex], UIPrefabCollector.transform);
+                _uiPrefabCopyList.Add(UIPrefabs[listIndex]);
+                Debug.Log(UIPrefabs[listIndex] + " was added to " + _uiPrefabCopyList);
             }
 
-            for (int i = 0; i < amountToPool; i++)
+            foreach (var uiPrefab in UIPrefabs)
             {
-                _uiPrefabCopy = Instantiate(objectToPool, UIPrefabCollector.transform);
-                _uiPrefabCopy.SetActive(false);
-                pooledUIObjects.Add(_uiPrefabCopy);
+                uiPrefab.SetActive(false);
             }
         }
 
         private void Start()
         {
+            // Manually set some parameters for Demo version of the project.
+            // Will be deleted in the future.
             _gameManager.EasyMode = true;
             _gameManager.InterviewAreActive = true;
             _gameManager.LoadedScene = 1;
+
             if (_gameManager.LoadedScene == 1)
             {
                 if (_gameManager.EasyMode == true)
@@ -78,7 +84,7 @@ namespace JespersCode
 
         private void Update()
         {
-            // If the conditions are rightfully met, call the function named CreateUIPrefab.
+            // If the conditions are met, call the function named CreateUIPrefab.
             if (_gameManager.LoadedScene == 1)
             {
                 if (_gameManager.InterviewerInterest > 0)
@@ -88,13 +94,14 @@ namespace JespersCode
                         CreateUIPrefab();
                     }
                 }
-                else if (_gameManager.InterviewerInterest <= 0 && _gameManager.InterviewAreActive == true)
-                {
-                    _gameManager.InterviewAreActive = !_gameManager.InterviewAreActive;
-                    _uiPrefabCopy = Instantiate(UIPrefabs[1]);
-                }
+                //else if (_gameManager.InterviewerInterest <= 0 && _gameManager.InterviewAreActive == true)
+                //{
+                //    _gameManager.InterviewAreActive = !_gameManager.InterviewAreActive;
+                //    Instantiate(_uiPrefabCopyList[1]);
+                //}
             }
 
+            // If statements to make sure the value stays between the values 1 to 5.
             if (_gameManager.InterviewerInterest >= 5)
                 _gameManager.InterviewerInterest = 5;
             else if (_gameManager.InterviewerInterest <= 1)
@@ -111,7 +118,7 @@ namespace JespersCode
             switch(_gameManager.LoadedScene)
             {
                 case 0:
-                    _uiPrefabCopy = Instantiate(UIPrefabs[0]);
+                    _uiPrefabCopyList[0].SetActive(true);
                     break;
 
                 case 1:
@@ -122,12 +129,8 @@ namespace JespersCode
                             if (uiPrefabIsActive == false)
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.
-                                pooledUIObjects[index].SetActive(true);
-
+                                _uiPrefabCopyList[0].SetActive(true);
                             }
-                            // After UI copy was created then reverse bool statement to halter the instantiation.
-                            uiPrefabIsActive = !uiPrefabIsActive;
-
                             break;
 
                         //case 1:
@@ -138,9 +141,6 @@ namespace JespersCode
                         //        pooledObjects[index].SetActive(true);
 
                         //    }
-                        //    // After UI copy was created then reverse bool statement to halter the instantiation.
-                        //    uiPrefabIsActive = !uiPrefabIsActive;
-
                         //    break;
 
                         //case 2:
@@ -151,9 +151,6 @@ namespace JespersCode
                         //        pooledObjects[index].SetActive(true);
 
                         //    }
-                        //    // After UI copy was created then reverse bool statement to halter the instantiation.
-                        //    uiPrefabIsActive = !uiPrefabIsActive;
-
                         //    break;
 
                         //case 3:
@@ -164,8 +161,6 @@ namespace JespersCode
                         //        pooledObjects[index].SetActive(true);
 
                         //    }
-                        //    // After UI copy was created then reverse bool statement to halter the instantiation.
-                        //    uiPrefabIsActive = !uiPrefabIsActive;
                         //    break;
 
                         //case 4:
@@ -176,9 +171,6 @@ namespace JespersCode
                         //        pooledObjects[index].SetActive(true);
 
                         //    }
-                        //    // After UI copy was created then reverse bool statement to halter the instantiation.
-                        //    uiPrefabIsActive = !uiPrefabIsActive;
-
                         //    break;
 
                         //case 5:
@@ -189,9 +181,6 @@ namespace JespersCode
                         //        pooledObjects[index].SetActive(true);
 
                         //    }
-                        //    // After UI copy was created then reverse bool statement to halter the instantiation.
-                        //    uiPrefabIsActive = !uiPrefabIsActive;
-
                         //    break;
 
                         //case 6:
@@ -202,15 +191,12 @@ namespace JespersCode
                         //        pooledObjects[index].SetActive(true);
 
                         //    }
-                        //    // After UI copy was created then reverse bool statement to halter the instantiation.
-                        //    uiPrefabIsActive = !uiPrefabIsActive;
-
                         //    break;
 
                         default:
                             _gameManager.InterviewAreActive = !_gameManager.InterviewAreActive;
-
-                            _uiPrefabCopy = Instantiate(UIPrefabs[0], UIPrefabCollector.transform);
+                            print("Activate:" + _uiPrefabCopyList[1]);
+                            UIPrefabs[1].SetActive(true);
                             break;
                     }
                     break;
@@ -233,21 +219,21 @@ namespace JespersCode
                 case true:
                     if (_gameManager.UsedBadAnswer == true)
                     {
-                        _gameManager.UsedBadAnswer = !_gameManager.UsedBadAnswer;
+                        _gameManager.UsedBadAnswer = !_gameManager.UsedBadAnswer; // Sets bool value back to false.
                         _gameManager.InterviewerInterest -= 1;
                         _gameManager.PlayerScore += 0;
                         StartCoroutine(DeleteUICopyRoutine());
                     }
                     else if (_gameManager.UsedAverageAnswer == true)
                     {
-                        _gameManager.UsedAverageAnswer = !_gameManager.UsedAverageAnswer;
+                        _gameManager.UsedAverageAnswer = !_gameManager.UsedAverageAnswer; // Sets bool value back to false.
                         _gameManager.InterviewerInterest += 0;
                         _gameManager.PlayerScore += 1;
                         StartCoroutine(DeleteUICopyRoutine());
                     }
                     else if (_gameManager.UsedGoodAnswer == true)
                     {
-                        _gameManager.UsedGoodAnswer = !_gameManager.UsedGoodAnswer;
+                        _gameManager.UsedGoodAnswer = !_gameManager.UsedGoodAnswer; // Sets bool value back to false.
                         _gameManager.InterviewerInterest += 1;
                         _gameManager.PlayerScore += 2;
                         StartCoroutine(DeleteUICopyRoutine());
@@ -303,7 +289,7 @@ namespace JespersCode
         /// <returns></returns>
         private IEnumerator DeleteUICopyRoutine()
         {
-            pooledUIObjects[index].SetActive(false);
+            _uiPrefabCopyList[0].SetActive(false);
             Debug.Log(_gameManager.InterviewerInterest);
             Debug.Log(_gameManager.PlayerScore);
             yield return new WaitForSeconds(15);

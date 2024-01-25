@@ -79,7 +79,7 @@ namespace JespersCode
         {
             gameObject.SetActive(false);
 
-            uiPrefabCopy = Instantiate(_uiManager.UIPrefabs[1]);
+            Instantiate(_uiManager._uiPrefabCopyList[2]);
         }
 
         //////////////////////////////////////////////// The section below are code ONLY for the Start Menu Scene UI Prefabs /////////////////////////////////////////
