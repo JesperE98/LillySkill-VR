@@ -8,8 +8,10 @@ namespace JespersCode
 {
     public class SceneHandler : MonoBehaviour
     {
-        protected SceneHandler sceneHandler;
-        protected GameManager gameManager;
+        private SceneHandler sceneHandler;
+        private GameManager gameManager;
+
+        private int sceneIndex;
 
         private void Awake()
         {
@@ -30,7 +32,7 @@ namespace JespersCode
         /// Loads the Start Menu Scene.
         /// </summary>
         /// <param name="sceneIndex"></param>
-        public void LoadStartMenuScene (int sceneIndex)
+        public void LoadStartMenuScene ()
         {
             sceneIndex = 0;
             gameManager.LoadedScene = sceneIndex;
@@ -42,7 +44,7 @@ namespace JespersCode
         /// Loads the Main Interview Mode Scene.
         /// </summary>
         /// <param name="sceneIndex"></param>
-        public void LoadMainModeScene(int sceneIndex)
+        public void LoadMainModeScene()
         {
             sceneIndex = 1;
             gameManager.LoadedScene = sceneIndex;
@@ -54,7 +56,7 @@ namespace JespersCode
         /// Loads the Tutorial scene with the tutorial video.
         /// </summary>
         /// <param name="sceneIndex"></param>
-        public void LoadTutorialScene(int sceneIndex)
+        public void LoadTutorialScene()
         {
             sceneIndex = 2;
             gameManager.LoadedScene = sceneIndex;
@@ -66,9 +68,9 @@ namespace JespersCode
         /// Loads the Easy Mode Exercise Scene.
         /// </summary>
         /// <param name="sceneIndex"></param>
-        public void LoadExercise1Scene(int sceneIndex)
+        public void LoadExercise1Scene()
         {
-            sceneIndex = 3;
+            sceneIndex = 0;
             gameManager.LoadedScene = sceneIndex;
 
             SceneManager.LoadScene(gameManager.LoadedScene);
@@ -78,7 +80,7 @@ namespace JespersCode
         /// Loads the Medium Mode Exercise Scene.
         /// </summary>
         /// <param name="sceneIndex"></param>
-        public void LoadExercise2Scene(int sceneIndex)
+        public void LoadExercise2Scene()
         {
             sceneIndex = 4;
             gameManager.LoadedScene = sceneIndex;
@@ -90,7 +92,7 @@ namespace JespersCode
         /// Loads the Hard Mode Exercise Scene.
         /// </summary>
         /// <param name="sceneIndex"></param>
-        public void LoadExercise3Scene(int sceneIndex)
+        public void LoadExercise3Scene()
         {
             sceneIndex = 5;
             gameManager.LoadedScene = sceneIndex;

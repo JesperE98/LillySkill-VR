@@ -451,6 +451,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+<<<<<<<< HEAD:LillySkill VR/Assets/Scenes/Jesper Test Scenes/Jesper Test Scene.unity
     - target: {fileID: 3923355113901406618, guid: 89a49707615eda847b020a410601166b,
         type: 3}
       propertyPath: m_IsActive
@@ -461,6 +462,8 @@ PrefabInstance:
       propertyPath: ReticleInteractionLayerMask.m_Bits
       value: 8
       objectReference: {fileID: 0}
+========
+>>>>>>>> Android-Version:LillySkill VR/Assets/Scenes/Jesper Test Scene.unity
     - target: {fileID: 8440848956785675149, guid: 89a49707615eda847b020a410601166b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -510,16 +513,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8786383930439341128, guid: 89a49707615eda847b020a410601166b,
-        type: 3}
-      propertyPath: timer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8786383930439341128, guid: 89a49707615eda847b020a410601166b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
