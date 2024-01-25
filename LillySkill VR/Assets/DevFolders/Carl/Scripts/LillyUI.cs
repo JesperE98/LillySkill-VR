@@ -21,21 +21,18 @@ namespace LillyCode
         [Tooltip("reference to the ''Close Button'' gameobject")]
         [SerializeField] private GameObject closeButtonGameObject;
 
-        [Header("Bild 0: Lilly som vinkar, ler med öppna ögon.")]
+        [Header("All different pictures of Lilly")]
         [Space(10)]
 
         [Tooltip("A list containing all the different pictures of Lilly")]
         [SerializeField] private List<GameObject> picturesOfLilly;
 
-        [Header("Anropa \n''ActivateHelpScreen(index)''\n för att skapa en Lilly UI i scenen med vald index.")]
-        [Space(10)]
-
-        [Tooltip("A list containing information from each screen element")]
+        [Tooltip("A list containing information from each screen element. \n\nCall function: ActivateHelpScreen(index) " +
+            "\nto create a Lilly UI in the scene with the chosen index.")]
         [SerializeField] private List<LillyInformationScreen> informationScreenContent;
 
         // Keeps track of the active screen
         private int activeScreen;
-
 
         [System.Serializable]
         public class LillyInformationScreen
