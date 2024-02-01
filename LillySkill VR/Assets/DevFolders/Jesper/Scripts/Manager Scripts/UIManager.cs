@@ -4,79 +4,80 @@ using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static Unity.Burst.Intrinsics.X86.Avx;
 
 
 namespace JespersCode
 {
     public class UIManager : MonoBehaviour
     {
-        private static UIManager _uiManager;
+        private static UIManager uiManager;
+        private GameManager gameManager;
+        private Animator animator;
 
         [Header("UI Generic Lists")]
         [Tooltip("Generic List to add UI Prefabs.")]
-        public List<GameObject> UIPrefabs;
+        public List<GameObject> UIPrefabs = new List<GameObject>();
 
-        [Tooltip("Generic List with UI Prefab copies")]
-        public List<GameObject> _uiPrefabCopyList;
+        [HideInInspector]
+        ///<summary>
+        ///Generic List that stores copies of the UI Prefabs.
+        /// </summary>
+        public List<GameObject> uiPrefabCopyList = new List<GameObject>();
 
-        private int listIndex;
+        private GameObject obj;
 
         [Tooltip("Choose what GameObject in the hierarchy to store the UI copies")]
         [SerializeField]
         private GameObject UIPrefabCollector;
 
-        private GameManager _gameManager;
-        private Animator _animator;     
+
+        [SerializeField]
         private bool uiPrefabIsActive = false;
         private int index = 0;
 
 
         private void Awake()
         {
-            _gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-            _animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
+            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
 
 
-            //if (_uiManager == null) // Moves the UIManager GameObject to the DontDestroyOnLoad page when loading in the play mode.
-            //{
-            //    DontDestroyOnLoad(gameObject);
-            //}
-            //else if(_uiManager != null)
-            //{
-            //    Destroy(gameObject);
-            //}
-
-            // Instantiate all the prefab copys before start and move them to an empty gameobject.
-            for (listIndex = 0; listIndex < UIPrefabs.Count; listIndex++)
+            if (uiManager == null) // Moves the UIManager GameObject to the DontDestroyOnLoad page when loading in the play mode.
             {
-                Instantiate(UIPrefabs[listIndex], UIPrefabCollector.transform);
-                _uiPrefabCopyList.Add(UIPrefabs[listIndex]);
-                Debug.Log(UIPrefabs[listIndex] + " was added to " + _uiPrefabCopyList);
+                uiManager = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                Object.Destroy(gameObject);
             }
 
-            foreach (var uiPrefab in UIPrefabs)
+            for (int i = 0; i < UIPrefabs.Count; i++)
             {
-                uiPrefab.SetActive(false);
+                obj = Instantiate(UIPrefabs[i], UIPrefabCollector.transform);
+                obj.SetActive(false);
+                uiPrefabCopyList.Add(obj);
             }
         }
+        
 
         private void Start()
         {
             // Manually set some parameters for Demo version of the project.
             // Will be deleted in the future.
-            _gameManager.EasyMode = true;
-            _gameManager.InterviewAreActive = true;
-            _gameManager.LoadedScene = 1;
+            gameManager.EasyMode = true;
+            gameManager.InterviewAreActive = true;
+            gameManager.LoadedScene = 1;
 
-            if (_gameManager.LoadedScene == 1)
+
+            if (gameManager.LoadedScene == 1)
             {
-                if (_gameManager.EasyMode == true)
+                if (gameManager.EasyMode == true)
                 {
-                    _gameManager.InterviewerInterest = 3;
+                    gameManager.InterviewerInterest = 3;
                 }
             }
-            else if (_gameManager.LoadedScene == 0)
+            else if (gameManager.LoadedScene == 0)
             {
                 CreateUIPrefab();
             }
@@ -85,11 +86,11 @@ namespace JespersCode
         private void Update()
         {
             // If the conditions are met, call the function named CreateUIPrefab.
-            if (_gameManager.LoadedScene == 1)
+            if (gameManager.LoadedScene == 1)
             {
-                if (_gameManager.InterviewerInterest > 0)
+                if (gameManager.InterviewerInterest > 0)
                 {
-                    if (_gameManager.InterviewAreActive == true && uiPrefabIsActive == false)
+                    if (gameManager.InterviewAreActive == true && uiPrefabIsActive == false)
                     {
                         CreateUIPrefab();
                     }
@@ -102,10 +103,10 @@ namespace JespersCode
             }
 
             // If statements to make sure the value stays between the values 1 to 5.
-            if (_gameManager.InterviewerInterest >= 5)
-                _gameManager.InterviewerInterest = 5;
-            else if (_gameManager.InterviewerInterest <= 1)
-                _gameManager.InterviewerInterest = 1;
+            if (gameManager.InterviewerInterest >= 5)
+                gameManager.InterviewerInterest = 5;
+            else if (gameManager.InterviewerInterest <= 1)
+                gameManager.InterviewerInterest = 1;
 
         }
 
@@ -115,98 +116,98 @@ namespace JespersCode
         private void CreateUIPrefab()
         {
             // Switch statement that checks which active scene it is.
-            switch(_gameManager.LoadedScene)
+            switch(gameManager.LoadedScene)
             {
                 case 0:
-                    _uiPrefabCopyList[0].SetActive(true);
+                    uiPrefabCopyList[0].SetActive(true);
                     break;
 
                 case 1:
                     switch (index)
                     {
                         case 0:
+                            gameManager.AnswerPageNumber = 1;
                             // Checks if bool are false.
                             if (uiPrefabIsActive == false)
                             {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.
-                                _uiPrefabCopyList[0].SetActive(true);
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
                             }
                             break;
 
-                        //case 1:
-                        //    // Checks if bool are false.
-                        //    if (uiPrefabIsActive == false)
-                        //    {
-                        //        // If all previous if statements meets the right condition, create a copy of the UI Prefab.
-                        //        pooledObjects[index].SetActive(true);
+                        case 1:
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
 
-                        //    }
-                        //    break;
+                        case 2:
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
 
-                        //case 2:
-                        //    // Checks if bool are false.
-                        //    if (uiPrefabIsActive == false)
-                        //    {
-                        //        // If all previous if statements meets the right condition, create a copy of the UI Prefab.
-                        //        pooledObjects[index].SetActive(true);
+                        case 3:
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
 
-                        //    }
-                        //    break;
+                        case 4:
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
 
-                        //case 3:
-                        //    // Checks if bool are false.
-                        //    if (uiPrefabIsActive == false)
-                        //    {
-                        //        // If all previous if statements meets the right condition, create a copy of the UI Prefab.
-                        //        pooledObjects[index].SetActive(true);
+                        case 5:
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
 
-                        //    }
-                        //    break;
-
-                        //case 4:
-                        //    // Checks if bool are false.
-                        //    if (uiPrefabIsActive == false)
-                        //    {
-                        //        // If all previous if statements meets the right condition, create a copy of the UI Prefab.
-                        //        pooledObjects[index].SetActive(true);
-
-                        //    }
-                        //    break;
-
-                        //case 5:
-                        //    // Checks if bool are false.
-                        //    if (uiPrefabIsActive == false)
-                        //    {
-                        //        // If all previous if statements meets the right condition, create a copy of the UI Prefab.
-                        //        pooledObjects[index].SetActive(true);
-
-                        //    }
-                        //    break;
-
-                        //case 6:
-                        //    // Checks if bool are false.
-                        //    if (uiPrefabIsActive == false)
-                        //    {
-                        //        // If all previous if statements meets the right condition, create a copy of the UI Prefab.
-                        //        pooledObjects[index].SetActive(true);
-
-                        //    }
-                        //    break;
+                        case 6:
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
 
                         default:
-                            _gameManager.InterviewAreActive = !_gameManager.InterviewAreActive;
-                            print("Activate:" + _uiPrefabCopyList[1]);
-                            UIPrefabs[1].SetActive(true);
+                            print("Default Case");
+                            if (uiPrefabIsActive == false)
+                            {
+                                uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabIsActive = true;
+                                gameManager.InterviewAreActive = !gameManager.InterviewAreActive;
+                            }
                             break;
                     }
                     break;
-
-                default:
-
-                    break;
             }
-
-            
         }
 
         /// <summary>
@@ -214,70 +215,70 @@ namespace JespersCode
         /// </summary>
         public void UIButtonPressed()
         {
-            switch (_gameManager.EasyMode)
+            switch (gameManager.EasyMode)
             {
                 case true:
-                    if (_gameManager.UsedBadAnswer == true)
+                    if (gameManager.UsedBadAnswer == true)
                     {
-                        _gameManager.UsedBadAnswer = !_gameManager.UsedBadAnswer; // Sets bool value back to false.
-                        _gameManager.InterviewerInterest -= 1;
-                        _gameManager.PlayerScore += 0;
-                        StartCoroutine(DeleteUICopyRoutine());
+                        gameManager.UsedBadAnswer = !gameManager.UsedBadAnswer; // Sets bool value back to false.
+                        gameManager.InterviewerInterest -= 1;
+                        gameManager.PlayerScore += 0;
+                        StartCoroutine(DeleteUICopyRoutine(0));
                     }
-                    else if (_gameManager.UsedAverageAnswer == true)
+                    else if (gameManager.UsedAverageAnswer == true)
                     {
-                        _gameManager.UsedAverageAnswer = !_gameManager.UsedAverageAnswer; // Sets bool value back to false.
-                        _gameManager.InterviewerInterest += 0;
-                        _gameManager.PlayerScore += 1;
-                        StartCoroutine(DeleteUICopyRoutine());
+                        gameManager.UsedAverageAnswer = !gameManager.UsedAverageAnswer; // Sets bool value back to false.
+                        gameManager.InterviewerInterest += 0;
+                        gameManager.PlayerScore += 1;
+                        StartCoroutine(DeleteUICopyRoutine(0));
                     }
-                    else if (_gameManager.UsedGoodAnswer == true)
+                    else if (gameManager.UsedGoodAnswer == true)
                     {
-                        _gameManager.UsedGoodAnswer = !_gameManager.UsedGoodAnswer; // Sets bool value back to false.
-                        _gameManager.InterviewerInterest += 1;
-                        _gameManager.PlayerScore += 2;
-                        StartCoroutine(DeleteUICopyRoutine());
+                        gameManager.UsedGoodAnswer = !gameManager.UsedGoodAnswer; // Sets bool value back to false.
+                        gameManager.InterviewerInterest += 1;
+                        gameManager.PlayerScore += 2;
+                        StartCoroutine(DeleteUICopyRoutine(0));
                     }
                     break;
             }
 
-            switch (_gameManager.MediumMode)
+            switch (gameManager.MediumMode)
             {
                 case true:
-                    if (_gameManager.UsedWorstAnswer == true)
+                    if (gameManager.UsedWorstAnswer == true)
                     {
-                        _gameManager.UsedWorstAnswer = !_gameManager.UsedWorstAnswer;
-                        _gameManager.InterviewerInterest -= 1;
-                        _gameManager.PlayerScore += 0;
-                        StartCoroutine(DeleteUICopyRoutine());
+                        gameManager.UsedWorstAnswer = !gameManager.UsedWorstAnswer;
+                        gameManager.InterviewerInterest -= 1;
+                        gameManager.PlayerScore += 0;
+                        StartCoroutine(DeleteUICopyRoutine(0));
                     }
-                    else if (_gameManager.UsedBadAnswer == true)
+                    else if (gameManager.UsedBadAnswer == true)
                     {
-                        _gameManager.UsedBadAnswer = !_gameManager.UsedBadAnswer;
-                        _gameManager.InterviewerInterest -= 1;
-                        _gameManager.PlayerScore += 0;
-                        StartCoroutine(DeleteUICopyRoutine());
+                        gameManager.UsedBadAnswer = !gameManager.UsedBadAnswer;
+                        gameManager.InterviewerInterest -= 1;
+                        gameManager.PlayerScore += 0;
+                        StartCoroutine(DeleteUICopyRoutine(0));
                     }
-                    else if (_gameManager.UsedAverageAnswer == true)
+                    else if (gameManager.UsedAverageAnswer == true)
                     {
-                        _gameManager.UsedAverageAnswer = !_gameManager.UsedAverageAnswer;
-                        _gameManager.InterviewerInterest += 0;
-                        _gameManager.PlayerScore += 1;
-                        StartCoroutine(DeleteUICopyRoutine());
+                        gameManager.UsedAverageAnswer = !gameManager.UsedAverageAnswer;
+                        gameManager.InterviewerInterest += 0;
+                        gameManager.PlayerScore += 1;
+                        StartCoroutine(DeleteUICopyRoutine(0));
                     }
-                    else if (_gameManager.UsedGoodAnswer == true)
+                    else if (gameManager.UsedGoodAnswer == true)
                     {
-                        _gameManager.UsedGoodAnswer = !_gameManager.UsedGoodAnswer;
-                        _gameManager.InterviewerInterest += 1;
-                        _gameManager.PlayerScore += 2;
-                        StartCoroutine(DeleteUICopyRoutine());
+                        gameManager.UsedGoodAnswer = !gameManager.UsedGoodAnswer;
+                        gameManager.InterviewerInterest += 1;
+                        gameManager.PlayerScore += 2;
+                        StartCoroutine(DeleteUICopyRoutine(0));
                     }
-                    else if (_gameManager.UsedBestAnswer == true)
+                    else if (gameManager.UsedBestAnswer == true)
                     {
-                        _gameManager.UsedBestAnswer = !_gameManager.UsedBestAnswer;
-                        _gameManager.InterviewerInterest += 1;
-                        _gameManager.PlayerScore += 3;
-                        StartCoroutine(DeleteUICopyRoutine());
+                        gameManager.UsedBestAnswer = !gameManager.UsedBestAnswer;
+                        gameManager.InterviewerInterest += 1;
+                        gameManager.PlayerScore += 3;
+                        StartCoroutine(DeleteUICopyRoutine(0));
                     }
                     break;
             }
@@ -287,15 +288,29 @@ namespace JespersCode
         /// Coroutine to update the properties PlayerLife and PlayerScore and to Destroy the UIPrefabCopy and increment the index variable.
         /// </summary>
         /// <returns></returns>
-        private IEnumerator DeleteUICopyRoutine()
+        private IEnumerator DeleteUICopyRoutine(int listIndex)
         {
-            _uiPrefabCopyList[0].SetActive(false);
-            Debug.Log(_gameManager.InterviewerInterest);
-            Debug.Log(_gameManager.PlayerScore);
-            yield return new WaitForSeconds(15);
-            _animator.SetBool("AskingQuestion", false);
+            // Check if the index is valid
+            if (listIndex < 0 || listIndex >= uiPrefabCopyList.Count)
+            {
+                Debug.LogError("Index out of range!");
+                yield break;
+            }
+
+            uiPrefabCopyList[listIndex].SetActive(false);
+
             index++;
-            uiPrefabIsActive = !uiPrefabIsActive;
+            gameManager.AnswerPageNumber++;
+            yield return new WaitForSeconds(3f);
+            animator.SetBool("AskingQuestion", false);
+            uiPrefabIsActive = false;
+        }
+
+        private void DeactivateObject(int index)
+        {
+            print("Deactivating objects.");
+            GameObject obj = uiPrefabCopyList[index];
+            obj.SetActive(false);
         }
     }
 }
