@@ -43,8 +43,9 @@ namespace LillyCode
             public string speechText;
             public int picture;
             public AudioClip lillyAudioClip;
-            public bool isActive;
             public bool proceedToNextIndex;
+            [HideInInspector]
+            public bool isActive;
         }
 
         /// <summary>

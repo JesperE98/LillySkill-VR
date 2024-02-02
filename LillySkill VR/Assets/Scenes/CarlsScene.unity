@@ -2424,24 +2424,26 @@ MonoBehaviour:
   - {fileID: 1417024504}
   - {fileID: 939928250}
   informationScreenContent:
-  - speechText: Hi!
+  - speechText: 'Hi! Welcome to this demo version of Lilly Skill VR. My name is Lilly,
+      and I will be your guide through this experience. '
     picture: 5
-    lillyAudioClip: {fileID: 8300000, guid: 76f682aabd5c52844bd99205a4aa4627, type: 3}
+    lillyAudioClip: {fileID: 8300000, guid: d658c662f621813479101c31b5049cdb, type: 3}
     isActive: 0
     proceedToNextIndex: 1
-  - speechText: Welcome to LillySkill VR!
-    picture: 3
-    lillyAudioClip: {fileID: 8300000, guid: 79a921038cba6994dbd6de785b8777c1, type: 3}
+  - speechText: In this version, you will get to try out an experience where you
+      sit and practice various questions that may appear during a job interview.
+    picture: 0
+    lillyAudioClip: {fileID: 8300000, guid: f54959211a3292143b50f58023ca762b, type: 3}
     isActive: 0
     proceedToNextIndex: 1
-  - speechText: So you figured out how to navigate the UI.
-    picture: 2
-    lillyAudioClip: {fileID: 8300000, guid: 61405879de8639146a78927adbb98f1f, type: 3}
+  - speechText: 'We thank you so much for wanting to join in and test this experience. '
+    picture: 8
+    lillyAudioClip: {fileID: 8300000, guid: b91b9d6af7a382c4db487e6d63d29d3e, type: 3}
     isActive: 0
     proceedToNextIndex: 1
-  - speechText: Good job!
-    picture: 11
-    lillyAudioClip: {fileID: 8300000, guid: 79a921038cba6994dbd6de785b8777c1, type: 3}
+  - speechText: 'See you another time! Bye-bye! '
+    picture: 7
+    lillyAudioClip: {fileID: 8300000, guid: 0fd167d554343ce46a08c3d9cd5ddcfa, type: 3}
     isActive: 0
     proceedToNextIndex: 0
 --- !u!82 &964055814
