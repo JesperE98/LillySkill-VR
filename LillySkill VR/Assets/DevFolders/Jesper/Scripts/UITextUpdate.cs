@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class UITextUpdate : MonoBehaviour
 {
     private GameManager gameManager;
-    private UIManager _uiManager;
+    private UIManager uiManager;
     private TMP_Text text;
     [Tooltip("Generic List to store parent objects for the answertexts")]
     [SerializeField]
@@ -20,7 +20,7 @@ public class UITextUpdate : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        _uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+        uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
 
         text = GetComponent<TMP_Text>();
 
@@ -68,20 +68,367 @@ public class UITextUpdate : MonoBehaviour
         switch(gameManager.EasyMode) 
         {
             case true:
-                if (_uiManager._uiPrefabCopyList[0].activeSelf == true)
+                switch(gameManager.AnswerPageNumber)
                 {
-                    if (AnswerTextObject[0].activeSelf == true)
-                    {
-                        textList[0].text = ("This is answer one");
-                    }
-                    else if (AnswerTextObject[1].activeSelf == true)
-                    {
-                        textList[1].text = ("This is answer two");
-                    }
-                    else if (AnswerTextObject[2].activeSelf == true)
-                    {
-                        textList[2].text = ("This is answer three");
-                    }
+                    case 1:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = (gameManager.AnswerPageNumber + ":This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = (gameManager.AnswerPageNumber + ":This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 2:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = (gameManager.AnswerPageNumber + ":This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = (gameManager.AnswerPageNumber + ":This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = (gameManager.AnswerPageNumber + ":This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 3:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = (gameManager.AnswerPageNumber + ":This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = (gameManager.AnswerPageNumber + ":This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = (gameManager.AnswerPageNumber + ":This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 4:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = (gameManager.AnswerPageNumber + ":This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = (gameManager.AnswerPageNumber + ":This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = (gameManager.AnswerPageNumber + ":This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 5:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 6:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 7:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 8:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 9:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 10:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 11:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 12:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 13:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 14:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 15:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 16:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 17:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 18:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 19:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
+
+                    case 20:
+                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                        {
+                            if (AnswerTextObject[0].activeSelf == true)
+                            {
+                                textList[0].text = ("This is answer one");
+                            }
+                            else if (AnswerTextObject[1].activeSelf == true)
+                            {
+                                textList[1].text = ("This is answer two");
+                            }
+                            else if (AnswerTextObject[2].activeSelf == true)
+                            {
+                                textList[2].text = ("This is answer three");
+                            }
+                        }
+                        break;
                 }
                 break;
 
