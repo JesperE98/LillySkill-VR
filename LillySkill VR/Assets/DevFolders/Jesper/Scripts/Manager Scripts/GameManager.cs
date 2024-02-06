@@ -7,6 +7,7 @@ namespace JespersCode
     public class GameManager : MonoBehaviour
     {
         protected static GameManager gameManager;
+        protected List<string> answerList = new List<string>();
 
         private void Awake()
         {
@@ -24,6 +25,16 @@ namespace JespersCode
         /// Gets and sets bool value that determines if a interview is active.
         /// </summary>
         public bool InterviewAreActive { get; set; }
+
+        /// <summary>
+        /// Gets and sets bool value that determines if a interview is active.
+        /// </summary>
+        public bool FeedbackPageActive { get; set; }
+
+        /// <summary>
+        /// Gets and sets bool value that determines if a interview is active.
+        /// </summary>
+        public bool SummaryPageActive { get; set; }
 
         /// <summary>
         /// Gets and sets bool value for initiating Easy Mode interview.
@@ -84,6 +95,24 @@ namespace JespersCode
         /// Gets and sets int value to determine which answer page the user are on and controlls which ansers that should be given to the user.
         /// </summary>
         public int AnswerPageNumber { get; set; }
-    }
 
+        public List<string> AnswerList 
+        {
+            get 
+            {
+                return answerList;
+            } 
+            set 
+            {
+                answerList = value;
+            } 
+        }
+
+       
+        public void AddAnswerToList(string text)
+        {
+
+            answerList.Add(text);
+        }
+    }
 }

@@ -200,6 +200,7 @@ namespace JespersCode
                             print("Default Case");
                             if (uiPrefabIsActive == false)
                             {
+                                gameManager.FeedbackPageActive = true;
                                 uiPrefabCopyList[1].SetActive(true);
                                 uiPrefabIsActive = true;
                                 gameManager.InterviewAreActive = !gameManager.InterviewAreActive;

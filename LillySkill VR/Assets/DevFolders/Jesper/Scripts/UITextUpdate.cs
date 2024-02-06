@@ -1,7 +1,9 @@
 using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +11,9 @@ public class UITextUpdate : MonoBehaviour
 {
     private GameManager gameManager;
     private UIManager uiManager;
-    private TMP_Text text;
+    private TMP_Text answerText;
+    private bool loopDone = false;
+
     [Tooltip("Generic List to store parent objects for the answertexts")]
     [SerializeField]
     private List<GameObject> AnswerTextObject = new List<GameObject>();
@@ -22,46 +26,58 @@ public class UITextUpdate : MonoBehaviour
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
 
-        text = GetComponent<TMP_Text>();
-
-
+        answerText = GetComponent<TMP_Text>();
     }
 
     private void Update()
     {
-        if(!gameManager.InterviewAreActive)
-            FeedbackText();
-
-        if(gameManager.InterviewAreActive)
+        if (gameManager.InterviewAreActive)
         {
             UpdateAnswerScreenText();
         }
+
+        if (gameManager.FeedbackPageActive == true)
+        {
+            FeedbackPageText();
+        }
+        
+        if (gameManager.SummaryPageActive == true)
+        {
+            SummaryPageText();
+        }
     }
 
-    private void FeedbackText()
+    private void SummaryPageText()
     {
-        if (gameManager.InterviewAreActive == false)
+        if (loopDone == false)
         {
-            if (gameManager.PlayerScore < 3)
+            for (int i = 0; i < gameManager.AnswerList.Count; i++)
             {
-                text.text = "* You need to work on this.\n" +
-                    "* You need to work on that.\n" +
-                    "* And you need to work on how.";
+                answerText.text += gameManager.AnswerList[i] + "\n";
             }
-            else if (gameManager.PlayerScore > 3 && gameManager.PlayerScore < 8)
+            loopDone = true;
+        }
+    }
+
+    private void FeedbackPageText()
+    {
+        if(gameManager.InterviewAreActive == false)
+        {
+            if(gameManager.PlayerScore < 4)
             {
-                text.text = "* You need to work on how.\n" +
-                "* You need to work on this.\n" +
-                "* And you need to work on that.";
+                answerText.text = "You only got " + gameManager.PlayerScore + " points.\nWork more on this";
             }
-            else if (gameManager.PlayerScore > 8)
+            else if (gameManager.PlayerScore > 4 || gameManager.PlayerScore < 10)
             {
-                text.text = "* You need to work on that. \n" +
-                "* You need to work on how \n" +
-                "* And you need to work on this";
+                answerText.text = "You got " + gameManager.PlayerScore + " points.\nGood job! But you need to work more on this";
+            }
+            else if (gameManager.PlayerScore > 10)
+            {
+                answerText.text = "You got " + gameManager.PlayerScore + " points!\nFantastic job! You will ace the interview! :D";
             }
         }
     }
+
 
     private void UpdateAnswerScreenText()
     {

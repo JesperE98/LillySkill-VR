@@ -37,6 +37,7 @@ namespace JespersCode
         {
             animator.SetBool("AskingQuestion", true);
             gameManager.UsedBadAnswer = true;
+            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Dåligt svar.");
             uiManager.UIButtonPressed();
         }
 
@@ -47,6 +48,7 @@ namespace JespersCode
         {
             animator.SetBool("AskingQuestion", true);
             gameManager.UsedAverageAnswer = true;
+            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Helt ok svar.");
             uiManager.UIButtonPressed();
         }
 
@@ -78,6 +80,8 @@ namespace JespersCode
         public void NextPageButton()
         {
             gameObject.SetActive(false);
+            gameManager.FeedbackPageActive = false;
+            gameManager.SummaryPageActive = true;
             uiManager.uiPrefabCopyList[2].SetActive(true);
         }
 
