@@ -2301,6 +2301,7 @@ GameObject:
   - component: {fileID: 964055811}
   - component: {fileID: 964055810}
   - component: {fileID: 964055809}
+  - component: {fileID: 964055814}
   - component: {fileID: 964055813}
   m_Layer: 5
   m_Name: Lilly Canvas
@@ -2406,6 +2407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lillyHelpScreen: {fileID: 1697143491}
   canvasText: {fileID: 313026074}
+  audioSource: {fileID: 964055814}
   nextButtonGameObject: {fileID: 1741566625}
   closeButtonGameObject: {fileID: 1065989023}
   picturesOfLilly:
@@ -2424,24 +2426,120 @@ MonoBehaviour:
   informationScreenContent:
   - speechText: Hi!
     picture: 5
+    lillyAudioClip: {fileID: 8300000, guid: 76f682aabd5c52844bd99205a4aa4627, type: 3}
     isActive: 0
     proceedToNextIndex: 1
   - speechText: Welcome to LillySkill VR!
     picture: 3
+    lillyAudioClip: {fileID: 8300000, guid: 79a921038cba6994dbd6de785b8777c1, type: 3}
     isActive: 0
     proceedToNextIndex: 1
   - speechText: So you figured out how to navigate the UI.
     picture: 2
+    lillyAudioClip: {fileID: 8300000, guid: 61405879de8639146a78927adbb98f1f, type: 3}
     isActive: 0
     proceedToNextIndex: 1
   - speechText: Good job!
     picture: 11
-    isActive: 0
-    proceedToNextIndex: 1
-  - speechText: Now piss off! Im busy.
-    picture: 4
+    lillyAudioClip: {fileID: 8300000, guid: 79a921038cba6994dbd6de785b8777c1, type: 3}
     isActive: 0
     proceedToNextIndex: 0
+--- !u!82 &964055814
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964055808}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &976242165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,7 +4337,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2037372652}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
@@ -4935,6 +5033,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6908682063039282625, guid: fe4d77316a0fd7c4391063bb219a3394,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908682063039282625, guid: fe4d77316a0fd7c4391063bb219a3394,
+        type: 3}
+      propertyPath: sounds.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c5b1dc22c740da746b24942c722df27b, type: 3}
+    - target: {fileID: 6908682063039282625, guid: fe4d77316a0fd7c4391063bb219a3394,
+        type: 3}
+      propertyPath: sounds.Array.data[6].name
+      value: Ambience
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908682063039282625, guid: fe4d77316a0fd7c4391063bb219a3394,
+        type: 3}
+      propertyPath: sounds.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c5b1dc22c740da746b24942c722df27b, type: 3}
+    - target: {fileID: 6908682063039282625, guid: fe4d77316a0fd7c4391063bb219a3394,
+        type: 3}
+      propertyPath: sounds.Array.data[7].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908682063039282625, guid: fe4d77316a0fd7c4391063bb219a3394,
+        type: 3}
+      propertyPath: sounds.Array.data[7].name
+      value: Ambience
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908682063039282625, guid: fe4d77316a0fd7c4391063bb219a3394,
+        type: 3}
+      propertyPath: sounds.Array.data[6].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908682063039282625, guid: fe4d77316a0fd7c4391063bb219a3394,
+        type: 3}
+      propertyPath: sounds.Array.data[7].volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8669361923732157002, guid: fe4d77316a0fd7c4391063bb219a3394,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4990,6 +5128,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe4d77316a0fd7c4391063bb219a3394, type: 3}
+--- !u!114 &2037372652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6908682063039282625, guid: fe4d77316a0fd7c4391063bb219a3394,
+    type: 3}
+  m_PrefabInstance: {fileID: 2037372651}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07db9f4cddc966442964e1ee1e860df9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2075881480
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,9 @@ namespace LillyCode
         [Tooltip("Reference to the information text")]
         [SerializeField] private TextMeshProUGUI canvasText;
 
+        [Tooltip("Reference to the audio source")]
+        [SerializeField] private AudioSource audioSource;
+
         [Tooltip("reference to the ''Next Button'' gameobject")]
         [SerializeField] private GameObject nextButtonGameObject;
 
@@ -39,6 +42,7 @@ namespace LillyCode
         {
             public string speechText;
             public int picture;
+            public AudioClip lillyAudioClip;
             public bool isActive;
             public bool proceedToNextIndex;
         }
@@ -51,6 +55,18 @@ namespace LillyCode
             lillyHelpScreen.SetActive(true);
             activeScreen = screenIndex;
             informationScreenContent[activeScreen].isActive = true;
+            audioSource.clip = informationScreenContent[activeScreen].lillyAudioClip;
+            if(audioSource.clip != null)
+            {
+                StartCoroutine(PlayLillyAudio());
+            }
+        }
+
+        IEnumerator PlayLillyAudio()
+        {
+            audioSource.Play();
+            yield return new WaitForSeconds(audioSource.clip.length);
+            EnableUIButtons();
         }
 
         /// <summary>
@@ -69,6 +85,7 @@ namespace LillyCode
         {
             picturesOfLilly[informationScreenContent[activeScreen].picture].SetActive(false);
             informationScreenContent[activeScreen].isActive = false;
+            DisableUIButtons();
             activeScreen++;
             ActivateHelpScreen(activeScreen);
         }
@@ -82,6 +99,30 @@ namespace LillyCode
             lillyHelpScreen.SetActive(false);
         }
 
+        /// <summary>
+        /// Enables the Lilly UI buttons
+        /// </summary>
+        private void EnableUIButtons()
+        {
+            if (informationScreenContent[activeScreen].proceedToNextIndex == true)
+            {
+                nextButtonGameObject.SetActive(true);
+            }
+            else
+            {
+                closeButtonGameObject.SetActive(true);
+            }
+        }
+
+        /// <summary>
+        /// Disables the Lilly UI buttons
+        /// </summary>
+       private void DisableUIButtons()
+        {
+            nextButtonGameObject.SetActive(false);
+            closeButtonGameObject.SetActive(false);
+        }
+
         private void Start()
         {
             ActivateHelpScreen(0);
@@ -93,15 +134,6 @@ namespace LillyCode
             if (informationScreenContent[activeScreen].isActive == true)
             {
                 ShowHelpScreenInformation();
-
-                if(informationScreenContent[activeScreen].proceedToNextIndex == true)
-                {
-                    nextButtonGameObject.SetActive(true);
-                }
-                else
-                {
-                    closeButtonGameObject.SetActive(true);
-                }
             }
 
             // Deactivates the active help screen
