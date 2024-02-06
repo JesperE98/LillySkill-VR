@@ -6,21 +6,8 @@ namespace JespersCode
 {
     public class GameManager : MonoBehaviour
     {
-        protected static GameManager gameManager;
         protected List<string> answerList = new List<string>();
 
-        private void Awake()
-        {
-            if (gameManager == null)
-            {
-                gameManager = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Object.Destroy(gameObject);
-            }
-        }
         /// <summary>
         /// Gets and sets bool value that determines if a interview is active.
         /// </summary>

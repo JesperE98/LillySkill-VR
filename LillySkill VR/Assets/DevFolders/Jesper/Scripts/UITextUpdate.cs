@@ -95,11 +95,11 @@ public class UITextUpdate : MonoBehaviour
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = (gameManager.AnswerPageNumber + ":This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = (gameManager.AnswerPageNumber + ":This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -109,15 +109,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = (gameManager.AnswerPageNumber + ":This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = (gameManager.AnswerPageNumber + ":This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = (gameManager.AnswerPageNumber + ":This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -127,15 +127,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = (gameManager.AnswerPageNumber + ":This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = (gameManager.AnswerPageNumber + ":This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = (gameManager.AnswerPageNumber + ":This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -145,15 +145,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = (gameManager.AnswerPageNumber + ":This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = (gameManager.AnswerPageNumber + ":This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = (gameManager.AnswerPageNumber + ":This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -163,15 +163,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -181,15 +181,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -199,15 +199,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -217,15 +217,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -235,15 +235,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -253,15 +253,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -271,15 +271,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -289,15 +289,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -307,15 +307,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -325,15 +325,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -343,15 +343,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -361,7 +361,7 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
@@ -379,15 +379,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -397,15 +397,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -415,15 +415,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;
@@ -433,15 +433,15 @@ public class UITextUpdate : MonoBehaviour
                         {
                             if (AnswerTextObject[0].activeSelf == true)
                             {
-                                textList[0].text = ("This is answer one");
+                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
                             }
                             else if (AnswerTextObject[1].activeSelf == true)
                             {
-                                textList[1].text = ("This is answer two");
+                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
                             }
                             else if (AnswerTextObject[2].activeSelf == true)
                             {
-                                textList[2].text = ("This is answer three");
+                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
                             }
                         }
                         break;

@@ -10,7 +10,6 @@ namespace JespersCode
 {
     public class UIManager : MonoBehaviour
     {
-        private static UIManager uiManager;
         private GameManager gameManager;
         private Animator animator;
 
@@ -40,17 +39,17 @@ namespace JespersCode
         {
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
+        }
+        
 
+        private void Start()
+        {
 
-            if (uiManager == null) // Moves the UIManager GameObject to the DontDestroyOnLoad page when loading in the play mode.
-            {
-                uiManager = this;
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Object.Destroy(gameObject);
-            }
+            // Manually set some parameters for Demo version of the project.
+            // Will be deleted in the future.
+            gameManager.EasyMode = true;
+            gameManager.InterviewAreActive = true;
+            gameManager.LoadedScene = 1;
 
             for (int i = 0; i < UIPrefabs.Count; i++)
             {
@@ -58,17 +57,6 @@ namespace JespersCode
                 obj.SetActive(false);
                 uiPrefabCopyList.Add(obj);
             }
-        }
-        
-
-        private void Start()
-        {
-            // Manually set some parameters for Demo version of the project.
-            // Will be deleted in the future.
-            gameManager.EasyMode = true;
-            gameManager.InterviewAreActive = true;
-            gameManager.LoadedScene = 1;
-
 
             if (gameManager.LoadedScene == 1)
             {
@@ -187,6 +175,46 @@ namespace JespersCode
                             break;
 
                         case 6:
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
+
+                        case 7:
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
+
+                        case 8:
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
+
+                        case 9:
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[0].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
+
+                        case 10:
                             // Checks if bool are false.
                             if (uiPrefabIsActive == false)
                             {
