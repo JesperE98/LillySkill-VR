@@ -8,23 +8,12 @@ namespace JespersCode
 {
     public class SceneHandler : MonoBehaviour
     {
-        //private static SceneHandler sceneHandler;
         private GameManager gameManager;
 
         private int sceneIndex;
 
         private void Awake()
         {
-            //if (sceneHandler == null)
-            //{
-            //    sceneHandler = this;
-            //    DontDestroyOnLoad(gameObject);
-            //}
-            //else
-            //{
-            //    Object.Destroy(gameObject);
-            //}
-
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
 
@@ -106,6 +95,12 @@ namespace JespersCode
         public void QuitApplciation()
         {
             Application.Quit();
+        }
+
+        public void ResetCurrentScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            gameManager.DefaultValues();
         }
     }
 }

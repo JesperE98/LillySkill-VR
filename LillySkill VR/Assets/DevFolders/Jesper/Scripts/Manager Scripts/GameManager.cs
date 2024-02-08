@@ -6,84 +6,209 @@ namespace JespersCode
 {
     public class GameManager : MonoBehaviour
     {
-        protected static GameManager gameManager;
+        private static GameManager gameManager;
+
+        protected List<string> answerList = new List<string>();
+        protected internal float coroutineTimer = 3f;
+        private bool interviewAreActive, feedbackPageActive, summaryPageActive, easyMode, mediumMode, hardMode;
+        private int interviewerInterest, playerScore, loadedScene, answerPageNumber;
 
         private void Awake()
         {
-            if (gameManager == null)
-            {
-                gameManager = this;
+            if(gameManager == null) 
+            { 
                 DontDestroyOnLoad(gameObject);
             }
-            else
-            {
+            else 
+            { 
                 Object.Destroy(gameObject);
             }
+            DefaultValues();
         }
+
         /// <summary>
         /// Gets and sets bool value that determines if a interview is active.
         /// </summary>
-        public bool InterviewAreActive { get; set; }
+        protected internal bool InterviewAreActive 
+        {
+            get 
+            {
+                return interviewAreActive;
+            }
+            set 
+            {
+                interviewAreActive = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets and sets bool value that determines if a interview is active.
+        /// </summary>
+        protected internal bool FeedbackPageActive
+        {
+            get
+            {
+                return feedbackPageActive;
+            }
+            set
+            {
+                feedbackPageActive = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets and sets bool value that determines if a interview is active.
+        /// </summary>
+        protected internal bool SummaryPageActive
+        {
+            get
+            {
+                return summaryPageActive;
+            }
+            set
+            {
+                summaryPageActive = value;
+            }
+        }
 
         /// <summary>
         /// Gets and sets bool value for initiating Easy Mode interview.
         /// </summary>
-        public bool EasyMode { get; set; }
+        protected internal bool EasyMode
+        {
+            get
+            {
+                return easyMode;
+            }
+            set
+            {
+                easyMode = value;
+            }
+        }
 
         /// <summary>
         /// Gets and sets bool value for initiating Medium Mode interview.
         /// </summary>
-        public bool MediumMode { get; set; }
+        protected internal bool MediumMode
+        {
+            get
+            {
+                return mediumMode;
+            }
+            set
+            {
+                mediumMode = value;
+            }
+        }
 
         /// <summary>
         /// Gets and sets bool value for initiating Hard Mode interview.
         /// </summary>
-        public bool HardMode { get; set; }
-
-        /// <summary>
-        /// Gets and Sets bool value for UI Buttons.
-        /// </summary>
-        public bool UsedWorstAnswer { get; set; }
-
-        /// <summary>
-        /// Gets and Sets bool value UI Buttons.
-        /// </summary>
-        public bool UsedBadAnswer { get; set; }
-
-        /// <summary>
-        /// Gets and Sets bool value UI Buttons.
-        /// </summary>
-        public bool UsedAverageAnswer { get; set; }
-
-        /// <summary>
-        /// Gets and Sets bool value UI Buttons.
-        /// </summary>
-        public bool UsedGoodAnswer { get; set; }
-
-        /// <summary>
-        /// Gets and Sets bool value UI Buttons.
-        /// </summary>
-        public bool UsedBestAnswer { get; set; }
+        protected internal bool HardMode
+        {
+            get
+            {
+                return hardMode;
+            }
+            set
+            {
+                hardMode = value;
+            }
+        }
 
         /// <summary>
         /// Gets and sets int value to controll Interviewer NPC animations.
         /// </summary>
-        public int InterviewerInterest { get; set; }
+        protected internal int InterviewerInterest
+        {
+            get
+            {
+                return interviewerInterest;
+            }
+            set
+            {
+                interviewerInterest = value;
+            }
+        }
 
         /// <summary>
         /// Gets and sets int value to controll what feedback text should be displayed.
         /// </summary>
-        public int PlayerScore { get; set; }
+        protected internal int PlayerScore
+        {
+            get
+            {
+                return playerScore;
+            }
+            set
+            {
+                playerScore = value;
+            }
+        }
 
         /// <summary>
         /// Gets and sets int value for each individual scene and what Game mode it should be.
         /// </summary>
-        public int LoadedScene { get; set; }
+        protected internal int LoadedScene
+        {
+            get
+            {
+                return loadedScene;
+            }
+            set
+            {
+                loadedScene = value;
+            }
+        }
 
         /// <summary>
         /// Gets and sets int value to determine which answer page the user are on and controlls which ansers that should be given to the user.
         /// </summary>
-        public int AnswerPageNumber { get; set; }
-    }
+        protected internal int AnswerPageNumber
+        {
+            get
+            {
+                return answerPageNumber;
+            }
+            set
+            {
+                answerPageNumber = value;
+            }
+        }
 
+        protected internal List<string> AnswerList 
+        {
+            get 
+            {
+                return answerList;
+            } 
+            set 
+            {
+                answerList = value;
+            } 
+        }
+        
+        protected internal void DefaultValues()
+        {
+            loadedScene = 1;
+            easyMode = true;
+            interviewerInterest = 2;
+            answerPageNumber = 1;
+            playerScore = 0;
+            feedbackPageActive = false;
+            summaryPageActive = false;
+            answerList.Clear();
+        }
+
+        public virtual void AddAnswerToList(string text)
+        {
+            answerList.Add(text);
+        }
+
+        public virtual IEnumerator InterviewIntro()
+        {
+            yield return new WaitForSeconds(coroutineTimer);
+            interviewAreActive = true;
+        }
+    }
 }

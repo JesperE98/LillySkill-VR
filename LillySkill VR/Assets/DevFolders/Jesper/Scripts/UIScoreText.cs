@@ -1,28 +1,30 @@
-using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
-public class UIScoreText : MonoBehaviour
+namespace JespersCode
 {
-    private GameManager gameManager;
-    private TMP_Text text;
-
-    private void Start()
+    public class UIScoreText : MonoBehaviour
     {
-        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        text = GetComponent<TMP_Text>();
+        private GameManager gameManager;
+        private TMP_Text text;
 
-        
-    }
-
-    private void FixedUpdate()
-    {
-        if(gameManager.InterviewAreActive == false)
+        private void Start()
         {
-            text.text = $"{gameManager.PlayerScore} / 20";
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            text = GetComponent<TMP_Text>();
+
+
+        }
+
+        private void FixedUpdate()
+        {
+            if (gameManager.InterviewAreActive == false)
+            {
+                text.text = $"{gameManager.PlayerScore} / 20";
+            }
         }
     }
 }
