@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.spatialBlend = s.spatialBlend;
             s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = s.mixerGroup;
         }
     }
 
