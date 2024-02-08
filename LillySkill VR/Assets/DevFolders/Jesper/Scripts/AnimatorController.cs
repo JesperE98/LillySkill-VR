@@ -1,51 +1,54 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using JespersCode;
 
-public class AnimatorController : MonoBehaviour
+namespace JespersCode
 {
-    private Animator _animator;
-    private GameManager _gameManager;
-
-    [SerializeField] private int value = 2;
-    [SerializeField] private float dampTime;
-
-    private void Awake()
+    public class AnimatorController : MonoBehaviour
     {
-        _animator = GetComponent<Animator>();
-        _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-    }
+        private Animator _animator;
+        private GameManager _gameManager;
 
-    private void Update()
-    {
-       if(_gameManager.InterviewAreActive == true)
+        [SerializeField] private int value = 2;
+        [SerializeField] private float dampTime;
+
+        private void Awake()
         {
-            AnimatorControls();
+            _animator = GetComponent<Animator>();
+            _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         }
-        //AnimatorControls();
-    }
 
-    private void AnimatorControls()
-    {
-        value = _gameManager.InterviewerInterest;
-        switch(_gameManager.InterviewerInterest)
+        private void Update()
         {
-            case 1:
-                _animator.SetFloat("Blend", 0f, dampTime, Time.deltaTime);
-                break;
+            if (_gameManager.InterviewAreActive == true)
+            {
+                AnimatorControls();
+            }
+            //AnimatorControls();
+        }
 
-            case 2:
-                _animator.SetFloat("Blend", 1.0f, dampTime, Time.deltaTime);
-                break;
+        private void AnimatorControls()
+        {
+            value = _gameManager.InterviewerInterest;
+            switch (_gameManager.InterviewerInterest)
+            {
+                case 1:
+                    _animator.SetFloat("Blend", 0f, dampTime, Time.deltaTime);
+                    break;
 
-            case 3:
-                _animator.SetFloat("Blend", 2.0f, dampTime, Time.deltaTime);
-                break;
+                case 2:
+                    _animator.SetFloat("Blend", 1.0f, dampTime, Time.deltaTime);
+                    break;
 
-            case 4:
-                _animator.SetFloat("Blend", 3.0f, dampTime, Time.deltaTime);
-                break;
+                case 3:
+                    _animator.SetFloat("Blend", 2.0f, dampTime, Time.deltaTime);
+                    break;
+
+                case 4:
+                    _animator.SetFloat("Blend", 3.0f, dampTime, Time.deltaTime);
+                    break;
+            }
         }
     }
+
 }

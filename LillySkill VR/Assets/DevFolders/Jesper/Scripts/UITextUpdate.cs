@@ -1,4 +1,3 @@
-using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,451 +6,455 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UITextUpdate : MonoBehaviour
+namespace JespersCode
 {
-    private GameManager gameManager;
-    private UIManager uiManager;
-    private TMP_Text answerText;
-    private bool loopDone = false;
-
-    [Tooltip("Generic List to store parent objects for the answertexts")]
-    [SerializeField]
-    private List<GameObject> AnswerTextObject = new List<GameObject>();
-    [Tooltip("Generic TMP_Text List to store TMP_Text components")]
-    [SerializeField]
-    private List<TMP_Text> textList = new List<TMP_Text>();
-
-    private void Start()
+    public class UITextUpdate : MonoBehaviour
     {
-        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+        private GameManager gameManager;
+        private UIManager uiManager;
+        private TMP_Text answerText;
+        private bool loopDone = false;
 
-        answerText = GetComponent<TMP_Text>();
-    }
+        [Tooltip("Generic List to store parent objects for the answertexts")]
+        [SerializeField]
+        private List<GameObject> AnswerTextObject = new List<GameObject>();
+        [Tooltip("Generic TMP_Text List to store TMP_Text components")]
+        [SerializeField]
+        private List<TMP_Text> textList = new List<TMP_Text>();
 
-    private void Update()
-    {
-        if (gameManager.InterviewAreActive)
+        private void Start()
         {
-            UpdateAnswerScreenText();
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+
+            answerText = GetComponent<TMP_Text>();
         }
 
-        if (gameManager.FeedbackPageActive == true)
+        private void Update()
         {
-            FeedbackPageText();
-        }
-        
-        if (gameManager.SummaryPageActive == true)
-        {
-            SummaryPageText();
-        }
-    }
-
-    private void SummaryPageText()
-    {
-        if (loopDone == false)
-        {
-            for (int i = 0; i < gameManager.AnswerList.Count; i++)
+            if (gameManager.InterviewAreActive)
             {
-                answerText.text += gameManager.AnswerList[i] + "\n";
+                UpdateAnswerScreenText();
             }
-            loopDone = true;
-        }
-    }
 
-    private void FeedbackPageText()
-    {
-        if(gameManager.InterviewAreActive == false)
-        {
-            if(gameManager.PlayerScore < 4)
+            if (gameManager.FeedbackPageActive == true)
             {
-                answerText.text = "You only got " + gameManager.PlayerScore + " points.\nWork more on this";
+                FeedbackPageText();
             }
-            else if (gameManager.PlayerScore > 4 || gameManager.PlayerScore < 10)
+
+            if (gameManager.SummaryPageActive == true)
             {
-                answerText.text = "You got " + gameManager.PlayerScore + " points.\nGood job! But you need to work more on this";
-            }
-            else if (gameManager.PlayerScore > 10)
-            {
-                answerText.text = "You got " + gameManager.PlayerScore + " points!\nFantastic job! You will ace the interview! :D";
+                SummaryPageText();
             }
         }
-    }
 
-
-    private void UpdateAnswerScreenText()
-    {
-        switch(gameManager.EasyMode) 
+        private void SummaryPageText()
         {
-            case true:
-                switch(gameManager.AnswerPageNumber)
+            if (loopDone == false)
+            {
+                for (int i = 0; i < gameManager.AnswerList.Count; i++)
                 {
-                    case 1:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 2:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 3:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 4:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 5:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 6:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 7:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 8:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 9:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 10:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 11:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 12:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 13:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 14:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 15:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 16:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = ("This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = ("This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 17:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 18:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 19:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
-
-                    case 20:
-                        if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-                        {
-                            if (AnswerTextObject[0].activeSelf == true)
-                            {
-                                textList[0].text = (gameManager.AnswerPageNumber + ": This is answer one");
-                            }
-                            else if (AnswerTextObject[1].activeSelf == true)
-                            {
-                                textList[1].text = (gameManager.AnswerPageNumber + ": This is answer two");
-                            }
-                            else if (AnswerTextObject[2].activeSelf == true)
-                            {
-                                textList[2].text = (gameManager.AnswerPageNumber + ": This is answer three");
-                            }
-                        }
-                        break;
+                    answerText.text += gameManager.AnswerList[i] + "\n";
                 }
-                break;
-
-            case false:
-                Debug.LogWarning("Easy Mode isn't true! Make sure it's true in order for code to work!");
-                break;
+                loopDone = true;
+            }
         }
 
+        private void FeedbackPageText()
+        {
+            if (gameManager.InterviewAreActive == false)
+            {
+                if (gameManager.PlayerScore < 4)
+                {
+                    answerText.text = "You only got " + gameManager.PlayerScore + " points.\nWork more on this";
+                }
+                else if (gameManager.PlayerScore > 4 || gameManager.PlayerScore < 10)
+                {
+                    answerText.text = "You got " + gameManager.PlayerScore + " points.\nGood job! But you need to work more on this";
+                }
+                else if (gameManager.PlayerScore > 10)
+                {
+                    answerText.text = "You got " + gameManager.PlayerScore + " points!\nFantastic job! You will ace the interview! :D";
+                }
+            }
+        }
+
+
+        private void UpdateAnswerScreenText()
+        {
+            switch (gameManager.EasyMode)
+            {
+                case true:
+                    switch (gameManager.AnswerPageNumber)
+                    {
+                        case 1:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 2:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 3:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 4:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 5:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 6:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 7:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 8:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 9:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 10:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 11:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 12:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 13:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 14:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 15:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 16:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 17:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 18:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 19:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+
+                        case 20:
+                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            {
+                                if (AnswerTextObject[0].activeSelf == true)
+                                {
+                                    textList[0].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer one");
+                                }
+                                else if (AnswerTextObject[1].activeSelf == true)
+                                {
+                                    textList[1].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer two");
+                                }
+                                else if (AnswerTextObject[2].activeSelf == true)
+                                {
+                                    textList[2].text = ("Page " + gameManager.AnswerPageNumber + ": This is answer three");
+                                }
+                            }
+                            break;
+                    }
+                    break;
+
+                case false:
+                    Debug.LogWarning("Easy Mode isn't true! Make sure it's true in order for code to work!");
+                    break;
+            }
+
+        }
     }
 }
+

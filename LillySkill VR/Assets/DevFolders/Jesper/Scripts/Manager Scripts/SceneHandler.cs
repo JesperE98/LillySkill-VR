@@ -100,6 +100,7 @@ namespace JespersCode
         public void ResetCurrentScene()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            gameManager.DefaultValues();
         }
     }
 }

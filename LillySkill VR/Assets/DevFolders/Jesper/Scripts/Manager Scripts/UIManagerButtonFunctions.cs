@@ -26,8 +26,9 @@ namespace JespersCode
         public void UsedWorstAnswerButton()
         {
             animator.SetBool("AskingQuestion", true);
-            gameManager.UsedWorstAnswer = true;
-            uiManager.UIButtonPressed();
+            gameManager.InterviewerInterest -= 1;
+            gameManager.PlayerScore += 0;
+            uiManager.StartUIDeactivation();
         }
 
         /// <summary>
@@ -36,9 +37,10 @@ namespace JespersCode
         public void UsedBadAnswerButton()
         {
             animator.SetBool("AskingQuestion", true);
-            gameManager.UsedBadAnswer = true;
             gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Dåligt svar.");
-            uiManager.UIButtonPressed();
+            gameManager.InterviewerInterest -= 1;
+            gameManager.PlayerScore += 0;
+            uiManager.StartUIDeactivation();
         }
 
         /// <summary>
@@ -47,9 +49,10 @@ namespace JespersCode
         public void UsedAverageAnswerButton()
         {
             animator.SetBool("AskingQuestion", true);
-            gameManager.UsedAverageAnswer = true;
             gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Helt ok svar.");
-            uiManager.UIButtonPressed();
+            gameManager.InterviewerInterest += 0;
+            gameManager.PlayerScore += 1;
+            uiManager.StartUIDeactivation();
         }
 
         /// <summary>
@@ -58,8 +61,9 @@ namespace JespersCode
         public void UsedGoodAnswerButton()
         {
             animator.SetBool("AskingQuestion", true);
-            gameManager.UsedGoodAnswer = true;
-            uiManager.UIButtonPressed();
+            gameManager.InterviewerInterest += 1;
+            gameManager.PlayerScore += 2;
+            uiManager.StartUIDeactivation();
         }
 
         /// <summary>
@@ -68,8 +72,9 @@ namespace JespersCode
         public void UsedBestAnswerButton()
         {
             animator.SetBool("AskingQuestion", true);
-            gameManager.UsedBestAnswer = true;
-            uiManager.UIButtonPressed();
+            gameManager.InterviewerInterest += 1;
+            gameManager.PlayerScore += 3;
+            uiManager.StartUIDeactivation();
         }
 
 
