@@ -40,11 +40,14 @@ namespace LillyCode
         [System.Serializable]
         public class LillyInformationScreen
         {
+            [HideInInspector]
+            public int index;
             public string speechText;
             public int picture;
             public AudioClip lillyAudioClip;
-            public bool isActive;
             public bool proceedToNextIndex;
+            [HideInInspector]
+            public bool isActive;
         }
 
         /// <summary>
@@ -52,14 +55,19 @@ namespace LillyCode
         /// </summary>
         public void ActivateHelpScreen(int screenIndex)
         {
-            lillyHelpScreen.SetActive(true);
-            activeScreen = screenIndex;
-            informationScreenContent[activeScreen].isActive = true;
-            audioSource.clip = informationScreenContent[activeScreen].lillyAudioClip;
-            if(audioSource.clip != null)
+            if (informationScreenContent != null)
             {
-                StartCoroutine(PlayLillyAudio());
+                lillyHelpScreen.SetActive(true);
+                activeScreen = screenIndex;
+                informationScreenContent[activeScreen].isActive = true;
+                audioSource.clip = informationScreenContent[activeScreen].lillyAudioClip;
+                if (audioSource.clip != null)
+                {
+                    StartCoroutine(PlayLillyAudio());
+                }
             }
+            else
+                return;
         }
 
         IEnumerator PlayLillyAudio()
@@ -131,7 +139,7 @@ namespace LillyCode
         private void Update()
         {
             // Checks for the active screen and shows the information
-            if (informationScreenContent[activeScreen].isActive == true)
+            if (informationScreenContent[activeScreen].isActive == true && informationScreenContent != null)
             {
                 ShowHelpScreenInformation();
             }
