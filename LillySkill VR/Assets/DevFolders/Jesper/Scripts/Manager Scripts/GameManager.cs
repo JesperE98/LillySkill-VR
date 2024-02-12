@@ -10,7 +10,8 @@ namespace JespersCode
 
         protected List<string> answerList = new List<string>();
         protected internal float coroutineTimer = 3f;
-        private bool interviewAreActive, feedbackPageActive, summaryPageActive, easyMode, mediumMode, hardMode;
+        private bool fadeInComplete, fadeOutComplete, lillyIntroDone, interviewerIntroDone, interviewAreActive, 
+            feedbackPageActive, summaryPageActive, informationPageActive, easyMode, mediumMode, hardMode;
         private int interviewerInterest, playerScore, loadedScene, answerPageNumber;
 
         private void Awake()
@@ -24,6 +25,54 @@ namespace JespersCode
                 Object.Destroy(gameObject);
             }
             DefaultValues();
+        }
+
+        protected internal bool FadeInComplete
+        {
+            get
+            {
+                return fadeInComplete;
+            }
+            set
+            {
+                fadeInComplete = value;
+            }
+        }
+
+        protected internal bool FadeOutComplete
+        {
+            get
+            {
+                return fadeOutComplete;
+            }
+            set
+            {
+                fadeOutComplete = value;
+            }
+        }
+
+        protected internal bool LillyIntroDone
+        {
+            get
+            {
+                return lillyIntroDone;
+            }
+            set
+            {
+                lillyIntroDone = value;
+            }
+        }
+
+        protected internal bool InterviewerIntroDone
+        {
+            get
+            {
+                return interviewerIntroDone;
+            }
+            set
+            {
+                interviewerIntroDone = value;
+            }
         }
 
         /// <summary>
@@ -176,6 +225,18 @@ namespace JespersCode
             }
         }
 
+        protected internal bool InformationPageActive
+        {
+            get
+            {
+                return informationPageActive;
+            }
+            set
+            {
+                informationPageActive = value;
+            }
+        }
+
         protected internal List<string> AnswerList 
         {
             get 
@@ -190,6 +251,8 @@ namespace JespersCode
         
         protected internal void DefaultValues()
         {
+            lillyIntroDone = false;
+            interviewerIntroDone = false;
             loadedScene = 1;
             easyMode = true;
             interviewerInterest = 2;
@@ -197,7 +260,10 @@ namespace JespersCode
             playerScore = 0;
             feedbackPageActive = false;
             summaryPageActive = false;
+            informationPageActive = false;
             answerList.Clear();
+            fadeInComplete = false;
+            fadeOutComplete = false;
         }
 
         public virtual void AddAnswerToList(string text)

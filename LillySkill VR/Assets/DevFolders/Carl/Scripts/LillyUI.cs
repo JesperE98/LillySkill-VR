@@ -4,6 +4,8 @@ using UnityEngine;
 using TMPro;
 using System;
 using System.Linq;
+using Unity.VisualScripting;
+using JespersCode;
 
 namespace LillyCode
 {
@@ -36,6 +38,8 @@ namespace LillyCode
 
         // Keeps track of the active screen
         private int activeScreen;
+        private UIManager uiManager;
+        private GameManager gameManager;
 
         [System.Serializable]
         public class LillyInformationScreen
@@ -105,6 +109,7 @@ namespace LillyCode
         {
             informationScreenContent[activeScreen].isActive = false;
             lillyHelpScreen.SetActive(false);
+            gameManager.LillyIntroDone = true;
         }
 
         /// <summary>
@@ -130,24 +135,48 @@ namespace LillyCode
             nextButtonGameObject.SetActive(false);
             closeButtonGameObject.SetActive(false);
         }
-
-        private void Start()
+        private void Awake()
         {
-            ActivateHelpScreen(0);
+            uiManager = FindAnyObjectByType<UIManager>();
+            gameManager = FindAnyObjectByType<GameManager>();
         }
 
         private void Update()
         {
+            if (gameManager.FadeInComplete == true)
+            {
+                ActivateHelpScreen(0);
+            }
+
+            gameManager.FadeInComplete = false;
+
             // Checks for the active screen and shows the information
             if (informationScreenContent[activeScreen].isActive == true && informationScreenContent != null)
             {
                 ShowHelpScreenInformation();
             }
 
-            // Deactivates the active help screen
-            else
+            //// Deactivates the active help screen
+            //else
+            //{
+            //    DeactivateLillyHelpScreen();
+            //}
+
+            if(activeScreen == 2)
             {
-                DeactivateLillyHelpScreen();
+                uiManager.HighlightUIQuestionScreen();
+            }
+            else if(activeScreen == 3)
+            {
+                uiManager.HighlightUIInformationScreenScreen();
+            }
+            else if(activeScreen == 5)
+            {
+                uiManager.uiPrefabCopyList[2].SetActive(false);
+            }
+            else if(activeScreen == 6)
+            {
+                uiManager.DeactivateHighlightedUI();
             }
         }
     }

@@ -9,7 +9,7 @@ namespace JespersCode
         private UIManager uiManager;
         private GameManager gameManager;
         private Animator animator;
-
+        private AudioManager audioManager;
         private GameObject uiPrefabCopy;
 
 
@@ -18,6 +18,7 @@ namespace JespersCode
             uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
             gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
             animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
+            audioManager = FindAnyObjectByType<AudioManager>();
         }
 
         /// <summary>
@@ -29,6 +30,7 @@ namespace JespersCode
             gameManager.InterviewerInterest -= 1;
             gameManager.PlayerScore += 0;
             uiManager.StartUIDeactivation();
+            audioManager.PlayAudioClip();
         }
 
         /// <summary>
@@ -41,6 +43,7 @@ namespace JespersCode
             gameManager.InterviewerInterest -= 1;
             gameManager.PlayerScore += 0;
             uiManager.StartUIDeactivation();
+            audioManager.PlayAudioClip();
         }
 
         /// <summary>
@@ -53,6 +56,7 @@ namespace JespersCode
             gameManager.InterviewerInterest += 0;
             gameManager.PlayerScore += 1;
             uiManager.StartUIDeactivation();
+            audioManager.PlayAudioClip();
         }
 
         /// <summary>
@@ -64,6 +68,7 @@ namespace JespersCode
             gameManager.InterviewerInterest += 1;
             gameManager.PlayerScore += 2;
             uiManager.StartUIDeactivation();
+            audioManager.PlayAudioClip();
         }
 
         /// <summary>
@@ -75,6 +80,7 @@ namespace JespersCode
             gameManager.InterviewerInterest += 1;
             gameManager.PlayerScore += 3;
             uiManager.StartUIDeactivation();
+            audioManager.PlayAudioClip();
         }
 
 
@@ -87,7 +93,7 @@ namespace JespersCode
             gameObject.SetActive(false);
             gameManager.FeedbackPageActive = false;
             gameManager.SummaryPageActive = true;
-            uiManager.uiPrefabCopyList[2].SetActive(true);
+            uiManager.uiPrefabCopyList[4].SetActive(true);
         }
 
         //////////////////////////////////////////////// The section below are code ONLY for the Start Menu Scene UI Prefabs /////////////////////////////////////////

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1759993575490215040}
   - component: {fileID: 8686987240105563238}
   - component: {fileID: 8665987819752612309}
+  - component: {fileID: 7357514926466303154}
   m_Layer: 5
   m_Name: Information Screen
   m_TagString: Untagged
@@ -26,18 +27,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414001814303662385}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.005}
+  m_LocalRotation: {x: 0.06162845, y: 0.70441604, z: -0.06162845, w: 0.70441604}
+  m_LocalPosition: {x: 0, y: 0, z: -1.462}
   m_LocalScale: {x: 0.0019913318, y: 0.0019913318, z: 0.028447598}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3309385800081713528}
   - {fileID: 1587698443003253463}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 10, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 4.4560547, y: 1.8499756}
+  m_AnchoredPosition: {x: 1.3380127, y: 1.0499878}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1759993575490215040
@@ -85,7 +86,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8665987819752612309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,6 +104,22 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7357514926466303154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414001814303662385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65a2a60407bb0b64d88977c7ba99750b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnswerTextObject:
+  - {fileID: 8337401638087616617}
+  textList:
+  - {fileID: 1392802187549475574}
 --- !u!1 &2675965082576410490
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,8 +185,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hej! Detta \xE4r ett exempel p\xE5 en textruta. H\xE4r kommer all text
-    skrivas f\xF6r att ge dig den informationen du kan beh\xF6va som anv\xE4ndare."
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -257,7 +273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1587698443003253463
 RectTransform:
   m_ObjectHideFlags: 0
