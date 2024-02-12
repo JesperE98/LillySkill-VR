@@ -3104,6 +3104,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 24300002, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
         type: 2}
+    - target: {fileID: 6908682063039282625, guid: fe4d77316a0fd7c4391063bb219a3394,
+        type: 3}
+      propertyPath: sounds.Array.data[6].spatialBlend
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8669361923732157002, guid: fe4d77316a0fd7c4391063bb219a3394,
         type: 3}
       propertyPath: m_LocalPosition.x
