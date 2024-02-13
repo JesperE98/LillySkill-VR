@@ -1141,6 +1141,8 @@ MonoBehaviour:
   lillyHelpScreen: {fileID: 425822001617803837}
   canvasText: {fileID: 5985973884022500278}
   audioSource: {fileID: 7542930601062069025}
+  voiceMixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+    type: 2}
   nextButtonGameObject: {fileID: 4449300986380596098}
   closeButtonGameObject: {fileID: 982764351115695512}
   picturesOfLilly:
@@ -1157,7 +1159,8 @@ MonoBehaviour:
   - {fileID: 6729809735610207525}
   - {fileID: 6760724113865514471}
   informationScreenContent:
-  - speechText: 
+  - index: 0
+    speechText: 
     picture: 0
     lillyAudioClip: {fileID: 0}
     proceedToNextIndex: 0

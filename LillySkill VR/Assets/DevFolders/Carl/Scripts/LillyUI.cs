@@ -6,6 +6,7 @@ using System;
 using System.Linq;
 using Unity.VisualScripting;
 using JespersCode;
+using UnityEngine.Audio;
 
 namespace LillyCode
 {
@@ -19,6 +20,9 @@ namespace LillyCode
 
         [Tooltip("Reference to the audio source")]
         [SerializeField] private AudioSource audioSource;
+
+        [Tooltip("Reference to the audiomixer's voice output")]
+        [SerializeField] private AudioMixerGroup voiceMixerGroup;
 
         [Tooltip("reference to the ''Next Button'' gameobject")]
         [SerializeField] private GameObject nextButtonGameObject;
@@ -38,6 +42,9 @@ namespace LillyCode
 
         // Keeps track of the active screen
         private int activeScreen;
+
+
+
         private UIManager uiManager;
         private GameManager gameManager;
 
@@ -65,6 +72,7 @@ namespace LillyCode
                 activeScreen = screenIndex;
                 informationScreenContent[activeScreen].isActive = true;
                 audioSource.clip = informationScreenContent[activeScreen].lillyAudioClip;
+                audioSource.outputAudioMixerGroup = voiceMixerGroup;
                 if (audioSource.clip != null)
                 {
                     StartCoroutine(PlayLillyAudio());

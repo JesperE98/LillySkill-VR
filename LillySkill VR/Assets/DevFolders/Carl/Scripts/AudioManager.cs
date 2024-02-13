@@ -1,9 +1,7 @@
 using JespersCode;
 using System;
 using System.Collections;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
-using static Unity.VisualScripting.Member;
 
 public class AudioManager : MonoBehaviour
 {
@@ -27,6 +25,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.spatialBlend = s.spatialBlend;
             s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = s.mixerGroup;
         }
     }
 
@@ -43,6 +42,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.spatialBlend = s.spatialBlend;
             s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = s.mixerGroup;
         }
 
         if (gameManager.LillyIntroDone == true)
