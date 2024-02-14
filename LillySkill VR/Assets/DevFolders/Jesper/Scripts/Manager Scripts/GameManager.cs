@@ -315,14 +315,14 @@ namespace JespersCode
             answerList.Add(text);
         }
 
-        /// <summary>
-        /// IEnumerator that starts the interview.
-        /// </summary>
-        /// <returns></returns>
-        public virtual IEnumerator InterviewIntro()
-        {
-            yield return new WaitForSeconds(coroutineTimer);
-            interviewAreActive = true;
-        }
+        ///// <summary>
+        ///// IEnumerator that starts the interview.
+        ///// </summary>
+        ///// <returns></returns>
+        //public virtual IEnumerator InterviewIntro()
+        //{
+        //    yield return new WaitForSeconds(coroutineTimer);
+        //    interviewAreActive = true;
+        //}
     }
 }

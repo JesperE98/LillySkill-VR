@@ -75,11 +75,11 @@ namespace JespersCode
             else if (gameManager.InterviewerInterest <= 1)
                 gameManager.InterviewerInterest = 1;
 
-            if (gameManager.InterviewerIntro == true)
-            {
-                StartCoroutine(gameManager.InterviewIntro());
-                gameManager.InterviewerIntro = false;
-            }
+            //if (gameManager.InterviewerIntro == true)
+            //{
+            //    StartCoroutine(gameManager.InterviewIntro());
+            //    gameManager.InterviewerIntro = false;
+            //}
 
         }
 

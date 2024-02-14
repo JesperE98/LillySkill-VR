@@ -45,7 +45,56 @@ namespace LillyCode
 
         private UIManager uiManager;
         private GameManager gameManager;
+        private void Awake()
+        {
+            uiManager = FindAnyObjectByType<UIManager>();
+            gameManager = FindAnyObjectByType<GameManager>();
+        }
 
+        private void Start()
+        {
+            activeScreen = 0;
+
+            if(gameManager.AnswerPageNumber >= 10) { ActivateHelpScreen(0); }
+        }
+        private void Update()
+        {
+            if (gameManager.FadeInComplete == true)
+            {
+                ActivateHelpScreen(0);
+            }
+
+            gameManager.FadeInComplete = false;
+
+            // Checks for the active screen and shows the information
+            if (informationScreenContent[activeScreen].isActive == true && informationScreenContent != null)
+            {
+                ShowHelpScreenInformation();
+            }
+
+            if(gameManager.LillyIntro == false && gameManager.LillyOutro == false)
+            {
+                if (activeScreen == 2)
+                {
+                    uiManager.uiPrefabCopyList[1].SetActive(true);
+                }
+                else if (activeScreen == 3)
+                {
+                    uiManager.uiPrefabCopyList[1].SetActive(false);
+                    uiManager.uiPrefabCopyList[2].SetActive(true);
+                }
+                else if (activeScreen == 4)
+                {
+                    uiManager.uiPrefabCopyList[1].SetActive(true);
+                    uiManager.uiPrefabCopyList[2].SetActive(false);
+                }
+                else if (activeScreen == 6)
+                {
+                    uiManager.uiPrefabCopyList[1].SetActive(false);
+                    uiManager.uiPrefabCopyList[2].SetActive(false);
+                }
+            }
+        }
         [System.Serializable]
         public class LillyInformationScreen
         {
@@ -80,7 +129,7 @@ namespace LillyCode
                 return;
         }
 
-        IEnumerator PlayLillyAudio()
+        public IEnumerator PlayLillyAudio()
         {
             audioSource.Play();
             yield return new WaitForSeconds(audioSource.clip.length);
@@ -115,7 +164,7 @@ namespace LillyCode
         {
             informationScreenContent[activeScreen].isActive = false;
             lillyHelpScreen.SetActive(false);
-            gameManager.LillyIntroDone = true;
+            gameManager.LillyIntro = true;
         }
 
         /// <summary>
@@ -141,45 +190,7 @@ namespace LillyCode
             nextButtonGameObject.SetActive(false);
             closeButtonGameObject.SetActive(false);
         }
-        private void Awake()
-        {
-            uiManager = FindAnyObjectByType<UIManager>();
-            gameManager = FindAnyObjectByType<GameManager>();
-        }
 
-        private void Update()
-        {
-            if (gameManager.FadeInComplete == true)
-            {
-                ActivateHelpScreen(0);
-            }
-
-            gameManager.FadeInComplete = false;
-
-            // Checks for the active screen and shows the information
-            if (informationScreenContent[activeScreen].isActive == true && informationScreenContent != null)
-            {
-                ShowHelpScreenInformation();
-            }
-
-
-            if(activeScreen == 2)
-            {
-                uiManager.HighlightUIQuestionScreen();
-            }
-            else if(activeScreen == 3)
-            {
-                uiManager.HighlightUIInformationScreenScreen();
-            }
-            else if(activeScreen == 5)
-            {
-                uiManager.uiPrefabCopyList[2].SetActive(false);
-            }
-            else if(activeScreen == 6)
-            {
-                uiManager.DeactivateHighlightedUI();
-            }
-        }
     }
 }
 
