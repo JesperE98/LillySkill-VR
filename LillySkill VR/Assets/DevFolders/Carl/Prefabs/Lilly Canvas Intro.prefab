@@ -112,17 +112,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217371483098408518}
-  m_LocalRotation: {x: 0, y: 0.42261827, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 0, y: 0, z: -1.164}
-  m_LocalScale: {x: 0.035836965, y: 0.035836965, z: 0.02389131}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 0, z: -0.242}
+  m_LocalScale: {x: 0.103596, y: 0.103596, z: 0.069064}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6940155980247588960}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 50, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.0379639, y: 1.2999878}
+  m_AnchoredPosition: {x: 1.2629395, y: 1.3309937}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3260742316990298980
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &3697998367266644409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,6 +299,8 @@ MonoBehaviour:
   lillyHelpScreen: {fileID: 5321313618568436674}
   canvasText: {fileID: 2455527029308535079}
   audioSource: {fileID: 3119106453640750566}
+  voiceMixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+    type: 2}
   nextButtonGameObject: {fileID: 7639713194679418383}
   closeButtonGameObject: {fileID: 5536642061065013656}
   picturesOfLilly:
@@ -319,70 +321,70 @@ MonoBehaviour:
     speechText: "Hej och v\xE4lkommen till denna demoversion av Lilly Skill VR. Mitt
       namn \xE4r Lilly och jag kommer att vara din guide genom denna upplevelse."
     picture: 5
-    lillyAudioClip: {fileID: 8300000, guid: 06b6173143f86624da152ab8488f0dac, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: 27619f68a6719a94581fa879c2508908, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "I denna version kommer du f\xE5 testa p\xE5 en upplevelse d\xE4r
       du sitter och tr\xE4nar p\xE5 olika fr\xE5gor som kan dyka upp under en arbetsintervju."
     picture: 0
-    lillyAudioClip: {fileID: 8300000, guid: ddb0671cfab411248b525fa1a23aad80, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: f9c1dadb1c2aa614a8c0e967ec0beb09, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Dessa fr\xE5gor kommer att presenteras framf\xF6r dig tillsammans
       med olika svarsalternativ."
     picture: 6
-    lillyAudioClip: {fileID: 8300000, guid: 97ef915f2058d1f4f9527356613c4910, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: 714a46a9ec4301446bc7ac958811d297, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Intervjuaren kommer att st\xE4lla en fr\xE5ga muntligt och efter
       det kommer \xE4ven fr\xE5gan att visas i textform i en separat ruta."
     picture: 0
-    lillyAudioClip: {fileID: 8300000, guid: 6de421585dba2e54ca0bb50537841162, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: a957fa592cf62ff40b92e8b77270b8f4, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Genom att trycka p\xE5 en av knapparna kommer respektive svar att
       visas."
     picture: 1
-    lillyAudioClip: {fileID: 8300000, guid: 6c8a0947988d4864a8d7fb403c97ac6b, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: dfdf161bbf34d1c4d84791e7d5de7d5f, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "N\xE4r du k\xE4nner att du har det svar du vill ge, trycker du p\xE5
       knappen \u201DGodk\xE4nn svar\u201D."
     picture: 0
-    lillyAudioClip: {fileID: 8300000, guid: 806365967c71db843ba7e4b88c0a3244, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: c7f3998528985564a86db152917aa87e, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Med allt det sagt. Vad s\xE4gs som att vi b\xF6rjar med \xF6vningen?"
     picture: 3
-    lillyAudioClip: {fileID: 8300000, guid: 68044063e3b50d04ea335f26a1a253f5, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: fc1d02c3be58bbc45b796049577dbbc8, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Oh! En sak till innan vi b\xF6rjar."
     picture: 1
-    lillyAudioClip: {fileID: 8300000, guid: 193d4fcf750ac4a4f8eb24763435506e, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: 7a25cfa73fde9494f99832d3c1a0b34b, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Var inte r\xE4dd f\xF6r att st\xE4lla fr\xE5gor till skaparna om
       det \xE4r n\xE5got du k\xE4mpar med. De finns d\xE4r som support om du beh\xF6ver
       hj\xE4lp."
     picture: 2
-    lillyAudioClip: {fileID: 8300000, guid: 3088c70d96eafaf438878b1d12a85e93, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: fed0a5a536001d0488d352650870f533, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Jag \xF6nskar dig lycka till och s\xE5 h\xF6res vi igen efter du
       \xE4r klar med alla fr\xE5gorna."
     picture: 11
-    lillyAudioClip: {fileID: 8300000, guid: 0e5ebabce4b9c294e834bdd8ff56858b, type: 3}
-    proceedToNextIndex: 0
+    lillyAudioClip: {fileID: 8300000, guid: 82c1cedda8da2e54faa30fecf2eb47c9, type: 3}
+    lastScreen: 1
     isActive: 0
 --- !u!1 &959721454449760591
 GameObject:
@@ -395,7 +397,7 @@ GameObject:
   - component: {fileID: 2896748888971589}
   - component: {fileID: 7582791576627086922}
   - component: {fileID: 2927908613294505214}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "N\xE4sta"
+  m_text: Next
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1365b9cab70e9e4ba55c3ca91f6be9e, type: 2}
   m_sharedMaterial: {fileID: -6744970210627602415, guid: e1365b9cab70e9e4ba55c3ca91f6be9e,
@@ -950,7 +952,7 @@ GameObject:
   - component: {fileID: 5157625753692746587}
   - component: {fileID: 4622855590976579567}
   - component: {fileID: 2293651555362119333}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1004,7 +1006,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "St\xE4ng"
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1365b9cab70e9e4ba55c3ca91f6be9e, type: 2}
   m_sharedMaterial: {fileID: -6744970210627602415, guid: e1365b9cab70e9e4ba55c3ca91f6be9e,
@@ -1356,9 +1358,8 @@ GameObject:
   - component: {fileID: 8859755277111107991}
   - component: {fileID: 3848133193610807165}
   - component: {fileID: 1027856742929834757}
-  - component: {fileID: 6698587900301337036}
-  - component: {fileID: 690984533035821879}
-  m_Layer: 3
+  - component: {fileID: 377198320220870698}
+  m_Layer: 5
   m_Name: Close Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1423,7 +1424,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6698587900301337036
+--- !u!114 &377198320220870698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1432,7 +1433,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5536642061065013656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4693dcc33483c5d43b0831d21b5185df, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -1479,39 +1480,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 217371483098408518}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!65 &690984533035821879
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5536642061065013656}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 160, y: 30, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5552328309587420061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,9 +1735,8 @@ GameObject:
   - component: {fileID: 5679670054398655014}
   - component: {fileID: 5056852332458645995}
   - component: {fileID: 3615833245489549956}
-  - component: {fileID: 185903068998202337}
-  - component: {fileID: 9218654784841788179}
-  m_Layer: 3
+  - component: {fileID: 5663053164389400097}
+  m_Layer: 5
   m_Name: Next Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1834,7 +1801,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &185903068998202337
+--- !u!114 &5663053164389400097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1843,7 +1810,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7639713194679418383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4693dcc33483c5d43b0831d21b5185df, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -1890,27 +1857,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!65 &9218654784841788179
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7639713194679418383}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 160, y: 30, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8176770759045679624
 GameObject:
   m_ObjectHideFlags: 0

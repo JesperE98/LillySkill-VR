@@ -476,9 +476,8 @@ GameObject:
   - component: {fileID: 2315420898636738638}
   - component: {fileID: 8324489241999274203}
   - component: {fileID: 9027241409387572125}
-  - component: {fileID: 1140769636238643258}
-  - component: {fileID: 455121219810369090}
-  m_Layer: 3
+  - component: {fileID: 273001730567059114}
+  m_Layer: 5
   m_Name: Close Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,28 +542,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!65 &1140769636238643258
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3458373254744079834}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 160, y: 30, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &455121219810369090
+--- !u!114 &273001730567059114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -573,7 +551,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3458373254744079834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4693dcc33483c5d43b0831d21b5185df, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -612,30 +590,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: LillyCode.LillyUI, Assembly-CSharp
         m_MethodName: DeactivateLillyHelpScreen
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1888192698581769869}
-        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
-        m_MethodName: ActivateFeedbackPage
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4845657184652744033}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -826,7 +780,6 @@ GameObject:
   - component: {fileID: 8828583764105839640}
   - component: {fileID: 8797629271211445801}
   - component: {fileID: 686463779676501383}
-  - component: {fileID: 1888192698581769869}
   m_Layer: 5
   m_Name: Lilly Canvas Outro
   m_TagString: Untagged
@@ -841,17 +794,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4845657184652744033}
-  m_LocalRotation: {x: 0, y: 0.42261827, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 0, y: 0, z: -1.164}
-  m_LocalScale: {x: 0.035836965, y: 0.035836965, z: 0.02389131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1506216544059416289}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 50, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.0379639, y: 1.2319946}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2506346965836278956
@@ -1028,6 +981,8 @@ MonoBehaviour:
   lillyHelpScreen: {fileID: 7725154635763632703}
   canvasText: {fileID: 4661981691530607179}
   audioSource: {fileID: 8797629271211445801}
+  voiceMixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+    type: 2}
   nextButtonGameObject: {fileID: 6550293173767168305}
   closeButtonGameObject: {fileID: 3458373254744079834}
   picturesOfLilly:
@@ -1047,83 +1002,71 @@ MonoBehaviour:
   - index: 0
     speechText: "Snyggt jobbat! Det d\xE4r gjorde du mycket bra."
     picture: 11
-    lillyAudioClip: {fileID: 8300000, guid: 1eb6891fe59c65b40997bc528eb2c927, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: 4aa85bb01a5c46e4d9d6e126807e4342, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "H\xE4r slutar denna demoversion. Vi hoppas du hade en rolig upplevelse."
     picture: 6
-    lillyAudioClip: {fileID: 8300000, guid: 686a84e733b286942b1e4d5c6d3cf945, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: 1f5c319c2ed4a5e489dccfd2e0081776, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Detta \xE4r bara en b\xF6rjan p\xE5 hur upplevelsen skulle kunna
       se ut, d\xE4r du tr\xE4nar p\xE5 olika fr\xE5gor som skulle kunna dyka upp
       under en arbetsintervju."
     picture: 0
-    lillyAudioClip: {fileID: 8300000, guid: d68155efe1c66924398226ead69e1802, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: dac8590fbe20b194d931805491c2d104, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "I framtiden skulle vi kunna inkludera fler sp\xE4nnande upplevelser."
     picture: 0
-    lillyAudioClip: {fileID: 8300000, guid: b57ff38f569a0094aafe6f82ecac38e2, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: 02bbdd6684d403d4583a67e500cdd688, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Till exempel d\xE4r du har m\xF6jlighet att prata fritt med intervjuaren
       utan svarsalternativ, eller kanske till och med att ha m\xF6ten med fler \xE4n
       en person."
     picture: 6
-    lillyAudioClip: {fileID: 8300000, guid: c2934b2fc7c88f446bef5539eaa04f5f, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: 2fd8b00009156fa49aa56f63fd71cd50, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Vi skulle verkligen uppskatta om du kunde dela dina \xE5sikter och
       tankar om upplevelsen samt eventuella id\xE9er f\xF6r framtida uppdateringar."
     picture: 3
-    lillyAudioClip: {fileID: 8300000, guid: 06c6066185162b643bf929ea33b9d813, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: 76c90053caf98174fa464a977ca0c022, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Din feedback \xE4r ov\xE4rderligt f\xF6r oss och kommer att hj\xE4lpa
       oss att g\xF6ra denna upplevelse \xE4nnu b\xE4ttre."
     picture: 0
-    lillyAudioClip: {fileID: 8300000, guid: 4141b1336a5ef054e8b398fe1f5829e3, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: ecdb9ca201a1b9e46a9a99ee0569f5d4, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Vi tackar dig s\xE5 mycket f\xF6r att du velat vara med och testa
       denna upplevelse."
     picture: 2
-    lillyAudioClip: {fileID: 8300000, guid: 4c7e623e79b5fe145b93d484dbc1818d, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: 98a41c009a68ea5459cc95464f05d6b6, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Vi ser fram emot att forts\xE4tta utveckla och f\xF6rb\xE4ttra Lilly
       Skill VR baserat p\xE5 era insiktsfulla kommentarer och id\xE9er."
     picture: 0
-    lillyAudioClip: {fileID: 8300000, guid: 6b3fafaf6735d6b4198fd08019444c35, type: 3}
-    proceedToNextIndex: 1
+    lillyAudioClip: {fileID: 8300000, guid: 8d682cae1594ec3479b5de926ecc96f0, type: 3}
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "P\xE5 \xE5terseende. Hej d\xE5!"
     picture: 8
-    lillyAudioClip: {fileID: 8300000, guid: e13b685d22a724e4db576bb069af2104, type: 3}
-    proceedToNextIndex: 0
+    lillyAudioClip: {fileID: 8300000, guid: 4066e4f6f65756045a168f4c5a935cdd, type: 3}
+    lastScreen: 1
     isActive: 0
---- !u!114 &1888192698581769869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4845657184652744033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a310b9e79e4815848858f8baa4d32cc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5062440456610674030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1162,7 @@ GameObject:
   - component: {fileID: 8625939652996706009}
   - component: {fileID: 3139438938642463736}
   - component: {fileID: 1678244920440132363}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1273,7 +1216,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "N\xE4sta"
+  m_text: Next
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1365b9cab70e9e4ba55c3ca91f6be9e, type: 2}
   m_sharedMaterial: {fileID: -6744970210627602415, guid: e1365b9cab70e9e4ba55c3ca91f6be9e,
@@ -1438,9 +1381,8 @@ GameObject:
   - component: {fileID: 1158746384657698265}
   - component: {fileID: 8235420532120446790}
   - component: {fileID: 8490366985999706156}
-  - component: {fileID: 243509921986069956}
-  - component: {fileID: 6856502343501822217}
-  m_Layer: 3
+  - component: {fileID: 1685808001956163983}
+  m_Layer: 5
   m_Name: Next Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1505,28 +1447,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!65 &243509921986069956
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6550293173767168305}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 160, y: 30, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6856502343501822217
+--- !u!114 &1685808001956163983
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1535,7 +1456,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6550293173767168305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4693dcc33483c5d43b0831d21b5185df, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -1582,6 +1503,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button press
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7036356330171499943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,7 +1526,7 @@ GameObject:
   - component: {fileID: 1790618990560463531}
   - component: {fileID: 5538417827416375594}
   - component: {fileID: 4622619165749240990}
-  m_Layer: 3
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1647,7 +1580,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "St\xE4ng"
+  m_text: Close
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1365b9cab70e9e4ba55c3ca91f6be9e, type: 2}
   m_sharedMaterial: {fileID: -6744970210627602415, guid: e1365b9cab70e9e4ba55c3ca91f6be9e,
@@ -1984,7 +1917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1506216544059416289
 RectTransform:
   m_ObjectHideFlags: 0

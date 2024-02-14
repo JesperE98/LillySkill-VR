@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5891000707116145342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1141,6 +1141,8 @@ MonoBehaviour:
   lillyHelpScreen: {fileID: 425822001617803837}
   canvasText: {fileID: 5985973884022500278}
   audioSource: {fileID: 7542930601062069025}
+  voiceMixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+    type: 2}
   nextButtonGameObject: {fileID: 4449300986380596098}
   closeButtonGameObject: {fileID: 982764351115695512}
   picturesOfLilly:
@@ -1161,7 +1163,7 @@ MonoBehaviour:
     speechText: 
     picture: 0
     lillyAudioClip: {fileID: 0}
-    proceedToNextIndex: 0
+    lastScreen: 0
     isActive: 0
 --- !u!1 &5093159876553213547
 GameObject:
