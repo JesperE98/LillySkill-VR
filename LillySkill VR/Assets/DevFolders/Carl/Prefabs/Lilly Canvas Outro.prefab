@@ -852,7 +852,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8828583764105839640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1003,13 +1003,13 @@ MonoBehaviour:
     speechText: "Snyggt jobbat! Det d\xE4r gjorde du mycket bra."
     picture: 11
     lillyAudioClip: {fileID: 8300000, guid: 4aa85bb01a5c46e4d9d6e126807e4342, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "H\xE4r slutar denna demoversion. Vi hoppas du hade en rolig upplevelse."
     picture: 6
     lillyAudioClip: {fileID: 8300000, guid: 1f5c319c2ed4a5e489dccfd2e0081776, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Detta \xE4r bara en b\xF6rjan p\xE5 hur upplevelsen skulle kunna
@@ -1017,13 +1017,13 @@ MonoBehaviour:
       under en arbetsintervju."
     picture: 0
     lillyAudioClip: {fileID: 8300000, guid: dac8590fbe20b194d931805491c2d104, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "I framtiden skulle vi kunna inkludera fler sp\xE4nnande upplevelser."
     picture: 0
     lillyAudioClip: {fileID: 8300000, guid: 02bbdd6684d403d4583a67e500cdd688, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Till exempel d\xE4r du har m\xF6jlighet att prata fritt med intervjuaren
@@ -1031,41 +1031,41 @@ MonoBehaviour:
       en person."
     picture: 6
     lillyAudioClip: {fileID: 8300000, guid: 2fd8b00009156fa49aa56f63fd71cd50, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Vi skulle verkligen uppskatta om du kunde dela dina \xE5sikter och
       tankar om upplevelsen samt eventuella id\xE9er f\xF6r framtida uppdateringar."
     picture: 3
     lillyAudioClip: {fileID: 8300000, guid: 76c90053caf98174fa464a977ca0c022, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Din feedback \xE4r ov\xE4rderligt f\xF6r oss och kommer att hj\xE4lpa
       oss att g\xF6ra denna upplevelse \xE4nnu b\xE4ttre."
     picture: 0
     lillyAudioClip: {fileID: 8300000, guid: ecdb9ca201a1b9e46a9a99ee0569f5d4, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Vi tackar dig s\xE5 mycket f\xF6r att du velat vara med och testa
       denna upplevelse."
     picture: 2
     lillyAudioClip: {fileID: 8300000, guid: 98a41c009a68ea5459cc95464f05d6b6, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Vi ser fram emot att forts\xE4tta utveckla och f\xF6rb\xE4ttra Lilly
       Skill VR baserat p\xE5 era insiktsfulla kommentarer och id\xE9er."
     picture: 0
     lillyAudioClip: {fileID: 8300000, guid: 8d682cae1594ec3479b5de926ecc96f0, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "P\xE5 \xE5terseende. Hej d\xE5!"
     picture: 8
     lillyAudioClip: {fileID: 8300000, guid: 4066e4f6f65756045a168f4c5a935cdd, type: 3}
-    proceedToNextIndex: 0
+    lastScreen: 1
     isActive: 0
 --- !u!1 &5062440456610674030
 GameObject:

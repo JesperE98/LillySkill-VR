@@ -43,8 +43,6 @@ namespace LillyCode
         // Keeps track of the active screen
         private int activeScreen;
 
-
-
         private UIManager uiManager;
         private GameManager gameManager;
 
@@ -56,7 +54,7 @@ namespace LillyCode
             public string speechText;
             public int picture;
             public AudioClip lillyAudioClip;
-            public bool proceedToNextIndex;
+            public bool lastScreen;
             [HideInInspector]
             public bool isActive;
         }
@@ -125,13 +123,13 @@ namespace LillyCode
         /// </summary>
         private void EnableUIButtons()
         {
-            if (informationScreenContent[activeScreen].proceedToNextIndex == true)
+            if (informationScreenContent[activeScreen].lastScreen == true)
             {
-                nextButtonGameObject.SetActive(true);
+                closeButtonGameObject.SetActive(true);
             }
             else
             {
-                closeButtonGameObject.SetActive(true);
+                nextButtonGameObject.SetActive(true);
             }
         }
 
@@ -164,11 +162,6 @@ namespace LillyCode
                 ShowHelpScreenInformation();
             }
 
-            //// Deactivates the active help screen
-            //else
-            //{
-            //    DeactivateLillyHelpScreen();
-            //}
 
             if(activeScreen == 2)
             {

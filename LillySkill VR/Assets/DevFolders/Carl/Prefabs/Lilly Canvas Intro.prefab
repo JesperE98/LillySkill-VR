@@ -170,7 +170,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &3697998367266644409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,54 +322,54 @@ MonoBehaviour:
       namn \xE4r Lilly och jag kommer att vara din guide genom denna upplevelse."
     picture: 5
     lillyAudioClip: {fileID: 8300000, guid: 27619f68a6719a94581fa879c2508908, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "I denna version kommer du f\xE5 testa p\xE5 en upplevelse d\xE4r
       du sitter och tr\xE4nar p\xE5 olika fr\xE5gor som kan dyka upp under en arbetsintervju."
     picture: 0
     lillyAudioClip: {fileID: 8300000, guid: f9c1dadb1c2aa614a8c0e967ec0beb09, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Dessa fr\xE5gor kommer att presenteras framf\xF6r dig tillsammans
       med olika svarsalternativ."
     picture: 6
     lillyAudioClip: {fileID: 8300000, guid: 714a46a9ec4301446bc7ac958811d297, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Intervjuaren kommer att st\xE4lla en fr\xE5ga muntligt och efter
       det kommer \xE4ven fr\xE5gan att visas i textform i en separat ruta."
     picture: 0
     lillyAudioClip: {fileID: 8300000, guid: a957fa592cf62ff40b92e8b77270b8f4, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Genom att trycka p\xE5 en av knapparna kommer respektive svar att
       visas."
     picture: 1
     lillyAudioClip: {fileID: 8300000, guid: dfdf161bbf34d1c4d84791e7d5de7d5f, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "N\xE4r du k\xE4nner att du har det svar du vill ge, trycker du p\xE5
       knappen \u201DGodk\xE4nn svar\u201D."
     picture: 0
     lillyAudioClip: {fileID: 8300000, guid: c7f3998528985564a86db152917aa87e, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Med allt det sagt. Vad s\xE4gs som att vi b\xF6rjar med \xF6vningen?"
     picture: 3
     lillyAudioClip: {fileID: 8300000, guid: fc1d02c3be58bbc45b796049577dbbc8, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Oh! En sak till innan vi b\xF6rjar."
     picture: 1
     lillyAudioClip: {fileID: 8300000, guid: 7a25cfa73fde9494f99832d3c1a0b34b, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Var inte r\xE4dd f\xF6r att st\xE4lla fr\xE5gor till skaparna om
@@ -377,14 +377,14 @@ MonoBehaviour:
       hj\xE4lp."
     picture: 2
     lillyAudioClip: {fileID: 8300000, guid: fed0a5a536001d0488d352650870f533, type: 3}
-    proceedToNextIndex: 1
+    lastScreen: 0
     isActive: 0
   - index: 0
     speechText: "Jag \xF6nskar dig lycka till och s\xE5 h\xF6res vi igen efter du
       \xE4r klar med alla fr\xE5gorna."
     picture: 11
     lillyAudioClip: {fileID: 8300000, guid: 82c1cedda8da2e54faa30fecf2eb47c9, type: 3}
-    proceedToNextIndex: 0
+    lastScreen: 1
     isActive: 0
 --- !u!1 &959721454449760591
 GameObject:

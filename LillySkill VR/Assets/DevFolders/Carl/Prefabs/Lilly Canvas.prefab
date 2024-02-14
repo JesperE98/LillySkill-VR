@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5891000707116145342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,7 +1163,7 @@ MonoBehaviour:
     speechText: 
     picture: 0
     lillyAudioClip: {fileID: 0}
-    proceedToNextIndex: 0
+    lastScreen: 0
     isActive: 0
 --- !u!1 &5093159876553213547
 GameObject:
