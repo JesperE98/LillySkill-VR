@@ -1157,7 +1157,8 @@ MonoBehaviour:
   - {fileID: 6729809735610207525}
   - {fileID: 6760724113865514471}
   informationScreenContent:
-  - speechText: 
+  - index: 0
+    speechText: 
     picture: 0
     lillyAudioClip: {fileID: 0}
     proceedToNextIndex: 0

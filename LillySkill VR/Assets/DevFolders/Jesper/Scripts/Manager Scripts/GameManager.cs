@@ -10,7 +10,7 @@ namespace JespersCode
 
         protected List<string> answerList = new List<string>();
         protected internal float coroutineTimer = 3f;
-        private bool fadeInComplete, fadeOutComplete, lillyIntroDone, interviewerIntroDone, interviewAreActive, 
+        private bool fadeInComplete, fadeOutComplete, lillyIntro, lillyOutro,  interviewerIntro, interviewAreActive, 
             feedbackPageActive, summaryPageActive, informationPageActive, easyMode, mediumMode, hardMode;
         private int interviewerInterest, playerScore, loadedScene, answerPageNumber;
 
@@ -24,9 +24,18 @@ namespace JespersCode
             { 
                 Object.Destroy(gameObject);
             }
+
             DefaultValues();
+
+            // Will be removed if everything works.
+            //lillyIntroDone = true;
+            //InterviewerIntroDone = true;
+            //AnswerPageNumber = 8;
         }
 
+        /// <summary>
+        /// Checks if the Fade in effect are active.
+        /// </summary>
         protected internal bool FadeInComplete
         {
             get
@@ -39,6 +48,9 @@ namespace JespersCode
             }
         }
 
+        /// <summary>
+        /// Checks if the Fade Out Effect are active.
+        /// </summary>
         protected internal bool FadeOutComplete
         {
             get
@@ -51,27 +63,48 @@ namespace JespersCode
             }
         }
 
-        protected internal bool LillyIntroDone
+        /// <summary>
+        /// Checks if the Lilly Intro are active,
+        /// </summary>
+        protected internal bool LillyIntro
         {
             get
             {
-                return lillyIntroDone;
+                return lillyIntro;
             }
             set
             {
-                lillyIntroDone = value;
+                lillyIntro = value;
             }
         }
 
-        protected internal bool InterviewerIntroDone
+        /// <summary>
+        /// Checks if the Lilly Outro are active.
+        /// </summary>
+        protected internal bool LillyOutro
         {
             get
             {
-                return interviewerIntroDone;
+                return lillyOutro;
             }
             set
             {
-                interviewerIntroDone = value;
+                lillyOutro = value;
+            }
+        }
+
+        /// <summary>
+        /// Checks if the Interviewer introduction are active.
+        /// </summary>
+        protected internal bool InterviewerIntro
+        {
+            get
+            {
+                return interviewerIntro;
+            }
+            set
+            {
+                interviewerIntro = value;
             }
         }
 
@@ -237,6 +270,9 @@ namespace JespersCode
             }
         }
 
+        /// <summary>
+        /// A List that stores all the wrong answers.
+        /// </summary>
         protected internal List<string> AnswerList 
         {
             get 
@@ -249,10 +285,14 @@ namespace JespersCode
             } 
         }
         
+        /// <summary>
+        /// Method with default values if user wants to restart current active scene.
+        /// </summary>
         protected internal void DefaultValues()
         {
-            lillyIntroDone = false;
-            interviewerIntroDone = false;
+            lillyIntro = false;
+            lillyOutro = false;
+            interviewerIntro = false;
             loadedScene = 1;
             easyMode = true;
             interviewerInterest = 2;
@@ -266,11 +306,19 @@ namespace JespersCode
             fadeOutComplete = false;
         }
 
+        /// <summary>
+        /// Method that stores wrong answers to a list.
+        /// </summary>
+        /// <param name="text"></param>
         public virtual void AddAnswerToList(string text)
         {
             answerList.Add(text);
         }
 
+        /// <summary>
+        /// IEnumerator that starts the interview.
+        /// </summary>
+        /// <returns></returns>
         public virtual IEnumerator InterviewIntro()
         {
             yield return new WaitForSeconds(coroutineTimer);

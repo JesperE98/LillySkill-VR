@@ -46,11 +46,6 @@ namespace JespersCode
             {
                 SummaryPageText();
             }
-
-            if(gameManager.InformationPageActive == true)
-            {
-                UpdateInformationScreenText();
-            }
         }
 
         private void SummaryPageText()
@@ -93,7 +88,7 @@ namespace JespersCode
                     switch (gameManager.AnswerPageNumber)
                     {
                         case 1:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -114,7 +109,7 @@ namespace JespersCode
                             break;
 
                         case 2:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -132,7 +127,7 @@ namespace JespersCode
                             break;
 
                         case 3:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -151,7 +146,7 @@ namespace JespersCode
                             break;
 
                         case 4:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -169,7 +164,7 @@ namespace JespersCode
                             break;
 
                         case 5:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -187,7 +182,7 @@ namespace JespersCode
                             break;
 
                         case 6:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -205,7 +200,7 @@ namespace JespersCode
                             break;
 
                         case 7:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -224,7 +219,7 @@ namespace JespersCode
                             break;
 
                         case 8:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -242,7 +237,7 @@ namespace JespersCode
                             break;
 
                         case 9:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -261,7 +256,7 @@ namespace JespersCode
                             break;
 
                         case 10:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -279,7 +274,7 @@ namespace JespersCode
                             break;
 
                         case 11:
-                            if (uiManager.uiPrefabCopyList[0].activeSelf == true)
+                            if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                             {
                                 if (AnswerTextObject[0].activeSelf == true)
                                 {
@@ -466,102 +461,6 @@ namespace JespersCode
                     break;
             }
 
-        }
-
-        private void UpdateInformationScreenText()
-        {
-            switch (gameManager.EasyMode)
-            {
-                case true:
-                    switch (gameManager.AnswerPageNumber)
-                    {
-                        case 1:
-                            answerText.text = "Föreställ dig att du är på en anställningsintervju för en städtjänst. Intervjuaren ber dig att gå " +
-                                "igenom dina tidigare arbetserfarenheter. Vilket av följande alternativ beskriver bäst din situation.";
-                            break;
-
-                        case 2:
-                            answerText.text = "Vilka egenskaper tror du att din framtida arbetsgivare skulle söka eller värdera högst om du sökte jobb på ett lager?";
-                            break;
-
-                        case 3:
-                            answerText.text = "Om du har råkat ut för en utmanande situation tidigare, vilket av dessa svar skulle bäst beskriva dig?";
-                            break;
-
-                        case 4:
-                            answerText.text = "När det kommer till lagarbete och samarbete, vilket svar beskriver dig mest?";
-                            break;
-
-                        case 5:
-                            answerText.text = "Har du någonsin haft konflikter med kollegor förut? Om så är fallet, vilket svar beskriver din situation bäst?";
-                            break;
-
-                        case 6:
-                            answerText.text = "Hur skulle du vanligtvis hantera feedback eller kritik på en arbetsplats? Vilket av dessa svar beskriver dig bäst?";
-                            break;
-
-                        case 7:
-                            answerText.text = "Är det några aktiviteter eller hobbyer du håller på med på din fritid?";
-                            break;
-
-                        case 8:
-                            answerText.text = "Var ser du dig själv om 5 år?";
-                            break;
-
-                        case 9:
-                            answerText.text = "Ser du personlig utveckling som något viktigt?";
-                            break;
-
-                        case 10:
-                            answerText.text = "Vilken utbildningsnivå har du avslutat?";
-                            break;
-
-                        case 11:
-                            answerText.text = "Hur skulle du hantera en felkommunikation med en kollega?";
-                            break;
-
-                        case 12:
-                            answerText.text = "Vad skulle du säga är det smidigaste sättet att lösa en konflikt på?";
-                            break;
-
-                        case 13:
-                            answerText.text = "Hur skulle du hantera en konflikt mellan två teammedlemmar som vägrar att samarbeta?";
-                            break;
-
-                        case 14:
-                            answerText.text = "En konflikt har uppstått under ett samarbetsprojekt. Hur skulle du reagera på detta?";
-                            break;
-
-                        case 15:
-                            answerText.text = "Hur hanterar du motgångar i din personliga utvecklingsresa?";
-                            break;
-
-                        case 16:
-                            answerText.text = "Har du någon tidigare erfarenhet som kan vara fördelaktig på en arbetsplats?";
-                            break;
-
-                        case 17:
-                            answerText.text = "Hur skulle du beskriva dina styrkor och färdigheter som kan vara värdefulla i en arbetsmiljö?";
-                            break;
-
-                        case 18:
-                            answerText.text = "Vad motiverade dig att söka detta jobb?";
-                            break;
-
-                        case 19:
-                            answerText.text = "Hur känner du inför att få feedback och vägledning?";
-                            break;
-
-                        case 20:
-                            answerText.text = "Vilka av dessa personliga egenskaper eller värderingar tror du kan vara viktiga för att uppnå en framgångsrik arbetsmiljö?";
-                            break;
-                    }
-                    break;
-
-                case false:
-                    Debug.LogWarning("Easy Mode isn't true! Make sure it's true in order for code to work!");
-                    break;
-            }
         }
     }
 }

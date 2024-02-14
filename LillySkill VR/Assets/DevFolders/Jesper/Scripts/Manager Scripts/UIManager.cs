@@ -1,3 +1,4 @@
+using LillyCode;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -11,8 +12,6 @@ namespace JespersCode
     public class UIManager : MonoBehaviour
     {
         private GameManager gameManager;
-        private Animator animator;
-        private AudioManager audioManager;
 
         [Header("UI Generic Lists")]
         [Tooltip("Generic List to add UI Prefabs.")]
@@ -24,7 +23,7 @@ namespace JespersCode
         /// </summary>
         public List<GameObject> uiPrefabCopyList = new List<GameObject>();
 
-        private GameObject obj;
+        private GameObject prefabCopy;
 
         [Tooltip("Choose what GameObject in the hierarchy to store the UI copies")]
         [SerializeField]
@@ -38,9 +37,7 @@ namespace JespersCode
 
         private void Awake()
         {
-            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-            animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
-            audioManager = FindAnyObjectByType<AudioManager>();
+            gameManager = FindObjectOfType<GameManager>();
         }
         
 
@@ -48,12 +45,12 @@ namespace JespersCode
         {
             for (int i = 0; i < UIPrefabs.Count; i++)
             {
-                obj = Instantiate(UIPrefabs[i], UIPrefabCollector.transform);
-                obj.SetActive(false);
-                uiPrefabCopyList.Add(obj);
+                prefabCopy = Instantiate(UIPrefabs[i], UIPrefabCollector.transform);
+                prefabCopy.SetActive(false);
+                uiPrefabCopyList.Add(prefabCopy);
             }
 
-            uiPrefabCopyList[0].SetActive(true);
+            uiPrefabCopyList[0].SetActive(true); // Activates LillyUI at the start.
 
             if (gameManager.LoadedScene == 0)
             {
@@ -63,23 +60,14 @@ namespace JespersCode
 
         private void Update()
         {
-            
-            // If the conditions are met, call the function named CreateUIPrefab.
-            if (gameManager.LoadedScene == 1)
-            {
-                if (gameManager.InterviewerInterest > 0)
-                {
-                    if (gameManager.InterviewAreActive == true && uiPrefabIsActive == false)
-                    {
-                        StartCoroutine(ActivateUICopyRoutine(audioManager.sounds.Length));
-                    }
-                }
-                //else if (_gameManager.InterviewerInterest <= 0 && _gameManager.InterviewAreActive == true)
-                //{
-                //    _gameManager.InterviewAreActive = !_gameManager.InterviewAreActive;
-                //    Instantiate(_uiPrefabCopyList[1]);
-                //}
-            }
+
+
+            //if (_gameManager.InterviewerInterest <= 0 && _gameManager.InterviewAreActive == true)
+            //{
+            //    _gameManager.InterviewAreActive = !_gameManager.InterviewAreActive;
+            //    Instantiate(_uiPrefabCopyList[1]);
+            //}
+
 
             // If statements to make sure the value stays between the values 1 to 5.
             if (gameManager.InterviewerInterest >= 5)
@@ -87,10 +75,10 @@ namespace JespersCode
             else if (gameManager.InterviewerInterest <= 1)
                 gameManager.InterviewerInterest = 1;
 
-            if (gameManager.InterviewerIntroDone == true)
+            if (gameManager.InterviewerIntro == true)
             {
                 StartCoroutine(gameManager.InterviewIntro());
-                gameManager.InterviewerIntroDone = false;
+                gameManager.InterviewerIntro = false;
             }
 
         }
@@ -98,7 +86,7 @@ namespace JespersCode
         /// <summary>
         /// Creates the UI Prefab copy and renames it to obj
         /// </summary>
-        private void ActivateUIPrefab()
+        public void ActivateUIPrefab()
         {
             // Switch statement that checks which active scene it is.
             switch(gameManager.LoadedScene)
@@ -117,6 +105,7 @@ namespace JespersCode
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
                                 uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
                                 uiPrefabIsActive = true;
                             }
                             break;
@@ -127,6 +116,7 @@ namespace JespersCode
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
                                 uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
                                 uiPrefabIsActive = true;
                             }
                             break;
@@ -137,6 +127,7 @@ namespace JespersCode
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
                                 uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
                                 uiPrefabIsActive = true;
                             }
                             break;
@@ -147,6 +138,7 @@ namespace JespersCode
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
                                 uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
                                 uiPrefabIsActive = true;
                             }
                             break;
@@ -157,6 +149,7 @@ namespace JespersCode
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
                                 uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
                                 uiPrefabIsActive = true;
                             }
                             break;
@@ -167,6 +160,7 @@ namespace JespersCode
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
                                 uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
                                 uiPrefabIsActive = true;
                             }
                             break;
@@ -177,6 +171,7 @@ namespace JespersCode
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
                                 uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
                                 uiPrefabIsActive = true;
                             }
                             break;
@@ -187,6 +182,7 @@ namespace JespersCode
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
                                 uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
                                 uiPrefabIsActive = true;
                             }
                             break;
@@ -197,6 +193,7 @@ namespace JespersCode
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
                                 uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
                                 uiPrefabIsActive = true;
                             }
                             break;
@@ -207,18 +204,19 @@ namespace JespersCode
                             {
                                 // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
                                 uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
                                 uiPrefabIsActive = true;
+
                             }
                             break;
 
                         default:
-                            print("Default Case");
                             if (uiPrefabIsActive == false)
                             {
-                                gameManager.FeedbackPageActive = true;
-                                uiPrefabCopyList[3].SetActive(true);
+                                uiPrefabCopyList[5].SetActive(true);
+                                gameManager.LillyOutro = true;
                                 uiPrefabIsActive = true;
-                                gameManager.InterviewAreActive = !gameManager.InterviewAreActive;
+                                gameManager.InterviewAreActive = false; // Ska plockas bort efter demo visningen
                             }
                             break;
                     }
@@ -226,23 +224,7 @@ namespace JespersCode
             }
         }
 
-        public virtual void HighlightUIQuestionScreen()
-        {
-            uiPrefabCopyList[1].SetActive(true);
-        }
-
-        public virtual void HighlightUIInformationScreenScreen()
-        {
-            uiPrefabCopyList[2].SetActive(true);
-        }
-
-        public virtual void DeactivateHighlightedUI()
-        {
-            uiPrefabCopyList[1].SetActive(false);
-            uiPrefabCopyList[2].SetActive(false);
-        }
-
-        public virtual void StartUIDeactivation()
+        public void StartUIDeactivation()
         {
             StartCoroutine(DeactivateUICopy(1));
         }
@@ -251,7 +233,7 @@ namespace JespersCode
         /// Coroutine to update the properties PlayerLife and PlayerScore and to Destroy the UIPrefabCopy and increment the index variable.
         /// </summary>
         /// <returns></returns>
-        public virtual IEnumerator DeactivateUICopy(int listIndex)
+        public IEnumerator DeactivateUICopy(int listIndex)
         {
             // Check if the index is valid
             if (listIndex < 0 || listIndex >= uiPrefabCopyList.Count)
@@ -261,18 +243,13 @@ namespace JespersCode
             }
 
             uiPrefabCopyList[listIndex].SetActive(false);
+            uiPrefabCopyList[2].SetActive(false);
+
             gameManager.AnswerPageNumber++;
 
-            yield return new WaitForSeconds(audioManager.sounds.Length);
-
-            animator.SetBool("AskingQuestion", false);
             uiPrefabIsActive = false;
-        }
 
-        public virtual IEnumerator ActivateUICopyRoutine(float audioTime)
-        {
-            yield return new WaitForSeconds(audioTime);
-            ActivateUIPrefab();
+            if (gameManager.AnswerPageNumber >= 10) { ActivateUIPrefab(); }
         }
     }
 }

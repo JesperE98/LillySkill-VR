@@ -438,6 +438,252 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137463371}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &201359362
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.90285903
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.07898997
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.42101005
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.03683362
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.0499878
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 326075958531825236, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863022700912008677, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Questions Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863022700912008677, guid: 35c6355ae717c2547af62488979f02e7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35c6355ae717c2547af62488979f02e7, type: 3}
+--- !u!1001 &264773301
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 217371483098408518, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_Name
+      value: Lilly Canvas Intro
+      objectReference: {fileID: 0}
+    - target: {fileID: 217371483098408518, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.164
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9063079
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.42261827
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.038
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.234
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459598054355672470, guid: 6844ce05c3b1d544bbb918127f961b3c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6844ce05c3b1d544bbb918127f961b3c, type: 3}
 --- !u!1 &293624179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2379,6 +2625,8 @@ GameObject:
   - component: {fileID: 2097396811}
   - component: {fileID: 2097396815}
   - component: {fileID: 2097396814}
+  - component: {fileID: 2097396817}
+  - component: {fileID: 2097396816}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -2451,6 +2699,91 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097396810}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2097396816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097396810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &2097396817
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097396810}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &49121473082979508
 GameObject:
   m_ObjectHideFlags: 0
@@ -4597,6 +4930,7 @@ MonoBehaviour:
   - {fileID: 414001814303662385, guid: 31026cd1d1b46f249a844211a3da6dac, type: 3}
   - {fileID: 4661082774785809990, guid: 348ead6b74c938e478b43d62c79f1ba0, type: 3}
   - {fileID: 8231613106727172875, guid: 6579a9b06220e5845be598a3ead62111, type: 3}
+  - {fileID: 4845657184652744033, guid: 6e2db72ba440519468e922df6dcbffb2, type: 3}
   uiPrefabCopyList: []
   UIPrefabCollector: {fileID: 119668043}
   uiPrefabIsActive: 0
@@ -15200,174 +15534,196 @@ MonoBehaviour:
   sounds:
   - name: Button press
     clip: {fileID: 8300000, guid: f2d0f395d2e3ce54fbac2591f1f85c22, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
   - name: Button hover
     clip: {fileID: 8300000, guid: c8ea78a443f85324cae4b410b69847e3, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
   - name: Go back
     clip: {fileID: 8300000, guid: c6bdf738fedae3c4cb9d52f3528a5482, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
   - name: Start interview
     clip: {fileID: 8300000, guid: b571e91eee06ff74f860cf92ea0fcc0f, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
   - name: Interview complete
     clip: {fileID: 8300000, guid: 76f682aabd5c52844bd99205a4aa4627, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
   - name: Stamp
     clip: {fileID: 8300000, guid: 79a921038cba6994dbd6de785b8777c1, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
   - name: Ambience
     clip: {fileID: 8300000, guid: c5b1dc22c740da746b24942c722df27b, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 0.05
     spatialBlend: 0
     loop: 1
     source: {fileID: 0}
   - name: "Hej och v\xE4lkommen"
     clip: {fileID: 8300000, guid: 31cef5b9a8d19b742a68291da41258d7, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "En konflikt har uppst\xE5tt under ett samarbetsprojekt. Hur skulle du
-      reagera p\xE5 detta"
-    clip: {fileID: 8300000, guid: f4b3f91cf89ade64893a27e78e55fbce, type: 3}
+  - name: AE F 2
+    clip: {fileID: 8300000, guid: 13bbd2adf4ee85b478889924a3b9182e, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "F\xF6rest\xE4ll dig att du \xE4r p\xE5 en anst\xE4llningsintervju f\xF6r
-      en st\xE4dtj\xE4nst..."
-    clip: {fileID: 8300000, guid: e21e527aae5d47d4aaf2f0c5ed8c96c7, type: 3}
+  - name: AE F 11
+    clip: {fileID: 8300000, guid: 7307ef2b726c88d469942c9fbac11b09, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Har du n\xE5gonsin haft konflikter med kollegor f\xF6rut Om s\xE5 \xE4r
-      fallet, vilket svar beskriver din situation b\xE4st"
-    clip: {fileID: 8300000, guid: 106454d44e388254f84a817a15c63f4b, type: 3}
+  - name: AE F 8
+    clip: {fileID: 8300000, guid: b27707e4e1c54664b99d7e3e2c5841ce, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: Hur skulle du hantera en felkommunikation med en kollega
-    clip: {fileID: 8300000, guid: 1380abd1d97c0f14aa8b716c1e703aa6, type: 3}
+  - name: AE F 7
+    clip: {fileID: 8300000, guid: bae3faee6f0c6294db9bd67496c8a601, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Hur skulle du hantera en konflikt mellan tv\xE5 teammedlemmar som v\xE4grar
-      att samarbeta"
-    clip: {fileID: 8300000, guid: 4aea71161de27af41bf7b8e1f13123bd, type: 3}
+  - name: AE F 3
+    clip: {fileID: 8300000, guid: 77b8b0d12c01b9544a1f3ef3633eb403, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Hur skulle du vanligtvis hantera feedback eller kritik p\xE5 en arbetsplats..."
-    clip: {fileID: 8300000, guid: 528bef164b3c05d4b9a5067926a60dc9, type: 3}
+  - name: AE F 6
+    clip: {fileID: 8300000, guid: 19d8b885aa743874586d186cf30de92e, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "N\xE4r det kommer till lagarbete och samarbete, vilket svar beskriver
-      dig mest"
-    clip: {fileID: 8300000, guid: 7c038e4e8d3e2e344bcfcd721c0e9543, type: 3}
+  - name: IAE F 9
+    clip: {fileID: 8300000, guid: 9b1fe6517dd7dc84fb583c11b0f04951, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Om du har r\xE5kat ut f\xF6r en utmanande situation tidigare, vilket av
-      dessa svar skulle b\xE4st beskriva dig"
-    clip: {fileID: 8300000, guid: b0e47aa4d2c10dd49ab229ae39dd3080, type: 3}
+  - name: AE F 10
+    clip: {fileID: 8300000, guid: 90492c0aa3eeaa2498b81de49a6bc3ae, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Vad skulle du s\xE4ga \xE4r det smidigaste s\xE4ttet att l\xF6sa en konflikt
-      p\xE5"
-    clip: {fileID: 8300000, guid: 2232f6715cbc9304ca6f5446d2872859, type: 3}
+  - name: IAE F 5
+    clip: {fileID: 8300000, guid: b80fd2f095fce7b40928e1a4c34619eb, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Vilka egenskaper tror du att din framtida arbetsgivare skulle s\xF6ka
-      eller v\xE4rdera h\xF6gst om du s\xF6kte jobb p\xE5 ett lager"
-    clip: {fileID: 8300000, guid: dfb4927d48b2e1245b962d82f6e8ec7f, type: 3}
+  - name: IAE F 8
+    clip: {fileID: 8300000, guid: 763259c678977aa4da750d97c90013d2, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Har du n\xE5gon tidigare erfarenhet som kan vara f\xF6rdelaktig p\xE5
-      en arbetsplats"
-    clip: {fileID: 8300000, guid: 54ada462f77d9be4597614dc7641a43d, type: 3}
+  - name: AE F 4
+    clip: {fileID: 8300000, guid: 2b925ce65c6f43e42b75ef6a720add4a, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Hur hanterar du motg\xE5ngar i din personliga utvecklingsresa"
-    clip: {fileID: 8300000, guid: 473d0b46063d6374d84f856cbc76c639, type: 3}
+  - name: AE F 9
+    clip: {fileID: 8300000, guid: 92c97299cd45cc3438b107083084bee8, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Hur k\xE4nner du inf\xF6r att f\xE5 feedback och v\xE4gledning"
-    clip: {fileID: 8300000, guid: 15325f5dd07335747a58a06138e179e4, type: 3}
+  - name: AE F 5
+    clip: {fileID: 8300000, guid: c95de632cbcc7c840b61e30e681f7a80, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Hur skulle du beskriva dina styrkor och f\xE4rdigheter som kan vara v\xE4rdefulla
-      i en arbetsmilj\xF6"
-    clip: {fileID: 8300000, guid: 47a76bd01a0b1ad4fa2c2dccb66ec428, type: 3}
+  - name: AE F 1
+    clip: {fileID: 8300000, guid: 9b55396b88fb7e8479f8646bb85c5e3c, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Ser du personlig utveckling som n\xE5got viktigt"
-    clip: {fileID: 8300000, guid: 038c1fb8e81a88248b5003c6cf60a2d4, type: 3}
+  - name: IAE F 2
+    clip: {fileID: 8300000, guid: 2c9c81c4159d4c34da3d09c7081acca7, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Vad motiverade dig att s\xF6ka detta jobb"
-    clip: {fileID: 8300000, guid: dba310975b38fe64980cebc12e3dfb6c, type: 3}
+  - name: IAE F 1
+    clip: {fileID: 8300000, guid: 698386611e9965643bc99bf2bbeb8ee5, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Vilka av dessa personliga egenskaper eller v\xE4rderingar tror du kan
-      vara viktiga f\xF6r att uppn\xE5 en framg\xE5ngsrik arbetsmilj\xF6"
-    clip: {fileID: 8300000, guid: e876195a0e5ff9047b14a2a21ec3c4e1, type: 3}
+  - name: IAE F 4
+    clip: {fileID: 8300000, guid: 9c8b97dd966dacd43a35eebec794d212, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "Vilken utbildningsniv\xE5 har du avslutat"
-    clip: {fileID: 8300000, guid: 7500c37d3d4e5c34987e833f89d3dca9, type: 3}
+  - name: IAE F 6
+    clip: {fileID: 8300000, guid: 2c07bb47aacf47c4b93f4484b056ce82, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
-  - name: "\xC4r det n\xE5gon speciell aktivitet eller hobby du engagerar dig i p\xE5
-      din fritid"
-    clip: {fileID: 8300000, guid: 44860aec9c0f6924ab5a34518cd41839, type: 3}
+  - name: IAE F 3
+    clip: {fileID: 8300000, guid: c6eb267fa75807942a8bb60d4b91195e, type: 3}
+    mixerGroup: {fileID: 0}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: IAE F 7
+    clip: {fileID: 8300000, guid: d39918e1edf9a5d44a4451aae89b2346, type: 3}
+    mixerGroup: {fileID: 0}
     volume: 1
     spatialBlend: 0
     loop: 0
@@ -19157,7 +19513,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6220960299066825505}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51709d4bff38d7541b9623bb212e372a, type: 3}
   m_Name: 
@@ -20085,3 +20441,5 @@ SceneRoots:
   - {fileID: 4466520378192098161}
   - {fileID: 1916714208}
   - {fileID: 1275165103}
+  - {fileID: 264773301}
+  - {fileID: 201359362}
