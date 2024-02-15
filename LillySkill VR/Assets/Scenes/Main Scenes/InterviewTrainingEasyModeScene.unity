@@ -736,7 +736,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.08, y: 0.015}
+  m_SizeDelta: {x: 0.04, y: 0.0075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &624029186
 BoxCollider:
@@ -9827,7 +9827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3945075410692648355
 GameObject:
   m_ObjectHideFlags: 0
