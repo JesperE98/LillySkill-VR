@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 9027241409387572125}
   - component: {fileID: 8765341508533269225}
   - component: {fileID: 8358435675138981019}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Close Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.0380249, y: 1.300003}
+  m_AnchoredPosition: {x: 1.0380859, y: 1.2999878}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2506346965836278956
@@ -887,7 +887,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8828583764105839640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1209,7 +1209,7 @@ GameObject:
   - component: {fileID: 8625939652996706009}
   - component: {fileID: 3139438938642463736}
   - component: {fileID: 1678244920440132363}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1430,7 +1430,7 @@ GameObject:
   - component: {fileID: 8490366985999706156}
   - component: {fileID: 6191229035733614878}
   - component: {fileID: 8936215341957206916}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Next Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1583,7 +1583,7 @@ GameObject:
   - component: {fileID: 1790618990560463531}
   - component: {fileID: 5538417827416375594}
   - component: {fileID: 4622619165749240990}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

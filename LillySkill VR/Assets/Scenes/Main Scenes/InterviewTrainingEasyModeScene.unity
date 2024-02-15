@@ -15290,7 +15290,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: f2d0f395d2e3ce54fbac2591f1f85c22, type: 3}
     mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
       type: 2}
-    volume: 1
+    volume: 0.2
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
@@ -15298,7 +15298,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c8ea78a443f85324cae4b410b69847e3, type: 3}
     mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
       type: 2}
-    volume: 1
+    volume: 0.8
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
@@ -15306,7 +15306,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c6bdf738fedae3c4cb9d52f3528a5482, type: 3}
     mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
       type: 2}
-    volume: 1
+    volume: 0.6
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
@@ -15314,7 +15314,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: b571e91eee06ff74f860cf92ea0fcc0f, type: 3}
     mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
       type: 2}
-    volume: 1
+    volume: 0.4
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
@@ -15322,7 +15322,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 76f682aabd5c52844bd99205a4aa4627, type: 3}
     mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
       type: 2}
-    volume: 1
+    volume: 0.4
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
@@ -15330,7 +15330,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 79a921038cba6994dbd6de785b8777c1, type: 3}
     mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
       type: 2}
-    volume: 1
+    volume: 0.6
     spatialBlend: 0
     loop: 0
     source: {fileID: 0}
@@ -15338,7 +15338,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c5b1dc22c740da746b24942c722df27b, type: 3}
     mixerGroup: {fileID: 6247087999877837773, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
       type: 2}
-    volume: 0.05
+    volume: 0.45
     spatialBlend: 0
     loop: 1
     source: {fileID: 0}
