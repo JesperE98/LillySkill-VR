@@ -13,6 +13,10 @@ namespace JespersCode
         {
             gameManager = FindAnyObjectByType<GameManager>();
             fadeInFadeOutMaterial = GetComponent<Renderer>();
+        }
+
+        public void StartFadeInRoutine()
+        {
             StartCoroutine(FadeInRoutine(true));
         }
 
