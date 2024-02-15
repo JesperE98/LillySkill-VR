@@ -64,17 +64,29 @@ namespace JespersCode
         {
             if (gameManager.InterviewAreActive == false)
             {
-                if (gameManager.PlayerScore < 4)
+                if (gameManager.PlayerScore < 7)
                 {
-                    answerText.text = "You only got " + gameManager.PlayerScore + " points.\nWork more on this";
+                    answerText.text = "Du fick bara " + gameManager.PlayerScore + " poäng.\n\n " +
+                        "Feedback:\n" +
+                        "• Brister i förberedelse: Det framgår att du inte hade tillräcklig kunskap om företaget, dess verksamhet och dess värderingar.\n\n" +
+                        "• Svag kommunikationsförmåga: Du hade svårt att tydligt kommunicera dina tankar och idéer, vilket gjorde det svårt för intervjuaren att förstå dina kvalifikationer och erfarenheter.\n\n" +
+                        "• Otillräckliga svar: Dina svar på intervjufrågorna var inte tillräckligt detaljerade eller relevanta för att visa upp din kompetens och lämplighet för rollen.";
                 }
-                else if (gameManager.PlayerScore > 4 || gameManager.PlayerScore < 10)
+                else if (gameManager.PlayerScore > 7 || gameManager.PlayerScore < 14)
                 {
-                    answerText.text = "You got " + gameManager.PlayerScore + " points.\nGood job! But you need to work more on this";
+                    answerText.text = "Du fick " + gameManager.PlayerScore + " poäng. Bra jobbat! Men här har du något att fundera över.\n\n" +
+                        "Feedback:\n" +
+                        "• Starka kvalifikationer: Du visade upp en imponerande uppsättning av kvalifikationer och erfarenheter som är relevanta för rollen.\n\n" +
+                        "• Tydlig kommunikation: Din kommunikationsstil var tydlig och professionell, vilket gjorde det lätt för intervjuaren att följa med och förstå dina svar.\n\n" +
+                        "• Engagemang och intresse: Det framgick tydligt att du visade ett genuint intresse för företaget och rollen, vilket är en positiv indikator på din motivation och potential att trivas i arbetsmiljön.";
                 }
-                else if (gameManager.PlayerScore > 10)
+                else if (gameManager.PlayerScore > 14)
                 {
-                    answerText.text = "You got " + gameManager.PlayerScore + " points!\nFantastic job! You will ace the interview! :D";
+                    answerText.text = "Du fick " + gameManager.PlayerScore + " poäng! Grymt jobbat! Du kommer acea din intervju!\n\n" +
+                        "Feedback:\n" +
+                        "• Exceptionell förberedelse: Du visade en djupgående förståelse för företaget, dess bransch och dess kultur, vilket visar på din dedikation och intresse för att lyckas i rollen.\n\n" +
+                        "• Övertygande kommunikation: Din förmåga att artikulera dina tankar och idéer var överlägsen, vilket gjorde det enkelt för intervjuaren att förstå din vision och potential för rollen.\n\n" +
+                        "• Stark matchning med företagets behov: Dina kvalifikationer och erfarenheter passade perfekt med vad företaget sökte, vilket skapade en stark ömsesidig matchning och potential för långsiktig framgång.";
                 }
             }
         }

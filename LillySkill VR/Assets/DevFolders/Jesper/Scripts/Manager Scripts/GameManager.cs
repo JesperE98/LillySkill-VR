@@ -16,14 +16,14 @@ namespace JespersCode
 
         private void Awake()
         {
-            if(gameManager == null) 
-            { 
-                DontDestroyOnLoad(gameObject);
-            }
-            else 
-            { 
-                Object.Destroy(gameObject);
-            }
+            //if(gameManager == null) 
+            //{ 
+            //    DontDestroyOnLoad(gameObject);
+            //}
+            //else 
+            //{ 
+            //    Object.Destroy(gameObject);
+            //}
 
             DefaultValues();
 
@@ -293,6 +293,7 @@ namespace JespersCode
             lillyIntro = false;
             lillyOutro = false;
             interviewerIntro = false;
+            interviewAreActive = false;
             loadedScene = 1;
             easyMode = true;
             interviewerInterest = 2;
@@ -314,15 +315,5 @@ namespace JespersCode
         {
             answerList.Add(text);
         }
-
-        ///// <summary>
-        ///// IEnumerator that starts the interview.
-        ///// </summary>
-        ///// <returns></returns>
-        //public virtual IEnumerator InterviewIntro()
-        //{
-        //    yield return new WaitForSeconds(coroutineTimer);
-        //    interviewAreActive = true;
-        //}
     }
 }

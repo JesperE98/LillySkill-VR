@@ -84,6 +84,7 @@ public class AudioManager : MonoBehaviour
         if(gameManager.InterviewAreActive == false)
         {
             gameManager.InterviewAreActive = true;
+
             Play("Hej och välkommen");
 
             yield return new WaitForSeconds(sounds.ElementAt(7).clip.length + 1.0f);
@@ -92,6 +93,7 @@ public class AudioManager : MonoBehaviour
 
             yield return new WaitForSeconds(sounds.ElementAt(8).clip.length);
         }
+
 
         switch (gameManager.AnswerPageNumber)
         {
