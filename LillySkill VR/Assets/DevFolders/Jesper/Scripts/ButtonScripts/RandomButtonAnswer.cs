@@ -30,7 +30,6 @@ namespace JespersCode
                 switch (gameManager.AnswerPageNumber)
                 {
                     case 1:
-                        
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }

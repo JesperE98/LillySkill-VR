@@ -42,7 +42,7 @@ public class InformationScerenTextUpdate : MonoBehaviour
                         break;
 
                     case 4:
-                        informationPageText.text = "När det kommer till lagarbete och samarbete, vilket svar beskriver dig mest?";
+                        informationPageText.text = "När det kommer till lagarbete och samarbete, vilket svar beskriver dig bäst?";
                         break;
 
                     case 5:
