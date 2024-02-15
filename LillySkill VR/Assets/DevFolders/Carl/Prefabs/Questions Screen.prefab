@@ -1291,7 +1291,7 @@ GameObject:
   - component: {fileID: 8238463120443284309}
   - component: {fileID: 4232840522537622586}
   - component: {fileID: 940734713811238139}
-  - component: {fileID: 4673143181626616733}
+  - component: {fileID: 5495053581164647293}
   m_Layer: 5
   m_Name: Questions Screen
   m_TagString: Untagged
@@ -1306,7 +1306,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5863022700912008677}
-  m_LocalRotation: {x: 0.07898997, y: 0.42101005, z: -0.03683362, w: 0.90285903}
+  m_LocalRotation: {x: 0.15737869, y: 0.41619772, z: -0.07338688, w: 0.89253896}
   m_LocalPosition: {x: 0, y: 0, z: -1.033}
   m_LocalScale: {x: 0.0019913318, y: 0.0019913318, z: 0.028447598}
   m_ConstrainProportionsScale: 0
@@ -1314,7 +1314,7 @@ RectTransform:
   - {fileID: 6672977154492296465}
   - {fileID: 8801517354701193093}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 10, y: 50, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: 50, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 1.1999512, y: 1.0499878}
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4673143181626616733
+--- !u!114 &5495053581164647293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1392,9 +1392,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5863022700912008677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a310b9e79e4815848858f8baa4d32cc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fce0194fe5939b4597841e094716616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answerButtons:
+  - {fileID: 7829499601867732218}
+  - {fileID: 7822460270525155511}
+  - {fileID: 9219595480111564115}
 --- !u!1 &6292763739333931999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,7 +1764,7 @@ GameObject:
   - component: {fileID: 2741633232785456716}
   - component: {fileID: 9148545190883572217}
   m_Layer: 3
-  m_Name: Button
+  m_Name: Button 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1868,9 +1872,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4673143181626616733}
-        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
-        m_MethodName: UsedAverageAnswerButton
+      - m_Target: {fileID: 5495053581164647293}
+        m_TargetAssemblyTypeName: JespersCode.RandomButtonAnswer, Assembly-CSharp
+        m_MethodName: ButtonRandomiser
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1940,7 +1944,7 @@ GameObject:
   - component: {fileID: 559997436940630041}
   - component: {fileID: 2367939747366485141}
   m_Layer: 3
-  m_Name: Button
+  m_Name: Button 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2048,9 +2052,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4673143181626616733}
-        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
-        m_MethodName: UsedBadAnswerButton
+      - m_Target: {fileID: 5495053581164647293}
+        m_TargetAssemblyTypeName: JespersCode.RandomButtonAnswer, Assembly-CSharp
+        m_MethodName: ButtonRandomiser
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2522,7 +2526,7 @@ GameObject:
   - component: {fileID: 7741402947438098675}
   - component: {fileID: 1028137646370067188}
   m_Layer: 3
-  m_Name: Button
+  m_Name: Button 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2630,9 +2634,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4673143181626616733}
-        m_TargetAssemblyTypeName: JespersCode.UIManagerButtonFunctions, Assembly-CSharp
-        m_MethodName: UsedGoodAnswerButton
+      - m_Target: {fileID: 5495053581164647293}
+        m_TargetAssemblyTypeName: JespersCode.RandomButtonAnswer, Assembly-CSharp
+        m_MethodName: ButtonRandomiser
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
