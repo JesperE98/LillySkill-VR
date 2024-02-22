@@ -12,7 +12,7 @@ namespace JespersCode
 
         private void Awake()
         {
-            gameManager = FindObjectOfType<GameManager>();
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             boxCollider = GetComponent<BoxCollider>();
         }
 

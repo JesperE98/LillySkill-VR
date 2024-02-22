@@ -97,98 +97,98 @@ public class AudioManager : MonoBehaviour
 
         switch (gameManager.AnswerPageNumber)
         {
-            case 2:
+            case 1:
                 Play("AE F 11");
                 yield return new WaitForSeconds(sounds.ElementAt(9).clip.length);
                 break;
 
-            case 3:
+            case 2:
                 Play("AE F 8");
                 yield return new WaitForSeconds(sounds.ElementAt(10).clip.length);
                 break;
 
-            case 4:
+            case 3:
                 Play("AE F 7");
                 yield return new WaitForSeconds(sounds.ElementAt(11).clip.length);
                 break;
 
-            case 5:
+            case 4:
                 Play("AE F 3");
                 yield return new WaitForSeconds(sounds.ElementAt(12).clip.length);
                 break;
 
-            case 6:
+            case 5:
                 Play("AE F 6");
                 yield return new WaitForSeconds(sounds.ElementAt(13).clip.length);
                 break;
 
-            case 7:
+            case 6:
                 Play("IAE F 9");
                 yield return new WaitForSeconds(sounds.ElementAt(14).clip.length);
                 break;
 
-            case 8:
+            case 7:
                 Play("AE F 10");
                 yield return new WaitForSeconds(sounds.ElementAt(15).clip.length);
                 break;
 
-            case 9:
+            case 8:
                 Play("IAE F 5");
                 yield return new WaitForSeconds(sounds.ElementAt(16).clip.length);
                 break;
 
-            case 10:
+            case 9:
                 Play("IAE F 8");
                 yield return new WaitForSeconds(sounds.ElementAt(17).clip.length);
                 break;
 
                 /////////////////////////////////////////////////////////////////////// Commented section below will be uncommented after Betra test are done ////////////////////////////////////////////////
-                //case 11:
+                //case 10:
                 //    Play("AE F 4");
                 //    yield return new WaitForSeconds(sounds.ElementAt(18).clip.length);
                 //    break;
 
-                //case 12:
+                //case 11:
                 //    Play("AE F 9");
                 //    yield return new WaitForSeconds(sounds.ElementAt(19).clip.length);
                 //    break;
 
-                //case 13:
+                //case 12:
                 //    Play("AE F 5");
                 //    yield return new WaitForSeconds(sounds.ElementAt(20).clip.length);
                 //    break;
 
-                //case 14:
+                //case 13:
                 //    Play("AE F 1");
                 //    yield return new WaitForSeconds(sounds.ElementAt(21).clip.length);
                 //    break;
 
-                //case 15:
+                //case 14:
                 //    Play("IAE F 2");
                 //    yield return new WaitForSeconds(sounds.ElementAt(22).clip.length);
                 //    break;
 
-                //case 16:
+                //case 15:
                 //    Play("IAE F 1");
                 //    yield return new WaitForSeconds(sounds.ElementAt(23).clip.length);
                 //    break;
 
-                //case 17:
+                //case 16:
                 //    Play("IAE F 4");
                 //    yield return new WaitForSeconds(sounds.ElementAt(24).clip.length);
                 //    break;
 
-                //case 18:
+                //case 17:
                 //    Play("IAE F 6");
                 //    yield return new WaitForSeconds(sounds.ElementAt(25).clip.length);
                 //    break;
 
-                //case 19:
+                //case 18:
                 //    Play("IAE F 3");
                 //    yield return new WaitForSeconds(sounds.ElementAt(26).clip.length);
                 //    break;
 
-                //case 20:
+                //case 19:
                 //    Play("IAE F 7");
                 //    yield return new WaitForSeconds(sounds.ElementAt(27).clip.length);
                 //    break;

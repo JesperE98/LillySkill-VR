@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 1350be3827091c84e9faa1f494b8b7ac, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1344,6 +1344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649a479aee4fae84eb463063499c95a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_GameSettingsScriptableObject: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927,
+    type: 2}
 --- !u!1 &445549908497502376
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,6 +3546,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a310b9e79e4815848858f8baa4d32cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_GameSettingsScriptableObject: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927,
+    type: 2}
 --- !u!1 &1333164710451159168
 GameObject:
   m_ObjectHideFlags: 0
@@ -5602,7 +5606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &2161870099191748083
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9175,6 +9179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2014c4977fa17374facb41a92af5eb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_GameSettingsScriptableObject: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927,
+    type: 2}
 --- !u!23 &3513841070114312738
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21133,9 +21139,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6570432447288451459}
+  - component: {fileID: 3454587513667979805}
   - component: {fileID: 3742765466869144769}
   - component: {fileID: 2679915580872625573}
-  - component: {fileID: 3454587513667979805}
   m_Layer: 5
   m_Name: VersionNumberText (TMP)
   m_TagString: Untagged
@@ -21853,6 +21859,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9182cf021ea0f64439c45060836a646c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_GameSettingsScriptableObject: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927,
+    type: 2}
   UIPrefabs:
   - {fileID: 217371483098408518, guid: 6844ce05c3b1d544bbb918127f961b3c, type: 3}
   - {fileID: 5863022700912008677, guid: 35c6355ae717c2547af62488979f02e7, type: 3}

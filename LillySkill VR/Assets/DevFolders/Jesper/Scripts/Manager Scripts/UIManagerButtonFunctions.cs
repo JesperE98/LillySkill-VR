@@ -1,3 +1,4 @@
+using JesperScriptableObject;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,14 +10,16 @@ namespace JespersCode
         private UIManager uiManager;
         private GameManager gameManager;
         private AudioManager audioManager;
-        private GameObject uiPrefabCopy;
+
+        [SerializeField]
+        private GameSettingsScriptableObject m_GameSettingsScriptableObject;
 
 
         void Awake()
         {
-            uiManager = FindObjectOfType<UIManager>();
-            gameManager = FindObjectOfType<GameManager>();
-            audioManager = FindObjectOfType<AudioManager>();
+            uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         }
 
         /// <summary>
@@ -108,8 +111,6 @@ namespace JespersCode
         /// </summary>
         public void ActivateFeedbackPage()
         {
-            gameManager.FeedbackPageActive = true;
-            gameManager.SummaryPageActive = false;
             uiManager.uiPrefabCopyList[3].SetActive(true);
         }
 
@@ -118,8 +119,6 @@ namespace JespersCode
         /// </summary>
         public void ActivateSummaryPage()
         {
-            gameManager.FeedbackPageActive = false;
-            gameManager.SummaryPageActive = true;
             uiManager.uiPrefabCopyList[3].SetActive(false);
             uiManager.uiPrefabCopyList[4].SetActive(true);
         }

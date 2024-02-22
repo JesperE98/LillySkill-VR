@@ -16,7 +16,7 @@ namespace JespersCode
 
         void Awake()
         {
-            gameManager = FindObjectOfType<GameManager>();
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             uiManagerButtonFunctions = FindObjectOfType<UIManagerButtonFunctions>();
         }
 
@@ -29,85 +29,90 @@ namespace JespersCode
             {
                 switch (gameManager.AnswerPageNumber)
                 {
-                    case 1:
+                    case 0:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
+                        break;
+                    case 1:
+                        if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
+                        if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
+                        if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         break;
                     case 2:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
-                        if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
-                        if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
-                        break;
-                    case 3:
-                        if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         break;
-                    case 4:
+                    case 3:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         break;
-                    case 5:
+                    case 4:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
+                        break;
+                    case 5:
+                        if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
+                        if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
+                        if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         break;
                     case 6:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
-                        if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
-                        if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
-                        break;
-                    case 7:
-                        if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         break;
-                    case 8:
+                    case 7:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         break;
-                    case 9:
+                    case 8:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         break;
-                    case 10:
+                    case 9:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         break;
-                    case 11:
+                    case 10:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         break;
-                    case 12:
+                    case 11:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         break;
-                    case 13:
+                    case 12:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         break;
-                    case 14:
+                    case 13:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         break;
-                    case 15:
+                    case 14:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
+                        if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
+                        break;
+                    case 15:
+                        if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
+                        if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         break;
                     case 16:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
-                        if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
-                        if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
+                        if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
+                        if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         break;
                     case 17:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
@@ -115,16 +120,11 @@ namespace JespersCode
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         break;
                     case 18:
-                        if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
-                        if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
-                        if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
-                        break;
-                    case 19:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         break;
-                    case 20:
+                    case 19:
                         if (answerButtons[0].activeInHierarchy == true) { uiManagerButtonFunctions.UsedBadAnswerButton(); }
                         if (answerButtons[1].activeInHierarchy == true) { uiManagerButtonFunctions.UsedAverageAnswerButton(); }
                         if (answerButtons[2].activeInHierarchy == true) { uiManagerButtonFunctions.UsedGoodAnswerButton(); }

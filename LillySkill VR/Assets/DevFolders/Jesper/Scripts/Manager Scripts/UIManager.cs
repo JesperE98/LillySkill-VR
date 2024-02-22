@@ -1,3 +1,4 @@
+using JesperScriptableObject;
 using LillyCode;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,24 +13,26 @@ namespace JespersCode
     public class UIManager : MonoBehaviour
     {
         private GameManager gameManager;
+        private GameObject prefabCopy;
 
+        [SerializeField]
+        private GameSettingsScriptableObject m_GameSettingsScriptableObject;
         [Header("UI Generic Lists")]
         [Tooltip("Generic List to add UI Prefabs.")]
         public List<GameObject> UIPrefabs = new List<GameObject>();
 
-        [HideInInspector]
+
         ///<summary>
         ///Generic List that stores copies of the UI Prefabs.
         /// </summary>
+        [HideInInspector]
         public List<GameObject> uiPrefabCopyList = new List<GameObject>();
 
-        private GameObject prefabCopy;
+
 
         [Tooltip("Choose what GameObject in the hierarchy to store the UI copies")]
         [SerializeField]
         private GameObject UIPrefabCollector;
-
-
         [SerializeField]
         private bool uiPrefabIsActive = false;
 
@@ -37,7 +40,7 @@ namespace JespersCode
 
         private void Awake()
         {
-            gameManager = FindObjectOfType<GameManager>();
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         }
         
 
@@ -52,7 +55,7 @@ namespace JespersCode
 
             uiPrefabCopyList[0].SetActive(true); // Activates LillyUI at the start.
 
-            if (gameManager.LoadedScene == 0)
+            if (m_GameSettingsScriptableObject.LoadedScene == 0)
             {
                 ActivateUIPrefab();
             }
@@ -60,27 +63,11 @@ namespace JespersCode
 
         private void Update()
         {
-
-
-            //if (_gameManager.InterviewerInterest <= 0 && _gameManager.InterviewAreActive == true)
-            //{
-            //    _gameManager.InterviewAreActive = !_gameManager.InterviewAreActive;
-            //    Instantiate(_uiPrefabCopyList[1]);
-            //}
-
-
             // If statements to make sure the value stays between the values 1 to 5.
             if (gameManager.InterviewerInterest >= 5)
                 gameManager.InterviewerInterest = 5;
             else if (gameManager.InterviewerInterest <= 1)
                 gameManager.InterviewerInterest = 1;
-
-            //if (gameManager.InterviewerIntro == true)
-            //{
-            //    StartCoroutine(gameManager.InterviewIntro());
-            //    gameManager.InterviewerIntro = false;
-            //}
-
         }
 
         /// <summary>
@@ -89,7 +76,7 @@ namespace JespersCode
         public void ActivateUIPrefab()
         {
             // Switch statement that checks which active scene it is.
-            switch(gameManager.LoadedScene)
+            switch(m_GameSettingsScriptableObject.LoadedScene)
             {
                 case 0:
                     uiPrefabCopyList[0].SetActive(true);
@@ -98,8 +85,19 @@ namespace JespersCode
                 case 1:
                     switch (gameManager.AnswerPageNumber)
                     {
-                        case 1:
+                        case 0:
                             
+                            // Checks if bool are false.
+                            if (uiPrefabIsActive == false)
+                            {
+                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
+                                uiPrefabCopyList[1].SetActive(true);
+                                uiPrefabCopyList[2].SetActive(true);
+                                uiPrefabIsActive = true;
+                            }
+                            break;
+
+                        case 1:
                             // Checks if bool are false.
                             if (uiPrefabIsActive == false)
                             {
@@ -188,17 +186,6 @@ namespace JespersCode
                             break;
 
                         case 9:
-                            // Checks if bool are false.
-                            if (uiPrefabIsActive == false)
-                            {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                uiPrefabIsActive = true;
-                            }
-                            break;
-
-                        case 10:
                             // Checks if bool are false.
                             if (uiPrefabIsActive == false)
                             {

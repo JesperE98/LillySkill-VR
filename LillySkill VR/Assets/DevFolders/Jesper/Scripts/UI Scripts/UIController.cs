@@ -29,11 +29,11 @@ public class UIController : Button
     /// <summary>
     /// This method is called by the Main Camera when it stops gazing at this GameObject.
     /// </summary>
-    public byte OnPointerExit()
-    {
-        byte emptyValue = 0;
-        return emptyValue;
-    }
+    //public void OnPointerExit()
+    //{
+    //    string message = "OnPointerExit";
+    //    print(message);
+    //}
 
     /// <summary>
     /// This method is called by the Main Camera when it is gazing at this GameObject and the screen

@@ -636,9 +636,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6672977154492296465}
+  - component: {fileID: 4113167480652686357}
   - component: {fileID: 3915994639997379776}
   - component: {fileID: 1627068525686280722}
-  - component: {fileID: 4114662086268993085}
   m_Layer: 5
   m_Name: Questions
   m_TagString: Untagged
@@ -668,6 +668,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4113167480652686357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809372352626861996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05a5827a562fa7449808aa455a15087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GameSettingsScriptableObject: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927,
+    type: 2}
+  m_InterviewAnswersListScriptableObject: {fileID: 11400000, guid: 27c16cf9df066424183e442f75a45413,
+    type: 2}
+  AnswerTextObject:
+  - {fileID: 3375615178781408362}
+  - {fileID: 1276592278678772309}
+  - {fileID: 6443455242067420276}
+  textList:
+  - {fileID: 7848711189107930129}
+  - {fileID: 994789803997392352}
+  - {fileID: 8294862478383249110}
 --- !u!222 &3915994639997379776
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -706,26 +730,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4114662086268993085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2809372352626861996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65a2a60407bb0b64d88977c7ba99750b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AnswerTextObject:
-  - {fileID: 3375615178781408362}
-  - {fileID: 1276592278678772309}
-  - {fileID: 6443455242067420276}
-  textList:
-  - {fileID: 7848711189107930129}
-  - {fileID: 994789803997392352}
-  - {fileID: 8294862478383249110}
 --- !u!1 &2886239689268936877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,7 +1972,7 @@ GameObject:
   - component: {fileID: 940734713811238139}
   - component: {fileID: 5495053581164647293}
   m_Layer: 5
-  m_Name: Questions Screen
+  m_Name: Answer Screen Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2298,7 +2302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2539487887860186154
 RectTransform:
   m_ObjectHideFlags: 0

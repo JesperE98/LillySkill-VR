@@ -15,7 +15,7 @@ namespace JespersCode
         private void Awake()
         {
             animator = GetComponent<Animator>();
-            gameManager = FindObjectOfType<GameManager>();
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         }
 
         private void Update()

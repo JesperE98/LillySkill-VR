@@ -11,7 +11,7 @@ namespace JespersCode
 
     private void Awake()
         {
-            gameManager = FindAnyObjectByType<GameManager>();
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             fadeInFadeOutMaterial = GetComponent<Renderer>();
         }
 

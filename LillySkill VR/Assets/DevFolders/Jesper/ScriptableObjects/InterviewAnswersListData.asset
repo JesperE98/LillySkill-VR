@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07b22576582e2ba4f8ce5cd9316b7cdf, type: 3}
+  m_Name: InterviewAnswersListData
+  m_EditorClassIdentifier: 
+  m_InterviewAnswerList:
+  - m_ID: 0
+    m_AnswerOne: "Jag har flera \xE5rs arbetslivserfarenhet, utrustad med en robust
+      kompetens och en djup f\xF6rst\xE5else f\xF6r olika tekniker och arbetsuppgifter."
+    m_AnswerTwo: "Jag \xE4r sugen p\xE5 att b\xF6rja jobba. Trots att jag \xE4nnu
+      inte skaffat specifik arbetserfarenhet \xE4r jag motiverad att g\xF6ra en positiv
+      inverkan."
+    m_AnswerThree: "Jag har \xE4nnu inte skaffat mig tidigare arbetserfarenhet, men
+      jag har utvecklat relevanta f\xE4rdigheter genom att uppr\xE4tth\xE5lla renlighet
+      i mitt boende."
+  - m_ID: 1
+    m_AnswerOne: "H\xF6g arbetskapacitet och f\xF6rm\xE5ga att hantera fysiskt kr\xE4vande
+      arbetsuppgifter."
+    m_AnswerTwo: "God samarbetsf\xF6rm\xE5ga och f\xF6rm\xE5ga att samarbeta."
+    m_AnswerThree: "Noggrannhet och f\xF6rm\xE5ga att f\xF6lja instruktioner."
+  - m_ID: 2
+    m_AnswerOne: "Jag har aldrig r\xE5kat ut f\xF6r en utmanande situation tidigare."
+    m_AnswerTwo: "Jag har st\xE4llts inf\xF6r minst en sv\xE5r situation tidigare
+      och antingen l\xF6ste jag den sj\xE4lv eller v\xE4nde mig till mina v\xE4nner
+      f\xF6r att f\xE5 st\xF6d."
+    m_AnswerThree: Jag undviker vanligtvis utmanande situationer.
+  - m_ID: 3
+    m_AnswerOne: "Jag brukar kontrollera teamprojekt och se till att allt g\xE5r
+      min v\xE4g."
+    m_AnswerTwo: "Jag f\xF6redrar att jobba ensam."
+    m_AnswerThree: "Jag v\xE4rdes\xE4tter teamwork, d\xE4r alla arbetar som ett team."
+  - m_ID: 4
+    m_AnswerOne: Jag skulle ta itu med konflikten med en kollega genom respektfull
+      kommunikation.
+    m_AnswerTwo: "Jag har aldrig haft n\xE5gra konflikter med kollegor."
+    m_AnswerThree: "N\xE4r konflikter uppst\xE5r tenderar jag att h\xE5lla avst\xE5nd
+      och hoppas att de l\xF6ser sig p\xE5 egen hand."
+  - m_ID: 5
+    m_AnswerOne: "Jag bryr mig inte om feedback eller kritik eftersom jag vet att
+      jag g\xF6r ett bra jobb."
+    m_AnswerTwo: "Jag ser feedback och kritik som n\xE5got positivt, f\xF6r att l\xE4ra
+      mig och kunna v\xE4xa p\xE5 min arbetsplats."
+    m_AnswerThree: "Jag hanterar inte feedback eller kritik s\xE4rskilt bra."
+  - m_ID: 6
+    m_AnswerOne: "Jag \xE4gnar mig inte \xE5t n\xE5gra aktiviteter eller hobbyer
+      p\xE5 min fritid."
+    m_AnswerTwo: "Jag har n\xE5gra aktiviteter eller hobbyer som jag \xE4gnar mig
+      \xE5t p\xE5 min fritid."
+    m_AnswerThree: "Jag \xE4gnar mig \xE5t specifika aktiviteter eller hobbyer p\xE5
+      min fritid, f\xF6r min personliga utveckling och intresse."
+  - m_ID: 7
+    m_AnswerOne: "Jag har \xE4nnu inte t\xE4nkt p\xE5 mina planer i detalj."
+    m_AnswerTwo: "Jag ser mig sj\xE4lv v\xE4xa tillsammans med f\xF6retaget."
+    m_AnswerThree: "Jag t\xE4nker mig att jag tar mig an olika roller med \xF6kat
+      ansvar f\xF6r min personliga utveckling."
+  - m_ID: 8
+    m_AnswerOne: "Personlig utveckling \xE4r avg\xF6rande, och jag s\xF6ker aktivt
+      m\xF6jligheter att l\xE4ra, v\xE4xa och f\xF6rb\xE4ttra mina f\xE4rdigheter."
+    m_AnswerTwo: "Personlig utveckling \xE4r viktigt f\xF6r mig, men jag har \xE4nnu
+      inte drivit den aktivt fram\xE5t."
+    m_AnswerThree: "Personlig utveckling \xE4r inte en prioritet f\xF6r mig."
+  - m_ID: 9
+    m_AnswerOne: "Jag har inte avslutat n\xE5gon formell utbildning."
+    m_AnswerTwo: "Jag har avslutat h\xF6gskole-/universitetsutbildning eller har
+      en h\xF6gre examen."
+    m_AnswerThree: "Jag har g\xE5tt n\xE5gon gymnasieutbildning eller liknande."
+  - m_ID: 10
+    m_AnswerOne: "F\xF6rtydliga situationen och hitta en \xF6msesidigt acceptabel
+      l\xF6sning."
+    m_AnswerTwo: "Eskalera \xE4rendet till en arbetsledare eller chef."
+    m_AnswerThree: "Skyll p\xE5 den andra personen f\xF6r att han inte f\xF6rst\xE5r."
+  - m_ID: 11
+    m_AnswerOne: "Undvik problemet och hoppas att det l\xF6ser sig p\xE5 egen hand."
+    m_AnswerTwo: "Fokusera p\xE5 att kritisera situationen s\xE5 att man inte g\xF6r
+      om det."
+    m_AnswerThree: "Lyssnar aktivt och s\xF6ker en \xF6msesidigt f\xF6rdelaktig l\xF6sning."
+  - m_ID: 12
+    m_AnswerOne: "Jag skulle lyssna p\xE5 b\xE5da teammedlemmarnas perspektiv utan
+      att ta n\xE5gon sida."
+    m_AnswerTwo: "Undvika konflikten och hoppas att de l\xF6ser det sj\xE4lva."
+    m_AnswerThree: "Om konflikten forts\xE4tter eller eskalerar kommer jag att kontakta
+      en l\xE4mplig auktoritetsperson, till exempel en handledare eller chef."
+  - m_ID: 13
+    m_AnswerOne: "Involvera n\xE5gon utomst\xE5ende i projektet f\xF6r att hitta
+      en r\xE4ttvis l\xF6sning f\xF6r oss."
+    m_AnswerTwo: "Jag \xE4r os\xE4ker p\xE5 vad jag ska g\xF6ra i denna situation
+      och tar d\xE4rf\xF6r inte del av konflikten."
+    m_AnswerThree: "Undvika konflikten och hoppas att den l\xF6ser sig sj\xE4lv."
+  - m_ID: 14
+    m_AnswerOne: "Skylla p\xE5 externa faktorer f\xF6r motg\xE5ngen."
+    m_AnswerTwo: "L\xE4ra av upplevelsen och anpassa mitt tillv\xE4gag\xE5ngss\xE4tt."
+    m_AnswerThree: "Ge upp och g\xE5 vidare till n\xE5got annat."
+  - m_ID: 15
+    m_AnswerOne: "Jag har tidigare engagerat mig i volont\xE4rarbete och har d\xE4rf\xF6r
+      erfarenhet."
+    m_AnswerTwo: "Jag har \xE4nnu inte f\xE5tt n\xE5gon arbetslivserfarenhet eller
+      gjort volont\xE4rarbete."
+    m_AnswerThree: "Jag har varit involverad i aktiviteter som kan vara f\xF6rdelaktiga
+      p\xE5 en arbetsplats."
+  - m_ID: 16
+    m_AnswerOne: "Jag \xE4r bra p\xE5 att samarbeta och har starka kommunikationsf\xE4rdigheter."
+    m_AnswerTwo: "Jag har en stark analytisk f\xF6rm\xE5ga och \xE4r bra p\xE5 probleml\xF6sning."
+    m_AnswerThree: "Jag h\xE5ller fortfarande p\xE5 att best\xE4mma mina styrkor
+      och f\xE4rdigheter."
+  - m_ID: 17
+    m_AnswerOne: "Jag \xE4r motiverad att arbeta inom detta omr\xE5de och bygga en
+      framg\xE5ngsrik karri\xE4r."
+    m_AnswerTwo: "Jag best\xE4mmer fortfarande mina karri\xE4rsm\xE5l, men jag \xE4r
+      \xF6ppen f\xF6r m\xF6jligheter och ivrig att l\xE4ra mig mer."
+    m_AnswerThree: "Jag s\xF6ker detta jobb f\xF6r att skaffa arbetslivserfarenhet
+      och l\xE4ra mig nya f\xE4rdigheter."
+  - m_ID: 18
+    m_AnswerOne: "Jag har ingen \xE5sikt i den h\xE4r fr\xE5gan."
+    m_AnswerTwo: "Jag ser feedback och v\xE4gledning som m\xF6jligheter att l\xE4ra
+      mig och f\xF6rb\xE4ttra mig sj\xE4lv."
+    m_AnswerThree: "Jag \xE4r \xF6ppen f\xF6r feedback men kan beh\xF6va tid f\xF6r
+      att bearbeta och till\xE4mpa den."
+  - m_ID: 19
+    m_AnswerOne: Att vara impulsiv och envis.
+    m_AnswerTwo: Att vara effektiv och organiserad.
+    m_AnswerThree: Att ha god teamwork och kommunikation.
