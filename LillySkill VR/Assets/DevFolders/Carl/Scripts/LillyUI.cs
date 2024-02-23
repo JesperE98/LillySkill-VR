@@ -4,6 +4,9 @@ using UnityEngine;
 using TMPro;
 using System;
 using System.Linq;
+using Unity.VisualScripting;
+using JespersCode;
+using UnityEngine.Audio;
 
 namespace LillyCode
 {
@@ -14,6 +17,12 @@ namespace LillyCode
 
         [Tooltip("Reference to the information text")]
         [SerializeField] private TextMeshProUGUI canvasText;
+
+        [Tooltip("Reference to the audio source")]
+        [SerializeField] private AudioSource audioSource;
+
+        [Tooltip("Reference to the audiomixer's voice output")]
+        [SerializeField] private AudioMixerGroup voiceMixerGroup;
 
         [Tooltip("reference to the ''Next Button'' gameobject")]
         [SerializeField] private GameObject nextButtonGameObject;
@@ -34,13 +43,69 @@ namespace LillyCode
         // Keeps track of the active screen
         private int activeScreen;
 
+        private UIManager uiManager;
+        private GameManager gameManager;
+        private void Awake()
+        {
+            uiManager = FindAnyObjectByType<UIManager>();
+            gameManager = FindAnyObjectByType<GameManager>();
+        }
+
+        private void Start()
+        {
+            activeScreen = 0;
+            DisableUIButtons();
+            if (gameManager.AnswerPageNumber >= 10) { ActivateHelpScreen(0); }
+        }
+        private void Update()
+        {
+            if (gameManager.FadeInComplete == true)
+            {
+                ActivateHelpScreen(0);
+            }
+
+            gameManager.FadeInComplete = false;
+
+            // Checks for the active screen and shows the information
+            if (informationScreenContent[activeScreen].isActive == true && informationScreenContent != null)
+            {
+                ShowHelpScreenInformation();
+            }
+
+            if(gameManager.LillyIntro == false && gameManager.LillyOutro == false)
+            {
+                if (activeScreen == 2)
+                {
+                    uiManager.uiPrefabCopyList[1].SetActive(true);
+                }
+                else if (activeScreen == 3)
+                {
+                    uiManager.uiPrefabCopyList[1].SetActive(false);
+                    uiManager.uiPrefabCopyList[2].SetActive(true);
+                }
+                else if (activeScreen == 4)
+                {
+                    uiManager.uiPrefabCopyList[1].SetActive(true);
+                    uiManager.uiPrefabCopyList[2].SetActive(false);
+                }
+                else if (activeScreen == 6)
+                {
+                    uiManager.uiPrefabCopyList[1].SetActive(false);
+                    uiManager.uiPrefabCopyList[2].SetActive(false);
+                }
+            }
+        }
         [System.Serializable]
         public class LillyInformationScreen
         {
+            [HideInInspector]
+            public int index;
             public string speechText;
             public int picture;
+            public AudioClip lillyAudioClip;
+            public bool lastScreen;
+            [HideInInspector]
             public bool isActive;
-            public bool proceedToNextIndex;
         }
 
         /// <summary>
@@ -48,9 +113,27 @@ namespace LillyCode
         /// </summary>
         public void ActivateHelpScreen(int screenIndex)
         {
-            lillyHelpScreen.SetActive(true);
-            activeScreen = screenIndex;
-            informationScreenContent[activeScreen].isActive = true;
+            if (informationScreenContent != null)
+            {
+                lillyHelpScreen.SetActive(true);
+                activeScreen = screenIndex;
+                informationScreenContent[activeScreen].isActive = true;
+                audioSource.clip = informationScreenContent[activeScreen].lillyAudioClip;
+                audioSource.outputAudioMixerGroup = voiceMixerGroup;
+                if (audioSource.clip != null)
+                {
+                    StartCoroutine(PlayLillyAudio());
+                }
+            }
+            else
+                return;
+        }
+
+        public IEnumerator PlayLillyAudio()
+        {
+            audioSource.Play();
+            yield return new WaitForSeconds(audioSource.clip.length);
+            EnableUIButtons();
         }
 
         /// <summary>
@@ -69,6 +152,7 @@ namespace LillyCode
         {
             picturesOfLilly[informationScreenContent[activeScreen].picture].SetActive(false);
             informationScreenContent[activeScreen].isActive = false;
+            DisableUIButtons();
             activeScreen++;
             ActivateHelpScreen(activeScreen);
         }
@@ -80,36 +164,33 @@ namespace LillyCode
         {
             informationScreenContent[activeScreen].isActive = false;
             lillyHelpScreen.SetActive(false);
+            gameManager.LillyIntro = true;
         }
 
-        private void Start()
+        /// <summary>
+        /// Enables the Lilly UI buttons
+        /// </summary>
+        private void EnableUIButtons()
         {
-            ActivateHelpScreen(0);
-        }
-
-        private void Update()
-        {
-            // Checks for the active screen and shows the information
-            if (informationScreenContent[activeScreen].isActive == true)
+            if (informationScreenContent[activeScreen].lastScreen == true)
             {
-                ShowHelpScreenInformation();
-
-                if(informationScreenContent[activeScreen].proceedToNextIndex == true)
-                {
-                    nextButtonGameObject.SetActive(true);
-                }
-                else
-                {
-                    closeButtonGameObject.SetActive(true);
-                }
+                closeButtonGameObject.SetActive(true);
             }
-
-            // Deactivates the active help screen
             else
             {
-                DeactivateLillyHelpScreen();
+                nextButtonGameObject.SetActive(true);
             }
         }
+
+        /// <summary>
+        /// Disables the Lilly UI buttons
+        /// </summary>
+       private void DisableUIButtons()
+        {
+            nextButtonGameObject.SetActive(false);
+            closeButtonGameObject.SetActive(false);
+        }
+
     }
 }
 

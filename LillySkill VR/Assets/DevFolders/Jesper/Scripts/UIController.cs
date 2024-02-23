@@ -12,21 +12,27 @@ using UnityEngine.UI;
 /// </summary>
 public class UIController : Button
 {
+    private AudioManager audioManager;
+    protected override void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+    }
 
     /// <summary>
     /// This method is called by the Main Camera when it starts gazing at this GameObject.
     /// </summary>
     public void OnPointerEnter()
     {
-
+        audioManager.Play("Button hover");
     }
 
     /// <summary>
     /// This method is called by the Main Camera when it stops gazing at this GameObject.
     /// </summary>
-    public void OnPointerExit()
+    public byte OnPointerExit()
     {
-        return;
+        byte emptyValue = 0;
+        return emptyValue;
     }
 
     /// <summary>
@@ -36,5 +42,6 @@ public class UIController : Button
     public void OnPointerClick()
     {
         onClick.Invoke();
+        audioManager.Play("Button press");
     }
 }

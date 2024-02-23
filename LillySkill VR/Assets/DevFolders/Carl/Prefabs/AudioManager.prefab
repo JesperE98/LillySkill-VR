@@ -83,7 +83,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Ambience
     clip: {fileID: 8300000, guid: c5b1dc22c740da746b24942c722df27b, type: 3}
-    volume: 1
+    volume: 0.05
     spatialBlend: 0
     loop: 1
     source: {fileID: 0}
