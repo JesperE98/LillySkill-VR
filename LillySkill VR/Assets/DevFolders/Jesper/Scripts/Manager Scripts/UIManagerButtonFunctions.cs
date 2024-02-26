@@ -30,7 +30,7 @@ namespace JespersCode
 
             if (gameManager.AnswerPageNumber <= 10)
             {
-                audioManager.StartAudioCoroutine();
+               // audioManager.StartAudioCoroutine();
             }
             else { return; }
         }
@@ -47,7 +47,7 @@ namespace JespersCode
 
             if (gameManager.AnswerPageNumber <= 10)
             {
-                audioManager.StartAudioCoroutine();
+              // audioManager.StartAudioCoroutine();
             }
             else { return; }
         }
@@ -64,7 +64,7 @@ namespace JespersCode
 
             if(gameManager.AnswerPageNumber <= 10)
             {
-                audioManager.StartAudioCoroutine();
+                // audioManager.StartAudioCoroutine();
             }
             else { return; }
         }
@@ -80,7 +80,7 @@ namespace JespersCode
 
             if (gameManager.AnswerPageNumber <= 10)
             {
-                audioManager.StartAudioCoroutine();
+                // audioManager.StartAudioCoroutine();
             }
             else { return; }
         }
@@ -96,7 +96,7 @@ namespace JespersCode
 
             if (gameManager.AnswerPageNumber <= 10)
             {
-                audioManager.StartAudioCoroutine();
+                // audioManager.StartAudioCoroutine();
             }
             else { return; }
         }

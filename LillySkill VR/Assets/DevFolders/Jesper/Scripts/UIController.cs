@@ -23,7 +23,7 @@ public class UIController : Button
     /// </summary>
     public void OnPointerEnter()
     {
-        audioManager.Play("Button hover");
+        // audioManager.PlaySFXAudioClip("Button hover");
     }
 
     /// <summary>
@@ -42,6 +42,6 @@ public class UIController : Button
     public void OnPointerClick()
     {
         onClick.Invoke();
-        audioManager.Play("Button press");
+        // audioManager.PlaySFXAudioClip("Button press");
     }
 }
