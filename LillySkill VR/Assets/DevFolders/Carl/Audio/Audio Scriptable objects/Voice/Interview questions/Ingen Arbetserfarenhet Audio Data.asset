@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
+  m_Name: Ingen Arbetserfarenhet Audio Data
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: IAE F 0
+    clip: {fileID: 8300000, guid: f96128434f8b4e741a95b977b341fdbe, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: IAE F 1
+    clip: {fileID: 8300000, guid: eaf15747861db2c44b8e6b163d9f0603, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: IAE F 2
+    clip: {fileID: 8300000, guid: bdd72cee143056244b087f390aebee03, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: IAE F 3
+    clip: {fileID: 8300000, guid: ab2512c0fa62653468033657962e4b88, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: IAE F 4
+    clip: {fileID: 8300000, guid: 905013b461757964ca8f7d364007ce32, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: IAE F 5
+    clip: {fileID: 8300000, guid: a88e5f124cf4ca544a26454a85dec4c4, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: IAE F 6
+    clip: {fileID: 8300000, guid: bfa07010e203f674fa15e97c22608fc9, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: IAE F 7
+    clip: {fileID: 8300000, guid: 64cabfb599090174698688a92ced9975, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: IAE F 8
+    clip: {fileID: 8300000, guid: a5e088aa63d8fcf40bf556e8ca754dae, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
