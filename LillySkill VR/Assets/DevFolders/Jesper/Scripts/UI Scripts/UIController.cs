@@ -26,7 +26,7 @@ namespace JespersCode
         /// </summary>
         public void OnPointerEnter()
         {
-            audioManager.Play("Button hover");
+            audioManager.PlaySFXAudio(1);
         }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace JespersCode
         public void OnPointerClick()
         {
             onClick.Invoke();
-            audioManager.Play("Button press");
+            audioManager.PlaySFXAudio(0);
         }
     }
 }
