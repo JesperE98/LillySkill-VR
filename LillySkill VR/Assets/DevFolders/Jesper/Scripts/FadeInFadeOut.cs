@@ -1,3 +1,4 @@
+using JesperScriptableObject;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,15 +10,27 @@ namespace JespersCode
         private Renderer fadeInFadeOutMaterial;
         private GameManager gameManager;
 
-    private void Awake()
+        [SerializeField]
+        private GameSettingsScriptableObject m_GameSettings;
+
+        private void Awake()
         {
-            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            if(m_GameSettings.LoadedScene != 0)
+            {
+                gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            }
+
             fadeInFadeOutMaterial = GetComponent<Renderer>();
         }
 
-        public void StartFadeInRoutine()
+        private void Start()
         {
             StartCoroutine(FadeInRoutine(true));
+        }
+
+        public void StartFadeOutRoutine()
+        {
+            StartCoroutine(FadeOutRoutine(true));
         }
 
         private IEnumerator FadeInRoutine(bool fadeAway)
@@ -32,10 +45,14 @@ namespace JespersCode
                     yield return null;
                 }
             }
-            gameManager.FadeInComplete = true;
+
+            if (m_GameSettings.LoadedScene != 0)
+            {
+                gameManager.FadeInComplete = true;
+            }
         }
 
-        public IEnumerator FadeOutRoutine(bool fadeAway)
+        private IEnumerator FadeOutRoutine(bool fadeAway)
         {
             if (fadeAway == true)
             {
@@ -45,7 +62,6 @@ namespace JespersCode
                     yield return null;
                 }
             }
-            gameManager.FadeOutComplete = true;
         }
     }
 }

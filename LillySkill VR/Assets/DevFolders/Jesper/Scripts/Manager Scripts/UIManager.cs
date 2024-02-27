@@ -16,7 +16,7 @@ namespace JespersCode
         private GameObject prefabCopy;
 
         [SerializeField]
-        private GameSettingsScriptableObject m_GameSettingsScriptableObject;
+        private GameSettingsScriptableObject m_GameSettings;
         [Header("UI Generic Lists")]
         [Tooltip("Generic List to add UI Prefabs.")]
         public List<GameObject> UIPrefabs = new List<GameObject>();
@@ -40,7 +40,10 @@ namespace JespersCode
 
         private void Awake()
         {
-            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            if(m_GameSettings.LoadedScene != 0)
+            {
+                gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            }
         }
         
 
@@ -55,19 +58,10 @@ namespace JespersCode
 
             uiPrefabCopyList[0].SetActive(true); // Activates LillyUI at the start.
 
-            if (m_GameSettingsScriptableObject.LoadedScene == 0)
+            if (m_GameSettings.LoadedScene == 0)
             {
                 ActivateUIPrefab();
             }
-        }
-
-        private void Update()
-        {
-            // If statements to make sure the value stays between the values 1 to 5.
-            if (gameManager.InterviewerInterest >= 5)
-                gameManager.InterviewerInterest = 5;
-            else if (gameManager.InterviewerInterest <= 1)
-                gameManager.InterviewerInterest = 1;
         }
 
         /// <summary>
@@ -76,7 +70,7 @@ namespace JespersCode
         public void ActivateUIPrefab()
         {
             // Switch statement that checks which active scene it is.
-            switch(m_GameSettingsScriptableObject.LoadedScene)
+            switch(m_GameSettings.loadedScene)
             {
                 case 0:
                     uiPrefabCopyList[0].SetActive(true);

@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using static UnityEngine.Timeline.AnimationPlayableAsset;
 
 namespace JespersCode
 {
@@ -15,6 +14,7 @@ namespace JespersCode
         void Start()
         {
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            answerText = GetComponent<TMP_Text>();
             SummaryPageText();
         }
 

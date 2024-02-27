@@ -13,8 +13,6 @@ namespace JespersCode
     {
         private GameManager gameManager;
         private TMP_Text answerText;
-        //private Button answerButton;
-        //private bool loopDone = false;
 
         [SerializeField]
         private GameSettingsScriptableObject m_GameSettingsScriptableObject;

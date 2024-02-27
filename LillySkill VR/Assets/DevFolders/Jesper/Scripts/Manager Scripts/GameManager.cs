@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     protected List<string> answerList = new List<string>();
     protected internal int playerScore, interviewerInterest, answerPageNumber;
-    protected internal bool fadeInComplete, fadeOutComplete, lillyIntro, lillyOutro, interviewerIntro, interviewAreActive, informationPageActive;
+    protected internal bool fadeInComplete, lillyIntro, lillyOutro, interviewerIntro, interviewAreActive, informationPageActive;
 
     /// <summary>
     /// Gets and sets int value to determine which answer page the user are on and controlls which ansers that should be given to the user.
@@ -26,11 +26,6 @@ public class GameManager : MonoBehaviour
     /// Checks if the Fade in effect are active.
     /// </summary>
     public bool FadeInComplete { get { return fadeInComplete; } set { fadeInComplete = value; } }
-
-    /// <summary>
-    /// Checks if the Fade Out Effect are active.
-    /// </summary>
-    public bool FadeOutComplete { get { return fadeOutComplete; } set { fadeOutComplete = value; } }
 
     /// <summary>
     /// Checks if the Lilly Intro are active,
@@ -88,6 +83,14 @@ public class GameManager : MonoBehaviour
         DefaultValues();
     }
 
+    private void Update()
+    {
+        // If statements to make sure the value stays between the values 1 to 5.
+        if (interviewerInterest >= 5)
+            interviewerInterest = 5;
+        else if (interviewerInterest <= 1)
+            interviewerInterest = 1;
+    }
 
     /// <summary>
     /// Method with default values if user wants to restart current active scene.
@@ -106,7 +109,6 @@ public class GameManager : MonoBehaviour
         informationPageActive = false;
         answerList.Clear();
         fadeInComplete = false;
-        fadeOutComplete = false;
     }
 
     /// <summary>

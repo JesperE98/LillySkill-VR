@@ -10,25 +10,31 @@ namespace JespersCode
     public class SceneHandler : MonoBehaviour
     {
         [SerializeField]
-        private GameSettingsScriptableObject m_GameSettingsScriptableObject;
-
+        private GameSettingsScriptableObject m_GameSettings;
+        private FadeInFadeOut m_FadeInFadeOut;
         private GameManager gameManager;
         private int sceneIndex;
 
         private void Awake()
         {
-            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            if (m_GameSettings.LoadedScene != 0)
+            {
+                gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            }
+
+            m_FadeInFadeOut = GameObject.Find("FadeScreen").GetComponent<FadeInFadeOut>();
         }
 
         /// <summary>
         /// Loads the Start Menu Scene.
         /// </summary>
-        public void LoadStartMenuScene ()
+        public void LoadStartMenuScene()
         {
             sceneIndex = 0;
-            m_GameSettingsScriptableObject.LoadedScene = sceneIndex;
-            
-            SceneManager.LoadScene(m_GameSettingsScriptableObject.LoadedScene);
+            m_GameSettings.LoadedScene = sceneIndex;
+            m_FadeInFadeOut.StartFadeOutRoutine();
+
+            SceneManager.LoadScene(m_GameSettings.LoadedScene);
         }
 
         /// <summary>
@@ -37,9 +43,9 @@ namespace JespersCode
         public void LoadMainModeScene()
         {
             sceneIndex = 1;
-            m_GameSettingsScriptableObject.LoadedScene = sceneIndex;
-
-            SceneManager.LoadScene(m_GameSettingsScriptableObject.LoadedScene);
+            m_GameSettings.LoadedScene = sceneIndex;
+            m_FadeInFadeOut.StartFadeOutRoutine();
+            SceneManager.LoadScene(m_GameSettings.LoadedScene);
         }
 
         /// <summary>
@@ -47,43 +53,21 @@ namespace JespersCode
         /// </summary>
         public void LoadTutorialScene()
         {
-            sceneIndex = 2;
-            m_GameSettingsScriptableObject.LoadedScene = sceneIndex;
-
-            SceneManager.LoadScene(m_GameSettingsScriptableObject.LoadedScene);
+            sceneIndex = 1;
+            m_GameSettings.LoadedScene = sceneIndex;
+            m_FadeInFadeOut.StartFadeOutRoutine();
+            SceneManager.LoadScene(m_GameSettings.LoadedScene);
         }
 
         /// <summary>
         /// Loads the Easy Mode Exercise Scene.
         /// </summary>
-        public void LoadExercise1Scene()
+        public void LoadExerciseScene()
         {
-            sceneIndex = 0;
-            m_GameSettingsScriptableObject.LoadedScene = sceneIndex;
-
-            SceneManager.LoadScene(m_GameSettingsScriptableObject.LoadedScene);
-        }
-
-        /// <summary>
-        /// Loads the Medium Mode Exercise Scene.
-        /// </summary>
-        public void LoadExercise2Scene()
-        {
-            sceneIndex = 4;
-            m_GameSettingsScriptableObject.LoadedScene = sceneIndex;
-
-            SceneManager.LoadScene(m_GameSettingsScriptableObject.LoadedScene);
-        }
-
-        /// <summary>
-        /// Loads the Hard Mode Exercise Scene.
-        /// </summary>
-        public void LoadExercise3Scene()
-        {
-            sceneIndex = 5;
-            m_GameSettingsScriptableObject.LoadedScene = sceneIndex;
-
-            SceneManager.LoadScene(m_GameSettingsScriptableObject.LoadedScene);
+            sceneIndex = 1;
+            m_GameSettings.LoadedScene = sceneIndex;
+            m_FadeInFadeOut.StartFadeOutRoutine();
+            SceneManager.LoadScene(m_GameSettings.LoadedScene);
         }
 
         /// <summary>
@@ -91,11 +75,13 @@ namespace JespersCode
         /// </summary>
         public void QuitApplciation()
         {
+            m_FadeInFadeOut.StartFadeOutRoutine();
             Application.Quit();
         }
 
         public void ResetCurrentScene()
         {
+            m_FadeInFadeOut.StartFadeOutRoutine();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             gameManager.DefaultValues();
         }

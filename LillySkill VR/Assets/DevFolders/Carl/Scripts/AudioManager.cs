@@ -1,4 +1,5 @@
 using JespersCode;
+using JesperScriptableObject;
 using System;
 using System.Collections;
 using System.Linq;
@@ -6,19 +7,28 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [Tooltip("A list containing all the soundsources from the AudioManager. " +
-        "\n\nCall function: FindObjectOfType<AudioManager>().Play('NAME'); " +
-        "\nWhere NAME is the name of the sound.")]
-    public Sound[] sounds;
     private GameManager gameManager;
     private UIManager uiManager;
     private Animator animator;
 
+    [SerializeField]
+    private GameSettingsScriptableObject m_GameSettings;
+    [Tooltip("A list containing all the soundsources from the AudioManager. " +
+        "\n\nCall function: FindObjectOfType<AudioManager>().Play('NAME'); " +
+        "\nWhere NAME is the name of the sound.")]
+    public Sound[] sounds;
+
+
+
+
     private void Awake()
     {
-        gameManager = FindAnyObjectByType<GameManager>();
-        uiManager = FindAnyObjectByType<UIManager>();
-        animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
+        if (m_GameSettings.LoadedScene != 0)
+        {
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
+        }
+        uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
 
         // Adds an audiosource to the AudioManager. Also makes that, for each audiosource,
         // the data in the list updates the audiosource component values.  
@@ -40,19 +50,22 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        foreach (Sound s in sounds)
+        if(gameManager != null)
         {
-            s.source.clip = s.clip;
-            s.source.volume = s.volume;
-            s.source.spatialBlend = s.spatialBlend;
-            s.source.loop = s.loop;
-            s.source.outputAudioMixerGroup = s.mixerGroup;
-        }
+            foreach (Sound s in sounds)
+            {
+                s.source.clip = s.clip;
+                s.source.volume = s.volume;
+                s.source.spatialBlend = s.spatialBlend;
+                s.source.loop = s.loop;
+                s.source.outputAudioMixerGroup = s.mixerGroup;
+            }
 
-        if (gameManager.LillyIntro == true && gameManager.LillyOutro == false)
-        {
-            StartCoroutine(PlayAudioClip());
-            gameManager.LillyIntro = false;
+            if (gameManager.LillyIntro == true && gameManager.LillyOutro == false)
+            {
+                StartCoroutine(PlayAudioClip());
+                gameManager.LillyIntro = false;
+            }
         }
     }
 
@@ -81,7 +94,7 @@ public class AudioManager : MonoBehaviour
     {
         animator.SetBool("AskingQuestion", true);
 
-        if(gameManager.InterviewAreActive == false)
+        if(gameManager.InterviewAreActive == false && gameManager.LillyOutro == false)
         {
             gameManager.InterviewAreActive = true;
 
