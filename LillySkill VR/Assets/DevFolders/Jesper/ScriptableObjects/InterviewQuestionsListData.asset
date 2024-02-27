@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ba28c56aaf5bb46bf3b86bbc60ea22, type: 3}
+  m_Name: InterviewQuestionsListData
+  m_EditorClassIdentifier: 
+  questionList:
+  - iD: 0
+    text: "F\xF6rest\xE4ll dig att du \xE4r p\xE5 en anst\xE4llningsintervju f\xF6r
+      en st\xE4dtj\xE4nst. Intervjuaren ber dig att g\xE5 igenom dina tidigare arbetserfarenheter.
+      Vilket av f\xF6ljande alternativ beskriver b\xE4st din situation?"
+  - iD: 1
+    text: "Vilka egenskaper tror du att din framtida arbetsgivare skulle s\xF6ka
+      eller v\xE4rdera h\xF6gst om du s\xF6kte jobb p\xE5 ett lager?"
+  - iD: 2
+    text: "Om du har r\xE5kat ut f\xF6r en utmanande situation tidigare, vilket av
+      dessa svar skulle b\xE4st beskriva dig?"
+  - iD: 3
+    text: "N\xE4r det kommer till lagarbete och samarbete, vilket svar beskriver
+      dig b\xE4st?"
+  - iD: 4
+    text: "Har du n\xE5gonsin haft konflikter med kollegor f\xF6rut? Om s\xE5 \xE4r
+      fallet, vilket svar beskriver din situation b\xE4st?"
+  - iD: 5
+    text: "Hur skulle du vanligtvis hantera feedback eller kritik p\xE5 en arbetsplats?
+      Vilket av dessa svar beskriver dig b\xE4st?"
+  - iD: 6
+    text: "\xC4r det n\xE5gra aktiviteter eller hobbyer du h\xE5ller p\xE5 med p\xE5
+      din fritid?"
+  - iD: 7
+    text: "Var ser du dig sj\xE4lv om 5 \xE5r?"
+  - iD: 8
+    text: "Ser du personlig utveckling som n\xE5got viktigt?"
+  - iD: 9
+    text: "Vilken utbildningsniv\xE5 har du avslutat?"
+  - iD: 10
+    text: Hur skulle du hantera en felkommunikation med en kollega?
+  - iD: 11
+    text: "Vad skulle du s\xE4ga \xE4r det smidigaste s\xE4ttet att l\xF6sa en konflikt
+      p\xE5?"
+  - iD: 12
+    text: "Hur skulle du hantera en konflikt mellan tv\xE5 teammedlemmar som v\xE4grar
+      att samarbeta?"
+  - iD: 13
+    text: "En konflikt har uppst\xE5tt under ett samarbetsprojekt. Hur skulle du
+      reagera p\xE5 detta?"
+  - iD: 14
+    text: "Hur hanterar du motg\xE5ngar i din personliga utvecklingsresa?"
+  - iD: 15
+    text: "Har du n\xE5gon tidigare erfarenhet som kan vara f\xF6rdelaktig p\xE5
+      en arbetsplats?"
+  - iD: 16
+    text: "Hur skulle du beskriva dina styrkor och f\xE4rdigheter som kan vara v\xE4rdefulla
+      i en arbetsmilj\xF6?"
+  - iD: 17
+    text: "Vad motiverade dig att s\xF6ka detta jobb?"
+  - iD: 18
+    text: "Hur k\xE4nner du inf\xF6r att f\xE5 feedback och v\xE4gledning?"
+  - iD: 19
+    text: "Vilka av dessa personliga egenskaper eller v\xE4rderingar tror du kan
+      vara viktiga f\xF6r att uppn\xE5 en framg\xE5ngsrik arbetsmilj\xF6?"

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d53552962a00ff540a01a7ac9ff1c57c, type: 3}
+  m_Name: FeedbackTextData
+  m_EditorClassIdentifier: 
+  m_BadResultFeedbackText: "Feedback:\n\u2022 Brister i f\xF6rberedelse: Det framg\xE5r
+    att du inte hade tillr\xE4cklig kunskap om f\xF6retaget, dess verksamhet och
+    dess v\xE4rderingar.\n\n\u2022 Svag kommunikationsf\xF6rm\xE5ga: Du hade sv\xE5rt
+    att tydligt kommunicera dina tankar och id\xE9er, vilket gjorde det sv\xE5rt
+    f\xF6r intervjuaren att f\xF6rst\xE5 dina kvalifikationer och erfarenheter.\n\n\u2022
+    Otillr\xE4ckliga svar: Dina svar p\xE5 intervjufr\xE5gorna var inte tillr\xE4ckligt
+    detaljerade eller relevanta f\xF6r att visa upp din kompetens och l\xE4mplighet
+    f\xF6r rollen."
+  m_AverageResultFeedbackText: "Feedback:\n\u2022 Starka kvalifikationer: Du visade
+    upp en imponerande upps\xE4ttning av kvalifikationer och erfarenheter som \xE4r
+    relevanta f\xF6r rollen.\n\n\u2022 Tydlig kommunikation: Din kommunikationsstil
+    var tydlig och professionell, vilket gjorde det l\xE4tt f\xF6r intervjuaren att
+    f\xF6lja med och f\xF6rst\xE5 dina svar.\n\n\u2022 Engagemang och intresse: Det
+    framgick tydligt att du visade ett genuint intresse f\xF6r f\xF6retaget och rollen,
+    vilket \xE4r en positiv indikator p\xE5 din motivation och potential att trivas
+    i arbetsmilj\xF6n."
+  m_GoodResultFeedbackText: "Feedback:\n\u2022 Exceptionell f\xF6rberedelse: Du visade
+    en djupg\xE5ende f\xF6rst\xE5else f\xF6r f\xF6retaget, dess bransch och dess
+    kultur, vilket visar p\xE5 din dedikation och intresse f\xF6r att lyckas i rollen.\n\n\u2022
+    \xD6vertygande kommunikation: Din f\xF6rm\xE5ga att artikulera dina tankar och
+    id\xE9er var \xF6verl\xE4gsen, vilket gjorde det enkelt f\xF6r intervjuaren att
+    f\xF6rst\xE5 din vision och potential f\xF6r rollen.\n\n\u2022 Stark matchning
+    med f\xF6retagets behov: Dina kvalifikationer och erfarenheter passade perfekt
+    med vad f\xF6retaget s\xF6kte, vilket skapade en stark \xF6msesidig matchning
+    och potential f\xF6r l\xE5ngsiktig framg\xE5ng."

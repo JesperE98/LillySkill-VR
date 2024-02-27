@@ -54,8 +54,8 @@ namespace LillyCode
         private void Start()
         {
             activeScreen = 0;
-
-            if(gameManager.AnswerPageNumber >= 10) { ActivateHelpScreen(0); }
+            DisableUIButtons();
+            if (gameManager.AnswerPageNumber >= 10) { ActivateHelpScreen(0); }
         }
         private void Update()
         {
