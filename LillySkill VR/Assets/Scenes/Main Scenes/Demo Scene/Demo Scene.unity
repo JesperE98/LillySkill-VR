@@ -3541,13 +3541,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5252411890479567825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a07244476f5c8c74d9328a2c19bb8c18, type: 3}
+  m_Script: {fileID: 11500000, guid: a310b9e79e4815848858f8baa4d32cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiManager: {fileID: 0}
-  gameManager: {fileID: 0}
-  audioManager: {fileID: 0}
-  m_GameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
 --- !u!1 &1333164710451159168
 GameObject:
   m_ObjectHideFlags: 0
@@ -8080,6 +8076,243 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 65
   m_IsActive: 1
+--- !u!114 &3150325774750047604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3467820575062556800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07db9f4cddc966442964e1ee1e860df9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Button press
+    clip: {fileID: 8300000, guid: f2d0f395d2e3ce54fbac2591f1f85c22, type: 3}
+    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 0.2
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Button hover
+    clip: {fileID: 8300000, guid: c8ea78a443f85324cae4b410b69847e3, type: 3}
+    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 0.8
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Go back
+    clip: {fileID: 8300000, guid: c6bdf738fedae3c4cb9d52f3528a5482, type: 3}
+    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 0.6
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Start interview
+    clip: {fileID: 8300000, guid: b571e91eee06ff74f860cf92ea0fcc0f, type: 3}
+    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 0.4
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Interview complete
+    clip: {fileID: 8300000, guid: 76f682aabd5c52844bd99205a4aa4627, type: 3}
+    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 0.4
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Stamp
+    clip: {fileID: 8300000, guid: 79a921038cba6994dbd6de785b8777c1, type: 3}
+    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 0.6
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Ambience
+    clip: {fileID: 8300000, guid: c5b1dc22c740da746b24942c722df27b, type: 3}
+    mixerGroup: {fileID: 6247087999877837773, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 0.45
+    spatialBlend: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: "Hej och v\xE4lkommen"
+    clip: {fileID: 8300000, guid: 31cef5b9a8d19b742a68291da41258d7, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 2
+    clip: {fileID: 8300000, guid: 7f78f54fc950cc64399487f522625848, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 11
+    clip: {fileID: 8300000, guid: 51e780d549376944284c28ed269ca8fb, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 8
+    clip: {fileID: 8300000, guid: 338b8034f6060d841b343b8dd02116a1, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 7
+    clip: {fileID: 8300000, guid: b8d4b8f922741294e977a666a1b43f7f, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 3
+    clip: {fileID: 8300000, guid: c2358d167ebd2de4fa48a69f9c261866, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 6
+    clip: {fileID: 8300000, guid: 212e1e88f077c424787917c99220452e, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: IAE F 9
+    clip: {fileID: 8300000, guid: a5e088aa63d8fcf40bf556e8ca754dae, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 10
+    clip: {fileID: 8300000, guid: ae118a5e22fd3d94fb92504e621ba684, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: IAE F 5
+    clip: {fileID: 8300000, guid: 905013b461757964ca8f7d364007ce32, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: IAE F 8
+    clip: {fileID: 8300000, guid: 64cabfb599090174698688a92ced9975, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 4
+    clip: {fileID: 8300000, guid: b5ecef52f428af2479540e56e9ec57c5, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 9
+    clip: {fileID: 8300000, guid: 19c005315edfb1a45b9447554969d58f, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 5
+    clip: {fileID: 8300000, guid: 914ece74a259108418b08c3af7af3a44, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: AE F 1
+    clip: {fileID: 8300000, guid: 7395184c4f59fff4a9e09fa258a42850, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: IAE F 2
+    clip: {fileID: 8300000, guid: eaf15747861db2c44b8e6b163d9f0603, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: IAE F 1
+    clip: {fileID: 8300000, guid: f96128434f8b4e741a95b977b341fdbe, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: IAE F 4
+    clip: {fileID: 8300000, guid: ab2512c0fa62653468033657962e4b88, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: IAE F 6
+    clip: {fileID: 8300000, guid: a88e5f124cf4ca544a26454a85dec4c4, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: IAE F 3
+    clip: {fileID: 8300000, guid: bdd72cee143056244b087f390aebee03, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: IAE F 7
+    clip: {fileID: 8300000, guid: bfa07010e203f674fa15e97c22608fc9, type: 3}
+    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
+      type: 2}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &3162632190674919942
 Transform:
   m_ObjectHideFlags: 0
@@ -9111,6 +9344,23 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3467820575062556800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6031334284402811517}
+  - component: {fileID: 3150325774750047604}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: AudioManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!33 &3483345839856200136
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14131,23 +14381,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 65
   m_IsActive: 0
---- !u!1 &5308574008851491033
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5648824341727968264}
-  - component: {fileID: 6581879019781702016}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: AudioManager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &5309076240209771021
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14833,21 +15066,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5376459731887213844}
   m_Mesh: {fileID: -1083108532252104561, guid: 2f5c437e97c5d6344b678194accc8501, type: 3}
---- !u!4 &5648824341727968264
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5308574008851491033}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5649991991955009901
 GameObject:
   m_ObjectHideFlags: 0
@@ -15837,6 +16055,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &6031334284402811517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3467820575062556800}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6032528390434659349
 Transform:
   m_ObjectHideFlags: 0
@@ -17046,243 +17279,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 65
   m_IsActive: 1
---- !u!114 &6581879019781702016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5308574008851491033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07db9f4cddc966442964e1ee1e860df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Button Press
-    clip: {fileID: 8300000, guid: f2d0f395d2e3ce54fbac2591f1f85c22, type: 3}
-    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 0.2
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Button Hover
-    clip: {fileID: 8300000, guid: c8ea78a443f85324cae4b410b69847e3, type: 3}
-    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 0.8
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Go Back
-    clip: {fileID: 8300000, guid: c6bdf738fedae3c4cb9d52f3528a5482, type: 3}
-    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 0.6
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Start Interview
-    clip: {fileID: 8300000, guid: b571e91eee06ff74f860cf92ea0fcc0f, type: 3}
-    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 0.4
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Interview complete
-    clip: {fileID: 8300000, guid: 76f682aabd5c52844bd99205a4aa4627, type: 3}
-    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 0.4
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Stamp
-    clip: {fileID: 8300000, guid: 79a921038cba6994dbd6de785b8777c1, type: 3}
-    mixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 0.6
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: Ambience
-    clip: {fileID: 8300000, guid: c5b1dc22c740da746b24942c722df27b, type: 3}
-    mixerGroup: {fileID: 6247087999877837773, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 0.45
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "Hej och v\xE4lkommen"
-    clip: {fileID: 8300000, guid: 31cef5b9a8d19b742a68291da41258d7, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 2
-    clip: {fileID: 8300000, guid: 7f78f54fc950cc64399487f522625848, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 11
-    clip: {fileID: 8300000, guid: 51e780d549376944284c28ed269ca8fb, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 8
-    clip: {fileID: 8300000, guid: 338b8034f6060d841b343b8dd02116a1, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 7
-    clip: {fileID: 8300000, guid: b8d4b8f922741294e977a666a1b43f7f, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 3
-    clip: {fileID: 8300000, guid: c2358d167ebd2de4fa48a69f9c261866, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 6
-    clip: {fileID: 8300000, guid: 212e1e88f077c424787917c99220452e, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: IAE F 9
-    clip: {fileID: 8300000, guid: a5e088aa63d8fcf40bf556e8ca754dae, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 10
-    clip: {fileID: 8300000, guid: ae118a5e22fd3d94fb92504e621ba684, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: IAE F 5
-    clip: {fileID: 8300000, guid: 905013b461757964ca8f7d364007ce32, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: IAE F 8
-    clip: {fileID: 8300000, guid: 64cabfb599090174698688a92ced9975, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 4
-    clip: {fileID: 8300000, guid: b5ecef52f428af2479540e56e9ec57c5, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 9
-    clip: {fileID: 8300000, guid: 19c005315edfb1a45b9447554969d58f, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 5
-    clip: {fileID: 8300000, guid: 914ece74a259108418b08c3af7af3a44, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: AE F 1
-    clip: {fileID: 8300000, guid: 7395184c4f59fff4a9e09fa258a42850, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: IAE F 2
-    clip: {fileID: 8300000, guid: eaf15747861db2c44b8e6b163d9f0603, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: IAE F 1
-    clip: {fileID: 8300000, guid: f96128434f8b4e741a95b977b341fdbe, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: IAE F 4
-    clip: {fileID: 8300000, guid: ab2512c0fa62653468033657962e4b88, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: IAE F 6
-    clip: {fileID: 8300000, guid: a88e5f124cf4ca544a26454a85dec4c4, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: IAE F 3
-    clip: {fileID: 8300000, guid: bdd72cee143056244b087f390aebee03, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: IAE F 7
-    clip: {fileID: 8300000, guid: bfa07010e203f674fa15e97c22608fc9, type: 3}
-    mixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-      type: 2}
-    volume: 1
-    spatialBlend: 0
-    loop: 0
-    source: {fileID: 0}
 --- !u!4 &6589054650636400372
 Transform:
   m_ObjectHideFlags: 0
@@ -24645,8 +24641,8 @@ SceneRoots:
   - {fileID: 7150409557470312020}
   - {fileID: 2548041538792513336}
   - {fileID: 3494460928305203765}
-  - {fileID: 5648824341727968264}
   - {fileID: 8393886041999290806}
+  - {fileID: 6031334284402811517}
   - {fileID: 7140466876740506665}
   - {fileID: 1584195524}
   - {fileID: 610829162113908529}
