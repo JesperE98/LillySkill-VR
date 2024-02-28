@@ -1,4 +1,5 @@
 using JespersCode;
+using JesperScriptableObject;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private DefaultAudioScriptableObject sFXScriptableObject;
     [SerializeField] private VoiceAudioScriptableObject voiceScriptableObject;
     [SerializeField] private DefaultAudioScriptableObject ambienceScriptableObject;
+    [SerializeField] private GameSettingsScriptableObject m_GameSettings;
 
     private GameManager gameManager;
     private UIManager uiManager;
@@ -24,17 +26,23 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        gameManager = FindAnyObjectByType<GameManager>();
-        uiManager = FindAnyObjectByType<UIManager>();
-        animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
+        if(m_GameSettings.LoadedScene != 0)
+        {
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
+        }
+        uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
     }
 
     private void Update()
     {
-        if (gameManager.LillyIntro == true && gameManager.LillyOutro == false)
+        if(m_GameSettings.LoadedScene == 1)
         {
-            StartCoroutine(PlayAudioClip());
-            gameManager.LillyIntro = false;
+            if (gameManager.LillyIntro == true && gameManager.LillyOutro == false)
+            {
+                StartCoroutine(PlayAudioClip());
+                gameManager.LillyIntro = false;
+            }
         }
     }
 
@@ -99,55 +107,70 @@ public class AudioManager : MonoBehaviour
         {
             gameManager.InterviewAreActive = true;
 
-            PlayVoiceAudio(0, 0);
+            //PlayVoiceAudio(0, 0);
 
-            yield return new WaitForSeconds(voiceAudioSource.clip.length);
+            //yield return new WaitForSeconds(voiceAudioSource.clip.length);
         }
 
 
         switch (gameManager.AnswerPageNumber)
         {
-            case 2:
+            case 0:
+                print("Hi");
+                PlayVoiceAudio(0, 0);
+                yield return new WaitForSeconds(voiceAudioSource.clip.length);
+                break;
+
+            case 1:
+                print("Hi");
                 PlayVoiceAudio(0, 1);
                 yield return new WaitForSeconds(voiceAudioSource.clip.length);
                 break;
 
-            case 3:
+            case 2:
+                print("Hi");
                 PlayVoiceAudio(0, 2);
                 yield return new WaitForSeconds(voiceAudioSource.clip.length);
                 break;
 
-            case 4:
+            case 3:
+                print("Hi");
                 PlayVoiceAudio(0, 3);
                 yield return new WaitForSeconds(voiceAudioSource.clip.length);
                 break;
 
-            case 5:
+            case 4:
+                print("Hi");
                 PlayVoiceAudio(0, 4);
                 yield return new WaitForSeconds(voiceAudioSource.clip.length);
                 break;
 
-            case 6:
+            case 5:
+                print("Hi");
                 PlayVoiceAudio(0, 5);
                 yield return new WaitForSeconds(voiceAudioSource.clip.length);
                 break;
 
-            case 7:
+            case 6:
+                print("Hi");
                 PlayVoiceAudio(0, 6);
                 yield return new WaitForSeconds(voiceAudioSource.clip.length);
                 break;
 
-            case 8:
+            case 7:
+                print("Hi");
                 PlayVoiceAudio(0, 7);
                 yield return new WaitForSeconds(voiceAudioSource.clip.length);
                 break;
 
-            case 9:
+            case 8:
+                print("Hi");
                 PlayVoiceAudio(0, 8);
                 yield return new WaitForSeconds(voiceAudioSource.clip.length);
                 break;
 
-            case 10:
+            case 9:
+                print("Hi");
                 PlayVoiceAudio(0, 9);
                 yield return new WaitForSeconds(voiceAudioSource.clip.length);
                 break;

@@ -1774,7 +1774,7 @@ GameObject:
   - component: {fileID: 7899698474054222356}
   m_Layer: 3
   m_Name: Next Button
-  m_TagString: Untagged
+  m_TagString: UIButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1929,7 +1929,7 @@ GameObject:
   - component: {fileID: 8142672917140883017}
   m_Layer: 3
   m_Name: Close Button
-  m_TagString: Untagged
+  m_TagString: UIButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

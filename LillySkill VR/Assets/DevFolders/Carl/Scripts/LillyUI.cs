@@ -47,8 +47,8 @@ namespace LillyCode
         private GameManager gameManager;
         private void Awake()
         {
-            uiManager = FindAnyObjectByType<UIManager>();
-            gameManager = FindAnyObjectByType<GameManager>();
+            uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         }
 
         private void Start()

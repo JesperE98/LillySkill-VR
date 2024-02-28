@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a186fbe3aab7b694aa2b3fb8f7658d02, type: 3}
-  m_Name: GameSettingsData
+  m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
+  m_Name: AudioData
   m_EditorClassIdentifier: 
-  defaultMode: 1
-  lowGraphicsPreset: 0
-  mediumGraphicPreset: 0
-  highGraphicPreset: 1
-  playerHighScore: 0
-  loadedScene: 1
+  sounds:
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    spatialBlend: 0
+    loop: 0
