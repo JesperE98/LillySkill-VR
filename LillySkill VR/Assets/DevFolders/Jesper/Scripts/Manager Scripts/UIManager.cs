@@ -70,7 +70,7 @@ namespace JespersCode
         public void ActivateUIPrefab()
         {
             // Switch statement that checks which active scene it is.
-            switch(m_GameSettings.loadedScene)
+            switch(m_GameSettings.LoadedScene)
             {
                 case 0:
                     uiPrefabCopyList[0].SetActive(true);
