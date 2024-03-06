@@ -341,7 +341,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1955203341991524422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,8 +393,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.14, y: 0.14}
+  m_AnchoredPosition: {x: 0, y: -0.0019999743}
+  m_SizeDelta: {x: 0.11, y: 0.14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &794592094420320434
 CanvasRenderer:
@@ -424,7 +424,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 30ff4ad56b60fce4291813ddbf8aec71, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 08cb2ab0946802e4da1d2f0fec796532, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c2049db3f7c4a6e48b4aab97d05e2a36, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1663efb48cae2f848807452e0e9e6195, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -576,10 +576,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Det \xE4r h\xE4r som texten kommer synas. Det \xE4r h\xE4r som texten
-    kommer synas. Det \xE4r h\xE4r som texten kommer synas. Det \xE4r h\xE4r som
-    texten kommer synas. Det \xE4r h\xE4r som texten kommer synas. Det \xE4r h\xE4r
-    som texten kommer synas. "
+  m_text: "I denna fr\xE5ga menas detta och detta. Det man kan t\xE4nka p\xE5 \xE4r
+    detta n\xE4r man ska f\xE5 fram ett svar."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
