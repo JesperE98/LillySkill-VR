@@ -2222,7 +2222,7 @@ GameObject:
   - component: {fileID: 1380016805467553611}
   - component: {fileID: 1003362848166357917}
   m_Layer: 5
-  m_Name: Start Menu Page Carl
+  m_Name: Start Menu Page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
