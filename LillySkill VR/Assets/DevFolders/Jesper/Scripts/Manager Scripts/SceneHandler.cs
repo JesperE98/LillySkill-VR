@@ -18,15 +18,20 @@ namespace JespersCode
 
         private void Awake()
         {
+            if(_gameSettings.LoadedScene != "Tutorial")
+            {
+                _gameSettings.LoadedScene = "Main Menu";
+            }
+
             if (_gameSettings.LoadedScene != "Main Menu")
             {
                 _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             }
-
             _fadeScreen = GameObject.Find("FadeScreen").GetComponent<Renderer>();
         }
         private void Start()
         {
+            
             StartCoroutine(FadeInRoutine(true));
         }
 
