@@ -7,7 +7,6 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -27,30 +26,16 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-<<<<<<< Updated upstream
         if(m_GameSettings.LoadedScene != "Main Menu")
         {
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
             uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         }
-=======
-        if(gameManager != null)
-        {
-            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        }
-        else
-        {
-            Debug.LogWarning("GameManager is NULL!");
-        }
-        uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
-        animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
->>>>>>> Stashed changes
     }
 
     private void Update()
     {
-<<<<<<< Updated upstream
         if (m_GameSettings.LoadedScene != "Main Menu")
         {
             if(gameManager.LillyIntroDone == true)
@@ -58,14 +43,6 @@ public class AudioManager : MonoBehaviour
                 Debug.Log("Calling Method PlayAudioClip()");
                 StartCoroutine(PlayAudioClip());
                 gameManager.LillyIntroDone = false;
-=======
-        if(gameManager != null)
-        {
-            if (gameManager.LillyIntro == true && gameManager.LillyOutro == false)
-            {
-                StartCoroutine(PlayAudioClip());
-                gameManager.LillyIntro = false;
->>>>>>> Stashed changes
             }
         }
     }

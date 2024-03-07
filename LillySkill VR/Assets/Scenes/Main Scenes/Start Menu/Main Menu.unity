@@ -30520,18 +30520,12 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!224 &1398552082012799580
 RectTransform:
-=======
---- !u!4 &1434734684582776558
-Transform:
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_GameObject: {fileID: 2791570674159878040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -30755,17 +30749,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1500
-=======
-  m_GameObject: {fileID: 6487048686164233529}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6757240112172976559}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!4 &1442563263058583603
 Transform:
   m_ObjectHideFlags: 0
@@ -33481,23 +33464,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &2482524717971436107
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6757240112172976559}
-  - component: {fileID: 3390506156211529330}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: AudioManager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &2509925174673115583
 GameObject:
   m_ObjectHideFlags: 0
@@ -33584,18 +33550,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!224 &2533019303723307093
 RectTransform:
-=======
---- !u!1 &2567949846873517162
-GameObject:
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_GameObject: {fileID: 5302003510630791690}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -33681,19 +33641,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2, y: 0.2, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
-=======
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3870438924351167676}
-  - component: {fileID: 8402041652394496840}
-  m_Layer: 0
-  m_Name: Voice
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!23 &2577821896399125496
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34953,7 +34900,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!114 &3121251230023443774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35250,8 +35196,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7161625424656711256}
   m_CullTransparentMesh: 1
-=======
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!20 &3291153443217230481
 Camera:
   m_ObjectHideFlags: 0
@@ -35303,7 +35247,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!1 &3294182764947732171
 GameObject:
   m_ObjectHideFlags: 0
@@ -35376,15 +35319,11 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3356056396292952770
-=======
---- !u!114 &3390506156211529330
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_GameObject: {fileID: 3813115358702645582}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -35651,23 +35590,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-=======
-  m_GameObject: {fileID: 2482524717971436107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07db9f4cddc966442964e1ee1e860df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sFXAudioSource: {fileID: 8771292036804708786}
-  voiceAudioSource: {fileID: 8402041652394496840}
-  ambienceAudioSource: {fileID: 5645547694251403728}
-  sFXScriptableObject: {fileID: 11400000, guid: 8bc2b31fd040ea34fafd80a9799cfeb0,
-    type: 2}
-  voiceScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
-    type: 2}
-  ambienceScriptableObject: {fileID: 11400000, guid: 323df9504b886904c9fab709fe35cf11,
-    type: 2}
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!23 &3462852135546352920
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35815,7 +35737,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148058109992}
   m_Mesh: {fileID: -5495902117074765545, guid: 8a7cad5c86301944cba9b327b51d1c0d, type: 3}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!222 &3471277934540931554
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35880,8 +35801,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-=======
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!114 &3502521224151256444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36829,18 +36748,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 65
   m_IsActive: 1
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!1 &3817250715050523156
 GameObject:
-=======
---- !u!4 &3870438924351167676
-Transform:
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5135007622023774773}
@@ -37087,17 +37000,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-=======
-  m_GameObject: {fileID: 2567949846873517162}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6757240112172976559}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!33 &3924900226548403396
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -41248,7 +41150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -41328,26 +41229,10 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!224 &5542206927998054120
 RectTransform:
-=======
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
---- !u!82 &5645547694251403728
-AudioSource:
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_GameObject: {fileID: 8283769780313549415}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -41576,99 +41461,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 200
-=======
-  m_GameObject: {fileID: 6487048686164233529}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 6247087999877837773, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-    type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!33 &5705298828825118552
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -42476,7 +42268,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_GameObject: {fileID: 7161625424656711256}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -42561,22 +42352,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.4000244, y: 0.1000061}
   m_SizeDelta: {x: 0.75, y: 0.6}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 215018379826442481}
-  - component: {fileID: 8300539383532327891}
-  - component: {fileID: 3813555239763552796}
-  - component: {fileID: 6002596727576714459}
-  - component: {fileID: 4915541567910750546}
-  m_Layer: 3
-  m_Name: Button
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!1 &6045818829839993184
 GameObject:
   m_ObjectHideFlags: 0
@@ -44115,11 +43890,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!1 &6460495764179834188
-=======
---- !u!1 &6487048686164233529
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44127,23 +43898,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   - component: {fileID: 7825409176423935105}
   - component: {fileID: 1567496418186565449}
   m_Layer: 0
   m_Name: Voice
-=======
-  - component: {fileID: 1434734684582776558}
-  - component: {fileID: 5645547694251403728}
-  m_Layer: 0
-  m_Name: Ambience
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!222 &6463530667421853399
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -44211,9 +43974,6 @@ RectTransform:
   m_SizeDelta: {x: 1.5, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6498649127251108087
-=======
---- !u!114 &6574865797856829986
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44610,18 +44370,12 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!222 &6653111055291372689
 CanvasRenderer:
-=======
---- !u!4 &6757240112172976559
-Transform:
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_GameObject: {fileID: 1973547482389346963}
   m_CullTransparentMesh: 1
 --- !u!224 &6670619964929884666
@@ -44659,16 +44413,11 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5172290124908667172}
-=======
-  m_GameObject: {fileID: 2482524717971436107}
-  serializedVersion: 2
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   - {fileID: 8830239334472682207}
   m_Father: {fileID: 8036965147403419228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44838,13 +44587,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-=======
-  - {fileID: 7439195622949268466}
-  - {fileID: 3870438924351167676}
-  - {fileID: 1434734684582776558}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!114 &6789738469912205730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46320,18 +46062,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 65
   m_IsActive: 1
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!222 &7433045325570516696
 CanvasRenderer:
-=======
---- !u!4 &7439195622949268466
-Transform:
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_GameObject: {fileID: 5741345676405747297}
   m_CullTransparentMesh: 1
 --- !u!222 &7441999488078270914
@@ -46466,15 +46202,10 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9015304405916894854}
-=======
-  m_GameObject: {fileID: 8390818547051342979}
-  serializedVersion: 2
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_Children:
   - {fileID: 1831165706524274750}
   - {fileID: 5693509708007406818}
@@ -46537,11 +46268,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-=======
-  m_Children: []
-  m_Father: {fileID: 6757240112172976559}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!33 &7534380805402717826
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -48809,11 +48535,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2226256449457478604}
   m_Mesh: {fileID: 8634657762449747467, guid: e94159e9a205efb418bd87a576d7d804, type: 3}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!1 &8392716098787069301
-=======
---- !u!1 &8390818547051342979
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48821,33 +48543,20 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   - component: {fileID: 7641139543681837894}
   m_Layer: 5
   m_Name: VFX Volume Buttons
-=======
-  - component: {fileID: 7439195622949268466}
-  - component: {fileID: 8771292036804708786}
-  m_Layer: 0
-  m_Name: SFX
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!224 &8408557901216751866
 RectTransform:
-=======
---- !u!82 &8402041652394496840
-AudioSource:
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_GameObject: {fileID: 6420407307407006577}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -48861,99 +48570,6 @@ AudioSource:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.12, y: 0.12}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
-  m_GameObject: {fileID: 2567949846873517162}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -2850077196980602056, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-    type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!1 &8408715263381633202
 GameObject:
   m_ObjectHideFlags: 0
@@ -49685,18 +49301,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949030080056722078}
   m_Mesh: {fileID: 4762489875059447549, guid: e94159e9a205efb418bd87a576d7d804, type: 3}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
 --- !u!114 &8733815111623714686
 MonoBehaviour:
-=======
---- !u!82 &8771292036804708786
-AudioSource:
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_GameObject: {fileID: 4245437035062459938}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -49978,99 +49588,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-=======
-  m_GameObject: {fileID: 8390818547051342979}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6908275875670247726, guid: 3b6ba2e965ec55a4bb925a7b89dfb039,
-    type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!4 &8812819455287513601
 Transform:
   m_ObjectHideFlags: 0
@@ -50690,7 +50207,6 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   m_IsActive: 1
 --- !u!114 &9202244123323262587
 MonoBehaviour:
@@ -50790,30 +50306,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3294182764947732171}
   m_CullTransparentMesh: 1
-=======
-  m_IsActive: 0
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 8812819455287513601}
   - {fileID: 6579649539444514257}
   - {fileID: 1134092430}
-<<<<<<< Updated upstream:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
   - {fileID: 8812819455287513601}
   - {fileID: 1184000146}
-=======
-  - {fileID: 1661723461}
-  - {fileID: 1184000146}
-  - {fileID: 6757240112172976559}
->>>>>>> Stashed changes:LillySkill VR/Assets/Scenes/Main Scenes/Start Menu/Start Menu.unity
   - {fileID: 6351321841248560179}
   - {fileID: 4962451036545578130}
   - {fileID: 494438003}
   - {fileID: 1602260278}
-  - {fileID: 1655831326}
   - {fileID: 1557129771}
+  - {fileID: 1655831326}
   - {fileID: 1930464275243083965}
   - {fileID: 1731991844}
   - {fileID: 6090651765465430502}

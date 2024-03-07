@@ -15,7 +15,7 @@ namespace JespersCode
 
         private GameObject uiPrefabCopy;
 
-        private void Awake()
+        private void Start()
         {
             _uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         }

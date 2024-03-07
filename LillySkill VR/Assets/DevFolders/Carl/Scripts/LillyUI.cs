@@ -7,7 +7,6 @@ using System.Linq;
 using Unity.VisualScripting;
 using JespersCode;
 using UnityEngine.Audio;
-using UnityEngine.SceneManagement;
 
 namespace LillyCode
 {
@@ -48,22 +47,9 @@ namespace LillyCode
         private GameManager gameManager;
         private void Awake()
         {
-<<<<<<< Updated upstream
             
             uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-=======
-            uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
-
-            //if()
-            //{
-            //    gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-            //}
-            //else
-            //{
-            //    Debug.LogWarning("GameManager is NULL!");
-            //}
->>>>>>> Stashed changes
         }
 
         private void Start()

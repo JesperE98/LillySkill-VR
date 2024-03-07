@@ -16,5 +16,5 @@ MonoBehaviour:
   lowGraphicsPreset: 0
   mediumGraphicPreset: 0
   highGraphicPreset: 1
-  playerHighScore: 0
-  loadedScene: 1
+  playerHighScore: 13
+  loadedScene: Tutorial

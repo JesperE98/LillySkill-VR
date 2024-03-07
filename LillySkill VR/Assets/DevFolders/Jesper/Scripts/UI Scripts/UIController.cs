@@ -26,11 +26,7 @@ namespace JespersCode
         /// </summary>
         public void OnPointerEnter()
         {
-<<<<<<< Updated upstream
             _audioManager.PlaySFXAudio(1);
-=======
-            audioManager.PlaySFXAudio(1);
->>>>>>> Stashed changes
         }
 
         /// <summary>
@@ -49,11 +45,7 @@ namespace JespersCode
         public void OnPointerClick()
         {
             onClick.Invoke();
-<<<<<<< Updated upstream
             _audioManager.PlaySFXAudio(0);
-=======
-            audioManager.PlaySFXAudio(0);
->>>>>>> Stashed changes
         }
     }
 }

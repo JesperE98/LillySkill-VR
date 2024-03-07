@@ -37,17 +37,9 @@ namespace JespersCode
 
         private void Awake()
         {
-<<<<<<< Updated upstream
             if(_gameSettings.LoadedScene != "Main Menu")
-=======
-            if(gameManager != null)
->>>>>>> Stashed changes
             {
                 _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-            }
-            else
-            {
-                Debug.LogWarning("GameManager is NULL!");
             }
         }
         

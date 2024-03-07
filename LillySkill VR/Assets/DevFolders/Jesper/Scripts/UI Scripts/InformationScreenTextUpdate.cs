@@ -35,83 +35,83 @@ namespace JespersCode
                 case true:
                     switch (gameManager.AnswerPageNumber)
                     {
-                        case 0:
+                        case 1:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[0];
                             break;
 
-                        case 1:
+                        case 2:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[1];
                             break;
 
-                        case 2:
+                        case 3:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[2];
                             break;
 
-                        case 3:
+                        case 4:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[3];
                             break;
 
-                        case 4:
+                        case 5:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[4];
                             break;
 
-                        case 5:
+                        case 6:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[5];
                             break;
 
-                        case 6:
+                        case 7:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[6];
                             break;
 
-                        case 7:
+                        case 8:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[7];
                             break;
 
-                        case 8:
+                        case 9:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[8];
                             break;
 
-                        case 9:
+                        case 10:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[9];
                             break;
 
-                        case 10:
+                        case 11:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[10];
                             break;
 
-                        case 11:
+                        case 12:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[11];
                             break;
 
-                        case 12:
+                        case 13:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[12];
                             break;
 
-                        case 13:
+                        case 14:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[13];
                             break;
 
-                        case 14:
+                        case 15:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[14];
                             break;
 
-                        case 15:
+                        case 16:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[15];
                             break;
 
-                        case 16:
+                        case 17:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[16];
                             break;
 
-                        case 17:
+                        case 18:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[17];
                             break;
 
-                        case 18:
+                        case 19:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[18];
                             break;
 
-                        case 19:
+                        case 20:
                             informationPageText.text = m_InterviewQuestionsListScriptableObject.m_QuestionList[19];
                             break;
                     }

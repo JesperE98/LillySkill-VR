@@ -43,7 +43,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
             case true:
                 switch (gameManager.AnswerPageNumber)
                 {
-                    case 0:
+                    case 1:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -61,7 +61,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 1:
+                    case 2:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -79,7 +79,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 2:
+                    case 3:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -97,7 +97,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 3:
+                    case 4:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -115,7 +115,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 4:
+                    case 5:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -133,7 +133,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 5:
+                    case 6:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -151,7 +151,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 6:
+                    case 7:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -169,7 +169,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 7:
+                    case 8:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -187,7 +187,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 8:
+                    case 9:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -205,7 +205,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 9:
+                    case 10:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -223,7 +223,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 10:
+                    case 11:
                         if (uiManager.uiPrefabCopyList[1].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -241,7 +241,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 11:
+                    case 12:
                         if (uiManager.uiPrefabCopyList[0].activeSelf == true)
                         {// Dåligt svar
                             if (AnswerTextObject[0].activeSelf == true)
@@ -259,7 +259,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 12:
+                    case 13:
                         if (uiManager.uiPrefabCopyList[0].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -277,7 +277,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 13:
+                    case 14:
                         if (uiManager.uiPrefabCopyList[0].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -295,7 +295,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 14:
+                    case 15:
                         if (uiManager.uiPrefabCopyList[0].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -313,7 +313,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 15:
+                    case 16:
                         if (uiManager.uiPrefabCopyList[0].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -331,7 +331,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 16:
+                    case 17:
                         if (uiManager.uiPrefabCopyList[0].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -349,7 +349,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 17:
+                    case 18:
                         if (uiManager.uiPrefabCopyList[0].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -367,7 +367,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 18:
+                    case 19:
                         if (uiManager.uiPrefabCopyList[0].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)
@@ -385,7 +385,7 @@ public class AnswerScreenTextUpdate : MonoBehaviour
                         }
                         break;
 
-                    case 19:
+                    case 20:
                         if (uiManager.uiPrefabCopyList[0].activeSelf == true)
                         {
                             if (AnswerTextObject[0].activeSelf == true)

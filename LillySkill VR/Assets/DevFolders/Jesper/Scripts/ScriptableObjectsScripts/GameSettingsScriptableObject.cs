@@ -8,14 +8,28 @@ namespace JesperScriptableObject
     [CreateAssetMenu(fileName = "GameSettingsData", menuName = "ScriptableObjects/GameSettingsScriptableObject", order = 0)]
     public class GameSettingsScriptableObject : ScriptableObject
     {
-        public bool defaultMode, lowGraphicsPreset, mediumGraphicPreset, highGraphicPreset;
-        public int playerHighScore, loadedScene;
+        public bool defaultMode;
+        public bool lowGraphicsPreset;
+        public bool mediumGraphicPreset;
+        public bool highGraphicPreset;
+        public int playerHighScore;
+        public string loadedScene;
 
 
         /// <summary>
         /// Gets and sets bool value for initiating Easy Mode interview.
         /// </summary>
-        public bool DefaultMode { get { return defaultMode; } set { defaultMode = value; } }
+        public bool DefaultMode 
+        { 
+            get 
+            { 
+                return defaultMode; 
+            } 
+            set 
+            { 
+                defaultMode = value; 
+            } 
+        }
 
         ///// <summary>
         ///// Gets and sets bool value for initiating Medium Mode interview.
@@ -64,17 +78,32 @@ namespace JesperScriptableObject
         /// <summary>
         /// Gets and sets int value for each individual scene and what Game mode it should be.
         /// </summary>
-        public int LoadedScene { get { return loadedScene; } set { loadedScene = value; } }
+        public string LoadedScene 
+        { 
+            get 
+            { 
+                return loadedScene;
+            } 
+            set
+            {
+                loadedScene = value; 
+            } 
+        }
 
         /// <summary>
         /// Saves the players current highscore.
         /// </summary>
-        public int PlayerHighScore { get { return playerHighScore; } set { playerHighScore = value; } }
-
-        private void Awake()
-        {
-            highGraphicPreset = true;
-            loadedScene = 0;
+        public int PlayerHighScore 
+        { 
+            get
+            { 
+                return playerHighScore;
+            } 
+            set
+            { 
+                
+                playerHighScore = value; 
+            } 
         }
 
         /// <summary>

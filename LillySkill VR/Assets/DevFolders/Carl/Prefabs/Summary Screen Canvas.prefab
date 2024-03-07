@@ -299,7 +299,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5872528261730217179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,7 +329,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649a479aee4fae84eb463063499c95a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
+  _loopDone: 0
+  _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
 --- !u!1 &3376955540867047641
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,14 +624,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8818406205024360274}
         m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
-        m_MethodName: LoadStartMenuScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Main Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &6737780943440825252
@@ -800,13 +801,13 @@ MonoBehaviour:
       - m_Target: {fileID: 8818406205024360274}
         m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
         m_MethodName: ResetCurrentScene
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Tutorial
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &5162382081738280523
