@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6405545500934411252}
   - component: {fileID: 1755530035412534454}
   m_Layer: 5
-  m_Name: Quit Application Page Carl
+  m_Name: Quit Application Page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

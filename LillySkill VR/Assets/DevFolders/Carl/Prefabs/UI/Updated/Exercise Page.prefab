@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 8674994063839931347}
   - component: {fileID: 3297868427161616039}
   m_Layer: 5
-  m_Name: Exercise Page Carl
+  m_Name: Exercise Page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -519,7 +519,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5848023549399285714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,7 +587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649a479aee4fae84eb463063499c95a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
+  _loopDone: 0
+  _gameSettings: {fileID: 0}
 --- !u!114 &3297868427161616039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07244476f5c8c74d9328a2c19bb8c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
+  _gameSettings: {fileID: 0}
 --- !u!1 &3517721722409632277
 GameObject:
   m_ObjectHideFlags: 0
