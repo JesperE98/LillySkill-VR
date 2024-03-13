@@ -71,16 +71,16 @@ public class AudioManager : MonoBehaviour
     /// Playes an audio from a scriptable object data container stored in the Voice scriptable object list.
     /// </summary>
     /// <param name="index"></param>
-    public void PlayVoiceAudio(int voiceListIndex, int questionAudioIndex)
+    public void PlayVoiceAudio(int categoryIndex, int questionIndex)
     {
-        DefaultAudioScriptableObject s = voiceScriptableObject.questions[voiceListIndex];
+        DefaultAudioScriptableObject s = voiceScriptableObject.questions[categoryIndex];
 
         if(s != null)
         {
-            voiceAudioSource.clip = s.sounds[questionAudioIndex].clip;
-            voiceAudioSource.volume = s.sounds[questionAudioIndex].volume;
-            voiceAudioSource.spatialBlend = s.sounds[questionAudioIndex].spatialBlend;
-            voiceAudioSource.loop = s.sounds[questionAudioIndex].loop;
+            voiceAudioSource.clip = s.sounds[questionIndex].clip;
+            voiceAudioSource.volume = s.sounds[questionIndex].volume;
+            voiceAudioSource.spatialBlend = s.sounds[questionIndex].spatialBlend;
+            voiceAudioSource.loop = s.sounds[questionIndex].loop;
 
             voiceAudioSource.Play();
         }
