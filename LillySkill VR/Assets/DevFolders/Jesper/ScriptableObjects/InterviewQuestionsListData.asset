@@ -15,7 +15,7 @@ MonoBehaviour:
   _questionCategories:
   - CategoryName: 0
     Description: Contains all the defualt interview question text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_QuestionList:
     - "F\xF6rest\xE4ll dig att du \xE4r p\xE5 en anst\xE4llningsintervju f\xF6r en
       st\xE4dtj\xE4nst. Intervjuaren ber dig att g\xE5 igenom dina tidigare arbetserfarenheter.
@@ -52,7 +52,7 @@ MonoBehaviour:
       viktiga f\xF6r att uppn\xE5 en framg\xE5ngsrik arbetsmilj\xF6?"
   - CategoryName: 1
     Description: Contains all the analytical thinking interview question text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_QuestionList:
     - "Vad \xE4r det viktigaste med att t\xE4nka analytiskt?"
     - "Vad inneb\xE4r det att vara analytisk?"
@@ -67,7 +67,7 @@ MonoBehaviour:
     - "Vilket av f\xF6ljande alternativ \xE4r en viktig komponent i analytiskt t\xE4nkande?"
   - CategoryName: 2
     Description: Contains all the adaptability interview question text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_QuestionList:
     - "Vad inneb\xE4r det att vara anpassningsbar p\xE5 arbetsplatsen?"
     - "Hur reagerar du vanligtvis p\xE5 f\xF6r\xE4ndringar i arbetsmilj\xF6n?"
@@ -82,7 +82,7 @@ MonoBehaviour:
       person?"
   - CategoryName: 3
     Description: Contains all the customization interview question text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_QuestionList:
     - "Hur hanterar du f\xF6r\xE4ndringar p\xE5 arbetsplatsen?"
     - "Hur reagerar du n\xE4r du tilldelas nya arbetsuppgifter som du inte \xE4r
@@ -98,7 +98,7 @@ MonoBehaviour:
     - "Hur reagerar du n\xE4r du f\xE5r feedback och f\xF6rslag till f\xF6rb\xE4ttringar?"
   - CategoryName: 4
     Description: Contains all the decision making interview question text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_QuestionList:
     - "Hur g\xF6r du n\xE4r du m\xE5ste v\xE4lja mellan olika m\xF6jligheter?"
     - "Vad g\xF6r du om det saknas information f\xF6r att fatta ett beslut?"
@@ -113,7 +113,7 @@ MonoBehaviour:
     - "Vad g\xF6r du om folk \xE4r oense n\xE4r du m\xE5ste fatta beslut?"
   - CategoryName: 5
     Description: Contains all the empathy interview question text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_QuestionList:
     - "Hur bra \xE4r du p\xE5 att f\xF6rst\xE5 hur andra k\xE4nner?"
     - "Hur reagerar du n\xE4r n\xE5gon ber\xE4ttar om ett sv\xE5rt problem de har?"

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b22576582e2ba4f8ce5cd9316b7cdf, type: 3}
   m_Name: InterviewAnswersListData
   m_EditorClassIdentifier: 
-  DefaultCategoryIsActive: 0
+  DefaultCategoryIsActive: 1
   defaultCategory:
   - QuestionNumber: "Fr\xE5ga #1"
     AnswerA:
@@ -252,7 +252,7 @@ MonoBehaviour:
   categories:
   - CategoryName: 1
     Description: Contains all the analytical thinking interview question text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_Answers:
     - QuestionNumber: "Fr\xE5ga #1"
       CorrectAnswer: 1
@@ -316,7 +316,7 @@ MonoBehaviour:
       D: "Att vara bra p\xE5 att kommunicera."
   - CategoryName: 2
     Description: Contains all the adaptability interview question text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_Answers:
     - QuestionNumber: "Fr\xE5ga #1"
       CorrectAnswer: 2
@@ -388,7 +388,7 @@ MonoBehaviour:
       D: "Att vara r\xE4dd f\xF6r att g\xF6ra fel."
   - CategoryName: 3
     Description: Contains all the customization interview question text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_Answers:
     - QuestionNumber: "Fr\xE5ga #1"
       CorrectAnswer: 3
@@ -481,7 +481,7 @@ MonoBehaviour:
         att mitt s\xE4tt att arbeta p\xE5 \xE4r b\xE4ttre."
   - CategoryName: 4
     Description: Contains all the decision making interview answers text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_Answers:
     - QuestionNumber: "Fr\xE5ga #1"
       CorrectAnswer: 3
@@ -549,7 +549,7 @@ MonoBehaviour:
       D: "Jag l\xE5ter andra best\xE4mma f\xF6r att undvika br\xE5k."
   - CategoryName: 5
     Description: Contains all the empathy interview question text data.
-    CategoryIsActive: 0
+    CategoryIsActive: 1
     m_Answers:
     - QuestionNumber: "Fr\xE5ga #1"
       CorrectAnswer: 3
