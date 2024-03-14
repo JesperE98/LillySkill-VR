@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1134092429}
-  m_IndirectSpecularColor: {r: 0.7252452, g: 0.78480786, b: 0.845901, a: 1}
+  m_IndirectSpecularColor: {r: 0.72526497, g: 0.7848479, b: 0.845982, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4332,6 +4332,74 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563487382}
   m_Mesh: {fileID: 7240493346068470835, guid: 3ed61a155e5de4c4d9c52788cb23b9cb, type: 3}
+--- !u!1 &579131615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579131618}
+  - component: {fileID: 579131617}
+  - component: {fileID: 579131616}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &579131616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579131615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &579131617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579131615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &579131618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579131615}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &587616810
 GameObject:
   m_ObjectHideFlags: 0
@@ -15503,7 +15571,7 @@ GameObject:
   - component: {fileID: 8243127483002870411}
   - component: {fileID: 7812378778375305154}
   m_Layer: 5
-  m_Name: Category Image (19)
+  m_Name: Leadership
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16244,7 +16312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Noggrannhet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -16272,12 +16340,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -16560,9 +16628,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.05}
+  m_AnchoredPosition: {x: 0, y: 0.1}
   m_SizeDelta: {x: 0.5, y: 0.100000024}
-  m_Pivot: {x: 0.5, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &279676768843695969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16606,7 +16674,7 @@ GameObject:
   - component: {fileID: 3047106112316434447}
   - component: {fileID: 4139573693407474495}
   m_Layer: 5
-  m_Name: Category Image (17)
+  m_Name: Creativity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17107,7 +17175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Stresst\xE5lighet"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -17135,12 +17203,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -17829,7 +17897,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Kundtj\xE4nst/Admin"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -17857,12 +17925,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -18576,7 +18644,7 @@ GameObject:
   - component: {fileID: 1317570805821050364}
   - component: {fileID: 2094177073504679464}
   m_Layer: 5
-  m_Name: Category Image (8)
+  m_Name: CommunicationSkills
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18642,8 +18710,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.396, y: 0}
-  m_SizeDelta: {x: -1.6, y: 4.9}
+  m_AnchoredPosition: {x: 0.4, y: 0}
+  m_SizeDelta: {x: 1.5799, y: 4.9}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &625760122462923768
 MonoBehaviour:
@@ -19135,7 +19203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Initiativtagande
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -19163,12 +19231,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -19297,7 +19365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Kreativitet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -19325,12 +19393,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -20048,21 +20116,45 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 8534189346266905849}
+  m_TargetGraphic: {fileID: 1320467861229720927}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
-        m_MethodName: LoadTutorialScene
-        m_Mode: 1
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateAnswerCategory
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateQuestionCategory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5992372480044656529}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &847097739933517468
 GameObject:
@@ -20562,21 +20654,45 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 1315826367279908230}
+  m_TargetGraphic: {fileID: 1320467861229720927}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
-        m_MethodName: LoadTutorialScene
-        m_Mode: 1
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateAnswerCategory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateQuestionCategory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7615350379182687201}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!224 &931474780162969577
 RectTransform:
@@ -20902,7 +21018,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Analytiskt t\xE4nkande"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -20930,12 +21046,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.04
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -21050,7 +21166,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Empati
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -21078,12 +21194,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -21875,7 +21991,7 @@ GameObject:
   - component: {fileID: 6380338299761387734}
   - component: {fileID: 5777077239824348094}
   m_Layer: 5
-  m_Name: Category Image (24)
+  m_Name: HousekeepingAndHomeCleaning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23219,21 +23335,45 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 5236966886567301640}
+  m_TargetGraphic: {fileID: 1320467861229720927}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
-        m_MethodName: LoadTutorialScene
-        m_Mode: 1
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateAnswerCategory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateQuestionCategory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3416492068385387761}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &1431120310961082519
 GameObject:
@@ -24538,13 +24678,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4404158933906529145}
+  - component: {fileID: 4404158933906529146}
   m_Layer: 5
   m_Name: Category Page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &1711813855881364153
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25020,7 +25161,7 @@ GameObject:
   - component: {fileID: 1630837358673244768}
   - component: {fileID: 7250937269527775078}
   m_Layer: 5
-  m_Name: Category Image (4)
+  m_Name: DecisionMaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28432,7 +28573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Beslutsfattande
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -28460,12 +28601,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -28655,7 +28796,7 @@ GameObject:
   - component: {fileID: 1562995155140688709}
   - component: {fileID: 3737822598472069995}
   m_Layer: 5
-  m_Name: Category Image (22)
+  m_Name: CustomerServiceAndAdmin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30108,21 +30249,45 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 5149995548644310758}
+  m_TargetGraphic: {fileID: 1320467861229720927}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
-        m_MethodName: LoadTutorialScene
-        m_Mode: 1
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateAnswerCategory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateQuestionCategory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2590167213326886803}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!222 &3037770863686808100
 CanvasRenderer:
@@ -30388,7 +30553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Positiv attityd
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -30416,12 +30581,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -30501,7 +30666,7 @@ GameObject:
   - component: {fileID: 5441935013859605961}
   - component: {fileID: 4159331193480015361}
   m_Layer: 5
-  m_Name: Category Image (20)
+  m_Name: WarehouseWork
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32138,7 +32303,7 @@ GameObject:
   - component: {fileID: 727020481697793849}
   - component: {fileID: 7954468561642474913}
   m_Layer: 5
-  m_Name: Category Image (18)
+  m_Name: PossitiveAttitude
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33480,7 +33645,7 @@ GameObject:
   - component: {fileID: 6196993487385386533}
   - component: {fileID: 7376340708541513810}
   m_Layer: 5
-  m_Name: Category Image (5)
+  m_Name: Customization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34091,7 +34256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Tidsstyrning
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -34119,12 +34284,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -34404,7 +34569,7 @@ GameObject:
   - component: {fileID: 7662831798388334848}
   - component: {fileID: 7586253517641957597}
   m_Layer: 5
-  m_Name: Category Image (7)
+  m_Name: EthicsAndIntegrity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35102,7 +35267,7 @@ GameObject:
   - component: {fileID: 1461291380169320051}
   - component: {fileID: 4834146012309556925}
   m_Layer: 5
-  m_Name: Category Image (3)
+  m_Name: Adaptability
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36822,6 +36987,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 2.7, y: 1.4}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4404158933906529146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708737367154815692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107bd32e7b3b81b4db61ea32a42983b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interviewAnswersList: {fileID: 11400000, guid: 27c16cf9df066424183e442f75a45413,
+    type: 2}
+  interviewQuestionsList: {fileID: 11400000, guid: 1a1228da94a85f048a3fc799e345c511,
+    type: 2}
 --- !u!65 &4405839962505508434
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38597,7 +38778,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Lagerarbete
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -38625,12 +38806,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -39930,7 +40111,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Etik och integritet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -39958,12 +40139,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -40032,7 +40213,7 @@ GameObject:
   - component: {fileID: 8281632784207348698}
   - component: {fileID: 2018010892851984996}
   m_Layer: 5
-  m_Name: Category Image (11)
+  m_Name: CollaborativeSkills
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40182,16 +40363,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 3524172396728685356}
+        m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Office
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &4948953806427891296
@@ -40601,7 +40782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Probleml\xF6sningsf\xF6rm\xE5ga"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -40629,12 +40810,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -43589,7 +43770,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Kommunikationsf\xF6rm\xE5ga"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -43617,12 +43798,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -43789,7 +43970,7 @@ GameObject:
   - component: {fileID: 1756335548334156225}
   - component: {fileID: 8797996274638430778}
   m_Layer: 5
-  m_Name: Category Image (2)
+  m_Name: AnalyticalThinking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44271,7 +44452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Sj\xE4lvledarskap"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -44299,12 +44480,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -44354,7 +44535,7 @@ GameObject:
   - component: {fileID: 8938168230989017390}
   - component: {fileID: 7019726417570262544}
   m_Layer: 5
-  m_Name: Category Image (16)
+  m_Name: StreesResistence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45259,7 +45440,7 @@ GameObject:
   - component: {fileID: 4342974143503264848}
   - component: {fileID: 9065762070134894741}
   m_Layer: 5
-  m_Name: Category Image (1)
+  m_Name: DefaultMode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45513,7 +45694,7 @@ GameObject:
   - component: {fileID: 6055377479459245196}
   - component: {fileID: 5106156499849539240}
   m_Layer: 5
-  m_Name: Category Image (15)
+  m_Name: InitiativeTaking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46464,7 +46645,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Uth\xE5llighet"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -46492,12 +46673,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -47559,7 +47740,7 @@ GameObject:
   - component: {fileID: 6925633287271881982}
   - component: {fileID: 7323418752875197999}
   m_Layer: 5
-  m_Name: Category Image (10)
+  m_Name: ProblemSolving
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47596,7 +47777,7 @@ GameObject:
   - component: {fileID: 8742593667678324285}
   - component: {fileID: 1814670174216529936}
   m_Layer: 5
-  m_Name: Category Image (13)
+  m_Name: SelfLeadership
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48003,7 +48184,7 @@ GameObject:
   - component: {fileID: 6913072170242427699}
   - component: {fileID: 5048609947619144072}
   m_Layer: 5
-  m_Name: Category Image (21)
+  m_Name: Endurance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48258,7 +48439,7 @@ GameObject:
   - component: {fileID: 1652408311217671847}
   - component: {fileID: 3568632827731472491}
   m_Layer: 5
-  m_Name: Category Image (9)
+  m_Name: Flexibility
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48540,7 +48721,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Default
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -48568,12 +48749,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.04
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -49082,21 +49263,45 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 853417893311770194}
+  m_TargetGraphic: {fileID: 1320467861229720927}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
-        m_MethodName: LoadTutorialScene
-        m_Mode: 1
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateAnswerCategory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateQuestionCategory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 452836918460376856}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!224 &6755111996488064298
 RectTransform:
@@ -49623,7 +49828,7 @@ GameObject:
   - component: {fileID: 3237060495955332724}
   - component: {fileID: 262449447098380968}
   m_Layer: 5
-  m_Name: Category Image (12)
+  m_Name: Accuracy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49993,7 +50198,7 @@ GameObject:
   - component: {fileID: 5227338124701950263}
   - component: {fileID: 337047729479268424}
   m_Layer: 5
-  m_Name: Category Image (25)
+  m_Name: ProductionAndFitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51258,7 +51463,7 @@ GameObject:
   - component: {fileID: 103521747692663650}
   - component: {fileID: 5422853516163595412}
   m_Layer: 5
-  m_Name: Category Image (6)
+  m_Name: Empathy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51394,7 +51599,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Lokalv\xE5rd/hemst\xE4d"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -51422,12 +51627,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -52596,7 +52801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &7392905958271270995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54404,7 +54609,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Samarbetsf\xF6rm\xE5ga"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -54432,12 +54637,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -55088,17 +55293,29 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
-        m_MethodName: LoadTutorialScene
-        m_Mode: 1
+      - m_Target: {fileID: 4404158933906529146}
+        m_TargetAssemblyTypeName: ActivateCategory, Assembly-CSharp
+        m_MethodName: ActivateDefaultMode
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1510065023466443922}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!224 &7819814100033594354
 RectTransform:
@@ -56339,7 +56556,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Anpassningsbarhet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -56367,12 +56584,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -56524,7 +56741,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Flexibilitet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -56552,12 +56769,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -57462,7 +57679,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Anpassningsf\xF6rm\xE5ga"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -57490,12 +57707,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -58860,7 +59077,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.75, y: 0.18, z: 1}
+  m_Size: {x: 0.75, y: 0.18, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8534189346266905849
 MonoBehaviour:
@@ -59532,7 +59749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Ledarskap
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -59560,12 +59777,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -59837,7 +60054,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4189115849769050764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.745}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -59854,7 +60071,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.3}
-  m_SizeDelta: {x: 2, y: 1.5}
+  m_SizeDelta: {x: 3, y: 1.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8742593667678324285
 MonoBehaviour:
@@ -60884,7 +61101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: "Produktion/Mont\xF6r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -60912,8 +61129,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0.01
@@ -61091,7 +61308,7 @@ GameObject:
   - component: {fileID: 1437895288960826317}
   - component: {fileID: 7974602931245856160}
   m_Layer: 5
-  m_Name: Category Image (14)
+  m_Name: TimeManagement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61130,7 +61347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &8982331924455395412
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -61913,7 +62130,7 @@ GameObject:
   - component: {fileID: 4338735963851381311}
   - component: {fileID: 388874954919009395}
   m_Layer: 5
-  m_Name: Category Image (23)
+  m_Name: RestaurantEmployee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62212,7 +62429,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kategori
+  m_text: Restaurangmedarbetare
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -62240,12 +62457,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.04
+  m_fontSizeBase: 0.04
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 0.01
-  m_fontSizeMax: 16
+  m_fontSizeMin: 0.04
+  m_fontSizeMax: 0.1
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 4096
@@ -62319,6 +62536,7 @@ SceneRoots:
   - {fileID: 898094856}
   - {fileID: 1134092430}
   - {fileID: 1661723461}
+  - {fileID: 579131618}
   - {fileID: 764897914}
   - {fileID: 1184000146}
   - {fileID: 7750118780974324243}

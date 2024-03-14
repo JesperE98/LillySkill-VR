@@ -3,12 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 using Jesper.GameSettings.Data;
+using Jesper.InterviewAnswerLists.Data;
+using Jesper.InterviewQuestionsList.Data;
+using System;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    private GameSettingsScriptableObject m_GameSettingsScriptableObject;
+    private GameSettingsScriptableObject _gameSettings;
+    [SerializeField]
+    private InterviewAnswersListScriptableObject interviewAnswersList;
+    [SerializeField]
+    private InterviewQuestionsListScriptableObject interviewQuestionList;
 
+    [SerializeField]
+    private List<object> _questions = new List<object>();
+    [SerializeField]
     protected List<string> _answerList = new List<string>();
     private int _playerScore = 0;
     private int _interviewerInterest = 2;
@@ -20,6 +30,8 @@ public class GameManager : MonoBehaviour
     private bool _interviewerIntro = false;
     private bool _interviewAreActive = false;
     private bool _informationPageActive = false;
+
+
 
     /// <summary>
     /// Gets and sets int value to controll Interviewer NPC animations.
@@ -185,17 +197,13 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if(PlayerScore > m_GameSettingsScriptableObject.PlayerHighScore)
+        if(PlayerScore > _gameSettings.PlayerHighScore)
         {
-            m_GameSettingsScriptableObject.PlayerHighScore = PlayerScore;
+            _gameSettings.PlayerHighScore = PlayerScore;
         }
 
         InterviewerInterest = Mathf.Clamp(InterviewerInterest, 1, 5);
-        // If statements to make sure the value stays between the values 1 to 5.
-        //if (interviewerInterest >= 5)
-        //    interviewerInterest = 5;
-        //else if (interviewerInterest <= 1)
-        //    interviewerInterest = 1;
+
     }
 
     /// <summary>
@@ -203,7 +211,6 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public virtual void DefaultValues()
     {
-        m_GameSettingsScriptableObject.defaultMode = true;
         AnswerList.Clear();
     }
 
@@ -214,5 +221,19 @@ public class GameManager : MonoBehaviour
     public virtual void AddAnswerToList(string text)
     {
         AnswerList.Add(text);
+    }
+
+    private void Start()
+    {
+        if(_gameSettings.LoadedScene == "Office")
+        {
+            for (int i = 0; i < interviewAnswersList.categories.Count; i++)
+            {
+                if (interviewQuestionList._questionCategories[i].CategoryIsActive == true)
+                {
+                    _questions.Add(interviewQuestionList._questionCategories[i]);
+                }
+            }
+        }
     }
 }
