@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using JesperScriptableObject;
+using Jesper.GameSettings.Data;
 
 namespace JespersCode
 {

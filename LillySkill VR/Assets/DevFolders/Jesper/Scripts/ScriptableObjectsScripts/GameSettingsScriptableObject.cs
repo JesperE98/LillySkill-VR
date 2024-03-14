@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace JesperScriptableObject
+namespace Jesper.GameSettings.Data
 {
     [CreateAssetMenu(fileName = "GameSettingsData", menuName = "ScriptableObjects/GameSettingsScriptableObject", order = 0)]
     public class GameSettingsScriptableObject : ScriptableObject

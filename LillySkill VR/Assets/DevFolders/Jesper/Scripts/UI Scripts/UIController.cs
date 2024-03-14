@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace JespersCode
+namespace Jesper.Collection
 {
     [RequireComponent(typeof(BoxCollider))]
     /// <summary>

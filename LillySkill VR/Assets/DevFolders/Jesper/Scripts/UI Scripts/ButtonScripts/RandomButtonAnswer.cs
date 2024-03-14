@@ -1,10 +1,9 @@
-using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace JespersCode
+namespace Jesper.Collection
 {
     public class RandomButtonAnswer : MonoBehaviour
     {

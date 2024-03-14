@@ -1,14 +1,14 @@
-using JesperScriptableObject;
-using LillyCode;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using LillyCode;
+using Jesper.GameSettings.Data;
 
 
-namespace JespersCode
+namespace Jesper.Collection
 {
     public class UIManager : MonoBehaviour
     {
