@@ -3,87 +3,127 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using JesperScriptableObject;
+using Jesper.GameSettings.Data;
 
 namespace JespersCode
 {
     public class SceneHandler : MonoBehaviour
     {
+        private GameManager _gameManager;
+        private Renderer _fadeScreen;
+        public bool _loopDone = false;
+
         [SerializeField]
-        private GameSettingsScriptableObject m_GameSettings;
-        private FadeInFadeOut m_FadeInFadeOut;
-        private GameManager gameManager;
-        private int sceneIndex;
+        private GameSettingsScriptableObject _gameSettings;
 
         private void Awake()
         {
-            if (m_GameSettings.LoadedScene != 0)
+            if(_gameSettings.LoadedScene != "Tutorial")
             {
-                gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+                _gameSettings.LoadedScene = "Main Menu";
             }
 
-            m_FadeInFadeOut = GameObject.Find("FadeScreen").GetComponent<FadeInFadeOut>();
+            if (_gameSettings.LoadedScene != "Main Menu")
+            {
+                _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            }
+            _fadeScreen = GameObject.Find("FadeScreen").GetComponent<Renderer>();
+        }
+        private void Start()
+        {
+            
+            StartCoroutine(FadeInRoutine(true));
         }
 
         /// <summary>
         /// Loads the Start Menu Scene.
         /// </summary>
-        public void LoadStartMenuScene()
+        public void LoadScene(string sceneName)
         {
-            sceneIndex = 0;
-            m_GameSettings.LoadedScene = sceneIndex;
-            m_FadeInFadeOut.StartFadeOutRoutine();
-
-            SceneManager.LoadScene(m_GameSettings.LoadedScene);
+            StartCoroutine(LoadLevelAsync(true, sceneName));
         }
 
         /// <summary>
-        /// Loads the Main Interview Mode Scene.
+        /// Resets current active scene.
         /// </summary>
-        public void LoadMainModeScene()
+        public void ResetCurrentScene(string sceneName)
         {
-            sceneIndex = 1;
-            m_GameSettings.LoadedScene = sceneIndex;
-            m_FadeInFadeOut.StartFadeOutRoutine();
-            SceneManager.LoadScene(m_GameSettings.LoadedScene);
-        }
-
-        /// <summary>
-        /// Loads the Tutorial scene with the tutorial video.
-        /// </summary>
-        public void LoadTutorialScene()
-        {
-            sceneIndex = 1;
-            m_GameSettings.LoadedScene = sceneIndex;
-            m_FadeInFadeOut.StartFadeOutRoutine();
-            SceneManager.LoadScene(m_GameSettings.LoadedScene);
-        }
-
-        /// <summary>
-        /// Loads the Easy Mode Exercise Scene.
-        /// </summary>
-        public void LoadExerciseScene()
-        {
-            sceneIndex = 1;
-            m_GameSettings.LoadedScene = sceneIndex;
-            m_FadeInFadeOut.StartFadeOutRoutine();
-            SceneManager.LoadScene(m_GameSettings.LoadedScene);
+            _gameManager.DefaultValues();
+            StartCoroutine(LoadLevelAsync(true, sceneName));
         }
 
         /// <summary>
         /// Quits the application.
         /// </summary>
-        public void QuitApplciation()
+        public void QuitApplication()
         {
-            m_FadeInFadeOut.StartFadeOutRoutine();
-            Application.Quit();
+            StartCoroutine(QuitApplication(true));
         }
 
-        public void ResetCurrentScene()
+        private IEnumerator FadeInRoutine(bool fadeAway)
         {
-            m_FadeInFadeOut.StartFadeOutRoutine();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            gameManager.DefaultValues();
+            // Fade from opaque to transparent
+            if (fadeAway)
+            {
+                // Loop over 3 seconds backwards
+                for (float i = 1; i >= 0; i -= Time.deltaTime)
+                {
+                    _fadeScreen.material.color = new Color(0, 0, 0, i);
+                    yield return null;
+                }
+            }
+
+            if (_gameSettings.LoadedScene != "Main Menu")
+            {
+                _gameManager.FadeInComplete = true;
+            }
+        }
+
+        /// <summary>
+        /// IEnumerator which loads a new scene.
+        /// </summary>
+        /// <param name="fadeAway"></param>
+        /// <param name="sceneName"></param>
+        /// <returns></returns>
+        private IEnumerator LoadLevelAsync(bool fadeAway, string sceneName)
+        {
+            // Fade from transparent to opaque
+            if (fadeAway == true)
+            {
+                // Loop over 4 seconds forwards
+                for (float i = 0; i <= 1; i += Time.deltaTime)
+                {
+                    _fadeScreen.material.color = new Color(0, 0, 0, i);
+                    yield return null;
+                }
+            }
+
+            _gameSettings.LoadedScene = sceneName;
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+
+            while (!asyncLoad.isDone)
+            {
+                yield return null;
+            }
+
+            if (_gameSettings.LoadedScene != "Main Menu")
+            {
+                _gameManager.FadeOutComplete = true;
+            }
+        }
+
+        private IEnumerator QuitApplication(bool fadeAway)
+        {
+            if (fadeAway == true)
+            {
+                for (float i = 0; i <= 1; i += Time.deltaTime)
+                {
+                    _fadeScreen.material.color = new Color(0, 0, 0, i);
+                    yield return null;
+                }
+            }
+
+            Application.Quit();
         }
     }
 }

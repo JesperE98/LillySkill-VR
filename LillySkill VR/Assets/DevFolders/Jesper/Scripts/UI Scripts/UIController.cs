@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace JespersCode
+namespace Jesper.Collection
 {
     [RequireComponent(typeof(BoxCollider))]
     /// <summary>
@@ -15,10 +15,10 @@ namespace JespersCode
     /// </summary>
     public class UIController : Button
     {
-        private AudioManager audioManager;
+        private AudioManager _audioManager;
         protected override void Awake()
         {
-            audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+            _audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace JespersCode
         /// </summary>
         public void OnPointerEnter()
         {
-            audioManager.PlaySFXAudio(1);
+            _audioManager.PlaySFXAudio(1);
         }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace JespersCode
         public void OnPointerClick()
         {
             onClick.Invoke();
-            audioManager.PlaySFXAudio(0);
+            _audioManager.PlaySFXAudio(0);
         }
     }
 }

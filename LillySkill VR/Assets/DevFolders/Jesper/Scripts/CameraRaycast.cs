@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace JespersCode
+namespace Jesper.Collection
 {
     public class CameraRaycast : MonoBehaviour
     {
@@ -15,7 +15,7 @@ namespace JespersCode
 
         private GameObject uiPrefabCopy;
 
-        private void Awake()
+        private void Start()
         {
             _uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         }

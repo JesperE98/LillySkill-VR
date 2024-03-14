@@ -12,119 +12,3985 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b22576582e2ba4f8ce5cd9316b7cdf, type: 3}
   m_Name: InterviewAnswersListData
   m_EditorClassIdentifier: 
-  m_InterviewAnswerList:
-  - m_ID: 0
-    m_AnswerOne: "Jag har flera \xE5rs arbetslivserfarenhet, utrustad med en robust
-      kompetens och en djup f\xF6rst\xE5else f\xF6r olika tekniker och arbetsuppgifter."
-    m_AnswerTwo: "Jag \xE4r sugen p\xE5 att b\xF6rja jobba. Trots att jag \xE4nnu
-      inte skaffat specifik arbetserfarenhet \xE4r jag motiverad att g\xF6ra en positiv
-      inverkan."
-    m_AnswerThree: "Jag har \xE4nnu inte skaffat mig tidigare arbetserfarenhet, men
-      jag har utvecklat relevanta f\xE4rdigheter genom att uppr\xE4tth\xE5lla renlighet
-      i mitt boende."
-  - m_ID: 1
-    m_AnswerOne: "H\xF6g arbetskapacitet och f\xF6rm\xE5ga att hantera fysiskt kr\xE4vande
-      arbetsuppgifter."
-    m_AnswerTwo: "God samarbetsf\xF6rm\xE5ga och f\xF6rm\xE5ga att samarbeta."
-    m_AnswerThree: "Noggrannhet och f\xF6rm\xE5ga att f\xF6lja instruktioner."
-  - m_ID: 2
-    m_AnswerOne: "Jag har aldrig r\xE5kat ut f\xF6r en utmanande situation tidigare."
-    m_AnswerTwo: "Jag har st\xE4llts inf\xF6r minst en sv\xE5r situation tidigare
-      och antingen l\xF6ste jag den sj\xE4lv eller v\xE4nde mig till mina v\xE4nner
-      f\xF6r att f\xE5 st\xF6d."
-    m_AnswerThree: Jag undviker vanligtvis utmanande situationer.
-  - m_ID: 3
-    m_AnswerOne: "Jag brukar kontrollera teamprojekt och se till att allt g\xE5r
-      min v\xE4g."
-    m_AnswerTwo: "Jag f\xF6redrar att jobba ensam."
-    m_AnswerThree: "Jag v\xE4rdes\xE4tter teamwork, d\xE4r alla arbetar som ett team."
-  - m_ID: 4
-    m_AnswerOne: Jag skulle ta itu med konflikten med en kollega genom respektfull
-      kommunikation.
-    m_AnswerTwo: "Jag har aldrig haft n\xE5gra konflikter med kollegor."
-    m_AnswerThree: "N\xE4r konflikter uppst\xE5r tenderar jag att h\xE5lla avst\xE5nd
-      och hoppas att de l\xF6ser sig p\xE5 egen hand."
-  - m_ID: 5
-    m_AnswerOne: "Jag bryr mig inte om feedback eller kritik eftersom jag vet att
-      jag g\xF6r ett bra jobb."
-    m_AnswerTwo: "Jag ser feedback och kritik som n\xE5got positivt, f\xF6r att l\xE4ra
-      mig och kunna v\xE4xa p\xE5 min arbetsplats."
-    m_AnswerThree: "Jag hanterar inte feedback eller kritik s\xE4rskilt bra."
-  - m_ID: 6
-    m_AnswerOne: "Jag \xE4gnar mig inte \xE5t n\xE5gra aktiviteter eller hobbyer
-      p\xE5 min fritid."
-    m_AnswerTwo: "Jag har n\xE5gra aktiviteter eller hobbyer som jag \xE4gnar mig
-      \xE5t p\xE5 min fritid."
-    m_AnswerThree: "Jag \xE4gnar mig \xE5t specifika aktiviteter eller hobbyer p\xE5
-      min fritid, f\xF6r min personliga utveckling och intresse."
-  - m_ID: 7
-    m_AnswerOne: "Jag har \xE4nnu inte t\xE4nkt p\xE5 mina planer i detalj."
-    m_AnswerTwo: "Jag ser mig sj\xE4lv v\xE4xa tillsammans med f\xF6retaget."
-    m_AnswerThree: "Jag t\xE4nker mig att jag tar mig an olika roller med \xF6kat
-      ansvar f\xF6r min personliga utveckling."
-  - m_ID: 8
-    m_AnswerOne: "Personlig utveckling \xE4r avg\xF6rande, och jag s\xF6ker aktivt
-      m\xF6jligheter att l\xE4ra, v\xE4xa och f\xF6rb\xE4ttra mina f\xE4rdigheter."
-    m_AnswerTwo: "Personlig utveckling \xE4r viktigt f\xF6r mig, men jag har \xE4nnu
-      inte drivit den aktivt fram\xE5t."
-    m_AnswerThree: "Personlig utveckling \xE4r inte en prioritet f\xF6r mig."
-  - m_ID: 9
-    m_AnswerOne: "Jag har inte avslutat n\xE5gon formell utbildning."
-    m_AnswerTwo: "Jag har avslutat h\xF6gskole-/universitetsutbildning eller har
-      en h\xF6gre examen."
-    m_AnswerThree: "Jag har g\xE5tt n\xE5gon gymnasieutbildning eller liknande."
-  - m_ID: 10
-    m_AnswerOne: "F\xF6rtydliga situationen och hitta en \xF6msesidigt acceptabel
-      l\xF6sning."
-    m_AnswerTwo: "Eskalera \xE4rendet till en arbetsledare eller chef."
-    m_AnswerThree: "Skyll p\xE5 den andra personen f\xF6r att han inte f\xF6rst\xE5r."
-  - m_ID: 11
-    m_AnswerOne: "Undvik problemet och hoppas att det l\xF6ser sig p\xE5 egen hand."
-    m_AnswerTwo: "Fokusera p\xE5 att kritisera situationen s\xE5 att man inte g\xF6r
-      om det."
-    m_AnswerThree: "Lyssnar aktivt och s\xF6ker en \xF6msesidigt f\xF6rdelaktig l\xF6sning."
-  - m_ID: 12
-    m_AnswerOne: "Jag skulle lyssna p\xE5 b\xE5da teammedlemmarnas perspektiv utan
-      att ta n\xE5gon sida."
-    m_AnswerTwo: "Undvika konflikten och hoppas att de l\xF6ser det sj\xE4lva."
-    m_AnswerThree: "Om konflikten forts\xE4tter eller eskalerar kommer jag att kontakta
-      en l\xE4mplig auktoritetsperson, till exempel en handledare eller chef."
-  - m_ID: 13
-    m_AnswerOne: "Involvera n\xE5gon utomst\xE5ende i projektet f\xF6r att hitta
-      en r\xE4ttvis l\xF6sning f\xF6r oss."
-    m_AnswerTwo: "Jag \xE4r os\xE4ker p\xE5 vad jag ska g\xF6ra i denna situation
-      och tar d\xE4rf\xF6r inte del av konflikten."
-    m_AnswerThree: "Undvika konflikten och hoppas att den l\xF6ser sig sj\xE4lv."
-  - m_ID: 14
-    m_AnswerOne: "Skylla p\xE5 externa faktorer f\xF6r motg\xE5ngen."
-    m_AnswerTwo: "L\xE4ra av upplevelsen och anpassa mitt tillv\xE4gag\xE5ngss\xE4tt."
-    m_AnswerThree: "Ge upp och g\xE5 vidare till n\xE5got annat."
-  - m_ID: 15
-    m_AnswerOne: "Jag har tidigare engagerat mig i volont\xE4rarbete och har d\xE4rf\xF6r
-      erfarenhet."
-    m_AnswerTwo: "Jag har \xE4nnu inte f\xE5tt n\xE5gon arbetslivserfarenhet eller
-      gjort volont\xE4rarbete."
-    m_AnswerThree: "Jag har varit involverad i aktiviteter som kan vara f\xF6rdelaktiga
-      p\xE5 en arbetsplats."
-  - m_ID: 16
-    m_AnswerOne: "Jag \xE4r bra p\xE5 att samarbeta och har starka kommunikationsf\xE4rdigheter."
-    m_AnswerTwo: "Jag har en stark analytisk f\xF6rm\xE5ga och \xE4r bra p\xE5 probleml\xF6sning."
-    m_AnswerThree: "Jag h\xE5ller fortfarande p\xE5 att best\xE4mma mina styrkor
-      och f\xE4rdigheter."
-  - m_ID: 17
-    m_AnswerOne: "Jag \xE4r motiverad att arbeta inom detta omr\xE5de och bygga en
-      framg\xE5ngsrik karri\xE4r."
-    m_AnswerTwo: "Jag best\xE4mmer fortfarande mina karri\xE4rsm\xE5l, men jag \xE4r
-      \xF6ppen f\xF6r m\xF6jligheter och ivrig att l\xE4ra mig mer."
-    m_AnswerThree: "Jag s\xF6ker detta jobb f\xF6r att skaffa arbetslivserfarenhet
-      och l\xE4ra mig nya f\xE4rdigheter."
-  - m_ID: 18
-    m_AnswerOne: "Jag har ingen \xE5sikt i den h\xE4r fr\xE5gan."
-    m_AnswerTwo: "Jag ser feedback och v\xE4gledning som m\xF6jligheter att l\xE4ra
-      mig och f\xF6rb\xE4ttra mig sj\xE4lv."
-    m_AnswerThree: "Jag \xE4r \xF6ppen f\xF6r feedback men kan beh\xF6va tid f\xF6r
-      att bearbeta och till\xE4mpa den."
-  - m_ID: 19
-    m_AnswerOne: Att vara impulsiv och envis.
-    m_AnswerTwo: Att vara effektiv och organiserad.
-    m_AnswerThree: Att ha god teamwork och kommunikation.
+  DefaultCategoryIsActive: 0
+  defaultCategory:
+  - QuestionNumber: "Fr\xE5ga #1"
+    AnswerA:
+      AnswerText: "Jag \xE4r sugen p\xE5 att b\xF6rja jobba. Trots att jag \xE4nnu
+        inte skaffat specifik arbetserfarenhet \xE4r jag motiverad att g\xF6ra en
+        positiv inverkan."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag har \xE4nnu inte skaffat mig tidigare arbetserfarenhet, men
+        jag har utvecklat relevanta f\xE4rdigheter genom att uppr\xE4tth\xE5lla renlighet
+        i mitt boende."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag har flera \xE5rs arbetslivserfarenhet, utrustad med en robust
+        kompetens och en djup f\xF6rst\xE5else f\xF6r olika tekniker och arbetsuppgifter."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #2"
+    AnswerA:
+      AnswerText: "God samarbetsf\xF6rm\xE5ga och f\xF6rm\xE5ga att samarbeta."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "H\xF6g arbetskapacitet och f\xF6rm\xE5ga att hantera fysiskt kr\xE4vande
+        arbetsuppgifter."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Noggrannhet och f\xF6rm\xE5ga att f\xF6lja instruktioner."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #3"
+    AnswerA:
+      AnswerText: Jag undviker vanligtvis utmanande situationer.
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag har aldrig r\xE5kat ut f\xF6r en utmanande situation tidigare."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag har st\xE4llts inf\xF6r minst en sv\xE5r situation tidigare
+        och antingen l\xF6ste jag den sj\xE4lv eller v\xE4nde mig till mina v\xE4nner
+        f\xF6r att f\xE5 st\xF6d."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #4"
+    AnswerA:
+      AnswerText: "Jag brukar kontrollera teamprojekt och se till att allt g\xE5r
+        min v\xE4g."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag f\xF6redrar att jobba ensam."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag v\xE4rdes\xE4tter teamwork, d\xE4r alla arbetar som ett team."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #5"
+    AnswerA:
+      AnswerText: "N\xE4r konflikter uppst\xE5r tenderar jag att h\xE5lla avst\xE5nd
+        och hoppas att de l\xF6ser sig p\xE5 egen hand."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag har aldrig haft n\xE5gra konflikter med kollegor."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: Jag skulle ta itu med konflikten med en kollega genom respektfull
+        kommunikation.
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #6"
+    AnswerA:
+      AnswerText: "Jag bryr mig inte om feedback eller kritik eftersom jag vet att
+        jag g\xF6r ett bra jobb."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag hanterar inte feedback eller kritik s\xE4rskilt bra."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag ser feedback och kritik som n\xE5got positivt, f\xF6r att
+        l\xE4ra mig och kunna v\xE4xa p\xE5 min arbetsplats."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #7"
+    AnswerA:
+      AnswerText: "Jag \xE4gnar mig inte \xE5t n\xE5gra aktiviteter eller hobbyer
+        p\xE5 min fritid."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag har n\xE5gra aktiviteter eller hobbyer som jag \xE4gnar mig
+        \xE5t p\xE5 min fritid."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag \xE4gnar mig \xE5t specifika aktiviteter eller hobbyer p\xE5
+        min fritid, f\xF6r min personliga utveckling och intresse."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #8"
+    AnswerA:
+      AnswerText: "Jag har \xE4nnu inte t\xE4nkt p\xE5 mina planer i detalj."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag t\xE4nker mig att jag tar mig an olika roller med \xF6kat
+        ansvar f\xF6r min personliga utveckling."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag ser mig sj\xE4lv v\xE4xa tillsammans med f\xF6retaget."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #9"
+    AnswerA:
+      AnswerText: "Personlig utveckling \xE4r inte en prioritet f\xF6r mig."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Personlig utveckling \xE4r viktigt f\xF6r mig, men jag har \xE4nnu
+        inte drivit den aktivt fram\xE5t."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Personlig utveckling \xE4r avg\xF6rande, och jag s\xF6ker aktivt
+        m\xF6jligheter att l\xE4ra, v\xE4xa och f\xF6rb\xE4ttra mina f\xE4rdigheter."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #10"
+    AnswerA:
+      AnswerText: "Jag har inte avslutat n\xE5gon formell utbildning."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag har g\xE5tt n\xE5gon gymnasieutbildning eller liknande."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag har avslutat h\xF6gskole-/universitetsutbildning eller har
+        en h\xF6gre examen."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #11"
+    AnswerA:
+      AnswerText: "Eskalera \xE4rendet till en arbetsledare eller chef."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Skyll p\xE5 den andra personen f\xF6r att han inte f\xF6rst\xE5r."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "F\xF6rtydliga situationen och hitta en \xF6msesidigt acceptabel
+        l\xF6sning."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #12"
+    AnswerA:
+      AnswerText: "Undvik problemet och hoppas att det l\xF6ser sig p\xE5 egen hand."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Fokusera p\xE5 att kritisera situationen s\xE5 att man inte g\xF6r
+        om det."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Lyssnar aktivt och s\xF6ker en \xF6msesidigt f\xF6rdelaktig l\xF6sning."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #13"
+    AnswerA:
+      AnswerText: "Undvika konflikten och hoppas att de l\xF6ser det sj\xE4lva."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag skulle lyssna p\xE5 b\xE5da teammedlemmarnas perspektiv utan
+        att ta n\xE5gon sida."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Om konflikten forts\xE4tter eller eskalerar kommer jag att kontakta
+        en l\xE4mplig auktoritetsperson, till exempel en handledare eller chef."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #14"
+    AnswerA:
+      AnswerText: "Undvika konflikten och hoppas att den l\xF6ser sig sj\xE4lv."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag \xE4r os\xE4ker p\xE5 vad jag ska g\xF6ra i denna situation
+        och tar d\xE4rf\xF6r inte del av konflikten."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Involvera n\xE5gon utomst\xE5ende i projektet f\xF6r att hitta
+        en r\xE4ttvis l\xF6sning f\xF6r oss."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #15"
+    AnswerA:
+      AnswerText: "Skylla p\xE5 externa faktorer f\xF6r motg\xE5ngen."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Ge upp och g\xE5 vidare till n\xE5got annat."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "L\xE4ra av upplevelsen och anpassa mitt tillv\xE4gag\xE5ngss\xE4tt."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #16"
+    AnswerA:
+      AnswerText: "Jag har \xE4nnu inte f\xE5tt n\xE5gon arbetslivserfarenhet eller
+        gjort volont\xE4rarbete."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag har varit involverad i aktiviteter som kan vara f\xF6rdelaktiga
+        p\xE5 en arbetsplats."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag har tidigare engagerat mig i volont\xE4rarbete och har d\xE4rf\xF6r
+        erfarenhet."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #17"
+    AnswerA:
+      AnswerText: "Jag h\xE5ller fortfarande p\xE5 att best\xE4mma mina styrkor och
+        f\xE4rdigheter."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag har en stark analytisk f\xF6rm\xE5ga och \xE4r bra p\xE5 probleml\xF6sning."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag \xE4r bra p\xE5 att samarbeta och har starka kommunikationsf\xE4rdigheter."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #18"
+    AnswerA:
+      AnswerText: "Jag s\xF6ker detta jobb f\xF6r att skaffa arbetslivserfarenhet
+        och l\xE4ra mig nya f\xE4rdigheter."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag best\xE4mmer fortfarande mina karri\xE4rsm\xE5l, men jag \xE4r
+        \xF6ppen f\xF6r m\xF6jligheter och ivrig att l\xE4ra mig mer."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag \xE4r motiverad att arbeta inom detta omr\xE5de och bygga
+        en framg\xE5ngsrik karri\xE4r."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #19"
+    AnswerA:
+      AnswerText: "Jag har ingen \xE5sikt i den h\xE4r fr\xE5gan."
+      AnswerType: 0
+    AnswerB:
+      AnswerText: "Jag \xE4r \xF6ppen f\xF6r feedback men kan beh\xF6va tid f\xF6r
+        att bearbeta och till\xE4mpa den."
+      AnswerType: 1
+    AnswerC:
+      AnswerText: "Jag ser feedback och v\xE4gledning som m\xF6jligheter att l\xE4ra
+        mig och f\xF6rb\xE4ttra mig sj\xE4lv."
+      AnswerType: 2
+  - QuestionNumber: "Fr\xE5ga #20"
+    AnswerA:
+      AnswerText: Att vara impulsiv och envis.
+      AnswerType: 0
+    AnswerB:
+      AnswerText: Att vara effektiv och organiserad.
+      AnswerType: 1
+    AnswerC:
+      AnswerText: Att ha god teamwork och kommunikation.
+      AnswerType: 2
+  categories:
+  - CategoryName: 1
+    Description: Contains all the analytical thinking interview question text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 1
+      A: "Att noggrant titta p\xE5 detaljerad information och dra slutsatser."
+      B: "Att f\xF6lja instruktioner noga."
+      C: "Att g\xF6ra saker snabbt och effektivt."
+      D: "Att arbeta bra med andra m\xE4nniskor."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 2
+      A: "Att vara kreativ och t\xE4nka utanf\xF6r boxen. "
+      B: "Att vara uppm\xE4rksam p\xE5 detaljer och noggrannhet."
+      C: "Att vara bra p\xE5 att kommunicera med andra. "
+      D: "Att vara sj\xE4lvs\xE4ker och \xF6vertygande."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 3
+      A: "Genom att g\xF6ra saker p\xE5 samma s\xE4tt varje g\xE5ng."
+      B: "Genom att ta initiativ och g\xF6ra saker sj\xE4lv."
+      C: "Genom att l\xF6sa sv\xE5ra problem och fatta bra beslut."
+      D: 'Genom att vara social och jobba bra med andra. '
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Att organisera ett f\xF6retagsevenemang."
+      B: "Att h\xE5lla ett inspirerande tal inf\xF6r en publik."
+      C: "Att skriva en rapport om f\xF6rs\xE4ljningsstatistik och dra slutsatser."
+      D: "Att hantera kundf\xF6rfr\xE5gningar och ge utm\xE4rkt kundservice."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 1
+      A: Att samla mycket information.
+      B: Att fatta snabba beslut.
+      C: "Att ha sj\xE4lvf\xF6rtroende."
+      D: "Att lyssna p\xE5 andra och deras \xE5sikter."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 2
+      A: Effektiv kommunikation med kollegor.
+      B: "F\xF6rm\xE5gan att hantera och tolka data."
+      C: "F\xF6rm\xE5gan att inspirera och motivera andra."
+      D: "Snabb och smidig probleml\xF6sning."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 2
+      A: Genom att vara flexibel och anpassningsbar.
+      B: "Genom att vara noggrann och uppm\xE4rksam p\xE5 detaljer."
+      C: "Genom att vara bra p\xE5 att leda och motivera andra."
+      D: "Genom att vara bra p\xE5 att n\xE4tverka och bygga relationer."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 4
+      A: Bryta ner problemet i mindre delar.
+      B: 'Identifiera de viktigaste delarna av problemet. '
+      C: "F\xF6rst\xE5 hur de relaterar till varandra."
+      D: "L\xE5ta dina personliga \xE5sikter p\xE5verka din analys."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 3
+      A: "Genom att vara bra p\xE5 att skapa en positiv arbetsmilj\xF6."
+      B: "Genom att vara bra p\xE5 att hantera konflikter och sv\xE5ra situationer."
+      C: "Genom att kunna identifiera och analysera problem och hitta l\xF6sningar."
+      D: "Genom att vara bra p\xE5 att f\xF6lja rutiner och f\xF6lja instruktioner."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 2
+      A: Att vara snabb och effektiv i beslutsfattandet.
+      B: "Att vara \xF6ppen f\xF6r att l\xE4ra sig nya saker."
+      C: "Att ha goda ledaregenskaper och vara bra p\xE5 att motivera andra. "
+      D: "Att vara bra p\xE5 att kommunicera."
+  - CategoryName: 2
+    Description: Contains all the adaptability interview question text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 2
+      A: "Att h\xE5lla fast vid gamla metoder och rutiner."
+      B: "Att vara \xF6ppen f\xF6r f\xF6r\xE4ndringar och beredd att l\xE4ra sig
+        nya saker."
+      C: Att vara fokuserad och effektiv i arbetet.
+      D: "Att vara sj\xE4lvst\xE4ndig och oberoende."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 2
+      A: "Jag blir stressad och ogillar f\xF6r\xE4ndringar."
+      B: "Jag anpassar mig och ser f\xF6r\xE4ndringar som m\xF6jligheter till personlig
+        tillv\xE4xt."
+      C: "Jag f\xF6redrar att h\xE5lla mig till det jag redan kan och \xE4r bekv\xE4m
+        med."
+      D: "Jag s\xF6ker alltid efter nya jobb n\xE4r f\xF6r\xE4ndringar sker."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 2
+      A: "Att f\xF6lja en noggrann arbetsrutin varje dag."
+      B: "Att vara \xF6ppen till en ny ledningsstil eller chef."
+      C: "Att h\xE5lla fast vid gamla metoder och undvika f\xF6r\xE4ndring."
+      D: "Att vara sj\xE4lvst\xE4ndig och oberoende i arbetsuppgifterna."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 1
+      A: "Genom att vara flexibel och \xF6ppen f\xF6r nya id\xE9er och s\xE4tt att
+        arbeta p\xE5."
+      B: "Genom att vara ovillig att \xE4ndra p\xE5 din arbets-stil och rutiner."
+      C: "Genom att vara sj\xE4lvst\xE4ndig och oberoende av andra."
+      D: Genom att vara snabb och effektiv i ditt arbete.
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 2
+      A: "Att vara noggrann och uppm\xE4rksam p\xE5 detaljer."
+      B: "Att vara \xF6ppen f\xF6r f\xF6r\xE4ndringar och beredd att anpassa sig. "
+      C: "Att vara bra p\xE5 att kommunicera och samarbeta med andra."
+      D: "Att vara kreativ och t\xE4nka utanf\xF6r boxen."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 1
+      A: "Genom att vara flexibel och anpassningsbar till nya arbetsuppgifter och
+        milj\xF6er."
+      B: "Genom att vara sj\xE4lvst\xE4ndig och oberoende i ditt arbete."
+      C: "Genom att vara bra p\xE5 att l\xF6sa komplexa problem och fatta v\xE4lgrundade
+        beslut."
+      D: "Genom att vara bra p\xE5 att kommunicera och bygga relationer med kollegor."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 2
+      A: "Jag skulle vara motvillig och ogillande mot f\xF6r\xE4ndringen."
+      B: "Jag skulle anpassa mig och l\xE4ra mig de nya uppgifterna s\xE5 snabbt
+        som m\xF6jligt."
+      C: "Jag skulle s\xF6ka efter ett nytt jobb som \xE4r mer stabilt och f\xF6ruts\xE4gbart."
+      D: Jag skulle be min chef att ge mig mer information och tydliga instruktioner.
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 2
+      A: "Att vara sj\xE4lvst\xE4ndig och oberoende i arbetsuppgifterna."
+      B: "Att vara flexibel och \xF6ppen f\xF6r f\xF6r\xE4ndringar."
+      C: "Att vara bra p\xE5 att kommunicera och samarbeta med andra."
+      D: Att vara effektiv och snabb i arbetet.
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 2
+      A: "Genom att vara ovillig att \xE4ndra p\xE5 sin arbets-stil och rutiner."
+      B: "Genom att vara flexibel och \xF6ppen f\xF6r f\xF6r\xE4ndringar och nya
+        s\xE4tt att arbeta p\xE5."
+      C: "Genom att vara sj\xE4lvst\xE4ndig och oberoende i ditt arbete."
+      D: "Genom att s\xF6ka efter ett nytt jobb som \xE4r mindre stressigt."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 4
+      A: "Att ha sv\xE5rt att fokusera p\xE5 en sak i taget."
+      B: "Att vara obekv\xE4m med nya situationer."
+      C: "Att ha sv\xE5rt att samarbeta med andra."
+      D: "Att vara r\xE4dd f\xF6r att g\xF6ra fel."
+  - CategoryName: 3
+    Description: Contains all the customization interview question text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Jag tycker inte om f\xF6r\xE4ndring och f\xF6redrar att h\xE5lla mig till
+        det bekanta."
+      B: "Jag accepterar f\xF6r\xE4ndringar, men det tar tid f\xF6r mig att anpassa
+        mig till dem."
+      C: "Jag \xE4r flexibel och anpassar mig snabbt till nya arbetsuppgifter, arbetsmilj\xF6er
+        och arbetsrelationer."
+      D: "Jag ignorerar f\xF6r\xE4ndringar och forts\xE4tter att arbeta som vanligt."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 3
+      A: "Jag k\xE4nner mig \xF6verv\xE4ldigad och os\xE4ker p\xE5 hur jag ska hantera
+        uppgifterna."
+      B: "Jag tar p\xE5 mig uppgifterna, men jag \xE4r inte bekv\xE4m och beh\xF6ver
+        mycket st\xF6d och v\xE4gledning."
+      C: "Jag ser det som en m\xF6jlighet att l\xE4ra mig n\xE5got nytt och tar itu
+        med uppgifterna med sj\xE4lvf\xF6rtroende."
+      D: "Jag avvisar uppgifterna och ber om att f\xE5 forts\xE4tta med mina befintliga
+        arbetsuppgifter."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 3
+      A: "Jag har sv\xE5rt att anpassa mig och k\xE4nner mig obekv\xE4m i nya milj\xF6er
+        och relationer."
+      B: "Jag anpassar mig, men det tar tid f\xF6r mig att bli bekv\xE4m och bygga
+        relationer."
+      C: "Jag anpassar mig snabbt och trivs i olika arbetsmilj\xF6er med olika m\xE4nniskor."
+      D: "Jag f\xF6redrar att inte beh\xF6va anpassa mig och f\xF6redrar att arbeta
+        ensam."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Jag undviker konflikter och sv\xE5righeter och l\xE5ter dem l\xF6sa sig
+        sj\xE4lva."
+      B: "Jag k\xE4nner mig os\xE4ker och vet inte riktigt hur jag ska hantera dem."
+      C: "Jag tar itu med konflikter och sv\xE5righeter p\xE5 ett konstruktivt s\xE4tt
+        och f\xF6rs\xF6ker hitta l\xF6sningar."
+      D: "Jag l\xE4gger skulden p\xE5 andra och tar inte ansvar f\xF6r att hantera
+        konflikter och sv\xE5righeter."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 3
+      A: "Jag \xE4r motvillig att l\xE4ra mig nya metoder och tekniker och f\xF6redrar
+        att forts\xE4tta med det jag redan kan."
+      B: "Jag \xE4r \xF6ppen f\xF6r att l\xE4ra mig nya metoder och tekniker, men
+        jag \xE4r inte s\xE4rskilt entusiastisk."
+      C: "Jag \xE4r entusiastisk \xF6ver att l\xE4ra mig nya metoder och tekniker
+        och ser det som en m\xF6jlighet att f\xF6rb\xE4ttra mig sj\xE4lv."
+      D: "Jag \xE4r ointresserad av att l\xE4ra mig nya metoder och tekniker och
+        f\xF6redrar att h\xE5lla mig till det jag redan kan."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 3
+      A: "Jag har sv\xE5rt att anpassa mig till f\xF6r\xE4ndrade rutiner och krav."
+      B: "Jag anpassar mig, men det tar tid f\xF6r mig att v\xE4nja mig vid dem. "
+      C: "Jag anpassar mig snabbt och kan hantera f\xF6r\xE4ndrade rutiner och krav. "
+      D: "Jag f\xF6redrar att inte beh\xF6va anpassa mig och f\xF6redrar stabilitet
+        och konsekvens."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 4
+      A: "Jag har sv\xE5rt att samarbeta med m\xE4nniskor som \xE4r annorlunda \xE4n
+        jag."
+      B: "Jag kan samarbeta med olika typer av m\xE4nniskor, men det kan vara utmanande
+        f\xF6r mig."
+      C: "Jag \xE4r bra p\xE5 att anpassa mig och samarbeta."
+      D: "Jag tycker om att samarbeta med olika typer av m\xE4nniskor och ser det
+        som en m\xF6jlighet att v\xE4xa."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 3
+      A: "Jag blir stressad och \xF6verv\xE4ldigad av f\xF6r\xE4ndringar och har
+        sv\xE5rt att anpassa mig."
+      B: "Jag kan hantera f\xF6r\xE4ndringar och deadlines, men det kr\xE4ver extra
+        anstr\xE4ngning och planering."
+      C: "Jag \xE4r flexibel och kan snabbt anpassa mig till nya arbetsuppgifter
+        och deadlines."
+      D: "Jag ogillar f\xF6r\xE4ndringar och f\xF6redrar att h\xE5lla mig till mina
+        ursprungliga uppgifter och deadlines."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 3
+      A: "Jag \xE4r inte intresserad av att l\xE4ra mig nya f\xE4rdigheter och kunskaper."
+      B: "Jag tycker att det kan vara sv\xE5rt och utmanande att l\xE4ra mig nya
+        f\xE4rdigheter och kunskaper."
+      C: "Jag ser det som en m\xF6jlighet att utvecklas."
+      D: "Jag f\xF6redrar att inte beh\xF6va l\xE4ra mig nya f\xE4rdigheter och kunskaper."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 3
+      A: "Jag tar inte feedback och f\xF6rslag till f\xF6rb\xE4ttringar p\xE5 allvar
+        och bryr mig inte om att f\xF6r\xE4ndra mitt s\xE4tt att arbeta."
+      B: "Jag blir defensiv och ogillar att f\xE5 feedback och f\xF6rslag till f\xF6rb\xE4ttringar."
+      C: "Jag ser feedback och f\xF6rslag till f\xF6rb\xE4ttringar som en m\xF6jlighet
+        att v\xE4xa och f\xF6rb\xE4ttra mitt arbete."
+      D: "Jag avf\xE4rdar feedback och f\xF6rslag till f\xF6rb\xE4ttringar och anser
+        att mitt s\xE4tt att arbeta p\xE5 \xE4r b\xE4ttre."
+  - CategoryName: 4
+    Description: Contains all the decision making interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Jag v\xE4ljer n\xE5got utan att t\xE4nka p\xE5 konsekvenserna."
+      B: "Jag har sv\xE5rt att best\xE4mma och \xE4r os\xE4ker p\xE5 vad jag ska
+        v\xE4lja."
+      C: "Jag t\xE4nker igenom alternativen och fattar beslut baserat p\xE5 vad jag
+        vet."
+      D: "Jag l\xE5ter andra best\xE4mma \xE5t mig f\xF6r att undvika ansvar."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 3
+      A: "Jag v\xE4ntar tills jag har tillr\xE4cklig information."
+      B: "Jag gissar och hoppas p\xE5 det b\xE4sta. "
+      C: "Jag f\xF6rs\xF6ker f\xE5 mer information f\xF6r att fatta ett bra beslut."
+      D: "Jag g\xE5r p\xE5 magk\xE4nslan. "
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 3
+      A: "Jag f\xF6redrar att best\xE4mma sj\xE4lv och bryr mig inte om andras \xE5sikter."
+      B: "Jag lyssnar p\xE5 andra, men best\xE4mmer oftast sj\xE4lv."
+      C: "Jag tycker det \xE4r viktigt att h\xF6ra olika \xE5sikter innan jag best\xE4mmer
+        mig."
+      D: Jag bryr mig inte om att involvera andra i mina beslut.
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Jag blir stressad och har sv\xE5rt att best\xE4mma mig."
+      B: "Jag best\xE4mmer snabbt utan att t\xE4nka p\xE5 det."
+      C: "Jag f\xF6rs\xF6ker vara snabb och t\xE4nker \xE4nd\xE5 p\xE5 viktiga saker."
+      D: "Jag skjuter upp beslutet och hoppas p\xE5 det b\xE4sta."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 3
+      A: "Jag bryr mig inte om logik och g\xE5r p\xE5 k\xE4nsla."
+      B: "Jag t\xE4nker f\xF6r mycket och har sv\xE5rt att best\xE4mma mig."
+      C: "Jag anv\xE4nder logik f\xF6r att t\xE4nka igenom alternativen."
+      D: "Jag fattar beslut utan att t\xE4nka efter."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 3
+      A: "Jag undviker risker och v\xE4ljer det s\xE4kraste."
+      B: "Jag \xE4r r\xE4dd f\xF6r risker och h\xE5ller mig till det bekanta."
+      C: "Jag \xE4r beredd p\xE5 lite risk f\xF6r positiva resultat."
+      D: "Jag tar stora risker utan att t\xE4nka p\xE5 konsekvenserna."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 3
+      A: "Jag nekar att jag har fel och forts\xE4tter som inget h\xE4nt."
+      B: "Jag k\xE4nner mig d\xE5lig, men l\xE4r mig av misstaget."
+      C: "Jag erk\xE4nner felet och f\xF6rs\xF6ker r\xE4tta till det snabbt."
+      D: "Jag skyller p\xE5 andra och tar inte ansvar."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 3
+      A: "Jag best\xE4mmer p\xE5 plats och ogillar att ha en plan."
+      B: "Jag k\xE4nner mig os\xE4ker utan en tydlig plan."
+      C: "Jag har en plan, men \xE4ndrar om det beh\xF6vs."
+      D: "Jag f\xF6ljer alltid min plan utan f\xF6r\xE4ndringar."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 3
+      A: "Jag beh\xF6ver inte kolla hur det g\xE5r."
+      B: "Jag k\xE4nner mig os\xE4ker p\xE5 att utv\xE4rdera beslut."
+      C: "Jag kollar regelbundet och l\xE4r mig fr\xE5n mina beslut."
+      D: "Jag analyserar hela tiden och har sv\xE5rt att g\xE5 vidare."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 3
+      A: "Jag struntar i vad andra tycker och best\xE4mmer sj\xE4lv."
+      B: "Jag k\xE4nner mig os\xE4ker om folk inte h\xE5ller med."
+      C: "Jag f\xF6rs\xF6ker f\xF6rst\xE5 olika \xE5sikter innan jag best\xE4mmer
+        mig."
+      D: "Jag l\xE5ter andra best\xE4mma f\xF6r att undvika br\xE5k."
+  - CategoryName: 5
+    Description: Contains all the empathy interview question text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Jag f\xF6rst\xE5r inte andras k\xE4nslor."
+      B: "Jag f\xF6rs\xF6ker bara f\xF6rst\xE5 andra n\xE4r det verkligen \xE4r viktigt."
+      C: "Jag kan f\xF6rst\xE5 hur andra k\xE4nner och f\xF6rs\xF6ker se saker fr\xE5n
+        deras perspektiv."
+      D: "Jag bryr mig inte om hur andra k\xE4nner."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 3
+      A: Jag har fullt upp med mina egna problem.
+      B: "Jag lyssnar, men visar inget intresse eller medk\xE4nsla."
+      C: "Jag lyssnar aktivt och visar medk\xE4nsla genom att erbjuda st\xF6d och
+        f\xF6rst\xE5else."
+      D: "Jag \xE4r inte intresserad av att h\xF6ra om andras problem."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 3
+      A: "Jag tar parti f\xF6r en person och ignorerar den andra."
+      B: "Jag undviker konflikten och l\xE5ter dem l\xF6sa det sj\xE4lva."
+      C: "Jag f\xF6rs\xF6ker att hj\xE4lpa dem att n\xE5 en l\xF6sning genom att
+        vara f\xF6rst\xE5ende och empatisk."
+      D: Jag bryr mig inte om konflikter mellan andra.
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Jag f\xF6rst\xE5r inte \xF6verhuvudtaget. "
+      B: "Jag har sv\xE5rt att m\xE4rka till det d\xE5 verbal kommunikation \xE4r
+        min starka sida."
+      C: "Jag \xE4r medveten om det och f\xF6rs\xF6ker tolka icke-verbal kommunikation
+        f\xF6r att f\xF6rst\xE5 andra m\xE4nniskors k\xE4nslor och behov."
+      D: "Jag l\xE4gger m\xE4rke till det men v\xE4ljer att strunta i det."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 3
+      A: "Jag bryr mig inte och g\xE5r vidare med mitt arbete."
+      B: "Jag fr\xE5gar inte och l\xE5ter personen hantera sina egna problem."
+      C: "Jag visar omtanke genom att fr\xE5ga hur personen m\xE5r och erbjuda mitt
+        st\xF6d om det beh\xF6vs."
+      D: "Jag ignorerar personens k\xE4nslor och forts\xE4tter som vanligt."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 3
+      A: "Jag skulle ignorera kundens k\xE4nslor och inte g\xF6ra n\xE5got \xE5t
+        det."
+      B: "Jag skulle bli irriterad och tappa t\xE5lamodet med kunden."
+      C: "Jag skulle visa f\xF6rst\xE5else f\xF6r kundens frustration och g\xF6ra
+        mitt b\xE4sta f\xF6r att l\xF6sa problemet."
+      D: "Jag skulle l\xE5ta n\xE5gon annan hantera situationen."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 3
+      A: "Jag har sv\xE5rt att f\xF6rst\xE5 andras perspektiv, men jag jobbar p\xE5
+        det."
+      B: "Jag f\xF6rst\xE5r andras perspektiv, men jag h\xE5ller inte alltid med
+        dem."
+      C: "Jag f\xF6rs\xF6ker aktivt s\xE4tta mig in i andras perspektiv, men det
+        \xE4r inte alltid l\xE4tt."
+      D: "Jag bryr mig om att f\xF6rst\xE5 andras perspektiv, men jag har inte alltid
+        tid."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 3
+      A: "Jag skulle ignorera det och inte visa n\xE5got intresse f\xF6r deras problem."
+      B: "Jag skulle lyssna, men inte visa n\xE5gon empati eller medk\xE4nsla."
+      C: "Jag skulle lyssna aktivt och visa empati genom att erbjuda mitt st\xF6d
+        och f\xF6rst\xE5else."
+      D: "Jag skulle undvika att h\xF6ra om deras problem."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 3
+      A: "Jag skulle inte bry mig och forts\xE4tta med mitt arbete. "
+      B: "Jag skulle be dem att hantera det sj\xE4lva och inte erbjuda n\xE5gon hj\xE4lp."
+      C: "Jag skulle visa omtanke genom att erbjuda min hj\xE4lp och st\xF6d f\xF6r
+        att minska deras stress."
+      D: Jag skulle ignorera deras arbetsbelastning och stress.
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 4
+      A: Jag skulle be kunden att lugna ner sig innan jag pratar med dem.
+      B: "Jag skulle lyssna p\xE5 kundens klagom\xE5l och f\xF6rs\xF6ka hitta en
+        l\xF6sning."
+      C: "Jag skulle be kunden om urs\xE4kt f\xF6r den d\xE5liga kundservicen och
+        erbjuda en kompensation."
+      D: "Jag skulle ignorera kundens klagom\xE5l och hoppas att de ger upp och g\xE5r. "
+  - CategoryName: 6
+    Description: Contains all the ethics and integrity interview question text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Jag bryr mig inte om att vara \xE4rlig och r\xE4ttvis."
+      B: "Jag f\xF6ljer inte alltid regler om det inte passar mig."
+      C: "Jag tycker att det \xE4r viktigt att vara \xE4rlig och r\xE4ttvis."
+      D: "Jag bryr mig inte om det p\xE5 jobbet."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 2
+      A: "Jag skulle inte bry mig och l\xE5ta det forts\xE4tta."
+      B: "Jag skulle ber\xE4tta f\xF6r chefen direkt."
+      C: "Jag skulle prata med kollegan och f\xF6rs\xF6ka l\xF6sa det tillsammans."
+      D: "Jag skulle l\xE5tsas som att jag inte sett n\xE5got."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 3
+      A: "Jag ljuger ibland f\xF6r att g\xF6ra saker enklare. "
+      B: "Jag f\xF6ljer lagen men bryr mig inte om sm\xE5saker."
+      C: "Jag tycker att det \xE4r mycket viktigt och f\xF6rs\xF6ker alltid vara
+        \xE4rlig och r\xE4ttvis."
+      D: Jag struntar i det.
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Jag skulle g\xF6ra det utan att t\xE4nka p\xE5 det."
+      B: "Jag skulle g\xF6ra det f\xF6r att undvika problem, \xE4ven om jag inte
+        tycker att det \xE4r r\xE4tt."
+      C: "Jag skulle prata med n\xE5gon om mina tankar och f\xF6rs\xF6ka hitta en
+        annan l\xF6sning."
+      D: "Jag skulle v\xE4gra att g\xF6ra det och f\xF6rs\xF6ka hitta en annan l\xF6sning. "
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 3
+      A: "Jag skulle inte bry mig och forts\xE4tta som vanligt."
+      B: "Jag skulle ber\xE4tta f\xF6r r\xE4tt person direkt."
+      C: "Jag skulle f\xF6rs\xF6ka samla bevis och prata med HR."
+      D: "Jag skulle ignorera det och hoppas att n\xE5gon annan tar hand om det."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 2
+      A: "Jag skulle l\xE5tsas som att jag inte h\xF6rt n\xE5got."
+      B: "Jag skulle ber\xE4tta det f\xF6r chefen eller HR."
+      C: Jag skulle prata med kollegan och be dem sluta.
+      D: Jag skulle inte bry mig om det.
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 3
+      A: Jag bryr mig inte om det.
+      B: "Jag delar hemliga saker med andra utan att t\xE4nka. "
+      C: "Jag tycker att det \xE4r viktigt och f\xF6rs\xF6ker h\xE5lla saker s\xE4kra."
+      D: "Det spelar ingen roll f\xF6r mig."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 3
+      A: "Jag skulle inte bry mig och l\xE5ta det forts\xE4tta."
+      B: Jag skulle prata med kollegan och be dem sluta.
+      C: "Jag skulle ber\xE4tta det f\xF6r HR eller en chef. "
+      D: "Jag skulle sprida rykten vidare och vara med p\xE5 det."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 3
+      A: "Jag tycker inte att det \xE4r viktigt."
+      B: "Jag f\xF6ljer jobbets regler och policy om det passar mig."
+      C: "Jag tycker att det \xE4r mycket viktigt f\xF6r att ha en bra arbetsmilj\xF6."
+      D: Jag bryr mig inte om det.
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 3
+      A: "Jag skulle inte g\xF6ra n\xE5got och l\xE5ta det forts\xE4tta."
+      B: "Jag skulle s\xE4ga till kollegan att det var mitt arbete."
+      C: "Jag skulle ber\xE4tta det f\xF6r min chef och ta med underlag som bevisar
+        att det \xE4r jag som har utf\xF6rt arbetet."
+      D: "Jag skulle ignorera det och l\xE5tsas som ingenting."
+  - CategoryName: 7
+    Description: Contains all the flexibility interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 0
+      A: "Jag var motvillig till f\xF6r\xE4ndringen och f\xF6rs\xF6ka hitta s\xE4tt
+        att minimera dess p\xE5verkan p\xE5 mina rutiner och arbetsprocesser."
+      B: "Jag k\xE4nde en viss stress och motst\xE5nd mot f\xF6r\xE4ndringen, men
+        jag skulle g\xF6ra mitt b\xE4sta f\xF6r att acceptera och anpassa mig till
+        den."
+      C: "Jag var flexibel och anpassa mig efter den nya situationen genom att identifiera
+        m\xF6jligheter och ta initiativ till att l\xE4ra mig de nya arbetsmetoderna."
+      D: "Jag s\xF6kte f\xF6rst\xE5else f\xF6r f\xF6r\xE4ndringen och samarbeta med
+        mina kollegor f\xF6r att hitta gemensamma l\xF6sningar som gynnar b\xE5de
+        mig och teamet."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 3
+      A: "Jag skulle bli frustrerad och ogilla att f\xE5 nya uppgifter med kort varsel. "
+      B: "Jag skulle acceptera uppgiften men klaga \xF6ver att jag inte har tillr\xE4ckligt
+        med tid."
+      C: "Jag skulle vara flexibel och prioritera uppgiften f\xF6r att slutf\xF6ra
+        den i tid."
+      D: "Jag skulle be om att bli befriad fr\xE5n uppgiften p\xE5 grund av kort
+        varsel."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 0
+      A: "Jag k\xE4nde behovet av att \xE4ndra min arbetsmetod och aktivt s\xF6kte
+        efter alternativa tillv\xE4gag\xE5ngss\xE4tt f\xF6r att uppn\xE5 b\xE4ttre
+        resultat."
+      B: "Efter att ha f\xE5tt insikter och feedback fr\xE5n andra ins\xE5g jag vikten
+        av att anpassa min metod f\xF6r att uppn\xE5 \xF6nskade resultat."
+      C: "Jag hade en flexibel inst\xE4llning till f\xF6r\xE4ndring och ser det som
+        en m\xF6jlighet till utveckling."
+      D: "Jag har inte relevanta exempel, men \xE4r \xF6ppen f\xF6r att l\xE4ra och
+        anpassa mig i framtiden. "
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Jag skulle bli stressad och \xF6verv\xE4ldigad av att beh\xF6va \xE4ndra
+        fokus och prioriteringar snabbt."
+      B: "Jag skulle f\xF6rs\xF6ka hantera situationen men skulle ha sv\xE5rt att
+        \xE4ndra fokus och prioriteringar snabbt."
+      C: Jag skulle vara flexibel och snabbt anpassa mig till de nya kraven och prioriteringarna.
+      D: "Jag skulle ignorera behovet av att \xE4ndra fokus och prioriteringar och
+        forts\xE4tta som vanligt."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 3
+      A: "Jag skulle vara ovillig att acceptera feedbacken och forts\xE4tta som vanligt."
+      B: "Jag skulle vara defensiv och f\xF6rsvara mina handlingar utan att f\xF6rs\xF6ka
+        f\xF6rb\xE4ttra mig."
+      C: "Jag skulle vara \xF6ppen f\xF6r feedback och aktivt arbeta p\xE5 att f\xF6rb\xE4ttra
+        min flexibilitet."
+      D: "Jag skulle ignorera feedbacken och inte bry mig om att f\xF6rb\xE4ttra
+        min flexibilitet. "
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 0
+      A: "Jag var f\xF6rst motvillig till den nya arbetsmilj\xF6n/teamet, men jag
+        anpassade mig aktivt med tiden."
+      B: "Jag v\xE4lkomnade den nya milj\xF6n/teamet och m\xF6tte utmaningarna med
+        anpassning."
+      C: "Jag var flexibel och snabbt anpassade mig till den ny milj\xF6n och teamet.
+        Jag tog initiativ till att l\xE4ra k\xE4nna mina nya kollegor, f\xF6rst\xE5
+        deras arbetsstilar och anpassa mina egna arbetsmetoder."
+      D: "Jag har inga relevanta exempel, men jag \xE4r \xF6ppen f\xF6r att l\xE4ra
+        och anpassa mig i framtiden."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 3
+      A: "Jag skulle bli irriterad och ogilla ov\xE4ntade f\xF6r\xE4ndringar eller
+        avbrott i mitt arbetsfl\xF6de."
+      B: "Jag skulle acceptera f\xF6r\xE4ndringarna eller avbrotten men skulle ha
+        sv\xE5rt att h\xE5lla fokus."
+      C: "Jag skulle vara flexibel och hantera ov\xE4ntade f\xF6r\xE4ndringar eller
+        avbrott i mitt arbetsfl\xF6de genom att anpassa mig och sedan \xE5terg\xE5
+        till uppgiften."
+      D: "Jag skulle bli arg \xF6ver f\xF6r\xE4ndringarna eller avbrotten och f\xF6rs\xF6ka
+        undvika att hantera dem."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 3
+      A: "Jag skulle bli uppr\xF6rd och v\xE4gra arbeta \xF6vertid eller \xE4ndra
+        min ledighet. "
+      B: "Jag skulle acceptera att arbeta \xF6vertid eller \xE4ndra min ledighet,
+        men skulle vara missn\xF6jd med situationen."
+      C: "Jag skulle vara flexibel och visa beredskap att arbeta \xF6vertid eller
+        \xE4ndra min ledighet om det beh\xF6vs."
+      D: "Jag skulle v\xE4gra att arbeta \xF6vertid eller \xE4ndra min ledighet oavsett
+        omst\xE4ndigheterna."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 0
+      A: "Jag kan ber\xE4tta om de utmaningar jag m\xF6tte och hur jag aktivt engagerade
+        mig i att l\xE4ra mig och anpassa mig till dem f\xF6r att kunna anv\xE4nda
+        dem p\xE5 ett framg\xE5ngsrikt s\xE4tt."
+      B: "Jag kan dela med mig av de strategier jag anv\xE4nde f\xF6r att \xF6vervinna
+        sv\xE5righeterna jag st\xF6tte p\xE5 och hur jag till slut kunde anpassa
+        mig."
+      C: "Jag kan ber\xE4tta om de steg jag tog f\xF6r att l\xE4ra mig och implementera
+        dessa teknologier eller system och hur det resulterade i f\xF6rb\xE4ttrade
+        resultat eller effektivitet p\xE5 arbetsplatsen."
+      D: "Jag kan inte ge ett passande exempel, men jag \xE4r \xF6ppen f\xF6r att
+        l\xE4ra mig och anpassa mig till nya teknologier och system i framtiden."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 3
+      A: "Jag skulle ha sv\xE5rt att samarbeta med olika typer av m\xE4nniskor och
+        personligheter i ett team."
+      B: "Jag skulle f\xF6rs\xF6ka samarbeta med olika typer av m\xE4nniskor och
+        personligheter, men skulle ha sv\xE5rt att anpassa mig."
+      C: "Jag skulle vara flexibel och anpassa mig f\xF6r att skapa en positiv arbetsmilj\xF6
+        med olika typer av m\xE4nniskor och personligheter."
+      D: "Jag skulle undvika att arbeta med olika typer av m\xE4nniskor och personligheter
+        i ett team."
+  - CategoryName: 8
+    Description: Contains all the communication skills interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Jag gav upp n\xE4r jag ins\xE5g att ingen f\xF6rstod mig."
+      B: "Jag anv\xE4nde teknisk jargong som jag visste att endast n\xE5gra f\xE5
+        skulle f\xF6rst\xE5."
+      C: "Jag anpassade mitt spr\xE5k och anv\xE4nde exempel f\xF6r att f\xF6rtydliga
+        id\xE9n f\xF6r alla inblandade."
+      D: "Jag ignorerade fr\xE5gor och kommentarer fr\xE5n mina kollegor f\xF6r att
+        snabbt f\xE5 igenom min id\xE9."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 3
+      A: "Jag skyller p\xE5 mina kollegor f\xF6r att de inte f\xF6rst\xE5r mig."
+      B: "Jag ignorerar missf\xF6rst\xE5nd och hoppas att de l\xF6ser sig av sig
+        sj\xE4lva."
+      C: "Jag tar mig tid att lyssna p\xE5 mina kollegors synpunkter och f\xF6rtydliga
+        mina egna tankar f\xF6r att undvika missf\xF6rst\xE5nd."
+      D: "Jag ger upp och slutar kommunicera med dem helt och h\xE5llet."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 3
+      A: "Jag gav upp n\xE4r jag ins\xE5g att kommunikationen var om\xF6jlig."
+      B: "Jag \xF6kade volymen och upprepade samma information flera g\xE5nger tills
+        de f\xF6rstod mig."
+      C: "Jag anv\xE4nde mig av visuella hj\xE4lpmedel eller andra kommunikationsverktyg
+        f\xF6r att klarg\xF6ra budskapet."
+      D: "Jag ignorerade problemet och hoppades att det skulle f\xF6rsvinna av sig
+        sj\xE4lv."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Jag anv\xE4nder alltid samma kommunikationsstil oavsett min publik."
+      B: "Jag anv\xE4nder komplicerade termer f\xF6r att imponera p\xE5 min publik."
+      C: "Jag anpassar min kommunikationsstil beroende p\xE5 min publik f\xF6r att
+        s\xE4kerst\xE4lla att de f\xF6rst\xE5r mig."
+      D: "Jag struntar i att anpassa min kommunikation och f\xF6rv\xE4ntar mig att
+        andra ska anpassa sig till mig."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 3
+      A: "Jag skriver bara f\xF6r min egen skull och bryr mig inte om andra f\xF6rst\xE5r."
+      B: "Jag anv\xE4nder avancerade ord och l\xE5nga meningar f\xF6r att g\xF6ra
+        mitt arbete mer imponerande."
+      C: "Jag tar mig tid att klarg\xF6ra mina id\xE9er och l\xE4ser igenom mitt
+        arbete f\xF6r att s\xE4kerst\xE4lla tydlighet."
+      D: "Jag l\xE4mnar in ofullst\xE4ndigt eller otydligt skrivet arbete utan att
+        bry mig om kvaliteten."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 3
+      A: "Jag avbryter presentationen och g\xE5r d\xE4rifr\xE5n."
+      B: "Jag forts\xE4tter med min presentation utan att bry mig om publikens respons."
+      C: "Jag anpassar min presentation och fr\xE5gar deltagarna om deras synpunkter
+        f\xF6r att \xF6ka deras engagemang."
+      D: "Jag blir irriterad och kritiserar publiken f\xF6r deras bristande engagemang. "
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 3
+      A: "Jag undvek konflikten och hoppades att den skulle g\xE5 \xF6ver av sig
+        sj\xE4lv."
+      B: "Jag skrek \xE5t den andra personen tills de gav med sig."
+      C: "Jag lyssnade p\xE5 den andra personens oro och f\xF6rs\xF6kte f\xF6rst\xE5
+        deras perspektiv f\xF6r att hitta en gemensam l\xF6sning."
+      D: "Jag gick till min chef och bad dem l\xF6sa konflikten \xE5t mig."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 3
+      A: "Jag f\xF6rv\xE4ntar mig att andra kommer ih\xE5g detaljerna \xE5t mig."
+      B: Jag skriver ner viktiga detaljer men delar inte med dem till andra.
+      C: "Jag kommunicerar aktivt och ser till att alla inblandade har den information
+        de beh\xF6ver f\xF6r att lyckas."
+      D: "Jag f\xF6ruts\xE4tter att andra inte bryr sig om detaljerna och struntar
+        d\xE4rf\xF6r i att kommunicera dem."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 3
+      A: "Jag avvisar feedbacken och anser att jag gjort allt r\xE4tt."
+      B: Jag tar feedback personligt och blir defensiv.
+      C: "Jag tar emot feedback \xF6ppet och anv\xE4nder den f\xF6r att f\xF6rb\xE4ttra
+        mitt arbete."
+      D: "Jag ignorerar feedbacken och forts\xE4tter som vanligt utan att ta h\xE4nsyn
+        till den."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 3
+      A: Jag bryr mig inte om hur mina meddelanden mottas av andra.
+      B: "Jag f\xF6ruts\xE4tter att andra f\xF6rst\xE5r mig utan att dubbelkolla."
+      C: "Jag tar mig tid att klarg\xF6ra mina tankar och fr\xE5gar sedan kollegor
+        om de har f\xF6rst\xE5tt budskapet."
+      D: "Jag skickar bara meddelanden och f\xF6rv\xE4ntar mig att andra ska f\xF6rst\xE5
+        dem utan ytterligare f\xF6rklaring."
+  - CategoryName: 9
+    Description: Contains all the collaborative skills interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Jag f\xF6redrar att arbeta ensam och undviker teamprojekt."
+      B: "Jag ignorerade mina teammedlemmars bidrag och gjorde allt sj\xE4lv."
+      C: "Jag deltog aktivt i teamet, bidrog med mina id\xE9er och st\xF6dde mina
+        kollegor f\xF6r att uppn\xE5 m\xE5let."
+      D: "Jag drog mig tillbaka och l\xE4t andra ta hand om arbetet medan jag inte
+        gjorde mycket."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 3
+      A: "Jag undviker konfrontation och h\xE5ller mig f\xF6r mig sj\xE4lv."
+      B: "Jag blir arg och argumenterar f\xF6r mina egna \xE5sikter utan att lyssna
+        p\xE5 andra."
+      C: "Jag f\xF6rs\xF6ker f\xF6rst\xE5 den andra personens synpunkt och arbetar
+        tillsammans f\xF6r att hitta en l\xF6sning."
+      D: "Jag g\xE5r till chefen och ber om att bli flyttad till en annan avdelning
+        f\xF6r att undvika konflikten."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 2
+      A: "Jag kritiserar \xF6ppet mina kollegors arbete f\xF6r att motivera dem att
+        g\xF6ra det b\xE4ttre."
+      B: "Jag visar uppskattning f\xF6r mina kollegors insatser och sprider positiv
+        energi p\xE5 arbetsplatsen."
+      C: "Jag undviker social interaktion och h\xE5ller mig f\xF6r mig sj\xE4lv."
+      D: "Jag skapar klickar och utesluter vissa kollegor fr\xE5n gemensamma aktiviteter."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Jag klagar \xF6ppet p\xE5 deras bristande insats och f\xF6rv\xE4ntar mig
+        att de ska f\xF6rb\xE4ttra sig."
+      B: "Jag ignorerar deras bidrag och tar \xF6ver deras uppgifter ist\xE4llet."
+      C: "Jag pratar med dem f\xF6r att f\xF6rst\xE5 deras situation och hj\xE4lper
+        dem att hitta s\xE4tt att bidra mer effektivt."
+      D: "Jag g\xE5r till chefen och ber om att de ska avskedas fr\xE5n teamet."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 3
+      A: "Jag undvek att bli involverad och l\xE4t dem l\xF6sa det sj\xE4lva."
+      B: "Jag tog parti f\xF6r en kollega och f\xF6rs\xF6kte f\xE5 den andra att
+        ge med sig."
+      C: "Jag lyssnade p\xE5 b\xE5da sidors perspektiv och hj\xE4lpte dem att komma
+        fram till en \xF6msesidigt acceptabel l\xF6sning."
+      D: Jag gick till chefen och bad dem att ingripa i konflikten.
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 3
+      A: "Jag tar alltid ledningen och l\xE5ter inte andra ta plats."
+      B: "Jag ignorerar de tystare kollegorna och fokuserar bara p\xE5 de som \xE4r
+        mest h\xF6gljudda."
+      C: "Jag uppmuntrar \xF6ppen kommunikation och tar aktivt del av alla id\xE9er
+        och f\xF6rslag."
+      D: "Jag v\xE4ljer ut mina favoritkollegor och ger dem mer ansvar medan andra
+        ignoreras."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 3
+      A: "Jag skulle ignorera det och l\xE5ta dem klara det sj\xE4lva."
+      B: "Jag skulle erbjuda hj\xE4lp, men bara om jag inte har n\xE5got annat att
+        g\xF6ra."
+      C: "Jag skulle erbjuda min hj\xE4lp och arbeta tillsammans f\xF6r att slutf\xF6ra
+        uppgiften."
+      D: "Jag skulle undvika att erbjuda hj\xE4lp och l\xE5ta dem be om det om de
+        beh\xF6ver det."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 3
+      A: "Jag skulle inte bry mig om att motivera dem eftersom det \xE4r deras eget
+        ansvar att delta."
+      B: Jag skulle hota dem med konsekvenser om de inte deltar.
+      C: "Jag skulle f\xF6rklara projektets betydelse och f\xF6rdelarna med att samarbeta
+        f\xF6r att n\xE5 framg\xE5ng."
+      D: "Jag skulle l\xE5ta dem veta att jag inte bryr mig om deras deltagande och
+        att de kan g\xF6ra vad de vill."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 3
+      A: "Jag undvek att samarbeta med personen s\xE5 mycket som m\xF6jligt."
+      B: "Jag f\xF6rs\xF6kte f\xE5 personen att g\xF6ra saker p\xE5 mitt s\xE4tt
+        utan att ta h\xE4nsyn till deras \xE5sikter."
+      C: "Jag f\xF6rs\xF6kte hitta gemensam mark och arbeta tillsammans f\xF6r att
+        uppn\xE5 v\xE5ra m\xE5l."
+      D: "Jag bad min chef om att inte arbeta med personen l\xE4ngre."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 3
+      A: "Jag skulle inte g\xF6ra n\xE5got \xE5t det eftersom jag inte vill skapa
+        konflikter."
+      B: "Jag skulle konfrontera kollegan offentligt och beskylla dem f\xF6r att
+        stj\xE4la min \xE4ra."
+      C: "Jag skulle diskret prata med kollegan och f\xF6rklara hur jag k\xE4nde
+        och f\xF6rs\xF6ka l\xF6sa det."
+      D: "Jag skulle g\xE5 till min chef och klaga p\xE5 kollegans beteende utan
+        att f\xF6rs\xF6ka l\xF6sa det sj\xE4lv."
+  - CategoryName: 10
+    Description: Contains all the problem solving interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Jag ignorerade problemet och hoppades att det skulle l\xF6sa sig sj\xE4lvt."
+      B: "Jag gav upp n\xE4r jag ins\xE5g att problemet var f\xF6r sv\xE5rt att l\xF6sa."
+      C: "Jag br\xF6t ner problemet i mindre delar, analyserade orsakerna och utvecklade
+        en plan f\xF6r att l\xF6sa det."
+      D: "Jag bad mina kollegor att l\xF6sa problemet \xE5t mig."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 3
+      A: "Jag accepterar hindren och forts\xE4tter att arbeta som vanligt."
+      B: Jag ger upp och ber om att bli tilldelad en annan uppgift.
+      C: "Jag identifierar orsakerna till hindren och f\xF6rs\xF6ker hitta kreativa
+        l\xF6sningar f\xF6r att \xF6vervinna dem."
+      D: "Jag skyller p\xE5 andra f\xF6r hindren och v\xE4ntar p\xE5 att de ska l\xF6sa
+        dem \xE5t mig."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 3
+      A: "Jag f\xF6redrar att f\xF6lja traditionella metoder och undviker innovation."
+      B: "Jag f\xF6rs\xF6kte inte hitta n\xE5gon l\xF6sning eftersom problemet verkade
+        f\xF6r sv\xE5rt."
+      C: "Jag t\xE4nkte utanf\xF6r boxen och kom p\xE5 en kreativ l\xF6sning som
+        l\xF6ste problemet effektivt."
+      D: "Jag bad mina \xF6verordnade att l\xF6sa problemet \xE5t mig eftersom jag
+        inte visste vad jag skulle g\xF6ra."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Jag l\xF6ser bara de enklaste problemen och ignorerar de sv\xE5rare."
+      B: "Jag prioriterar problem baserat p\xE5 hur br\xE5dskande de \xE4r utan att
+        ta h\xE4nsyn till deras betydelse."
+      C: "Jag anv\xE4nder en strategi f\xF6r att bed\xF6ma problemens br\xE5dska
+        och betydelse och prioriterar dem d\xE4refter."
+      D: "Jag l\xE4mnar \xF6ver uppgifterna till n\xE5gon annan och hoppas att de
+        ska l\xF6sa dem \xE5t mig."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 3
+      A: "Jag ger upp och ber om att f\xE5 en annan uppgift."
+      B: "Jag ignorerar problemet och hoppas att det f\xF6rsvinner av sig sj\xE4lv."
+      C: "Jag unders\xF6ker problemet noggrant, s\xF6ker efter liknande fall och
+        konsulterar experter f\xF6r att hitta en l\xF6sning."
+      D: "Jag f\xF6rs\xF6ker inte l\xF6sa problemet och v\xE4ntar p\xE5 att n\xE5gon
+        annan ska g\xF6ra det \xE5t mig."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 3
+      A: "Jag undvek att fatta beslut och hoppades att problemet skulle f\xF6rsvinna
+        av sig sj\xE4lv."
+      B: "Jag tog ett snabbt beslut utan att \xF6verv\xE4ga konsekvenserna noggrant."
+      C: "Jag \xF6verv\xE4gde noggrant alla alternativ, v\xE4gde f\xF6r- och nackdelar
+        och fattade ett v\xE4lgrundat beslut."
+      D: "Jag l\xE4mnade \xF6ver beslutsfattandet till n\xE5gon annan f\xF6r att
+        undvika att ta ansvar."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 3
+      A: "Jag ignorerar data och litar p\xE5 mina egna instinkter n\xE4r jag fattar
+        beslut."
+      B: "Jag anv\xE4nder endast data som st\xF6der mina egna \xE5sikter och ignorerar
+        resten."
+      C: "Jag samlar in och analyserar noggrant relevant data f\xF6r att f\xE5 en
+        objektiv f\xF6rst\xE5else av problemet och fatta informerade beslut."
+      D: "Jag tar inte tid att analysera data och fatta beslut baserat p\xE5 magk\xE4nsla."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 3
+      A: "Jag f\xF6rlitar mig p\xE5 slumpen och hoppas p\xE5 det b\xE4sta."
+      B: "Jag g\xF6r inte n\xE5gon specifik plan utan agerar impulsivt f\xF6r att
+        l\xF6sa problemet."
+      C: "Jag f\xF6ljer en strukturerad process, samlar in information, analyserar
+        situationen och utv\xE4rderar olika l\xF6sningar innan jag agerar."
+      D: "Jag v\xE4ntar p\xE5 att problemet ska l\xF6sa sig sj\xE4lvt och agerar
+        inte aktivt f\xF6r att hitta en l\xF6sning."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 3
+      A: "Jag accepterar att min l\xF6sning inte \xE4r bra och ger upp."
+      B: "Jag insisterar p\xE5 att min l\xF6sning \xE4r den b\xE4sta och v\xE4grar
+        att \xF6verv\xE4ga andra alternativ."
+      C: "Jag lyssnar p\xE5 feedbacken, anpassar min l\xF6sning och arbetar med mina
+        kollegor f\xF6r att hitta en kompromiss."
+      D: "Jag skyller p\xE5 andra f\xF6r att inte f\xF6rst\xE5 v\xE4rdet av min l\xF6sning
+        och v\xE4grar att g\xF6ra n\xE5gra \xE4ndringar."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 3
+      A: "Jag undvek att ta p\xE5 mig ledarskap och l\xE4t andra ta kontroll \xF6ver
+        situationen."
+      B: "Jag tog \xF6ver situationen utan att lyssna p\xE5 andras id\xE9er eller
+        synpunkter."
+      C: "Jag organiserade och ledde gruppen genom probleml\xF6sningsprocessen, involverade
+        alla och s\xE4kerst\xE4llde att vi kom fram till en effektiv l\xF6sning."
+      D: "Jag l\xE4t andra ta p\xE5 sig ledarrollen och f\xF6ljde deras anvisningar
+        utan att bidra med mina egna id\xE9er."
+  - CategoryName: 11
+    Description: Contains all the accuracy interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Jag g\xF6r det b\xE4sta jag kan, men ibland kan jag missa n\xE5gra detaljer."
+      B: "Jag \xE4r inte s\xE5 noga med detaljer, men jag f\xF6rs\xF6ker g\xF6ra
+        mitt b\xE4sta."
+      C: "Jag \xE4r mycket noggrann och dubbelkollar alltid mitt arbete f\xF6r att
+        undvika misstag."
+      D: "Jag l\xE4gger inte mycket vikt vid detaljer, jag f\xF6redrar att arbeta
+        snabbt."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 3
+      A: "Det \xE4r inte s\xE5 viktigt, s\xE5 l\xE4nge man f\xE5r jobbet gjort."
+      B: "Det \xE4r viktigt, men det \xE4r inte alltid m\xF6jligt att vara helt noggrann."
+      C: "Det \xE4r avg\xF6rande f\xF6r att undvika misstag och uppn\xE5 h\xF6gsta
+        kvalitet i mitt arbete."
+      D: "Det \xE4r inte en prioritet f\xF6r mig, jag fokuserar mer p\xE5 att vara
+        snabb och effektiv."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 3
+      A: "Jag l\xE4gger skulden p\xE5 andra om n\xE5got g\xE5r fel."
+      B: "Jag f\xF6rs\xF6ker r\xE4tta till felet, men det \xE4r inte alltid m\xF6jligt. "
+      C: "Jag tar ansvar f\xF6r mina misstag och arbetar aktivt f\xF6r att r\xE4tta
+        till dem."
+      D: "Jag ignorerar misstagen och hoppas att ingen m\xE4rker dem."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Jag f\xF6ljer dem bara om jag anser att det \xE4r n\xF6dv\xE4ndigt."
+      B: "Jag brukar f\xF6lja dem, men ibland g\xF6r jag egna \xE4ndringar."
+      C: "Det \xE4r mycket viktigt f\xF6r mig att f\xF6lja instruktioner och riktlinjer
+        noggrant."
+      D: "Jag f\xF6ljer dem s\xE4llan, jag f\xF6redrar att arbeta p\xE5 mitt eget
+        s\xE4tt."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 3
+      A: "Jag \xE4r inte s\xE5 s\xE4ker, misstag kan h\xE4nda ibland. "
+      B: "Jag \xE4r ganska s\xE4ker, men det \xE4r om\xF6jligt att undvika alla misstag."
+      C: "Jag \xE4r mycket s\xE4ker, jag \xE4r noggrann och dubbelkollar alltid mitt
+        arbete."
+      D: "Jag \xE4r inte s\xE5 bekymrad \xF6ver misstag, jag fokuserar mer p\xE5
+        att slutf\xF6ra arbetsuppgifterna."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 2
+      A: "Jag l\xE4ser dem snabbt f\xF6r att f\xE5 en \xF6vergripande f\xF6rst\xE5else."
+      B: "Jag l\xE4ser dem noggrant och f\xF6rs\xF6ker f\xF6rst\xE5 alla detaljer."
+      C: "Jag skummar igenom dem och hoppas att jag inte missar n\xE5got viktigt."
+      D: "Jag l\xE4ser dem inte alls, jag f\xF6redrar att l\xE4ra mig genom att g\xF6ra."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 1
+      A: 'Jag kontrollerar mitt arbete noggrant efter varje steg. '
+      B: Jag kontrollerar det ibland om jag har tid.
+      C: "Jag litar p\xE5 att mitt arbete \xE4r felfritt och beh\xF6ver inte kontrollera
+        det."
+      D: "Jag kontrollerar det s\xE4llan, jag f\xF6redrar att slutf\xF6ra uppgiften
+        snabbt."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 3
+      A: "Det \xE4r inte s\xE5 viktigt, s\xE5 l\xE4nge jag f\xE5r jobbet gjort."
+      B: "Det \xE4r viktigt, men jag kan missa n\xE5gra detaljer ibland."
+      C: "Det \xE4r mycket viktigt att vara uppm\xE4rksam p\xE5 detaljer i mitt arbete."
+      D: "Det spelar ingen roll f\xF6r mig, jag fokuserar mer p\xE5 att vara effektiv."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 2
+      A: "Att slutf\xF6ra uppgifter snabbt utan att dubbelkolla."
+      B: "Att noggrant granska och korrekturl\xE4sa dokument. "
+      C: "Att prioritera uppgifter baserat p\xE5 personliga preferenser."
+      D: Att delegera arbetsuppgifter till andra.
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 1
+      A: "Att skapa en brainstorminglista f\xF6r en gruppdiskussion."
+      B: "Att skjuta upp viktiga deadlines f\xF6r att undvika stress."
+      C: "Att slutf\xF6ra uppgifter utan att f\xF6lja instruktioner."
+      D: Att ignorera detaljer vid rapportering av fel.
+    - QuestionNumber: "Fr\xE5ga #11"
+      CorrectAnswer: 2
+      A: "Att utf\xF6ra uppgifter snabbt f\xF6r att spara tid."
+      B: "Att vara uppm\xE4rksam p\xE5 detaljer och undvika misstag."
+      C: "Att ignorera instruktioner f\xF6r att ta egna initiativ."
+      D: Att inte prioritera arbetsuppgifter efter viktighet.
+    - QuestionNumber: "Fr\xE5ga #12"
+      CorrectAnswer: 3
+      A: Att noggrant granska och korrigera felaktiga datum.
+      B: "Att skapa en detaljerad arbetsplan f\xF6r ett projekt."
+      C: "Att slutf\xF6ra uppgifter utan att dubbelkolla resultatet. "
+      D: "Att vara flexibel och anpassa sig till \xE4ndrade omst\xE4ndigheter."
+    - QuestionNumber: "Fr\xE5ga #13"
+      CorrectAnswer: 3
+      A: Att granska och korrigera felaktiga uppgifter innan de skickas in.
+      B: "Att organisera och prioritera arbetsuppgifter baserat p\xE5 deadlines."
+      C: "Att slutf\xF6ra uppgifter utan att f\xF6lja specifika instruktioner."
+      D: "Att vara positiv och optimistisk inf\xF6r utmaningar."
+    - QuestionNumber: "Fr\xE5ga #14"
+      CorrectAnswer: 4
+      A: "Kreativitet och t\xE4nkande utanf\xF6r boxen."
+      B: "Flexibilitet och f\xF6rm\xE5ga att anpassa sig till f\xF6r\xE4ndringar."
+      C: "Uth\xE5llighet och f\xF6rm\xE5ga att h\xE5lla fast vid uppsatta m\xE5l."
+      D: "Uppm\xE4rksamhet p\xE5 detaljer och f\xF6rm\xE5ga att undvika misstag."
+    - QuestionNumber: "Fr\xE5ga #15"
+      CorrectAnswer: 2
+      A: "Att slutf\xF6ra uppgifter utan att f\xF6lja en specifik ordning."
+      B: "Att noggrant analysera och utv\xE4rdera resultatet av en unders\xF6kning. "
+      C: "Att ta p\xE5 sig flera projekt samtidigt utan att organisera dem."
+      D: "Att delegera ansvar f\xF6r att undvika personligt ansvar."
+    - QuestionNumber: "Fr\xE5ga #16"
+      CorrectAnswer: 2
+      A: "F\xF6r att snabbt slutf\xF6ra uppgifter och \xF6ka produktiviteten."
+      B: "F\xF6r att undvika misstag och uppr\xE4tth\xE5lla kvaliteten p\xE5 arbetsresultat."
+      C: "F\xF6r att ta egna initiativ och driva projekt fram\xE5t."
+      D: "F\xF6r att vara flexibel och anpassa sig till \xE4ndrade omst\xE4ndigheter."
+    - QuestionNumber: "Fr\xE5ga #17"
+      CorrectAnswer: 2
+      A: "F\xF6rb\xE4ttrar kommunikationen med kollegor."
+      B: "\xD6kar effektiviteten och produktiviteten."
+      C: "Skapar en positiv arbetsmilj\xF6."
+      D: "M\xF6jligg\xF6r flexibilitet och anpassning till f\xF6r\xE4ndringar."
+    - QuestionNumber: "Fr\xE5ga #18"
+      CorrectAnswer: 3
+      A: "Att ta initiativ till att f\xF6rb\xE4ttra arbetsprocesser."
+      B: Att undvika konflikter och samarbeta med kollegor.
+      C: "Att slutf\xF6ra uppgifter utan att dubbelkolla resultatet."
+      D: "Att anpassa sig till f\xF6r\xE4ndrade omst\xE4ndigheter. "
+  - CategoryName: 12
+    Description: Contains all the self leadership interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 2
+      A: "Att f\xF6lja strikta instruktioner utan att t\xE4nka sj\xE4lvst\xE4ndigt."
+      B: "Att vara ansvarig f\xF6r sin egen framg\xE5ng och agera sj\xE4lvst\xE4ndigt."
+      C: "Att v\xE4nta p\xE5 instruktioner och inte ta egna initiativ."
+      D: "Att delegera arbetsuppgifter till andra f\xF6r att undvika ansvar."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 1
+      A: "Att organisera och prioritera arbetsuppgifter p\xE5 ett effektivt s\xE4tt."
+      B: "Att f\xF6rlita sig p\xE5 andra f\xF6r att fatta beslut och ta ansvar."
+      C: "Att slutf\xF6ra uppgifter utan att ta h\xE4nsyn till deadlines."
+      D: "Att undvika f\xF6r\xE4ndringar och st\xE4ndigt h\xE5lla fast vid rutiner."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 4
+      A: "F\xF6r att undvika ansvar och l\xE5ta andra fatta beslut."
+      B: "F\xF6r att vara flexibel och anpassa sig till f\xF6r\xE4ndringar."
+      C: "F\xF6r att vara uppm\xE4rksam p\xE5 detaljer och undvika misstag."
+      D: "F\xF6r att ta ansvar f\xF6r sin egen utveckling och agera sj\xE4lvst\xE4ndigt."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 3
+      A: "Att organisera och prioritera arbetsuppgifter baserat p\xE5 deadlines."
+      B: "Att ta ansvar f\xF6r sina egna handlingar och resultat."
+      C: "Att f\xF6rlita sig p\xE5 andra f\xF6r att l\xF6sa problem och fatta beslut."
+      D: "Att vara flexibel och anpassa sig till \xE4ndrade omst\xE4ndigheter."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 2
+      A: "Att be om tydliga instruktioner f\xF6r varje arbetsuppgift."
+      B: "Att ta initiativ och driva projekt fram\xE5t utan att v\xE4nta p\xE5 instruktioner."
+      C: Att delegera ansvar och undvika personligt ansvarstagande.
+      D: "Att vara positiv och entusiastisk inf\xF6r arbetsuppgifter och utmaningar."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 3
+      A: "Att utf\xF6ra uppgifter utan att ta h\xE4nsyn till deadlines."
+      B: "Att vara uppm\xE4rksam p\xE5 detaljer och undvika misstag."
+      C: "Att organisera och prioritera arbetsuppgifter baserat p\xE5 viktighet."
+      D: "Att f\xF6rlita sig p\xE5 andra f\xF6r att fatta beslut och ta ansvar."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 5
+      A: "\xD6kar samarbete och kommunikation med kollegor."
+      B: "Fr\xE4mjar kreativitet och innovativa l\xF6sningar. "
+      C: "M\xF6jligg\xF6r flexibilitet och anpassning till f\xF6r\xE4ndringar."
+      D: "F\xF6rb\xE4ttrar produktiviteten och effektiviteten."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 4
+      A: "Kreativitet och t\xE4nkande utanf\xF6r boxen."
+      B: "Noggrannhet och uppm\xE4rksamhet p\xE5 detaljer."
+      C: "Positiv attityd och entusiasm inf\xF6r arbetsuppgifter."
+      D: "Uth\xE5llighet och f\xF6rm\xE5ga att h\xE5lla fast vid l\xE5ngsiktiga m\xE5l."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 3
+      A: "Jag v\xE4ntar p\xE5 instruktioner fr\xE5n mina \xF6verordnade f\xF6r att
+        organisera mina arbetsuppgifter."
+      B: "Jag g\xF6r mitt b\xE4sta f\xF6r att organisera mina arbetsuppgifter, men
+        jag har ibland sv\xE5rt att prioritera."
+      C: "Jag tar ansvar f\xF6r att organisera och prioritera mina arbetsuppgifter
+        p\xE5 ett effektivt s\xE4tt."
+      D: "Jag f\xF6redrar att ha n\xE5gon som organiserar och prioriterar mina arbetsuppgifter
+        \xE5t mig."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 3
+      A: "Jag v\xE4ntar p\xE5 att f\xE5 instruktioner och deadlines fr\xE5n mina
+        \xF6verordnade."
+      B: "Jag f\xF6rs\xF6ker slutf\xF6ra uppgifter i tid, men jag beh\xF6ver ibland
+        p\xE5minnas om deadlines."
+      C: "Jag tar aktivt initiativ f\xF6r att slutf\xF6ra uppgifter och projekt i
+        tid utan att beh\xF6va p\xE5minnas."
+      D: "Jag l\xE4gger inte mycket vikt vid att slutf\xF6ra uppgifter i tid, jag
+        f\xF6redrar att arbeta i min egen takt."
+    - QuestionNumber: "Fr\xE5ga #11"
+      CorrectAnswer: 3
+      A: "Jag f\xF6rlitar mig p\xE5 minnet och beh\xF6ver inte anv\xE4nda n\xE5gra
+        organisatoriska verktyg."
+      B: "Jag anv\xE4nder ibland att-g\xF6ra-listor eller kalendrar f\xF6r att organisera
+        mitt arbete."
+      C: "Jag anv\xE4nder effektiva organisatoriska verktyg f\xF6r att h\xE5lla mig
+        sj\xE4lv p\xE5 r\xE4tt sp\xE5r."
+      D: "Jag har sv\xE5rt att organisera mitt arbete och f\xF6rlitar mig p\xE5 andra
+        f\xF6r att h\xE5lla mig p\xE5 r\xE4tt sp\xE5r."
+    - QuestionNumber: "Fr\xE5ga #12"
+      CorrectAnswer: 3
+      A: "Jag beh\xF6ver \xF6vervakning f\xF6r att slutf\xF6ra uppgifter effektivt."
+      B: "Jag f\xF6rs\xF6ker slutf\xF6ra uppgifter p\xE5 egen hand, men jag beh\xF6ver
+        ibland n\xE5gon som h\xE5ller mig ansvarig."
+      C: "Jag tar fullt ansvar f\xF6r att slutf\xF6ra uppgifter \xE4ven n\xE4r jag
+        inte \xE4r \xF6vervakad."
+      D: "Jag f\xF6redrar att inte arbeta utan \xF6vervakning och v\xE4ntar p\xE5
+        instruktioner."
+    - QuestionNumber: "Fr\xE5ga #13"
+      CorrectAnswer: 3
+      A: "Jag f\xF6ljer bara de befintliga arbetsprocesserna och g\xF6r inga f\xF6r\xE4ndringar."
+      B: "Jag f\xF6rs\xF6ker komma med n\xE5gra f\xF6rb\xE4ttringsf\xF6rslag, men
+        det \xE4r inte alltid m\xF6jligt."
+      C: "Jag tar aktivt initiativ f\xF6r att identifiera och genomf\xF6ra f\xF6rb\xE4ttringar
+        av arbetsprocesser."
+      D: "Jag tycker inte att det \xE4r mitt ansvar att f\xF6rb\xE4ttra arbetsprocesser,
+        det \xE4r upp till mina \xF6verordnade."
+    - QuestionNumber: "Fr\xE5ga #14"
+      CorrectAnswer: 3
+      A: "Jag f\xF6rlitar mig p\xE5 att andra h\xE5ller mig motiverad och engagerad."
+      B: "Jag f\xF6rs\xF6ker h\xE5lla mig sj\xE4lv motiverad och engagerad, men det
+        \xE4r inte alltid l\xE4tt."
+      C: "Jag tar aktivt ansvar f\xF6r att h\xE5lla mig sj\xE4lv motiverad och engagerad
+        i mitt arbete."
+      D: "Jag beh\xF6ver inte vara motiverad eller engagerad f\xF6r att utf\xF6ra
+        mitt arbete effektivt."
+    - QuestionNumber: "Fr\xE5ga #15"
+      CorrectAnswer: 3
+      A: "Jag l\xE5ter mina \xF6verordnade best\xE4mma vilka arbetsuppgifter som
+        ska prioriteras."
+      B: "Jag har sv\xE5rt att prioritera och f\xF6rlitar mig p\xE5 andra f\xF6r
+        att hj\xE4lpa mig. "
+      C: "Jag tar aktivt initiativ f\xF6r att prioritera mina arbetsuppgifter och
+        uppn\xE5 m\xE5len i tid."
+      D: "Jag arbetar bara med uppgifterna i den ordning de kommer, oavsett m\xE5l
+        eller deadlines."
+    - QuestionNumber: "Fr\xE5ga #16"
+      CorrectAnswer: 2
+      A: "Att f\xF6lja instruktioner utan att ifr\xE5gas\xE4tta dem."
+      B: "Att ta ansvar f\xF6r sina egna handlingar och resultat."
+      C: "Att undvika f\xF6r\xE4ndringar och h\xE5lla sig till rutiner."
+      D: "Att delegera arbetsuppgifter till andra f\xF6r att undvika ansvar."
+    - QuestionNumber: "Fr\xE5ga #17"
+      CorrectAnswer: 5
+      A: "\xD6kar samarbete och kommunikation med kollegor. "
+      B: "Fr\xE4mjar kreativitet och innovativa l\xF6sningar."
+      C: "M\xF6jligg\xF6r flexibilitet och anpassning till f\xF6r\xE4ndringar."
+      D: "F\xF6rb\xE4ttrar produktiviteten och effektiviteten."
+  - CategoryName: 13
+    Description: Contains all the initiative taking interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 2
+      A: "Att v\xE4nta p\xE5 tydliga instruktioner innan man agerar."
+      B: "Att ta egna initiativ och driva projekt eller id\xE9er fram\xE5t."
+      C: "Att f\xF6lja rutiner och undvika f\xF6r\xE4ndringar."
+      D: "Att delegera ansvar till andra f\xF6r att undvika arbetsbelastning. "
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 2
+      A: "Att utf\xF6ra uppgifter enligt exakta instruktioner utan att ifr\xE5gas\xE4tta
+        dem."
+      B: "Att identifiera m\xF6jligheter till f\xF6rb\xE4ttring och f\xF6resl\xE5
+        innovativa l\xF6sningar."
+      C: "Att undvika att ta ansvar och l\xE5ta andra fatta beslut."
+      D: "Att vara flexibel och anpassa sig till f\xF6r\xE4ndrade omst\xE4ndigheter."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 3
+      A: "Det minskar arbetsbelastningen f\xF6r andra."
+      B: "Det fr\xE4mjar samarbete mellan teammedlemmar."
+      C: "Det visar sj\xE4lvst\xE4ndighet och engagemang."
+      D: "Det minskar behovet av ledarskap och \xF6vervakning."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 0
+      A: "Ja, jag kan beskriva specifika situationer d\xE4r jag identifierade m\xF6jligheter
+        till f\xF6rb\xE4ttring eller effektivisering."
+      B: "Nej, jag har inte tidigare tagit initiativ i arbetsprojekt. Jag har f\xF6redragit
+        att f\xF6lja instruktioner och arbeta enligt givna riktlinjer och uppgifter."
+      C: "Jag anser att det inte \xE4r viktigt att ta initiativ i arbetsprojekt och
+        har d\xE4rf\xF6r inte gjort det tidigare."
+      D: "Jag f\xF6redrar att f\xF6lja instruktioner och riktlinjer ist\xE4llet f\xF6r
+        att ta egna initiativ i arbetsprojekt."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 2
+      A: Genom att ge tydliga instruktioner och riktlinjer.
+      B: "Genom att uppmuntra och st\xF6dja deras id\xE9er och f\xF6rslag."
+      C: Genom att delegera arbetsuppgifter till dem.
+      D: "Genom att undvika f\xF6r\xE4ndringar och h\xE5lla fast vid rutiner."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 2
+      A: "Genom att ignorera problemen och hoppas att de f\xF6rsvinner."
+      B: "Genom att ta ansvar och s\xF6ka efter l\xF6sningar och alternativa tillv\xE4gag\xE5ngss\xE4tt."
+      C: "Genom att delegera probleml\xF6sningen till andra."
+      D: "Genom att f\xF6lja exakt de instruktioner som ges. "
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 1
+      A: "\xD6kad effektivitet och produktivitet."
+      B: "Begr\xE4nsning av innovation och kreativitet."
+      C: "\xD6kat beroende av \xF6verordnade instruktioner."
+      D: "Minskad anpassningsf\xF6rm\xE5ga till f\xF6r\xE4ndringar."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 2
+      A: "Genom att f\xF6lja instruktioner noggrant utan att ifr\xE5gas\xE4tta dem."
+      B: "Genom att ta ansvar f\xF6r att slutf\xF6ra uppgifter och \xF6vertr\xE4ffa
+        f\xF6rv\xE4ntningarna."
+      C: "Genom att undvika att ta p\xE5 dig extra arbetsuppgifter."
+      D: "Genom att f\xF6lja samma rutiner och undvika f\xF6r\xE4ndringar."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 1
+      A: "Att vara proaktiv inneb\xE4r att agera i f\xF6rv\xE4g f\xF6r att undvika
+        problem, medan att vara reaktiv inneb\xE4r att agera efter att problem har
+        uppst\xE5tt."
+      B: "Att vara proaktiv inneb\xE4r att agera efter att problem har uppst\xE5tt,
+        medan att vara reaktiv inneb\xE4r att agera i f\xF6rv\xE4g f\xF6r att undvika
+        problem."
+      C: Det finns ingen skillnad mellan att vara proaktiv och att vara reaktiv.
+      D: "Att vara proaktiv inneb\xE4r att v\xE4nta p\xE5 instruktioner innan man
+        agerar, medan att vara reaktiv inneb\xE4r att ta egna initiativ."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 2
+      A: "Genom att f\xF6lja gruppledarens instruktioner noggrant utan att ifr\xE5gas\xE4tta
+        dem. "
+      B: "Genom att vara \xF6ppen f\xF6r andras id\xE9er och aktivt bidra till diskussioner
+        och beslutsfattande."
+      C: "Genom att undvika att ta ansvar och ist\xE4llet l\xE5ta andra fatta beslut."
+      D: "Genom att f\xF6lja exakt samma arbetss\xE4tt som resten av gruppen."
+  - CategoryName: 14
+    Description: Contains all the time management interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 2
+      A: "Att arbeta s\xE5 snabbt som m\xF6jligt f\xF6r att slutf\xF6ra uppgifter."
+      B: "Att effektivt hantera och f\xF6rdela tid f\xF6r att uppn\xE5 uppsatta m\xE5l
+        och deadlines."
+      C: "Att undvika att s\xE4tta deadlines och ist\xE4llet arbeta utan tidsbegr\xE4nsningar."
+      D: "Att alltid vara i tid till m\xF6ten och evenemang."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 3
+      A: "F\xF6r att visa flexibilitet och anpassning till f\xF6r\xE4ndrade omst\xE4ndigheter."
+      B: "F\xF6r att undvika att slutf\xF6ra arbetsuppgifter inom deadlines."
+      C: "F\xF6r att maximera produktiviteten och uppr\xE4tth\xE5lla kvaliteten p\xE5
+        arbete."
+      D: "F\xF6r att kunna ta l\xE4ngre lunchpauser och komma sent till m\xF6ten."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 2
+      A: "\xD6kad stress och \xF6verarbete."
+      B: "B\xE4ttre arbetslivsbalans och minskad stress."
+      C: Minskad effektivitet och missade deadlines.
+      D: "\xD6kad arbetsbelastning och bristande produktivitet."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 2
+      A: "Genom att undvika att planera och ist\xE4llet arbeta spontant."
+      B: "Genom att prioritera uppgifter, s\xE4tta deadlines och skapa en tidsplan."
+      C: "Genom att undvika att g\xF6ra en to-do-lista och ist\xE4llet arbeta utan
+        struktur."
+      D: "Genom att alltid arbeta \xF6vertid f\xF6r att slutf\xF6ra uppgifter."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 1
+      A: "F\xF6rlorad produktivitet, missade deadlines och kvalitetsproblem."
+      B: "\xD6kad arbetslivsbalans och minskad stress."
+      C: "B\xE4ttre samarbete och kommunikation mellan teammedlemmar."
+      D: "\xD6kad flexibilitet och anpassning till f\xF6r\xE4ndringar."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 2
+      A: "Genom att arbeta i en bullrig och st\xF6rande milj\xF6."
+      B: "Genom att vara uppm\xE4rksam p\xE5 och eliminera distraktioner som sociala
+        medier eller oorganiserade arbetsytor."
+      C: "Genom att undvika att planera och ist\xE4llet arbeta utan fokus."
+      D: "Genom att alltid s\xE4ga ja till m\xF6ten och avbrott som kommer upp."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 2
+      A: "Genom att undvika att prioritera och ist\xE4llet arbeta p\xE5 uppgifter
+        slumpm\xE4ssigt."
+      B: "Genom att identifiera och fokusera p\xE5 de viktigaste och mest tidsk\xE4nsliga
+        uppgifterna."
+      C: "Genom att l\xE5ta andra best\xE4mma vilka uppgifter som \xE4r viktigast
+        att arbeta p\xE5."
+      D: "Genom att alltid ge samma prioritet \xE5t alla uppgifter och undvika att
+        skilja dem \xE5t."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 1
+      A: "En tidsbudget \xE4r en plan som visar hur mycket tid du spenderar p\xE5
+        olika aktiviteter och uppgifter."
+      B: "En tidsbudget \xE4r en lista \xF6ver uppgifter som du beh\xF6ver utf\xF6ra
+        under en dag."
+      C: "En tidsbudget \xE4r en flexibel tidsplan som inte beh\xF6ver f\xF6ljas
+        strikt."
+      D: "En tidsbudget \xE4r en metod f\xF6r att undvika att s\xE4tta deadlines
+        och ist\xE4llet arbeta utan tidsbegr\xE4nsningar."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 1
+      A: "Parkinsons lag \xE4r principen om att arbete expanderar f\xF6r att fylla
+        den tid som \xE4r tillg\xE4nglig f\xF6r dess slutf\xF6rande."
+      B: "Parkinsons lag \xE4r principen om att arbete minskar i omfattning n\xE4r
+        det n\xE4rmar sig deadline."
+      C: "Parkinsons lag \xE4r principen om att arbete blir mer effektivt n\xE4r
+        det utf\xF6rs under tidspress."
+      D: "Parkinsons lag \xE4r principen om att arbete b\xF6r undvikas och ist\xE4llet
+        delegeras till andra."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 2
+      A: "Genom att undvika att reflektera \xF6ver din tidsanv\xE4ndning och ist\xE4llet
+        forts\xE4tta som vanligt."
+      B: "Genom att regelbundet utv\xE4rdera och analysera hur du anv\xE4nder din
+        tid och identifiera omr\xE5den d\xE4r du kan g\xF6ra f\xF6rb\xE4ttringar."
+      C: "Genom att j\xE4mf\xF6ra din tidsanv\xE4ndning med andra och f\xF6rs\xF6ka
+        anpassa dig till deras arbetss\xE4tt."
+      D: "Genom att undvika att s\xE4tta upp m\xE5l och ist\xE4llet arbeta utan riktning."
+    - QuestionNumber: "Fr\xE5ga #11"
+      CorrectAnswer: 4
+      A: "Att undvika att s\xE4tta deadlines och ist\xE4llet arbeta utan tidsbegr\xE4nsningar."
+      B: "Att delegera uppgifter till andra f\xF6r att minska arbetsbelastningen."
+      C: "Att arbeta \xF6vertid regelbundet f\xF6r att slutf\xF6ra uppgifter i tid."
+      D: "Att planera och prioritera uppgifter noggrant f\xF6r att undvika sista
+        minuten-panik."
+    - QuestionNumber: "Fr\xE5ga #12"
+      CorrectAnswer: 2
+      A: "Genom att alltid s\xE4ga ja till varje avbrott och distraktion som kommer
+        upp."
+      B: "Genom att st\xE4nga av notifikationer och skapa fokustid utan avbrott."
+      C: "Genom att undvika att organisera din arbetsyta och ist\xE4llet l\xE5ta
+        den vara r\xF6rig."
+      D: "Genom att arbeta i en bullrig och st\xF6rande milj\xF6 f\xF6r att v\xE4nja
+        dig vid distraktioner."
+    - QuestionNumber: "Fr\xE5ga #13"
+      CorrectAnswer: 4
+      A: "F\xF6r att undvika att slutf\xF6ra arbetsuppgifter inom deadlines."
+      B: "F\xF6r att visa flexibilitet och anpassning till f\xF6r\xE4ndrade omst\xE4ndigheter."
+      C: "F\xF6r att undvika att s\xE4tta upp m\xE5l och ist\xE4llet arbeta utan
+        riktning."
+      D: "F\xF6r att undvika att \xF6verbelasta dig och missa deadlines p\xE5 grund
+        av orimliga f\xF6rv\xE4ntningar."
+    - QuestionNumber: "Fr\xE5ga #14"
+      CorrectAnswer: 2
+      A: "Genom att undvika att anv\xE4nda teknik och ist\xE4llet f\xF6rlita dig
+        p\xE5 manuella metoder."
+      B: "Genom att anv\xE4nda kalenderappar och p\xE5minnelser f\xF6r att organisera
+        och p\xE5minna dig om uppgifter och deadlines."
+      C: "Genom att undvika att anv\xE4nda produktivitetsverktyg eftersom de kan
+        vara distraherande."
+      D: "Genom att alltid anv\xE4nda samma teknik och verktyg oavsett uppgift eller
+        situation."
+    - QuestionNumber: "Fr\xE5ga #15"
+      CorrectAnswer: 2
+      A: "Genom att undvika att organisera din arbetsplats och ist\xE4llet l\xE5ta
+        den vara r\xF6rig."
+      B: "Genom att skapa en ren och organiserad arbetsplats d\xE4r alla n\xF6dv\xE4ndiga
+        material och verktyg \xE4r l\xE4ttillg\xE4ngliga."
+      C: "Genom att undvika att ha en fast arbetsplats och ist\xE4llet flytta runt
+        i olika milj\xF6er."
+      D: "Genom att alltid arbeta i en bullrig och st\xF6rande milj\xF6 f\xF6r att
+        \xF6va p\xE5 att fokusera."
+  - CategoryName: 15
+    Description: Contains all the creativity interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 2
+      A: "Att f\xF6lja regler och rutiner noggrant."
+      B: "Att t\xE4nka utanf\xF6r boxen och komma med nya id\xE9er."
+      C: "Att f\xF6lja etablerade metoder och inte avvika fr\xE5n dem."
+      D: "Att undvika att ta risker och h\xE5lla sig till bepr\xF6vade s\xE4tt att
+        g\xF6ra saker p\xE5."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 2
+      A: "F\xF6r att undvika f\xF6r\xE4ndring och beh\xE5lla status quo."
+      B: "F\xF6r att komma med innovativa l\xF6sningar och hitta nya m\xF6jligheter."
+      C: "F\xF6r att f\xF6lja exakt samma arbetss\xE4tt som tidigare."
+      D: "F\xF6r att undvika att ta risker och h\xE5lla sig till bepr\xF6vade s\xE4tt
+        att g\xF6ra saker p\xE5."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 2
+      A: "Begr\xE4nsade m\xF6jligheter till personlig och professionell tillv\xE4xt."
+      B: "\xD6kad flexibilitet och anpassningsf\xF6rm\xE5ga till f\xF6r\xE4ndringar."
+      C: "Minskad kreativitet och brist p\xE5 nya id\xE9er."
+      D: "Begr\xE4nsad f\xF6rm\xE5ga att l\xF6sa problem och hantera utmaningar."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 2
+      A: "Genom att undvika att t\xE4nka p\xE5 nya id\xE9er och h\xE5lla dig till
+        bepr\xF6vade metoder."
+      B: "Genom att ge utrymme f\xF6r reflektion och oberoende t\xE4nkande."
+      C: "Genom att undvika att ta risker och h\xE5lla dig inom din komfortzon."
+      D: "Genom att alltid f\xF6lja exakt samma arbetss\xE4tt som tidigare."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 2
+      A: "En st\xF6djande och inspirerande arbetsmilj\xF6."
+      B: "H\xF6ga krav p\xE5 produktivitet och snabba resultat."
+      C: "M\xF6jlighet att experimentera och pr\xF6va nya id\xE9er."
+      D: "M\xF6jlighet att samarbeta och dela id\xE9er med andra."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 2
+      A: "Fel och misstag \xE4r hinder f\xF6r kreativitet och b\xF6r undvikas."
+      B: "Fel och misstag \xE4r en naturlig del av kreativitetsprocessen och kan
+        leda till nya insikter och id\xE9er."
+      C: "Fel och misstag \xE4r tecken p\xE5 bristande kompetens och b\xF6r undvikas
+        till varje pris."
+      D: "Fel och misstag \xE4r irrelevant i kreativitetsprocessen och har ingen
+        inverkan."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 2
+      A: "Genom att begr\xE4nsa deras uttryck f\xF6r att undvika konflikter."
+      B: "Genom att erbjuda en milj\xF6 som uppmuntrar till delning av id\xE9er och
+        uttryckande av olikheter."
+      C: "Genom att undvika att ge feedback och ist\xE4llet l\xE5ta dem arbeta oberoende."
+      D: "Genom att alltid best\xE4mma vilka id\xE9er som ska implementeras utan
+        att konsultera teamet."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 2
+      A: "Att begr\xE4nsa sig till en enda tankeg\xE5ng och undvika att utforska
+        alternativ."
+      B: "Att anv\xE4nda brainstorming f\xF6r att generera id\xE9er och tankeassociationer."
+      C: "Att undvika att ta risker och h\xE5lla sig till bepr\xF6vade metoder."
+      D: "Att undvika att g\xF6ra research och ist\xE4llet lita p\xE5 intuition."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 2
+      A: "Genom att f\xF6lja exakt samma rutiner och metoder som tidigare. "
+      B: "Genom att identifiera och l\xF6sa problem p\xE5 nya och innovativa s\xE4tt."
+      C: "Genom att undvika f\xF6r\xE4ndring och beh\xE5lla status quo."
+      D: "Genom att undvika att t\xE4nka p\xE5 nya id\xE9er och h\xE5lla sig till
+        bepr\xF6vade metoder."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 2
+      A: "Nej, kreativitet \xE4r en medf\xF6dd egenskap och kan inte utvecklas."
+      B: "Ja, genom att tr\xE4na och \xF6va p\xE5 att t\xE4nka utanf\xF6r boxen kan
+        kreativiteten f\xF6rb\xE4ttras."
+      C: "Nej, kreativitet \xE4r en statisk egenskap som inte kan f\xF6r\xE4ndras."
+      D: "Ja, genom att undvika att ta risker och h\xE5lla sig till bepr\xF6vade
+        s\xE4tt kan kreativiteten f\xF6rb\xE4ttras."
+  - CategoryName: 16
+    Description: Contains all the stress resistence interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Att undvika stressiga situationer helt och h\xE5llet."
+      B: Att vara immun mot stress och aldrig uppleva det.
+      C: "Att kunna hantera och arbeta effektivt under press och stressiga f\xF6rh\xE5llanden. "
+      D: "Att l\xE5ta stress p\xE5verka ens prestation negativt."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 2
+      A: "F\xF6r att undvika alla stressiga situationer och ha en avslappnad arbetsmilj\xF6."
+      B: "F\xF6r att kunna prestera p\xE5 h\xF6g niv\xE5 och beh\xE5lla fokus under
+        p\xE5frestningar."
+      C: "F\xF6r att undvika arbetsuppgifter som kan vara utmanande eller kr\xE4vande."
+      D: "F\xF6r att l\xE5ta stress p\xE5verka ens prestation negativt."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 2
+      A: "Begr\xE4nsade m\xF6jligheter till personlig och professionell tillv\xE4xt."
+      B: "\xD6kad f\xF6rm\xE5ga att hantera utmaningar och motg\xE5ngar."
+      C: Minskad produktivitet och prestation under stressiga situationer.
+      D: "Begr\xE4nsad f\xF6rm\xE5ga att anpassa sig till f\xF6r\xE4ndringar och
+        hantera stress."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 2
+      A: Genom att undvika alla stressiga situationer och konflikter.
+      B: "Genom att anv\xE4nda avslappningstekniker som meditation eller djupandning."
+      C: "Genom att l\xE5ta stress p\xE5verka din prestation negativt."
+      D: "Genom att undvika att ta ansvar och l\xE4gga allt p\xE5 andra. "
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 3
+      A: En bra balans mellan arbete och fritid.
+      B: "En st\xF6djande och positiv arbetsmilj\xF6."
+      C: "H\xF6ga krav, tidspress och brist p\xE5 resurser."
+      D: "M\xF6jlighet att hantera och l\xF6sa problem under stress."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 2
+      A: "Sj\xE4lvmedvetenhet har ingen betydelse f\xF6r stresst\xE5lighet."
+      B: "Sj\xE4lvmedvetenhet kan hj\xE4lpa en individ att identifiera stressfaktorer
+        och utveckla strategier f\xF6r att hantera dem."
+      C: "Sj\xE4lvmedvetenhet kan leda till \xF6kad stress och minskad stresst\xE5lighet."
+      D: "Sj\xE4lvmedvetenhet p\xE5verkar inte f\xF6rm\xE5gan att hantera stressiga
+        situationer."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 2
+      A: "Genom att skapa en arbetsmilj\xF6 som \xE4r pressfri och helt utan stress."
+      B: "Genom att erbjuda st\xF6d och resurser f\xF6r att hantera stressiga situationer."
+      C: "Genom att l\xE4gga allt ansvar p\xE5 teammedlemmarna och undvika att st\xF6tta
+        dem."
+      D: "Genom att undvika att ge feedback och ist\xE4llet l\xE5ta dem hantera stressen
+        sj\xE4lva."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 2
+      A: "Att ignorera stressen och hoppas att den f\xF6rsvinner av sig sj\xE4lv."
+      B: "Att kommunicera med andra och s\xF6ka st\xF6d."
+      C: "Att undvika att ta pauser och ist\xE4llet arbeta konstant."
+      D: "Att ta p\xE5 sig fler arbetsuppgifter f\xF6r att bli av med stressen."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 2
+      A: "Nej, stresst\xE5lighet \xE4r en medf\xF6dd egenskap som inte kan f\xF6r\xE4ndras."
+      B: "Ja, genom att uts\xE4tta sig f\xF6r stressiga situationer och l\xE4ra sig
+        att hantera dem kan man \xF6ka sin stresst\xE5lighet."
+      C: "Nej, stresst\xE5lighet \xE4r en fast egenskap som inte kan p\xE5verkas."
+      D: "Ja, genom att undvika stress kan man \xF6ka sin stresst\xE5lighet."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 2
+      A: "F\xF6r att kunna undvika stressiga situationer helt och h\xE5llet. "
+      B: "F\xF6r att kunna hantera utmaningar och press p\xE5 ett effektivt s\xE4tt."
+      C: "F\xF6r att stress \xE4r ofarligt och inte p\xE5verkar ens h\xE4lsa eller
+        prestation."
+      D: "F\xF6r att stress inte har n\xE5gon inverkan p\xE5 arbetslivet."
+  - CategoryName: 17
+    Description: Contains all the possitive attitude interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 2
+      A: "Att vara alltid glad och positiv oavsett omst\xE4ndigheter."
+      B: "Att vara motiverad och entusiastisk inf\xF6r arbetsuppgifter och utmaningar."
+      C: "Att ignorera negativa k\xE4nslor och tankar."
+      D: "Att vara orealistisk och blinda f\xF6r sv\xE5righeter."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 2
+      A: "F\xF6r att undvika alla negativa situationer och konflikter."
+      B: "F\xF6r att skapa en positiv arbetsmilj\xF6 och fr\xE4mja produktivitet."
+      C: "F\xF6r att ignorera problem och utmaningar."
+      D: "F\xF6r att vara orealistisk och blinda f\xF6r eventuella sv\xE5righeter. "
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 2
+      A: Minskat engagemang och motivation i arbetsuppgifter.
+      B: "\xD6kad energi och motivation att ta itu med utmaningar."
+      C: "Begr\xE4nsad f\xF6rm\xE5ga att samarbeta med andra."
+      D: "\xD6kad k\xE4nsla av negativitet och missn\xF6je."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 2
+      A: "Genom att alltid vara \xF6verentusiastisk och ignorera potentiella problem."
+      B: "Genom att fokusera p\xE5 l\xF6sningar ist\xE4llet f\xF6r problem."
+      C: "Genom att klaga och vara negativ i arbetsmilj\xF6n."
+      D: "Genom att undvika att ta p\xE5 dig utmanande arbetsuppgifter."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 5
+      A: "Arbetsmilj\xF6n och kulturen p\xE5 arbetsplatsen."
+      B: En individs personliga preferenser och intressen.
+      C: Kollegors attityder och beteenden.
+      D: "En individs tidigare erfarenheter och inre inst\xE4llning."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 2
+      A: "Sj\xE4lvreflektion har ingen betydelse f\xF6r att utveckla en positiv attityd."
+      B: "Sj\xE4lvreflektion kan hj\xE4lpa en individ att identifiera negativa tankem\xF6nster
+        och arbeta med att f\xF6r\xE4ndra dem."
+      C: "Sj\xE4lvreflektion kan leda till \xF6kad negativitet och minskad motivation."
+      D: "Sj\xE4lvreflektion p\xE5verkar inte en individs attityd p\xE5 arbetsplatsen."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 2
+      A: "Genom att skapa en arbetsmilj\xF6 som \xE4r pr\xE4glad av negativitet och
+        missn\xF6je."
+      B: "Genom att uppmuntra och st\xF6dja dina teammedlemmar."
+      C: "Genom att kritisera och nedv\xE4rdera dina teammedlemmar."
+      D: "Genom att undvika att ge positiv feedback och erk\xE4nsla."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 4
+      A: "En positiv attityd kan skapa en atmosf\xE4r av entusiasm och motivation."
+      B: "En positiv attityd kan bidra till att l\xF6sa konflikter och fr\xE4mja
+        samarbete."
+      C: "En positiv attityd kan \xF6ka produktiviteten och arbetsgl\xE4djen hos
+        medarbetarna."
+      D: "Alla ovanst\xE5ende alternativ \xE4r korrekta."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 2
+      A: "Nej, en positiv attityd \xE4r medf\xF6dd och kan inte f\xF6r\xE4ndras."
+      B: "Ja, en positiv attityd kan utvecklas genom medveten anstr\xE4ngning och
+        tr\xE4ning."
+      C: "En positiv attityd \xE4r enbart en produkt av externt inflytande och kan
+        inte f\xF6r\xE4ndras individuellt."
+      D: "Attityder \xE4r statiska och kan inte f\xF6r\xE4ndras \xF6ver tid."
+  - CategoryName: 18
+    Description: Contains all the leadership interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Att ha total kontroll och makt \xF6ver andra m\xE4nniskor."
+      B: "Att vara auktorit\xE4r och befalla andra att g\xF6ra saker."
+      C: "Att inspirera, motivera och leda andra f\xF6r att uppn\xE5 gemensamma m\xE5l
+        och framg\xE5ng."
+      D: "Att vara en expert inom sitt omr\xE5de och leda genom kunskap."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 1
+      A: "Empati, kommunikationsf\xF6rm\xE5ga och beslutsamhet."
+      B: "Dominans, aggressivitet och sj\xE4lvcentrering."
+      C: "Ointresserad av andras \xE5sikter och perspektiv."
+      D: "Konfliktskapande och brist p\xE5 \xF6ppenhet."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 3
+      A: "Det finns ingen skillnad, de \xE4r synonyma termer."
+      B: "Ledarskap inneb\xE4r att ha auktoritet och chefskap handlar om att ha makt."
+      C: "Chefskap \xE4r en formell position medan ledarskap handlar om att p\xE5verka
+        och inspirera andra. "
+      D: "Ledarskap handlar om att ge order medan chefskap handlar om att f\xF6lja
+        dem."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 2
+      A: "\xD6kad konflikt och brist p\xE5 samarbete. "
+      B: "F\xF6rb\xE4ttrad kommunikation och samarbete."
+      C: "Stagnering av tillv\xE4xt och utveckling."
+      D: Minskad motivation och engagemang hos medarbetarna.
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 1
+      A: "Auktorit\xE4r, demokratisk och laissez-faire."
+      B: 'Dominerande, manipulativ och passiv. '
+      C: "Kontrollerande, aggressiv och sj\xE4lvcentrerad."
+      D: Ointresserad, konfliktskapande och icke-deltagande.
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 2
+      A: En ledare som tar alla beslut ensam och ger order till sina medarbetare.
+      B: "En ledare som involverar medarbetarna i beslutsfattandet och fr\xE4mjar
+        samarbete."
+      C: "En ledare som inte bryr sig om medarbetarnas \xE5sikter och perspektiv."
+      D: "En ledare som \xE4r ointresserad och passiv i sitt ledarskap."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 1
+      A: "\xD6ppenhet, inkludering och lyssnande. "
+      B: Dominans, kontroll och auktoritet.
+      C: Apati, ointresse och nonchalans.
+      D: "Manipulation, bedr\xE4geri och sj\xE4lvintresse."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 2
+      A: "Genom att hota och anv\xE4nda r\xE4dsla som motivationsfaktor."
+      B: "Genom att bel\xF6na och erk\xE4nna prestationer."
+      C: "Genom att ignorera medarbetarnas behov och \xF6nskem\xE5l."
+      D: "Genom att vara otydlig och os\xE4ker i sina instruktioner."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 3
+      A: "Kommunikation \xE4r oviktig i ledarskap."
+      B: "Kommunikation \xE4r enbart f\xF6r att ge order och instruktioner."
+      C: "ommunikation \xE4r avg\xF6rande f\xF6r att skapa f\xF6rst\xE5else, engagemang
+        och samarbete."
+      D: "Kommunikation b\xF6r undvikas f\xF6r att undvika konflikter."
+    - QuestionNumber: "Fr\xE5ga #10"
+      CorrectAnswer: 3
+      A: "Genom att fokusera enbart p\xE5 sina egna m\xE5l och intressen."
+      B: "Genom att vara auktorit\xE4r och kontrollera alla aktiviteter."
+      C: "Genom att skapa en inkluderande och st\xF6ttande arbetsmilj\xF6."
+      D: "Genom att undvika att involvera medarbetarna och deras id\xE9er."
+  - CategoryName: 19
+    Description: Contains all the endurance interview answers text data.
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      CorrectAnswer: 3
+      A: "Att aldrig m\xF6ta hinder eller motg\xE5ngar p\xE5 v\xE4gen mot m\xE5len."
+      B: "Att snabbt ge upp n\xE4r man st\xF6ter p\xE5 hinder eller motst\xE5nd."
+      C: "Att h\xE5lla fast vid l\xE5ngsiktiga m\xE5l och forts\xE4tta arbeta h\xE5rt
+        trots hinder eller motg\xE5ngar."
+      D: "Att aldrig beh\xF6va anstr\xE4nga sig eller arbeta h\xE5rt f\xF6r att n\xE5
+        sina m\xE5l."
+    - QuestionNumber: "Fr\xE5ga #2"
+      CorrectAnswer: 3
+      A: "F\xF6r att undvika alla hinder och motg\xE5ngar p\xE5 v\xE4gen."
+      B: "F\xF6r att snabbt ge upp n\xE4r n\xE5got blir sv\xE5rt eller utmanande."
+      C: "F\xF6r att uppn\xE5 l\xE5ngsiktiga m\xE5l och \xF6vervinna utmaningar som
+        uppst\xE5r."
+      D: "F\xF6r att slippa anstr\xE4nga sig eller arbeta h\xE5rt."
+    - QuestionNumber: "Fr\xE5ga #3"
+      CorrectAnswer: 2
+      A: "Minskad motivation och engagemang i arbete och m\xE5l."
+      B: "\xD6kad f\xF6rm\xE5ga att hantera hinder och motg\xE5ngar."
+      C: "Begr\xE4nsad f\xF6rm\xE5ga att anpassa sig till f\xF6r\xE4ndringar."
+      D: "\xD6kad ben\xE4genhet att ge upp n\xE4r n\xE5got blir sv\xE5rt."
+    - QuestionNumber: "Fr\xE5ga #4"
+      CorrectAnswer: 4
+      A: En individs personliga egenskaper och attityder.
+      B: "St\xF6d fr\xE5n andra m\xE4nniskor och mentorskap."
+      C: "Tidigare erfarenheter av framg\xE5ng och misslyckanden."
+      D: "Alla ovanst\xE5ende alternativ."
+    - QuestionNumber: "Fr\xE5ga #5"
+      CorrectAnswer: 2
+      A: "Genom att undvika utmaningar och sv\xE5ra situationer."
+      B: "Genom att s\xE4tta realistiska och m\xE4tbara delm\xE5l."
+      C: "Genom att ge upp n\xE4r n\xE5got blir f\xF6r sv\xE5rt."
+      D: "Genom att inte ta p\xE5 dig f\xF6r mycket arbete eller ansvar."
+    - QuestionNumber: "Fr\xE5ga #6"
+      CorrectAnswer: 2
+      A: "Motivation \xE4r inte viktigt f\xF6r att utveckla uth\xE5llighet."
+      B: "Motivation kan hj\xE4lpa en individ att forts\xE4tta arbeta h\xE5rt trots
+        hinder eller motg\xE5ngar."
+      C: "Motivation \xE4r irrelevant n\xE4r det g\xE4ller att h\xE5lla fast vid
+        l\xE5ngsiktiga m\xE5l."
+      D: "Motivation kan bara komma fr\xE5n yttre faktorer och p\xE5verkar inte uth\xE5llighet."
+    - QuestionNumber: "Fr\xE5ga #7"
+      CorrectAnswer: 3
+      A: "Genom att underminera deras sj\xE4lvf\xF6rtroende och kritisera deras prestationer."
+      B: "Genom att ge upp sj\xE4lv n\xE4r n\xE5got blir sv\xE5rt och utmanande."
+      C: "Genom att ge st\xF6d, uppmuntran och erk\xE4nsla f\xF6r deras anstr\xE4ngningar
+        och framsteg."
+      D: "Genom att inte bry sig om deras m\xE5l och prestationer."
+    - QuestionNumber: "Fr\xE5ga #8"
+      CorrectAnswer: 2
+      A: "Genom att ge upp och s\xF6ka andra m\xE5l ist\xE4llet."
+      B: "Genom att s\xF6ka st\xF6d och r\xE5d fr\xE5n andra m\xE4nniskor."
+      C: "Genom att ignorera hindren och hoppas att de f\xF6rsvinner."
+      D: "Genom att inte bry sig om hindren och bara forts\xE4tta fram\xE5t."
+    - QuestionNumber: "Fr\xE5ga #9"
+      CorrectAnswer: 2
+      A: "Nej, uth\xE5llighet \xE4r en medf\xF6dd egenskap och kan inte f\xF6r\xE4ndras."
+      B: "Ja, uth\xE5llighet kan utvecklas genom att tr\xE4na och utmana sig sj\xE4lv."
+      C: "Nej, uth\xE5llighet \xE4r en statisk egenskap och kan inte f\xF6rb\xE4ttras."
+      D: "Ja, uth\xE5llighet kan f\xF6rb\xE4ttras genom att undvika utmaningar och
+        motst\xE5nd. "
+  SituationBasedCategories:
+  - CategoryName: 20
+    Description: 30 situation-based questions about warehouse work
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      A:
+        AnswerText: "Skickar de tillg\xE4ngliga varorna och meddelar kunden om de
+          saknade varorna."
+        AnswerType: 2
+      B:
+        AnswerText: "V\xE4ntar p\xE5 att de saknade varorna ska anl\xE4nda och skickar
+          hela best\xE4llningen senare."
+        AnswerType: 2
+      C:
+        AnswerText: "Kontaktar kunden och fr\xE5gar om de kan byta till liknande
+          produkter som finns i lagret."
+        AnswerType: 2
+      D:
+        AnswerText: "Skickar best\xE4llningen utan de saknade varorna och hoppas
+          att kunden inte m\xE4rker det."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #2"
+      A:
+        AnswerText: "L\xE4mnar de trasiga produkterna p\xE5 sin plats och forts\xE4tter
+          med att organisera resten."
+        AnswerType: 0
+      B:
+        AnswerText: Rapporterar de trasiga produkterna till din chef och ber om instruktioner.
+        AnswerType: 2
+      C:
+        AnswerText: "Kastar de trasiga produkterna och forts\xE4tter med mitt arbete. "
+        AnswerType: 1
+      D:
+        AnswerText: "F\xF6rs\xF6ker reparera de trasiga produkterna sj\xE4lv innan
+          du forts\xE4tter att organisera."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #3"
+      A:
+        AnswerText: "St\xE4ller varorna p\xE5 golvet i butiken/lagret tills du kan
+          hitta mer utrymme."
+        AnswerType: 0
+      B:
+        AnswerText: "Kontakta min n\xE4rmaste chef och ber om hj\xE4lp."
+        AnswerType: 0
+      C:
+        AnswerText: "Tar emot leveransen \xE4nd\xE5 och f\xF6rs\xF6ker kl\xE4mma
+          in varorna p\xE5 befintliga hyllor."
+        AnswerType: 0
+      D:
+        AnswerText: "Avvisar leveransen och ber transport\xF6ren att komma tillbaka
+          senare."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #4"
+      A:
+        AnswerText: "Anv\xE4nder trucken \xE4nd\xE5 och hoppas att den inte bryter
+          ihop helt."
+        AnswerType: 0
+      B:
+        AnswerText: Rapporterar omedelbart det trasiga lyft-systemet till din chef.
+        AnswerType: 2
+      C:
+        AnswerText: "Reparerar lyft-systemet sj\xE4lv."
+        AnswerType: 0
+      D:
+        AnswerText: "Undviker att anv\xE4nda trucken och ber en kollega att anv\xE4nda
+          en annan."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #5"
+      A:
+        AnswerText: "R\xE4kna om varorna f\xF6r att s\xE4kerst\xE4lla att du inte
+          har gjort n\xE5gra misstag."
+        AnswerType: 1
+      B:
+        AnswerText: "Rapporterar avvikelsen till din chef och ber om hj\xE4lp f\xF6r
+          att l\xF6sa problemet."
+        AnswerType: 2
+      C:
+        AnswerText: "Ignorerar avvikelsen och forts\xE4tter inventeringen som planerat."
+        AnswerType: 0
+      D:
+        AnswerText: "G\xF6r ingenting och hoppas att avvikelsen kommer att r\xE4tta
+          till sig sj\xE4lv."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #6"
+      A:
+        AnswerText: Ber kunden skicka tillbaka de felaktiga produkterna och skickar
+          de korrekta produkterna.
+        AnswerType: 2
+      B:
+        AnswerText: "Erbjuder kunden en rabatt p\xE5 n\xE4sta best\xE4llning och
+          ber dem beh\xE5lla de felaktiga produkterna."
+        AnswerType: 1
+      C:
+        AnswerText: "Ber kunden att anv\xE4nda de felaktiga produkterna och skickar
+          de korrekta produkterna senare."
+        AnswerType: 0
+      D:
+        AnswerText: "F\xF6rnekar att felaktiga produkter har skickats ut. "
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #7"
+      A:
+        AnswerText: "Skickar best\xE4llningen utan den skadade produkten och meddelar
+          kunden om situationen. "
+        AnswerType: 1
+      B:
+        AnswerText: "F\xF6rs\xF6ker reparera den skadade produkten snabbt och inkluderar
+          den i best\xE4llningen."
+        AnswerType: 0
+      C:
+        AnswerText: "V\xE4ntar p\xE5 att en ny produkt ska anl\xE4nda och skickar
+          hela best\xE4llningen senare."
+        AnswerType: 1
+      D:
+        AnswerText: Meddelar din chef om skadan och ber om instruktioner.
+        AnswerType: 2
+    - QuestionNumber: "Fr\xE5ga #8"
+      A:
+        AnswerText: "Best\xE4ller omedelbart fler av den produkten f\xF6r att undvika
+          att den tar slut. "
+        AnswerType: 1
+      B:
+        AnswerText: "V\xE4ntar och ser om efterfr\xE5gan minskar innan du best\xE4ller
+          mer."
+        AnswerType: 0
+      C:
+        AnswerText: "Informerar f\xF6rs\xE4ljningsavdelningen om den h\xF6ga efterfr\xE5gan
+          och ber dem hantera det. "
+        AnswerType: 2
+      D:
+        AnswerText: "Flyttar produkten till en mer synlig plats i lagret f\xF6r att
+          \xF6ka f\xF6rs\xE4ljningen."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #9"
+      A:
+        AnswerText: "Ignorerar det och placerar produkterna p\xE5 l\xE4mpliga platser
+          \xE4nd\xE5. "
+        AnswerType: 0
+      B:
+        AnswerText: Rapporterar felet till din chef och ber om instruktioner.
+        AnswerType: 2
+      C:
+        AnswerText: "F\xF6rs\xF6ker sj\xE4lv korrigera m\xE4rkningen p\xE5 produkterna."
+        AnswerType: 0
+      D:
+        AnswerText: "L\xE4mnar produkterna obem\xE4rkta och hoppas att ingen kommer
+          att m\xE4rka det."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #10"
+      A:
+        AnswerText: "Kontrollerar produkten f\xF6r att bekr\xE4fta om den verkligen
+          \xE4r defekt."
+        AnswerType: 2
+      B:
+        AnswerText: "Accepterar kundens p\xE5st\xE5ende och \xE5terbetalar dem utan
+          att kontrollera produkten."
+        AnswerType: 1
+      C:
+        AnswerText: "Avvisar kundens retur och ber dem kontakta tillverkaren f\xF6r
+          garanti\xE4renden."
+        AnswerType: 1
+      D:
+        AnswerText: Skickar en ny produkt till kunden utan att be om den defekta
+          produkten tillbaka.
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #11"
+      A:
+        AnswerText: "Ignorerar det och forts\xE4tter med kontrollen."
+        AnswerType: 0
+      B:
+        AnswerText: "Rapporterar omedelbart felet till din chef och f\xF6ljer f\xF6retagets
+          protokoll f\xF6r farliga \xE4mnen."
+        AnswerType: 2
+      C:
+        AnswerText: "F\xF6rs\xF6ker f\xF6rsegla \xE4mnet sj\xE4lv."
+        AnswerType: 0
+      D:
+        AnswerText: "L\xE4mnar \xE4mnet som det \xE4r och tar upp det med de n\xE4rmsta
+          kollegorna p\xE5 kafferasten."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #12"
+      A:
+        AnswerText: "Accepterar returen och \xE5terbetalar kunden utan att be om
+          n\xE5gon information."
+        AnswerType: 1
+      B:
+        AnswerText: Skickar tillbaka produkten till kunden och ber om mer information
+          om returen.
+        AnswerType: 1
+      C:
+        AnswerText: Kontakta kunden och be dem fylla i en digitalretursedel.
+        AnswerType: 2
+      D:
+        AnswerText: "Ignorerar returen och v\xE4ntar p\xE5 att kunden ska kontakta
+          dig igen."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #13"
+      A:
+        AnswerText: Rapporterar omedelbart skadorna till din chef och ber om instruktioner.
+        AnswerType: 2
+      B:
+        AnswerText: Dokumenterar skadorna noggrant och tar bilder som bevis.
+        AnswerType: 1
+      C:
+        AnswerText: "Kontaktar leverant\xF6ren f\xF6r att rapportera skadorna och
+          beg\xE4ra ers\xE4ttning eller utbyte."
+        AnswerType: 1
+      D:
+        AnswerText: "Isolerar och m\xE4rker de skadade produkterna f\xF6r att f\xF6rhindra
+          att de anv\xE4nds eller skickas ut till kunder."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #14"
+      A:
+        AnswerText: "Kontakter kunden f\xF6r att f\xE5 mer information om deras specialf\xF6rpackningskrav."
+        AnswerType: 2
+      B:
+        AnswerText: "Anv\xE4nder standardf\xF6rpackningar och hoppas att det kommer
+          att vara tillr\xE4ckligt."
+        AnswerType: 0
+      C:
+        AnswerText: "R\xE5dg\xF6r med din chef eller kollega f\xF6r att hitta l\xE4mpliga
+          specialf\xF6rpackningar."
+        AnswerType: 1
+      D:
+        AnswerText: "Skickar produkterna utan n\xE5gon speciell f\xF6rpackning och
+          l\xE5ter kunden hantera det sj\xE4lv."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #15"
+      A:
+        AnswerText: "Kontrollerar produkten f\xF6r att bekr\xE4fta kundens p\xE5st\xE5ende
+          och unders\xF6ker om det finns n\xE5gra anv\xE4ndningssp\xE5r."
+        AnswerType: 2
+      B:
+        AnswerText: "Accepterar kundens p\xE5st\xE5ende och \xE5terbetalar dem utan
+          att kontrollera produkten."
+        AnswerType: 1
+      C:
+        AnswerText: "Avvisar kundens retur och h\xE4nvisar dem till tillverkarens
+          garantiavdelning."
+        AnswerType: 1
+      D:
+        AnswerText: Skickar en ny produkt till kunden utan att be om den defekta
+          produkten tillbaka.
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #16"
+      A:
+        AnswerText: "Rapporterar omedelbart problemet till din chef och ber om en
+          unders\xF6kning och reparation av trucken."
+        AnswerType: 2
+      B:
+        AnswerText: "F\xF6rs\xF6ker \xE4nd\xE5 att flytta pallen med f\xF6rsiktighet
+          och hoppas att trucken inte bryter ihop. "
+        AnswerType: 0
+      C:
+        AnswerText: "L\xE4mnar pallen d\xE4r den \xE4r och ber en kollega om hj\xE4lp
+          med att flytta den."
+        AnswerType: 1
+      D:
+        AnswerText: "F\xF6rs\xF6ker reparera trucken sj\xE4lv utan att informera
+          n\xE5gon."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #17"
+      A:
+        AnswerText: "Anv\xE4nder andra tillg\xE4ngliga metoder f\xF6r att m\xE4rka
+          och etikettera produkterna, som till exempel handskrivna etiketter. "
+        AnswerType: 2
+      B:
+        AnswerText: "Kontaktar din chef f\xF6r att meddela bristen p\xE5 etiketter
+          och be om att en ny leverans ska best\xE4llas."
+        AnswerType: 1
+      C:
+        AnswerText: "Ignorerar bristen p\xE5 etiketter och forts\xE4tter att skicka
+          ut produkterna utan korrekt m\xE4rkning."
+        AnswerType: 0
+      D:
+        AnswerText: "F\xF6rs\xF6ker hitta etiketter fr\xE5n andra f\xF6rpackningar
+          eller produkter f\xF6r att anv\xE4nda dem tills en ny leverans kommer."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #18"
+      A:
+        AnswerText: "Flyttar produkterna till r\xE4tt hyllor enligt lagrets layout
+          och ordning."
+        AnswerType: 2
+      B:
+        AnswerText: "Rapporterar avvikelsen till din chef och ber om instruktioner
+          f\xF6r att korrigera situationen."
+        AnswerType: 1
+      C:
+        AnswerText: "Ignorerar avvikelsen och l\xE5ter produkterna vara d\xE4r de
+          \xE4r."
+        AnswerType: 0
+      D:
+        AnswerText: "Omorganiserar hela lagret enligt din egen layout utan att kontakta
+          n\xE5gon."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #19"
+      A:
+        AnswerText: 'Dokumenterar skadorna noggrant och tar bilder som bevis. '
+        AnswerType: 2
+      B:
+        AnswerText: "Kontaktar transportf\xF6retaget f\xF6r att rapportera skadorna
+          och beg\xE4ra ers\xE4ttning eller utbyte."
+        AnswerType: 2
+      C:
+        AnswerText: "Informerar din chef eller ansvarig f\xF6r att diskutera n\xE4sta
+          steg och eventuella \xE5tg\xE4rder."
+        AnswerType: 2
+      D:
+        AnswerText: "Isolerar och m\xE4rker de skadade produkterna f\xF6r att f\xF6rhindra
+          att de anv\xE4nds eller skickas ut till kunder."
+        AnswerType: 2
+    - QuestionNumber: "Fr\xE5ga #20"
+      A:
+        AnswerText: "Aktiverar omedelbart n\xF6dsystemet och f\xF6ljer f\xF6retagets
+          protokoll f\xF6r att hantera farliga \xE4mnen och utsl\xE4pp. "
+        AnswerType: 2
+      B:
+        AnswerText: "Anv\xE4nder passande skyddsutrustning och reng\xF6ringsmaterial
+          f\xF6r att sanera utsl\xE4ppet och s\xE4kerst\xE4lla att omr\xE5det \xE4r
+          s\xE4kert."
+        AnswerType: 2
+      C:
+        AnswerText: "Rapporterar omedelbart h\xE4ndelsen till din chef eller ansvarig
+          och f\xF6ljer deras anvisningar f\xF6r vidare \xE5tg\xE4rder."
+        AnswerType: 2
+      D:
+        AnswerText: "Ignorerar utsl\xE4ppet och forts\xE4tter med ditt arbete som
+          vanligt."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #21"
+      A:
+        AnswerText: "Kontakter kunden f\xF6r att bekr\xE4fta den nya leveransadressen
+          och genomf\xF6r \xE4ndringen i systemet."
+        AnswerType: 2
+      B:
+        AnswerText: "Kontaktar transport\xF6ren f\xF6r att \xE4ndra leveransadressen
+          och informerar kunden om m\xF6jligheten till \xE4ndring."
+        AnswerType: 1
+      C:
+        AnswerText: "R\xE5dg\xF6r med din chef eller ansvarig f\xF6r att f\xE5 instruktioner
+          om hur man hanterar \xE4ndringar av leveransadresser."
+        AnswerType: 2
+      D:
+        AnswerText: "Ignorerar beg\xE4ran och skickar produkterna till den ursprungliga
+          adressen som angavs."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #22"
+      A:
+        AnswerText: "Omorganiserar lagret f\xF6r att placera produkterna p\xE5 mer
+          l\xE4mpliga och l\xE4ttillg\xE4ngliga platser enligt en logisk ordning."
+        AnswerType: 2
+      B:
+        AnswerText: "Diskuterar problemet med din chef eller ansvarig f\xF6r att
+          f\xE5 riktlinjer eller f\xF6rslag om hur man b\xE4st organiserar lagret."
+        AnswerType: 2
+      C:
+        AnswerText: "Ignorerar situationen och l\xE5ter produkterna vara d\xE4r de
+          \xE4r, \xE4ven om det kan p\xE5verka effektiviteten och arbetsfl\xF6det."
+        AnswerType: 0
+      D:
+        AnswerText: "Flyttar produkterna till l\xE4mpligare platser utan att r\xE5dg\xF6ra
+          med n\xE5gon eller rapportera \xE4ndringarna."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #23"
+      A:
+        AnswerText: "Kommunicerar med kunden f\xF6r att informera om att produkten
+          \xE4r skadad p\xE5 grund av felaktig anv\xE4ndning och inte \xE4r ber\xE4ttigad
+          till \xE5terbetalning."
+        AnswerType: 2
+      B:
+        AnswerText: "Erbjuder kunden en delvis \xE5terbetalning eller en utbytesprodukt
+          som en goodwill-gest, trots att skadan inte t\xE4cks av garantin."
+        AnswerType: 2
+      C:
+        AnswerText: Avvisar kundens retur.
+        AnswerType: 0
+      D:
+        AnswerText: "Accepterar kundens retur och \xE5terbetalar dem utan att unders\xF6ka
+          produkten eller kontrollera om skadan \xE4r resultatet av felaktig anv\xE4ndning."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #24"
+      A:
+        AnswerText: "Kontrollerar om lagret har en temperatur- och fuktighetskontrollerad
+          zon och placerar kundens produkter d\xE4r om det \xE4r m\xF6jligt."
+        AnswerType: 2
+      B:
+        AnswerText: "Kontakter din chef eller ansvarig f\xF6r att f\xE5 information
+          om m\xF6jligheterna att tillhandah\xE5lla temperatur- och fuktighetskontroll
+          f\xF6r kundens produkter."
+        AnswerType: 2
+      C:
+        AnswerText: "Informerar kunden om att lagret inte har m\xF6jlighet att erbjuda
+          temperatur- och fuktighetskontroll och diskuterar alternativa l\xF6sningar
+          eller f\xF6rsiktighets\xE5tg\xE4rder."
+        AnswerType: 2
+      D:
+        AnswerText: "Ignorerar kundens beg\xE4ran och f\xF6rvarar produkterna p\xE5
+          vanligt s\xE4tt utan att ta h\xE4nsyn till beg\xE4ran."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #25"
+      A:
+        AnswerText: "Ignorerar det och forts\xE4tter med ditt arbete."
+        AnswerType: 0
+      B:
+        AnswerText: "Rapporterar omedelbart felet till din n\xE4rmaste chef. "
+        AnswerType: 2
+      C:
+        AnswerText: "Justerar temperaturen sj\xE4lv utan att informera n\xE5gon."
+        AnswerType: 0
+      D:
+        AnswerText: "V\xE4ntar och ser om temperaturen sjunker av sig sj\xE4lv."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #26"
+      A:
+        AnswerText: "Ignorerar det och inkluderar produkten i ordern \xE4nd\xE5."
+        AnswerType: 0
+      B:
+        AnswerText: "Tar bort produkten fr\xE5n ordern och rapporterar felet till
+          din chef."
+        AnswerType: 2
+      C:
+        AnswerText: "L\xE4mnar produkten p\xE5 sin plats och hoppas att n\xE5gon
+          annan uppt\xE4cker felet."
+        AnswerType: 0
+      D:
+        AnswerText: "Byter ut produkten utan att informera n\xE5gon."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #27"
+      A:
+        AnswerText: "L\xE4mnar pallen som den \xE4r och rapporterar skadan till din
+          chef."
+        AnswerType: 0
+      B:
+        AnswerText: "F\xF6rs\xF6ker reparera pallen sj\xE4lv f\xF6r att r\xE4dda
+          s\xE5 mycket som m\xF6jligt."
+        AnswerType: 0
+      C:
+        AnswerText: "Kastar de f\xF6rst\xF6rda produkterna och hoppas att ingen m\xE4rker
+          det."
+        AnswerType: 0
+      D:
+        AnswerText: Tar bilder av skadan och produkterna och rapporterar det till
+          din chef.
+        AnswerType: 2
+    - QuestionNumber: "Fr\xE5ga #28"
+      A:
+        AnswerText: "L\xE4gger produkten i en p\xE5se f\xF6r att undvika l\xE4ckage
+          och inkluderar den i best\xE4llningen."
+        AnswerType: 0
+      B:
+        AnswerText: "Tar bort produkten fr\xE5n best\xE4llningen och ers\xE4tter
+          den med en intakt produkt."
+        AnswerType: 2
+      C:
+        AnswerText: "L\xE4mnar produkten p\xE5 sin plats och hoppas att ingen m\xE4rker
+          l\xE4ckaget."
+        AnswerType: 0
+      D:
+        AnswerText: "Kastar produkten utan att informera n\xE5gon."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #29"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #30"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+  - CategoryName: 21
+    Description: 30 Situation-based questions about Restaurant employees
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      A:
+        AnswerText: "Tar emot 200-kronorssedeln och ger tillbaka 143 kr i v\xE4xel. "
+        AnswerType: 0
+      B:
+        AnswerText: "Kontrollerar 200-kronorssedeln noggrant och ger tillbaka 143
+          kr i v\xE4xel."
+        AnswerType: 2
+      C:
+        AnswerText: "Accepterar 200-kronorssedeln utan att kontrollera och ger tillbaka
+          143 kr i v\xE4xel."
+        AnswerType: 0
+      D:
+        AnswerText: "Meddela kunden att vi \xE4r en kontantfri restaurang."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #2"
+      A:
+        AnswerText: "Skrapar av l\xF6ken och serverar burgaren som den \xE4r."
+        AnswerType: 0
+      B:
+        AnswerText: "Kastar bort burgaren och g\xF6r en ny utan l\xF6k."
+        AnswerType: 2
+      C:
+        AnswerText: "Tar bort l\xF6ken och serverar burgaren som den \xE4r."
+        AnswerType: 0
+      D:
+        AnswerText: "Kontrollerar om kunden verkligen inte vill ha l\xF6k och serverar
+          burgaren om det \xE4r fallet."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #3"
+      A:
+        AnswerText: "Ger kunden burgaren som den \xE4r utan att p\xE5peka felet."
+        AnswerType: 0
+      B:
+        AnswerText: "Kastar bort burgaren och g\xF6r en ny med extra ost."
+        AnswerType: 2
+      C:
+        AnswerText: "L\xE4gger p\xE5 en extra ostskiva och serverar den som den \xE4r."
+        AnswerType: 0
+      D:
+        AnswerText: "Kontrollerar om kunden verkligen vill ha extra ost och g\xF6r
+          en ny burgare med extra ost om det \xE4r fallet."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #4"
+      A:
+        AnswerText: "Serverar m\xE5let som det \xE4r och hoppas att kunden inte m\xE4rker
+          skillnaden."
+        AnswerType: 0
+      B:
+        AnswerText: "Kastar bort pommes fritesen och g\xF6r nya."
+        AnswerType: 2
+      C:
+        AnswerText: "Erbjuder kunden ett nytt m\xE5l med pommes frites och ber om
+          urs\xE4kt f\xF6r misstaget."
+        AnswerType: 2
+      D:
+        AnswerText: "V\xE4rmer upp pommes fritesen i mikrov\xE5gsugnen och serverar
+          dem igen till kunden."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #5"
+      A:
+        AnswerText: "Ber\xE4ttar f\xF6r kunden om misstaget och erbjuder att g\xF6ra
+          om best\xE4llningen."
+        AnswerType: 2
+      B:
+        AnswerText: "L\xE5tsas som ingenting och hoppas att kunden inte v\xE5ga s\xE4ga
+          n\xE5got."
+        AnswerType: 0
+      C:
+        AnswerText: "Erbjuder kunden 50% rabatt p\xE5 cheeseburgaren och g\xF6r en
+          ny korrekt best\xE4llning. "
+        AnswerType: 1
+      D:
+        AnswerText: "Erbjuder kunden en gratis cheeseburgare och g\xF6r en ny korrekt
+          best\xE4llning med chicken nuggets."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #6"
+      A:
+        AnswerText: "F\xF6rs\xF6ker improvisera och g\xF6ra ditt b\xE4sta f\xF6r
+          att f\xF6rbereda burgaren enligt instruktionerna."
+        AnswerType: 0
+      B:
+        AnswerText: "Fr\xE5gar en kollega om r\xE5d eller hj\xE4lp f\xF6r att f\xF6rst\xE5
+          och f\xF6lja instruktionerna korrekt."
+        AnswerType: 1
+      C:
+        AnswerText: "Ignorerar de instruktioner du inte f\xF6rst\xE5r och f\xF6rbereder
+          burgaren enligt egen tolkning."
+        AnswerType: 0
+      D:
+        AnswerText: "G\xE5r till chefen och ber om ytterligare f\xF6rklaring och
+          v\xE4gledning f\xF6r att f\xF6lja instruktionerna korrekt."
+        AnswerType: 2
+    - QuestionNumber: "Fr\xE5ga #7"
+      A:
+        AnswerText: "Ger kunden en medelstor l\xE4sk eftersom det \xE4r den vanligaste
+          storleken."
+        AnswerType: 0
+      B:
+        AnswerText: "Fr\xE5gar kollegan f\xF6r att f\xE5 information om de olika
+          storlekarna och ger sedan kunden korrekt information."
+        AnswerType: 1
+      C:
+        AnswerText: "L\xE5ter kunden gissa storleken och ger dem det de tror \xE4r
+          r\xE4tt."
+        AnswerType: 0
+      D:
+        AnswerText: "Erbjuder kunden alla tillg\xE4ngliga storlekar och l\xE5ter
+          dem v\xE4lja sj\xE4lva."
+        AnswerType: 2
+    - QuestionNumber: "Fr\xE5ga #8"
+      A:
+        AnswerText: "Ignorerar situationen och l\xE5ter det vara din kollegas ansvar."
+        AnswerType: 0
+      B:
+        AnswerText: "Konfronterar din kollega direkt och ber\xE4ttar att du vet vad
+          som p\xE5g\xE5r."
+        AnswerType: 1
+      C:
+        AnswerText: "Rapporterar situationen till din chef eller \xF6verordnade f\xF6r
+          att f\xE5 dem att hantera problemet."
+        AnswerType: 2
+      D:
+        AnswerText: "Tar ocks\xE5 f\xF6r mycket betalt fr\xE5n kunder f\xF6r att
+          inte hamna i en s\xE4mre position \xE4n din kollega."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #9"
+      A:
+        AnswerText: "L\xE5ter det vara och forts\xE4tter till n\xE4sta kund."
+        AnswerType: 0
+      B:
+        AnswerText: "Springer efter kunden och f\xF6rs\xF6ker f\xE5nga deras uppm\xE4rksamhet
+          f\xF6r att ge dem deras best\xE4llning."
+        AnswerType: 0
+      C:
+        AnswerText: "Ringer upp kunden p\xE5 deras telefonnummer som de angav vid
+          best\xE4llningen och informerar dem om deras gl\xF6mda best\xE4llning. "
+        AnswerType: 2
+      D:
+        AnswerText: "L\xE4gger undan best\xE4llningen och hoppas att kunden kommer
+          tillbaka f\xF6r att h\xE4mta den senare."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #10"
+      A:
+        AnswerText: "Svarar p\xE5 samma s\xE4tt och blir otrevlig tillbaka."
+        AnswerType: 0
+      B:
+        AnswerText: "Ignorerar kundens beteende och forts\xE4tter att vara artig
+          och professionell."
+        AnswerType: 2
+      C:
+        AnswerText: "Ber kunden att l\xE4mna restaurangen om de inte kan bete sig
+          ordentligt."
+        AnswerType: 1
+      D:
+        AnswerText: "Ger kunden en extra l\xE5ng v\xE4ntetid som en form av \"straff\"
+          f\xF6r deras otrevliga beteende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #11"
+      A:
+        AnswerText: "Tackar kunden f\xF6r deras ber\xF6m och g\xE5r sedan vidare
+          med ditt arbete."
+        AnswerType: 2
+      B:
+        AnswerText: "Ignorerar kunden och l\xE5ter dem prata med en annan anst\xE4lld."
+        AnswerType: 0
+      C:
+        AnswerText: "Tar dig tid att prata med kunden, lyssna p\xE5 deras ber\xF6m
+          och kanske till och med erbjuda n\xE5gon form av kompensation."
+        AnswerType: 1
+      D:
+        AnswerText: "Ber kunden att skriva ner sitt ber\xF6m p\xE5 ett feedbackformul\xE4r
+          s\xE5 att det kan delas med resten av personalen."
+        AnswerType: 2
+    - QuestionNumber: "Fr\xE5ga #12"
+      A:
+        AnswerText: "F\xF6rs\xF6ker anv\xE4nda kreditkortet igen och hoppas att det
+          fungerar."
+        AnswerType: 2
+      B:
+        AnswerText: "Ber\xE4ttar f\xF6r kunden att deras kreditkort blev nekat och
+          att de m\xE5ste betala med ett annat betalningsmedel."
+        AnswerType: 2
+      C:
+        AnswerText: "Ber kunden att betala kontant ist\xE4llet."
+        AnswerType: 1
+      D:
+        AnswerText: "Ger kunden maten gratis som en gest av medk\xE4nsla. "
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #13"
+      A:
+        AnswerText: "Ber\xE4ttar f\xF6r kunden att det \xE4r slut p\xE5 bacon och
+          fr\xE5gar om de vill ha n\xE5got annat till\xE4gg ist\xE4llet."
+        AnswerType: 2
+      B:
+        AnswerText: "G\xE5r till k\xF6ket och letar efter bacon \xE4ven om det tar
+          lite extra tid."
+        AnswerType: 0
+      C:
+        AnswerText: "G\xF6r en ny hamburgare med standard m\xE4ngd bacon och hoppas
+          att kunden inte m\xE4rker skillnaden."
+        AnswerType: 0
+      D:
+        AnswerText: "Erbjuder kunden en gratis dryck eller n\xE5got annat till\xE4gg
+          som kompensation f\xF6r bristen p\xE5 bacon."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #14"
+      A:
+        AnswerText: "Serverar salladen utan dressing och hoppas att kunden inte m\xE4rker
+          skillnaden."
+        AnswerType: 0
+      B:
+        AnswerText: "G\xE5r till lagret och letar efter mer dressing \xE4ven om det
+          tar lite extra tid."
+        AnswerType: 0
+      C:
+        AnswerText: "Erbjuder kunden en annan typ av dressing som finns tillg\xE4nglig."
+        AnswerType: 1
+      D:
+        AnswerText: "Informerar kunden om att dressingen har tagit slut och fr\xE5gar
+          om de vill ha n\xE5got annat till\xE4gg ist\xE4llet."
+        AnswerType: 2
+    - QuestionNumber: "Fr\xE5ga #15"
+      A:
+        AnswerText: "G\xF6r en ny hamburgare utan extra l\xF6k och hoppas att kunden
+          inte m\xE4rker skillnaden."
+        AnswerType: 0
+      B:
+        AnswerText: "Informerar kunden om att l\xF6ken har tagit slut och fr\xE5gar
+          om de vill ha n\xE5got annat till\xE4gg ist\xE4llet."
+        AnswerType: 2
+      C:
+        AnswerText: "Erbjuder kunden extra tomat eller n\xE5gon annan gr\xF6nsak
+          som ett alternativ till l\xF6ken."
+        AnswerType: 1
+      D:
+        AnswerText: "G\xE5r till en annan restaurang i n\xE4rheten f\xF6r att k\xF6pa
+          l\xF6k och sedan f\xF6rbereder hamburgaren enligt kundens \xF6nskem\xE5l."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #16"
+      A:
+        AnswerText: "Ber\xE4ttar f\xF6r kunden att pommes fritesen \xE4r avsedda
+          att vara saltiga och att det inte finns n\xE5got du kan g\xF6ra \xE5t det."
+        AnswerType: 0
+      B:
+        AnswerText: "Erbjuder kunden en ny sats med pommes frites som \xE4r mindre
+          saltade."
+        AnswerType: 2
+      C:
+        AnswerText: "Tar bort saltet fr\xE5n pommes fritesen och serverar dem igen
+          till kunden."
+        AnswerType: 0
+      D:
+        AnswerText: "Erbjuder kunden en gratis dryck eller n\xE5got annat till\xE4gg
+          som kompensation f\xF6r de f\xF6r saltiga pommes fritesen."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #17"
+      A:
+        AnswerText: "Ignorerar situationen och l\xE5ter det vara din kollegas ansvar."
+        AnswerType: 0
+      B:
+        AnswerText: "Konfronterar din kollega direkt och ber\xE4ttar att det \xE4r
+          viktigt att f\xF6lja hygienrutinerna."
+        AnswerType: 1
+      C:
+        AnswerText: "Rapporterar situationen till din chef eller \xF6verordnade f\xF6r
+          att f\xE5 dem att hantera problemet."
+        AnswerType: 2
+      D:
+        AnswerText: "Tar \xF6ver arbetsuppgifterna f\xF6r att undvika att maten blir
+          kontaminerad. "
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #18"
+      A:
+        AnswerText: "Ber\xE4ttar f\xF6r kunden att maskinen \xE4r ur funktion och
+          erbjuder en annan dryck ist\xE4llet."
+        AnswerType: 2
+      B:
+        AnswerText: "F\xF6rs\xF6ker reparera maskinen sj\xE4lv \xE4ven om det tar
+          lite extra tid."
+        AnswerType: 0
+      C:
+        AnswerText: "H\xE4nvisar kunden till en annan restaurang i n\xE4rheten d\xE4r
+          de kan f\xE5 en milkshake."
+        AnswerType: 0
+      D:
+        AnswerText: "Erbjuder kunden en gratis dessert eller n\xE5got annat till\xE4gg
+          som kompensation f\xF6r den trasiga maskinen."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #19"
+      A:
+        AnswerText: "Accepterar kupongen \xE4nd\xE5 och ger kunden rabatten."
+        AnswerType: 0
+      B:
+        AnswerText: "Informerar kunden om att kupongen inte l\xE4ngre \xE4r giltig
+          och beklagar att du inte kan acceptera den."
+        AnswerType: 2
+      C:
+        AnswerText: "Kontrollerar med din chef eller \xF6verordnade om det finns
+          n\xE5got undantag som kan g\xF6ras f\xF6r kunden."
+        AnswerType: 0
+      D:
+        AnswerText: "Erbjuder kunden en alternativ rabatt eller erbjudande f\xF6r
+          att kompensera f\xF6r ogiltig kupong."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #20"
+      A:
+        AnswerText: "Ber om urs\xE4kt f\xF6r felet och erbjuder omedelbart att g\xF6ra
+          en ny hamburgare enligt kundens ursprungliga best\xE4llning."
+        AnswerType: 1
+      B:
+        AnswerText: "F\xF6rs\xF6ker \xF6vertyga kunden om att de har f\xE5tt r\xE4tt
+          hamburgare och att de har missuppfattat."
+        AnswerType: 0
+      C:
+        AnswerText: "Kontrollerar kundens best\xE4llning och bekr\xE4ftar felet.
+          Erbjuder sedan att g\xF6ra en ny hamburgare enligt deras \xF6nskem\xE5l."
+        AnswerType: 2
+      D:
+        AnswerText: "Erbjuder kunden en gratis dryck eller n\xE5got annat till\xE4gg
+          som kompensation f\xF6r felaktig best\xE4llning."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #21"
+      A:
+        AnswerText: "Ber\xE4ttar f\xF6r kunden att det inte finns n\xE5got du kan
+          g\xF6ra och att de inte borde ha best\xE4llt maten om de \xE4r allergiska
+          mot ingrediensen."
+        AnswerType: 0
+      B:
+        AnswerText: "Kontrollerar best\xE4llningen och f\xF6rs\xE4krar dig om att
+          maten inte inneh\xE5ller den allergiframkallande ingrediensen. Informerar
+          sedan kunden om att maten \xE4r s\xE4ker att \xE4ta."
+        AnswerType: 0
+      C:
+        AnswerText: "Erbjuder kunden att byta ut den allergiframkallande ingrediensen
+          mot en annan som de t\xE5l."
+        AnswerType: 1
+      D:
+        AnswerText: "Informerar kunden om att du inte kan garantera att maten \xE4r
+          helt fri fr\xE5n den allergiframkallande ingrediensen och erbjuder dem
+          att annullera best\xE4llningen och l\xE4gga en ny best\xE4llning."
+        AnswerType: 2
+    - QuestionNumber: "Fr\xE5ga #22"
+      A:
+        AnswerText: "Ger kunden v\xE4xel tillbaka enligt det totala beloppet f\xF6r
+          deras best\xE4llning."
+        AnswerType: 0
+      B:
+        AnswerText: "Fr\xE5gar kunden om de har mindre sedlar eller mynt f\xF6r att
+          underl\xE4tta v\xE4xlingen."
+        AnswerType: 1
+      C:
+        AnswerText: "Informerar kunden om att du inte har tillr\xE4ckligt med sedlar
+          f\xF6r att ge dem v\xE4xel tillbaka. Erbjuder sedan att de kan betala med
+          en mindre sedel eller med kort."
+        AnswerType: 2
+      D:
+        AnswerText: "Konsulterar din chef eller \xF6verordnade f\xF6r att f\xE5 r\xE5d
+          om hur du ska hantera situationen."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #23"
+      A:
+        AnswerText: "Ber om urs\xE4kt f\xF6r den underm\xE5liga maten och erbjuder
+          omedelbart att g\xF6ra om best\xE4llningen."
+        AnswerType: 2
+      B:
+        AnswerText: "F\xF6rs\xF6ker \xF6vertyga kunden om att maten \xE4r tillr\xE4ckligt
+          varm och att de har fel."
+        AnswerType: 0
+      C:
+        AnswerText: "Kontrollerar maten och bekr\xE4ftar att den \xE4r kall. Erbjuder
+          sedan att g\xF6ra om best\xE4llningen eller ers\xE4tta den med en ny m\xE5ltid."
+        AnswerType: 0
+      D:
+        AnswerText: "Erbjuder kunden en gratis dryck eller n\xE5got annat till\xE4gg
+          som kompensation f\xF6r den d\xE5liga maten."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #24"
+      A:
+        AnswerText: "Gissar ingredienserna och ger kunden ett os\xE4kert svar."
+        AnswerType: 0
+      B:
+        AnswerText: "Ber om urs\xE4kt f\xF6r att du inte har informationen till hands
+          och erbjuder att kontrollera ingredienserna med k\xF6ket eller en kollega."
+        AnswerType: 2
+      C:
+        AnswerText: "F\xF6rklarar f\xF6r kunden att du inte har tillg\xE5ng till
+          ingredienslistan just nu och rekommenderar att de kontaktar restaurangen
+          senare f\xF6r att f\xE5 exakt information."
+        AnswerType: 0
+      D:
+        AnswerText: "F\xF6resl\xE5r att kunden ska testa en annan menyvara som du
+          \xE4r mer bekant med och kan ge information om ingredienserna."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #25"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #26"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #27"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #28"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #29"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #30"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+  - CategoryName: 22
+    Description: 30 Situation-based questions about Customer service and Admin
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      A:
+        AnswerText: "Meddelar din chef att flygningen inte \xE4r tillg\xE4nglig och
+          ber om instruktioner om hur du ska forts\xE4tta."
+        AnswerType: 1
+      B:
+        AnswerText: "S\xF6ker efter alternativa flygningar och presenterar dessa
+          f\xF6r din chef f\xF6r att v\xE4lja en annan."
+        AnswerType: 2
+      C:
+        AnswerText: "Kontrollerar med andra flygbolag om det finns tillg\xE4ngliga
+          platser p\xE5 \xF6nskad flygning."
+        AnswerType: 1
+      D:
+        AnswerText: "Ringer flygbolaget f\xF6r att unders\xF6ka om det finns n\xE5gra
+          m\xF6jligheter att f\xE5 platser p\xE5 den \xF6nskade flygningen."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #2"
+      A:
+        AnswerText: "Beh\xE5ller lugnet och lyssnar uppm\xE4rksamt p\xE5 kundens
+          klagom\xE5l utan att avbryta."
+        AnswerType: 2
+      B:
+        AnswerText: "B\xF6rjar h\xF6ja r\xF6sten f\xF6r att matcha kundens tonl\xE4ge."
+        AnswerType: 0
+      C:
+        AnswerText: "F\xF6rs\xF6ker avbryta kunden och be dem att tala lugnt och
+          respektfullt."
+        AnswerType: 1
+      D:
+        AnswerText: "Koppla vidare kunden till en \xF6verordnad f\xF6r att hantera
+          den arga kunden."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #3"
+      A:
+        AnswerText: "Meddelar kollegan att du beh\xF6ver mer information f\xF6r att
+          kunna boka in m\xF6tet och ber om specifika \xF6nskem\xE5l."
+        AnswerType: 2
+      B:
+        AnswerText: "Bokar in m\xF6tet p\xE5 en tid och plats som du anser vara mest
+          l\xE4mplig och meddelar kollegan om dessa detaljer."
+        AnswerType: 1
+      C:
+        AnswerText: "Ignorerar beg\xE4ran och l\xE5ter kollegan hantera bokningen
+          sj\xE4lv."
+        AnswerType: 0
+      D:
+        AnswerText: "Kontrollerar f\xF6retagets generella m\xF6testider och bokar
+          in m\xF6tet enligt dessa riktlinjer."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #4"
+      A:
+        AnswerText: "F\xF6ljer f\xF6retagets procedurer f\xF6r att \xE5terst\xE4lla
+          l\xF6senord och guidar kunden genom processen."
+        AnswerType: 2
+      B:
+        AnswerText: "H\xE4nvisar dem till f\xF6retagets online-support eller sj\xE4lvbetj\xE4ningsalternativ."
+        AnswerType: 1
+      C:
+        AnswerText: "Ber kunden att komma till f\xF6retagets kontor personligen f\xF6r
+          att \xE5terst\xE4lla l\xF6senordet."
+        AnswerType: 0
+      D:
+        AnswerText: Guidar kunden genom processen.
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #5"
+      A:
+        AnswerText: "Kontrollerar andra hotell i n\xE4rheten och f\xF6rs\xF6ker boka
+          rum d\xE4r ist\xE4llet."
+        AnswerType: 2
+      B:
+        AnswerText: "Meddelar ditt f\xF6retag om situationen och ber om instruktioner
+          om hur du ska forts\xE4tta."
+        AnswerType: 1
+      C:
+        AnswerText: "F\xF6rs\xF6ker \xF6vertyga hotellet att g\xF6ra ett undantag
+          och ge er rum."
+        AnswerType: 1
+      D:
+        AnswerText: "L\xE5ter bli att boka hotellrum och hoppas p\xE5 att n\xE5gra
+          avbokningar kommer att g\xF6ras, s\xE5 att du kan boka senare."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #6"
+      A:
+        AnswerText: "F\xF6rklarar f\xF6r kunden att returperioden har passerat enligt
+          f\xF6retagets policy."
+        AnswerType: 1
+      B:
+        AnswerText: "Fr\xE5gar kunden om de har n\xE5gra s\xE4rskilda sk\xE4l eller
+          omst\xE4ndigheter som kan motivera en f\xF6rl\xE4ngning av returperioden."
+        AnswerType: 2
+      C:
+        AnswerText: "Erbjuder kunden alternativa l\xF6sningar, som reparation eller
+          utbyte av produkten."
+        AnswerType: 1
+      D:
+        AnswerText: "R\xE5dg\xF6r med en \xF6verordnad eller ansvarig f\xF6r att
+          se om det finns m\xF6jlighet att g\xF6ra ett undantag fr\xE5n returpolicyn."
+        AnswerType: 2
+    - QuestionNumber: "Fr\xE5ga #7"
+      A:
+        AnswerText: "Kontrollerar om det finns m\xF6jlighet att uppgradera till en
+          st\xF6rre konferenslokal och bokar om evenemanget om det \xE4r m\xF6jligt."
+        AnswerType: 2
+      B:
+        AnswerText: "Meddelar deltagarna att det inte finns tillr\xE4ckligt med plats
+          och ber om frivilliga avhopp."
+        AnswerType: 1
+      C:
+        AnswerText: "Hyr tillf\xE4lliga m\xF6bler f\xF6r att ut\xF6ka kapaciteten
+          i den befintliga konferenslokalen."
+        AnswerType: 1
+      D:
+        AnswerText: "Ordna med ett till\xE4ggsevenemang eller webbs\xE4ndning f\xF6r
+          dem som inte kan delta p\xE5 grund av kapacitetsbegr\xE4nsningen."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #8"
+      A:
+        AnswerText: "Ber om urs\xE4kt f\xF6r felet och lovar att \xE5terbetala kunden
+          s\xE5 snart som m\xF6jligt."
+        AnswerType: 2
+      B:
+        AnswerText: "Ber kunden att skicka in bevis p\xE5 dubbelfaktureringen f\xF6r
+          att verifiera p\xE5st\xE5endet innan \xE5terbetalningen kan behandlas."
+        AnswerType: 0
+      C:
+        AnswerText: "F\xF6rs\xF6ker \xF6vertala kunden att beh\xE5lla den extra faktureringen
+          som en kredit f\xF6r framtida k\xF6p."
+        AnswerType: 1
+      D:
+        AnswerText: "F\xF6rnekar att det har skett en dubbelfakturering och h\xE4vdar
+          att kunden har felaktiga uppgifter."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #9"
+      A:
+        AnswerText: "Kontrollerar systemets status och f\xF6rs\xF6ker fels\xF6ka
+          problemet."
+        AnswerType: 1
+      B:
+        AnswerText: "Meddelar din chef om problemet och f\xF6resl\xE5r att anv\xE4nda
+          en alternativ metod f\xF6r att skapa fakturorna."
+        AnswerType: 2
+      C:
+        AnswerText: Kontaktar supporten.
+        AnswerType: 1
+      D:
+        AnswerText: "V\xE4ntar tills faktureringsprogrammet \xE4r ig\xE5ng igen och
+          skickar fakturorna vid ett senare tillf\xE4lle."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #10"
+      A:
+        AnswerText: "Ber om urs\xE4kt f\xF6r din brist p\xE5 kunskap och erbjuder
+          att unders\xF6ka fr\xE5gan och \xE5terkomma till kunden s\xE5 snart du
+          har mer information."
+        AnswerType: 2
+      B:
+        AnswerText: "F\xF6rs\xF6ker guida kunden genom att anv\xE4nda produktens
+          anv\xE4ndarhandbok eller online-supportresurser."
+        AnswerType: 1
+      C:
+        AnswerText: "Ber kunden att kontakta tillverkarens supportdirekt f\xF6r att
+          f\xE5 mer specifik hj\xE4lp."
+        AnswerType: 1
+      D:
+        AnswerText: "Kopplar \xF6ver samtalet till en kollega eller \xF6verordnad
+          som har mer erfarenhet av produkten."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #11"
+      A:
+        AnswerText: "S\xF6ker snabbt efter alternativa festlokaler och bokar om evenemanget
+          p\xE5 en l\xE4mplig plats."
+        AnswerType: 2
+      B:
+        AnswerText: "Meddelar deltagarna om \xE4ndringen och ber om deras f\xF6rst\xE5else
+          och flexibilitet."
+        AnswerType: 1
+      C:
+        AnswerText: "F\xF6rs\xF6ker \xF6vertala lokalens \xE4gare att \xE4nd\xE5
+          till\xE5ta att festen h\xE5lls d\xE4r."
+        AnswerType: 1
+      D:
+        AnswerText: "St\xE4ller in festen helt och letar efter en ny tidpunkt f\xF6r
+          att arrangera den."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #12"
+      A:
+        AnswerText: "F\xF6rklarar f\xF6r kunden att skador som orsakats av kunden
+          inte t\xE4cks av garantin och erbjuder inte en ers\xE4ttning."
+        AnswerType: 1
+      B:
+        AnswerText: "Fr\xE5gar kunden om de har n\xE5gon form av f\xF6rs\xE4kring
+          som kan t\xE4cka skadan och h\xE4nvisar dem till deras f\xF6rs\xE4kringsgivare."
+        AnswerType: 1
+      C:
+        AnswerText: "Erbjuder kunden ett rabatterat pris p\xE5 en ny produkt som
+          en gest av god vilja."
+        AnswerType: 1
+      D:
+        AnswerText: "R\xE5dg\xF6r med en \xF6verordnad eller ansvarig f\xF6r att
+          se om det finns m\xF6jlighet att g\xF6ra ett undantag fr\xE5n garantipolicyn."
+        AnswerType: 2
+    - QuestionNumber: "Fr\xE5ga #13"
+      A:
+        AnswerText: "Kontrollerar med den anst\xE4llda f\xF6r att f\xE5 mer detaljer
+          om deras kostrestriktioner och anv\xE4nder den informationen f\xF6r att
+          planera m\xE5ltiderna under resan."
+        AnswerType: 2
+      B:
+        AnswerText: "R\xE5dg\xF6r med en dietist eller nutritionist f\xF6r att f\xE5
+          rekommendationer om l\xE4mpliga m\xE5ltider f\xF6r den anst\xE4llda."
+        AnswerType: 1
+      C:
+        AnswerText: "Ignorerar de speciella kostrestriktionerna och planerar m\xE5ltiderna
+          enligt den generella menyn."
+        AnswerType: 0
+      D:
+        AnswerText: "Ber den anst\xE4llda att ta hand om sina egna m\xE5ltider under
+          resan."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #14"
+      A:
+        AnswerText: "Kontakta de ber\xF6rda personerna och f\xF6rs\xF6ka f\xF6rhandla
+          fram en l\xF6sning f\xF6r att \xE4ndra sina scheman s\xE5 att de kan n\xE4rvara
+          vid m\xF6tet."
+        AnswerType: 2
+      B:
+        AnswerText: "Diskutera med f\xF6retagets VD eller \xF6verordnade f\xF6r att
+          besluta om en ny tidpunkt f\xF6r m\xF6tet som fungerar f\xF6r alla."
+        AnswerType: 1
+      C:
+        AnswerText: "Dela upp m\xF6tet i tv\xE5 mindre m\xF6ten f\xF6r att ge m\xF6jlighet
+          f\xF6r de ber\xF6rda personerna att delta vid olika tillf\xE4llen."
+        AnswerType: 1
+      D:
+        AnswerText: "Be de ber\xF6rda personerna att utse representanter som kan
+          n\xE4rvara vid m\xF6tet ist\xE4llet f\xF6r dem."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #15"
+      A:
+        AnswerText: "Informerar kunden om att de beh\xF6ver tillhandah\xE5lla ytterligare
+          verifieringsdokument f\xF6r att \xE5terst\xE4lla sitt l\xF6senord."
+        AnswerType: 1
+      B:
+        AnswerText: "Kontrollerar om det finns alternativa autentiseringsmetoder
+          tillg\xE4ngliga, som exempelvis anv\xE4ndning av tv\xE5faktorsautentisering
+          eller verifiering via e-post eller telefon."
+        AnswerType: 2
+      C:
+        AnswerText: "H\xE4nvisar kunden till en specialiserad supportavdelning eller
+          teknisk expert som kan hj\xE4lpa till med att \xE5terst\xE4lla l\xF6senordsinformationen."
+        AnswerType: 1
+      D:
+        AnswerText: "Erbjuder kunden m\xF6jligheten att skapa ett nytt konto och
+          f\xF6rlora \xE5tkomst till eventuell tidigare information som var kopplad
+          till det gamla kontot."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #16"
+      A:
+        AnswerText: "Utformar utbildningen med olika inl\xE4rningsstilar i \xE5tanke
+          genom att inkludera en mix av visuella, auditiva och praktiska element."
+        AnswerType: 2
+      B:
+        AnswerText: "Fr\xE5gar de anst\xE4llda direkt om deras inl\xE4rningspreferenser
+          och anpassar utbildningen efter deras individuella behov."
+        AnswerType: 1
+      C:
+        AnswerText: "Anv\xE4nder en standardiserad utbildningsmetod och f\xF6rv\xE4ntar
+          dig att de anst\xE4llda anpassar sig efter den."
+        AnswerType: 1
+      D:
+        AnswerText: "Tar hj\xE4lp av en specialist som kan hj\xE4lpa mig att skr\xE4ddarsy
+          ett utbildningsmaterial."
+        AnswerType: 1
+    - QuestionNumber: "Fr\xE5ga #17"
+      A:
+        AnswerText: "Identifierar omr\xE5den d\xE4r kostnaderna kan minskas, som
+          exempelvis genom att f\xF6rhandla om l\xE4gre priser med leverant\xF6rer
+          eller genom att minska antalet deltagare."
+        AnswerType: 0
+      B:
+        AnswerText: "Diskuterar situationen med f\xF6retagets ledning och ber om
+          r\xE5d om hur man ska hantera budget\xF6verskridningen."
+        AnswerType: 0
+      C:
+        AnswerText: "Informerar deltagarna om den \xF6verskridna budgeten, och ber
+          om deras f\xF6rst\xE5else och samarbete f\xF6r att minska kostnaderna."
+        AnswerType: 0
+      D:
+        AnswerText: "Avbokar konferensen helt och letar efter alternativa, billigare
+          s\xE4tt att dela den information som skulle ha presenterats p\xE5 konferensen."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #18"
+      A:
+        AnswerText: "F\xF6rblir lugn och professionell under samtalet och l\xE5ter
+          kunden ventilera sina k\xE4nslor utan att avbryta."
+        AnswerType: 0
+      B:
+        AnswerText: "Ber kunden att s\xE4nka r\xF6sten och kommunicera p\xE5 ett
+          respektfullt s\xE4tt f\xF6r att kunna hj\xE4lpa dem p\xE5 b\xE4sta m\xF6jliga
+          s\xE4tt."
+        AnswerType: 0
+      C:
+        AnswerText: "Erbjuder en uppriktig urs\xE4kt f\xF6r den tidigare d\xE5liga
+          kundtj\xE4nstupplevelsen och f\xF6rs\xE4krar kunden om att du kommer att
+          g\xF6ra ditt b\xE4sta f\xF6r att l\xF6sa problemet."
+        AnswerType: 0
+      D:
+        AnswerText: "Kopplar \xF6ver samtalet till en \xF6verordnad eller ansvarig
+          om kunden forts\xE4tter att vara aggressiv."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #19"
+      A:
+        AnswerText: "Svarar snabbt och professionellt p\xE5 klagom\xE5let och f\xF6rs\xF6ker
+          l\xF6sa kundens problem eller oro."
+        AnswerType: 0
+      B:
+        AnswerText: "Tar bort klagom\xE5let fr\xE5n sidan f\xF6r att undvika negativ
+          exponering f\xF6r f\xF6retaget."
+        AnswerType: 0
+      C:
+        AnswerText: "Ignorerar klagom\xE5let och hoppas att det f\xF6rsvinner av
+          sig sj\xE4lvt."
+        AnswerType: 0
+      D:
+        AnswerText: "Ber kunden att kontakta f\xF6retagets kundtj\xE4nst via telefon
+          eller e-post f\xF6r att diskutera detta vidare.\_"
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #20"
+      A:
+        AnswerText: "R\xE4tten till information och transparens."
+        AnswerType: 0
+      B:
+        AnswerText: "Principen om \xE4ndam\xE5lsbegr\xE4nsning - att personuppgifter
+          endast f\xE5r samlas in f\xF6r specifika, tydligt definierade \xE4ndam\xE5l."
+        AnswerType: 0
+      C:
+        AnswerText: "R\xE4tten till radering (r\xE4tten att bli bortgl\xF6md) - att
+          kunna beg\xE4ra att ens personuppgifter tas bort fr\xE5n register."
+        AnswerType: 0
+      D:
+        AnswerText: "Principen om dataminimering - att endast samla in de n\xF6dv\xE4ndiga
+          personuppgifterna f\xF6r att uppn\xE5 det avsedda \xE4ndam\xE5let."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #21"
+      A:
+        AnswerText: "Samtycke enligt GDPR inneb\xE4r att en individ ger sitt frivilliga
+          och informerade godk\xE4nnande f\xF6r att behandla sina personuppgifter."
+        AnswerType: 0
+      B:
+        AnswerText: "Enligt GDPR \xE4r samtycke en uttrycklig och specifik handling
+          d\xE4r en individ ger tillst\xE5nd till att deras personuppgifter behandlas
+          f\xF6r ett specifikt \xE4ndam\xE5l."
+        AnswerType: 0
+      C:
+        AnswerText: "Samtycke enligt GDPR kr\xE4ver att det \xE4r tydligt och l\xE4tt
+          att dra tillbaka. En individ har r\xE4tt att n\xE4r som helst \xE5terkalla
+          sitt samtycke och beg\xE4ra att deras personuppgifter inte l\xE4ngre behandlas."
+        AnswerType: 0
+      D:
+        AnswerText: "Enligt GDPR inneb\xE4r samtycke att det m\xE5ste vara fritt
+          och informerat. Det betyder att individen m\xE5ste ha tillr\xE4cklig information
+          om vilka personuppgifter som kommer att behandlas, \xE4ndam\xE5let med
+          behandlingen och eventuella konsekvenser."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #22"
+      A:
+        AnswerText: "Implementera l\xE4mpliga tekniska och organisatoriska \xE5tg\xE4rder
+          f\xF6r att s\xE4kerst\xE4lla dataintegritet och konfidentialitet."
+        AnswerType: 0
+      B:
+        AnswerText: "Genomf\xF6ra regelbundna s\xE4kerhetsutv\xE4rderingar och riskbed\xF6mningar
+          f\xF6r att identifiera och hantera eventuella s\xE4kerhetsrisker."
+        AnswerType: 0
+      C:
+        AnswerText: "Utbilda och medvetandeg\xF6ra personalen om dataskyddslagar
+          och regler f\xF6r att s\xE4kerst\xE4lla korrekt hantering av personuppgifter."
+        AnswerType: 0
+      D:
+        AnswerText: "Anv\xE4nda pseudonymisering och kryptering av personuppgifter
+          n\xE4r det \xE4r m\xF6jligt."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #23"
+      A:
+        AnswerText: "En personuppgiftsincident enligt GDPR \xE4r en s\xE4kerhetsincident
+          som leder till oavsiktlig eller olaglig f\xF6rst\xF6relse, f\xF6rlust,
+          \xE4ndring, obeh\xF6rig \xE5tkomst eller spridning av personuppgifter."
+        AnswerType: 0
+      B:
+        AnswerText: "En personuppgiftsincident enligt GDPR \xE4r en h\xE4ndelse som
+          kan inneb\xE4ra risk f\xF6r de registrerades r\xE4ttigheter och friheter
+          p\xE5 grund av oavsiktlig eller olaglig behandling av deras personuppgifter."
+        AnswerType: 0
+      C:
+        AnswerText: "En personuppgiftsincident enligt GDPR \xE4r en incident d\xE4r
+          personuppgifter p\xE5 ett oavsiktligt eller olagligt s\xE4tt har blivit
+          f\xF6rst\xF6rda, f\xF6rlorade, \xE4ndrade, obeh\xF6rigt \xE5tkomna eller
+          spridda."
+        AnswerType: 0
+      D:
+        AnswerText: "En personuppgiftsincident enligt GDPR \xE4r en h\xE4ndelse som
+          kr\xE4ver \xE5tg\xE4rder f\xF6r att skydda de registrerades r\xE4ttigheter
+          och friheter samt f\xF6rhindra eller minimera eventuella negativa konsekvenser."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #24"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #25"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #26"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #27"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #28"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #29"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #30"
+      A:
+        AnswerText: 
+        AnswerType: 0
+      B:
+        AnswerText: 
+        AnswerType: 0
+      C:
+        AnswerText: 
+        AnswerType: 0
+      D:
+        AnswerText: 
+        AnswerType: 0
+  - CategoryName: 23
+    Description: 30 Situation-based questions about Housekeeping And Home Cleaning
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      A:
+        AnswerText: "Allreng\xF6ring."
+        AnswerType: 0
+      B:
+        AnswerText: Diskmedel.
+        AnswerType: 0
+      C:
+        AnswerText: "\xC4ttika."
+        AnswerType: 0
+      D:
+        AnswerText: "Glasreng\xF6ring."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #2"
+      A:
+        AnswerText: "F\xF6r att f\xF6rhindra allergier och f\xF6rb\xE4ttra inomhusluftens
+          kvalitet."
+        AnswerType: 0
+      B:
+        AnswerText: "F\xF6r att h\xE5lla ytan ren och fri fr\xE5n damm och smuts."
+        AnswerType: 0
+      C:
+        AnswerText: "F\xF6r att f\xF6rl\xE4nga mattors och m\xF6blers livsl\xE4ngd."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #3"
+      A:
+        AnswerText: "De absorberar mer smuts och v\xE4tska \xE4n vanliga trasor."
+        AnswerType: 0
+      B:
+        AnswerText: "De minskar risken f\xF6r repor p\xE5 ytor."
+        AnswerType: 0
+      C:
+        AnswerText: "De kan \xE5teranv\xE4ndas och tv\xE4ttas m\xE5nga g\xE5nger."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #4"
+      A:
+        AnswerText: "Anv\xE4nda varmt vatten och tv\xE5l."
+        AnswerType: 0
+      B:
+        AnswerText: "Skrubba fl\xE4cken med en borste."
+        AnswerType: 0
+      C:
+        AnswerText: "Anv\xE4nda en fl\xE4ckborttagningsprodukt."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #5"
+      A:
+        AnswerText: "Underh\xE5llsst\xE4dning."
+        AnswerType: 0
+      B:
+        AnswerText: "Grundlig st\xE4dning."
+        AnswerType: 0
+      C:
+        AnswerText: "Flyttst\xE4dning."
+        AnswerType: 0
+      D:
+        AnswerText: "Daglig st\xE4dning."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #6"
+      A:
+        AnswerText: "Reng\xF6ra och desinficera diskb\xE4nken regelbundet."
+        AnswerType: 0
+      B:
+        AnswerText: Avfetta spis och ugn.
+        AnswerType: 0
+      C:
+        AnswerText: "Reng\xF6ra kylsk\xE5pet b\xE5de inv\xE4ndigt och utv\xE4ndigt."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #7"
+      A:
+        AnswerText: "F\xF6r att minska risken f\xF6r allergier och irritation p\xE5
+          huden."
+        AnswerType: 0
+      B:
+        AnswerText: "F\xF6r att minska negativ p\xE5verkan p\xE5 milj\xF6n."
+        AnswerType: 0
+      C:
+        AnswerText: "F\xF6r att f\xF6rhindra skador p\xE5 ytor och material."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #8"
+      A:
+        AnswerText: "Anv\xE4nda en dammtrasa."
+        AnswerType: 0
+      B:
+        AnswerText: "Anv\xE4nda en f\xF6rl\xE4ngbar dammtrasa eller dammsugare med
+          f\xF6rl\xE4ngningsslang."
+        AnswerType: 0
+      C:
+        AnswerText: "Anv\xE4nda en bl\xE5sb\xE4lg f\xF6r att bl\xE5sa bort dammet."
+        AnswerType: 0
+      D:
+        AnswerText: "Anv\xE4nda en fuktig trasa och reng\xF6ringsmedel."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #9"
+      A:
+        AnswerText: "Reng\xF6ra toalettstolen och toalettstolens omgivning."
+        AnswerType: 0
+      B:
+        AnswerText: "Reng\xF6ra badkaret eller duschkabinen."
+        AnswerType: 0
+      C:
+        AnswerText: "Reng\xF6ra handfatet och spegeln."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #10"
+      A:
+        AnswerText: Se till att det finns god ventilation och luftcirkulation.
+        AnswerType: 0
+      B:
+        AnswerText: "H\xE5lla bostaden torr genom att torka upp eventuell fukt eller
+          vattenl\xE4ckage."
+        AnswerType: 0
+      C:
+        AnswerText: "Reng\xF6ra och torka av ytor regelbundet."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #11"
+      A:
+        AnswerText: "Mopp med mikrofiberduk och tr\xE4golvreng\xF6ringsmedel."
+        AnswerType: 0
+      B:
+        AnswerText: "Dammsugare med tr\xE4golvstillbeh\xF6r och allreng\xF6ring."
+        AnswerType: 0
+      C:
+        AnswerText: "V\xE5tmopp och \xE4ttika utsp\xE4dd i vatten."
+        AnswerType: 0
+      D:
+        AnswerText: Torka golvet med en fuktig trasa och diskmedel.
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #12"
+      A:
+        AnswerText: Spraya ytan med desinfektionsmedel och torka av med en pappershandduk.
+        AnswerType: 0
+      B:
+        AnswerText: "Anv\xE4nda en toalettborste och reng\xF6ringsmedel f\xF6r att
+          skrubba b\xE5de in- och utsidan."
+        AnswerType: 0
+      C:
+        AnswerText: "Torka av toalettstolen med en fuktig trasa och allreng\xF6ring."
+        AnswerType: 0
+      D:
+        AnswerText: "Sk\xF6lj toalettstolen med vatten och anv\xE4nd en mikrofiberduk
+          f\xF6r att torka av ytan. "
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #13"
+      A:
+        AnswerText: "Anv\xE4nda en fl\xE4ckborttagningsprodukt och f\xF6lj instruktionerna."
+        AnswerType: 0
+      B:
+        AnswerText: "Skrubba fl\xE4cken med en borste och varmt vatten."
+        AnswerType: 0
+      C:
+        AnswerText: "Anv\xE4nda en \xE5ngtv\xE4ttmaskin f\xF6r att l\xF6sa upp och
+          suga upp fl\xE4cken."
+        AnswerType: 0
+      D:
+        AnswerText: "Kontakta en professionell mattreng\xF6ringstj\xE4nst f\xF6r
+          att f\xE5 hj\xE4lp."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #14"
+      A:
+        AnswerText: "Informera omedelbart ansvarig personal eller fastighets\xE4gare
+          om problemet."
+        AnswerType: 0
+      B:
+        AnswerText: "Anv\xE4nda ett m\xF6geltv\xE4ttmedel och noggrant reng\xF6ra
+          de drabbade omr\xE5dena."
+        AnswerType: 0
+      C:
+        AnswerText: "Se till att badrummet \xE4r ordentligt ventilerat f\xF6r att
+          minska fuktigheten."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #15"
+      A:
+        AnswerText: "Dela upp st\xE4dningen i mindre uppgifter och arbeta systematiskt."
+        AnswerType: 0
+      B:
+        AnswerText: "Ta bort stora f\xF6rem\xE5l och sortera dem innan du b\xF6rjar
+          st\xE4da."
+        AnswerType: 0
+      C:
+        AnswerText: "Anv\xE4nda l\xE4mpliga reng\xF6ringsmedel och redskap f\xF6r
+          att reng\xF6ra smutsiga ytor."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #16"
+      A:
+        AnswerText: "Anv\xE4nda skyddshandskar och f\xF6rsiktigt ta bort glasbitarna."
+        AnswerType: 0
+      B:
+        AnswerText: Sopa upp glasbitarna noggrant med en sopborste och sopskyffel.
+        AnswerType: 0
+      C:
+        AnswerText: "Anv\xE4nda en luddfri trasa och reng\xF6ringsmedel f\xF6r att
+          reng\xF6ra omr\xE5det."
+        AnswerType: 0
+      D:
+        AnswerText: "Informera ansvarig personal eller fastighets\xE4gare om h\xE4ndelsen."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #17"
+      A:
+        AnswerText: "Prioritera uppgifterna baserat p\xE5 deras tidskrav."
+        AnswerType: 0
+      B:
+        AnswerText: "Anv\xE4nda tidsschema och st\xE4dkontroller f\xF6r att f\xF6lja
+          upp arbetet."
+        AnswerType: 0
+      C:
+        AnswerText: "H\xE5lla redskap och reng\xF6ringsmedel i ordning f\xF6r enkel
+          \xE5tkomst."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #18"
+      A:
+        AnswerText: "Anv\xE4nda personlig skyddsutrustning som handskar och skyddsglas\xF6gon
+          vid behov."
+        AnswerType: 0
+      B:
+        AnswerText: "Var uppm\xE4rksam p\xE5 farliga ytor, som hala golv eller utstickande
+          f\xF6rem\xE5l."
+        AnswerType: 0
+      C:
+        AnswerText: "F\xF6lja instruktioner f\xF6r anv\xE4ndning av reng\xF6ringsmedel
+          och kemikalier."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #19"
+      A:
+        AnswerText: "Kontakta en expert inom m\xF6belreng\xF6ring f\xF6r r\xE5d och
+          v\xE4gledning."
+        AnswerType: 0
+      B:
+        AnswerText: "Testa f\xF6rsiktigt en mild reng\xF6ringsteknik p\xE5 en liten,
+          dold yta."
+        AnswerType: 0
+      C:
+        AnswerText: "Anv\xE4nda specialiserade reng\xF6ringsprodukter som \xE4r avsedda
+          f\xF6r k\xE4nsliga ytor."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #20"
+      A:
+        AnswerText: "H\xE5lla redskapen ordentligt rengjorda och organiserade efter
+          anv\xE4ndning."
+        AnswerType: 0
+      B:
+        AnswerText: "F\xF6rvara reng\xF6ringsmedel och kemikalier p\xE5 en s\xE4ker
+          plats, utom r\xE4ckh\xE5ll f\xF6r barn."
+        AnswerType: 0
+      C:
+        AnswerText: "Byta ut slitna eller trasiga redskap och se till att de \xE4r
+          i gott skick."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #21"
+      A:
+        AnswerText: "Anv\xE4nda en ugnsspray och torka av med en trasa."
+        AnswerType: 0
+      B:
+        AnswerText: "Skrubba med en st\xE5lullssvamp och varmt vatten."
+        AnswerType: 0
+      C:
+        AnswerText: "Anv\xE4nda en pasta av bikarbonat och vatten och skrubba av
+          med en trasa."
+        AnswerType: 0
+      D:
+        AnswerText: "Anv\xE4nda en h\xF6gtryckstv\xE4tt f\xF6r att spola bort matresterna."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #22"
+      A:
+        AnswerText: "Anv\xE4nda en m\xF6geltv\xE4ttmedel och skrubba bort m\xF6glet."
+        AnswerType: 0
+      B:
+        AnswerText: "M\xE5la \xF6ver m\xF6glet med en antim\xF6gelprimer."
+        AnswerType: 0
+      C:
+        AnswerText: "Kontakta en expert p\xE5 m\xF6gelavl\xE4gsnande f\xF6r professionell
+          hj\xE4lp. "
+        AnswerType: 0
+      D:
+        AnswerText: "F\xF6rs\xF6ka torka bort m\xF6glet med en fuktig trasa."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #23"
+      A:
+        AnswerText: "Anv\xE4nda en rostfri st\xE5lspray och torka av med en trasa."
+        AnswerType: 0
+      B:
+        AnswerText: "Skrubba ytan med st\xE5lull och vatten."
+        AnswerType: 0
+      C:
+        AnswerText: "Anv\xE4nda en specialiserad rostfri st\xE5lputs och polera ytan
+          med en trasa."
+        AnswerType: 0
+      D:
+        AnswerText: Torka av ytan med en fuktig trasa och diskmedel.
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #24"
+      A:
+        AnswerText: "Torka omedelbart upp med en fuktig trasa och sk\xF6lj ytan noggrant
+          med vatten."
+        AnswerType: 0
+      B:
+        AnswerText: "Anv\xE4nda en speciell reng\xF6ringsprodukt som \xE4r avsedd
+          f\xF6r tr\xE4ytor."
+        AnswerType: 0
+      C:
+        AnswerText: "Kontakta en expert inom m\xF6belreng\xF6ring f\xF6r att f\xE5
+          r\xE5d om hur man tar bort fl\xE4cken."
+        AnswerType: 0
+      D:
+        AnswerText: "Torka av ytan med en torr trasa och hoppas att fl\xE4cken f\xF6rsvinner."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #25"
+      A:
+        AnswerText: "Placera en sk\xE5l med vatten och citron i mikrov\xE5gsugnen
+          och koka i n\xE5gra minuter."
+        AnswerType: 0
+      B:
+        AnswerText: "Anv\xE4nda en mikrov\xE5gsugnsreng\xF6ringsspray och torka av
+          med en trasa."
+        AnswerType: 0
+      C:
+        AnswerText: Torka av insidan med en fuktig trasa och diskmedel.
+        AnswerType: 0
+      D:
+        AnswerText: "Anv\xE4nda en \xE5ngtv\xE4ttmaskin f\xF6r att reng\xF6ra och
+          desinficera mikrov\xE5gsugnen."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #26"
+      A:
+        AnswerText: "St\xE4da av med en dammsugare och anv\xE4nda en madrassreng\xF6ringsspray."
+        AnswerType: 0
+      B:
+        AnswerText: "Spraya madrassen med en desinfektionsspray och l\xE5ta den lufttorka."
+        AnswerType: 0
+      C:
+        AnswerText: "Anv\xE4nda en \xE5ngtv\xE4ttmaskin f\xF6r att reng\xF6ra och
+          desinficera madrassen."
+        AnswerType: 0
+      D:
+        AnswerText: "Torka av madrassen med en fuktig trasa och reng\xF6ringsmedel."
+        AnswerType: 0
+  - CategoryName: 24
+    Description: 20 Situation-based questions about Production and Fitter
+    CategoryIsActive: 0
+    m_Answers:
+    - QuestionNumber: "Fr\xE5ga #1"
+      A:
+        AnswerText: Skiftnyckel.
+        AnswerType: 0
+      B:
+        AnswerText: Hylsnyckel.
+        AnswerType: 0
+      C:
+        AnswerText: Skruvmejsel.
+        AnswerType: 0
+      D:
+        AnswerText: "T\xE4nger."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #2"
+      A:
+        AnswerText: "F\xF6r att skydda \xF6gonen mot skadliga partiklar och \xE4mnen."
+        AnswerType: 0
+      B:
+        AnswerText: "F\xF6r att f\xF6rb\xE4ttra synligheten och precisionen vid arbete."
+        AnswerType: 0
+      C:
+        AnswerText: "F\xF6r att minska risken f\xF6r \xF6gonskador vid olyckor."
+        AnswerType: 0
+      D:
+        AnswerText: "F\xF6r att f\xF6lja arbetsmilj\xF6lagstiftningen."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #3"
+      A:
+        AnswerText: Gummi.
+        AnswerType: 0
+      B:
+        AnswerText: Plast.
+        AnswerType: 0
+      C:
+        AnswerText: Aluminiumfolie.
+        AnswerType: 0
+      D:
+        AnswerText: "Koppartr\xE5d."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #4"
+      A:
+        AnswerText: "Bands\xE5g."
+        AnswerType: 0
+      B:
+        AnswerText: "Cirkels\xE5g."
+        AnswerType: 0
+      C:
+        AnswerText: "B\xE4nkslip."
+        AnswerType: 0
+      D:
+        AnswerText: Borrmaskin.
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #5"
+      A:
+        AnswerText: "F\xF6r att s\xE4kerst\xE4lla att produkterna uppfyller kvalitetsstandarder
+          och specifikationer."
+        AnswerType: 0
+      B:
+        AnswerText: "F\xF6r att minska risken f\xF6r defekta produkter och reklamationer."
+        AnswerType: 0
+      C:
+        AnswerText: "F\xF6r att s\xE4kerst\xE4lla att produktionsprocessen \xE4r
+          effektiv och optimerad."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #6"
+      A:
+        AnswerText: Tumstock.
+        AnswerType: 0
+      B:
+        AnswerText: Linjal.
+        AnswerType: 0
+      C:
+        AnswerText: "M\xE4tband."
+        AnswerType: 0
+      D:
+        AnswerText: Vinkelhake.
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #7"
+      A:
+        AnswerText: Handskar.
+        AnswerType: 0
+      B:
+        AnswerText: "Skyddsglas\xF6gon."
+        AnswerType: 0
+      C:
+        AnswerText: Andningsskydd.
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #8"
+      A:
+        AnswerText: Kantpress.
+        AnswerType: 0
+      B:
+        AnswerText: Bandslip.
+        AnswerType: 0
+      C:
+        AnswerText: Svetsmaskin.
+        AnswerType: 0
+      D:
+        AnswerText: Slipmaskin.
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #9"
+      A:
+        AnswerText: God ventilation och luftkvalitet.
+        AnswerType: 0
+      B:
+        AnswerText: "S\xE4kerhetsskyltar och tydliga anvisningar."
+        AnswerType: 0
+      C:
+        AnswerText: "Ergonomiska arbetsst\xE4llningar och utrustning."
+        AnswerType: 0
+      D:
+        AnswerText: "Alla ovanst\xE5ende. "
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #10"
+      A:
+        AnswerText: Skiftnyckel.
+        AnswerType: 0
+      B:
+        AnswerText: Hylsnyckel.
+        AnswerType: 0
+      C:
+        AnswerText: Skruvmejsel.
+        AnswerType: 0
+      D:
+        AnswerText: "T\xE4nger."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #11"
+      A:
+        AnswerText: "Forts\xE4tt att packa produkten som vanligt."
+        AnswerType: 0
+      B:
+        AnswerText: "Rapportera defekten till din \xF6verordnade."
+        AnswerType: 0
+      C:
+        AnswerText: "F\xF6rs\xF6k fixa defekten sj\xE4lv."
+        AnswerType: 0
+      D:
+        AnswerText: "Ignorera defekten och forts\xE4tt arbeta."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #12"
+      A:
+        AnswerText: "Ignorera problemet och forts\xE4tt montera produkten."
+        AnswerType: 0
+      B:
+        AnswerText: "F\xF6rs\xF6k att forcera delen p\xE5 plats."
+        AnswerType: 0
+      C:
+        AnswerText: Kontrollera monteringsanvisningarna och dubbelkolla delens position.
+        AnswerType: 0
+      D:
+        AnswerText: "Be en kollega om hj\xE4lp utan att unders\xF6ka problemet n\xE4rmare."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #13"
+      A:
+        AnswerText: "Forts\xE4tt att k\xF6ra maskinen och hoppas att problemet l\xF6ser
+          sig."
+        AnswerType: 0
+      B:
+        AnswerText: "Stoppa maskinen och unders\xF6k problemet sj\xE4lv."
+        AnswerType: 0
+      C:
+        AnswerText: "Informera din \xF6verordnade om problemet och v\xE4nta p\xE5
+          instruktioner."
+        AnswerType: 0
+      D:
+        AnswerText: "Byt ut maskinen mot en annan utan att kontakta n\xE5gon."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #14"
+      A:
+        AnswerText: "Ignorera situationen och fokusera p\xE5 eget arbete."
+        AnswerType: 0
+      B:
+        AnswerText: "Informera din \xF6verordnade om situationen."
+        AnswerType: 0
+      C:
+        AnswerText: "Ropa \xE5t kollegan att anv\xE4nda skyddsutrustningen."
+        AnswerType: 0
+      D:
+        AnswerText: "Ta av egen skyddsutrustning f\xF6r att matcha kollegans beteende."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #15"
+      A:
+        AnswerText: "Slutf\xF6r kvalitetskontrollprocessen och l\xE4mna produkterna
+          som de \xE4r."
+        AnswerType: 0
+      B:
+        AnswerText: "Rapportera problemet till din \xF6verordnade och f\xF6resl\xE5
+          \xE5tg\xE4rder."
+        AnswerType: 0
+      C:
+        AnswerText: "G\xF6ra en snabb inspektion av produkterna utan att rapportera
+          problemet. "
+        AnswerType: 0
+      D:
+        AnswerText: "Kasta de defekta produkterna utan att informera n\xE5gon."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #16"
+      A:
+        AnswerText: "Forts\xE4tt anv\xE4nda de skadade f\xF6rpackningarna utan att
+          rapportera."
+        AnswerType: 0
+      B:
+        AnswerText: "Kasta de skadade f\xF6rpackningarna och anv\xE4nda de oskadade."
+        AnswerType: 0
+      C:
+        AnswerText: "Kontakta leverant\xF6ren och rapportera de skadade f\xF6rpackningarna."
+        AnswerType: 0
+      D:
+        AnswerText: "Anv\xE4nd de skadade f\xF6rpackningarna och informera din \xF6verordnade
+          efter\xE5t."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #17"
+      A:
+        AnswerText: "Forts\xE4tt att packa produkterna som vanligt och ignorera m\xE4rkningsfelet. "
+        AnswerType: 0
+      B:
+        AnswerText: "Ta bort eller t\xE4cka \xF6ver den felaktiga informationen p\xE5
+          produkterna."
+        AnswerType: 0
+      C:
+        AnswerText: "Rapportera felet till din \xF6verordnade och f\xF6resl\xE5 en
+          l\xF6sning."
+        AnswerType: 0
+      D:
+        AnswerText: "Skicka produkterna vidare med felaktig m\xE4rkning utan att
+          rapportera."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #18"
+      A:
+        AnswerText: "Be om att f\xE5 ett annat projekt som \xE4r enklare."
+        AnswerType: 0
+      B:
+        AnswerText: "S\xF6k efter handledning eller instruktioner f\xF6r att l\xE4ra
+          dig det nya projektet."
+        AnswerType: 0
+      C:
+        AnswerText: "Utf\xF6r projektet utan att s\xF6ka hj\xE4lp och hoppas p\xE5
+          det b\xE4sta."
+        AnswerType: 0
+      D:
+        AnswerText: "Be en kollega att utf\xF6ra projektet \xE5t dig."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #19"
+      A:
+        AnswerText: "Ignorera felet och forts\xE4tt anv\xE4nda fel f\xF6rpackningsmaterial."
+        AnswerType: 0
+      B:
+        AnswerText: "Byt ut f\xF6rpackningsmaterialet utan att informera n\xE5gon."
+        AnswerType: 0
+      C:
+        AnswerText: "Rapportera felet till din \xF6verordnade och be om r\xE4tt f\xF6rpackningsmaterial."
+        AnswerType: 0
+      D:
+        AnswerText: "Anv\xE4nd allt f\xF6rpackningsmaterial som finns tillg\xE4ngligt
+          oavsett om det \xE4r fel eller inte."
+        AnswerType: 0
+    - QuestionNumber: "Fr\xE5ga #20"
+      A:
+        AnswerText: "Forts\xE4tt anv\xE4nda maskinen och ignorera oj\xE4mnheten."
+        AnswerType: 0
+      B:
+        AnswerText: "F\xF6rs\xF6k att justera maskinen sj\xE4lv utan att s\xF6ka
+          hj\xE4lp."
+        AnswerType: 0
+      C:
+        AnswerText: Stoppa maskinen och rapportera problemet till teknisk support.
+        AnswerType: 0
+      D:
+        AnswerText: "Byt ut maskinen mot en annan utan att kontakta n\xE5gon."
+        AnswerType: 0
