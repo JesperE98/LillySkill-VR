@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.Timeline.AnimationPlayableAsset;
 
-namespace JespersCode
+namespace Jesper.Collection
 {
     public class ButtonCreator : MonoBehaviour
     {

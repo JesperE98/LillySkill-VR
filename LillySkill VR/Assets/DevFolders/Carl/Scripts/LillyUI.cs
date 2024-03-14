@@ -5,7 +5,7 @@ using TMPro;
 using System;
 using System.Linq;
 using Unity.VisualScripting;
-using JespersCode;
+using Jesper.Collection;
 using UnityEngine.Audio;
 
 namespace LillyCode
@@ -47,6 +47,7 @@ namespace LillyCode
         private GameManager gameManager;
         private void Awake()
         {
+            
             uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         }
@@ -72,7 +73,7 @@ namespace LillyCode
                 ShowHelpScreenInformation();
             }
 
-            if(gameManager.LillyIntro == false && gameManager.LillyOutro == false)
+            if(gameManager.LillyIntroDone == false && gameManager.LillyOutroDone == false)
             {
                 if (activeScreen == 2)
                 {
@@ -164,7 +165,7 @@ namespace LillyCode
         {
             informationScreenContent[activeScreen].isActive = false;
             lillyHelpScreen.SetActive(false);
-            gameManager.LillyIntro = true;
+            gameManager.LillyIntroDone = true;
         }
 
         /// <summary>

@@ -17,4 +17,4 @@ MonoBehaviour:
   mediumGraphicPreset: 0
   highGraphicPreset: 1
   playerHighScore: 0
-  loadedScene: 1
+  loadedScene: Main Menu
