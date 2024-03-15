@@ -16,10 +16,12 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private InterviewQuestionsListScriptableObject interviewQuestionList;
 
-    [SerializeField]
-    private List<object> _questions = new List<object>();
+    
     [SerializeField]
     protected List<string> _answerList = new List<string>();
+    [SerializeField]
+    private List<Categories> _questions = new List<Categories>();
+
     private int _playerScore = 0;
     private int _interviewerInterest = 2;
     private int _answerPageNumber = 1;
@@ -31,7 +33,23 @@ public class GameManager : MonoBehaviour
     private bool _interviewAreActive = false;
     private bool _informationPageActive = false;
 
+    private void Awake()
+    {
+        if (_gameSettings.LoadedScene == "Office")
+        {
+            Debug.Log("Starting for loop");
+            for (int i = 0; i < interviewQuestionList._questionCategories.Count; i++)
+            {
+                if (interviewQuestionList._questionCategories[i].CategoryIsActive == true)
+                {
+                    _questions.Add(interviewQuestionList._questionCategories[i]);
+                }
+                Debug.Log("Added: " + interviewQuestionList._questionCategories[i] + " to new list");
+            }
 
+            Debug.Log("For Loop done");
+        }
+    }
 
     /// <summary>
     /// Gets and sets int value to controll Interviewer NPC animations.
@@ -223,17 +241,5 @@ public class GameManager : MonoBehaviour
         AnswerList.Add(text);
     }
 
-    private void Start()
-    {
-        if(_gameSettings.LoadedScene == "Office")
-        {
-            for (int i = 0; i < interviewAnswersList.categories.Count; i++)
-            {
-                if (interviewQuestionList._questionCategories[i].CategoryIsActive == true)
-                {
-                    _questions.Add(interviewQuestionList._questionCategories[i]);
-                }
-            }
-        }
-    }
+
 }

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: GameSettingsData
   m_EditorClassIdentifier: 
   playerHighScore: 0
-  loadedScene: Main Menu
+  loadedScene: Office

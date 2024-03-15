@@ -18,10 +18,6 @@ namespace JespersCode
 
         private void Awake()
         {
-            if(_gameSettings.LoadedScene != "Tutorial")
-            {
-                _gameSettings.LoadedScene = "Main Menu";
-            }
 
             if (_gameSettings.LoadedScene != "Main Menu")
             {
