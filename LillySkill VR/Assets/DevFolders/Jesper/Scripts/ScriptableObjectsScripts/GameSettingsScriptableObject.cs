@@ -12,10 +12,11 @@ namespace Jesper.GameSettings.Data
     {
 
         public int playerHighScore;
-        public string loadedScene;
+        [SerializeField]
+        private string loadedScene;
 
         /// <summary>
-        /// Gets and sets int value for each individual scene and what Game mode it should be.
+        /// Gets and sets string value for each individual scene and what Game mode it should be.
         /// </summary>
         public string LoadedScene 
         { 

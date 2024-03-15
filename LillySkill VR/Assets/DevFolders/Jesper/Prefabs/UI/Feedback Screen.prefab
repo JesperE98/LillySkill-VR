@@ -632,8 +632,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a2a60407bb0b64d88977c7ba99750b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameSettings: {fileID: 0}
-  _feedbackText: {fileID: 0}
+  _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
+  _feedbackText: {fileID: 11400000, guid: 1084714e408af16469e0d428818b61bc, type: 2}
 --- !u!222 &6261518091210990788
 CanvasRenderer:
   m_ObjectHideFlags: 0
