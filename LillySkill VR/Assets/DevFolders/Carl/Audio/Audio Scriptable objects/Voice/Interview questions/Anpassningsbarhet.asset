@@ -13,52 +13,52 @@ MonoBehaviour:
   m_Name: Anpassningsbarhet
   m_EditorClassIdentifier: 
   sounds:
-  - name: 0
+  - name: Index 0
     clip: {fileID: 8300000, guid: 8c98488ee35d8c54fb1eaa966bdbd125, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 1
+  - name: Index 1
     clip: {fileID: 8300000, guid: d8ea8aa1250c26a4386ff836a218129e, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 2
+  - name: Index 2
     clip: {fileID: 8300000, guid: 23751c53cbee2b0478d3a120c2786a6a, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 3
+  - name: Index 3
     clip: {fileID: 8300000, guid: c0c978ed9d2350e4ab296a54ddaab956, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 4
+  - name: Index 4
     clip: {fileID: 8300000, guid: 4354dbe3559c6c041960bf002772caf6, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 5
+  - name: Index 5
     clip: {fileID: 8300000, guid: d8ceb211286e0394aa0e7f08951d5c2e, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 6
+  - name: Index 6
     clip: {fileID: 8300000, guid: 4ae8cc4f35007ec4688d739f53948ae0, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 7
+  - name: Index 7
     clip: {fileID: 8300000, guid: 400c18a192c1b344ea3a54d1dd0c76e1, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 8
+  - name: Index 8
     clip: {fileID: 8300000, guid: f6cdebe67818ce4428f7397fdfea48ab, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 9
+  - name: Index 9
     clip: {fileID: 8300000, guid: c1eaab5630105294aa827fa95ca2463f, type: 3}
     volume: 1
     spatialBlend: 0
