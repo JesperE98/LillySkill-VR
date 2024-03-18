@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
+  m_Name: Etik och integritet
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Index 0
+    clip: {fileID: 8300000, guid: 5e30fed333b6ed44cbd1f9fc3e1066d6, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 1
+    clip: {fileID: 8300000, guid: 4c1598b7eb90f0d4a8c7497f43035f79, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 2
+    clip: {fileID: 8300000, guid: f0c817350c7075a4eb7380cec950327c, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 3
+    clip: {fileID: 8300000, guid: f888eaaafd0d01e4baa2a453ed72e3d2, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 4
+    clip: {fileID: 8300000, guid: 1350dd82f5fbe984482354c57374ee63, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 5
+    clip: {fileID: 8300000, guid: 980e19b7cecd1cd4fab4838452783774, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 6
+    clip: {fileID: 8300000, guid: 65d8335b03329014eabacd2a534f7885, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 7
+    clip: {fileID: 8300000, guid: ef7a41f8b0603d34bb29f9c8db37b783, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 8
+    clip: {fileID: 8300000, guid: 72008d18dcaaa5b45a4f674da6c04e45, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 9
+    clip: {fileID: 8300000, guid: dd7ab43483df26d43a4c4c79971acc06, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
