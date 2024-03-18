@@ -13,102 +13,102 @@ MonoBehaviour:
   m_Name: "Defaultfr\xE5gor"
   m_EditorClassIdentifier: 
   sounds:
-  - name: 0
+  - name: Index 0
     clip: {fileID: 8300000, guid: 1fd74fb3df0522c438b0bfce393b2e50, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 1
+  - name: Index 1
     clip: {fileID: 8300000, guid: 7395184c4f59fff4a9e09fa258a42850, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 2
+  - name: Index 2
     clip: {fileID: 8300000, guid: 7f78f54fc950cc64399487f522625848, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 3
+  - name: Index 3
     clip: {fileID: 8300000, guid: c2358d167ebd2de4fa48a69f9c261866, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 4
+  - name: Index 4
     clip: {fileID: 8300000, guid: b5ecef52f428af2479540e56e9ec57c5, type: 3}
     volume: 0
     spatialBlend: 0
     loop: 0
-  - name: 5
+  - name: Index 5
     clip: {fileID: 8300000, guid: 914ece74a259108418b08c3af7af3a44, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 6
+  - name: Index 6
     clip: {fileID: 8300000, guid: 0d83eabcb79350244bcc3175ce9ef7d8, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 7
+  - name: Index 7
     clip: {fileID: 8300000, guid: 212e1e88f077c424787917c99220452e, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 8
+  - name: Index 8
     clip: {fileID: 8300000, guid: f96128434f8b4e741a95b977b341fdbe, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 9
+  - name: Index 9
     clip: {fileID: 8300000, guid: eaf15747861db2c44b8e6b163d9f0603, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 10
+  - name: Index 10
     clip: {fileID: 8300000, guid: b8d4b8f922741294e977a666a1b43f7f, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 11
+  - name: Index 11
     clip: {fileID: 8300000, guid: 338b8034f6060d841b343b8dd02116a1, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 12
+  - name: Index 12
     clip: {fileID: 8300000, guid: 19c005315edfb1a45b9447554969d58f, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 13
+  - name: Index 13
     clip: {fileID: 8300000, guid: a80050eb5aa2977478defad9db76a819, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 14
+  - name: Index 14
     clip: {fileID: 8300000, guid: bdd72cee143056244b087f390aebee03, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 15
+  - name: Index 15
     clip: {fileID: 8300000, guid: 36b90ce8f86586b43be057314b49c2fd, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 16
+  - name: Index 16
     clip: {fileID: 8300000, guid: 905013b461757964ca8f7d364007ce32, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 17
+  - name: Index 17
     clip: {fileID: 8300000, guid: a88e5f124cf4ca544a26454a85dec4c4, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 18
+  - name: Index 18
     clip: {fileID: 8300000, guid: bfa07010e203f674fa15e97c22608fc9, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
-  - name: 19
+  - name: Index 19
     clip: {fileID: 8300000, guid: 64cabfb599090174698688a92ced9975, type: 3}
     volume: 1
     spatialBlend: 0
