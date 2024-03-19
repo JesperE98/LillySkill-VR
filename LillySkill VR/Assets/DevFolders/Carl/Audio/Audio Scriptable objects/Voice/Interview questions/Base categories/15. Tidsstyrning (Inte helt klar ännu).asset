@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
-  m_Name: "Tidsstyrning (Inte helt klar \xE4nnu)"
+  m_Name: "15. Tidsstyrning (Inte helt klar \xE4nnu)"
   m_EditorClassIdentifier: 
   sounds:
   - name: Index 0
