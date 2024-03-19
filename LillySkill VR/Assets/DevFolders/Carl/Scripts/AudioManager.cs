@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource ambienceAudioSource;
 
     [SerializeField] private DefaultAudioScriptableObject sFXScriptableObject;
-    [SerializeField] private VoiceAudioScriptableObject voiceScriptableObject;
+    [SerializeField] private VoiceAudioDataBankScriptableObject voiceScriptableObject;
     [SerializeField] private DefaultAudioScriptableObject ambienceScriptableObject;
     [SerializeField] private GameSettingsScriptableObject m_GameSettings;
 
@@ -82,7 +82,10 @@ public class AudioManager : MonoBehaviour
             voiceAudioSource.spatialBlend = s.sounds[questionIndex].spatialBlend;
             voiceAudioSource.loop = s.sounds[questionIndex].loop;
 
-            voiceAudioSource.Play();
+            if (voiceAudioSource.clip != null)
+                voiceAudioSource.Play();
+            else
+                return;
         }
     }
 
