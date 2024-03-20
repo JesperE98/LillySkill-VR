@@ -10,13 +10,16 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
+    // References to the different audio sources used to play sounds
     [SerializeField] private AudioSource sFXAudioSource;
     [SerializeField] private AudioSource voiceAudioSource;
     [SerializeField] private AudioSource ambienceAudioSource;
 
+    // References to the different scriptable objects used to fetch sounds from
     [SerializeField] private DefaultAudioScriptableObject sFXScriptableObject;
     [SerializeField] private VoiceAudioDataBankScriptableObject voiceScriptableObject;
     [SerializeField] private DefaultAudioScriptableObject ambienceScriptableObject;
+
     [SerializeField] private GameSettingsScriptableObject m_GameSettings;
 
     private GameManager gameManager;
@@ -82,6 +85,7 @@ public class AudioManager : MonoBehaviour
             voiceAudioSource.spatialBlend = s.sounds[questionIndex].spatialBlend;
             voiceAudioSource.loop = s.sounds[questionIndex].loop;
 
+            // Allows the program to still run even if an audio clip is absent
             if (voiceAudioSource.clip != null)
                 voiceAudioSource.Play();
             else
