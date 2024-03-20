@@ -191,7 +191,6 @@ namespace LillyCode
             nextButtonGameObject.SetActive(false);
             closeButtonGameObject.SetActive(false);
         }
-
     }
 }
 
