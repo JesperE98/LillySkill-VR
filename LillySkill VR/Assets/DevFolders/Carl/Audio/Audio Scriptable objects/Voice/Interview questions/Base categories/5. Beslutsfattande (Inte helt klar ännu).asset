@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "5. Beslutsfattande (Inte helt klar \xE4nnu)"
   m_EditorClassIdentifier: 
   sounds:
-  - name: Index 0 (TOM
+  - name: Index 0 (TOM)
     clip: {fileID: 0}
     volume: 1
     spatialBlend: 0
