@@ -10,56 +10,56 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
-  m_Name: 19. Ledarskap
+  m_Name: "9. Kommunikationsf\xF6rm\xE5ga"
   m_EditorClassIdentifier: 
   sounds:
   - name: Index 0
-    clip: {fileID: 8300000, guid: aafa84891522f1746a8d02e59c42cf53, type: 3}
+    clip: {fileID: 8300000, guid: 9563307f0c739eb41be573af0e668d67, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
   - name: Index 1
-    clip: {fileID: 8300000, guid: cc4714f577527ad4589ba9b3f5f37e09, type: 3}
+    clip: {fileID: 8300000, guid: ccf5464ee9fbf6245acdfc5da4969a0d, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
   - name: Index 2
-    clip: {fileID: 8300000, guid: d413eae2ffced3f479cdcc36ee98d237, type: 3}
+    clip: {fileID: 8300000, guid: 16d631aff013b1c4faed2efd6bb7fb08, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
   - name: Index 3
-    clip: {fileID: 8300000, guid: 083c99294bd7e904db44faab46d22fff, type: 3}
+    clip: {fileID: 8300000, guid: cfc3988cc525a1f4692ea8a645afd6e6, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
   - name: Index 4
-    clip: {fileID: 8300000, guid: 79ba64ec6808b8d4fb74495ec7b8b8e2, type: 3}
+    clip: {fileID: 8300000, guid: 51b7f38bd305ac14494997aafaba0e21, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
   - name: Index 5
-    clip: {fileID: 8300000, guid: 70e927966051e9842a9f972d929e72fb, type: 3}
+    clip: {fileID: 8300000, guid: e200bd81923589e4b94bbebde81b089b, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
   - name: Index 6
-    clip: {fileID: 8300000, guid: 1f36e5fde50607647956145599c238ce, type: 3}
+    clip: {fileID: 8300000, guid: 408d00b5bacc5604a9354e16dc25bb00, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
   - name: Index 7
-    clip: {fileID: 8300000, guid: 23fe9251193c12742a170387108942dc, type: 3}
+    clip: {fileID: 8300000, guid: 611e078d999c37a4ba20482479037fea, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
   - name: Index 8
-    clip: {fileID: 8300000, guid: ded486636784bcd48820abd953be622d, type: 3}
+    clip: {fileID: 8300000, guid: 611e078d999c37a4ba20482479037fea, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
   - name: Index 9
-    clip: {fileID: 8300000, guid: 0718cc9ad817ef64e970e5774c0a0bb2, type: 3}
+    clip: {fileID: 8300000, guid: 70a2ac11136de4f41af6e35ecf198bed, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0

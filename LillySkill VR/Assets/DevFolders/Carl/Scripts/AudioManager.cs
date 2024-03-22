@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Audio;
 using Jesper.Collection;
@@ -85,11 +86,16 @@ public class AudioManager : MonoBehaviour
             voiceAudioSource.spatialBlend = s.sounds[questionIndex].spatialBlend;
             voiceAudioSource.loop = s.sounds[questionIndex].loop;
 
-            // Allows the program to still run even if an audio clip is absent
+            // If the respective audio clip to the question isn't found, a warning message is sent and
+            // aborts the function.
             if (voiceAudioSource.clip != null)
                 voiceAudioSource.Play();
             else
+            {
+                Debug.LogWarning("Ljudklippet hittas inte till denna fråga!");
                 return;
+            }
+                           
         }
     }
 
