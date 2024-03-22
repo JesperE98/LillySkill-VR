@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
+  m_Name: 15. Tidsplanering
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Index 0
+    clip: {fileID: 8300000, guid: 0ab72c6489106c74d82e51fb8cac79ce, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 1
+    clip: {fileID: 8300000, guid: e0144daee2c7b284a9bb92e8c6bf4f56, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 2
+    clip: {fileID: 8300000, guid: 68bac1b4d1af9bd45b4e32a231c4382c, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 3
+    clip: {fileID: 8300000, guid: a81eb0676f5f8254288f9df29a19f95f, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 4
+    clip: {fileID: 8300000, guid: 0508855e4b3a1744aa0583bf40720e06, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 5
+    clip: {fileID: 8300000, guid: f96ec9e8ba7d146449d7a3731bad0ce1, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 6
+    clip: {fileID: 8300000, guid: 32aa1db3e1dcc534b9a6e0f9437255e6, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 7
+    clip: {fileID: 8300000, guid: 23bab075cf4db564a8838e130cbfd4dd, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 8
+    clip: {fileID: 8300000, guid: 7fd7d96b052e9e641887fd6d0596b483, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 9
+    clip: {fileID: 8300000, guid: ca3dec3033e38844199f00650b5e19fd, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 10
+    clip: {fileID: 8300000, guid: 67bfc95e971a61e439e2c73b781e4467, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 11
+    clip: {fileID: 8300000, guid: 7e2a97239da057b43835a9feebb44c05, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 12
+    clip: {fileID: 8300000, guid: 28b7c83b4751200469f6fb897e48a46d, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 13
+    clip: {fileID: 8300000, guid: 0b721eb30cfa69c4cae20498c0f497bb, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
+  - name: Index 14
+    clip: {fileID: 8300000, guid: b08078adf03a05b42ad9b3c7a9cd9986, type: 3}
+    volume: 1
+    spatialBlend: 0
+    loop: 0
