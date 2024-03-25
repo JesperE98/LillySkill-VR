@@ -77,9 +77,6 @@ namespace Jesper.Collection
         {
             _gameManager._questionsAndAnswersCopy[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].QuestionAsked = true;
 
-            _gameManager.GetRandomListIndex();
-            _gameManager.GetRandomSubListIndex();
-
             if (_gameManager._questionsAndAnswersCopy[_gameManager.RandomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Regular)
             {
                 switch (selectedAnswer)
@@ -161,10 +158,13 @@ namespace Jesper.Collection
                 obj.SetActive(false);
             }
 
+            _gameManager.GetRandomListIndex();
+            _gameManager.GetRandomSubListIndex();
 
             _gameManager.AnswerPageNumber++;
             selectedAnswer = SelectedAnswer.None;
             _gameManager.WaitForAnswer = false;
+            //_gameManager.CheckAllAnswers();
             _uiManager.StartUIDeactivation();
         }
 
