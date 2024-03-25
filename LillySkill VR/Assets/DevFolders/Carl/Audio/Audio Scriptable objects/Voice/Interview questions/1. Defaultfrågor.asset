@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Index 0
-    clip: {fileID: 8300000, guid: 1fd74fb3df0522c438b0bfce393b2e50, type: 3}
+    clip: {fileID: 8300000, guid: 8126ca13678625e40a7f013078ffccde, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
@@ -104,12 +104,12 @@ MonoBehaviour:
     spatialBlend: 0
     loop: 0
   - name: Index 18
-    clip: {fileID: 8300000, guid: bfa07010e203f674fa15e97c22608fc9, type: 3}
+    clip: {fileID: 8300000, guid: 64cabfb599090174698688a92ced9975, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
   - name: Index 19
-    clip: {fileID: 8300000, guid: 64cabfb599090174698688a92ced9975, type: 3}
+    clip: {fileID: 8300000, guid: 25ec55662b00b394f96a2c90b08137d1, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0
