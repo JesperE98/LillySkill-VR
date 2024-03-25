@@ -15,7 +15,6 @@ namespace Jesper.InterviewQuestionsList.Data
     {
         [Tooltip("Contains a list with each category which itself contains it's own questions")]
         public List<Categories> _questionCategories;
-
     }
 
     /// <summary>
@@ -34,6 +33,21 @@ namespace Jesper.InterviewQuestionsList.Data
         /// List that contains all the interview questions from the exercise section.
         /// </summary>
         public List<string> m_QuestionList = new List<string>();
+
+        /// <summary>
+        /// Clones the original list.
+        /// </summary>
+        /// <returns></returns>
+        public Categories Clone()
+        {
+            return new Categories
+            {
+                CategoryName = this.CategoryName,
+                Description = this.Description,
+                CategoryIsActive = this.CategoryIsActive,
+                m_QuestionList = new List<string>(this.m_QuestionList)
+            };
+        }
     }
 
     /// <summary>
@@ -46,6 +60,12 @@ namespace Jesper.InterviewQuestionsList.Data
         ProblemSolving, Accuracy, SelfLeadership, InitiativeTaking, TimeManagement,
         Creativity, StreesResistence, PossitiveAttitude, Leadership, Endurance,
         WarehouseWork, RestaurantEmployee, CustomerServiceAndAdmin, HousekeepingAndHomeCleaning, ProductionAndFitter
+    }
+
+    public enum QuestionAnswered
+    {
+        Yes,
+        No
     }
 }
 

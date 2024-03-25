@@ -25,7 +25,7 @@ namespace Jesper.Collection
         ///<summary>
         ///Generic List that stores copies of the UI Prefabs.
         /// </summary>
-        [HideInInspector]
+        [SerializeField]
         public List<GameObject> uiPrefabCopyList = new List<GameObject>();
 
 
@@ -52,9 +52,16 @@ namespace Jesper.Collection
                 uiPrefabCopyList.Add(_prefabCopy);
             }
 
-            uiPrefabCopyList[0].SetActive(true); // Activates LillyUI at the start.
 
             if (_gameSettings.LoadedScene == "Main Menu")
+            {
+                ActivateUIPrefab();
+            }
+            else if( _gameSettings.LoadedScene == "Tutorial")
+            {
+                uiPrefabCopyList[0].SetActive(true); // Activates LillyUI at the start.
+            }
+            else if(_gameSettings.LoadedScene == "Office")
             {
                 ActivateUIPrefab();
             }
@@ -198,12 +205,20 @@ namespace Jesper.Collection
                             break;
                     }
                     break;
+
+                case "Office":
+                    if(_gameManager.InterviewAreActive == true && _gameManager.WaitForAnswer == false)
+                    {
+                        uiPrefabCopyList[0].SetActive(true);
+                        //_gameManager.WaitForAnswer = true;
+                    }
+                    break;
             }
         }
 
         public void StartUIDeactivation()
         {
-            StartCoroutine(DeactivateUICopy(1));
+            StartCoroutine(DeactivateUICopy(0));
         }
 
         /// <summary>
@@ -220,13 +235,14 @@ namespace Jesper.Collection
             }
 
             uiPrefabCopyList[listIndex].SetActive(false);
-            uiPrefabCopyList[2].SetActive(false);
+            //uiPrefabCopyList[2].SetActive(false);
 
-            _gameManager.AnswerPageNumber++;
+            //_gameManager.AnswerPageNumber++;
 
-            _uiPrefabIsActive = false;
+            //_uiPrefabIsActive = false;
 
-            if (_gameManager.AnswerPageNumber >= 10) { ActivateUIPrefab(); }
+
+            if (_gameManager.InterviewAreActive == true) { ActivateUIPrefab(); }
         }
     }
 }

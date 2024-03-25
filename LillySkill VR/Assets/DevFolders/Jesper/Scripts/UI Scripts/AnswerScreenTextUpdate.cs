@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using Jesper.InterviewAnswerLists.Data;
+using Jesper.InterviewAnswersAndQuestions.Data;
 using Jesper.GameSettings.Data;
 
 
@@ -16,13 +16,13 @@ namespace Jesper.Collection
         [SerializeField]
         private GameSettingsScriptableObject _gameSettings;
         [SerializeField]
-        private InterviewAnswersListScriptableObject _interviewAnswerLists;
-        [Tooltip("Generic List to store parent objects for the answertexts")]
-        [SerializeField]
-        private List<GameObject> AnswerTextObject = new List<GameObject>();
+        private InterviewAnswersAndQuestionsSO interviewAnswersAndQuestions;
+        //[Tooltip("Generic List to store parent objects for the answertexts")]
+        //[SerializeField]
+        //private List<GameObject> AnswerTextObject = new List<GameObject>();
         [Tooltip("Generic TMP_Text List to store TMP_Text components")]
         [SerializeField]
-        private List<TMP_Text> textList = new List<TMP_Text>();
+        private List<TMP_Text> textList;
 
         void Awake()
         {
@@ -30,13 +30,23 @@ namespace Jesper.Collection
             uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
         }
 
-
         void Update()
         {
-            if (gameManager.InterviewAreActive == true)
+            if (gameManager.WaitForAnswer == false)
             {
+                GenerateAnswerText(gameManager.RandomListIndex, gameManager.RandomSubListIndex);
                 //UpdateAnswerScreenText();
             }
+        }
+
+        private void GenerateAnswerText(int listIndex, int subListIndex)
+        {
+            textList[0].text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].answers[0].AnswerText;
+            textList[1].text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].answers[1].AnswerText;
+            textList[2].text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].answers[2].AnswerText;
+            textList[3].text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].answers[3].AnswerText;
+
+            gameManager.WaitForAnswer = true;
         }
 
         //private void UpdateAnswerScreenText()
@@ -409,11 +419,11 @@ namespace Jesper.Collection
         //            break;
 
         //        case false:
-        //                    Debug.LogWarning("Easy Mode isn't true! Make sure it's true in order for code to work!");
-        //                    break;
-        //            }
-
+        //            Debug.LogWarning("Easy Mode isn't true! Make sure it's true in order for code to work!");
+        //            break;
         //    }
-        }
+
+        //}
+    }
 
 }

@@ -50,7 +50,7 @@ public class AudioManager : MonoBehaviour
 
     public void StartAudioCoroutine()
     {
-        StartCoroutine(PlayAudioClip());
+        //StartCoroutine(PlayAudioClip());
     }
 
     /// <summary>

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
-using Jesper.InterviewAnswerLists.Data;
+using Jesper.InterviewAnswersAndQuestions.Data;
 using Jesper.InterviewQuestionsList.Data;
 
 namespace Jesper.GameSettings.Data
@@ -11,7 +11,7 @@ namespace Jesper.GameSettings.Data
     public class GameSettingsScriptableObject : ScriptableObject
     {
 
-        public int playerHighScore;
+        public float playerHighScore;
         [SerializeField]
         private string loadedScene;
 
@@ -33,7 +33,7 @@ namespace Jesper.GameSettings.Data
         /// <summary>
         /// Saves the players current highscore.
         /// </summary>
-        public int PlayerHighScore 
+        public float PlayerHighScore 
         { 
             get
             { 
