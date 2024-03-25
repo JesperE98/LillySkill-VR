@@ -40317,8 +40317,7 @@ MonoBehaviour:
   ambienceAudioSource: {fileID: 5199080730047721025}
   sFXScriptableObject: {fileID: 11400000, guid: 8bc2b31fd040ea34fafd80a9799cfeb0,
     type: 2}
-  voiceScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
-    type: 2}
+  voiceScriptableObject: {fileID: 0}
   ambienceScriptableObject: {fileID: 11400000, guid: 323df9504b886904c9fab709fe35cf11,
     type: 2}
   m_GameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
