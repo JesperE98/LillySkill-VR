@@ -38,19 +38,19 @@ public class AudioManager : MonoBehaviour
     {
         if (m_GameSettings.LoadedScene != "Main Menu")
         {
-            //if(gameManager.LillyIntroDone == true)
-            //{
-            //    Debug.Log("Calling Method PlayAudioClip()");
-            //    StartCoroutine(PlayAudioClip());
-            //    gameManager.LillyIntroDone = false;
-            //}
+            if(gameManager.LillyIntroDone == true)
+            {
+                Debug.Log("Calling Method PlayAudioClip()");
+                StartCoroutine(PlayAudioClip());
+                gameManager.LillyIntroDone = false;
+            }
         }
     }
 
 
     public void StartAudioCoroutine()
     {
-        //StartCoroutine(PlayAudioClip());
+        StartCoroutine(PlayAudioClip());
     }
 
     /// <summary>
