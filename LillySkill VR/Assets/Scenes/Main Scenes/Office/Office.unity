@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.728508, g: 0.7869944, b: 0.84800977, a: 1}
+  m_IndirectSpecularColor: {r: 0.72538507, g: 0.784935, b: 0.84602916, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 3563319dba2c0e1458d794721b15c0db,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3850,7 +3851,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1771726694}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8273,7 +8275,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07244476f5c8c74d9328a2c19bb8c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  answerTypeData: 0
+  answerOption: 0
+  selectedAnswer: 0
   _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
+  highlightGameobjects: []
 --- !u!114 &1307098814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11063,6 +11069,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760952257}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1771726693
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 581445682}
+    m_Modifications:
+    - target: {fileID: 7213868258119771249, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_Name
+      value: Question and Answers Ver.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d066955e33341c246a17f60caabb7969, type: 3}
+--- !u!4 &1771726694 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8639107361768890096, guid: d066955e33341c246a17f60caabb7969,
+    type: 3}
+  m_PrefabInstance: {fileID: 1771726693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1771748182
 GameObject:
   m_ObjectHideFlags: 0
@@ -12777,13 +12857,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2014c4977fa17374facb41a92af5eb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerScore: 0
+  _interviewerInterest: 2
+  _interviewAreActive: 1
+  _waitForAnswer: 0
   _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
-  interviewAnswersList: {fileID: 11400000, guid: 27c16cf9df066424183e442f75a45413,
+  interviewAnswersAndQuestions: {fileID: 11400000, guid: 27c16cf9df066424183e442f75a45413,
     type: 2}
   interviewQuestionList: {fileID: 11400000, guid: 1a1228da94a85f048a3fc799e345c511,
     type: 2}
   _answerList: []
-  _questions: []
+  _questionsAndAnswersCopy: []
+  _questionsCopy: []
 --- !u!4 &1957785989
 Transform:
   m_ObjectHideFlags: 0

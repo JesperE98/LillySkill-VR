@@ -3,51 +3,79 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 using Jesper.GameSettings.Data;
-using Jesper.InterviewAnswerLists.Data;
+using Jesper.InterviewAnswersAndQuestions.Data;
 using Jesper.InterviewQuestionsList.Data;
-using System;
+using static UnityEngine.Timeline.AnimationPlayableAsset;
+using System.Linq;
+using Unity.VisualScripting;
+using UnityEditor.iOS;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameSettingsScriptableObject _gameSettings;
-    [SerializeField]
-    private InterviewAnswersListScriptableObject interviewAnswersList;
-    [SerializeField]
-    private InterviewQuestionsListScriptableObject interviewQuestionList;
-
-    
-    [SerializeField]
-    protected List<string> _answerList = new List<string>();
-    [SerializeField]
-    private List<Categories> _questions = new List<Categories>();
-
-    private int _playerScore = 0;
-    private int _interviewerInterest = 2;
+    private int _randomListIndex = 0;
+    private int _randomSubListIndex = 0;
     private int _answerPageNumber = 1;
     private bool _fadeInComplete = false;
     private bool _fadeOutComplete = false;
     private bool _lillyIntroDone = false;
     private bool _lillyOutroDone = false;
     private bool _interviewerIntro = false;
+    //private CorrectAnswerData _getCorrectAnswerData;
+
+
+    [SerializeField]
+    private float _playerScore = 0;
+    [SerializeField]
+    private int _interviewerInterest = 2;
+    [SerializeField]
     private bool _interviewAreActive = false;
-    private bool _informationPageActive = false;
+    [SerializeField]
+    private bool _waitForAnswer = false;
+    [SerializeField]
+    private GameSettingsScriptableObject _gameSettings;
+    [SerializeField]
+    private InterviewAnswersAndQuestionsSO interviewAnswersAndQuestions;
+    [SerializeField]
+    private InterviewQuestionsListScriptableObject interviewQuestionList;
+    [SerializeField]
+    protected List<string> _answerList = new List<string>();
 
-    private void Awake()
+
+    public List<CategoriesData> _questionsAndAnswersCopy;
+    public List<Categories> _questionsCopy = new List<Categories>();
+    //public List<DefaultCategoryData> _defaultAnswersCopy = new List<DefaultCategoryData>();
+    //public List<SituationBasedCategoriesData> _situationBasedAnswersCopy = new List<SituationBasedCategoriesData>();
+
+    //public List<SituationBasedCategoriesData> UsedAnswer = new List<SituationBasedCategoriesData>();
+
+
+    /// <summary>
+    /// Gets and sets random int number.
+    /// </summary>
+    public int RandomListIndex
     {
-        if (_gameSettings.LoadedScene == "Office")
+        get
         {
-            Debug.Log("Starting for loop");
-            for (int i = 0; i < interviewQuestionList._questionCategories.Count; i++)
-            {
-                if (interviewQuestionList._questionCategories[i].CategoryIsActive == true)
-                {
-                    _questions.Add(interviewQuestionList._questionCategories[i]);
-                }
-                Debug.Log("Added: " + interviewQuestionList._questionCategories[i] + " to new list");
-            }
+            return _randomListIndex;
+        }
+        set
+        {
+            _randomListIndex = value;
+        }
+    }
 
-            Debug.Log("For Loop done");
+    /// <summary>
+    /// Gets and sets random int number.
+    /// </summary>
+    public int RandomSubListIndex
+    {
+        get
+        {
+            return _randomSubListIndex;
+        }
+        set
+        {
+            _randomSubListIndex = value;
         }
     }
 
@@ -69,7 +97,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Gets and sets int value to controll what feedback text should be displayed.
     /// </summary>
-    public int PlayerScore
+    public float PlayerScore
     {
         get
         {
@@ -201,16 +229,111 @@ public class GameManager : MonoBehaviour
         } 
     }
 
-    public bool InformationPageActive 
+    public bool WaitForAnswer 
     { 
         get 
         { 
-            return _informationPageActive;
+            return _waitForAnswer;
         } 
         set
         { 
-            _informationPageActive = value;
+            _waitForAnswer = value;
         } 
+    }
+
+    //public CorrectAnswerData GetCorrectAnswerData
+    //{
+    //    get
+    //    {
+    //        return _getCorrectAnswerData;
+    //    }
+    //    set
+    //    {
+    //        _getCorrectAnswerData = value;
+    //    }
+    //}
+
+    private void Start()
+    {
+
+        //if (_gameSettings.LoadedScene == "Office")
+        //{
+        //    //foreach(CategoriesData data in interviewAnswersAndQuestions.categoriesDatas)
+        //    //{
+        //    //    if (data.categoryIsActive == true)
+        //    //    {
+        //    //        _questionsAndAnswersCopy.Add(data.Clone());
+
+        //    //    }
+        //    //}
+
+        //    //// Loops through the scriptable object and checks which categories are activated
+        //    //// and adds them into a new List.
+        //    //for (int i = 0; i < interviewQuestionList._questionCategories.Count; i++)
+        //    //{
+        //    //    if (interviewQuestionList._questionCategories[i].CategoryIsActive == true)
+        //    //    {
+        //    //        _questionsCopy.Add(interviewQuestionList._questionCategories[i].Clone());
+        //    //    }
+        //    //}
+
+        //    //for (int i = 0; i < interviewAnswersAndQuestions.categoriesDatas.Length; i++)
+        //    //{
+        //    //    if (interviewAnswersAndQuestions.categoriesDatas[i].categoryIsActive == true)
+        //    //    {
+
+        //    //        _questionsAndAnswersCopy.Add(interviewAnswersAndQuestions.categoriesDatas[i].Clone());
+        //    //        _questionsAndAnswersCopy.Add(_questionsAndAnswersCopy[i]);
+
+        //    //    }
+        //    //}
+
+        //    //This statement is true if the DefaultCategory are activated.
+        //    //if (interviewAnswersList.DefaultCategoryIsActive == true)
+        //    //{
+        //    //    // Loops through the scriptable object and checks which categories are activated
+        //    //    // and adds them into a new List.
+        //    //    for (int i = 0; i < interviewAnswersList.defaultCategory.Count; i++)
+        //    //    {
+        //    //        _defaultAnswersCopy.Add(interviewAnswersList.defaultCategory[i].Clone());
+        //    //    }
+        //    //}
+
+        //    //// Loops through the scriptable object and checks which categories are activated
+        //    //// and adds them into a new List.
+        //    //for (int i = 0; i < interviewAnswersList.categories.Count; i++)
+        //    //{
+        //    //    if (interviewAnswersList.categories[i].CategoryIsActive == true)
+        //    //    {
+        //    //        _answersCopy.Add(interviewAnswersList.categories[i].Clone());
+        //    //    }
+        //    //}
+
+        //    //// Loops through the scriptable object and checks which categories are activated
+        //    //// and adds them into a new List.
+        //    //for (int i = 0; i < interviewAnswersList.SituationBasedCategories.Count; i++)
+        //    //{
+        //    //    if (interviewAnswersList.SituationBasedCategories[i].CategoryIsActive == true)
+        //    //    {
+        //    //        _situationBasedAnswersCopy.Add(interviewAnswersList.SituationBasedCategories[i].Clone());
+        //    //    }
+        //    //}
+        //}
+        
+        foreach(CategoriesData data in interviewAnswersAndQuestions.categoriesDatas)
+        {
+            if(data.categoryIsActive == true)
+            {
+                data.Clone();
+
+                _questionsAndAnswersCopy.Add(data);
+            }
+
+        }
+
+        GetRandomListIndex();
+        GetRandomSubListIndex();
+        
     }
 
     private void Update()
@@ -222,6 +345,7 @@ public class GameManager : MonoBehaviour
 
         InterviewerInterest = Mathf.Clamp(InterviewerInterest, 1, 5);
 
+        
     }
 
     /// <summary>
@@ -241,5 +365,63 @@ public class GameManager : MonoBehaviour
         AnswerList.Add(text);
     }
 
+    public void GetRandomListIndex()
+    {
+        _randomListIndex = Random.Range(0, interviewAnswersAndQuestions.categoriesDatas.Length);
 
+        if (interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].categoryIsActive == true)
+        {
+            Debug.Log("Random List Index: " + _randomListIndex);
+            ReturnRandomListIndex();
+        }
+    }
+    private int ReturnRandomListIndex()
+    {
+        return _randomListIndex;
+    }
+
+    public void GetRandomSubListIndex()
+    {
+        if(interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].categoryIsActive == true)
+        {
+            _randomSubListIndex = Random.Range(0, interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].interviewQuestionData.Count);
+            Debug.Log("Random Sub List Index: " + _randomSubListIndex);
+            if (interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].interviewQuestionData[RandomSubListIndex].QuestionAsked == false)
+            {
+                ReturnRandomSubListIndex();
+            }
+            else
+            {
+                GetRandomSubListIndex();
+            }
+        }
+
+        //foreach(var data in interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].interviewQuestionData)
+        //{
+        //    if(data.QuestionAsked == false)
+        //    {
+        //        interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].allAnswersAnswered = true;
+        //    }
+        //    else
+        //    {
+        //        return;
+        //    }
+        //}
+
+        for(int i = 0; i < interviewAnswersAndQuestions.categoriesDatas[RandomListIndex].interviewQuestionData.Count; i++)
+        {
+            if (interviewAnswersAndQuestions.categoriesDatas[RandomListIndex].interviewQuestionData[i].QuestionAsked == true)
+            {
+
+            }
+        }
+
+    }
+
+
+
+    private int ReturnRandomSubListIndex()
+    {
+        return _randomSubListIndex;
+    }
 }

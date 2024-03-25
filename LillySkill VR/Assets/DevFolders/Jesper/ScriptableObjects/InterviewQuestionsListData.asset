@@ -15,7 +15,7 @@ MonoBehaviour:
   _questionCategories:
   - CategoryName: 0
     Description: Contains all the defualt interview question text data.
-    CategoryIsActive: 1
+    CategoryIsActive: 0
     m_QuestionList:
     - "F\xF6rest\xE4ll dig att du \xE4r p\xE5 en anst\xE4llningsintervju f\xF6r en
       st\xE4dtj\xE4nst. Intervjuaren ber dig att g\xE5 igenom dina tidigare arbetserfarenheter.
@@ -67,7 +67,7 @@ MonoBehaviour:
     - "Vilket av f\xF6ljande alternativ \xE4r en viktig komponent i analytiskt t\xE4nkande?"
   - CategoryName: 2
     Description: Contains all the adaptability interview question text data.
-    CategoryIsActive: 1
+    CategoryIsActive: 0
     m_QuestionList:
     - "Vad inneb\xE4r det att vara anpassningsbar p\xE5 arbetsplatsen?"
     - "Hur reagerar du vanligtvis p\xE5 f\xF6r\xE4ndringar i arbetsmilj\xF6n?"
@@ -82,7 +82,7 @@ MonoBehaviour:
       person?"
   - CategoryName: 3
     Description: Contains all the customization interview question text data.
-    CategoryIsActive: 1
+    CategoryIsActive: 0
     m_QuestionList:
     - "Hur hanterar du f\xF6r\xE4ndringar p\xE5 arbetsplatsen?"
     - "Hur reagerar du n\xE4r du tilldelas nya arbetsuppgifter som du inte \xE4r
@@ -98,14 +98,14 @@ MonoBehaviour:
     - "Hur reagerar du n\xE4r du f\xE5r feedback och f\xF6rslag till f\xF6rb\xE4ttringar?"
   - CategoryName: 4
     Description: Contains all the decision making interview question text data.
-    CategoryIsActive: 1
+    CategoryIsActive: 0
     m_QuestionList:
     - "Hur g\xF6r du n\xE4r du m\xE5ste v\xE4lja mellan olika m\xF6jligheter?"
     - "Vad g\xF6r du om det saknas information f\xF6r att fatta ett beslut?"
-    - "Hur viktigt tycker du det \xE4r att lyssna p\xE5 andra innan du best\xE4mmer
-      dig?"
+    - "Hur viktigt tycker du det \xE4r att lyssna p\xE5 andra innan du fattar ett
+      beslut?"
     - "Vad g\xF6r du n\xE4r du m\xE5ste fatta beslut snabbt?"
-    - "Hur viktigt \xE4r det f\xF6r dig att anv\xE4nda logik n\xE4r du fattar beslut?"
+    - "Hur viktigt \xE4r det f\xF6r dig att t\xE4nka logiskt n\xE4r du fattar beslut?"
     - "Hur ser du p\xE5 att ta risker n\xE4r du fattar beslut?"
     - Hur reagerar du om du inser att du har fattat fel beslut?
     - "Hur viktigt tycker du det \xE4r att ha en plan innan du fattar beslut?"
@@ -113,15 +113,15 @@ MonoBehaviour:
     - "Vad g\xF6r du om folk \xE4r oense n\xE4r du m\xE5ste fatta beslut?"
   - CategoryName: 5
     Description: Contains all the empathy interview question text data.
-    CategoryIsActive: 1
+    CategoryIsActive: 0
     m_QuestionList:
     - "Hur bra \xE4r du p\xE5 att f\xF6rst\xE5 hur andra k\xE4nner?"
     - "Hur reagerar du n\xE4r n\xE5gon ber\xE4ttar om ett sv\xE5rt problem de har?"
     - "Hur l\xF6ser du konflikter mellan arbetskamrater eller teammedlemmar?"
     - "Hur bra \xE4r du p\xE5 att f\xF6rst\xE5 icke-verbal kommunikation, som kroppsspr\xE5k
       och ansiktsuttryck?"
-    - "Hur reagerar du om du m\xE4rker att en kollega eller anst\xE4lld verkar vara
-      nere eller ledsen?"
+    - "Hur reagerar du om du m\xE4rker att en kollega eller anst\xE4lld verkar k\xE4nna
+      sig nere eller vara ledsen?"
     - "Hur skulle du hantera en situation d\xE4r en kund \xE4r missn\xF6jd och uppr\xF6rd?"
     - "Hur bra \xE4r du p\xE5 att f\xF6rst\xE5 andra m\xE4nniskors synpunkter och
       perspektiv?"

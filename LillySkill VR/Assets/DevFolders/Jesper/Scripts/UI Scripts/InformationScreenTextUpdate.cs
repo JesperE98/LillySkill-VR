@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using Jesper.InterviewQuestionsList.Data;
 using Jesper.GameSettings.Data;
+using Jesper.InterviewAnswersAndQuestions.Data;
 
 
 namespace Jesper.Collection
@@ -13,11 +14,12 @@ namespace Jesper.Collection
         private GameManager gameManager;
         private TMP_Text informationPageText;
         [SerializeField]
-        private InterviewQuestionsListScriptableObject _interviewQuestionsList;
+        private InterviewAnswersAndQuestionsSO interviewAnswersAndQuestions;
         [SerializeField]
         private GameSettingsScriptableObject _gameSettings;
 
-        void Start()
+
+        void Awake()
         {
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
@@ -26,11 +28,23 @@ namespace Jesper.Collection
 
         void Update()
         {
-            if (gameManager.InterviewAreActive == true) { UpdateInformationScreenText(); }
+            if (gameManager.WaitForAnswer == false)
+            {
+                GenerateQuestionText(gameManager.RandomListIndex, gameManager.RandomSubListIndex);
+                //UpdateInformationScreenText();
+            }
+        }
+
+        private void GenerateQuestionText(int listIndex, int subListIndex)
+        {
+
+            informationPageText.text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].QuestionText;
         }
 
         private void UpdateInformationScreenText()
         {
+
+
             //switch (_gameSettings.DefaultMode)
             //{
             //    case true:
