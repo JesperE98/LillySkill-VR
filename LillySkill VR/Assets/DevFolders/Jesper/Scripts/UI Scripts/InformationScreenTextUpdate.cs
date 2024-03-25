@@ -37,7 +37,6 @@ namespace Jesper.Collection
 
         private void GenerateQuestionText(int listIndex, int subListIndex)
         {
-
             informationPageText.text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].QuestionText;
         }
 

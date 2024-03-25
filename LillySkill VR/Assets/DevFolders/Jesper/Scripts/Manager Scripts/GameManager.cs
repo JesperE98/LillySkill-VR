@@ -319,7 +319,23 @@ public class GameManager : MonoBehaviour
         //    //    }
         //    //}
         //}
-        
+
+        // Resets all necessary bool values back to false.
+        for (int i = 0; i < interviewAnswersAndQuestions.categoriesDatas.Length; i++)
+        {
+            if (interviewAnswersAndQuestions.categoriesDatas[i].categoryIsActive == true)
+            {
+                interviewAnswersAndQuestions.categoriesDatas[i].allAnswersAnswered = false;
+
+                for (int j = 0; j < interviewAnswersAndQuestions.categoriesDatas[i].interviewQuestionData.Count; j++)
+                {
+                    interviewAnswersAndQuestions.categoriesDatas[i].interviewQuestionData[j].QuestionAsked = false;
+                }
+            }
+        }
+
+        Debug.Log("All values reseted!");
+
         foreach(CategoriesData data in interviewAnswersAndQuestions.categoriesDatas)
         {
             if(data.categoryIsActive == true)
@@ -344,8 +360,31 @@ public class GameManager : MonoBehaviour
         }
 
         InterviewerInterest = Mathf.Clamp(InterviewerInterest, 1, 5);
+    }
 
-        
+    /// <summary>
+    /// Checks if all the answers are answered.
+    /// </summary>
+    public void CheckAllAnswers()
+    {
+        foreach (var data in _questionsAndAnswersCopy.GetRange(0, _questionsAndAnswersCopy.Count))
+        {
+            if (data.allAnswersAnswered == true)
+            {
+                InterviewAreActive = false;
+            }
+        }
+
+        //for (int i = 0; i < _questionsAndAnswersCopy.Count; i++)
+        //{
+        //    if (interviewAnswersAndQuestions.categoriesDatas[interviewAnswersAndQuestions.categoriesDatas.Length].categoryIsActive == true)
+        //    {
+        //        if (_questionsAndAnswersCopy[i].allAnswersAnswered == true)
+        //        {
+        //            InterviewAreActive = false;
+        //        }
+        //    }
+        //}
     }
 
     /// <summary>
@@ -367,14 +406,43 @@ public class GameManager : MonoBehaviour
 
     public void GetRandomListIndex()
     {
-        _randomListIndex = Random.Range(0, interviewAnswersAndQuestions.categoriesDatas.Length);
-
-        if (interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].categoryIsActive == true)
+        if(InterviewAreActive == true)
         {
-            Debug.Log("Random List Index: " + _randomListIndex);
-            ReturnRandomListIndex();
+            _randomListIndex = Random.Range(0, _questionsAndAnswersCopy.Count);
+
+            if (_questionsAndAnswersCopy[_randomListIndex].allAnswersAnswered == false)
+            {
+                Debug.Log("Random List Index: " + _randomListIndex);
+                ReturnRandomListIndex();
+            }
+            else
+            {
+                GetRandomListIndex();
+            }
+
+            foreach (var data in _questionsAndAnswersCopy[_randomListIndex].interviewQuestionData.GetRange(0, _questionsAndAnswersCopy[_randomListIndex].interviewQuestionData.Count))
+            {
+                if (data.QuestionAsked == true)
+                {
+                    _questionsAndAnswersCopy[_randomListIndex].allAnswersAnswered = true;
+                }
+            }
+
+            //for (int i = 0; i < interviewAnswersAndQuestions.categoriesDatas[RandomListIndex].interviewQuestionData.Count; i++)
+            //{
+            //    if (listRange[i].QuestionAsked == true)
+            //    {
+
+            //    }
+            //}
         }
+
     }
+
+    /// <summary>
+    /// Returns varaible _randomListIndex value.
+    /// </summary>
+    /// <returns></returns>
     private int ReturnRandomListIndex()
     {
         return _randomListIndex;
@@ -382,44 +450,41 @@ public class GameManager : MonoBehaviour
 
     public void GetRandomSubListIndex()
     {
-        if(interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].categoryIsActive == true)
+        if(InterviewAreActive == true)
         {
-            _randomSubListIndex = Random.Range(0, interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].interviewQuestionData.Count);
-            Debug.Log("Random Sub List Index: " + _randomSubListIndex);
-            if (interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].interviewQuestionData[RandomSubListIndex].QuestionAsked == false)
+            if (_questionsAndAnswersCopy[_randomListIndex].categoryIsActive == true)
             {
-                ReturnRandomSubListIndex();
+                _randomSubListIndex = Random.Range(0, _questionsAndAnswersCopy[_randomListIndex].interviewQuestionData.Count);
+                Debug.Log("Random Sub List Index: " + _randomSubListIndex);
+                if (_questionsAndAnswersCopy[_randomListIndex].interviewQuestionData[RandomSubListIndex].QuestionAsked == false)
+                {
+                    ReturnRandomSubListIndex();
+                }
+                else
+                {
+                    GetRandomSubListIndex();
+                }
             }
-            else
-            {
-                GetRandomSubListIndex();
-            }
+
+            //foreach(var data in interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].interviewQuestionData)
+            //{
+            //    if(data.QuestionAsked == false)
+            //    {
+            //        interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].allAnswersAnswered = true;
+            //    }
+            //    else
+            //    {
+            //        return;
+            //    }
+            //}
         }
-
-        //foreach(var data in interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].interviewQuestionData)
-        //{
-        //    if(data.QuestionAsked == false)
-        //    {
-        //        interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].allAnswersAnswered = true;
-        //    }
-        //    else
-        //    {
-        //        return;
-        //    }
-        //}
-
-        for(int i = 0; i < interviewAnswersAndQuestions.categoriesDatas[RandomListIndex].interviewQuestionData.Count; i++)
-        {
-            if (interviewAnswersAndQuestions.categoriesDatas[RandomListIndex].interviewQuestionData[i].QuestionAsked == true)
-            {
-
-            }
-        }
-
     }
 
 
-
+    /// <summary>
+    /// Returns variable _randomSubListIndex value.
+    /// </summary>
+    /// <returns></returns>
     private int ReturnRandomSubListIndex()
     {
         return _randomSubListIndex;

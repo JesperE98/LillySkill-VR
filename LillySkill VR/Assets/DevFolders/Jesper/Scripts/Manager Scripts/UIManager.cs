@@ -212,6 +212,11 @@ namespace Jesper.Collection
                         uiPrefabCopyList[0].SetActive(true);
                         //_gameManager.WaitForAnswer = true;
                     }
+                    else if(_gameManager.InterviewAreActive == false && _gameManager.WaitForAnswer == false)
+                    {
+                        uiPrefabCopyList[0].SetActive(false);
+                        uiPrefabCopyList[1].SetActive(true);
+                    }
                     break;
             }
         }
