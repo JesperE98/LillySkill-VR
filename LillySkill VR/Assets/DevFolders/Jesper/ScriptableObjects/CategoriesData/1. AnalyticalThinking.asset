@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: EthicsAndIntegrity
+  m_Name: 1. AnalyticalThinking
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
   categoryName: 0
   interviewCategoryType: 0
   description: 
   categoryIsActive: 0
   allAnswersAnswered: 0
-  interviewQuestionData: []
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers: []
