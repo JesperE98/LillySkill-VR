@@ -1,9 +1,9 @@
+using JesperScriptableObject;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Jesper.GameSettings.Data;
 
-namespace Jesper.Collection
+namespace JespersCode
 {
     public class ChangeQualityLevel : MonoBehaviour
     {

@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Scenes/Main Menu/Main Menu.unity
-    guid: 80d4f15af2fa90f41b797b807d232ca5
+    path: Assets/Scenes/Main Scenes/Start Menu/Main Menu.unity
+    guid: 953bd3ba09407b54f8eaeaeb95b81997
   - enabled: 1
-    path: Assets/Scenes/Main Scenes/Tutorial/Tutorial.unity
+    path: Assets/Scenes/Main Scenes/Office/Tutorial.unity
     guid: 1544aea40b74d094c8d0a9c497c3da70
-  - enabled: 1
-    path: Assets/Scenes/Main Scenes/Office/Office.unity
-    guid: 8f31b847091450a4bbdc8a669079af59
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5db963afabe647b46a2b00b8ada3b6b4,
       type: 2}

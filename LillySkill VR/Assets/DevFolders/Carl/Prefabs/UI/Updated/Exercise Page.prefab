@@ -1,10 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!1 &1379402195371708826
-========
---- !u!1 &427597678482292375
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,357 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   - component: {fileID: 390465493224887065}
   - component: {fileID: 3121897258403674997}
   - component: {fileID: 4931221012732730285}
-========
-  - component: {fileID: 7408778894205274647}
-  - component: {fileID: 6672380147058933798}
-  - component: {fileID: 4306997667865802258}
-  m_Layer: 5
-  m_Name: Stamp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7408778894205274647
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427597678482292375}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1139775297590728462}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.14005, y: 0.04977}
-  m_SizeDelta: {x: 0.0798, y: 0.07931}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6672380147058933798
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427597678482292375}
-  m_CullTransparentMesh: 1
---- !u!114 &4306997667865802258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427597678482292375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0fd3231fc875f2447a7ed16de5a3d3ec, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!1 &750768116830463778
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2236964311826506686}
-  - component: {fileID: 6738227469493925323}
-  - component: {fileID: 820066275165020143}
-  m_Layer: 5
-  m_Name: Score
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2236964311826506686
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750768116830463778}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2029933800559878148}
-  m_Father: {fileID: 1139775297590728462}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.11118, y: 0.17007004}
-  m_SizeDelta: {x: 0.12068, y: 0.11986}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6738227469493925323
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750768116830463778}
-  m_CullTransparentMesh: 1
---- !u!114 &820066275165020143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750768116830463778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 439e6b453d6851341a15894b87596bdd, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!1 &1603698822192611537
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7395805670121671201}
-  - component: {fileID: 2228257085333930311}
-  - component: {fileID: 1783390377510816813}
-  - component: {fileID: 545369889870953226}
-  - component: {fileID: 1957697656450876489}
-  m_Layer: 3
-  m_Name: MainMenuButton
-  m_TagString: UIButton
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7395805670121671201
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603698822192611537}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5053630634254447112}
-  m_Father: {fileID: 1139775297590728462}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.115, y: -0.205}
-  m_SizeDelta: {x: 0.12, y: 0.04}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2228257085333930311
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603698822192611537}
-  m_CullTransparentMesh: 1
---- !u!114 &1783390377510816813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603698822192611537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a9d55a7120e4d0242867af0ebb88d396, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!114 &545369889870953226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603698822192611537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4693dcc33483c5d43b0831d21b5185df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1783390377510816813}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7494888057450392700}
-        m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Main Menu
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!65 &1957697656450876489
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603698822192611537}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.12, y: 0.04, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &2138788570752037513
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9162416940798705687}
-  m_Layer: 5
-  m_Name: ButtonTransform
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &9162416940798705687
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138788570752037513}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7066156922862396003}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 92.8}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &2960493031288894571
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4976732417867121609}
-  - component: {fileID: 2518444368455281366}
-  - component: {fileID: 1346798246446475786}
-  - component: {fileID: 3403034680851793832}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -370,27 +18,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!224 &390465493224887065
-========
---- !u!224 &4976732417867121609
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 1379402195371708826}
-========
-  m_GameObject: {fileID: 2960493031288894571}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_Father: {fileID: 5298689767494389260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -399,52 +38,20 @@ RectTransform:
   m_SizeDelta: {x: 0.35, y: 0.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3121897258403674997
-========
-  m_Father: {fileID: 7066156922862396003}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.2, y: 0.45}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2518444368455281366
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 1379402195371708826}
   m_CullTransparentMesh: 1
 --- !u!114 &4931221012732730285
-========
-  m_GameObject: {fileID: 2960493031288894571}
-  m_CullTransparentMesh: 1
---- !u!114 &1346798246446475786
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 1379402195371708826}
-========
-  m_GameObject: {fileID: 2960493031288894571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fe83721a2c0e5642bdd724537f3eb2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3403034680851793832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2960493031288894571}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -458,18 +65,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_text: Picture
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
     type: 2}
-========
-  m_text: 
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -493,7 +93,6 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_fontSize: 0.08
   m_fontSizeBase: 0.08
   m_fontWeight: 400
@@ -503,17 +102,6 @@ MonoBehaviour:
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
-========
-  m_fontSize: 0.02
-  m_fontSizeBase: 0.02
-  m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 0.02
-  m_fontSizeMax: 16
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -521,11 +109,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_enableWordWrapping: 0
-========
-  m_enableWordWrapping: 1
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -545,21 +129,13 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_margin: {x: 0, y: 0, z: 0, w: 0}
-========
-  m_margin: {x: 0.004519522, y: 0.0043976307, z: 0.0006275177, w: 0.008049965}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!1 &1754171006786761509
-========
---- !u!1 &5362166956473127924
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -567,7 +143,6 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   - component: {fileID: 1166777303984481781}
   - component: {fileID: 8607101026026036311}
   - component: {fileID: 8919509755872850012}
@@ -576,29 +151,16 @@ GameObject:
   m_Layer: 3
   m_Name: Previous Page Button
   m_TagString: UIButton
-========
-  - component: {fileID: 3143069108219716528}
-  - component: {fileID: 1797618943251491006}
-  - component: {fileID: 4766977438411158126}
-  m_Layer: 5
-  m_Name: Background
-  m_TagString: Untagged
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!224 &1166777303984481781
-========
---- !u!224 &3143069108219716528
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 1754171006786761509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -615,69 +177,34 @@ RectTransform:
   m_SizeDelta: {x: 0.18, y: 0.18}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &8607101026026036311
-========
-  m_GameObject: {fileID: 5362166956473127924}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8522913481722838387}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0.4, y: 0.5}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1797618943251491006
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 1754171006786761509}
   m_CullTransparentMesh: 1
 --- !u!114 &8919509755872850012
-========
-  m_GameObject: {fileID: 5362166956473127924}
-  m_CullTransparentMesh: 1
---- !u!114 &4766977438411158126
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 1754171006786761509}
-========
-  m_GameObject: {fileID: 5362166956473127924}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-========
-  m_Color: {r: 1, g: 1, b: 1, a: 0.9019608}
-  m_RaycastTarget: 0
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_Sprite: {fileID: 21300000, guid: 1cf77fbc840fa7f46bc0eefdf9975c6e, type: 3}
-========
-  m_Sprite: {fileID: 21300000, guid: a61e45da1d324db4f9bef75c8930f156, type: 3}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -687,7 +214,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!114 &7708470544603220018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,9 +292,6 @@ BoxCollider:
   m_Size: {x: 0.2, y: 0.2, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2108063375048515962
-========
---- !u!1 &5751865576719694680
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -776,128 +299,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   - component: {fileID: 1330456795294641192}
   - component: {fileID: 1666251431743818161}
   - component: {fileID: 8077722496627366935}
-========
-  - component: {fileID: 1139775297590728462}
-  m_Layer: 0
-  m_Name: Content
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1139775297590728462
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751865576719694680}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7066156922862396003}
-  - {fileID: 2236964311826506686}
-  - {fileID: 739680833232358687}
-  - {fileID: 7395805670121671201}
-  - {fileID: 7408778894205274647}
-  m_Father: {fileID: 8522913481722838387}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6034645255306705038
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8522913481722838387}
-  - component: {fileID: 7494888057450392700}
-  m_Layer: 0
-  m_Name: Summary Screen
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8522913481722838387
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6034645255306705038}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3143069108219716528}
-  - {fileID: 1139775297590728462}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7494888057450392700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6034645255306705038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 649a479aee4fae84eb463063499c95a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _loopDone: 0
-  _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
---- !u!1 &7322003344419338093
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5053630634254447112}
-  - component: {fileID: 6774539382651835998}
-  - component: {fileID: 4466982859073144955}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_IsActive: 0
 --- !u!224 &1330456795294641192
-========
-  m_IsActive: 1
---- !u!224 &5053630634254447112
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 2108063375048515962}
-========
-  m_GameObject: {fileID: 7322003344419338093}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_Father: {fileID: 1166777303984481781}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -906,40 +329,20 @@ RectTransform:
   m_SizeDelta: {x: 0.4, y: 0.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1666251431743818161
-========
-  m_Father: {fileID: 7395805670121671201}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6774539382651835998
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 2108063375048515962}
   m_CullTransparentMesh: 1
 --- !u!114 &8077722496627366935
-========
-  m_GameObject: {fileID: 7322003344419338093}
-  m_CullTransparentMesh: 1
---- !u!114 &4466982859073144955
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 2108063375048515962}
-========
-  m_GameObject: {fileID: 7322003344419338093}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -953,7 +356,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Huvudmeny
+  m_text: 'Previous Page
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -980,11 +385,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.02
-  m_fontSizeBase: 11.2
+  m_fontSize: 0.05
+  m_fontSizeBase: 4.3
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 0.02
+  m_fontSizeMin: 0.01
   m_fontSizeMax: 16
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -996,7 +401,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -1022,11 +427,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!1 &2182697751030266839
-========
---- !u!1 &7333258360317611646
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1034,7 +435,6 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   - component: {fileID: 2570190145815918348}
   - component: {fileID: 4328437550485412370}
   - component: {fileID: 2253542854759566586}
@@ -1045,30 +445,17 @@ GameObject:
   - component: {fileID: 3297868427161616039}
   m_Layer: 5
   m_Name: Exercise Page
-========
-  - component: {fileID: 2029933800559878148}
-  - component: {fileID: 1861575638737473172}
-  - component: {fileID: 8011444954153532764}
-  - component: {fileID: 8188278709643571156}
-  m_Layer: 5
-  m_Name: Text (TMP)
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!224 &2570190145815918348
-========
---- !u!224 &2029933800559878148
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 2182697751030266839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1111,28 +498,11 @@ Canvas:
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &2253542854759566586
-========
-  m_GameObject: {fileID: 7333258360317611646}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2236964311826506686}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1861575638737473172
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 2182697751030266839}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1168,35 +538,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
 --- !u!222 &3671147695166678104
-========
-  m_GameObject: {fileID: 7333258360317611646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfe99efd0be9aac47a4fecefcdc587e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!222 &8011444954153532764
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 2182697751030266839}
   m_CullTransparentMesh: 1
 --- !u!114 &4832264654740581893
-========
-  m_GameObject: {fileID: 7333258360317611646}
-  m_CullTransparentMesh: 1
---- !u!114 &8188278709643571156
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 2182697751030266839}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1455,9 +809,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3781746869867172473}
-========
-  m_GameObject: {fileID: 7333258360317611646}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -1471,11 +822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_text: Start the Exercise
-========
-  m_text: "H\xE4r skrivs po\xE4ngen"
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
@@ -1503,7 +850,6 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_fontSize: 0.05
   m_fontSizeBase: 0.05
   m_fontWeight: 400
@@ -1948,13 +1294,9 @@ MonoBehaviour:
     rgba: 4294967295
   m_fontSize: 0.05
   m_fontSizeBase: 4.3
-========
-  m_fontSize: 0.02
-  m_fontSizeBase: 8
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 0.02
+  m_fontSizeMin: 0.01
   m_fontSizeMax: 16
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -1966,7 +1308,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -1992,11 +1334,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!1 &8276837416207386108
-========
---- !u!1 &8002645686752954618
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2004,45 +1342,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   - component: {fileID: 499987208718900552}
   - component: {fileID: 357418730923663606}
   - component: {fileID: 2904785676991545586}
   m_Layer: 5
   m_Name: Page Title Text
-========
-  - component: {fileID: 6525770599786155543}
-  - component: {fileID: 159621295261118748}
-  - component: {fileID: 3559264243179666037}
-  m_Layer: 3
-  m_Name: Text (TMP)
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!224 &499987208718900552
-========
---- !u!224 &6525770599786155543
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 8276837416207386108}
-========
-  m_GameObject: {fileID: 8002645686752954618}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_Father: {fileID: 2570190145815918348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
@@ -2051,40 +1372,20 @@ RectTransform:
   m_SizeDelta: {x: 2, y: 0.14999998}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &357418730923663606
-========
-  m_Father: {fileID: 739680833232358687}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &159621295261118748
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 8276837416207386108}
   m_CullTransparentMesh: 1
 --- !u!114 &2904785676991545586
-========
-  m_GameObject: {fileID: 8002645686752954618}
-  m_CullTransparentMesh: 1
---- !u!114 &3559264243179666037
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 8276837416207386108}
-========
-  m_GameObject: {fileID: 8002645686752954618}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -2098,30 +1399,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_text: Exercise
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
   m_sharedMaterial: {fileID: -8475216053171671644, guid: 7aa65f9035221f74a9131261738a7bfb,
     type: 2}
-========
-  m_text: "F\xF6rs\xF6k igen"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-========
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2133,28 +1422,16 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_TextStyleHashCode: 97690656
-========
-  m_TextStyleHashCode: -1183493901
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_fontSize: 0.1
   m_fontSizeBase: 0.1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0.01
-========
-  m_fontSize: 0.02
-  m_fontSizeBase: 11.2
-  m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 0.02
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_fontSizeMax: 16
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -2166,11 +1443,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_enableWordWrapping: 0
-========
-  m_enableWordWrapping: 1
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -2196,10 +1469,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!1 &8358303071492353760
-========
---- !u!1 &8285358620021359288
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2207,116 +1477,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7066156922862396003}
-  - component: {fileID: 3186901787929013431}
-  - component: {fileID: 7611338205167350504}
-  m_Layer: 5
-  m_Name: Information
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7066156922862396003
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8285358620021359288}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 9162416940798705687}
-  - {fileID: 4976732417867121609}
-  m_Father: {fileID: 1139775297590728462}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.07, y: 0}
-  m_SizeDelta: {x: 0.215, y: 0.46}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3186901787929013431
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8285358620021359288}
-  m_CullTransparentMesh: 1
---- !u!114 &7611338205167350504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8285358620021359288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 439e6b453d6851341a15894b87596bdd, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!1 &9220151126792658022
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   - component: {fileID: 8390030269116779367}
   - component: {fileID: 6035348946770806229}
   - component: {fileID: 8984061441040498822}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
-========
-  - component: {fileID: 739680833232358687}
-  - component: {fileID: 2639395529237199649}
-  - component: {fileID: 8774952642632568061}
-  - component: {fileID: 8994016256058581097}
-  - component: {fileID: 2367346204749769366}
-  m_Layer: 3
-  m_Name: TryAgainButton
-  m_TagString: UIButton
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
 --- !u!224 &8390030269116779367
-========
---- !u!224 &739680833232358687
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 8358303071492353760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -2331,47 +1507,20 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6035348946770806229
-========
-  m_GameObject: {fileID: 9220151126792658022}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6525770599786155543}
-  m_Father: {fileID: 1139775297590728462}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.115, y: -0.15}
-  m_SizeDelta: {x: 0.12, y: 0.04}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2639395529237199649
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 8358303071492353760}
   m_CullTransparentMesh: 1
 --- !u!114 &8984061441040498822
-========
-  m_GameObject: {fileID: 9220151126792658022}
-  m_CullTransparentMesh: 1
---- !u!114 &8774952642632568061
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 8358303071492353760}
-========
-  m_GameObject: {fileID: 9220151126792658022}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -2385,7 +1534,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_text: "Text describing \nthe exercise"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7aa65f9035221f74a9131261738a7bfb, type: 2}
@@ -2524,9 +1672,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 439e6b453d6851341a15894b87596bdd, type: 3}
-========
-  m_Sprite: {fileID: 21300000, guid: a9d55a7120e4d0242867af0ebb88d396, type: 3}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2535,20 +1680,13 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_PixelsPerUnitMultiplier: 1500
 --- !u!1 &9029035271499091827
 GameObject:
-========
-  m_PixelsPerUnitMultiplier: 1
---- !u!65 &8994016256058581097
-BoxCollider:
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7534851508800156541}
@@ -2590,40 +1728,17 @@ CanvasRenderer:
   m_GameObject: {fileID: 9029035271499091827}
   m_CullTransparentMesh: 1
 --- !u!114 &8060541956888238121
-========
-  m_GameObject: {fileID: 9220151126792658022}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.12, y: 0.04, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2367346204749769366
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_GameObject: {fileID: 9029035271499091827}
-========
-  m_GameObject: {fileID: 9220151126792658022}
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Carl/Prefabs/UI/Updated/Exercise Page.prefab
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -2642,49 +1757,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1500
-========
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 8774952642632568061}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7494888057450392700}
-        m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
-        m_MethodName: ResetCurrentScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Office
-          m_BoolArgument: 0
-        m_CallState: 2
->>>>>>>> Jesper:LillySkill VR/Assets/DevFolders/Jesper/Prefabs/UI/Summary Screen.prefab
