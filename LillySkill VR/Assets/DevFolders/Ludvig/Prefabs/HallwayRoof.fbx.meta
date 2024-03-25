@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:LillySkill VR/Assets/DevFolders/Ludvig/Prefabs/HallwayRoof.fbx.meta
 guid: be1e0d0fd91fbea4bbb09460836e3359
+========
+guid: e94159e9a205efb418bd87a576d7d804
+>>>>>>>> 841cb63389da3886fea5abf53cae0107b12d528d:LillySkill VR/Assets/DevFolders/Ludvig/Prefabs/Hallway.fbx.meta
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
