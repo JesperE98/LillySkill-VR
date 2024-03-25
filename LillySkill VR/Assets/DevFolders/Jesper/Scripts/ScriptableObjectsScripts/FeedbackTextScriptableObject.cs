@@ -1,10 +1,9 @@
-using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace JesperScriptableObject
+namespace Jesper.FeedbackText.Data
 /// <summary>
 /// ScriptableObject Class that contains strings with feedback text from Beta Version
 /// </summary>

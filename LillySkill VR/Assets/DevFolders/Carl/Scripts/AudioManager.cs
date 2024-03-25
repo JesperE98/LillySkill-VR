@@ -1,26 +1,22 @@
-using JespersCode;
-using JesperScriptableObject;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Audio;
+using Jesper.Collection;
+using Jesper.GameSettings.Data;
 
 public class AudioManager : MonoBehaviour
 {
-    // References to the different audio sources used to play sounds
     [SerializeField] private AudioSource sFXAudioSource;
     [SerializeField] private AudioSource voiceAudioSource;
     [SerializeField] private AudioSource ambienceAudioSource;
 
-    // References to the different scriptable objects used to fetch sounds from
     [SerializeField] private DefaultAudioScriptableObject sFXScriptableObject;
-    [SerializeField] private VoiceAudioDataBankScriptableObject voiceScriptableObject;
+    [SerializeField] private VoiceAudioScriptableObject voiceScriptableObject;
     [SerializeField] private DefaultAudioScriptableObject ambienceScriptableObject;
-
     [SerializeField] private GameSettingsScriptableObject m_GameSettings;
 
     private GameManager gameManager;
@@ -42,19 +38,19 @@ public class AudioManager : MonoBehaviour
     {
         if (m_GameSettings.LoadedScene != "Main Menu")
         {
-            if(gameManager.LillyIntroDone == true)
-            {
-                Debug.Log("Calling Method PlayAudioClip()");
-                StartCoroutine(PlayAudioClip());
-                gameManager.LillyIntroDone = false;
-            }
+            //if(gameManager.LillyIntroDone == true)
+            //{
+            //    Debug.Log("Calling Method PlayAudioClip()");
+            //    StartCoroutine(PlayAudioClip());
+            //    gameManager.LillyIntroDone = false;
+            //}
         }
     }
 
 
     public void StartAudioCoroutine()
     {
-        StartCoroutine(PlayAudioClip());
+        //StartCoroutine(PlayAudioClip());
     }
 
     /// <summary>
@@ -75,27 +71,18 @@ public class AudioManager : MonoBehaviour
     /// Playes an audio from a scriptable object data container stored in the Voice scriptable object list.
     /// </summary>
     /// <param name="index"></param>
-    public void PlayVoiceAudio(int categoryIndex, int questionIndex)
+    public void PlayVoiceAudio(int voiceListIndex, int questionAudioIndex)
     {
-        DefaultAudioScriptableObject s = voiceScriptableObject.questions[categoryIndex];
+        DefaultAudioScriptableObject s = voiceScriptableObject.questions[voiceListIndex];
 
         if(s != null)
         {
-            voiceAudioSource.clip = s.sounds[questionIndex].clip;
-            voiceAudioSource.volume = s.sounds[questionIndex].volume;
-            voiceAudioSource.spatialBlend = s.sounds[questionIndex].spatialBlend;
-            voiceAudioSource.loop = s.sounds[questionIndex].loop;
+            voiceAudioSource.clip = s.sounds[questionAudioIndex].clip;
+            voiceAudioSource.volume = s.sounds[questionAudioIndex].volume;
+            voiceAudioSource.spatialBlend = s.sounds[questionAudioIndex].spatialBlend;
+            voiceAudioSource.loop = s.sounds[questionAudioIndex].loop;
 
-            // If the respective audio clip to the question isn't found, a warning message is sent and
-            // aborts the function.
-            if (voiceAudioSource.clip != null)
-                voiceAudioSource.Play();
-            else
-            {
-                Debug.LogWarning("Ljudklippet hittas inte till denna fråga!");
-                return;
-            }
-                           
+            voiceAudioSource.Play();
         }
     }
 

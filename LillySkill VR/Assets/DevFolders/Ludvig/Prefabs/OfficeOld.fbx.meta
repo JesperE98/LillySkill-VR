@@ -3,277 +3,7 @@ guid: 2f5c437e97c5d6344b678194accc8501
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bark.002
-    second: {fileID: 2100000, guid: 8c6dfbf3ae92d954ba84042fadbb7a07, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Black
-    second: {fileID: 2100000, guid: 9757354897fd4744f9f8bac57b1a3709, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: DarkMetal
-    second: {fileID: 2100000, guid: 061ee413c13737847adc4b02666d84d4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Door
-    second: {fileID: 2100000, guid: e8c4472c15dbb204db6d196ff070886a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Glass
-    second: {fileID: 2100000, guid: 677ffab702184b2468312a70aa0595bd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Gold
-    second: {fileID: 2100000, guid: df2ebc719c4f815479638c7093666c5b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Hard Shiny Plastic Red #2
-    second: {fileID: 2100000, guid: 964c6de18a09cc040acc181400a99e36, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Leaf.001
-    second: {fileID: 2100000, guid: 23859c2936a492c4aa7484872b316488, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Leaf_01.002
-    second: {fileID: 2100000, guid: 1fb04cb77c3d72940b75c7926dd4a34b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Leaf_01.003
-    second: {fileID: 2100000, guid: 7321eda1cf967df46b8a9e38587cb0ac, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Leaf_02.004
-    second: {fileID: 2100000, guid: 7c03705a8e056854e8923cbc3ef8bba6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Leaf_02.005
-    second: {fileID: 2100000, guid: 85cf5d5b8b3628146b1e27e16e7c2435, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Light
-    second: {fileID: 2100000, guid: 96f598a86452f6541a7bd12722580e05, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Materiais.001
-    second: {fileID: 2100000, guid: 85c6d64b60df99340b8d1cbd9d239aee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Materiais.002
-    second: {fileID: 2100000, guid: d689c6f019a7e6a4f83499fb2b8aee2e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Materiais.003
-    second: {fileID: 2100000, guid: e1fa1c9a00aaa7e4aa8daa4511db044d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: New_CupTX
-    second: {fileID: 2100000, guid: ef4a8096ad6d9a047b1204b415fab83a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Office_Chair
-    second: {fileID: 2100000, guid: d91663b9a4e93f943a817ef207b1e6d9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Soil.002
-    second: {fileID: 2100000, guid: a66498fbfa62edf48b02db2f3388c000, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Stem.006
-    second: {fileID: 2100000, guid: e697234a478cd84479719bba45185ab2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Stem.007
-    second: {fileID: 2100000, guid: 5197c4545a908e54f92f42e28616790b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Stem.008
-    second: {fileID: 2100000, guid: f010adc9e55d2204695dfa340efcce7e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: White
-    second: {fileID: 2100000, guid: 45578436b6af01a479a16223a72edd2a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wood
-    second: {fileID: 2100000, guid: 4b029e42147e7574db628c48bcbe3767, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WoodDarkest
-    second: {fileID: 2100000, guid: eb1c937efe7c8da4b908cc4ee93ae179, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WoodShelves
-    second: {fileID: 2100000, guid: 9d46d6d484f4c6042becbd90801b9b8c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WoodTable
-    second: {fileID: 2100000, guid: dd676a032225b52498b2e1cbf04593e7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: pot.002
-    second: {fileID: 2100000, guid: 63e286f84f4d3c44d8c9846c167cc295, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wood.002
-    second: {fileID: 2100000, guid: bd930cce299abaf4bb201fa7c2cedc4d, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: CraneCup_Diffuse_003
-    second: {fileID: 2800000, guid: 92f6bc4db8014b04db53f26712e32981, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Alocasia_macrorrhiza_Leaf_02_Diffuse
-    second: {fileID: 2800000, guid: c74102c3c46f9aa45a988bef48503868, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Alocasia_macrorrhiza_Leaf_Diffuse
-    second: {fileID: 2800000, guid: c31cb61109c8a9645bd2edc1fffc5f62, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Alocasia_macrorrhiza_Stem_Diffuse
-    second: {fileID: 2800000, guid: 296234f028c05e746b780ed16989b7d9, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Ficus_elastica_Leaf_02_Diffuse
-    second: {fileID: 2800000, guid: 30593fdaa19c77742988efe7ea79ae66, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Ficus_elastica_bark_d
-    second: {fileID: 2800000, guid: b0e9ea0453822f2418bb43323dfb929f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Ficus_elastica_stem_d
-    second: {fileID: 2800000, guid: cf9349668d12f144c8a4f6faaa6f2ed1, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Monster_Leaf_Diffuse
-    second: {fileID: 2800000, guid: 5c6c5b669a6e15648972afe73f45318c, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Monstera_Stem_Bump
-    second: {fileID: 2800000, guid: 42a144e675136664684fa8acba7c4e8a, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Monstera_Stem_Diffuse
-    second: {fileID: 2800000, guid: f4335295ba23b6341a88091d3348a46d, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Soil_Diffuse
-    second: {fileID: 2800000, guid: 41275f62e582648409cc4809b4a65900, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Soil_NRM
-    second: {fileID: 2800000, guid: 72972e5aea31e3c4d8a4d801c2196fa1, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Wood_Bump
-    second: {fileID: 2800000, guid: 3b3ca7d44b3004f41ada5f24981fd43c, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_Wood_Diffuse
-    second: {fileID: 2800000, guid: fd75ada98f7b60b4db8b0135d292a30f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: HP_72_ficus_elastika_Leaf_d
-    second: {fileID: 2800000, guid: 9fe33cf9a4ccf244896073a053b90cfa, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Office_Chair_BaseColor
-    second: {fileID: 2800000, guid: 492b9b8e8b01bb44e8393a79a021fa7a, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Office_Chair_Normal
-    second: {fileID: 2800000, guid: a9a69c7eae8d1c84fb0d5bb0e791bd08, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Office_Chair_Roughness
-    second: {fileID: 2800000, guid: 08c375dd21a021a4b871ae8745a17855, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: QuadroRemendadoFASE1_d
-    second: {fileID: 2800000, guid: daf9adeaa5531ff4b8b442c0749c5d85, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Quadro_4_cores_d
-    second: {fileID: 2800000, guid: b4644a6de87c9d544a8a85e7d5f5ca16, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Quadro_azul_d
-    second: {fileID: 2800000, guid: d5c7fefc73b383c45aacfef4f40741b8, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Travertine008_2K-JPG_Color
-    second: {fileID: 2800000, guid: 18c4a17b42f03da43bc801e85bcada65, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Wood051_2K-JPG_Color
-    second: {fileID: 2800000, guid: f22aaf833d188ef4daae3301f42bc329, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Wood090A_2K-JPG_Color
-    second: {fileID: 2800000, guid: c8cf89a42b1eca64ab218a12ab2c0c8f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: WoodFloor051_2K-JPG_Color
-    second: {fileID: 2800000, guid: 0acc9e5a6ab8aaf4b8b1db58cb21b474, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -311,14 +41,14 @@ ModelImporter:
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1
-    importVisibility: 0
-    importBlendShapes: 0
-    importCameras: 0
-    importLights: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
-    swapUVChannels: 1
-    generateSecondaryUV: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -331,7 +61,7 @@ ModelImporter:
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15
+    secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVMarginMethod: 1
     secondaryUVMinLightmapResolution: 40
@@ -342,7 +72,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 2
+    tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
@@ -371,7 +101,7 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  importBlendShapeDeformPercent: 0
+  importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 

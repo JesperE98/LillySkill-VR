@@ -1,13 +1,13 @@
-using JesperScriptableObject;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
+using Jesper.GameSettings.Data;
+using Jesper.FeedbackText.Data;
 
-namespace JespersCode
+namespace Jesper.Collection
 {
     public class FeedbackScreenTextUpdate : MonoBehaviour
     {
@@ -15,9 +15,9 @@ namespace JespersCode
         private TMP_Text _answerText;
 
         [SerializeField]
-        private GameSettingsScriptableObject m_GameSettingsScriptableObject;
+        private GameSettingsScriptableObject _gameSettings;
         [SerializeField]
-        private FeedbackTextScriptableObject m_FeedbackTextScriptableObject;
+        private FeedbackTextScriptableObject _feedbackText;
 
 
         private void Awake()
@@ -35,17 +35,17 @@ namespace JespersCode
         {
             if (_gameManager.PlayerScore < 7)
             {
-                _answerText.text = "Du fick bara " + _gameManager.PlayerScore + " poäng.\n\n " + m_FeedbackTextScriptableObject.m_BadResultFeedbackText;
+                _answerText.text = "Du fick bara " + _gameManager.PlayerScore + " poäng.\n\n " + _feedbackText.m_BadResultFeedbackText;
             }
             else if (_gameManager.PlayerScore > 7 || _gameManager.PlayerScore < 14)
             {
                 _answerText.text = "Du fick " + _gameManager.PlayerScore + " poäng. Bra jobbat! Men här har du något att fundera över.\n\n" +
-                    m_FeedbackTextScriptableObject.m_AverageResultFeedbackText;
+                    _feedbackText.m_AverageResultFeedbackText;
             }
             else if (_gameManager.PlayerScore > 14)
             {
                 _answerText.text = "Du fick " + _gameManager.PlayerScore + " poäng! Grymt jobbat! Du kommer acea din intervju!\n\n" +
-                    m_FeedbackTextScriptableObject.m_GoodResultFeedbackText;
+                    _feedbackText.m_GoodResultFeedbackText;
             }
         }
     }

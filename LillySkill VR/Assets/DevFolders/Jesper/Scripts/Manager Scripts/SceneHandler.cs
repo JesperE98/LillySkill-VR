@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using JesperScriptableObject;
+using Jesper.GameSettings.Data;
 
 namespace JespersCode
 {
@@ -18,15 +18,16 @@ namespace JespersCode
 
         private void Awake()
         {
+
             if (_gameSettings.LoadedScene != "Main Menu")
             {
                 _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             }
-
             _fadeScreen = GameObject.Find("FadeScreen").GetComponent<Renderer>();
         }
         private void Start()
         {
+            
             StartCoroutine(FadeInRoutine(true));
         }
 
