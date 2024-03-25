@@ -1,8 +1,9 @@
+using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Jesper.Collection
+namespace JespersCode
 {
     public class DisableCollider : MonoBehaviour
     {

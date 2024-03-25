@@ -1,14 +1,14 @@
+using JesperScriptableObject;
+using LillyCode;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using LillyCode;
-using Jesper.GameSettings.Data;
 
 
-namespace Jesper.Collection
+namespace JespersCode
 {
     public class UIManager : MonoBehaviour
     {
@@ -25,7 +25,7 @@ namespace Jesper.Collection
         ///<summary>
         ///Generic List that stores copies of the UI Prefabs.
         /// </summary>
-        [SerializeField]
+        [HideInInspector]
         public List<GameObject> uiPrefabCopyList = new List<GameObject>();
 
 
@@ -52,16 +52,9 @@ namespace Jesper.Collection
                 uiPrefabCopyList.Add(_prefabCopy);
             }
 
+            uiPrefabCopyList[0].SetActive(true); // Activates LillyUI at the start.
 
             if (_gameSettings.LoadedScene == "Main Menu")
-            {
-                ActivateUIPrefab();
-            }
-            else if( _gameSettings.LoadedScene == "Tutorial")
-            {
-                uiPrefabCopyList[0].SetActive(true); // Activates LillyUI at the start.
-            }
-            else if(_gameSettings.LoadedScene == "Office")
             {
                 ActivateUIPrefab();
             }
@@ -205,25 +198,12 @@ namespace Jesper.Collection
                             break;
                     }
                     break;
-
-                case "Office":
-                    if(_gameManager.InterviewAreActive == true && _gameManager.WaitForAnswer == false)
-                    {
-                        uiPrefabCopyList[0].SetActive(true);
-                        //_gameManager.WaitForAnswer = true;
-                    }
-                    else if(_gameManager.InterviewAreActive == false && _gameManager.WaitForAnswer == false)
-                    {
-                        uiPrefabCopyList[0].SetActive(false);
-                        uiPrefabCopyList[1].SetActive(true);
-                    }
-                    break;
             }
         }
 
         public void StartUIDeactivation()
         {
-            StartCoroutine(DeactivateUICopy(0));
+            StartCoroutine(DeactivateUICopy(1));
         }
 
         /// <summary>
@@ -240,14 +220,13 @@ namespace Jesper.Collection
             }
 
             uiPrefabCopyList[listIndex].SetActive(false);
-            //uiPrefabCopyList[2].SetActive(false);
+            uiPrefabCopyList[2].SetActive(false);
 
-            //_gameManager.AnswerPageNumber++;
+            _gameManager.AnswerPageNumber++;
 
-            //_uiPrefabIsActive = false;
+            _uiPrefabIsActive = false;
 
-
-            if (_gameManager.InterviewAreActive == true) { ActivateUIPrefab(); }
+            if (_gameManager.AnswerPageNumber >= 10) { ActivateUIPrefab(); }
         }
     }
 }

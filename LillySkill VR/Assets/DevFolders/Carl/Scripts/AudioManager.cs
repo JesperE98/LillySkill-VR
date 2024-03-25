@@ -1,3 +1,5 @@
+using JespersCode;
+using JesperScriptableObject;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,8 +8,6 @@ using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Audio;
-using Jesper.Collection;
-using Jesper.GameSettings.Data;
 
 public class AudioManager : MonoBehaviour
 {
@@ -42,19 +42,19 @@ public class AudioManager : MonoBehaviour
     {
         if (m_GameSettings.LoadedScene != "Main Menu")
         {
-            //if(gameManager.LillyIntroDone == true)
-            //{
-            //    Debug.Log("Calling Method PlayAudioClip()");
-            //    StartCoroutine(PlayAudioClip());
-            //    gameManager.LillyIntroDone = false;
-            //}
+            if(gameManager.LillyIntroDone == true)
+            {
+                Debug.Log("Calling Method PlayAudioClip()");
+                StartCoroutine(PlayAudioClip());
+                gameManager.LillyIntroDone = false;
+            }
         }
     }
 
 
     public void StartAudioCoroutine()
     {
-        //StartCoroutine(PlayAudioClip());
+        StartCoroutine(PlayAudioClip());
     }
 
     /// <summary>

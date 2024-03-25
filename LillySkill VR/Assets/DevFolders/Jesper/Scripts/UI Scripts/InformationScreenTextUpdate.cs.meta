@@ -3,10 +3,7 @@ guid: 60a30bf246d247e48b942715a32711b5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - interviewAnswersAndQuestions: {fileID: 11400000, guid: 27c16cf9df066424183e442f75a45413,
-      type: 2}
-  - _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
