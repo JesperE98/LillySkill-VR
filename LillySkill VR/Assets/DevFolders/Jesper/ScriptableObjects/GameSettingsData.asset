@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a186fbe3aab7b694aa2b3fb8f7658d02, type: 3}
   m_Name: GameSettingsData
   m_EditorClassIdentifier: 
-  playerHighScore: 2
-  loadedScene: Office
+  defaultMode: 1
+  lowGraphicsPreset: 0
+  mediumGraphicPreset: 0
+  highGraphicPreset: 1
+  playerHighScore: 13
+  loadedScene: Tutorial

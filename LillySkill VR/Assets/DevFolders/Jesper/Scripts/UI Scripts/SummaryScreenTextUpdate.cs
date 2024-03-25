@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace Jesper.Collection
+namespace JespersCode
 {
     public class SummaryScreenTextUpdate : MonoBehaviour
     {

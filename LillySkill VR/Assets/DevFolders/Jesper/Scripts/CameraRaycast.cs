@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace Jesper.Collection
+namespace JespersCode
 {
     public class CameraRaycast : MonoBehaviour
     {
