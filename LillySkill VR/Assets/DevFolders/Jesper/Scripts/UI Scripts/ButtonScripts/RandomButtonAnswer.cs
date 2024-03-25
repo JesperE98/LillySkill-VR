@@ -1,10 +1,9 @@
-using JespersCode;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace JespersCode
+namespace Jesper.Collection
 {
     public class RandomButtonAnswer : MonoBehaviour
     {
@@ -27,109 +26,109 @@ namespace JespersCode
         {
             if(_gameManager.InterviewAreActive == true)
             {
-                switch (_gameManager.AnswerPageNumber)
-                {
-                    case 1:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        break;
-                    case 2:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        break;
-                    case 3:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        break;
-                    case 4:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        break;
-                    case 5:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        break;
-                    case 6:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        break;
-                    case 7:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        break;
-                    case 8:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        break;
-                    case 9:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        break;
-                    case 10:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        break;
-                    case 11:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        break;
-                    case 12:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        break;
-                    case 13:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        break;
-                    case 14:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        break;
-                    case 15:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        break;
-                    case 16:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        break;
-                    case 17:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        break;
-                    case 18:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        break;
-                    case 19:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        break;
-                    case 20:
-                        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
-                        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
-                        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
-                        break;
-                }
+                //switch (_gameManager.AnswerPageNumber)
+                //{
+                //    case 1:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        break;
+                //    case 2:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        break;
+                //    case 3:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        break;
+                //    case 4:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        break;
+                //    case 5:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        break;
+                //    case 6:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        break;
+                //    case 7:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        break;
+                //    case 8:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        break;
+                //    case 9:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        break;
+                //    case 10:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        break;
+                //    case 11:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        break;
+                //    case 12:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        break;
+                //    case 13:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        break;
+                //    case 14:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        break;
+                //    case 15:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        break;
+                //    case 16:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        break;
+                //    case 17:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        break;
+                //    case 18:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        break;
+                //    case 19:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        break;
+                //    case 20:
+                //        if (_answerButtons[0].activeInHierarchy == true) { _buttonFunctions.UsedBadAnswerButton(); }
+                //        if (_answerButtons[1].activeInHierarchy == true) { _buttonFunctions.UsedAverageAnswerButton(); }
+                //        if (_answerButtons[2].activeInHierarchy == true) { _buttonFunctions.UsedGoodAnswerButton(); }
+                //        break;
+                //}
             }
             else
             {
