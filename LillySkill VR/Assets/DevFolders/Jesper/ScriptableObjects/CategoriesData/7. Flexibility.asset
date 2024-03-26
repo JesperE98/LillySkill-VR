@@ -9,12 +9,223 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
   m_Name: 7. Flexibility
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
-  categoryName: 0
+  categoryName: 7
   interviewCategoryType: 0
   description: 
   categoryIsActive: 0
   allAnswersAnswered: 0
-  interviewQuestionData: []
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "DENNA \xC4R INTE KLAR!!!"
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle vara motvillig till f\xF6r\xE4ndringen och f\xF6rs\xF6ka
+        hitta s\xE4tt att minimera dess p\xE5verkan p\xE5 mina rutiner och arbetsprocesser."
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle k\xE4nna en viss stress och motst\xE5nd mot f\xF6r\xE4ndringen,
+        men jag skulle g\xF6ra mitt b\xE4sta f\xF6r att acceptera och anpassa mig
+        till den."
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag \xE4r flexibel och kan anpassa mig efter den nya situationen
+        genom att identifiera m\xF6jligheter och ta initiativ till att l\xE4ra mig
+        de nya arbetsmetoderna."
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag s\xF6ker f\xF6rst\xE5else f\xF6r f\xF6r\xE4ndringen och samarbetar
+        med mina kollegor f\xF6r att hitta gemensamma l\xF6sningar som gynnar b\xE5de
+        mig och teamet."
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur reagerar du n\xE4r du f\xE5r en ny uppgift eller projekt med
+      kort varsel?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle bli frustrerad och ogilla att f\xE5 nya uppgifter med
+        kort varsel. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle acceptera uppgiften men klaga \xF6ver att jag inte
+        har tillr\xE4ckligt med tid. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skulle vara flexibel och prioritera uppgiften f\xF6r att slutf\xF6ra
+        den i tid. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle be om att bli befriad fr\xE5n uppgiften p\xE5 grund
+        av kort varsel. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "DENNA \xC4R INTE KLAR!!!"
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag \xE4ndrar min arbetsmetod och s\xF6ker aktivt efter alternativa
+        tillv\xE4gag\xE5ngss\xE4tt f\xF6r att uppn\xE5 b\xE4ttre resultat."
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Efter att ha f\xE5tt insikten och feedback fr\xE5n andra inser
+        jag vikten av att anpassa min metod f\xF6r att uppn\xE5 \xF6nskade resultat. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag har en flexibel inst\xE4llning till f\xF6r\xE4ndring och ser
+        det som en m\xF6jlighet till utveckling. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag har inte relevanta exempel, men \xE4r \xF6ppen f\xF6r att
+        l\xE4ra och anpassa mig i framtiden. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur hanterar du situationer d\xE4r olika arbetsuppgifter kr\xE4ver
+      att du \xE4ndrar fokus och prioriteringar snabbt? "
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle bli stressad och \xF6verv\xE4ldigad av att beh\xF6va
+        \xE4ndra fokus och prioriteringar snabbt. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle f\xF6rs\xF6ka hantera situationen men skulle ha sv\xE5rt
+        att \xE4ndra fokus och prioriteringar snabbt. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 'Jag skulle vara flexibel och snabbt anpassa mig till de nya kraven
+        och prioriteringarna. '
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle ignorera behovet av att \xE4ndra fokus och prioriteringar
+        och forts\xE4tta som vanligt. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur skulle du reagera om du fick feedback om att du beh\xF6ver
+      f\xF6rb\xE4ttra din flexibilitet p\xE5 arbetsplatsen?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle vara ovillig att acceptera feedbacken och forts\xE4tta
+        som vanligt. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle vara defensiv och f\xF6rsvara mina handlingar utan
+        att f\xF6rs\xF6ka f\xF6rb\xE4ttra mig. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skulle vara \xF6ppen f\xF6r feedback och aktivt arbeta p\xE5
+        att f\xF6rb\xE4ttra min flexibilitet. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle ignorera feedbacken och inte bry mig om att f\xF6rb\xE4ttra
+        min flexibilitet. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "DENNA \xC4R INTE KLAR!!!"
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag \xE4r f\xF6rst motvillig till den nya arbetsmilj\xF6n/teamet,
+        men jag anpassar mig aktivt med tiden."
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag v\xE4lkomnar den nya milj\xF6n/teamet och m\xF6ter utmaningarna
+        med anpassningen."
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag \xE4r flexibel och snabb p\xE5 att anpassa mig till den ny
+        milj\xF6n och teamet. Jag tar initiativ till att l\xE4ra k\xE4nna mina nya
+        kollegor och deras arbetsstilar f\xF6r att anpassa mina egna arbetsmetoder."
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag har inga relevanta exempel, men jag \xE4r \xF6ppen f\xF6r
+        att l\xE4ra och anpassa mig i framtiden."
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur hanterar du ov\xE4ntade f\xF6r\xE4ndringar eller avbrott i
+      ditt arbetsfl\xF6de?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle bli irriterad och ogilla ov\xE4ntade f\xF6r\xE4ndringar
+        eller avbrott i mitt arbetsfl\xF6de."
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle acceptera f\xF6r\xE4ndringarna eller avbrotten men
+        skulle ha sv\xE5rt att h\xE5lla fokus."
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skulle vara flexibel och hantera ov\xE4ntade f\xF6r\xE4ndringar
+        eller avbrott i mitt arbetsfl\xF6de genom att anpassa mig och sedan \xE5terg\xE5
+        till uppgiften."
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle bli arg \xF6ver f\xF6r\xE4ndringarna eller avbrotten
+        och f\xF6rs\xF6ka undvika att hantera dem."
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur skulle du hantera en situation d\xE4r du m\xE5ste arbeta \xF6vertid
+      eller \xE4ndra din schemalagda ledighet p\xE5 kort varsel?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle bli uppr\xF6rd och v\xE4gra arbeta \xF6vertid eller
+        \xE4ndra min ledighet."
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle acceptera att arbeta \xF6vertid eller \xE4ndra min
+        ledighet, men skulle vara missn\xF6jd med situationen."
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skulle vara flexibel och visa beredskap att arbeta \xF6vertid
+        eller \xE4ndra min ledighet om det beh\xF6vs. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle v\xE4gra att arbeta \xF6vertid eller \xE4ndra min ledighet
+        oavsett omst\xE4ndigheterna. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "DENNA \xC4R INTE KLAR!!!"
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag engagerar mig aktivt i att l\xE4ra mig och anpassa mig till
+        dem f\xF6r att kunna anv\xE4nda dem p\xE5 ett framg\xE5ngsrikt s\xE4tt."
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag anv\xE4nder mig av olika strategier f\xF6r att \xF6vervinna
+        sv\xE5righeterna jag st\xF6ter p\xE5 f\xF6r att slutligen kunna anpassa mig."
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag implementerar dessa teknologier eller system, vilket resulterar
+        i f\xF6rb\xE4ttrade resultat eller effektivitet p\xE5 arbetsplatsen."
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag kan inte ge ett passande exempel, men jag \xE4r \xF6ppen f\xF6r
+        att l\xE4ra mig och anpassa mig till nya teknologier och system i framtiden."
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur skulle du hantera att arbeta med olika typer av m\xE4nniskor
+      och personligheter i ett team?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle ha sv\xE5rt att samarbeta med olika typer av m\xE4nniskor
+        och personligheter i ett team."
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle f\xF6rs\xF6ka samarbeta med olika typer av m\xE4nniskor
+        och personligheter, men skulle ha sv\xE5rt att anpassa mig."
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skulle vara flexibel och anpassa mig f\xF6r att skapa en positiv
+        arbetsmilj\xF6 med olika typer av m\xE4nniskor och personligheter."
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle undvika att arbeta med olika typer av m\xE4nniskor
+        och personligheter i ett team. "
+      answerType: 0

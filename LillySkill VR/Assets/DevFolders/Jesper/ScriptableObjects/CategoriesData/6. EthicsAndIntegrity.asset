@@ -9,12 +9,188 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
   m_Name: 6. EthicsAndIntegrity
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
-  categoryName: 0
+  categoryName: 6
   interviewCategoryType: 0
   description: 
   categoryIsActive: 0
   allAnswersAnswered: 0
-  interviewQuestionData: []
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Vad tycker du \xE4r viktigt n\xE4r det g\xE4ller att vara \xE4rlig
+      och r\xE4ttvis p\xE5 jobbet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag bryr mig inte om att vara \xE4rlig och r\xE4ttvis."
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag f\xF6ljer inte alltid regler om det inte passar mig. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag tycker att det \xE4r viktigt att vara \xE4rlig och r\xE4ttvis. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag bryr mig inte om det p\xE5 jobbet. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad skulle du g\xF6ra om du s\xE5g en kollega stj\xE4la n\xE5got
+      viktigt fr\xE5n jobbet?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle inte bry mig och l\xE5ta det forts\xE4tta. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle ber\xE4tta f\xF6r chefen direkt. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skulle prata med kollegan och f\xF6rs\xF6ka l\xF6sa det tillsammans. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle l\xE5tsas som att jag inte sett n\xE5got. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur viktigt tycker du det \xE4r att vara \xE4rlig och r\xE4ttvis
+      i ditt arbete?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag ljuger ibland f\xF6r att g\xF6ra saker enklare. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag f\xF6ljer lagen men bryr mig inte om sm\xE5saker. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag tycker att det \xE4r mycket viktigt och f\xF6rs\xF6ker alltid
+        vara \xE4rlig och r\xE4ttvis. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 'Jag struntar i det. '
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad skulle du g\xF6ra om du fick i uppdrag att g\xF6ra n\xE5got
+      du inte tycker \xE4r r\xE4tt? "
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle g\xF6ra det utan att t\xE4nka p\xE5 det. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle g\xF6ra det f\xF6r att undvika problem, \xE4ven om
+        jag inte tycker att det \xE4r r\xE4tt. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skulle prata med n\xE5gon om mina tankar och f\xF6rs\xF6ka
+        hitta en annan l\xF6sning. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle v\xE4gra att g\xF6ra det och f\xF6rs\xF6ka hitta en
+        annan l\xF6sning. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad skulle du g\xF6ra om du m\xE4rkte att din chef var inblandad
+      i n\xE5got olagligt?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle inte bry mig och forts\xE4tta som vanligt. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle ber\xE4tta f\xF6r r\xE4tt person direkt. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skulle f\xF6rs\xF6ka samla bevis och prata med HR. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle ignorera det och hoppas att n\xE5gon annan tar hand
+        om det. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad skulle du g\xF6ra om du h\xF6ra en kollega sprida d\xE5liga
+      rykten om f\xF6retaget? "
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle l\xE5tsas som att jag inte h\xF6rt n\xE5got. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle ber\xE4tta det f\xF6r chefen eller HR. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 'Jag skulle prata med kollegan och be dem sluta. '
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 'Jag skulle inte bry mig om det. '
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur viktigt \xE4r det att h\xE5lla f\xF6retagets hemligheter hemliga? "
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 'Jag bryr mig inte om det. '
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag delar hemliga saker med andra utan att t\xE4nka. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag tycker att det \xE4r viktigt och f\xF6rs\xF6ker h\xE5lla saker
+        s\xE4kra. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Det spelar ingen roll f\xF6r mig. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad skulle du g\xF6ra om en kollega spred d\xE5liga rykten om
+      en annan kollega? "
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle inte bry mig och l\xE5ta det forts\xE4tta. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 'Jag skulle prata med kollegan och be dem sluta. '
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skulle ber\xE4tta det f\xF6r HR eller en chef. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle sprida rykten vidare och vara med p\xE5 det. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur viktigt tycker du det \xE4r att f\xF6lja jobbets regler och
+      policy? "
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag tycker inte att det \xE4r viktigt. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag f\xF6ljer jobbets regler och policy om det passar mig. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag tycker att det \xE4r mycket viktigt f\xF6r att ha en bra arbetsmilj\xF6. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 'Jag bryr mig inte om det. '
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur skulle du reagera om du s\xE5g en kollega ta \xE5t sig \xE4ran
+      f\xF6r ditt arbete inf\xF6r chefer eller kunder? "
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag skulle inte g\xF6ra n\xE5got och l\xE5ta det forts\xE4tta. "
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle s\xE4ga till kollegan att det var mitt arbete. "
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skulle ber\xE4tta det f\xF6r min chef och ta med underlag
+        som bevisar att det \xE4r jag som har utf\xF6rt arbetet. "
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skulle ignorera det och l\xE5tsas som ingenting. "
+      answerType: 0

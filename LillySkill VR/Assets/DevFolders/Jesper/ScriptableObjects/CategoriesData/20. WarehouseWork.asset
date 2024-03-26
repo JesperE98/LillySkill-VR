@@ -9,12 +9,608 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
   m_Name: 20. WarehouseWork
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
-  categoryName: 0
-  interviewCategoryType: 0
+  categoryName: 20
+  interviewCategoryType: 1
   description: 
   categoryIsActive: 0
   allAnswersAnswered: 0
-  interviewQuestionData: []
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Du arbetar i ett lager och ansvarar f\xF6r att plocka och packa
+      best\xE4llningar. En kund har skickat in en br\xE5dskande best\xE4llning som
+      m\xE5ste skickas samma dag. N\xE4r du b\xF6rjar plocka varorna m\xE4rker du
+      att n\xE5gra av dem \xE4r slut i lager. Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Skickar de tillg\xE4ngliga varorna och meddelar kunden om de saknade
+        varorna."
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "V\xE4ntar p\xE5 att de saknade varorna ska anl\xE4nda och skickar
+        hela best\xE4llningen senare."
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Kontaktar kunden och fr\xE5gar om de kan byta till liknande produkter
+        som finns i lagret."
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Skickar best\xE4llningen utan de saknade varorna och hoppas att
+        kunden inte m\xE4rker det."
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du arbetar i ett lager och har f\xE5tt i uppdrag att organisera
+      lagerytan f\xF6r att maximera utrymmet. N\xE4r du b\xF6rjar flytta produkter
+      m\xE4rker du att en del av dem \xE4r trasiga och inte l\xE4ngre anv\xE4ndbara.
+      Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "L\xE4mnar de trasiga produkterna p\xE5 sin plats och forts\xE4tter
+        med att organisera resten."
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: 'Rapporterar de trasiga produkterna till din chef och ber om instruktioner. '
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Kastar de trasiga produkterna och forts\xE4tter med mitt arbete. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "F\xF6rs\xF6ker reparera de trasiga produkterna sj\xE4lv innan
+        du forts\xE4tter att organisera. "
+      answerType: 1
+  - QuestionAsked: 0
+    QuestionText: "DENNA \xC4R INTE KLAR!!!"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: 
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och m\xE4rker att en av de elektriska
+      gaffeltruckarna har ett trasigt lyft-system. Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Anv\xE4nder trucken \xE4nd\xE5 och hoppas att den inte bryter
+        ihop helt. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: Rapporterar omedelbart det trasiga lyft-systemet till din chef.
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Reparerar lyft-systemet sj\xE4lv. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Undviker att anv\xE4nda trucken och ber en kollega att anv\xE4nda
+        en annan. "
+      answerType: 1
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt i uppdrag att inventera
+      lagerbest\xE5ndet. N\xE4r du b\xF6rjar r\xE4kna varorna m\xE4rker du att n\xE5gra
+      av deras antal inte st\xE4mmer \xF6verens med det som finns registrerat i systemet.
+      Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "R\xE4kna om varorna f\xF6r att s\xE4kerst\xE4lla att du inte har
+        gjort n\xE5gra misstag."
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "Rapporterar avvikelsen till din chef och ber om hj\xE4lp f\xF6r
+        att l\xF6sa problemet."
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar avvikelsen och forts\xE4tter inventeringen som planerat. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "G\xF6r ingenting och hoppas att avvikelsen kommer att r\xE4tta
+        till sig sj\xE4lv. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och f\xE5r ett telefonsamtal fr\xE5n
+      en kund som meddelar att de har f\xE5tt fel produkter i sin best\xE4llning.
+      Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: Ber kunden skicka tillbaka de felaktiga produkterna och skickar
+        de korrekta produkterna.
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Erbjuder kunden en rabatt p\xE5 n\xE4sta best\xE4llning och ber
+        dem beh\xE5lla de felaktiga produkterna."
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "Ber kunden att anv\xE4nda de felaktiga produkterna och skickar
+        de korrekta produkterna senare. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "F\xF6rnekar att felaktiga produkter har skickats ut.  "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och plockar ihop en br\xE5dskande order
+      som en kund har beg\xE4rt expressleverans p\xE5 till n\xE4sta dag. N\xE4r du
+      plockar varorna m\xE4rker du att en viktig produkt \xE4r skadad och inte kan
+      skickas. Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Skickar best\xE4llningen utan den skadade produkten och meddelar
+        kunden om situationen. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "F\xF6rs\xF6ker reparera den skadade produkten snabbt och inkluderar
+        den i best\xE4llningen. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "V\xE4ntar p\xE5 att en ny produkt ska anl\xE4nda och skickar hela
+        best\xE4llningen senare. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: 'Meddelar din chef om skadan och ber om instruktioner. '
+      answerType: 2
+  - QuestionAsked: 0
+    QuestionText: "Du arbetar p\xE5 ett lager och ansvarar f\xF6r lagerstyrningen.
+      Du m\xE4rker att en specifik produkt har h\xF6g efterfr\xE5gan och riskerar
+      att ta slut. Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Best\xE4ller omedelbart fler av den produkten f\xF6r att undvika
+        att den tar slut. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "V\xE4ntar och ser om efterfr\xE5gan minskar innan du best\xE4ller
+        mer. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Informerar f\xF6rs\xE4ljningsavdelningen om den h\xF6ga efterfr\xE5gan
+        och ber dem hantera det. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Flyttar produkten till en mer synlig plats i lagret f\xF6r att
+        \xF6ka f\xF6rs\xE4ljningen. "
+      answerType: 1
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt i uppdrag att organisera
+      inkommande f\xE4rskvaror. N\xE4r du \xF6ppnar en av leveranserna m\xE4rker
+      du att n\xE5gra av produkterna har felaktiga m\xE4rkta datum. Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar det och placerar produkterna p\xE5 l\xE4mpliga platser
+        \xE4nd\xE5. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: 'Rapporterar felet till din chef och ber om instruktioner. '
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "F\xF6rs\xF6ker sj\xE4lv korrigera m\xE4rkningen p\xE5 produkterna. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "L\xE4mnar produkterna obem\xE4rkta och hoppas att ingen kommer
+        att m\xE4rka det. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r returhantering.
+      En kund har skickat tillbaka en produkt som de p\xE5st\xE5r \xE4r defekt. Vad
+      g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Kontrollerar produkten f\xF6r att bekr\xE4fta om den verkligen
+        \xE4r defekt. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Accepterar kundens p\xE5st\xE5ende och \xE5terbetalar dem utan
+        att kontrollera produkten. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "Avvisar kundens retur och ber dem kontakta tillverkaren f\xF6r
+        garanti\xE4renden. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: 'Skickar en ny produkt till kunden utan att be om den defekta produkten
+        tillbaka. '
+      answerType: 1
+  - QuestionAsked: 0
+    QuestionText: "Du arbetar p\xE5 ett lager och hanterar farliga \xE4mnen. N\xE4r
+      du utf\xF6r din dagliga kontroll uppt\xE4cker du att ett av de farliga \xE4mnena
+      inte \xE4r ordentligt f\xF6rseglat. Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar det och forts\xE4tter med kontrollen. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Rapporterar omedelbart felet till din chef och f\xF6ljer f\xF6retagets
+        protokoll f\xF6r farliga \xE4mnen. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "F\xF6rs\xF6ker f\xF6rsegla \xE4mnet sj\xE4lv. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "L\xE4mnar \xE4mnet som det \xE4r och tar upp det med de n\xE4rmsta
+        kollegorna p\xE5 kafferasten. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att hantera returer.
+      En kund har skickat tillbaka en produkt utan att inkludera n\xE5gon retursedel.
+      Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Accepterar returen och \xE5terbetalar kunden utan att be om n\xE5gon
+        information. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: 'Skickar tillbaka produkten till kunden och ber om mer information
+        om returen. '
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: 'Kontakta kunden och be dem fylla i en digitalretursedel. '
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar returen och v\xE4ntar p\xE5 att kunden ska kontakta
+        dig igen.  "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt en leverans av k\xE4nsliga
+      elektroniska produkter. N\xE4r du \xF6ppnar leveransen m\xE4rker du att n\xE5gra
+      av produkterna \xE4r skadade. Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: 'Rapporterar omedelbart skadorna till din chef och ber om instruktioner. '
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: 'Dokumenterar skadorna noggrant och tar bilder som bevis. '
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "Kontaktar leverant\xF6ren f\xF6r att rapportera skadorna och beg\xE4ra
+        ers\xE4ttning eller utbyte."
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "Isolerar och m\xE4rker de skadade produkterna f\xF6r att f\xF6rhindra
+        att de anv\xE4nds eller skickas ut till kunder. "
+      answerType: 1
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att organisera utg\xE5ende
+      leveranser. En kund beg\xE4r en specialf\xF6rpackning f\xF6r sina produkter
+      p\xE5 grund av deras k\xE4nslighet. Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Kontakter kunden f\xF6r att f\xE5 mer information om deras specialf\xF6rpackningskrav. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Anv\xE4nder standardf\xF6rpackningar och hoppas att det kommer
+        att vara tillr\xE4ckligt. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "R\xE5dg\xF6r med din chef eller kollega f\xF6r att hitta l\xE4mpliga
+        specialf\xF6rpackningar. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "Skickar produkterna utan n\xE5gon speciell f\xF6rpackning och
+        l\xE5ter kunden hantera det sj\xE4lv. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt en retur d\xE4r kunden
+      p\xE5st\xE5r att varan \xE4r anv\xE4nd och inte fungerar som f\xF6rv\xE4ntat.
+      Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Kontrollerar produkten f\xF6r att bekr\xE4fta kundens p\xE5st\xE5ende
+        och unders\xF6ker om det finns n\xE5gra anv\xE4ndningssp\xE5r."
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Accepterar kundens p\xE5st\xE5ende och \xE5terbetalar dem utan
+        att kontrollera produkten. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "Avvisar kundens retur och h\xE4nvisar dem till tillverkarens garantiavdelning. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: 'Skickar en ny produkt till kunden utan att be om den defekta produkten
+        tillbaka. '
+      answerType: 1
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt i uppdrag att flytta
+      tunga pallar med en gaffeltruck. N\xE4r du f\xF6rs\xF6ker lyfta en pall m\xE4rker
+      du att trucken har sv\xE5rt att hantera vikten. Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Rapporterar omedelbart problemet till din chef och ber om en unders\xF6kning
+        och reparation av trucken. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "F\xF6rs\xF6ker \xE4nd\xE5 att flytta pallen med f\xF6rsiktighet
+        och hoppas att trucken inte bryter ihop. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "L\xE4mnar pallen d\xE4r den \xE4r och ber en kollega om hj\xE4lp
+        med att flytta den. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "F\xF6rs\xF6ker reparera trucken sj\xE4lv utan att informera n\xE5gon. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att m\xE4rka och
+      etikettera produkter korrekt. Du m\xE4rker att du har slut p\xE5 etiketter
+      och det finns ingen ny leverans p\xE5 g\xE5ng. Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Anv\xE4nder andra tillg\xE4ngliga metoder f\xF6r att m\xE4rka
+        och etikettera produkterna, som till exempel handskrivna etiketter. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Kontaktar din chef f\xF6r att meddela bristen p\xE5 etiketter
+        och be om att en ny leverans ska best\xE4llas. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar bristen p\xE5 etiketter och forts\xE4tter att skicka
+        ut produkterna utan korrekt m\xE4rkning. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "F\xF6rs\xF6ker hitta etiketter fr\xE5n andra f\xF6rpackningar
+        eller produkter f\xF6r att anv\xE4nda dem tills en ny leverans kommer. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du ansvarar f\xF6r att organisera lagret och m\xE4rker att vissa
+      produkter \xE4r placerade p\xE5 fel hyllor och inte st\xE4mmer \xF6verens med
+      lagrets layout. Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Flyttar produkterna till r\xE4tt hyllor enligt lagrets layout
+        och ordning. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Rapporterar avvikelsen till din chef och ber om instruktioner
+        f\xF6r att korrigera situationen. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar avvikelsen och l\xE5ter produkterna vara d\xE4r de \xE4r. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Omorganiserar hela lagret enligt din egen layout utan att kontakta
+        n\xE5gon. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt i uppdrag att lossa
+      en leverans av produkter fr\xE5n en lastbil. N\xE4r d\xF6rrarna till lastbilen
+      \xF6ppnas m\xE4rker du att n\xE5gra av produkterna \xE4r trasiga p\xE5 grund
+      av d\xE5lig hantering under transporten. Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: 'Dokumenterar skadorna noggrant och tar bilder som bevis. '
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Kontaktar transportf\xF6retaget f\xF6r att rapportera skadorna
+        och beg\xE4ra ers\xE4ttning eller utbyte."
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Informerar din chef eller ansvarig f\xF6r att diskutera n\xE4sta
+        steg och eventuella \xE5tg\xE4rder. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Isolerar och m\xE4rker de skadade produkterna f\xF6r att f\xF6rhindra
+        att de anv\xE4nds eller skickas ut till kunder. "
+      answerType: 2
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att hantera farliga
+      \xE4mnen och kemikalier. Du m\xE4rker att ett av de farliga \xE4mnena har l\xE4ckt
+      och runnit ut p\xE5 golvet. Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Aktiverar omedelbart n\xF6dsystemet och f\xF6ljer f\xF6retagets
+        protokoll f\xF6r att hantera farliga \xE4mnen och utsl\xE4pp."
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Anv\xE4nder passande skyddsutrustning och reng\xF6ringsmaterial
+        f\xF6r att sanera utsl\xE4ppet och s\xE4kerst\xE4lla att omr\xE5det \xE4r
+        s\xE4kert. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Rapporterar omedelbart h\xE4ndelsen till din chef eller ansvarig
+        och f\xF6ljer deras anvisningar f\xF6r vidare \xE5tg\xE4rder. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar utsl\xE4ppet och forts\xE4tter med ditt arbete som vanligt. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att plocka och packa
+      produkter f\xF6r utg\xE5ende leveranser. En kund har skickat en beg\xE4ran
+      om att \xE4ndra sin leveransadress efter att produkterna redan har packats.
+      Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Kontakter kunden f\xF6r att bekr\xE4fta den nya leveransadressen
+        och genomf\xF6r \xE4ndringen i systemet. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Kontaktar transport\xF6ren f\xF6r att \xE4ndra leveransadressen
+        och informerar kunden om m\xF6jligheten till \xE4ndring. "
+      answerType: 1
+    - AnswerAlternative: 
+      AnswerText: "R\xE5dg\xF6r med din chef eller ansvarig f\xF6r att f\xE5 instruktioner
+        om hur man hanterar \xE4ndringar av leveransadresser. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar beg\xE4ran och skickar produkterna till den ursprungliga
+        adressen som angavs. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "I ditt dagliga arbete organiserar du lagret f\xF6r att maximera
+      utrymmet och effektiviteten. Du m\xE4rker att vissa produkter \xE4r placerade
+      p\xE5 platser som \xE4r sv\xE5ra att n\xE5 eller inte logiskt ordnade. Vad
+      g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Omorganiserar lagret f\xF6r att placera produkterna p\xE5 mer
+        l\xE4mpliga och l\xE4ttillg\xE4ngliga platser enligt en logisk ordning. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Diskuterar problemet med din chef eller ansvarig f\xF6r att f\xE5
+        riktlinjer eller f\xF6rslag om hur man b\xE4st organiserar lagret. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar situationen och l\xE5ter produkterna vara d\xE4r de
+        \xE4r, \xE4ven om det kan p\xE5verka effektiviteten och arbetsfl\xF6det. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Flyttar produkterna till l\xE4mpligare platser utan att r\xE5dg\xF6ra
+        med n\xE5gon eller rapportera \xE4ndringarna. "
+      answerType: 1
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och en kund har skickat tillbaka en
+      produkt som inte fungerar som f\xF6rv\xE4ntat och beg\xE4r en \xE5terbetalning.
+      Du unders\xF6ker produkten och uppt\xE4cker att kunden har skadat den genom
+      felaktig anv\xE4ndning. Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Kommunicerar med kunden f\xF6r att informera om att produkten
+        \xE4r skadad p\xE5 grund av felaktig anv\xE4ndning och inte \xE4r ber\xE4ttigad
+        till \xE5terbetalning. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Erbjuder kunden en delvis \xE5terbetalning eller en utbytesprodukt
+        som en goodwill-gest, trots att skadan inte t\xE4cks av garantin. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: 'Avvisar kundens retur. '
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Accepterar kundens retur och \xE5terbetalar dem utan att unders\xF6ka
+        produkten eller kontrollera om skadan \xE4r resultatet av felaktig anv\xE4ndning. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och en kund beg\xE4r vid best\xE4llning
+      att deras produkter f\xF6rvaras i ett temperatur- och fuktighetskontrollerat
+      utrymme f\xF6r att undvika skador innan leverans. Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Kontrollerar om lagret har en temperatur- och fuktighetskontrollerad
+        zon och placerar kundens produkter d\xE4r om det \xE4r m\xF6jligt. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Kontakter din chef eller ansvarig f\xF6r att f\xE5 information
+        om m\xF6jligheterna att tillhandah\xE5lla temperatur- och fuktighetskontroll
+        f\xF6r kundens produkter. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Informerar kunden om att lagret inte har m\xF6jlighet att erbjuda
+        temperatur- och fuktighetskontroll och diskuterar alternativa l\xF6sningar
+        eller f\xF6rsiktighets\xE5tg\xE4rder. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar kundens beg\xE4ran och f\xF6rvarar produkterna p\xE5
+        vanligt s\xE4tt utan att ta h\xE4nsyn till beg\xE4ran. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att hantera och
+      lagra mejeriprodukter vid r\xE4tt temperatur. En dag m\xE4rker du att temperaturm\xE4taren
+      f\xF6r ett av kylrummen visar en h\xF6gre temperatur \xE4n den rekommenderade.
+      Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar det och forts\xE4tter med ditt arbete. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Rapporterar omedelbart felet till din n\xE4rmaste chef. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "Justerar temperaturen sj\xE4lv utan att informera n\xE5gon. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "V\xE4ntar och ser om temperaturen sjunker av sig sj\xE4lv. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt i uppdrag att plocka
+      och f\xF6rbereda en stor order f\xF6r leverans. N\xE4r du b\xF6rjar plocka
+      varorna m\xE4rker du att en av produkterna har passerat sitt b\xE4st f\xF6re-datum.
+      Vad g\xF6r du? "
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "Ignorerar det och inkluderar produkten i ordern \xE4nd\xE5. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Tar bort produkten fr\xE5n ordern och rapporterar felet till din
+        chef."
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "L\xE4mnar produkten p\xE5 sin plats och hoppas att n\xE5gon annan
+        uppt\xE4cker felet. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Byter ut produkten utan att informera n\xE5gon. "
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och har precis mottagit en stor leverans
+      av mejeriprodukter. N\xE4r du kontrollerar leveransen uppt\xE4cker du att en
+      av pallarna \xE4r skadad och produkterna \xE4r delvis f\xF6rst\xF6rda. Vad
+      \xE4r det f\xF6rsta du g\xF6r?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "L\xE4mnar pallen som den \xE4r och rapporterar skadan till din
+        chef. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "F\xF6rs\xF6ker reparera pallen sj\xE4lv f\xF6r att r\xE4dda s\xE5
+        mycket som m\xF6jligt. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Kastar de f\xF6rst\xF6rda produkterna och hoppas att ingen m\xE4rker
+        det. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: 'Tar bilder av skadan och produkterna och rapporterar det till
+        din chef. '
+      answerType: 2
+  - QuestionAsked: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och \xE4r mitt i att f\xF6rbereda en
+      best\xE4llning f\xF6r en kund. N\xE4r du plockar produkterna m\xE4rker du att
+      en av dem \xE4r trasig och l\xE4cker. Vad g\xF6r du?"
+    correctAnswer: 5
+    answers:
+    - AnswerAlternative: 
+      AnswerText: "L\xE4gger produkten i en p\xE5se f\xF6r att undvika l\xE4ckage
+        och inkluderar den i best\xE4llningen. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Tar bort produkten fr\xE5n best\xE4llningen och ers\xE4tter den
+        med en intakt produkt. "
+      answerType: 2
+    - AnswerAlternative: 
+      AnswerText: "L\xE4mnar produkten p\xE5 sin plats och hoppas att ingen m\xE4rker
+        l\xE4ckaget. "
+      answerType: 0
+    - AnswerAlternative: 
+      AnswerText: "Kastar produkten utan att informera n\xE5gon. "
+      answerType: 0
