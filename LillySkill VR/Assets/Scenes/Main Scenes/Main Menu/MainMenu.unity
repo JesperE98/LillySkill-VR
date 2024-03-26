@@ -4716,37 +4716,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563487382}
   m_Mesh: {fileID: 7240493346068470835, guid: 3ed61a155e5de4c4d9c52788cb23b9cb, type: 3}
---- !u!1 &581310980
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 581310981}
-  m_Layer: 0
-  m_Name: /////////////////////////// Lights ///////////////////////////
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &581310981
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581310980}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6892996, y: -1.3171668, z: 0.4200467}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &587616810
 GameObject:
   m_ObjectHideFlags: 0
@@ -63063,6 +63032,5 @@ SceneRoots:
   - {fileID: 1346657754886313578}
   - {fileID: 1900279168}
   - {fileID: 8740137342404410362}
-  - {fileID: 581310981}
   - {fileID: 847345160}
   - {fileID: 520375988}

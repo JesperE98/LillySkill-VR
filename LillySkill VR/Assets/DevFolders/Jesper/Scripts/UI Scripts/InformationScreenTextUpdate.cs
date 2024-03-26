@@ -37,7 +37,7 @@ namespace Jesper.Collection
 
         private void GenerateQuestionText(int listIndex, int subListIndex)
         {
-            informationPageText.text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].QuestionText;
+            informationPageText.text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].QuestionText;
         }
 
         private void UpdateInformationScreenText()
