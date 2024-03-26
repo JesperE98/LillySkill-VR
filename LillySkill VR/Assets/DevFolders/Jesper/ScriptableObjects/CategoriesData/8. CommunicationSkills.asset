@@ -19,6 +19,7 @@ MonoBehaviour:
   allAnswersAnswered: 0
   interviewQuestionData:
   - QuestionAsked: 0
+<<<<<<< Updated upstream
     QuestionText: "Hur skulle du effektivt kommunicera en komplex id\xE9 inf\xF6r
       andra personer?"
     correctAnswer: 2
@@ -211,4 +212,164 @@ MonoBehaviour:
     - AnswerAlternative: D
       AnswerText: "Jag skickar bara meddelanden och f\xF6rv\xE4ntar mig att andra
         ska f\xF6rst\xE5 dem utan ytterligare f\xF6rklaring."
+=======
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+>>>>>>> Stashed changes
       answerType: 0
