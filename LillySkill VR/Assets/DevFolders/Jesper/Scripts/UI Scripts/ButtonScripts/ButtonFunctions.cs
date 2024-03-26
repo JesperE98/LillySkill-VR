@@ -75,14 +75,14 @@ namespace Jesper.Collection
 
         public void OnConfirmChoisePressed()
         {
-            _gameManager._questionsAndAnswersCopy[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].QuestionAsked = true;
+            _gameManager._activeInterviewCategories[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].QuestionAsked = true;
 
-            if (_gameManager._questionsAndAnswersCopy[_gameManager.RandomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Regular)
+            if (_gameManager._activeInterviewCategories[_gameManager.RandomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Regular)
             {
                 switch (selectedAnswer)
                 {
                     case SelectedAnswer.A:
-                        if (_gameManager._questionsAndAnswersCopy[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.A)
+                        if (_gameManager._activeInterviewCategories[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.A)
                         {
                             _gameManager.AddAnswerToList("Fråga " + _gameManager.AnswerPageNumber + ": Rätt svar!");
                             _gameManager.InterviewerInterest += 1;
@@ -97,7 +97,7 @@ namespace Jesper.Collection
                         break;
 
                     case SelectedAnswer.B:
-                        if (_gameManager._questionsAndAnswersCopy[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.B)
+                        if (_gameManager._activeInterviewCategories[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.B)
                         {
                             _gameManager.AddAnswerToList("Fråga " + _gameManager.AnswerPageNumber + ": Rätt svar!");
                             _gameManager.InterviewerInterest += 1;
@@ -112,7 +112,7 @@ namespace Jesper.Collection
                         break;
 
                     case SelectedAnswer.C:
-                        if (_gameManager._questionsAndAnswersCopy[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.C)
+                        if (_gameManager._activeInterviewCategories[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.C)
                         {
                             _gameManager.AddAnswerToList("Fråga " + _gameManager.AnswerPageNumber + ": Rätt svar!");
                             _gameManager.InterviewerInterest += 1;
@@ -127,7 +127,7 @@ namespace Jesper.Collection
                         break;
 
                     case SelectedAnswer.D:
-                        if (_gameManager._questionsAndAnswersCopy[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.D)
+                        if (_gameManager._activeInterviewCategories[_gameManager.RandomListIndex].interviewQuestionData[_gameManager.RandomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.D)
                         {
                             _gameManager.AddAnswerToList("Fråga " + _gameManager.AnswerPageNumber + ": Rätt svar!");
                             _gameManager.InterviewerInterest += 1;
@@ -158,13 +158,13 @@ namespace Jesper.Collection
                 obj.SetActive(false);
             }
 
+            _gameManager.CheckAllAnswers();
             _gameManager.GetRandomListIndex();
             _gameManager.GetRandomSubListIndex();
 
             _gameManager.AnswerPageNumber++;
             selectedAnswer = SelectedAnswer.None;
             _gameManager.WaitForAnswer = false;
-            //_gameManager.CheckAllAnswers();
             _uiManager.StartUIDeactivation();
         }
 

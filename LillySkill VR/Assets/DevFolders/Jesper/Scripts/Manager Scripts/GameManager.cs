@@ -5,10 +5,8 @@ using static UnityEngine.Rendering.DebugUI;
 using Jesper.GameSettings.Data;
 using Jesper.InterviewAnswersAndQuestions.Data;
 using Jesper.InterviewQuestionsList.Data;
-using static UnityEngine.Timeline.AnimationPlayableAsset;
-using System.Linq;
+using UnityEditor.Profiling.Memory.Experimental;
 using Unity.VisualScripting;
-using UnityEditor.iOS;
 
 public class GameManager : MonoBehaviour
 {
@@ -41,12 +39,7 @@ public class GameManager : MonoBehaviour
     protected List<string> _answerList = new List<string>();
 
 
-    public List<CategoriesData> _questionsAndAnswersCopy;
-    public List<Categories> _questionsCopy = new List<Categories>();
-    //public List<DefaultCategoryData> _defaultAnswersCopy = new List<DefaultCategoryData>();
-    //public List<SituationBasedCategoriesData> _situationBasedAnswersCopy = new List<SituationBasedCategoriesData>();
-
-    //public List<SituationBasedCategoriesData> UsedAnswer = new List<SituationBasedCategoriesData>();
+    public List<CategoriesData> _activeInterviewCategories = new List<CategoriesData>();
 
 
     /// <summary>
@@ -255,101 +248,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-
-        //if (_gameSettings.LoadedScene == "Office")
-        //{
-        //    //foreach(CategoriesData data in interviewAnswersAndQuestions.categoriesDatas)
-        //    //{
-        //    //    if (data.categoryIsActive == true)
-        //    //    {
-        //    //        _questionsAndAnswersCopy.Add(data.Clone());
-
-        //    //    }
-        //    //}
-
-        //    //// Loops through the scriptable object and checks which categories are activated
-        //    //// and adds them into a new List.
-        //    //for (int i = 0; i < interviewQuestionList._questionCategories.Count; i++)
-        //    //{
-        //    //    if (interviewQuestionList._questionCategories[i].CategoryIsActive == true)
-        //    //    {
-        //    //        _questionsCopy.Add(interviewQuestionList._questionCategories[i].Clone());
-        //    //    }
-        //    //}
-
-        //    //for (int i = 0; i < interviewAnswersAndQuestions.categoriesDatas.Length; i++)
-        //    //{
-        //    //    if (interviewAnswersAndQuestions.categoriesDatas[i].categoryIsActive == true)
-        //    //    {
-
-        //    //        _questionsAndAnswersCopy.Add(interviewAnswersAndQuestions.categoriesDatas[i].Clone());
-        //    //        _questionsAndAnswersCopy.Add(_questionsAndAnswersCopy[i]);
-
-        //    //    }
-        //    //}
-
-        //    //This statement is true if the DefaultCategory are activated.
-        //    //if (interviewAnswersList.DefaultCategoryIsActive == true)
-        //    //{
-        //    //    // Loops through the scriptable object and checks which categories are activated
-        //    //    // and adds them into a new List.
-        //    //    for (int i = 0; i < interviewAnswersList.defaultCategory.Count; i++)
-        //    //    {
-        //    //        _defaultAnswersCopy.Add(interviewAnswersList.defaultCategory[i].Clone());
-        //    //    }
-        //    //}
-
-        //    //// Loops through the scriptable object and checks which categories are activated
-        //    //// and adds them into a new List.
-        //    //for (int i = 0; i < interviewAnswersList.categories.Count; i++)
-        //    //{
-        //    //    if (interviewAnswersList.categories[i].CategoryIsActive == true)
-        //    //    {
-        //    //        _answersCopy.Add(interviewAnswersList.categories[i].Clone());
-        //    //    }
-        //    //}
-
-        //    //// Loops through the scriptable object and checks which categories are activated
-        //    //// and adds them into a new List.
-        //    //for (int i = 0; i < interviewAnswersList.SituationBasedCategories.Count; i++)
-        //    //{
-        //    //    if (interviewAnswersList.SituationBasedCategories[i].CategoryIsActive == true)
-        //    //    {
-        //    //        _situationBasedAnswersCopy.Add(interviewAnswersList.SituationBasedCategories[i].Clone());
-        //    //    }
-        //    //}
-        //}
-
-        // Resets all necessary bool values back to false.
-        for (int i = 0; i < interviewAnswersAndQuestions.categoriesDatas.Length; i++)
-        {
-            if (interviewAnswersAndQuestions.categoriesDatas[i].categoryIsActive == true)
-            {
-                interviewAnswersAndQuestions.categoriesDatas[i].allAnswersAnswered = false;
-
-                for (int j = 0; j < interviewAnswersAndQuestions.categoriesDatas[i].interviewQuestionData.Count; j++)
-                {
-                    interviewAnswersAndQuestions.categoriesDatas[i].interviewQuestionData[j].QuestionAsked = false;
-                }
-            }
-        }
-
-        Debug.Log("All values reseted!");
-
-        foreach(CategoriesData data in interviewAnswersAndQuestions.categoriesDatas)
-        {
-            if(data.categoryIsActive == true)
-            {
-                data.Clone();
-
-                _questionsAndAnswersCopy.Add(data);
-            }
-
-        }
-
+        ResetInterviewData();
+        //CheckAllAnswers();
         GetRandomListIndex();
         GetRandomSubListIndex();
-        
     }
 
     private void Update()
@@ -367,24 +269,73 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void CheckAllAnswers()
     {
-        foreach (var data in _questionsAndAnswersCopy.GetRange(0, _questionsAndAnswersCopy.Count))
+        if(_activeInterviewCategories == null || _activeInterviewCategories.Count == 0)
         {
-            if (data.allAnswersAnswered == true)
+            return;
+        }
+
+        bool anyUnansweredQuestions = false;
+        bool allQuestionsAnswered = true; // Flag to track if all questions are answered.
+
+        foreach (var data in _activeInterviewCategories)
+        {
+            Debug.Log(data.ToString());
+            allQuestionsAnswered &= data.allAnswersAnswered; // Efficiently check if all elements are true using bitwise AND.
+            Debug.Log(allQuestionsAnswered.ToString());
+
+            if (!allQuestionsAnswered)
             {
-                InterviewAreActive = false;
+                anyUnansweredQuestions = true;
+                break; // Exit after encountering an unanswered category (optimization)
+            }
+
+            // Additionally check if all questions within the category are answered.
+            if (data.categoryIsActive)
+            {
+                bool allCategoryQuestionsAnswered = true;
+
+                foreach (var question in data.interviewQuestionData)
+                {
+                    allCategoryQuestionsAnswered &= question.QuestionAsked;
+
+                    if (!allCategoryQuestionsAnswered)
+                    {
+                        break; // No need to continue checking questions within the category.
+                    }
+                }
+                data.allAnswersAnswered = allCategoryQuestionsAnswered; // Update category flag.
             }
         }
 
-        //for (int i = 0; i < _questionsAndAnswersCopy.Count; i++)
-        //{
-        //    if (interviewAnswersAndQuestions.categoriesDatas[interviewAnswersAndQuestions.categoriesDatas.Length].categoryIsActive == true)
-        //    {
-        //        if (_questionsAndAnswersCopy[i].allAnswersAnswered == true)
-        //        {
-        //            InterviewAreActive = false;
-        //        }
-        //    }
-        //}
+        InterviewAreActive = !anyUnansweredQuestions; // Set interview active based on overall answered state.
+
+        if (!anyUnansweredQuestions)
+        {
+            Debug.Log("All interview questions have been answered!");
+            // Handle the case where all questions are answered (e.g., display congratulations)
+        }
+    }
+
+    /// <summary>
+    /// Checks if all the questions in a specific category are answered.
+    /// </summary>
+    public void CheckAllQuestions()
+    {
+        if (_activeInterviewCategories == null || _activeInterviewCategories.Count == 0)
+        {
+            return;
+        }
+
+        foreach (var data in _activeInterviewCategories[RandomListIndex].interviewQuestionData)
+        {
+            if (!data.QuestionAsked)
+            {
+                _activeInterviewCategories[RandomListIndex].allAnswersAnswered = true;
+                return;
+            }
+        }
+
+        _activeInterviewCategories[RandomListIndex].allAnswersAnswered = false;
     }
 
     /// <summary>
@@ -404,39 +355,110 @@ public class GameManager : MonoBehaviour
         AnswerList.Add(text);
     }
 
+    private void ResetInterviewData()
+    {
+        // Resets all necessary bool values back to false.
+        for (int i = 0; i < interviewAnswersAndQuestions.categoriesDatas.Length; i++)
+        {
+            if (interviewAnswersAndQuestions.categoriesDatas[i].categoryIsActive == true)
+            {
+                interviewAnswersAndQuestions.categoriesDatas[i].allAnswersAnswered = false;
+
+                for (int j = 0; j < interviewAnswersAndQuestions.categoriesDatas[i].interviewQuestionData.Count; j++)
+                {
+                    interviewAnswersAndQuestions.categoriesDatas[i].interviewQuestionData[j].QuestionAsked = false;
+                }
+            }
+        }
+
+        _activeInterviewCategories.Clear();
+        Debug.Log("All values reseted!");
+
+        // Goes through all data in InterviewAnswersAndQuestions list categoriesDatas and creates deep copies of the categorys
+        // that are active and adds them to the GameManagers list _activeInterviewCategories.
+        foreach (CategoriesData data in interviewAnswersAndQuestions.categoriesDatas)
+        {
+            if (data.categoryIsActive == true)
+            {
+                data.Clone();
+
+                _activeInterviewCategories.Add(data);
+            }
+
+        }
+    }
+
+    /// <summary>
+    /// Generate a random int value for the list index.
+    /// </summary>
     public void GetRandomListIndex()
     {
-        if(InterviewAreActive == true)
+        if (!InterviewAreActive)
         {
-            _randomListIndex = Random.Range(0, _questionsAndAnswersCopy.Count);
+            return;
+        }
 
-            if (_questionsAndAnswersCopy[_randomListIndex].allAnswersAnswered == false)
+        if(_activeInterviewCategories.Count == 0)
+        {
+            // Handle case where no active categories are available
+            return;
+        }
+
+        int tries = 0;// Track loop iterations to avoid infinite loops.
+
+        do
+        {
+            _randomListIndex = Random.Range(0, _activeInterviewCategories.Count);
+        } while (_activeInterviewCategories[_randomListIndex].allAnswersAnswered && tries++ < 100); // Limit retries to prevent infinite loops
+
+        if(tries >= 100)
+        {
+            // Handle case where no un-answered questions are found after retries (unlikely scenario)
+        }
+        else
+        {
+            Debug.Log("Random List Index: " + _randomListIndex);
+            ReturnRandomListIndex();
+        }
+    }
+
+    /// <summary>
+    /// Generates a random int value for the sub list index.
+    /// </summary>
+    public void GetRandomSubListIndex()
+    {
+        if (!InterviewAreActive)
+        {
+            return;
+        }
+
+        if(_randomListIndex < 0 || _randomListIndex >= _activeInterviewCategories.Count)
+        {
+            // Handles invalid list index.
+            return;
+        }
+
+        var currentCategory = _activeInterviewCategories[_randomListIndex];
+
+        if (currentCategory.categoryIsActive)
+        {
+            int tries = 0;
+
+            do
             {
-                Debug.Log("Random List Index: " + _randomListIndex);
-                ReturnRandomListIndex();
+                _randomSubListIndex = Random.Range(0, currentCategory.interviewQuestionData.Count);
+            } while (currentCategory.interviewQuestionData[_randomSubListIndex].QuestionAsked && tries++ < 100); // Limit retries to prevent infinite loops
+
+            if(tries >= 100)
+            {
+                // Handle case where no un-answered questions are found after retries (unlikely scenario)
             }
             else
             {
-                GetRandomListIndex();
+                Debug.Log("Random Sub List Index: " + _randomSubListIndex);
+                ReturnRandomSubListIndex();
             }
-
-            foreach (var data in _questionsAndAnswersCopy[_randomListIndex].interviewQuestionData.GetRange(0, _questionsAndAnswersCopy[_randomListIndex].interviewQuestionData.Count))
-            {
-                if (data.QuestionAsked == true)
-                {
-                    _questionsAndAnswersCopy[_randomListIndex].allAnswersAnswered = true;
-                }
-            }
-
-            //for (int i = 0; i < interviewAnswersAndQuestions.categoriesDatas[RandomListIndex].interviewQuestionData.Count; i++)
-            //{
-            //    if (listRange[i].QuestionAsked == true)
-            //    {
-
-            //    }
-            //}
         }
-
     }
 
     /// <summary>
@@ -447,39 +469,6 @@ public class GameManager : MonoBehaviour
     {
         return _randomListIndex;
     }
-
-    public void GetRandomSubListIndex()
-    {
-        if(InterviewAreActive == true)
-        {
-            if (_questionsAndAnswersCopy[_randomListIndex].categoryIsActive == true)
-            {
-                _randomSubListIndex = Random.Range(0, _questionsAndAnswersCopy[_randomListIndex].interviewQuestionData.Count);
-                Debug.Log("Random Sub List Index: " + _randomSubListIndex);
-                if (_questionsAndAnswersCopy[_randomListIndex].interviewQuestionData[RandomSubListIndex].QuestionAsked == false)
-                {
-                    ReturnRandomSubListIndex();
-                }
-                else
-                {
-                    GetRandomSubListIndex();
-                }
-            }
-
-            //foreach(var data in interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].interviewQuestionData)
-            //{
-            //    if(data.QuestionAsked == false)
-            //    {
-            //        interviewAnswersAndQuestions.categoriesDatas[_randomListIndex].allAnswersAnswered = true;
-            //    }
-            //    else
-            //    {
-            //        return;
-            //    }
-            //}
-        }
-    }
-
 
     /// <summary>
     /// Returns variable _randomSubListIndex value.

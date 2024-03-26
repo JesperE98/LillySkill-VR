@@ -41,10 +41,10 @@ namespace Jesper.Collection
 
         private void GenerateAnswerText(int listIndex, int subListIndex)
         {
-            textList[0].text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].answers[0].AnswerText;
-            textList[1].text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].answers[1].AnswerText;
-            textList[2].text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].answers[2].AnswerText;
-            textList[3].text = interviewAnswersAndQuestions.categoriesDatas[listIndex].interviewQuestionData[subListIndex].answers[3].AnswerText;
+            textList[0].text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].answers[0].AnswerText;
+            textList[1].text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].answers[1].AnswerText;
+            textList[2].text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].answers[2].AnswerText;
+            textList[3].text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].answers[3].AnswerText;
 
             gameManager.WaitForAnswer = true;
         }
