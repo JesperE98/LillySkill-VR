@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: InterviewAnswersAndQuestionsSO
   m_EditorClassIdentifier: 
   categoriesDatas:
+  - {fileID: 11400000, guid: 0c3d569e122fba24eb9f040893a47d8f, type: 2}
   - {fileID: 11400000, guid: 9f9aab4efdf316146b0909c6f029b4f7, type: 2}
+  - {fileID: 11400000, guid: 1bc63422c928c2146877103b0f4eeea9, type: 2}
+  - {fileID: 11400000, guid: ad060e9c9dd84e04eba71f6f114e64c0, type: 2}
+  - {fileID: 11400000, guid: f5c06360ecb11d84d993d0e5c552bc30, type: 2}

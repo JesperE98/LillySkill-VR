@@ -9,172 +9,189 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
   m_Name: 2. Adaptability
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
-  categoryName: 2
+  categoryName: 0
   interviewCategoryType: 0
-  description: 
-  categoryIsActive: 0
+  description: "Att vara \xF6ppen f\xF6r f\xF6r\xE4ndringar och villig att l\xE4ra
+    sig nya f\xE4rdigheter och metoder."
+  categoryIsActive: 1
   allAnswersAnswered: 0
   interviewQuestionData:
   - QuestionAsked: 0
-    QuestionText: 
-    correctAnswer: 0
+    QuestionText: "Vad inneb\xE4r det att vara anpassningsbar p\xE5 arbetsplatsen?"
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Att h\xE5lla fast vid gamla metoder och rutiner."
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Att vara \xF6ppen f\xF6r f\xF6r\xE4ndringar och beredd att l\xE4ra
+        sig nya saker."
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: Att vara fokuserad och effektiv i arbetet.
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: "Att vara sj\xE4lvst\xE4ndig och oberoende."
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: 
-    correctAnswer: 0
+    QuestionText: "Hur reagerar du vanligtvis p\xE5 f\xF6r\xE4ndringar i arbetsmilj\xF6n?"
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Jag blir stressad och ogillar f\xF6r\xE4ndringar."
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Jag anpassar mig och ser f\xF6r\xE4ndringar som m\xF6jligheter
+        till personlig tillv\xE4xt."
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Jag f\xF6redrar att h\xE5lla mig till det jag redan kan och \xE4r
+        bekv\xE4m med."
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: "Jag s\xF6ker alltid efter nya jobb n\xE4r f\xF6r\xE4ndringar sker."
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: 
-    correctAnswer: 0
+    QuestionText: "Vilken av f\xF6ljande situationer kr\xE4ver anpassningsbarhet?"
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Att f\xF6lja en noggrann arbetsrutin varje dag."
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Att vara \xF6ppen till en ny ledningsstil eller chef."
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Att h\xE5lla fast vid gamla metoder och undvika f\xF6r\xE4ndring."
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: "Att vara sj\xE4lvst\xE4ndig och oberoende i arbetsuppgifterna."
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: 
+    QuestionText: "Hur kan du visa att du \xE4r anpassningsbar i arbetslivet?"
     correctAnswer: 0
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Genom att vara flexibel och \xF6ppen f\xF6r nya id\xE9er och s\xE4tt
+        att arbeta p\xE5."
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Genom att vara ovillig att \xE4ndra p\xE5 din arbets-stil och
+        rutiner."
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Genom att vara sj\xE4lvst\xE4ndig och oberoende av andra."
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: Genom att vara snabb och effektiv i ditt arbete.
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: 
-    correctAnswer: 0
+    QuestionText: "Vilket av f\xF6ljande alternativ beskriver b\xE4st anpassningsbarhet?"
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Att vara noggrann och uppm\xE4rksam p\xE5 detaljer."
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Att vara \xF6ppen f\xF6r f\xF6r\xE4ndringar och beredd att anpassa
+        sig."
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Att vara bra p\xE5 att kommunicera och samarbeta med andra."
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: "Att vara kreativ och t\xE4nka utanf\xF6r boxen."
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: 
+    QuestionText: "Hur kan du dra nytta av anpassningsbarhet i din karri\xE4r?"
     correctAnswer: 0
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Genom att vara flexibel och anpassningsbar till nya arbetsuppgifter
+        och milj\xF6er."
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Genom att vara sj\xE4lvst\xE4ndig och oberoende i ditt arbete."
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Genom att vara bra p\xE5 att l\xF6sa komplexa problem och fatta
+        v\xE4lgrundade beslut."
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: "Genom att vara bra p\xE5 att kommunicera och bygga relationer
+        med kollegor."
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: 
-    correctAnswer: 0
+    QuestionText: "Hur skulle du hantera en f\xF6r\xE4ndring i dina arbetsuppgifter?"
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Jag skulle vara motvillig och ogillande mot f\xF6r\xE4ndringen."
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Jag skulle anpassa mig och l\xE4ra mig de nya uppgifterna s\xE5
+        snabbt som m\xF6jligt."
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Jag skulle s\xF6ka efter ett nytt jobb som \xE4r mer stabilt och
+        f\xF6ruts\xE4gbart."
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: Jag skulle be min chef att ge mig mer information och tydliga instruktioner.
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: 
-    correctAnswer: 0
+    QuestionText: "Vilket av f\xF6ljande alternativ \xE4r en viktig f\xF6rdel med
+      anpassningsbarhet?"
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Att vara sj\xE4lvst\xE4ndig och oberoende i arbetsuppgifterna."
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Att vara flexibel och \xF6ppen f\xF6r f\xF6r\xE4ndringar."
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Att vara bra p\xE5 att kommunicera och samarbeta med andra."
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: Att vara effektiv och snabb i arbetet.
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: 
-    correctAnswer: 0
+    QuestionText: "Hur kan anpassningsbarhet hj\xE4lpa till att hantera stress p\xE5
+      arbetsplatsen?"
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Genom att vara ovillig att \xE4ndra p\xE5 sin arbets-stil och
+        rutiner."
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Genom att vara flexibel och \xF6ppen f\xF6r f\xF6r\xE4ndringar
+        och nya s\xE4tt att arbeta p\xE5."
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Genom att vara sj\xE4lvst\xE4ndig och oberoende i ditt arbete."
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: "Genom att s\xF6ka efter ett nytt jobb som \xE4r mindre stressigt."
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: 
-    correctAnswer: 0
+    QuestionText: "Vilken av f\xF6ljande egenskaper \xE4r inte en nackdel f\xF6r
+      en anpassningsbar person?"
+    correctAnswer: 3
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Att ha sv\xE5rt att fokusera p\xE5 en sak i taget."
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Att vara obekv\xE4m med nya situationer."
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Att ha sv\xE5rt att samarbeta med andra."
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: "Att vara r\xE4dd f\xF6r att g\xF6ra fel."
       answerType: 0
