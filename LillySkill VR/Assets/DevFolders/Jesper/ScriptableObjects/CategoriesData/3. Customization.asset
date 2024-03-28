@@ -16,7 +16,7 @@ MonoBehaviour:
   interviewCategoryType: 0
   description: "F\xF6rm\xE5gan att anpassa sig till nya arbetsuppgifter, arbetsmilj\xF6er
     och arbetsrelationer."
-  categoryIsActive: 0
+  categoryIsActive: 1
   allAnswersAnswered: 0
   interviewQuestionData:
   - QuestionAsked: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
       AnswerText: "Jag tycker om att samarbeta med olika typer av m\xE4nniskor och
         ser det som en m\xF6jlighet att v\xE4xa."
       answerType: 0
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: "Hur hanterar du f\xF6r\xE4ndringar i arbetsuppgifter och deadlines?"
     correctAnswer: 2
     answers:

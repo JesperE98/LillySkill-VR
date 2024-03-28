@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using Jesper.Collection;
 using Jesper.GameSettings.Data;
+using Jesper.InterviewAnswersAndQuestions.Data;
 
 public class AudioManager : MonoBehaviour
 {
@@ -15,39 +16,154 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource ambienceAudioSource;
 
     [SerializeField] private DefaultAudioScriptableObject sFXScriptableObject;
-    [SerializeField] private VoiceAudioScriptableObject voiceScriptableObject;
+    [SerializeField] private VoiceAudioDataBankScriptableObject voiceScriptableObject;
     [SerializeField] private DefaultAudioScriptableObject ambienceScriptableObject;
     [SerializeField] private GameSettingsScriptableObject m_GameSettings;
+    [SerializeField]
+    private int randomAudioListIndex;
+    [SerializeField]
+    private int randomAudioSubListIndex;
+    [SerializeField]
+    private float soundDuration;
 
     private GameManager gameManager;
     private UIManager uiManager;
     private Animator animator;
+    [SerializeField] private bool playingAudioClip = false;
 
+    public List<DefaultAudioScriptableObject> activeInterviewAudioCategories = new List<DefaultAudioScriptableObject>();
+
+    public bool PlayingAudioClip
+    {
+        get
+        {
+            return playingAudioClip;
+        }
+        set
+        {
+            playingAudioClip = value;
+        }
+    }
+
+    private void Awake()
+    {
+        switch (m_GameSettings.GetScene != GameSettingsScriptableObject.LoadedScene.MainMenu)
+        {
+            case true:
+                gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+                animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
+                uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+                break;
+
+            case false:
+                
+                break;
+        }
+    }
 
     private void Start()
     {
-        if(m_GameSettings.LoadedScene != "Main Menu")
+        switch (m_GameSettings.GetScene)
         {
-            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-            animator = GameObject.FindGameObjectWithTag("NPC").GetComponent<Animator>();
-            uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+            case GameSettingsScriptableObject.LoadedScene.MainMenu:
+                PlayAmbienceAudio(0);
+                break;
+
+            case GameSettingsScriptableObject.LoadedScene.Office:
+                PlayAmbienceAudio(0);
+                ResetInterviewAudioData();
+                break;
+
+            case GameSettingsScriptableObject.LoadedScene.Tutorial:
+                PlayAmbienceAudio(0);
+                ResetInterviewAudioData();
+                break;
+
+            default:
+
+                break;
         }
     }
 
     private void Update()
     {
-        if (m_GameSettings.LoadedScene != "Main Menu")
+        switch (m_GameSettings.GetScene)
         {
-            if(gameManager.LillyIntroDone == true)
-            {
-                Debug.Log("Calling Method PlayAudioClip()");
-                StartCoroutine(PlayAudioClip());
-                gameManager.LillyIntroDone = false;
-            }
+            case GameSettingsScriptableObject.LoadedScene.MainMenu:
+
+                break;
+
+            case GameSettingsScriptableObject.LoadedScene.Office:
+                if(gameManager != null)
+                {
+                    randomAudioListIndex = gameManager.RandomListIndex;
+                    randomAudioSubListIndex = gameManager.RandomSubListIndex;
+                    soundDuration = activeInterviewAudioCategories[randomAudioListIndex].sounds[randomAudioSubListIndex].clip.length;
+                }
+                else
+                {
+                    return;
+                }
+
+                if (playingAudioClip == false && gameManager.FadeInComplete == true)
+                {
+                    Debug.Log("Playing AudioClip!");
+                    StartCoroutine(PlayAudioClip());
+                    playingAudioClip = true;
+                }
+                else
+                {
+                    return;
+                }
+
+                break;
+
+            case GameSettingsScriptableObject.LoadedScene.Tutorial:
+                randomAudioListIndex = gameManager.RandomListIndex;
+                randomAudioSubListIndex = gameManager.RandomSubListIndex;
+                soundDuration = activeInterviewAudioCategories[randomAudioListIndex].sounds[randomAudioSubListIndex].clip.length;
+
+                if (gameManager.InterviewAreActive)
+                {
+                    if (gameManager.LillyIntroDone == true)
+                    {
+                        Debug.Log("Calling Method PlayAudioClip()");
+                        StartAudioCoroutine();
+                        gameManager.LillyIntroDone = false;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else
+                {
+                    return;
+                }
+
+                break;
         }
     }
 
+    private void ResetInterviewAudioData()
+    {
+        var voiceDataList = voiceScriptableObject.questions;
 
+        activeInterviewAudioCategories.Clear();
+
+        // Goes through all data in InterviewAnswersAndQuestions list categoriesDatas and creates deep copies of the categorys
+        // that are active and adds them to the GameManagers list _activeInterviewCategories.
+        foreach (var data in voiceDataList)
+        {
+            if (data.audioCategoryIsActive == true)
+            {
+                data.Clone();
+
+                activeInterviewAudioCategories.Add(data);
+            }
+
+        }
+    }
     public void StartAudioCoroutine()
     {
         StartCoroutine(PlayAudioClip());
@@ -73,7 +189,7 @@ public class AudioManager : MonoBehaviour
     /// <param name="index"></param>
     public void PlayVoiceAudio(int voiceListIndex, int questionAudioIndex)
     {
-        DefaultAudioScriptableObject s = voiceScriptableObject.questions[voiceListIndex];
+        DefaultAudioScriptableObject s = activeInterviewAudioCategories[voiceListIndex];
 
         if(s != null)
         {
@@ -100,72 +216,18 @@ public class AudioManager : MonoBehaviour
         ambienceAudioSource.Play();
     }
 
-    private IEnumerator PlayAudioClip()
+    public IEnumerator PlayAudioClip()
     {
-        animator.SetBool("AskingQuestion", true);
-
-        if(gameManager.InterviewAreActive == false)
+        if (gameManager.InterviewAreActive)
         {
-            gameManager.InterviewAreActive = true;
-        }
-
-
-        switch (gameManager.AnswerPageNumber)
-        {
-            case 1:
-                PlayVoiceAudio(0, 0);
-                yield return new WaitForSeconds(voiceAudioSource.clip.length);
-                break;
-
-            case 2:
-                PlayVoiceAudio(0, 1);
-                yield return new WaitForSeconds(voiceAudioSource.clip.length);
-                break;
-
-            case 3:
-                PlayVoiceAudio(0, 2);
-                yield return new WaitForSeconds(voiceAudioSource.clip.length);
-                break;
-
-            case 4:
-                PlayVoiceAudio(0, 3);
-                yield return new WaitForSeconds(voiceAudioSource.clip.length);
-                break;
-
-            case 5:
-                PlayVoiceAudio(0, 4);
-                yield return new WaitForSeconds(voiceAudioSource.clip.length);
-                break;
-
-            case 6:
-                PlayVoiceAudio(0, 5);
-                yield return new WaitForSeconds(voiceAudioSource.clip.length);
-                break;
-
-            case 7:
-                PlayVoiceAudio(1, 0);
-                yield return new WaitForSeconds(voiceAudioSource.clip.length);
-                break;
-
-            case 8:
-                PlayVoiceAudio(0, 6);
-                yield return new WaitForSeconds(voiceAudioSource.clip.length);
-                break;
-
-            case 9:
-                PlayVoiceAudio(1, 1);
-                yield return new WaitForSeconds(voiceAudioSource.clip.length);
-                break;
-
-            case 10:
-                PlayVoiceAudio(1, 2);
-                yield return new WaitForSeconds(voiceAudioSource.clip.length);
-                break;
-        }
-
-        if (gameManager.InterviewAreActive == true)
-        {
+            animator.SetBool("AskingQuestion", true);
+            PlayVoiceAudio(randomAudioListIndex, randomAudioSubListIndex);
+            yield return new WaitForSeconds(soundDuration + 0.2f);
             animator.SetBool("AskingQuestion", false);
+            uiManager.ActivateUIPrefab();
+        }
+        else
+        {
             uiManager.ActivateUIPrefab();
         }
     }

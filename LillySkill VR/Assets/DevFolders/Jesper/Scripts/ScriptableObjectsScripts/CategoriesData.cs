@@ -10,8 +10,7 @@ namespace Jesper.InterviewAnswersAndQuestions.Data
     {
 
         [Tooltip("Name the category. (Optional)")]
-        [SerializeField]
-        private CategoryName categoryName;
+        public CategoryName categoryName;
         /// <summary>
         /// Choose if the category has regular or situational questions.
         /// </summary>

@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     private bool _lillyIntroDone = false;
     private bool _lillyOutroDone = false;
     private bool _interviewerIntro = false;
+    private bool _allQuestionsAnsweredPreviously = true;
+    private bool _feedbackPageAreActive = false;
+    private bool _tutorialDone = false;
     //private CorrectAnswerData _getCorrectAnswerData;
 
 
@@ -33,8 +36,6 @@ public class GameManager : MonoBehaviour
     private GameSettingsScriptableObject _gameSettings;
     [SerializeField]
     private InterviewAnswersAndQuestionsSO interviewAnswersAndQuestions;
-    [SerializeField]
-    private InterviewQuestionsListScriptableObject interviewQuestionList;
     [SerializeField]
     protected List<string> _answerList = new List<string>();
 
@@ -234,24 +235,49 @@ public class GameManager : MonoBehaviour
         } 
     }
 
-    //public CorrectAnswerData GetCorrectAnswerData
-    //{
-    //    get
-    //    {
-    //        return _getCorrectAnswerData;
-    //    }
-    //    set
-    //    {
-    //        _getCorrectAnswerData = value;
-    //    }
-    //}
+    public bool FeedbackPageAreActive
+    {
+        get
+        {
+            return _feedbackPageAreActive;
+        }
+        set
+        {
+            _feedbackPageAreActive = value;
+        }
+    }
+
+    public bool TutorialDone
+    {
+        get
+        {
+            return _tutorialDone;
+        }
+        set
+        {
+            _tutorialDone = value;
+        }
+    }
 
     private void Start()
     {
-        ResetInterviewData();
-        //CheckAllAnswers();
-        GetRandomListIndex();
-        GetRandomSubListIndex();
+        switch (_gameSettings.GetScene)
+        {
+            case GameSettingsScriptableObject.LoadedScene.MainMenu:
+
+                break;
+
+            case GameSettingsScriptableObject.LoadedScene.Office:
+                ResetInterviewData();
+                GetRandomListIndex();
+                GetRandomSubListIndex();
+                break;
+
+            case GameSettingsScriptableObject.LoadedScene.Tutorial:
+                ResetAllValues();
+                break;
+        }
+
     }
 
     private void Update()
@@ -262,6 +288,21 @@ public class GameManager : MonoBehaviour
         }
 
         InterviewerInterest = Mathf.Clamp(InterviewerInterest, 1, 5);
+
+        CheckAllAnswers();
+
+        if (!InterviewAreActive && _allQuestionsAnsweredPreviously)
+        {
+            
+
+            // Interview ended (or extra question triggered)
+            // Handle the case where all questions are answered (e.g., display feedback page)
+
+            // Optional: Repeat the last question
+            // InterviewAreActive = true;
+        }
+
+        //_allQuestionsAnsweredPreviously = InterviewAreActive; // Update previous state
     }
 
     /// <summary>
@@ -279,11 +320,9 @@ public class GameManager : MonoBehaviour
 
         foreach (var data in _activeInterviewCategories)
         {
-            Debug.Log(data.ToString());
             allQuestionsAnswered &= data.allAnswersAnswered; // Efficiently check if all elements are true using bitwise AND.
-            Debug.Log(allQuestionsAnswered.ToString());
 
-            if (!allQuestionsAnswered)
+            if (allQuestionsAnswered)
             {
                 anyUnansweredQuestions = true;
                 break; // Exit after encountering an unanswered category (optimization)
@@ -311,8 +350,8 @@ public class GameManager : MonoBehaviour
 
         if (!anyUnansweredQuestions)
         {
-            Debug.Log("All interview questions have been answered!");
             // Handle the case where all questions are answered (e.g., display congratulations)
+            FeedbackPageAreActive = true;
         }
     }
 
@@ -344,6 +383,7 @@ public class GameManager : MonoBehaviour
     public virtual void DefaultValues()
     {
         AnswerList.Clear();
+        ResetInterviewData();
     }
 
     /// <summary>
@@ -385,6 +425,14 @@ public class GameManager : MonoBehaviour
                 _activeInterviewCategories.Add(data);
             }
 
+        }
+    }
+
+    private void ResetAllValues()
+    {
+        foreach (var item in interviewAnswersAndQuestions.categoriesDatas)
+        {
+            item.categoryIsActive = false;
         }
     }
 

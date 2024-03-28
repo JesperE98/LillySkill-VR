@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
   m_Name: 2. Adaptability
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
-  categoryName: 0
+  categoryName: 2
   interviewCategoryType: 0
   description: "Att vara \xF6ppen f\xF6r f\xF6r\xE4ndringar och villig att l\xE4ra
     sig nya f\xE4rdigheter och metoder."
-  categoryIsActive: 1
+  categoryIsActive: 0
   allAnswersAnswered: 0
   interviewQuestionData:
   - QuestionAsked: 0

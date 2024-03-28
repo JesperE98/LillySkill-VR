@@ -2,71 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Jesper.InterviewAnswersAndQuestions.Data;
-using Jesper.InterviewQuestionsList.Data;
 using System;
+using Unity.VisualScripting;
 
 namespace Jesper.Collection
 {
     public class ActivateCategory : MonoBehaviour
     {
         [SerializeField]
-        private InterviewAnswersAndQuestions.Data.InterviewAnswersAndQuestionsSO interviewAnswersList;
+        private InterviewAnswersAndQuestionsSO interviewAnswersAndQuestions;
         [SerializeField]
-        private InterviewQuestionsListScriptableObject interviewQuestionsList;
+        private VoiceAudioDataBankScriptableObject voiceAudioDataBankScriptableObject;
         [SerializeField]
         private GameObject _checkMark;
-        private bool activateDeactivateAnswerCategory = false;
         private bool activateDeactivateQuestionCategory = false;
-        private bool activateDeactivateDefaultMode = false;
 
-        public void ActivateAnswerCategory(int listIndex)
+        public void Activate(int listIndex)
         {
-            //if (activateDeactivateAnswerCategory == false)
-            //{
-            //    interviewAnswersList.categories[listIndex].CategoryIsActive = true;
-            //    _checkMark.SetActive(true);
-            //    activateDeactivateAnswerCategory = true;
-            //}
-            //else if(activateDeactivateAnswerCategory == true)
-            //{
-            //    interviewAnswersList.categories[listIndex].CategoryIsActive = false;
-            //    _checkMark.SetActive(false);
-            //    activateDeactivateAnswerCategory = false;
-            //}
-        }
+            var categoryUI = interviewAnswersAndQuestions.categoriesDatas[listIndex];
+            var categoryAudio = voiceAudioDataBankScriptableObject.questions[listIndex];
 
-        public void ActivateQuestionCategory(int listIndex)
-        {
+            if (listIndex < 0)
+            {
+                Debug.LogWarning("The given value isn't a valid number: " + listIndex);
+                return;
+            }
+
             if (activateDeactivateQuestionCategory == false)
             {
-                interviewQuestionsList._questionCategories[listIndex].CategoryIsActive = true;
+                categoryUI.categoryIsActive = true;
+                categoryAudio.audioCategoryIsActive = true;
                 _checkMark.SetActive(true);
                 activateDeactivateQuestionCategory = true;
             }
             else if (activateDeactivateQuestionCategory == true)
             {
-                interviewQuestionsList._questionCategories[listIndex].CategoryIsActive = false;
+                categoryUI.categoryIsActive = false;
+                categoryAudio.audioCategoryIsActive = false;
                 _checkMark.SetActive(false);
                 activateDeactivateQuestionCategory = false;
             }
-        }
-
-        public void ActivateDefaultMode(int listIndex)
-        {
-            //if (activateDeactivateDefaultMode == false)
-            //{
-            //    interviewAnswersList.DefaultCategoryIsActive = true;
-            //    interviewQuestionsList._questionCategories[listIndex].CategoryIsActive = true;
-            //    _checkMark.SetActive(true);
-            //    activateDeactivateDefaultMode = true;
-            //}
-            //else if (activateDeactivateDefaultMode == true)
-            //{
-            //    interviewAnswersList.DefaultCategoryIsActive = false;
-            //    interviewQuestionsList._questionCategories[listIndex].CategoryIsActive = false;
-            //    _checkMark.SetActive(false);
-            //    activateDeactivateDefaultMode = false;
-            //}
         }
     }
 }

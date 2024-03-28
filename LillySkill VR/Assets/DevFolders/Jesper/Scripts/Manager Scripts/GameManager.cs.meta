@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
-  - interviewAnswersAndQuestions: {fileID: 11400000, guid: 27c16cf9df066424183e442f75a45413,
+  - interviewAnswersAndQuestions: {fileID: 11400000, guid: 5370448e56031854b91bddad89194e3f,
       type: 2}
   - interviewQuestionList: {fileID: 11400000, guid: 1a1228da94a85f048a3fc799e345c511,
       type: 2}
