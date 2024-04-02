@@ -169,6 +169,9 @@ MonoBehaviour:
     lillyAudioClip: {fileID: 0}
     lastScreen: 0
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1690380687171744628
 GameObject:
   m_ObjectHideFlags: 0

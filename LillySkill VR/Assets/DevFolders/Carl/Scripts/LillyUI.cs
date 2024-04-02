@@ -7,6 +7,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using Jesper.Collection;
 using UnityEngine.Audio;
+using UnityEngine.Events;
 
 namespace LillyCode
 {
@@ -114,6 +115,7 @@ namespace LillyCode
             public bool lastScreen;
             [HideInInspector]
             public bool isActive;
+            public UnityEvent myEvent;
         }
 
         /// <summary>
