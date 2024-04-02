@@ -45,9 +45,9 @@ namespace LillyCode
 
         private UIManager uiManager;
         private GameManager gameManager;
+        private bool boolSwitch = false;
         private void Awake()
         {
-            
             uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         }
@@ -56,17 +56,18 @@ namespace LillyCode
         {
             activeScreen = 0;
             DisableUIButtons();
-            if (gameManager.AnswerPageNumber >= 10) { ActivateHelpScreen(0); }
-        }
-        private void Update()
-        {
-            if (gameManager.FadeInComplete == true)
+            
+            if (!gameManager.TutorialDone) 
             {
                 ActivateHelpScreen(0);
             }
-
-            gameManager.FadeInComplete = false;
-
+            else
+            {
+                return;
+            }
+        }
+        private void Update()
+        {          
             // Checks for the active screen and shows the information
             if (informationScreenContent[activeScreen].isActive == true && informationScreenContent != null)
             {
@@ -75,25 +76,31 @@ namespace LillyCode
 
             if(gameManager.LillyIntroDone == false && gameManager.LillyOutroDone == false)
             {
-                if (activeScreen == 2)
+                switch (activeScreen)
                 {
-                    uiManager.uiPrefabCopyList[1].SetActive(true);
+                    case 2:
+                        uiManager.uiPrefabCopyList[3].SetActive(true);
+                        break;
+
+                    case 3:
+                        uiManager.uiPrefabCopyList[3].SetActive(false);
+                        uiManager.uiPrefabCopyList[4].SetActive(true);
+                        break;
+
+                    case 4:
+                        uiManager.uiPrefabCopyList[3].SetActive(true);
+                        uiManager.uiPrefabCopyList[4].SetActive(false);
+                        break;
+
+                    case 6:
+                        uiManager.uiPrefabCopyList[3].SetActive(false);
+                        uiManager.uiPrefabCopyList[4].SetActive(false);
+                        break;
                 }
-                else if (activeScreen == 3)
-                {
-                    uiManager.uiPrefabCopyList[1].SetActive(false);
-                    uiManager.uiPrefabCopyList[2].SetActive(true);
-                }
-                else if (activeScreen == 4)
-                {
-                    uiManager.uiPrefabCopyList[1].SetActive(true);
-                    uiManager.uiPrefabCopyList[2].SetActive(false);
-                }
-                else if (activeScreen == 6)
-                {
-                    uiManager.uiPrefabCopyList[1].SetActive(false);
-                    uiManager.uiPrefabCopyList[2].SetActive(false);
-                }
+            }
+            else
+            {
+                return;
             }
         }
         [System.Serializable]

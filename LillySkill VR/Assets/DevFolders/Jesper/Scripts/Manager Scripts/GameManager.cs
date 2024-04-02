@@ -1,18 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI;
 using Jesper.GameSettings.Data;
 using Jesper.InterviewAnswersAndQuestions.Data;
-using Jesper.InterviewQuestionsList.Data;
-using UnityEditor.Profiling.Memory.Experimental;
-using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
     private int _randomListIndex = 0;
     private int _randomSubListIndex = 0;
     private int _answerPageNumber = 1;
+    [SerializeField]
+    private int _maxScore = 0;
     private bool _fadeInComplete = false;
     private bool _fadeOutComplete = false;
     private bool _lillyIntroDone = false;
@@ -20,14 +17,14 @@ public class GameManager : MonoBehaviour
     private bool _interviewerIntro = false;
     private bool _allQuestionsAnsweredPreviously = true;
     private bool _feedbackPageAreActive = false;
-    private bool _tutorialDone = false;
-    //private CorrectAnswerData _getCorrectAnswerData;
 
 
     [SerializeField]
     private float _playerScore = 0;
     [SerializeField]
     private int _interviewerInterest = 2;
+    [SerializeField]
+    private bool _tutorialDone = false;
     [SerializeField]
     private bool _interviewAreActive = false;
     [SerializeField]
@@ -42,6 +39,18 @@ public class GameManager : MonoBehaviour
 
     public List<CategoriesData> _activeInterviewCategories = new List<CategoriesData>();
 
+
+    public int MaxScore
+    {
+        get
+        {
+            return _maxScore;
+        }
+        set
+        {
+            _maxScore = value;
+        }
+    }
 
     /// <summary>
     /// Gets and sets random int number.
@@ -271,6 +280,7 @@ public class GameManager : MonoBehaviour
                 ResetInterviewData();
                 GetRandomListIndex();
                 GetRandomSubListIndex();
+                MaxScoreCalculator();
                 break;
 
             case GameSettingsScriptableObject.LoadedScene.Tutorial:
@@ -303,6 +313,21 @@ public class GameManager : MonoBehaviour
         }
 
         //_allQuestionsAnsweredPreviously = InterviewAreActive; // Update previous state
+    }
+
+    /// <summary>
+    /// Calculates what the max score should be.
+    /// </summary>
+    public void MaxScoreCalculator()
+    {
+        // Goes through all active categoires and increment max score based on how many questions there is.
+        for(int i = 0; i < _activeInterviewCategories.Count; i++)
+        {
+            for(int j = 0; j < _activeInterviewCategories[i].interviewQuestionData.Count; j++)
+            {
+                _maxScore++;
+            }
+        }
     }
 
     /// <summary>
@@ -395,6 +420,9 @@ public class GameManager : MonoBehaviour
         AnswerList.Add(text);
     }
 
+    /// <summary>
+    /// Resets all category data except for the CategoryIsActive variable.
+    /// </summary>
     private void ResetInterviewData()
     {
         // Resets all necessary bool values back to false.
@@ -428,12 +456,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void ResetAllValues()
+    /// <summary>
+    /// Resets ALL categoryIsActive values back to false.
+    /// </summary>
+    public void ResetAllValues()
     {
         foreach (var item in interviewAnswersAndQuestions.categoriesDatas)
         {
             item.categoryIsActive = false;
         }
+        ResetInterviewData();
     }
 
     /// <summary>

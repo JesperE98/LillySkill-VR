@@ -1,6 +1,4 @@
-using JetBrains.Annotations;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Jesper.GameSettings.Data;
@@ -10,6 +8,8 @@ namespace JespersCode
     public class SceneHandler : MonoBehaviour
     {
         private GameManager _gameManager;
+        private AudioManager _audioManager;
+
         [SerializeField]
         private Renderer _fadeScreen;
         public bool _loopDone = false;
@@ -22,6 +22,7 @@ namespace JespersCode
             if (_gameSettings.GetScene != GameSettingsScriptableObject.LoadedScene.MainMenu)
             {
                 _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+                _audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
             }
             else
             {
@@ -61,7 +62,18 @@ namespace JespersCode
         /// </summary>
         public void LoadScene(int sceneBuildIndex)
         {
-            StartCoroutine(LoadLevelAsync(true, sceneBuildIndex));
+            switch (_gameSettings.GetScene)
+            {
+                case GameSettingsScriptableObject.LoadedScene.MainMenu:
+                    StartCoroutine(LoadLevelAsync(true, sceneBuildIndex));
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    StartCoroutine(LoadLevelAsync(true, sceneBuildIndex));
+                    _gameManager.ResetAllValues();
+                    _audioManager.ResetAllAudioValues();
+                    break;
+            }
         }
 
         /// <summary>
@@ -69,6 +81,7 @@ namespace JespersCode
         /// </summary>
         public void ResetCurrentScene(int sceneBuildIndex)
         {
+            _audioManager.ResetInterviewAudioData();
             _gameManager.DefaultValues();
             StartCoroutine(LoadLevelAsync(true, sceneBuildIndex));
         }

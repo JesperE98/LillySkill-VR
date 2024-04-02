@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
   m_Name: "17. Stresst\xE5lighet"
   m_EditorClassIdentifier: 
+  audioCategoryIsActive: 0
   sounds:
   - name: Index 0
     clip: {fileID: 8300000, guid: a2112f4ff41433f4cb790d8e31e66403, type: 3}

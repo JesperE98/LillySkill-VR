@@ -9,7 +9,7 @@ using Jesper.InterviewAnswersAndQuestions.Data;
 
 namespace Jesper.Collection
 {
-    public class InformationScerenTextUpdate : MonoBehaviour
+    public class InformationScreenTextUpdate : MonoBehaviour
     {
         private GameManager gameManager;
         private TMP_Text informationPageText;
@@ -35,7 +35,21 @@ namespace Jesper.Collection
 
         private void GenerateQuestionText(int listIndex, int subListIndex)
         {
-            informationPageText.text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].QuestionText;
+            switch (_gameSettings.GetScene)
+            {
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    informationPageText.text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].QuestionText;
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+
+                    break;
+
+                default:
+                    Debug.LogWarning("Invalid Loaded Scene value! Please check the GameSettings ScriptableObject.");
+                    break;
+            }
+            
         }
     }
 }

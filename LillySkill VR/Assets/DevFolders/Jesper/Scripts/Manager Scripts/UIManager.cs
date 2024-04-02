@@ -38,10 +38,6 @@ namespace Jesper.Collection
             {
                 gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             }
-            else
-            {
-                return;
-            }
         }
         
         private void Start()
@@ -53,40 +49,53 @@ namespace Jesper.Collection
                 uiPrefabCopyList.Add(prefabCopy);
             }
 
-
-            if (gameSettings.GetScene == GameSettingsScriptableObject.LoadedScene.MainMenu)
+            switch (gameSettings.GetScene)
             {
-                ActivateUIPrefab();
-            }
-            else if(gameSettings.GetScene == GameSettingsScriptableObject.LoadedScene.Tutorial)
-            {
-                if(uiPrefabCopyList.Count < 0)
-                {
-                    Debug.LogWarning("Prefab copy list are empty!");
-                }
-                else
-                {
-                    return;
-                }
+                case GameSettingsScriptableObject.LoadedScene.MainMenu:
+                    ActivateUIPrefab();
+                    break;
 
-                if (gameManager.TutorialDone)
-                {
-                    uiPrefabCopyList[3].SetActive(true); // Activates LillyUI at the start.
-                }
-                else
-                {
-                    return;
-                }
+                case GameSettingsScriptableObject.LoadedScene.Office:
+
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+                    if (uiPrefabCopyList.Count < 0)
+                    {
+                        Debug.LogWarning("Prefab copy list are empty!");
+                    }
+
+                    if (gameManager.TutorialDone == false)
+                    {
+                        uiPrefabCopyList[3].SetActive(true); // Activates LillyUI at the start.
+                    }
+                    break;
             }
         }
 
         private void Update()
         {
-            categoryName = gameManager._activeInterviewCategories[gameManager.RandomListIndex].categoryName;
-
-            if (!gameManager.InterviewAreActive && gameManager.FeedbackPageAreActive)
+            switch (gameSettings.GetScene)
             {
-                ActivateUIPrefab();
+                case GameSettingsScriptableObject.LoadedScene.MainMenu:
+
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    categoryName = gameManager._activeInterviewCategories[gameManager.RandomListIndex].categoryName;
+
+                    if (!gameManager.InterviewAreActive && gameManager.FeedbackPageAreActive)
+                    {
+                        ActivateUIPrefab();
+                    }
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+                    if (gameManager.FadeInComplete)
+                    {
+                        uiPrefabCopyList[5].SetActive(true);
+                    }
+                    break;
             }
         }
 
@@ -134,8 +143,6 @@ namespace Jesper.Collection
                             break;
 
                         case false:
-                            uiPrefabCopyList[0].SetActive(false);
-                            uiPrefabCopyList[1].SetActive(false);
                             uiPrefabCopyList[2].SetActive(true);
                             gameManager.FeedbackPageAreActive = !gameManager.FeedbackPageAreActive;
                             break;

@@ -1,10 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using Jesper.InterviewAnswersAndQuestions.Data;
 using Jesper.GameSettings.Data;
-using System;
 
 
 namespace Jesper.Collection
@@ -13,7 +11,8 @@ namespace Jesper.Collection
     {
         private GameManager gameManager;
         private UIManager uiManager;
-        private AudioManager audioManager;
+        private CategoriesData.CategoryName categoryName;
+        private CategoriesData.InterviewQuestion activeCategory;
 
         [SerializeField]
         private GameSettingsScriptableObject _gameSettings;
@@ -30,24 +29,40 @@ namespace Jesper.Collection
         {
             gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
-            audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         }
 
         void Update()
         {
-            if (gameManager.WaitForAnswer == false && uiManager.uiPrefabCopyList[0].activeInHierarchy == true || uiManager.uiPrefabCopyList[1].activeInHierarchy == true)
+            switch (_gameSettings.GetScene)
             {
-                GenerateAnswerText(gameManager.RandomListIndex, gameManager.RandomSubListIndex);
-                //UpdateAnswerScreenText();
+                case GameSettingsScriptableObject.LoadedScene.MainMenu:
+
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    if (gameManager.WaitForAnswer == false && uiManager.uiPrefabCopyList[0].activeInHierarchy == true || uiManager.uiPrefabCopyList[1].activeInHierarchy == true)
+                    {
+                        GenerateAnswerText(gameManager.RandomListIndex, gameManager.RandomSubListIndex);
+                    }
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+
+                    break;
+
+                default:
+                    Debug.LogWarning("Invalid Loaded Scene value! Please check the GameSettings ScriptableObject.");
+                    break;
             }
+
         }
 
         private void GenerateAnswerText(int listIndex, int subListIndex)
         {
-            var categoryName = gameManager._activeInterviewCategories[gameManager.RandomListIndex].categoryName;
-            var activeCategory = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex];
+            categoryName = gameManager._activeInterviewCategories[gameManager.RandomListIndex].categoryName;
+            activeCategory = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex];
 
-            if(listIndex < 0 || subListIndex < 0)
+            if (listIndex < 0 || subListIndex < 0)
             {
                 return;
             }
@@ -65,7 +80,6 @@ namespace Jesper.Collection
                 textList[2].text = activeCategory.answers[2].AnswerText;
                 textList[3].text = activeCategory.answers[3].AnswerText;
             }
-
 
             gameManager.WaitForAnswer = true;
         }

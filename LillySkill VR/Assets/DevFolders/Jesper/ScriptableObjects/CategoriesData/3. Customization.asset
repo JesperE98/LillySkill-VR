@@ -16,7 +16,7 @@ MonoBehaviour:
   interviewCategoryType: 0
   description: "F\xF6rm\xE5gan att anpassa sig till nya arbetsuppgifter, arbetsmilj\xF6er
     och arbetsrelationer."
-  categoryIsActive: 1
+  categoryIsActive: 0
   allAnswersAnswered: 0
   interviewQuestionData:
   - QuestionAsked: 0

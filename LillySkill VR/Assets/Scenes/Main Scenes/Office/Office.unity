@@ -2427,8 +2427,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2014c4977fa17374facb41a92af5eb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _maxScore: 0
   _playerScore: 0
   _interviewerInterest: 2
+  _tutorialDone: 0
   _interviewAreActive: 1
   _waitForAnswer: 0
   _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
@@ -2820,7 +2822,7 @@ Transform:
   m_GameObject: {fileID: 370532721}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.15}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3230,7 +3232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9182cf021ea0f64439c45060836a646c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  categoryName: 0
   gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
   uIPrefabCollector: {fileID: 870724668}
   UIPrefabs:
@@ -3250,8 +3251,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1897575270}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &439041808
@@ -6319,7 +6319,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -8672,9 +8672,6 @@ MonoBehaviour:
   ambienceScriptableObject: {fileID: 11400000, guid: 323df9504b886904c9fab709fe35cf11,
     type: 2}
   m_GameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
-  randomAudioListIndex: 0
-  randomAudioSubListIndex: 0
-  soundDuration: 0
   playingAudioClip: 0
   activeInterviewAudioCategories: []
 --- !u!4 &1241679644
@@ -13098,37 +13095,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892763341}
   m_Mesh: {fileID: 197606412673905000, guid: 2f5c437e97c5d6344b678194accc8501, type: 3}
---- !u!1 &1897575269
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1897575270}
-  m_Layer: 0
-  m_Name: UIPrefabsStorage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1897575270
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897575269}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 437061013}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1923451384
 GameObject:
   m_ObjectHideFlags: 0

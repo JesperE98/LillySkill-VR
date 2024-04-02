@@ -1285,7 +1285,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7494888057450392700}
         m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: ResetCurrentScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

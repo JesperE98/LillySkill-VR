@@ -19,17 +19,14 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private VoiceAudioDataBankScriptableObject voiceScriptableObject;
     [SerializeField] private DefaultAudioScriptableObject ambienceScriptableObject;
     [SerializeField] private GameSettingsScriptableObject m_GameSettings;
-    [SerializeField]
-    private int randomAudioListIndex;
-    [SerializeField]
-    private int randomAudioSubListIndex;
-    [SerializeField]
-    private float soundDuration;
+    [SerializeField] private bool playingAudioClip = false;
 
     private GameManager gameManager;
     private UIManager uiManager;
     private Animator animator;
-    [SerializeField] private bool playingAudioClip = false;
+    private int randomAudioListIndex;
+    private int randomAudioSubListIndex;
+
 
     public List<DefaultAudioScriptableObject> activeInterviewAudioCategories = new List<DefaultAudioScriptableObject>();
 
@@ -70,13 +67,13 @@ public class AudioManager : MonoBehaviour
                 break;
 
             case GameSettingsScriptableObject.LoadedScene.Office:
-                PlayAmbienceAudio(0);
                 ResetInterviewAudioData();
+                PlayAmbienceAudio(0);
                 break;
 
             case GameSettingsScriptableObject.LoadedScene.Tutorial:
-                PlayAmbienceAudio(0);
                 ResetInterviewAudioData();
+                PlayAmbienceAudio(0);
                 break;
 
             default:
@@ -98,7 +95,6 @@ public class AudioManager : MonoBehaviour
                 {
                     randomAudioListIndex = gameManager.RandomListIndex;
                     randomAudioSubListIndex = gameManager.RandomSubListIndex;
-                    soundDuration = activeInterviewAudioCategories[randomAudioListIndex].sounds[randomAudioSubListIndex].clip.length;
                 }
                 else
                 {
@@ -121,7 +117,6 @@ public class AudioManager : MonoBehaviour
             case GameSettingsScriptableObject.LoadedScene.Tutorial:
                 randomAudioListIndex = gameManager.RandomListIndex;
                 randomAudioSubListIndex = gameManager.RandomSubListIndex;
-                soundDuration = activeInterviewAudioCategories[randomAudioListIndex].sounds[randomAudioSubListIndex].clip.length;
 
                 if (gameManager.InterviewAreActive)
                 {
@@ -145,23 +140,44 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    private void ResetInterviewAudioData()
+    /// <summary>
+    /// Resets ALL audioCategoryIsActive values back to false.
+    /// </summary>
+    public void ResetAllAudioValues()
     {
-        var voiceDataList = voiceScriptableObject.questions;
+        foreach (var audioCategory in activeInterviewAudioCategories)
+        {
+            audioCategory.audioCategoryIsActive = false;
+        }
+        ResetInterviewAudioData();
+    }
 
+    /// <summary>
+    /// Resets all category audio data except for the CategoryIsActive variable.
+    /// </summary>
+    public void ResetInterviewAudioData()
+    {
         activeInterviewAudioCategories.Clear();
 
         // Goes through all data in InterviewAnswersAndQuestions list categoriesDatas and creates deep copies of the categorys
         // that are active and adds them to the GameManagers list _activeInterviewCategories.
-        foreach (var data in voiceDataList)
+        //for (int i = 0; i < voiceScriptableObject.questions.Count; i++)
+        //{
+        //    if (voiceScriptableObject.questions[i].audioCategoryIsActive == true)
+        //    {
+        //        voiceScriptableObject.questions[i].Clone();
+        //        activeInterviewAudioCategories.Add(voiceScriptableObject.questions[i]);
+        //    }
+        //}
+
+
+        foreach (var data in voiceScriptableObject.questions)
         {
-            if (data.audioCategoryIsActive == true)
+            if (data.audioCategoryIsActive)
             {
                 data.Clone();
-
                 activeInterviewAudioCategories.Add(data);
             }
-
         }
     }
     public void StartAudioCoroutine()
@@ -222,7 +238,7 @@ public class AudioManager : MonoBehaviour
         {
             animator.SetBool("AskingQuestion", true);
             PlayVoiceAudio(randomAudioListIndex, randomAudioSubListIndex);
-            yield return new WaitForSeconds(soundDuration + 0.2f);
+            yield return new WaitForSeconds(voiceAudioSource.clip.length + 0.2f);
             animator.SetBool("AskingQuestion", false);
             uiManager.ActivateUIPrefab();
         }
