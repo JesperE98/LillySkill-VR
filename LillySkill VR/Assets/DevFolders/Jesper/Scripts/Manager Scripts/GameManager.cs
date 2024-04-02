@@ -8,7 +8,6 @@ using Jesper.InterviewQuestionsList.Data;
 using static UnityEngine.Timeline.AnimationPlayableAsset;
 using System.Linq;
 using Unity.VisualScripting;
-using UnityEditor.iOS;
 
 public class GameManager : MonoBehaviour
 {
