@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
   m_Name: "10. Samarbetsf\xF6rm\xE5ga"
   m_EditorClassIdentifier: 
+  audioCategoryIsActive: 0
   sounds:
   - name: Index 0
     clip: {fileID: 8300000, guid: ae0b7f9a34726cc4fb79302375046d55, type: 3}

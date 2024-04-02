@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0. Default
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
   categoryName: 0
-  interviewCategoryType: 1
+  interviewCategoryType: 0
   description: 
   categoryIsActive: 0
   allAnswersAnswered: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
       AnswerText: "Jag har avslutat h\xF6gskole-/universitetsutbildning eller har
         en h\xF6gre examen."
       answerType: 2
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: Hur skulle du hantera en felkommunikation med en kollega?
     correctAnswer: 1
     answers:
@@ -283,7 +283,7 @@ MonoBehaviour:
     - AnswerAlternative: C
       AnswerText: "Jag har en stark analytisk f\xF6rm\xE5ga och \xE4r bra p\xE5 probleml\xF6sning."
       answerType: 1
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: "Vad motiverade dig att s\xF6ka detta jobb?"
     correctAnswer: 1
     answers:

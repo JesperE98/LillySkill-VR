@@ -162,8 +162,8 @@ GameObject:
   - component: {fileID: 7395805670121671201}
   - component: {fileID: 2228257085333930311}
   - component: {fileID: 1783390377510816813}
-  - component: {fileID: 545369889870953226}
   - component: {fileID: 1957697656450876489}
+  - component: {fileID: 545369889870953226}
   m_Layer: 3
   m_Name: MainMenuButton
   m_TagString: UIButton
@@ -229,6 +229,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!65 &1957697656450876489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603698822192611537}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12, y: 0.04, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &545369889870953226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,36 +297,15 @@ MonoBehaviour:
       - m_Target: {fileID: 7494888057450392700}
         m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
         m_MethodName: LoadScene
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Main Menu
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
---- !u!65 &1957697656450876489
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603698822192611537}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.12, y: 0.04, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2138788570752037513
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,10 +446,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.02
-  m_fontSizeBase: 0.02
+  m_fontSize: 0.015
+  m_fontSizeBase: 0.015
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 0.02
   m_fontSizeMax: 16
   m_fontStyle: 0
@@ -615,7 +615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8522913481722838387
 Transform:
   m_ObjectHideFlags: 0
@@ -624,7 +624,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6034645255306705038}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -645,6 +645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649a479aee4fae84eb463063499c95a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fadeScreen: {fileID: 0}
   _loopDone: 0
   _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
 --- !u!1 &7322003344419338093
@@ -887,9 +888,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontSize: 0.02
-  m_fontSizeBase: 8
+  m_fontSizeBase: 0.02
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 0.02
   m_fontSizeMax: 16
   m_fontStyle: 0
@@ -1285,11 +1286,11 @@ MonoBehaviour:
       - m_Target: {fileID: 7494888057450392700}
         m_TargetAssemblyTypeName: JespersCode.SceneHandler, Assembly-CSharp
         m_MethodName: ResetCurrentScene
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: Office
           m_BoolArgument: 0

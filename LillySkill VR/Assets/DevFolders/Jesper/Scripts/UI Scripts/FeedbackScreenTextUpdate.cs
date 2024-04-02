@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.UI;
 using Jesper.GameSettings.Data;
 using Jesper.FeedbackText.Data;
 
@@ -11,6 +7,8 @@ namespace Jesper.Collection
 {
     public class FeedbackScreenTextUpdate : MonoBehaviour
     {
+        // Måste se till så att feedbacken eller något annat script kan räökna ut den procentuella mängden av rätt svar och basera feedbacken baserat på det.
+        
         private GameManager _gameManager;
         private TMP_Text _answerText;
 
@@ -18,6 +16,8 @@ namespace Jesper.Collection
         private GameSettingsScriptableObject _gameSettings;
         [SerializeField]
         private FeedbackTextScriptableObject _feedbackText;
+        [SerializeField]
+        private float percentageCalculator;
 
 
         private void Awake()
@@ -28,21 +28,23 @@ namespace Jesper.Collection
 
         private void Start()
         {
+            percentageCalculator = _gameManager.PlayerScore / _gameManager.MaxScore;
+
             FeedbackPageText();
         }
 
         private void FeedbackPageText()
         {
-            if (_gameManager.PlayerScore < 7)
+            if (percentageCalculator < 0.4f)
             {
                 _answerText.text = "Du fick bara " + _gameManager.PlayerScore + " poäng.\n\n " + _feedbackText.m_BadResultFeedbackText;
             }
-            else if (_gameManager.PlayerScore > 7 || _gameManager.PlayerScore < 14)
+            else if (percentageCalculator > 0.4f || percentageCalculator < 0.8f)
             {
                 _answerText.text = "Du fick " + _gameManager.PlayerScore + " poäng. Bra jobbat! Men här har du något att fundera över.\n\n" +
                     _feedbackText.m_AverageResultFeedbackText;
             }
-            else if (_gameManager.PlayerScore > 14)
+            else if (percentageCalculator > 0.8f)
             {
                 _answerText.text = "Du fick " + _gameManager.PlayerScore + " poäng! Grymt jobbat! Du kommer acea din intervju!\n\n" +
                     _feedbackText.m_GoodResultFeedbackText;

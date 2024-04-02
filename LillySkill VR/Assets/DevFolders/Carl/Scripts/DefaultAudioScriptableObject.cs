@@ -5,7 +5,22 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "AudioData", menuName = "ScriptableObjects/DefaultAudioScriptableObject", order = 1)]
 public class DefaultAudioScriptableObject : ScriptableObject
 {
+    /// <summary>
+    /// On/Off switch for the category voice audio.
+    /// </summary>
+    [Tooltip("On/Off switch for the category voice audio.")]
+    public bool audioCategoryIsActive = false;
+
     public List<Sound> sounds;
+
+    public DefaultAudioScriptableObject Clone()
+    {
+        DefaultAudioScriptableObject copy = CreateInstance<DefaultAudioScriptableObject>();
+        copy.audioCategoryIsActive = audioCategoryIsActive;
+        copy.sounds = sounds;
+        return copy;
+    }
+
 
     [System.Serializable]
     public class Sound

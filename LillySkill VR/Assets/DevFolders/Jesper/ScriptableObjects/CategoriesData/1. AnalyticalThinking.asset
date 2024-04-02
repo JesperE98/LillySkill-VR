@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
   m_Name: 1. AnalyticalThinking
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
-  categoryName: 0
+  categoryName: 1
   interviewCategoryType: 0
   description: "F\xF6rm\xE5gan att analysera komplex information, dra slutsatser
     och fatta v\xE4lgrundade beslut."
-  categoryIsActive: 1
+  categoryIsActive: 0
   allAnswersAnswered: 0
   interviewQuestionData:
   - QuestionAsked: 0

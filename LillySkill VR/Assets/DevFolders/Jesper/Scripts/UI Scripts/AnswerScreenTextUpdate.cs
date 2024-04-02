@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -12,6 +11,8 @@ namespace Jesper.Collection
     {
         private GameManager gameManager;
         private UIManager uiManager;
+        private CategoriesData.CategoryName categoryName;
+        private CategoriesData.InterviewQuestion activeCategory;
 
         [SerializeField]
         private GameSettingsScriptableObject _gameSettings;
@@ -32,398 +33,56 @@ namespace Jesper.Collection
 
         void Update()
         {
-            if (gameManager.WaitForAnswer == false)
+            switch (_gameSettings.GetScene)
             {
-                GenerateAnswerText(gameManager.RandomListIndex, gameManager.RandomSubListIndex);
-                //UpdateAnswerScreenText();
+                case GameSettingsScriptableObject.LoadedScene.MainMenu:
+
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    if (gameManager.WaitForAnswer == false && uiManager.uiPrefabCopyList[0].activeInHierarchy == true || uiManager.uiPrefabCopyList[1].activeInHierarchy == true)
+                    {
+                        GenerateAnswerText(gameManager.RandomListIndex, gameManager.RandomSubListIndex);
+                    }
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+
+                    break;
+
+                default:
+                    Debug.LogWarning("Invalid Loaded Scene value! Please check the GameSettings ScriptableObject.");
+                    break;
             }
+
         }
 
         private void GenerateAnswerText(int listIndex, int subListIndex)
         {
-            textList[0].text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].answers[0].AnswerText;
-            textList[1].text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].answers[1].AnswerText;
-            textList[2].text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].answers[2].AnswerText;
-            textList[3].text = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex].answers[3].AnswerText;
+            categoryName = gameManager._activeInterviewCategories[gameManager.RandomListIndex].categoryName;
+            activeCategory = gameManager._activeInterviewCategories[listIndex].interviewQuestionData[subListIndex];
+
+            if (listIndex < 0 || subListIndex < 0)
+            {
+                return;
+            }
+
+            if (categoryName == CategoriesData.CategoryName.Default)
+            {
+                textList[0].text = activeCategory.answers[0].AnswerText;
+                textList[1].text = activeCategory.answers[1].AnswerText;
+                textList[2].text = activeCategory.answers[2].AnswerText;
+            }
+            else
+            {
+                textList[0].text = activeCategory.answers[0].AnswerText;
+                textList[1].text = activeCategory.answers[1].AnswerText;
+                textList[2].text = activeCategory.answers[2].AnswerText;
+                textList[3].text = activeCategory.answers[3].AnswerText;
+            }
 
             gameManager.WaitForAnswer = true;
         }
-
-        //private void UpdateAnswerScreenText()
-        //{
-        //    switch (_gameSettings.defaultMode)
-        //    {
-        //        case true:
-        //            switch (gameManager.AnswerPageNumber)
-        //            {
-        //                case 1:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// bra svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[0].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// dåligt svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[0].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        { // helt ok
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[0].m_InterviewAverageAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 2:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[1].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        { // Dåliugt svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[1].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        { // Bra svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[1].m_InterviewGoodAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 3:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        { //Helt ok 
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[2].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        { // Bra svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[2].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        { // Dåligt svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[2].m_InterviewBadAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 4:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        { //Dåligt svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[3].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[3].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[3].m_InterviewGoodAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 5:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[4].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {//Helt ok
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[4].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[4].m_InterviewBadAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 6:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        { // Dåligt svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[5].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        { // Bra svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[5].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[5].m_InterviewAverageAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 7:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[6].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[6].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[6].m_InterviewGoodAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 8:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[7].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[7].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[7].m_InterviewAverageAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 9:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[8].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {//Helt ok
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[8].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[8].m_InterviewBadAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 10:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[9].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[9].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[9].m_InterviewAverageAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 11:
-        //                    if (uiManager.uiPrefabCopyList[1].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {//Bra svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[10].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {//Dåligt svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[10].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[10].m_InterviewAverageAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 12:
-        //                    if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-        //                    {// Dåligt svar
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[11].m_InterviewBadAnswer;
-        //                        }// Helt ok
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[11].m_InterviewAverageAnswer;
-        //                        }// Bra svar
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[11].m_InterviewGoodAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 13:
-        //                    if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {//Helt ok
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[12].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[12].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[12].m_InterviewGoodAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 14:
-        //                    if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[13].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[13].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[13].m_InterviewBadAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 15:
-        //                    if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[14].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[14].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[14].m_InterviewAverageAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 16:
-        //                    if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[15].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[15].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[15].m_InterviewAverageAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 17:
-        //                    if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[16].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[16].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[16].m_InterviewBadAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 18:
-        //                    if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[17].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[17].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[17].m_InterviewBadAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 19:
-        //                    if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[18].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[18].m_InterviewGoodAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[18].m_InterviewAverageAnswer;
-        //                        }
-        //                    }
-        //                    break;
-
-        //                case 20:
-        //                    if (uiManager.uiPrefabCopyList[0].activeSelf == true)
-        //                    {
-        //                        if (AnswerTextObject[0].activeSelf == true)
-        //                        {// Dåligt svar
-        //                            textList[0].text = _interviewAnswerLists.defaultCategory[19].m_InterviewBadAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[1].activeSelf == true)
-        //                        {// Helt ok
-        //                            textList[1].text = _interviewAnswerLists.defaultCategory[19].m_InterviewAverageAnswer;
-        //                        }
-        //                        else if (AnswerTextObject[2].activeSelf == true)
-        //                        {// Bra svar
-        //                            textList[2].text = _interviewAnswerLists.defaultCategory[19].m_InterviewGoodAnswer;
-        //                        }
-        //                    }
-        //                    break;
-        //            }
-        //            break;
-
-        //        case false:
-        //            Debug.LogWarning("Easy Mode isn't true! Make sure it's true in order for code to work!");
-        //            break;
-        //    }
-
-        //}
     }
 
 }

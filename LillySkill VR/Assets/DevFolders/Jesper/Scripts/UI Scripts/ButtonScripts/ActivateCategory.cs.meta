@@ -4,9 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - interviewAnswersList: {fileID: 11400000, guid: 27c16cf9df066424183e442f75a45413,
+  - interviewAnswersAndQuestions: {fileID: 11400000, guid: 5370448e56031854b91bddad89194e3f,
       type: 2}
-  - interviewQuestionsList: {fileID: 11400000, guid: 1a1228da94a85f048a3fc799e345c511,
+  - voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
       type: 2}
   - _checkMark: {instanceID: 0}
   executionOrder: 0

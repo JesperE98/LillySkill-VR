@@ -13,21 +13,18 @@ namespace Jesper.GameSettings.Data
 
         public float playerHighScore;
         [SerializeField]
-        private string loadedScene;
+        private LoadedScene loadedScene;
 
-        /// <summary>
-        /// Gets and sets string value for each individual scene and what Game mode it should be.
-        /// </summary>
-        public string LoadedScene 
-        { 
-            get 
-            { 
+        public LoadedScene GetScene
+        {
+            get
+            {
                 return loadedScene;
-            } 
+            }
             set
             {
-                loadedScene = value; 
-            } 
+                loadedScene = value;
+            }
         }
 
         /// <summary>
@@ -70,5 +67,14 @@ namespace Jesper.GameSettings.Data
             QualitySettings.SetQualityLevel(2);
         }
 
+        /// <summary>
+        /// Enum value for each individual scene (MainMenu, Office, Tutorial).
+        /// </summary>
+        public enum LoadedScene
+        {
+            MainMenu,
+            Office,
+            Tutorial
+        }
     }
 }

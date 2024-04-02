@@ -12,34 +12,31 @@ namespace Jesper.Collection
 {
     public class UIManager : MonoBehaviour
     {
-        private GameManager _gameManager;
-        private GameObject _prefabCopy;
+        private GameManager gameManager;
+        private GameObject prefabCopy;
+        private InterviewAnswersAndQuestions.Data.CategoriesData.CategoryName categoryName;
 
         [SerializeField]
-        private GameSettingsScriptableObject _gameSettings;
+        private GameSettingsScriptableObject gameSettings;
+        [Tooltip("Choose what GameObject in the hierarchy to store the UI copies")]
+        [SerializeField]
+        private GameObject uIPrefabCollector;
+
         [Header("UI Generic Lists")]
         [Tooltip("Generic List to add UI Prefabs.")]
         public List<GameObject> UIPrefabs = new List<GameObject>();
-
-
         ///<summary>
         ///Generic List that stores copies of the UI Prefabs.
         /// </summary>
-        [SerializeField]
-        public List<GameObject> uiPrefabCopyList = new List<GameObject>();
+        protected internal List<GameObject> uiPrefabCopyList = new List<GameObject>();
 
 
-        [Tooltip("Choose what GameObject in the hierarchy to store the UI copies")]
-        [SerializeField]
-        private GameObject _uIPrefabCollector;
-        [SerializeField]
-        private bool _uiPrefabIsActive = false;
 
         private void Awake()
         {
-            if(_gameSettings.LoadedScene != "Main Menu")
+            if(gameSettings.GetScene != GameSettingsScriptableObject.LoadedScene.MainMenu)
             {
-                _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+                gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
             }
         }
         
@@ -47,24 +44,75 @@ namespace Jesper.Collection
         {
             for (int i = 0; i < UIPrefabs.Count; i++)
             {
-                _prefabCopy = Instantiate(UIPrefabs[i], _uIPrefabCollector.transform);
-                _prefabCopy.SetActive(false);
-                uiPrefabCopyList.Add(_prefabCopy);
+                prefabCopy = Instantiate(UIPrefabs[i], uIPrefabCollector.transform);
+                prefabCopy.SetActive(false);
+                uiPrefabCopyList.Add(prefabCopy);
             }
 
+            switch (gameSettings.GetScene)
+            {
+                case GameSettingsScriptableObject.LoadedScene.MainMenu:
+                    ActivateUIPrefab();
+                    break;
 
-            if (_gameSettings.LoadedScene == "Main Menu")
-            {
-                ActivateUIPrefab();
+                case GameSettingsScriptableObject.LoadedScene.Office:
+
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+                    if (uiPrefabCopyList.Count < 0)
+                    {
+                        Debug.LogWarning("Prefab copy list are empty!");
+                    }
+
+                    if (gameManager.TutorialDone == false)
+                    {
+                        uiPrefabCopyList[3].SetActive(true); // Activates LillyUI at the start.
+                    }
+                    break;
             }
-            else if( _gameSettings.LoadedScene == "Tutorial")
+        }
+
+        private void Update()
+        {
+            switch (gameSettings.GetScene)
             {
-                uiPrefabCopyList[0].SetActive(true); // Activates LillyUI at the start.
+                case GameSettingsScriptableObject.LoadedScene.MainMenu:
+
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    categoryName = gameManager._activeInterviewCategories[gameManager.RandomListIndex].categoryName;
+
+                    if (!gameManager.InterviewAreActive && gameManager.FeedbackPageAreActive)
+                    {
+                        ActivateUIPrefab();
+                    }
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+                    if (gameManager.FadeInComplete)
+                    {
+                        uiPrefabCopyList[5].SetActive(true);
+                    }
+                    break;
             }
-            else if(_gameSettings.LoadedScene == "Office")
+        }
+
+        /// <summary>
+        /// Deactivates the UIPrefabCopy.
+        /// </summary>
+        /// <returns></returns>
+        public void StartUIDeactivation(int listIndex)
+        {
+            // Check if the index is valid
+            if (listIndex < 0 || listIndex >= uiPrefabCopyList.Count)
             {
-                ActivateUIPrefab();
+                Debug.LogError("Index out of range!");
+                return;
             }
+
+            uiPrefabCopyList[listIndex].SetActive(false);
         }
 
         /// <summary>
@@ -73,182 +121,61 @@ namespace Jesper.Collection
         public void ActivateUIPrefab()
         {
             // Switch statement that checks which active scene it is.
-            switch(_gameSettings.LoadedScene)
+            switch(gameSettings.GetScene)
             {
-                case "Main Menu":
+                case GameSettingsScriptableObject.LoadedScene.MainMenu:
                     uiPrefabCopyList[0].SetActive(true);
                     break;
 
-                case "Tutorial":
-                    switch (_gameManager.AnswerPageNumber)
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    switch (gameManager.InterviewAreActive)
                     {
-                        case 0:
-                            
-                            // Checks if bool are false.
-                            if (_uiPrefabIsActive == false)
+                        case true:
+                            if (categoryName != InterviewAnswersAndQuestions.Data.CategoriesData.CategoryName.Default)
                             {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                _uiPrefabIsActive = true;
+                                uiPrefabCopyList[0].SetActive(true);
                             }
+                            else
+                            {
+                                uiPrefabCopyList[1].SetActive(true);
+                            }
+
                             break;
 
-                        case 1:
-                            // Checks if bool are false.
-                            if (_uiPrefabIsActive == false)
-                            {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                _uiPrefabIsActive = true;
-                            }
-                            break;
-
-                        case 2:
-                            // Checks if bool are false.
-                            if (_uiPrefabIsActive == false)
-                            {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                _uiPrefabIsActive = true;
-                            }
-                            break;
-
-                        case 3:
-                            // Checks if bool are false.
-                            if (_uiPrefabIsActive == false)
-                            {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                _uiPrefabIsActive = true;
-                            }
-                            break;
-
-                        case 4:
-                            // Checks if bool are false.
-                            if (_uiPrefabIsActive == false)
-                            {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                _uiPrefabIsActive = true;
-                            }
-                            break;
-
-                        case 5:
-                            // Checks if bool are false.
-                            if (_uiPrefabIsActive == false)
-                            {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                _uiPrefabIsActive = true;
-                            }
-                            break;
-
-                        case 6:
-                            // Checks if bool are false.
-                            if (_uiPrefabIsActive == false)
-                            {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                _uiPrefabIsActive = true;
-                            }
-                            break;
-
-                        case 7:
-                            // Checks if bool are false.
-                            if (_uiPrefabIsActive == false)
-                            {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                _uiPrefabIsActive = true;
-                            }
-                            break;
-
-                        case 8:
-                            // Checks if bool are false.
-                            if (_uiPrefabIsActive == false)
-                            {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                _uiPrefabIsActive = true;
-                            }
-                            break;
-
-                        case 9:
-                            // Checks if bool are false.
-                            if (_uiPrefabIsActive == false)
-                            {
-                                // If all previous if statements meets the right condition, create a copy of the UI Prefab.  
-                                uiPrefabCopyList[1].SetActive(true);
-                                uiPrefabCopyList[2].SetActive(true);
-                                _uiPrefabIsActive = true;
-
-                            }
-                            break;
-
-                        default:
-                            if (_uiPrefabIsActive == false)
-                            {
-                                uiPrefabCopyList[5].SetActive(true);
-                                _gameManager.LillyOutroDone = true;
-                                _uiPrefabIsActive = true;
-                                _gameManager.InterviewAreActive = false; // Ska plockas bort efter demo visningen
-                            }
+                        case false:
+                            uiPrefabCopyList[2].SetActive(true);
+                            gameManager.FeedbackPageAreActive = !gameManager.FeedbackPageAreActive;
                             break;
                     }
-                    break;
 
-                case "Office":
-                    if(_gameManager.InterviewAreActive == true && _gameManager.WaitForAnswer == false)
+                    if (gameManager.InterviewAreActive == true && gameManager.WaitForAnswer == false)
                     {
-                        uiPrefabCopyList[0].SetActive(true);
+
                         //_gameManager.WaitForAnswer = true;
                     }
-                    else if(_gameManager.InterviewAreActive == false && _gameManager.WaitForAnswer == false)
+                    else if (gameManager.InterviewAreActive == false)
                     {
-                        uiPrefabCopyList[0].SetActive(false);
-                        uiPrefabCopyList[1].SetActive(true);
+
                     }
                     break;
+
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+                    switch (gameManager.TutorialDone)
+                    {
+                        case false:
+                            uiPrefabCopyList[0].SetActive(true);
+                            break;
+
+                        case true:
+                            uiPrefabCopyList[1].SetActive(true);
+                            break;
+                    }
+                    break;
+
             }
         }
 
-        public void StartUIDeactivation()
-        {
-            StartCoroutine(DeactivateUICopy(0));
-        }
 
-        /// <summary>
-        /// Coroutine to update the properties PlayerLife and PlayerScore and to Destroy the UIPrefabCopy and increment the index variable.
-        /// </summary>
-        /// <returns></returns>
-        public IEnumerator DeactivateUICopy(int listIndex)
-        {
-            // Check if the index is valid
-            if (listIndex < 0 || listIndex >= uiPrefabCopyList.Count)
-            {
-                Debug.LogError("Index out of range!");
-                yield break;
-            }
-
-            uiPrefabCopyList[listIndex].SetActive(false);
-            //uiPrefabCopyList[2].SetActive(false);
-
-            //_gameManager.AnswerPageNumber++;
-
-            //_uiPrefabIsActive = false;
-
-
-            if (_gameManager.InterviewAreActive == true) { ActivateUIPrefab(); }
-        }
     }
 }
 

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
   m_Name: 8. Flexibilitet
   m_EditorClassIdentifier: 
+  audioCategoryIsActive: 0
   sounds:
   - name: Index 0
     clip: {fileID: 8300000, guid: af58c4916d7409b4ab716b82b9d01824, type: 3}

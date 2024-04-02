@@ -23,7 +23,7 @@ namespace Jesper.Collection
         {
             if (_gameManager.InterviewAreActive == false)
             {
-                _text.text = $"{_gameManager.PlayerScore} / 20";
+                _text.text = $"{_gameManager.PlayerScore} / {_gameManager.MaxScore}";
             }
         }
     }
