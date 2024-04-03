@@ -6134,7 +6134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649a479aee4fae84eb463063499c95a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fadeScreen: {fileID: 0}
+  _fadeScreen: {fileID: 370532723}
   _loopDone: 0
   _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
 --- !u!4 &849887524

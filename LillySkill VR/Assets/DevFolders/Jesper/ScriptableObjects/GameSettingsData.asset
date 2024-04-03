@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: GameSettingsData
   m_EditorClassIdentifier: 
   playerHighScore: 10
-  loadedScene: 0
+  loadedScene: 1
