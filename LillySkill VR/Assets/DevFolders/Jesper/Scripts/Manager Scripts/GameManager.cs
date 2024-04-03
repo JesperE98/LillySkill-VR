@@ -2,6 +2,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using Jesper.GameSettings.Data;
 using Jesper.InterviewAnswersAndQuestions.Data;
+<<<<<<< HEAD
+=======
+using Jesper.InterviewQuestionsList.Data;
+using static UnityEngine.Timeline.AnimationPlayableAsset;
+using System.Linq;
+using Unity.VisualScripting;
+using UnityEditor.iOS;
+>>>>>>> parent of 7119dae (Coffee Machine and Light)
 
 public class GameManager : MonoBehaviour
 {
