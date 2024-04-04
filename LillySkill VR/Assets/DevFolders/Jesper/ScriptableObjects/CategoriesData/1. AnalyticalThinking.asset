@@ -21,7 +21,7 @@ MonoBehaviour:
   interviewQuestionData:
   - QuestionAsked: 0
     QuestionText: "Vad \xE4r det viktigaste med att t\xE4nka analytiskt?"
-    correctAnswer: 0
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
       AnswerText: "Att noggrant titta p\xE5 detaljerad information och dra slutsatser."
@@ -35,9 +35,9 @@ MonoBehaviour:
     - AnswerAlternative: D
       AnswerText: "Att arbeta bra med andra m\xE4nniskor."
       answerType: 0
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: "Vad inneb\xE4r det att vara analytisk?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: "Att vara kreativ och t\xE4nka utanf\xF6r boxen."
@@ -51,9 +51,9 @@ MonoBehaviour:
     - AnswerAlternative: D
       AnswerText: "Att vara sj\xE4lvs\xE4ker och \xF6vertygande."
       answerType: 0
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: "Hur hj\xE4lper analytiskt t\xE4nkande p\xE5 jobbet?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Genom att g\xF6ra saker p\xE5 samma s\xE4tt varje g\xE5ng."
@@ -69,7 +69,7 @@ MonoBehaviour:
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Vilket av f\xF6ljande scenario kr\xE4ver analytiskt t\xE4nkande?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Att organisera ett f\xF6retagsevenemang."
@@ -83,9 +83,9 @@ MonoBehaviour:
     - AnswerAlternative: D
       AnswerText: "Att hantera kundf\xF6rfr\xE5gningar och ge utm\xE4rkt kundservice. "
       answerType: 0
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: "Vad \xE4r det viktigaste n\xE4r man anv\xE4nder analytiskt t\xE4nkande?"
-    correctAnswer: 0
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
       AnswerText: Att samla mycket information.
@@ -99,10 +99,10 @@ MonoBehaviour:
     - AnswerAlternative: D
       AnswerText: "Att lyssna p\xE5 andra och deras \xE5sikter."
       answerType: 0
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: "Vilket av f\xF6ljande alternativ \xE4r en viktig f\xF6rdel med
       analytiskt t\xE4nkande?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: Effektiv kommunikation med kollegor.
@@ -116,10 +116,10 @@ MonoBehaviour:
     - AnswerAlternative: D
       AnswerText: "Snabb och smidig probleml\xF6sning."
       answerType: 0
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: "Hur kan analytiskt t\xE4nkande bidra till att f\xF6rb\xE4ttra
       arbetsprocesser?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: Genom att vara flexibel och anpassningsbar.
@@ -135,7 +135,7 @@ MonoBehaviour:
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Vilken av f\xF6ljande \xE4r inte en del av analytiskt t\xE4nkande?"
-    correctAnswer: 3
+    correctAnswer: 8
     answers:
     - AnswerAlternative: A
       AnswerText: Bryta ner problemet i mindre delar.
@@ -152,7 +152,7 @@ MonoBehaviour:
   - QuestionAsked: 0
     QuestionText: "Hur kan analytiskt t\xE4nkande hj\xE4lpa till att l\xF6sa problem
       p\xE5 arbetsplatsen?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Genom att vara bra p\xE5 att skapa en positiv arbetsmilj\xF6. "
@@ -169,7 +169,7 @@ MonoBehaviour:
   - QuestionAsked: 0
     QuestionText: "Vilket av f\xF6ljande alternativ \xE4r en viktig komponent i analytiskt
       t\xE4nkande?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: Att vara snabb och effektiv i beslutsfattandet.

@@ -3503,26 +3503,17 @@ MonoBehaviour:
   randomListIndex: 0
   randomSubListIndex: 0
   answerTypeData: 0
-  selectedAnswer: 4
+  selectedAnswer: 0
   gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
   highlightGameobjects:
   - intValue: 1
-    highlightedGameObject: {fileID: 6415532265972775169}
+    highlightedGameObject: {fileID: 4475532854080695187}
   - intValue: 2
-    highlightedGameObject: {fileID: 1128637809878215396}
-  - intValue: 3
-    highlightedGameObject: {fileID: 2547708294637640703}
+    highlightedGameObject: {fileID: 2433909201831012156}
   - intValue: 4
-    highlightedGameObject: {fileID: 5256246155406836071}
-  multipleHighlightedGameObjects:
-  - intValue: 1
-    highlightedGameObject: {fileID: 6415532265972775169}
-  - intValue: 2
-    highlightedGameObject: {fileID: 1128637809878215396}
-  - intValue: 4
-    highlightedGameObject: {fileID: 2547708294637640703}
+    highlightedGameObject: {fileID: 8447857682967225708}
   - intValue: 8
-    highlightedGameObject: {fileID: 5256246155406836071}
+    highlightedGameObject: {fileID: 4090817830021212057}
 --- !u!1 &8245632470619582651
 GameObject:
   m_ObjectHideFlags: 0

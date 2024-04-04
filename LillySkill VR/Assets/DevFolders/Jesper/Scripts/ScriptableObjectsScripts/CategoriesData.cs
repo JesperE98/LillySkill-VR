@@ -82,6 +82,7 @@ namespace Jesper.InterviewAnswersAndQuestions.Data
         {
             public string AnswerAlternative;
             public string AnswerText;
+            public bool AnswerSelected;
             [Tooltip("Define the answer quality. (If the category type are situational).")]
             public AnswerType answerType;
         }

@@ -21,194 +21,234 @@ MonoBehaviour:
   - QuestionAsked: 0
     QuestionText: "Hur skulle du effektivt kommunicera en komplex id\xE9 inf\xF6r
       andra personer?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag skulle ge upp d\xE5 jag inser att ingen f\xF6rst\xE5r mig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag anv\xE4nder teknisk jargong som jag vet att endast n\xE5gra
         f\xE5 skulle f\xF6rst\xE5."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag anpassar mitt spr\xE5k och anv\xE4nder exempel f\xF6r att
         f\xF6rtydliga id\xE9n f\xF6r alla inblandade. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag ignorerar fr\xE5gor och kommentarer fr\xE5n mina kollegor
         f\xF6r att snabbt f\xE5 igenom min id\xE9."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur hanterar du missf\xF6rst\xE5nd i en kommunikation med kollegor?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag skyller p\xE5 mina kollegor f\xF6r att de inte f\xF6rst\xE5r
         mig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag ignorerar missf\xF6rst\xE5nd och hoppas att de l\xF6ser sig
         av sig sj\xE4lva."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag tar mig tid att lyssna p\xE5 mina kollegors synpunkter och
         f\xF6rtydliga mina egna tankar f\xF6r att undvika missf\xF6rst\xE5nd."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag ger upp och slutar kommunicera med dem helt och h\xE5llet."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur skulle du \xF6vervinna en kommunikationsbarri\xE4r p\xE5 arbetsplatsen?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag ger upp n\xE4r jag inser att kommunikationen \xE4r om\xF6jlig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag \xF6kar volymen och upprepar samma information flera g\xE5nger
         tills de f\xF6rst\xE5r mig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag anv\xE4nder mig av visuella hj\xE4lpmedel eller andra kommunikationsverktyg
         f\xF6r att klarg\xF6ra budskapet."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag ignorerar problemet och hoppas att det l\xF6ser sig sj\xE4lv."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur anpassar du din kommunikationsstil n\xE4r du talar med olika
       grupper av m\xE4nniskor?\u202F"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag anv\xE4nder alltid samma kommunikationsstil oavsett min publik."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag anv\xE4nder komplicerade termer f\xF6r att imponera p\xE5
         min publik."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag anpassar min kommunikationsstil beroende p\xE5 min publik
         f\xF6r att s\xE4kerst\xE4lla att de f\xF6rst\xE5r mig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag struntar i att anpassa min kommunikation och f\xF6rv\xE4ntar
         mig att andra ska anpassa sig till mig."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur ser du till att ditt skriftliga arbete \xE4r tydligt och l\xE4tt
       att f\xF6rst\xE5 f\xF6r andra?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag skriver bara f\xF6r min egen skull och bryr mig inte om andra
         f\xF6rst\xE5r."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag anv\xE4nder avancerade ord och l\xE5nga meningar f\xF6r att
         g\xF6ra mitt arbete mer imponerande."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag tar mig tid att klarg\xF6ra mina id\xE9er och l\xE4ser igenom
         mitt arbete f\xF6r att s\xE4kerst\xE4lla tydlighet."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag l\xE4mnar in ofullst\xE4ndigt eller otydligt skrivet arbete
         utan att bry mig om kvaliteten."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur reagerar du om du m\xE4rker att n\xE5gon inte \xE4r engagerad
       i din muntliga presentation eller diskussion?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag avbryter presentationen och g\xE5r d\xE4rifr\xE5n."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag forts\xE4tter med min presentation utan att bry mig om publikens
         respons."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag anpassar min presentation och fr\xE5gar deltagarna om deras
         synpunkter f\xF6r att \xF6ka deras engagemang."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag blir irriterad och kritiserar publiken f\xF6r deras bristande
         engagemang."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: Hur skulle du hantera en konflikt genom effektiv kommunikation?
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag undviker konflikten och hoppas att den l\xF6ser sig sj\xE4lv."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag skriker \xE5t den andra personen tills den ger sig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag lyssnar p\xE5 personernas oro och f\xF6rs\xF6ker f\xF6rst\xE5
         deras perspektiv f\xF6r att hitta en gemensam l\xF6sning."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag g\xE5r till min chef och ber dem l\xF6sa konflikten \xE5t
         mig."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur ser du till att alla viktiga detaljer kommuniceras g\xE4llande
       ett projekt eller uppgift?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag f\xF6rv\xE4ntar mig att andra kommer ih\xE5g detaljerna \xE5t
         mig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: Jag skriver ner viktiga detaljer men delar inte med dem till andra.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag kommunicerar aktivt och ser till att alla inblandade har den
         information de beh\xF6ver f\xF6r att lyckas."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag f\xF6ruts\xE4tter att andra inte bryr sig om detaljerna och
         struntar d\xE4rf\xF6r i att kommunicera dem."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur hanterar du feedback fr\xE5n kollegor eller \xF6verordnade
       p\xE5 ditt arbete?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag avvisar feedbacken och anser att jag gjort allt r\xE4tt."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: Jag tar feedback personligt och blir defensiv.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag tar emot feedback \xF6ppet och anv\xE4nder den f\xF6r att
         f\xF6rb\xE4ttra mitt arbete."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag ignorerar feedbacken och forts\xE4tter som vanligt utan att
         ta h\xE4nsyn till den."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur s\xE4kerst\xE4ller du att dina meddelanden \xE4r tydliga och
       v\xE4l mottagna av dina kollegor?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: Jag bryr mig inte om hur mina meddelanden mottas av andra.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag f\xF6ruts\xE4tter att andra f\xF6rst\xE5r mig utan att dubbelkolla."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag tar mig tid att klarg\xF6ra mina tankar och fr\xE5gar sedan
         kollegor om de har f\xF6rst\xE5tt budskapet."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag skickar bara meddelanden och f\xF6rv\xE4ntar mig att andra
         ska f\xF6rst\xE5 dem utan ytterligare f\xF6rklaring."
+      AnswerSelected: 0
       answerType: 0

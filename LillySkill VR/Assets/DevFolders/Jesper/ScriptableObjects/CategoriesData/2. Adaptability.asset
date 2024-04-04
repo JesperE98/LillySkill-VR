@@ -21,177 +21,217 @@ MonoBehaviour:
   interviewQuestionData:
   - QuestionAsked: 0
     QuestionText: "Vad inneb\xE4r det att vara anpassningsbar p\xE5 arbetsplatsen?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: "Att h\xE5lla fast vid gamla metoder och rutiner."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Att vara \xF6ppen f\xF6r f\xF6r\xE4ndringar och beredd att l\xE4ra
         sig nya saker."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: Att vara fokuserad och effektiv i arbetet.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Att vara sj\xE4lvst\xE4ndig och oberoende."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur reagerar du vanligtvis p\xE5 f\xF6r\xE4ndringar i arbetsmilj\xF6n?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag blir stressad och ogillar f\xF6r\xE4ndringar."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag anpassar mig och ser f\xF6r\xE4ndringar som m\xF6jligheter
         till personlig tillv\xE4xt."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag f\xF6redrar att h\xE5lla mig till det jag redan kan och \xE4r
         bekv\xE4m med."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag s\xF6ker alltid efter nya jobb n\xE4r f\xF6r\xE4ndringar sker."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Vilken av f\xF6ljande situationer kr\xE4ver anpassningsbarhet?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: "Att f\xF6lja en noggrann arbetsrutin varje dag."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Att vara \xF6ppen till en ny ledningsstil eller chef."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Att h\xE5lla fast vid gamla metoder och undvika f\xF6r\xE4ndring."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Att vara sj\xE4lvst\xE4ndig och oberoende i arbetsuppgifterna."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur kan du visa att du \xE4r anpassningsbar i arbetslivet?"
-    correctAnswer: 0
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
       AnswerText: "Genom att vara flexibel och \xF6ppen f\xF6r nya id\xE9er och s\xE4tt
         att arbeta p\xE5."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Genom att vara ovillig att \xE4ndra p\xE5 din arbets-stil och
         rutiner."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Genom att vara sj\xE4lvst\xE4ndig och oberoende av andra."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: Genom att vara snabb och effektiv i ditt arbete.
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Vilket av f\xF6ljande alternativ beskriver b\xE4st anpassningsbarhet?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: "Att vara noggrann och uppm\xE4rksam p\xE5 detaljer."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Att vara \xF6ppen f\xF6r f\xF6r\xE4ndringar och beredd att anpassa
         sig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Att vara bra p\xE5 att kommunicera och samarbeta med andra."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Att vara kreativ och t\xE4nka utanf\xF6r boxen."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur kan du dra nytta av anpassningsbarhet i din karri\xE4r?"
-    correctAnswer: 0
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
       AnswerText: "Genom att vara flexibel och anpassningsbar till nya arbetsuppgifter
         och milj\xF6er."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Genom att vara sj\xE4lvst\xE4ndig och oberoende i ditt arbete."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Genom att vara bra p\xE5 att l\xF6sa komplexa problem och fatta
         v\xE4lgrundade beslut."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Genom att vara bra p\xE5 att kommunicera och bygga relationer
         med kollegor."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur skulle du hantera en f\xF6r\xE4ndring i dina arbetsuppgifter?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag skulle vara motvillig och ogillande mot f\xF6r\xE4ndringen."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag skulle anpassa mig och l\xE4ra mig de nya uppgifterna s\xE5
         snabbt som m\xF6jligt."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag skulle s\xF6ka efter ett nytt jobb som \xE4r mer stabilt och
         f\xF6ruts\xE4gbart."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: Jag skulle be min chef att ge mig mer information och tydliga instruktioner.
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Vilket av f\xF6ljande alternativ \xE4r en viktig f\xF6rdel med
       anpassningsbarhet?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: "Att vara sj\xE4lvst\xE4ndig och oberoende i arbetsuppgifterna."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Att vara flexibel och \xF6ppen f\xF6r f\xF6r\xE4ndringar."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Att vara bra p\xE5 att kommunicera och samarbeta med andra."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: Att vara effektiv och snabb i arbetet.
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur kan anpassningsbarhet hj\xE4lpa till att hantera stress p\xE5
       arbetsplatsen?"
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: "Genom att vara ovillig att \xE4ndra p\xE5 sin arbets-stil och
         rutiner."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Genom att vara flexibel och \xF6ppen f\xF6r f\xF6r\xE4ndringar
         och nya s\xE4tt att arbeta p\xE5."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Genom att vara sj\xE4lvst\xE4ndig och oberoende i ditt arbete."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Genom att s\xF6ka efter ett nytt jobb som \xE4r mindre stressigt."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Vilken av f\xF6ljande egenskaper \xE4r inte en nackdel f\xF6r
       en anpassningsbar person?"
-    correctAnswer: 3
+    correctAnswer: 8
     answers:
     - AnswerAlternative: A
       AnswerText: "Att ha sv\xE5rt att fokusera p\xE5 en sak i taget."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Att vara obekv\xE4m med nya situationer."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Att ha sv\xE5rt att samarbeta med andra."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Att vara r\xE4dd f\xF6r att g\xF6ra fel."
+      AnswerSelected: 0
       answerType: 0

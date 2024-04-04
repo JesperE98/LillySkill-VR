@@ -21,194 +21,234 @@ MonoBehaviour:
   - QuestionAsked: 0
     QuestionText: "Hur skulle du arbeta i ett team f\xF6r att uppn\xE5 ett gemensamt
       m\xE5l?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag f\xF6redrar att arbeta ensam och undviker teamprojekt."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag ignorerar mina teammedlemmars bidrag och utf\xF6r allt sj\xE4lv."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag deltar aktivt i teamet, bidrar med mina id\xE9er och st\xF6djer
         mina kollegor f\xF6r att uppn\xE5 m\xE5let."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag drar mig tillbaka och l\xE5ter andra ta hand om arbetet medan
         jag inte g\xF6r mycket."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur hanterar du konflikter med kollegor p\xE5 arbetsplatsen?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag undviker konfrontation och h\xE5ller mig f\xF6r mig sj\xE4lv. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag blir arg och argumenterar f\xF6r mina egna \xE5sikter utan
         att lyssna p\xE5 andra. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag f\xF6rs\xF6ker f\xF6rst\xE5 den andra personens synpunkt och
         arbetar tillsammans f\xF6r att hitta en l\xF6sning."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag g\xE5r till chefen och ber om att bli flyttad till en annan
         avdelning f\xF6r att undvika konflikten."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: Hur bidrar du till ett positivt arbetsklimat?
-    correctAnswer: 1
+    correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag kritiserar \xF6ppet mina kollegors arbete f\xF6r att motivera
         dem att g\xF6ra det b\xE4ttre."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag visar uppskattning f\xF6r mina kollegors insatser och sprider
         positiv energi p\xE5 arbetsplatsen."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag undviker social interaktion och h\xE5ller mig f\xF6r mig sj\xE4lv."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag utesluter vissa kollegor fr\xE5n gemensamma aktiviteter."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur reagerar du om du m\xE4rker att en kollega inte bidrar till
       teamets framg\xE5ng?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag klagar \xF6ppet p\xE5 deras bristande insats och f\xF6rv\xE4ntar
         mig att de ska f\xF6rb\xE4ttra sig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag ignorerar deras bidrag och tar \xF6ver deras uppgifter ist\xE4llet."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag pratar med dem f\xF6r att f\xF6rst\xE5 deras situation och
         hj\xE4lper dem att hitta s\xE4tt att bidra mer effektivt."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag g\xE5r till chefen och ber om att de ska avskedas fr\xE5n
         teamet. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur skulle du g\xE5 till v\xE4ga f\xF6r att l\xF6sa en konflikt
       mellan tv\xE5 kollegor?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag undviker att bli involverad och l\xE5ter dem l\xF6sa det sj\xE4lva."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag tar parti f\xF6r en kollega och f\xF6rs\xF6kte f\xE5 den andra
         att ge med sig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag lyssnar p\xE5 b\xE5da sidors perspektiv och hj\xE4lper dem
         att komma fram till en \xF6msesidigt acceptabel l\xF6sning. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag g\xE5r till chefen och ber dem att ingripa i konflikten. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur ser du till att alla i teamet f\xE5r m\xF6jlighet att bidra
       och k\xE4nna sig delaktiga?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag tar alltid ledningen och l\xE5ter inte andra ta plats. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag ignorerar de tystare kollegorna och fokuserar bara p\xE5 de
         som \xE4r mest h\xF6gljudda. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag uppmuntrar \xF6ppen kommunikation och tar aktivt del av alla
         id\xE9er och f\xF6rslag. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag v\xE4ljer ut mina favoritkollegor och ger dem mer ansvar medan
         andra ignoreras. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur skulle du reagera om du m\xE4rkte att en kollega beh\xF6vde
       hj\xE4lp med en uppgift? "
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag skulle ignorera det och l\xE5ta dem klara det sj\xE4lva. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag skulle erbjuda hj\xE4lp, men bara om jag inte har n\xE5got
         annat att g\xF6ra. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag skulle erbjuda min hj\xE4lp och arbeta tillsammans f\xF6r
         att slutf\xF6ra uppgiften. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag skulle undvika att erbjuda hj\xE4lp och l\xE5ta dem be om
         det om de beh\xF6ver det. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: 'Hur skulle du motivera dina kollegor att delta i ett grupprojekt? '
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag skulle inte bry mig om att motivera dem eftersom det \xE4r
         deras eget ansvar att delta. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: 'Jag skulle hota dem med konsekvenser om de inte deltar. '
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag skulle f\xF6rklara projektets betydelse och f\xF6rdelarna
         med att samarbeta f\xF6r att n\xE5 framg\xE5ng. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag skulle l\xE5ta dem veta att jag inte bryr mig om deras deltagande
         och att de kan g\xF6ra vad de vill. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur skulle du g\xE5 till v\xE4ga om du var tvungen att samarbeta
       med n\xE5gon som du inte kom \xF6verens med?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag undviker att samarbeta med personen s\xE5 mycket som m\xF6jligt. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag f\xF6rs\xF6ker f\xE5 personen att g\xF6ra saker p\xE5 mitt
         s\xE4tt utan att ta h\xE4nsyn till deras \xE5sikter. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag f\xF6rs\xF6ker hitta gemensam mark och arbeta tillsammans
         f\xF6r att uppn\xE5 v\xE5ra m\xE5l. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag ber min chef om att inte arbeta med personen l\xE4ngre. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur skulle du hantera en situation d\xE4r en kollega tar \xE5t
       sig \xE4ran f\xF6r ditt arbete?\u202F"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag skulle inte g\xF6ra n\xE5got \xE5t det eftersom jag inte vill
         skapa konflikter. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag skulle konfrontera kollegan offentligt och beskylla dem f\xF6r
         att stj\xE4la min \xE4ra. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag skulle diskret prata med kollegan och f\xF6rklara hur jag
         k\xE4nde och f\xF6rs\xF6ka l\xF6sa det. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag skulle g\xE5 till min chef och klaga p\xE5 kollegans beteende
         utan att f\xF6rs\xF6ka l\xF6sa det sj\xE4lv. "
+      AnswerSelected: 0
       answerType: 0
