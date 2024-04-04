@@ -4,6 +4,8 @@ using UnityEngine;
 using Jesper.GameSettings.Data;
 using System;
 using Jesper.InterviewAnswersAndQuestions.Data;
+using Jesper.InterviewQuestionsList.Data;
+using Unity.VisualScripting;
 
 namespace Jesper.Collection
 {
@@ -12,6 +14,7 @@ namespace Jesper.Collection
         private UIManager uiManager;
         private GameManager gameManager;
         private AudioManager audioManager;
+
         [SerializeField]
         private int randomListIndex;
         [SerializeField]
@@ -20,13 +23,11 @@ namespace Jesper.Collection
         [SerializeField]
         private AnswerTypeData answerTypeData;
         [SerializeField]
-        private AnswerOption answerOption;
-        [SerializeField]
-        private SelectedAnswer selectedAnswer;
+        private AnswerOptions selectedAnswer;
         [SerializeField]
         private GameSettingsScriptableObject gameSettings;
         [SerializeField]
-        private List<GameObject> highlightGameobjects;
+        private List<HighlightedGameObjects> highlightGameobjects, multipleHighlightedGameObjects;
 
 
         private void Awake()
@@ -39,6 +40,8 @@ namespace Jesper.Collection
 
             audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         }
+
+
 
         void Update()
         {
@@ -59,38 +62,69 @@ namespace Jesper.Collection
         /// </summary>
         public void AnswerSelected(int selectedAnswerIndex)
         {
-            // Turns off all the highlight gameobjects.
-            foreach (GameObject obj in highlightGameobjects)
+            if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Regular)
             {
-                obj.SetActive(false);
+                // Turns off all the highlight gameobjects.
+                //foreach (GameObject obj in highlightGameobjects)
+                //{
+                //    obj.SetActive(false);
+                //}
+
+                for(int i = 0; i < highlightGameobjects.Count; i++)
+                {
+                    highlightGameobjects[i].highlightedGameObject.SetActive(false);
+                }
+
+                if (highlightGameobjects[selectedAnswerIndex].highlightedGameObject.activeInHierarchy == false)
+                {
+                    highlightGameobjects[selectedAnswerIndex].highlightedGameObject.SetActive(true);
+                    selectedAnswer = (AnswerOptions)highlightGameobjects[selectedAnswerIndex].intValue; // Sets the selectedAnswer based on the selectedAnswerIndex
+                }
+                else if (highlightGameobjects[selectedAnswerIndex].highlightedGameObject.activeInHierarchy == true)
+                {
+                    highlightGameobjects[selectedAnswerIndex].highlightedGameObject.SetActive(false);
+                }
+            }
+            else if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Situational)
+            {
+                if (selectedAnswerIndex >= 0 && selectedAnswerIndex < highlightGameobjects.Count) // Check for valid index
+                {
+                    if (multipleHighlightedGameObjects[selectedAnswerIndex].highlightedGameObject.activeInHierarchy == false)
+                    {
+                        multipleHighlightedGameObjects[selectedAnswerIndex].highlightedGameObject.SetActive(true);
+
+
+                        selectedAnswer = (AnswerOptions)selectedAnswerIndex; // Sets the selectedAnswer based on the selectedAnswerIndex
+                    }
+                    else if (multipleHighlightedGameObjects[selectedAnswerIndex].highlightedGameObject.activeInHierarchy == true)
+                    {
+                        multipleHighlightedGameObjects[selectedAnswerIndex].highlightedGameObject.SetActive(false);
+                    }
+                }
+                else
+                {
+                    Debug.LogError("Invalid selectedAnswerIndex: " + selectedAnswerIndex);
+                }
             }
 
-            if (highlightGameobjects[selectedAnswerIndex].activeInHierarchy == false)
-            {
-                highlightGameobjects[selectedAnswerIndex].SetActive(true);
-                selectedAnswer = (SelectedAnswer)selectedAnswerIndex; // Sets the selectedAnswer based on the selectedAnswerIndex
-            }
-            else if (highlightGameobjects[selectedAnswerIndex].activeInHierarchy == true)
-            {
-                highlightGameobjects[selectedAnswerIndex].SetActive(false);
-            }
         }
 
 
         public void OnConfirmChoisePressed()
         {
             gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].QuestionAsked = true;
+            var categoryName = gameManager._activeInterviewCategories[randomListIndex].categoryName;
+            var correctAnswer = gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].correctAnswer;
+            var answerType = gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].answers[(int)selectedAnswer].answerType;
 
             if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Regular)
             {
-                var categoryName = gameManager._activeInterviewCategories[randomListIndex].categoryName;
-
-                if(categoryName == CategoriesData.CategoryName.Default)
+                if (categoryName == CategoriesData.CategoryName.Default)
                 {
                     switch (selectedAnswer)
                     {
-                        case SelectedAnswer.A:
-                            if (gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.A)
+                        case AnswerOptions.A:
+                            if (correctAnswer == CategoriesData.CorrectAnswer.A)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -104,8 +138,8 @@ namespace Jesper.Collection
                             }
                             break;
 
-                        case SelectedAnswer.B:
-                            if (gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.B)
+                        case AnswerOptions.B:
+                            if (correctAnswer == CategoriesData.CorrectAnswer.B)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -119,8 +153,8 @@ namespace Jesper.Collection
                             }
                             break;
 
-                        case SelectedAnswer.C:
-                            if (gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.C)
+                        case AnswerOptions.C:
+                            if (correctAnswer == CategoriesData.CorrectAnswer.C)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -143,8 +177,8 @@ namespace Jesper.Collection
                 {
                     switch (selectedAnswer)
                     {
-                        case SelectedAnswer.A:
-                            if (gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.A)
+                        case AnswerOptions.A:
+                            if (correctAnswer == CategoriesData.CorrectAnswer.A)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -158,8 +192,8 @@ namespace Jesper.Collection
                             }
                             break;
 
-                        case SelectedAnswer.B:
-                            if (gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.B)
+                        case AnswerOptions.B:
+                            if (correctAnswer == CategoriesData.CorrectAnswer.B)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -173,8 +207,8 @@ namespace Jesper.Collection
                             }
                             break;
 
-                        case SelectedAnswer.C:
-                            if (gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.C)
+                        case AnswerOptions.C:
+                            if (correctAnswer == CategoriesData.CorrectAnswer.C)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -188,8 +222,8 @@ namespace Jesper.Collection
                             }
                             break;
 
-                        case SelectedAnswer.D:
-                            if (gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].correctAnswer == CategoriesData.CorrectAnswer.D)
+                        case AnswerOptions.D:
+                            if (correctAnswer == CategoriesData.CorrectAnswer.D)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -210,20 +244,113 @@ namespace Jesper.Collection
                 }
 
             }
-            //else if (_gameManager._questionsAndAnswersCopy[_gameManager.RandomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Situational)
-            //{
+            else if (gameManager._activeInterviewCategories[gameManager.RandomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Situational)
+            {
+                switch (selectedAnswer)
+                {
+                    case AnswerOptions.A:
+                        if (answerType == CategoriesData.AnswerType.Good)
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
+                            gameManager.InterviewerInterest += 1;
+                            gameManager.PlayerScore += 1;
+                        }
+                        else if(answerType == CategoriesData.AnswerType.Average)
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Fel svar.");
+                            gameManager.InterviewerInterest -= 1;
+                            gameManager.PlayerScore += 0.5f;
+                        }
+                        else
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Fel svar.");
+                            gameManager.InterviewerInterest -= 1;
+                            gameManager.PlayerScore += 0;
+                        }
+                        break;
 
-            //}
+                    case AnswerOptions.B:
+                        if (answerType == CategoriesData.AnswerType.Good)
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
+                            gameManager.InterviewerInterest += 1;
+                            gameManager.PlayerScore += 1;
+                        }
+                        else if (answerType == CategoriesData.AnswerType.Average)
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Fel svar.");
+                            gameManager.InterviewerInterest -= 1;
+                            gameManager.PlayerScore += 0.5f;
+                        }
+                        else
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Fel svar.");
+                            gameManager.InterviewerInterest -= 1;
+                            gameManager.PlayerScore += 0;
+                        }
+                        break;
+
+                    case AnswerOptions.C:
+                        if (answerType == CategoriesData.AnswerType.Good)
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
+                            gameManager.InterviewerInterest += 1;
+                            gameManager.PlayerScore += 1;
+                        }
+                        else if (answerType == CategoriesData.AnswerType.Average)
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Fel svar.");
+                            gameManager.InterviewerInterest -= 1;
+                            gameManager.PlayerScore += 0.5f;
+                        }
+                        else
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Fel svar.");
+                            gameManager.InterviewerInterest -= 1;
+                            gameManager.PlayerScore += 0;
+                        }
+                        break;
+
+                    case AnswerOptions.D:
+                        if (answerType == CategoriesData.AnswerType.Good)
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
+                            gameManager.InterviewerInterest += 1;
+                            gameManager.PlayerScore += 1;
+                        }
+                        else if(answerType == CategoriesData.AnswerType.Average)
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Fel svar.");
+                            gameManager.InterviewerInterest -= 1;
+                            gameManager.PlayerScore += 0.5f;
+                        }
+                        else
+                        {
+                            gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Fel svar.");
+                            gameManager.InterviewerInterest -= 1;
+                            gameManager.PlayerScore += 0;
+                        }
+                        break;
+
+                    default:
+                        Debug.LogError("Unexpected selectedAnswer value: " + selectedAnswer);
+                        break;
+                }
+            }
 
             // Turns off all the highlight gameobjects.
-            foreach (GameObject obj in highlightGameobjects)
+            //foreach (GameObject obj in highlightGameobjects)
+            //{
+            //    obj.SetActive(false);
+            //}
+
+            for (int i = 0; i < highlightGameobjects.Count; i++)
             {
-                obj.SetActive(false);
+                highlightGameobjects[i].highlightedGameObject.SetActive(false);
             }
 
             this.gameObject.SetActive(false);
             gameManager.AnswerPageNumber++;
-            selectedAnswer = SelectedAnswer.None;
             gameManager.WaitForAnswer = false;
             gameManager.CheckAllAnswers();
             gameManager.GetRandomListIndex();
@@ -248,14 +375,13 @@ namespace Jesper.Collection
             uiManager.uiPrefabCopyList[3].SetActive(true);
         }
 
-        private enum SelectedAnswer
+        [Flags]
+        private enum AnswerOptions
         {
-            A,
-            B,
-            C,
-            D,
-            All,
-            None
+            A = 1,
+            B = 2,
+            C = 4,
+            D = 8
         }
 
         /// <summary>
@@ -267,10 +393,18 @@ namespace Jesper.Collection
             Average,
             Good
         }
-        private enum AnswerOption
+
+        [Serializable]
+        public class HighlightedGameObjects
         {
-            OneAnswerOption,
-            MultipeChoiceOption
+            public int intValue;
+            public GameObject highlightedGameObject;
+
+            public HighlightedGameObjects(int intValue, GameObject highLightedGameObject)
+            {
+                this.intValue = intValue;
+                this.highlightedGameObject = highLightedGameObject;
+            }
         }
     }
 }

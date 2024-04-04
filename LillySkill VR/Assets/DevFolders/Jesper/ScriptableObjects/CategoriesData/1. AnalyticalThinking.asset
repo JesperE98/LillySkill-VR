@@ -16,7 +16,7 @@ MonoBehaviour:
   interviewCategoryType: 0
   description: "F\xF6rm\xE5gan att analysera komplex information, dra slutsatser
     och fatta v\xE4lgrundade beslut."
-  categoryIsActive: 1
+  categoryIsActive: 0
   allAnswersAnswered: 0
   interviewQuestionData:
   - QuestionAsked: 0

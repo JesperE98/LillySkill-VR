@@ -15,7 +15,7 @@ MonoBehaviour:
   categoryName: 20
   interviewCategoryType: 1
   description: 
-  categoryIsActive: 0
+  categoryIsActive: 1
   allAnswersAnswered: 0
   interviewQuestionData:
   - QuestionAsked: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
       best\xE4llningar. En kund har skickat in en br\xE5dskande best\xE4llning som
       m\xE5ste skickas samma dag. N\xE4r du b\xF6rjar plocka varorna m\xE4rker du
       att n\xE5gra av dem \xE4r slut i lager. Vad g\xF6r du?"
-    correctAnswer: 5
+    correctAnswer: 1
     answers:
     - AnswerAlternative: 
       AnswerText: "Skickar de tillg\xE4ngliga varorna och meddelar kunden om de saknade

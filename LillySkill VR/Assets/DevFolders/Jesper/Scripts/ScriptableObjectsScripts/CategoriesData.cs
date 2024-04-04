@@ -100,15 +100,14 @@ namespace Jesper.InterviewAnswersAndQuestions.Data
         /// <summary>
         /// Enum to specify the correct answer.
         /// </summary>
+        [Flags]
         [Serializable]
         public enum CorrectAnswer
         {
-            A,
-            B,
-            C,
-            D,
-            All,
-            None
+            A = 1,
+            B = 2,
+            C = 4,
+            D = 8
         }
 
         /// <summary>
