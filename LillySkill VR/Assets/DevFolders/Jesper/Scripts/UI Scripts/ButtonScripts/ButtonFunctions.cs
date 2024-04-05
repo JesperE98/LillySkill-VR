@@ -42,15 +42,23 @@ namespace Jesper.Collection
 
         void Update()
         {
-            if (gameManager.InterviewAreActive)
+            switch (gameSettings.GetScene) 
             {
-                randomListIndex = gameManager.RandomListIndex;
-                randomSubListIndex = gameManager.RandomSubListIndex;
+                case GameSettingsScriptableObject.LoadedScene.Office:
+
+                    if (gameManager.InterviewAreActive)
+                    {
+                        randomListIndex = gameManager.RandomListIndex;
+                        randomSubListIndex = gameManager.RandomSubListIndex;
+                    }
+                    else
+                    {
+                        return;
+                    }
+
+                    break;
             }
-            else
-            {
-                return;
-            }
+
 
         }
 
