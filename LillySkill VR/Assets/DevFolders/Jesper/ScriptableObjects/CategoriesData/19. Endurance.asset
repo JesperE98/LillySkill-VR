@@ -1,0 +1,433 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
+  m_Name: 19. Endurance
+  m_EditorClassIdentifier: 
+  categoryName: 19
+  interviewCategoryType: 0
+  description: "F\xF6rm\xE5gan att h\xE5lla fast vid l\xE5ngsiktiga m\xE5l och forts\xE4tta
+    arbeta h\xE5rt \xE4ven n\xE4r det uppst\xE5r hinder eller motg\xE5ngar."
+  categoryIsActive: 0
+  allAnswersAnswered: 0
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Vad betyder det att vara uth\xE5llig?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att aldrig m\xF6ta hinder eller motg\xE5ngar p\xE5 v\xE4gen mot
+        m\xE5len."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att snabbt ge upp n\xE4r man st\xF6ter p\xE5 hinder eller motst\xE5nd."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att h\xE5lla fast vid l\xE5ngsiktiga m\xE5l och forts\xE4tta arbeta
+        h\xE5rt trots hinder eller motg\xE5ngar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att aldrig beh\xF6va anstr\xE4nga sig eller arbeta h\xE5rt f\xF6r
+        att n\xE5 sina m\xE5l."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Varf\xF6r \xE4r uth\xE5llighet viktigt f\xF6r att n\xE5 framg\xE5ng?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6r att undvika alla hinder och motg\xE5ngar p\xE5 v\xE4gen."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "F\xF6r att snabbt ge upp n\xE4r n\xE5got blir sv\xE5rt eller utmanande."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "F\xF6r att uppn\xE5 l\xE5ngsiktiga m\xE5l och \xF6vervinna utmaningar
+        som uppst\xE5r."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "F\xF6r att slippa anstr\xE4nga sig eller arbeta h\xE5rt."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad \xE4r bra med att vara uth\xE5llig?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Minskad motivation och engagemang i arbete och m\xE5l."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "\xD6kad f\xF6rm\xE5ga att hantera hinder och motg\xE5ngar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Begr\xE4nsad f\xF6rm\xE5ga att anpassa sig till f\xF6r\xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "\xD6kad ben\xE4genhet att ge upp n\xE4r n\xE5got blir sv\xE5rt."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad kan p\xE5verka hur uth\xE5llig en person \xE4r?"
+    correctAnswer: 8
+    answers:
+    - AnswerAlternative: A
+      AnswerText: En individs personliga egenskaper och attityder.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "St\xF6d fr\xE5n andra m\xE4nniskor och mentorskap."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Tidigare erfarenheter av framg\xE5ng och misslyckanden."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Alla ovanst\xE5ende alternativ."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan man bli mer uth\xE5llig?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att undvika utmaningar och sv\xE5ra situationer."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att s\xE4tta realistiska och m\xE4tbara delm\xE5l."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att ge upp n\xE4r n\xE5got blir f\xF6r sv\xE5rt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att inte ta p\xE5 dig f\xF6r mycket arbete eller ansvar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan motivation hj\xE4lpa en att bli mer uth\xE5llig?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Motivation \xE4r inte viktigt f\xF6r att utveckla uth\xE5llighet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Motivation kan hj\xE4lpa en individ att forts\xE4tta arbeta h\xE5rt
+        trots hinder eller motg\xE5ngar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Motivation \xE4r irrelevant n\xE4r det g\xE4ller att h\xE5lla
+        fast vid l\xE5ngsiktiga m\xE5l."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Motivation kan bara komma fr\xE5n yttre faktorer och p\xE5verkar
+        inte uth\xE5llighet."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan man hj\xE4lpa andra att bli mer uth\xE5lliga?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att underminera deras sj\xE4lvf\xF6rtroende och kritisera
+        deras prestationer."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att ge upp sj\xE4lv n\xE4r n\xE5got blir sv\xE5rt och utmanande."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att ge st\xF6d, uppmuntran och erk\xE4nsla f\xF6r deras
+        anstr\xE4ngningar och framsteg."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att inte bry sig om deras m\xE5l och prestationer."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan man hantera hinder och motg\xE5ngar?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att ge upp och s\xF6ka andra m\xE5l ist\xE4llet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att s\xF6ka st\xF6d och r\xE5d fr\xE5n andra m\xE4nniskor."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att ignorera hindren och hoppas att de f\xF6rsvinner."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att inte bry sig om hindren och bara forts\xE4tta fram\xE5t."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Kan uth\xE5llighet utvecklas och f\xF6rb\xE4ttras?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Nej, uth\xE5llighet \xE4r en medf\xF6dd egenskap och kan inte
+        f\xF6r\xE4ndras."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Ja, uth\xE5llighet kan utvecklas genom att tr\xE4na och utmana
+        sig sj\xE4lv."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Nej, uth\xE5llighet \xE4r en statisk egenskap och kan inte f\xF6rb\xE4ttras."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Ja, uth\xE5llighet kan f\xF6rb\xE4ttras genom att undvika utmaningar
+        och motst\xE5nd."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: 
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0

@@ -1,0 +1,228 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
+  m_Name: 18. Leadership
+  m_EditorClassIdentifier: 
+  categoryName: 18
+  interviewCategoryType: 0
+  description: "F\xF6rm\xE5gan att inspirera, motivera och leda andra f\xF6r att
+    uppn\xE5 gemensamma m\xE5l och framg\xE5ng."
+  categoryIsActive: 0
+  allAnswersAnswered: 0
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Vad inneb\xE4r det att vara en ledare?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att ha total kontroll och makt \xF6ver andra m\xE4nniskor."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att vara auktorit\xE4r och befalla andra att g\xF6ra saker."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att inspirera, motivera och leda andra f\xF6r att uppn\xE5 gemensamma
+        m\xE5l och framg\xE5ng."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att vara en expert inom sitt omr\xE5de och leda genom kunskap."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka egenskaper \xE4r viktiga f\xF6r en framg\xE5ngsrik ledare?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Empati, kommunikationsf\xF6rm\xE5ga och beslutsamhet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Dominans, aggressivitet och sj\xE4lvcentrering."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Ointresserad av andras \xE5sikter och perspektiv."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Konfliktskapande och brist p\xE5 \xF6ppenhet."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad \xE4r skillnaden mellan ledarskap och chefskap?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Det finns ingen skillnad, de \xE4r synonyma termer."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Ledarskap inneb\xE4r att ha auktoritet och chefskap handlar om
+        att ha makt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Chefskap \xE4r en formell position medan ledarskap handlar om
+        att p\xE5verka och inspirera andra."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Ledarskap handlar om att ge order medan chefskap handlar om att
+        f\xF6lja dem."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka f\xF6rdelar kan ledarskap ha inom en organisation?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "\xD6kad konflikt och brist p\xE5 samarbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "F\xF6rb\xE4ttrad kommunikation och samarbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Stagnering av tillv\xE4xt och utveckling."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: Minskad motivation och engagemang hos medarbetarna.
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: Vilka olika variationer av ledarskap finns det?
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Auktorit\xE4r, demokratisk och laissez-faire."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: Dominerande, manipulativ och passiv.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Kontrollerande, aggressiv och sj\xE4lvcentrerad."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: Ointresserad, konfliktskapande och icke-deltagande.
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad k\xE4nnetecknar en auktorit\xE4r ledarskapsstil?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: En ledare som tar alla beslut ensam och ger order till sina medarbetare.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "En ledare som involverar medarbetarna i beslutsfattandet och fr\xE4mjar
+        samarbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "En ledare som inte bryr sig om medarbetarnas \xE5sikter och perspektiv."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "En ledare som \xE4r ointresserad och passiv i sitt ledarskap."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka egenskaper \xE4r viktiga f\xF6r en demokratisk ledare?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "\xD6ppenhet, inkludering och lyssnande."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: Dominans, kontroll och auktoritet.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: Apati, ointresse och nonchalans.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Manipulation, bedr\xE4geri och sj\xE4lvintresse."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: Hur kan en ledare inspirera och motivera sina medarbetare?
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att hota och anv\xE4nda r\xE4dsla som motivationsfaktor."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att bel\xF6na och erk\xE4nna prestationer."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att ignorera medarbetarnas behov och \xF6nskem\xE5l."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att vara otydlig och os\xE4ker i sina instruktioner."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: Vilken roll har kommunikation i ledarskap?
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Kommunikation \xE4r oviktig i ledarskap."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Kommunikation \xE4r enbart f\xF6r att ge order och instruktioner."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Kommunikation \xE4r avg\xF6rande f\xF6r att skapa f\xF6rst\xE5else,
+        engagemang och samarbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Kommunikation b\xF6r undvikas f\xF6r att undvika konflikter."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan en ledare fr\xE4mja framg\xE5ng och uppn\xE5 gemensamma
+      m\xE5l?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att fokusera enbart p\xE5 sina egna m\xE5l och intressen."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att vara auktorit\xE4r och kontrollera alla aktiviteter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att skapa en inkluderande och st\xF6ttande arbetsmilj\xF6."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att undvika att involvera medarbetarna och deras id\xE9er."
+      AnswerSelected: 0
+      answerType: 0

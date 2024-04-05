@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
+  m_Name: 15. Creativity
+  m_EditorClassIdentifier: 
+  categoryName: 15
+  interviewCategoryType: 0
+  description: "F\xF6rm\xE5gan att t\xE4nka utanf\xF6r boxen, komma med nya id\xE9er
+    och hitta innovativa l\xF6sningar p\xE5 problem."
+  categoryIsActive: 0
+  allAnswersAnswered: 0
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Vad inneb\xE4r det att vara kreativ?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att f\xF6lja regler och rutiner noggrant."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att t\xE4nka utanf\xF6r boxen och komma med nya id\xE9er."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att f\xF6lja etablerade metoder och inte avvika fr\xE5n dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att undvika att ta risker och h\xE5lla sig till bepr\xF6vade s\xE4tt
+        att g\xF6ra saker p\xE5."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Varf\xF6r \xE4r kreativitet viktigt i arbetslivet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6r att undvika f\xF6r\xE4ndring och beh\xE5lla status quo."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "F\xF6r att komma med innovativa l\xF6sningar och hitta nya m\xF6jligheter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "F\xF6r att f\xF6lja exakt samma arbetss\xE4tt som tidigare."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "F\xF6r att undvika att ta risker och h\xE5lla sig till bepr\xF6vade
+        s\xE4tt att g\xF6ra saker p\xE5."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka f\xF6rdelar kan kreativitet ha f\xF6r en individ?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Begr\xE4nsade m\xF6jligheter till personlig och professionell
+        tillv\xE4xt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "\xD6kad flexibilitet och anpassningsf\xF6rm\xE5ga till f\xF6r\xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Minskad inspiration och brist p\xE5 nya id\xE9er."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Begr\xE4nsad f\xF6rm\xE5ga att l\xF6sa problem och hantera utmaningar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du fr\xE4mja kreativitet hos dig sj\xE4lv?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att undvika att t\xE4nka p\xE5 nya id\xE9er och h\xE5lla
+        dig till bepr\xF6vade metoder."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att ge utrymme f\xF6r reflektion och oberoende t\xE4nkande."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att undvika att ta risker och h\xE5lla dig inom din komfortzon."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att alltid f\xF6lja exakt samma arbetss\xE4tt som tidigare."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka faktorer kan f\xF6rhindra kreativiteten hos en individ?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "En st\xF6djande och inspirerande arbetsmilj\xF6."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "H\xF6ga krav p\xE5 produktivitet och snabba resultat."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "M\xF6jlighet att experimentera och pr\xF6va nya id\xE9er."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "M\xF6jlighet att samarbeta och dela id\xE9er med andra."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: Vilken roll har fel och misstag i kreativitetsprocessen?
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Fel och misstag \xE4r hinder f\xF6r kreativitet och b\xF6r undvikas."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Fel och misstag \xE4r en naturlig del av kreativitetsprocessen
+        och kan leda till nya insikter och id\xE9er."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Fel och misstag \xE4r tecken p\xE5 bristande kompetens och b\xF6r
+        undvikas till varje pris."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Fel och misstag \xE4r irrelevant i kreativitetsprocessen och har
+        ingen inverkan."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du fr\xE4mja kreativitet hos dina teammedlemmar? "
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att begr\xE4nsa deras uttryck f\xF6r att undvika konflikter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att erbjuda en milj\xF6 som uppmuntrar till delning av id\xE9er
+        och uttryckande av olikheter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att undvika att ge feedback och ist\xE4llet l\xE5ta dem
+        arbeta oberoende."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att alltid best\xE4mma vilka id\xE9er som ska implementeras
+        utan att konsultera teamet."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka tekniker eller metoder kan anv\xE4ndas f\xF6r att stimulera
+      kreativt t\xE4nkande?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att begr\xE4nsa sig till en enda tankeg\xE5ng och undvika att
+        utforska alternativ."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att anv\xE4nda brainstorming f\xF6r att generera id\xE9er och
+        tankeassociationer."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att undvika att ta risker och h\xE5lla sig till bepr\xF6vade metoder."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att undvika att g\xF6ra research och ist\xE4llet lita p\xE5 intuition."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan kreativitet till\xE4mpas inom olika branscher och yrken?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att f\xF6lja exakt samma rutiner och metoder som tidigare."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att identifiera och l\xF6sa problem p\xE5 nya och innovativa
+        s\xE4tt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att undvika f\xF6r\xE4ndring och beh\xE5lla status quo."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att undvika att t\xE4nka p\xE5 nya id\xE9er och h\xE5lla
+        sig till bepr\xF6vade metoder."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Kan kreativitet utvecklas och f\xF6rb\xE4ttras?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Nej, kreativitet \xE4r en medf\xF6dd egenskap och kan inte utvecklas."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Ja, genom att tr\xE4na och \xF6va p\xE5 att t\xE4nka utanf\xF6r
+        boxen kan kreativiteten f\xF6rb\xE4ttras."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Nej, kreativitet \xE4r en statisk egenskap som inte kan f\xF6r\xE4ndras."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Ja, genom att undvika att ta risker och h\xE5lla sig till bepr\xF6vade
+        s\xE4tt kan kreativiteten f\xF6rb\xE4ttras."
+      AnswerSelected: 0
+      answerType: 0

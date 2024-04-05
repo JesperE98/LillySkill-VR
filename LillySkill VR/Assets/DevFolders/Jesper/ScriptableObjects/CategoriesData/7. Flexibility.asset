@@ -19,30 +19,29 @@ MonoBehaviour:
   allAnswersAnswered: 0
   interviewQuestionData:
   - QuestionAsked: 0
-    QuestionText: "DENNA \xC4R INTE KLAR!!!"
+    QuestionText: "Hur skulle du anpassa dig till en f\xF6r\xE4ndring p\xE5 arbetsplatsen,
+      om du var tvungen?"
     correctAnswer: 8
     answers:
     - AnswerAlternative: A
-      AnswerText: "Jag skulle vara motvillig till f\xF6r\xE4ndringen och f\xF6rs\xF6ka
-        hitta s\xE4tt att minimera dess p\xE5verkan p\xE5 mina rutiner och arbetsprocesser."
+      AnswerText: "Jag skulle vara motvillig till f\xF6r\xE4ndringen d\xE5 det k\xE4nns
+        on\xF6digt att g\xE5 ifr\xE5n en arbetsmetod jag \xE4r van med."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: "Jag skulle k\xE4nna en viss stress och motst\xE5nd mot f\xF6r\xE4ndringen,
-        men jag skulle g\xF6ra mitt b\xE4sta f\xF6r att acceptera och anpassa mig
-        till den."
+      AnswerText: "Jag skulle nog kunna anpassa mig med hj\xE4lp fr\xE5n andra, d\xE5
+        det kan k\xE4nnas p\xE5frestande till f\xF6r\xE4ndring."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: "Jag \xE4r flexibel och kan anpassa mig efter den nya situationen
-        genom att identifiera m\xF6jligheter och ta initiativ till att l\xE4ra mig
-        de nya arbetsmetoderna."
+      AnswerText: "Jag skulle ta in den nya informationen och fokusera p\xE5 att
+        g\xF6ra mitt arbete s\xE5 anpassat som m\xF6jligt"
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: "Jag s\xF6ker f\xF6rst\xE5else f\xF6r f\xF6r\xE4ndringen och samarbetar
-        med mina kollegor f\xF6r att hitta gemensamma l\xF6sningar som gynnar b\xE5de
-        mig och teamet."
+      AnswerText: "Jag skulle s\xF6ka f\xF6rst\xE5else till f\xF6r\xE4ndringen och
+        samarbeta med mina kollegor f\xF6r att hitta gemensamma l\xF6sningar som
+        gynnar b\xE5de mig och teamet."
       AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
@@ -71,27 +70,31 @@ MonoBehaviour:
       AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: "DENNA \xC4R INTE KLAR!!!"
+    QuestionText: "Om du skulle beh\xF6va \xE4ndra din arbetsmetod f\xF6r att uppn\xE5
+      b\xE4ttre resultat, hur skulle du reagera?"
     correctAnswer: 8
     answers:
     - AnswerAlternative: A
-      AnswerText: "Jag \xE4ndrar min arbetsmetod och s\xF6ker aktivt efter alternativa
-        tillv\xE4gag\xE5ngss\xE4tt f\xF6r att uppn\xE5 b\xE4ttre resultat."
+      AnswerText: "Jag skulle vara motvillig till f\xF6r\xE4ndringen d\xE5 jag \xE4r
+        bekv\xE4m med min nuvarande arbetsmetod, men \xE4r \xF6ppen f\xF6r att l\xE4ra
+        och anpassa mig i framtiden."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: "Efter att ha f\xE5tt insikten och feedback fr\xE5n andra inser
-        jag vikten av att anpassa min metod f\xF6r att uppn\xE5 \xF6nskade resultat. "
+      AnswerText: "Jag skulle k\xE4nna mig stressad d\xE5 jag inte \xE4r van med
+        f\xF6r\xE4ndringar. Men med hj\xE4lp fr\xE5n andra skulle jag kunna f\xF6rs\xF6ka
+        mig p\xE5 det."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: "Jag har en flexibel inst\xE4llning till f\xF6r\xE4ndring och ser
-        det som en m\xF6jlighet till utveckling. "
+      AnswerText: "Jag skulle m\xF6jligtvis kunna \xE4ndra min arbetsmetod, om jag
+        f\xE5r tid och st\xF6d fr\xE5n min chef."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: "Jag har inte relevanta exempel, men \xE4r \xF6ppen f\xF6r att
-        l\xE4ra och anpassa mig i framtiden. "
+      AnswerText: "Jag skulle se det som n\xE5got positivt d\xE5 f\xF6r\xE4ndring
+        \xF6ppnar d\xF6rrar till att f\xF6rb\xE4ttras och skulle utvidga mina f\xE4rdigheter
+        och kunskaper."
       AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
@@ -145,28 +148,31 @@ MonoBehaviour:
       AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: "DENNA \xC4R INTE KLAR!!!"
+    QuestionText: "Om du skulle beh\xF6va anpassa dig till ett nytt team eller arbetsmilj\xF6,
+      hur skulle du reagera?"
     correctAnswer: 8
     answers:
     - AnswerAlternative: A
-      AnswerText: "Jag \xE4r f\xF6rst motvillig till den nya arbetsmilj\xF6n/teamet,
-        men jag anpassar mig aktivt med tiden."
+      AnswerText: "Jag skulle k\xE4nna mig motvillig d\xE5 jag inte \xE4r van med
+        f\xF6r\xE4ndringar, men jag skulle nog kunna v\xE4nja mig med tiden."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: "Jag v\xE4lkomnar den nya milj\xF6n/teamet och m\xF6ter utmaningarna
-        med anpassningen."
+      AnswerText: "Jag skulle k\xE4nna mig stressad av utmaningarna som kan dyka
+        upp och anpassningarna som kr\xE4vs, om jag inte f\xE5r konstant st\xF6d
+        fr\xE5n min chef."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: "Jag \xE4r flexibel och snabb p\xE5 att anpassa mig till den ny
-        milj\xF6n och teamet. Jag tar initiativ till att l\xE4ra k\xE4nna mina nya
-        kollegor och deras arbetsstilar f\xF6r att anpassa mina egna arbetsmetoder."
+      AnswerText: "Jag skulle v\xE4lkomna det nya teamet/arbetsmilj\xF6n, men skulle
+        vilja jobba efter mina egna arbetsmetoder f\xF6r att vara s\xE5 effektiv
+        som m\xF6jligt."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: "Jag har inga relevanta exempel, men jag \xE4r \xF6ppen f\xF6r
-        att l\xE4ra och anpassa mig i framtiden."
+      AnswerText: "Jag skulle v\xE4lkomna det nya teamet/arbetsmilj\xF6n och se till
+        att l\xE4ra k\xE4nna mina nya kollegor och deras arbetsstilar f\xF6r att
+        kunna anpassa mina egna arbetsmetoder."
       AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
@@ -221,27 +227,28 @@ MonoBehaviour:
       AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: "DENNA \xC4R INTE KLAR!!!"
+    QuestionText: "Om du skulle beh\xF6va l\xE4ra dig ny teknik eller arbetsmetoder
+      p\xE5 arbetsplatsen, hur skulle du reagera?"
     correctAnswer: 8
     answers:
     - AnswerAlternative: A
-      AnswerText: "Jag engagerar mig aktivt i att l\xE4ra mig och anpassa mig till
-        dem f\xF6r att kunna anv\xE4nda dem p\xE5 ett framg\xE5ngsrikt s\xE4tt."
+      AnswerText: "Jag skulle vara motvillig till f\xF6r\xE4ndringen d\xE5 jag inte
+        gillar att g\xE5 ifr\xE5n det jag \xE4r trygg med."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: "Jag anv\xE4nder mig av olika strategier f\xF6r att \xF6vervinna
-        sv\xE5righeterna jag st\xF6ter p\xE5 f\xF6r att slutligen kunna anpassa mig."
+      AnswerText: "Det \xE4r inget som jag k\xE4nner mig s\xE4ker med, men jag \xE4r
+        \xF6ppen f\xF6r att l\xE4ra mig och anpassa mig till f\xF6r\xE4ndringar."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: "Jag implementerar dessa teknologier eller system, vilket resulterar
-        i f\xF6rb\xE4ttrade resultat eller effektivitet p\xE5 arbetsplatsen."
+      AnswerText: "Jag skulle vara \xF6ppen till f\xF6r\xE4ndring, men skulle beh\xF6va
+        konstant st\xF6d fr\xE5n min chef."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: "Jag kan inte ge ett passande exempel, men jag \xE4r \xF6ppen f\xF6r
-        att l\xE4ra mig och anpassa mig till nya teknologier och system i framtiden."
+      AnswerText: "Jag skulle med mina kollegor diskutera f\xF6r\xE4ndringarna och
+        d\xE4refter tillsammans anpassa v\xE5ra arbetsmetoder efter det."
       AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0

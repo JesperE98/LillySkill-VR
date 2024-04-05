@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
+  m_Name: 17. PossitiveAttitude
+  m_EditorClassIdentifier: 
+  categoryName: 17
+  interviewCategoryType: 0
+  description: "Att vara optimistisk, motiverad och entusiastisk inf\xF6r arbetsuppgifter
+    och utmaningar."
+  categoryIsActive: 0
+  allAnswersAnswered: 0
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Vad inneb\xE4r det att ha en positiv attityd?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att alltid vara glad och positiv oavsett omst\xE4ndigheter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att vara motiverad och entusiastisk inf\xF6r arbetsuppgifter och
+        utmaningar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att ignorera negativa k\xE4nslor och tankar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att vara orealistisk och blinda f\xF6r sv\xE5righeter."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Varf\xF6r \xE4r en positiv attityd viktig i arbetslivet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6r att undvika alla negativa situationer och konflikter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "F\xF6r att skapa en positiv arbetsmilj\xF6 och fr\xE4mja produktivitet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "F\xF6r att ignorera problem och utmaningar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "F\xF6r att vara orealistisk och blinda f\xF6r eventuella sv\xE5righeter."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka f\xF6rdelar kan en positiv attityd ha f\xF6r en individ?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: Minskat engagemang och motivation i arbetsuppgifter.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "\xD6kad energi och motivation att ta itu med utmaningar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Begr\xE4nsad f\xF6rm\xE5ga att samarbeta med andra."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "\xD6kad k\xE4nsla av negativitet och missn\xF6je."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du fr\xE4mja en positiv attityd hos dig sj\xE4lv?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att alltid vara \xF6verentusiastisk och ignorera potentiella
+        problem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att fokusera p\xE5 l\xF6sningar ist\xE4llet f\xF6r problem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att klaga och vara negativ i arbetsmilj\xF6n."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att undvika att ta p\xE5 dig utmanande arbetsuppgifter."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka faktorer kan p\xE5verka en individs attityd p\xE5 arbetsplatsen?"
+    correctAnswer: 8
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Arbetsmilj\xF6n och kulturen p\xE5 arbetsplatsen."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "En individs tidigare erfarenheter och inre inst\xE4llning."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: Kollegors attityder och beteenden.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Alla ovanst\xE5ende alternativ \xE4r korrekta."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken roll har sj\xE4lvreflektion i att utveckla en positiv attityd?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Sj\xE4lvreflektion har ingen betydelse f\xF6r att utveckla en
+        positiv attityd."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Sj\xE4lvreflektion kan hj\xE4lpa en individ att identifiera negativa
+        tankem\xF6nster och arbeta med att f\xF6r\xE4ndra dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Sj\xE4lvreflektion kan leda till \xF6kad negativitet och minskad
+        motivation."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Sj\xE4lvreflektion p\xE5verkar inte en individs attityd p\xE5
+        arbetsplatsen."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du fr\xE4mja en positiv attityd hos dina teammedlemmar?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att skapa en arbetsmilj\xF6 som \xE4r pr\xE4glad av negativitet
+        och missn\xF6je."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att uppmuntra och st\xF6dja dina teammedlemmar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att kritisera och nedv\xE4rdera dina teammedlemmar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att undvika att ge positiv feedback och erk\xE4nsla."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka strategier kan vara anv\xE4ndbara f\xF6r att bibeh\xE5lla
+      en positiv attityd?"
+    correctAnswer: 8
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "En positiv attityd kan skapa en atmosf\xE4r av entusiasm och motivation."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "En positiv attityd kan bidra till att l\xF6sa konflikter och fr\xE4mja
+        samarbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "En positiv attityd kan \xF6ka produktiviteten och arbetsgl\xE4djen
+        hos medarbetarna."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Alla ovanst\xE5ende alternativ \xE4r korrekta."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Kan en positiv attityd l\xE4ras och utvecklas?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Nej, en positiv attityd \xE4r medf\xF6dd och kan inte f\xF6r\xE4ndras."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Ja, en positiv attityd kan utvecklas genom medveten anstr\xE4ngning
+        och tr\xE4ning."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "En positiv attityd \xE4r enbart en produkt av externt inflytande
+        och kan inte f\xF6r\xE4ndras individuellt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Attityder \xE4r statiska och kan inte f\xF6r\xE4ndras \xF6ver
+        tid."
+      AnswerSelected: 0
+      answerType: 0

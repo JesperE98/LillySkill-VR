@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
+  m_Name: 13. InitiativeTaking
+  m_EditorClassIdentifier: 
+  categoryName: 13
+  interviewCategoryType: 0
+  description: "F\xF6rm\xE5gan att ta egna initiativ och driva projekt eller id\xE9er
+    fram\xE5t utan att v\xE4nta p\xE5 instruktioner."
+  categoryIsActive: 0
+  allAnswersAnswered: 0
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Vad inneb\xE4r initiativtagande i arbetslivet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att v\xE4nta p\xE5 tydliga instruktioner innan man agerar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att ta f\xF6rsta steget f\xF6r att driva projekt eller id\xE9er
+        fram\xE5t."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att f\xF6lja rutiner och undvika f\xF6r\xE4ndringar. "
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att delegera ansvar till andra f\xF6r att undvika arbetsbelastning."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilket av f\xF6ljande beteenden visar tecken p\xE5 initiativtagande?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att utf\xF6ra uppgifter enligt exakta instruktioner utan att ifr\xE5gas\xE4tta
+        dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att identifiera m\xF6jligheter till f\xF6rb\xE4ttring och f\xF6resl\xE5
+        innovativa l\xF6sningar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att undvika att ta ansvar och l\xE5ta andra fatta beslut."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att vara flexibel och anpassa sig till f\xF6r\xE4ndrade omst\xE4ndigheter."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Varf\xF6r \xE4r det viktigt att ta eget initiativ p\xE5 arbetsplatsen?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Det minskar arbetsbelastningen f\xF6r andra."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Det fr\xE4mjar samarbete mellan teammedlemmar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Det visar sj\xE4lvst\xE4ndighet och engagemang."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Det minskar behovet av ledarskap och \xF6vervakning."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "INTE KLAR \xC4NNU!!"
+    correctAnswer: 0
+    answers:
+    - AnswerAlternative: A
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: 
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du fr\xE4mja initiativtagande hos dina kollegor?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: Genom att ge tydliga instruktioner och riktlinjer.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att uppmuntra och st\xF6dja deras id\xE9er och f\xF6rslag."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: Genom att delegera arbetsuppgifter till dem.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att undvika f\xF6r\xE4ndringar och h\xE5lla fast vid rutiner."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan initiativtagande bidra till att l\xF6sa problem p\xE5
+      arbetsplatsen?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att ignorera problemen och hoppas att de f\xF6rsvinner."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att ta ansvar och s\xF6ka efter l\xF6sningar och alternativa
+        tillv\xE4gag\xE5ngss\xE4tt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att delegera probleml\xF6sningen till andra."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att f\xF6lja exakt de instruktioner som ges."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka f\xF6rdelar kan initiativtagande ha f\xF6r en organisation?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "\xD6kad effektivitet och produktivitet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Begr\xE4nsning av innovation och kreativitet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "\xD6kat beroende av \xF6verordnade instruktioner."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Minskad anpassningsf\xF6rm\xE5ga till f\xF6r\xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: Hur kan du visa initiativtagande i din dagliga arbetsrutin?
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att f\xF6lja instruktioner noggrant utan att ifr\xE5gas\xE4tta
+        dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att ta ansvar f\xF6r att slutf\xF6ra uppgifter och \xF6vertr\xE4ffa
+        f\xF6rv\xE4ntningarna."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att undvika att ta p\xE5 dig extra arbetsuppgifter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att f\xF6lja samma rutiner och undvika f\xF6r\xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad \xE4r skillnaden mellan att vara proaktiv och att vara reaktiv
+      p\xE5 arbetsplatsen?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att vara proaktiv inneb\xE4r att agera i f\xF6rv\xE4g f\xF6r att
+        undvika problem, medan att vara reaktiv inneb\xE4r att agera efter att problem
+        har uppst\xE5tt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att vara proaktiv inneb\xE4r att agera efter att problem har uppst\xE5tt,
+        medan att vara reaktiv inneb\xE4r att agera i f\xF6rv\xE4g f\xF6r att undvika
+        problem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: Det finns ingen skillnad mellan att vara proaktiv och att vara
+        reaktiv.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att vara proaktiv inneb\xE4r att v\xE4nta p\xE5 instruktioner
+        innan man agerar, medan att vara reaktiv inneb\xE4r att ta egna initiativ."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: Hur kan du visa initiativtagande i en grupp eller team?
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att f\xF6lja gruppledarens instruktioner noggrant utan att
+        ifr\xE5gas\xE4tta dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att vara \xF6ppen f\xF6r andras id\xE9er och aktivt bidra
+        till diskussioner och beslutsfattande."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att undvika att ta ansvar och ist\xE4llet l\xE5ta andra
+        fatta beslut."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att f\xF6lja exakt samma arbetss\xE4tt som resten av gruppen."
+      AnswerSelected: 0
+      answerType: 0

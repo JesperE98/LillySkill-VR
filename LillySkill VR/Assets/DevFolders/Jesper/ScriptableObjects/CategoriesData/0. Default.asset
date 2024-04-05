@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0. Default
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
   categoryName: 0
-  interviewCategoryType: 0
+  interviewCategoryType: 1
   description: 
   categoryIsActive: 0
   allAnswersAnswered: 0

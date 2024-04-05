@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
+  m_Name: 10. ProblemSolving
+  m_EditorClassIdentifier: 
+  categoryName: 10
+  interviewCategoryType: 0
+  description: "F\xF6rm\xE5gan att identifiera problem, analysera situationen och
+    komma fram till l\xE4mpliga l\xF6sningar."
+  categoryIsActive: 0
+  allAnswersAnswered: 0
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Hur skulle du l\xF6sa ett komplext problem?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag ignorerar problemet och hoppas att det l\xF6ser sig sj\xE4lvt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag skulle ge upp om jag inser att problemet \xE4r f\xF6r sv\xE5rt
+        att l\xF6sa."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag bryter ner problemet i mindre delar, analyserar orsakerna
+        och utvecklar en plan f\xF6r att l\xF6sa det."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag ber mina kollegor att l\xF6sa problemet \xE5t mig."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur hanterar du situationer d\xE4r du st\xF6ter p\xE5 motst\xE5nd
+      eller hinder under arbetsprocessen?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag accepterar hindren och forts\xE4tter att arbeta som vanligt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: Jag ger upp och ber om att bli tilldelad en annan uppgift.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag identifierar orsakerna till hindren och f\xF6rs\xF6ker hitta
+        kreativa l\xF6sningar f\xF6r att \xF6vervinna dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skyller p\xE5 andra f\xF6r hindren och v\xE4ntar p\xE5 att
+        de ska l\xF6sa dem \xE5t mig."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur identifierar du ett problem p\xE5 arbetsplatsen och tar fram
+      en innovativ l\xF6sning?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag f\xF6redrar att f\xF6lja traditionella metoder och undviker
+        innovation."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag f\xF6rs\xF6ker inte hitta n\xE5gon l\xF6sning om problemet
+        verkar f\xF6r sv\xE5rt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag t\xE4nker utanf\xF6r boxen och f\xF6rs\xF6ker komma p\xE5
+        en kreativ l\xF6sning som l\xF6ser problemet effektivt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag ber mina \xF6verordnade att l\xF6sa problemet \xE5t mig om
+        jag inte vet vad jag ska g\xF6ra."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur prioriterar du olika problem och uppgifter n\xE4r du har flera
+      att hantera samtidigt?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag l\xF6ser bara de enklaste problemen och ignorerar de sv\xE5rare."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag prioriterar problem baserat p\xE5 hur br\xE5dskande de \xE4r
+        utan att ta h\xE4nsyn till deras betydelse."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag anv\xE4nder en strategi f\xF6r att bed\xF6ma problemens br\xE5dska
+        och betydelse och prioriterar dem d\xE4refter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag l\xE4mnar \xF6ver uppgifterna till n\xE5gon annan och hoppas
+        att de ska l\xF6sa dem \xE5t mig."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur reagerar du n\xE4r du st\xF6ter p\xE5 ett problem som du inte
+      har n\xE5gon tidigare erfarenhet av att l\xF6sa?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag ger upp och ber om att f\xE5 en annan uppgift."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag ignorerar problemet och hoppas att det f\xF6rsvinner av sig
+        sj\xE4lv."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag unders\xF6ker problemet noggrant, s\xF6ker efter liknande
+        fall och konsulterar experter f\xF6r att hitta en l\xF6sning."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag f\xF6rs\xF6ker inte l\xF6sa problemet och v\xE4ntar p\xE5
+        att n\xE5gon annan ska g\xF6ra det \xE5t mig."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Om du var tvungen att fatta ett sv\xE5rt beslut f\xF6r att l\xF6sa
+      ett problem p\xE5 arbetsplatsen. Hur skulle du g\xE5 till v\xE4ga?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag undviker att fatta beslut och hoppas att problemet l\xF6ser
+        sig sj\xE4lv."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag tar ett snabbt beslut utan att \xF6verv\xE4ga konsekvenserna
+        noggrant."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag \xF6verv\xE4ger noggrant alla alternativ, f\xF6r- och nackdelar
+        och fattar ett v\xE4lgrundat beslut."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag l\xE4mnar \xF6ver beslutsfattandet till n\xE5gon annan f\xF6r
+        att undvika att ta ansvar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur anv\xE4nder du data och information f\xF6r att analysera problem
+      och fatta beslut?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag ignorerar data och litar p\xE5 mina egna instinkter n\xE4r
+        jag fattar beslut."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag anv\xE4nder endast data som st\xF6der mina egna \xE5sikter
+        och ignorerar resten."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag samlar in och analyserar noggrant relevant data f\xF6r att
+        f\xE5 en objektiv f\xF6rst\xE5else av problemet och fatta informerade beslut."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag tar inte tid att analysera data och fatta beslut baserat p\xE5
+        magk\xE4nsla."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur ser du till att din probleml\xF6sningsprocess \xE4r effektiv
+      och ger \xF6nskade resultat?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag f\xF6rlitar mig p\xE5 slumpen och hoppas p\xE5 det b\xE4sta."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag g\xF6r inte n\xE5gon specifik plan utan agerar impulsivt f\xF6r
+        att l\xF6sa problemet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag f\xF6ljer en strukturerad process, samlar in information,
+        analyserar situationen och utv\xE4rderar olika l\xF6sningar innan jag agerar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag v\xE4ntar p\xE5 att problemet ska l\xF6sa sig sj\xE4lvt och
+        agerar inte aktivt f\xF6r att hitta en l\xF6sning."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur skulle du hantera en situation d\xE4r din f\xF6reslagna l\xF6sning
+      inte accepteras av dina kollegor eller \xF6verordnade?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag accepterar att min l\xF6sning inte \xE4r bra och ger upp."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag insisterar p\xE5 att min l\xF6sning \xE4r den b\xE4sta och
+        v\xE4grar att \xF6verv\xE4ga andra alternativ."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag lyssnar p\xE5 feedbacken, anpassar min l\xF6sning och arbetar
+        med mina kollegor f\xF6r att hitta en kompromiss."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag skyller p\xE5 andra f\xF6r att inte f\xF6rst\xE5 v\xE4rdet
+        av min l\xF6sning och v\xE4grar att g\xF6ra n\xE5gra \xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Om du skulle ta p\xE5 dig en ledande roll f\xF6r att l\xF6sa ett
+      problem p\xE5 arbetsplatsen. Hur skulle du g\xE5 till v\xE4ga?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag undviker att ta p\xE5 mig ledarskap och l\xE5ter andra ta
+        kontroll \xF6ver situationen."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag tar \xF6ver situationen utan att lyssna p\xE5 andras id\xE9er
+        eller synpunkter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag organiserar och leder gruppen genom probleml\xF6sningsprocessen,
+        involverar alla och s\xE4kerst\xE4ller att vi kommer fram till en effektiv
+        l\xF6sning."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag l\xE5ter andra ta p\xE5 sig ledarrollen och f\xF6ljer deras
+        anvisningar utan att bidra med mina egna id\xE9er."
+      AnswerSelected: 0
+      answerType: 0
