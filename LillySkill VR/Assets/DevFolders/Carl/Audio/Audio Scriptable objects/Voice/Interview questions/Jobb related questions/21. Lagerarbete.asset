@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
   m_Name: 21. Lagerarbete
   m_EditorClassIdentifier: 
-  audioCategoryIsActive: 1
+  audioCategoryIsActive: 0
   sounds:
   - name: Index 0
     clip: {fileID: 8300000, guid: c71a9cdddf824b74ba4b540dd40361cb, type: 3}

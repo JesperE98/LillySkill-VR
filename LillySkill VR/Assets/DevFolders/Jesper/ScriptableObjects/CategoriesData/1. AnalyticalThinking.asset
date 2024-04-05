@@ -25,47 +25,59 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Att noggrant titta p\xE5 detaljerad information och dra slutsatser."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Att f\xF6lja instruktioner noga."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Att g\xF6ra saker snabbt och effektivt."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Att arbeta bra med andra m\xE4nniskor."
+      AnswerSelected: 0
       answerType: 0
-  - QuestionAsked: 1
+  - QuestionAsked: 0
     QuestionText: "Vad inneb\xE4r det att vara analytisk?"
     correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: "Att vara kreativ och t\xE4nka utanf\xF6r boxen."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Att vara uppm\xE4rksam p\xE5 detaljer och noggrannhet."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Att vara bra p\xE5 att kommunicera med andra."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Att vara sj\xE4lvs\xE4ker och \xF6vertygande."
+      AnswerSelected: 0
       answerType: 0
-  - QuestionAsked: 1
+  - QuestionAsked: 0
     QuestionText: "Hur hj\xE4lper analytiskt t\xE4nkande p\xE5 jobbet?"
     correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Genom att g\xF6ra saker p\xE5 samma s\xE4tt varje g\xE5ng."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Genom att ta initiativ och g\xF6ra saker sj\xE4lv."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Genom att l\xF6sa sv\xE5ra problem och fatta bra beslut."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: Genom att vara social och jobba bra med andra.
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Vilket av f\xF6ljande scenario kr\xE4ver analytiskt t\xE4nkande?"
@@ -73,65 +85,81 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Att organisera ett f\xF6retagsevenemang."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Att h\xE5lla ett inspirerande tal inf\xF6r en publik."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Att skriva en rapport om f\xF6rs\xE4ljningsstatistik och dra slutsatser."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Att hantera kundf\xF6rfr\xE5gningar och ge utm\xE4rkt kundservice. "
+      AnswerSelected: 0
       answerType: 0
-  - QuestionAsked: 1
+  - QuestionAsked: 0
     QuestionText: "Vad \xE4r det viktigaste n\xE4r man anv\xE4nder analytiskt t\xE4nkande?"
     correctAnswer: 1
     answers:
     - AnswerAlternative: A
       AnswerText: Att samla mycket information.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: Att fatta snabba beslut.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Att ha sj\xE4lvf\xF6rtroende."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Att lyssna p\xE5 andra och deras \xE5sikter."
+      AnswerSelected: 0
       answerType: 0
-  - QuestionAsked: 1
+  - QuestionAsked: 0
     QuestionText: "Vilket av f\xF6ljande alternativ \xE4r en viktig f\xF6rdel med
       analytiskt t\xE4nkande?"
     correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: Effektiv kommunikation med kollegor.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "F\xF6rm\xE5gan att hantera och tolka data."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "F\xF6rm\xE5gan att inspirera och motivera andra."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Snabb och smidig probleml\xF6sning."
+      AnswerSelected: 0
       answerType: 0
-  - QuestionAsked: 1
+  - QuestionAsked: 0
     QuestionText: "Hur kan analytiskt t\xE4nkande bidra till att f\xF6rb\xE4ttra
       arbetsprocesser?"
     correctAnswer: 2
     answers:
     - AnswerAlternative: A
       AnswerText: Genom att vara flexibel och anpassningsbar.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Genom att vara noggrann och uppm\xE4rksam p\xE5 detaljer."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Genom att vara bra p\xE5 att leda och motivera andra."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Genom att vara bra p\xE5 att n\xE4tverka och bygga relationer."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Vilken av f\xF6ljande \xE4r inte en del av analytiskt t\xE4nkande?"
@@ -139,15 +167,19 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: Bryta ner problemet i mindre delar.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: Identifiera de viktigaste delarna av problemet.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "F\xF6rst\xE5 hur de relaterar till varandra."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "L\xE5ta dina personliga \xE5sikter p\xE5verka din analys."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur kan analytiskt t\xE4nkande hj\xE4lpa till att l\xF6sa problem
@@ -156,15 +188,19 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Genom att vara bra p\xE5 att skapa en positiv arbetsmilj\xF6. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Genom att vara bra p\xE5 att hantera konflikter och sv\xE5ra situationer."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Genom att kunna identifiera och analysera problem och hitta l\xF6sningar."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Genom att vara bra p\xE5 att f\xF6lja rutiner och f\xF6lja instruktioner."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Vilket av f\xF6ljande alternativ \xE4r en viktig komponent i analytiskt
@@ -173,13 +209,17 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: Att vara snabb och effektiv i beslutsfattandet.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Att vara \xF6ppen f\xF6r att l\xE4ra sig nya saker."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Att ha goda ledaregenskaper och vara bra p\xE5 att motivera andra."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Att vara bra p\xE5 att kommunicera."
+      AnswerSelected: 0
       answerType: 0

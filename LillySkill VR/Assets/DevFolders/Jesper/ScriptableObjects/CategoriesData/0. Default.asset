@@ -29,15 +29,18 @@ MonoBehaviour:
       AnswerText: "Jag har \xE4nnu inte skaffat mig tidigare arbetserfarenhet, men
         jag har utvecklat relevanta f\xE4rdigheter genom att uppr\xE4tth\xE5lla renlighet
         i mitt boende."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "Jag \xE4r sugen p\xE5 att b\xF6rja jobba. Trots att jag \xE4nnu
         inte skaffat specifik arbetserfarenhet \xE4r jag motiverad att g\xF6ra en
         positiv inverkan."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag har flera \xE5rs arbetslivserfarenhet, utrustad med en robust
         kompetens och en djup f\xF6rst\xE5else f\xF6r olika tekniker och arbetsuppgifter."
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "Vilka egenskaper tror du att din framtida arbetsgivare skulle
@@ -47,12 +50,15 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "H\xF6g arbetskapacitet och f\xF6rm\xE5ga att hantera fysiskt kr\xE4vande
         arbetsuppgifter."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "Noggrannhet och f\xF6rm\xE5ga att f\xF6lja instruktioner."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "God samarbetsf\xF6rm\xE5ga och f\xF6rm\xE5ga att samarbeta."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Om du har r\xE5kat ut f\xF6r en utmanande situation tidigare,
@@ -61,14 +67,17 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag har aldrig r\xE5kat ut f\xF6r en utmanande situation tidigare."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: Jag undviker vanligtvis utmanande situationer.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag har st\xE4llts inf\xF6r minst en sv\xE5r situation tidigare
         och antingen l\xF6ste jag den sj\xE4lv eller v\xE4nde mig till mina v\xE4nner
         f\xF6r att f\xE5 st\xF6d."
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "N\xE4r det kommer till lagarbete och samarbete, vilket svar beskriver
@@ -77,13 +86,16 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag f\xF6redrar att jobba ensam."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "Jag brukar kontrollera teamprojekt och se till att allt g\xE5r
         min v\xE4g."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag v\xE4rdes\xE4tter teamwork, d\xE4r alla arbetar som ett team."
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "Har du n\xE5gonsin haft konflikter med kollegor f\xF6rut? Om s\xE5
@@ -92,14 +104,17 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag har aldrig haft n\xE5gra konflikter med kollegor."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "N\xE4r konflikter uppst\xE5r tenderar jag att h\xE5lla avst\xE5nd
         och hoppas att de l\xF6ser sig p\xE5 egen hand."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: Jag skulle ta itu med konflikten med en kollega genom respektfull
         kommunikation.
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "Hur skulle du vanligtvis hantera feedback eller kritik p\xE5 en
@@ -108,14 +123,17 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag hanterar inte feedback eller kritik s\xE4rskilt bra."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "Jag bryr mig inte om feedback eller kritik eftersom jag vet att
         jag g\xF6r ett bra jobb."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag ser feedback och kritik som n\xE5got positivt, f\xF6r att
         l\xE4ra mig och kunna v\xE4xa p\xE5 min arbetsplats."
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "\xC4r det n\xE5gra aktiviteter eller hobbyer du h\xE5ller p\xE5
@@ -125,14 +143,17 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Jag \xE4gnar mig inte \xE5t n\xE5gra aktiviteter eller hobbyer
         p\xE5 min fritid."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag har n\xE5gra aktiviteter eller hobbyer som jag \xE4gnar mig
         \xE5t p\xE5 min fritid."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "Jag \xE4gnar mig \xE5t specifika aktiviteter eller hobbyer p\xE5
         min fritid, f\xF6r min personliga utveckling och intresse."
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "Var ser du dig sj\xE4lv om 5 \xE5r?"
@@ -140,13 +161,16 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag har \xE4nnu inte t\xE4nkt p\xE5 mina planer i detalj."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag ser mig sj\xE4lv v\xE4xa tillsammans med f\xF6retaget."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Jag t\xE4nker mig att jag tar mig an olika roller med \xF6kat
         ansvar f\xF6r min personliga utveckling."
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Ser du personlig utveckling som n\xE5got viktigt?"
@@ -154,14 +178,17 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Personlig utveckling \xE4r inte en prioritet f\xF6r mig."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Personlig utveckling \xE4r viktigt f\xF6r mig, men jag har \xE4nnu
         inte drivit den aktivt fram\xE5t."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "Personlig utveckling \xE4r avg\xF6rande, och jag s\xF6ker aktivt
         m\xF6jligheter att l\xE4ra, v\xE4xa och f\xF6rb\xE4ttra mina f\xE4rdigheter."
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "Vilken utbildningsniv\xE5 har du avslutat?"
@@ -169,27 +196,33 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag har inte avslutat n\xE5gon formell utbildning."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag har g\xE5tt n\xE5gon gymnasieutbildning eller liknande."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "Jag har avslutat h\xF6gskole-/universitetsutbildning eller har
         en h\xF6gre examen."
+      AnswerSelected: 0
       answerType: 2
-  - QuestionAsked: 1
+  - QuestionAsked: 0
     QuestionText: Hur skulle du hantera en felkommunikation med en kollega?
     correctAnswer: 1
     answers:
     - AnswerAlternative: A
       AnswerText: "Skyll p\xE5 den andra personen f\xF6r att han inte f\xF6rst\xE5r."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "F\xF6rtydliga situationen och hitta en \xF6msesidigt acceptabel
         l\xF6sning."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Eskalera \xE4rendet till en arbetsledare eller chef."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Vad skulle du s\xE4ga \xE4r det smidigaste s\xE4ttet att l\xF6sa
@@ -198,13 +231,16 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Undvik problemet och hoppas att det l\xF6ser sig p\xE5 egen hand."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Lyssnar aktivt och s\xF6ker en \xF6msesidigt f\xF6rdelaktig l\xF6sning."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Fokusera p\xE5 att kritisera situationen s\xE5 att man inte g\xF6r
         om det."
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Hur skulle du hantera en konflikt mellan tv\xE5 teammedlemmar
@@ -214,13 +250,16 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Jag skulle lyssna p\xE5 b\xE5da teammedlemmarnas perspektiv utan
         att ta n\xE5gon sida."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "Undvika konflikten och hoppas att de l\xF6ser det sj\xE4lva."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Om konflikten forts\xE4tter eller eskalerar kommer jag att kontakta
         en l\xE4mplig auktoritetsperson, till exempel en handledare eller chef."
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "En konflikt har uppst\xE5tt under ett samarbetsprojekt. Hur skulle
@@ -229,14 +268,17 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Undvika konflikten och hoppas att den l\xF6ser sig sj\xE4lv."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Involvera n\xE5gon utomst\xE5ende i projektet f\xF6r att hitta
         en r\xE4ttvis l\xF6sning f\xF6r oss."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Jag \xE4r os\xE4ker p\xE5 vad jag ska g\xF6ra i denna situation
         och tar d\xE4rf\xF6r inte del av konflikten."
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Hur hanterar du motg\xE5ngar i din personliga utvecklingsresa?"
@@ -244,12 +286,15 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Ge upp och g\xE5 vidare till n\xE5got annat."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "Skylla p\xE5 externa faktorer f\xF6r motg\xE5ngen."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "L\xE4ra av upplevelsen och anpassa mitt tillv\xE4gag\xE5ngss\xE4tt."
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "Har du n\xE5gon tidigare erfarenhet som kan vara f\xF6rdelaktig
@@ -259,14 +304,17 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Jag har \xE4nnu inte f\xE5tt n\xE5gon arbetslivserfarenhet eller
         gjort volont\xE4rarbete."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag har varit involverad i aktiviteter som kan vara f\xF6rdelaktiga
         p\xE5 en arbetsplats."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "Jag har tidigare engagerat mig i volont\xE4rarbete och har d\xE4rf\xF6r
         erfarenhet."
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "Hur skulle du beskriva dina styrkor och f\xE4rdigheter som kan
@@ -276,28 +324,34 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Jag h\xE5ller fortfarande p\xE5 att best\xE4mma mina styrkor och
         f\xE4rdigheter."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag \xE4r bra p\xE5 att samarbeta och har starka kommunikationsf\xE4rdigheter."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Jag har en stark analytisk f\xF6rm\xE5ga och \xE4r bra p\xE5 probleml\xF6sning."
+      AnswerSelected: 0
       answerType: 1
-  - QuestionAsked: 1
+  - QuestionAsked: 0
     QuestionText: "Vad motiverade dig att s\xF6ka detta jobb?"
     correctAnswer: 1
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag s\xF6ker detta jobb f\xF6r att skaffa arbetslivserfarenhet
         och l\xE4ra mig nya f\xE4rdigheter."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag \xE4r motiverad att arbeta inom detta omr\xE5de och bygga
         en framg\xE5ngsrik karri\xE4r."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Jag best\xE4mmer fortfarande mina karri\xE4rsm\xE5l, men jag \xE4r
         \xF6ppen f\xF6r m\xF6jligheter och ivrig att l\xE4ra mig mer."
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Hur k\xE4nner du inf\xF6r att f\xE5 feedback och v\xE4gledning?"
@@ -305,14 +359,17 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag har ingen \xE5sikt i den h\xE4r fr\xE5gan."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag ser feedback och v\xE4gledning som m\xF6jligheter att l\xE4ra
         mig och f\xF6rb\xE4ttra mig sj\xE4lv."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Jag \xE4r \xF6ppen f\xF6r feedback men kan beh\xF6va tid f\xF6r
         att bearbeta och till\xE4mpa den."
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Vilka av dessa personliga egenskaper eller v\xE4rderingar tror
@@ -321,10 +378,13 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: Att vara impulsiv och envis.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: Att ha god teamwork och kommunikation.
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: Att vara effektiv och organiserad.
+      AnswerSelected: 0
       answerType: 1

@@ -426,16 +426,34 @@ public class GameManager : MonoBehaviour
     private void ResetInterviewData()
     {
         // Resets all necessary bool values back to false.
-        for (int i = 0; i < interviewAnswersAndQuestions.categoriesDatas.Length; i++)
+        for (int i = 0; i < interviewAnswersAndQuestions.interviewCategories.Length; i++)
         {
-            if (interviewAnswersAndQuestions.categoriesDatas[i].categoryIsActive == true)
+            if (interviewAnswersAndQuestions.interviewCategories[i].categoryIsActive == true)
             {
-                interviewAnswersAndQuestions.categoriesDatas[i].allAnswersAnswered = false;
+                interviewAnswersAndQuestions.interviewCategories[i].allAnswersAnswered = false;
 
-                for (int j = 0; j < interviewAnswersAndQuestions.categoriesDatas[i].interviewQuestionData.Count; j++)
+                for (int j = 0; j < interviewAnswersAndQuestions.interviewCategories[i].interviewQuestionData.Count; j++)
                 {
-                    interviewAnswersAndQuestions.categoriesDatas[i].interviewQuestionData[j].QuestionAsked = false;
+                    interviewAnswersAndQuestions.interviewCategories[i].interviewQuestionData[j].QuestionAsked = false;
+
+                    // Loop through this for block only if the category type is situational.
+                    if (interviewAnswersAndQuestions.interviewCategories[i].interviewCategoryType == CategoriesData.InterviewCategoryType.Situational)
+                    {
+                        for (int k = 0; k < interviewAnswersAndQuestions.interviewCategories[i].interviewQuestionData[j].answers.Length; k++)
+                        {
+                            interviewAnswersAndQuestions.interviewCategories[i].interviewQuestionData[j].answers[k].AnswerSelected = false;
+                        }
+                    }
+                    else // Continue the loop if the category type isn't situational.
+                    {
+                        continue;
+                    }
                 }
+            }
+            else
+            {
+                // Break out of loop if no category is active.
+                break;
             }
         }
 
@@ -444,7 +462,7 @@ public class GameManager : MonoBehaviour
 
         // Goes through all data in InterviewAnswersAndQuestions list categoriesDatas and creates deep copies of the categorys
         // that are active and adds them to the GameManagers list _activeInterviewCategories.
-        foreach (CategoriesData data in interviewAnswersAndQuestions.categoriesDatas)
+        foreach (CategoriesData data in interviewAnswersAndQuestions.interviewCategories)
         {
             if (data.categoryIsActive == true)
             {
@@ -461,7 +479,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void ResetAllValues()
     {
-        foreach (var item in interviewAnswersAndQuestions.categoriesDatas)
+        foreach (var item in interviewAnswersAndQuestions.interviewCategories)
         {
             item.categoryIsActive = false;
         }

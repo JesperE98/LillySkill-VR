@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5f5bf5d2fb3f54590fa779034b7465, type: 3}
   m_Name: InterviewAnswersAndQuestionsSO
   m_EditorClassIdentifier: 
-  categoriesDatas:
+  interviewCategories:
   - {fileID: 11400000, guid: 0c3d569e122fba24eb9f040893a47d8f, type: 2}
   - {fileID: 11400000, guid: 9f9aab4efdf316146b0909c6f029b4f7, type: 2}
   - {fileID: 11400000, guid: 1bc63422c928c2146877103b0f4eeea9, type: 2}

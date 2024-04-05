@@ -15,7 +15,7 @@ MonoBehaviour:
   categoryName: 20
   interviewCategoryType: 1
   description: 
-  categoryIsActive: 1
+  categoryIsActive: 0
   allAnswersAnswered: 0
   interviewQuestionData:
   - QuestionAsked: 0
@@ -28,18 +28,22 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Skickar de tillg\xE4ngliga varorna och meddelar kunden om de saknade
         varorna."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "V\xE4ntar p\xE5 att de saknade varorna ska anl\xE4nda och skickar
         hela best\xE4llningen senare."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Kontaktar kunden och fr\xE5gar om de kan byta till liknande produkter
         som finns i lagret."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: D
       AnswerText: "Skickar best\xE4llningen utan de saknade varorna och hoppas att
         kunden inte m\xE4rker det."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du arbetar i ett lager och har f\xE5tt i uppdrag att organisera
@@ -51,16 +55,20 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "L\xE4mnar de trasiga produkterna p\xE5 sin plats och forts\xE4tter
         med att organisera resten."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: 'Rapporterar de trasiga produkterna till din chef och ber om instruktioner. '
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Kastar de trasiga produkterna och forts\xE4tter med mitt arbete. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: D
       AnswerText: "F\xF6rs\xF6ker reparera de trasiga produkterna sj\xE4lv innan
         du forts\xE4tter att organisera. "
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "DENNA \xC4R INTE KLAR!!!"
@@ -68,15 +76,19 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: 
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: 
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: 
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: 
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och m\xE4rker att en av de elektriska
@@ -86,16 +98,20 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Anv\xE4nder trucken \xE4nd\xE5 och hoppas att den inte bryter
         ihop helt. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: Rapporterar omedelbart det trasiga lyft-systemet till din chef.
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Reparerar lyft-systemet sj\xE4lv. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Undviker att anv\xE4nda trucken och ber en kollega att anv\xE4nda
         en annan. "
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt i uppdrag att inventera
@@ -107,17 +123,21 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "R\xE4kna om varorna f\xF6r att s\xE4kerst\xE4lla att du inte har
         gjort n\xE5gra misstag."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "Rapporterar avvikelsen till din chef och ber om hj\xE4lp f\xF6r
         att l\xF6sa problemet."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Ignorerar avvikelsen och forts\xE4tter inventeringen som planerat. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "G\xF6r ingenting och hoppas att avvikelsen kommer att r\xE4tta
         till sig sj\xE4lv. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och f\xE5r ett telefonsamtal fr\xE5n
@@ -128,17 +148,21 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: Ber kunden skicka tillbaka de felaktiga produkterna och skickar
         de korrekta produkterna.
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Erbjuder kunden en rabatt p\xE5 n\xE4sta best\xE4llning och ber
         dem beh\xE5lla de felaktiga produkterna."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "Ber kunden att anv\xE4nda de felaktiga produkterna och skickar
         de korrekta produkterna senare. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "F\xF6rnekar att felaktiga produkter har skickats ut.  "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och plockar ihop en br\xE5dskande order
@@ -150,17 +174,21 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Skickar best\xE4llningen utan den skadade produkten och meddelar
         kunden om situationen. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "F\xF6rs\xF6ker reparera den skadade produkten snabbt och inkluderar
         den i best\xE4llningen. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "V\xE4ntar p\xE5 att en ny produkt ska anl\xE4nda och skickar hela
         best\xE4llningen senare. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: D
       AnswerText: 'Meddelar din chef om skadan och ber om instruktioner. '
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "Du arbetar p\xE5 ett lager och ansvarar f\xF6r lagerstyrningen.
@@ -171,18 +199,22 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Best\xE4ller omedelbart fler av den produkten f\xF6r att undvika
         att den tar slut. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: "V\xE4ntar och ser om efterfr\xE5gan minskar innan du best\xE4ller
         mer. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Informerar f\xF6rs\xE4ljningsavdelningen om den h\xF6ga efterfr\xE5gan
         och ber dem hantera det. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: D
       AnswerText: "Flyttar produkten till en mer synlig plats i lagret f\xF6r att
         \xF6ka f\xF6rs\xE4ljningen. "
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt i uppdrag att organisera
@@ -193,16 +225,20 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Ignorerar det och placerar produkterna p\xE5 l\xE4mpliga platser
         \xE4nd\xE5. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: 'Rapporterar felet till din chef och ber om instruktioner. '
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "F\xF6rs\xF6ker sj\xE4lv korrigera m\xE4rkningen p\xE5 produkterna. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "L\xE4mnar produkterna obem\xE4rkta och hoppas att ingen kommer
         att m\xE4rka det. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r returhantering.
@@ -213,18 +249,22 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Kontrollerar produkten f\xF6r att bekr\xE4fta om den verkligen
         \xE4r defekt. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Accepterar kundens p\xE5st\xE5ende och \xE5terbetalar dem utan
         att kontrollera produkten. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "Avvisar kundens retur och ber dem kontakta tillverkaren f\xF6r
         garanti\xE4renden. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: D
       AnswerText: 'Skickar en ny produkt till kunden utan att be om den defekta produkten
         tillbaka. '
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Du arbetar p\xE5 ett lager och hanterar farliga \xE4mnen. N\xE4r
@@ -234,17 +274,21 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Ignorerar det och forts\xE4tter med kontrollen. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Rapporterar omedelbart felet till din chef och f\xF6ljer f\xF6retagets
         protokoll f\xF6r farliga \xE4mnen. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "F\xF6rs\xF6ker f\xF6rsegla \xE4mnet sj\xE4lv. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "L\xE4mnar \xE4mnet som det \xE4r och tar upp det med de n\xE4rmsta
         kollegorna p\xE5 kafferasten. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att hantera returer.
@@ -255,17 +299,21 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Accepterar returen och \xE5terbetalar kunden utan att be om n\xE5gon
         information. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: B
       AnswerText: 'Skickar tillbaka produkten till kunden och ber om mer information
         om returen. '
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: 'Kontakta kunden och be dem fylla i en digitalretursedel. '
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: D
       AnswerText: "Ignorerar returen och v\xE4ntar p\xE5 att kunden ska kontakta
         dig igen.  "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt en leverans av k\xE4nsliga
@@ -275,17 +323,21 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: 'Rapporterar omedelbart skadorna till din chef och ber om instruktioner. '
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: 'Dokumenterar skadorna noggrant och tar bilder som bevis. '
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "Kontaktar leverant\xF6ren f\xF6r att rapportera skadorna och beg\xE4ra
         ers\xE4ttning eller utbyte."
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: D
       AnswerText: "Isolerar och m\xE4rker de skadade produkterna f\xF6r att f\xF6rhindra
         att de anv\xE4nds eller skickas ut till kunder. "
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att organisera utg\xE5ende
@@ -295,18 +347,22 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Kontakter kunden f\xF6r att f\xE5 mer information om deras specialf\xF6rpackningskrav. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Anv\xE4nder standardf\xF6rpackningar och hoppas att det kommer
         att vara tillr\xE4ckligt. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "R\xE5dg\xF6r med din chef eller kollega f\xF6r att hitta l\xE4mpliga
         specialf\xF6rpackningar. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: D
       AnswerText: "Skickar produkterna utan n\xE5gon speciell f\xF6rpackning och
         l\xE5ter kunden hantera det sj\xE4lv. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt en retur d\xE4r kunden
@@ -317,17 +373,21 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Kontrollerar produkten f\xF6r att bekr\xE4fta kundens p\xE5st\xE5ende
         och unders\xF6ker om det finns n\xE5gra anv\xE4ndningssp\xE5r."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Accepterar kundens p\xE5st\xE5ende och \xE5terbetalar dem utan
         att kontrollera produkten. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "Avvisar kundens retur och h\xE4nvisar dem till tillverkarens garantiavdelning. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: D
       AnswerText: 'Skickar en ny produkt till kunden utan att be om den defekta produkten
         tillbaka. '
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt i uppdrag att flytta
@@ -338,17 +398,21 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Rapporterar omedelbart problemet till din chef och ber om en unders\xF6kning
         och reparation av trucken. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "F\xF6rs\xF6ker \xE4nd\xE5 att flytta pallen med f\xF6rsiktighet
         och hoppas att trucken inte bryter ihop. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "L\xE4mnar pallen d\xE4r den \xE4r och ber en kollega om hj\xE4lp
         med att flytta den. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: D
       AnswerText: "F\xF6rs\xF6ker reparera trucken sj\xE4lv utan att informera n\xE5gon. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att m\xE4rka och
@@ -359,18 +423,22 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Anv\xE4nder andra tillg\xE4ngliga metoder f\xF6r att m\xE4rka
         och etikettera produkterna, som till exempel handskrivna etiketter. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Kontaktar din chef f\xF6r att meddela bristen p\xE5 etiketter
         och be om att en ny leverans ska best\xE4llas. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "Ignorerar bristen p\xE5 etiketter och forts\xE4tter att skicka
         ut produkterna utan korrekt m\xE4rkning. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "F\xF6rs\xF6ker hitta etiketter fr\xE5n andra f\xF6rpackningar
         eller produkter f\xF6r att anv\xE4nda dem tills en ny leverans kommer. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du ansvarar f\xF6r att organisera lagret och m\xE4rker att vissa
@@ -381,17 +449,21 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Flyttar produkterna till r\xE4tt hyllor enligt lagrets layout
         och ordning. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Rapporterar avvikelsen till din chef och ber om instruktioner
         f\xF6r att korrigera situationen. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "Ignorerar avvikelsen och l\xE5ter produkterna vara d\xE4r de \xE4r. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Omorganiserar hela lagret enligt din egen layout utan att kontakta
         n\xE5gon. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt i uppdrag att lossa
@@ -402,18 +474,22 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: 'Dokumenterar skadorna noggrant och tar bilder som bevis. '
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Kontaktar transportf\xF6retaget f\xF6r att rapportera skadorna
         och beg\xE4ra ers\xE4ttning eller utbyte."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Informerar din chef eller ansvarig f\xF6r att diskutera n\xE4sta
         steg och eventuella \xE5tg\xE4rder. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: D
       AnswerText: "Isolerar och m\xE4rker de skadade produkterna f\xF6r att f\xF6rhindra
         att de anv\xE4nds eller skickas ut till kunder. "
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att hantera farliga
@@ -424,18 +500,22 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Aktiverar omedelbart n\xF6dsystemet och f\xF6ljer f\xF6retagets
         protokoll f\xF6r att hantera farliga \xE4mnen och utsl\xE4pp."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Anv\xE4nder passande skyddsutrustning och reng\xF6ringsmaterial
         f\xF6r att sanera utsl\xE4ppet och s\xE4kerst\xE4lla att omr\xE5det \xE4r
         s\xE4kert. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Rapporterar omedelbart h\xE4ndelsen till din chef eller ansvarig
         och f\xF6ljer deras anvisningar f\xF6r vidare \xE5tg\xE4rder. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: D
       AnswerText: "Ignorerar utsl\xE4ppet och forts\xE4tter med ditt arbete som vanligt. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att plocka och packa
@@ -447,18 +527,22 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Kontakter kunden f\xF6r att bekr\xE4fta den nya leveransadressen
         och genomf\xF6r \xE4ndringen i systemet. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Kontaktar transport\xF6ren f\xF6r att \xE4ndra leveransadressen
         och informerar kunden om m\xF6jligheten till \xE4ndring. "
+      AnswerSelected: 0
       answerType: 1
     - AnswerAlternative: C
       AnswerText: "R\xE5dg\xF6r med din chef eller ansvarig f\xF6r att f\xE5 instruktioner
         om hur man hanterar \xE4ndringar av leveransadresser. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: D
       AnswerText: "Ignorerar beg\xE4ran och skickar produkterna till den ursprungliga
         adressen som angavs. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "I ditt dagliga arbete organiserar du lagret f\xF6r att maximera
@@ -470,18 +554,22 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Omorganiserar lagret f\xF6r att placera produkterna p\xE5 mer
         l\xE4mpliga och l\xE4ttillg\xE4ngliga platser enligt en logisk ordning. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Diskuterar problemet med din chef eller ansvarig f\xF6r att f\xE5
         riktlinjer eller f\xF6rslag om hur man b\xE4st organiserar lagret. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Ignorerar situationen och l\xE5ter produkterna vara d\xE4r de
         \xE4r, \xE4ven om det kan p\xE5verka effektiviteten och arbetsfl\xF6det. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Flyttar produkterna till l\xE4mpligare platser utan att r\xE5dg\xF6ra
         med n\xE5gon eller rapportera \xE4ndringarna. "
+      AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och en kund har skickat tillbaka en
@@ -494,17 +582,21 @@ MonoBehaviour:
       AnswerText: "Kommunicerar med kunden f\xF6r att informera om att produkten
         \xE4r skadad p\xE5 grund av felaktig anv\xE4ndning och inte \xE4r ber\xE4ttigad
         till \xE5terbetalning. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Erbjuder kunden en delvis \xE5terbetalning eller en utbytesprodukt
         som en goodwill-gest, trots att skadan inte t\xE4cks av garantin. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: 'Avvisar kundens retur. '
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Accepterar kundens retur och \xE5terbetalar dem utan att unders\xF6ka
         produkten eller kontrollera om skadan \xE4r resultatet av felaktig anv\xE4ndning. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och en kund beg\xE4r vid best\xE4llning
@@ -515,20 +607,24 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "Kontrollerar om lagret har en temperatur- och fuktighetskontrollerad
         zon och placerar kundens produkter d\xE4r om det \xE4r m\xF6jligt. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: B
       AnswerText: "Kontakter din chef eller ansvarig f\xF6r att f\xE5 information
         om m\xF6jligheterna att tillhandah\xE5lla temperatur- och fuktighetskontroll
         f\xF6r kundens produkter. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Informerar kunden om att lagret inte har m\xF6jlighet att erbjuda
         temperatur- och fuktighetskontroll och diskuterar alternativa l\xF6sningar
         eller f\xF6rsiktighets\xE5tg\xE4rder. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: D
       AnswerText: "Ignorerar kundens beg\xE4ran och f\xF6rvarar produkterna p\xE5
         vanligt s\xE4tt utan att ta h\xE4nsyn till beg\xE4ran. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att hantera och
@@ -539,15 +635,19 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Ignorerar det och forts\xE4tter med ditt arbete. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Rapporterar omedelbart felet till din n\xE4rmaste chef. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "Justerar temperaturen sj\xE4lv utan att informera n\xE5gon. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "V\xE4ntar och ser om temperaturen sjunker av sig sj\xE4lv. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och har f\xE5tt i uppdrag att plocka
@@ -558,17 +658,21 @@ MonoBehaviour:
     answers:
     - AnswerAlternative: A
       AnswerText: "Ignorerar det och inkluderar produkten i ordern \xE4nd\xE5. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Tar bort produkten fr\xE5n ordern och rapporterar felet till din
         chef."
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "L\xE4mnar produkten p\xE5 sin plats och hoppas att n\xE5gon annan
         uppt\xE4cker felet. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Byter ut produkten utan att informera n\xE5gon. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och har precis mottagit en stor leverans
@@ -580,18 +684,22 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "L\xE4mnar pallen som den \xE4r och rapporterar skadan till din
         chef. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "F\xF6rs\xF6ker reparera pallen sj\xE4lv f\xF6r att r\xE4dda s\xE5
         mycket som m\xF6jligt. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Kastar de f\xF6rst\xF6rda produkterna och hoppas att ingen m\xE4rker
         det. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: 'Tar bilder av skadan och produkterna och rapporterar det till
         din chef. '
+      AnswerSelected: 0
       answerType: 2
   - QuestionAsked: 0
     QuestionText: "Du jobbar p\xE5 ett lager och \xE4r mitt i att f\xF6rbereda en
@@ -602,15 +710,19 @@ MonoBehaviour:
     - AnswerAlternative: A
       AnswerText: "L\xE4gger produkten i en p\xE5se f\xF6r att undvika l\xE4ckage
         och inkluderar den i best\xE4llningen. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Tar bort produkten fr\xE5n best\xE4llningen och ers\xE4tter den
         med en intakt produkt. "
+      AnswerSelected: 0
       answerType: 2
     - AnswerAlternative: C
       AnswerText: "L\xE4mnar produkten p\xE5 sin plats och hoppas att ingen m\xE4rker
         l\xE4ckaget. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Kastar produkten utan att informera n\xE5gon. "
+      AnswerSelected: 0
       answerType: 0

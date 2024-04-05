@@ -191,7 +191,7 @@ MonoBehaviour:
         ser det som en m\xF6jlighet att v\xE4xa."
       AnswerSelected: 0
       answerType: 0
-  - QuestionAsked: 1
+  - QuestionAsked: 0
     QuestionText: "Hur hanterar du f\xF6r\xE4ndringar i arbetsuppgifter och deadlines?"
     correctAnswer: 4
     answers:
