@@ -205,7 +205,16 @@ namespace LillyCode
         {
             informationScreenContent[activeScreen].isActive = false;
             lillyHelpScreen.SetActive(false);
-            gameManager.LillyIntroDone = true;
+            
+
+            switch (gameSettings.GetScene)
+            {
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+
+                    gameManager.LillyIntroDone = true;
+
+                    break;
+            }
         }
 
         /// <summary>
@@ -231,7 +240,6 @@ namespace LillyCode
             nextButtonGameObject.SetActive(false);
             closeButtonGameObject.SetActive(false);
         }
-
     }
 }
 
