@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5f5bf5d2fb3f54590fa779034b7465, type: 3}
   m_Name: InterviewAnswersAndQuestionsSO
   m_EditorClassIdentifier: 
-  categoriesDatas:
+  interviewCategories:
   - {fileID: 11400000, guid: 0c3d569e122fba24eb9f040893a47d8f, type: 2}
   - {fileID: 11400000, guid: 9f9aab4efdf316146b0909c6f029b4f7, type: 2}
   - {fileID: 11400000, guid: 1bc63422c928c2146877103b0f4eeea9, type: 2}
@@ -23,4 +23,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7979bcc6c6d3b5141a60f0456c7f3d97, type: 2}
   - {fileID: 11400000, guid: ddef6b300f45d2448b695a579a78ca7a, type: 2}
   - {fileID: 11400000, guid: 8b681c299dcefd94fb232b3e1c787ab6, type: 2}
+  - {fileID: 11400000, guid: 21fab07cea1dcf24ca4094f850971874, type: 2}
+  - {fileID: 11400000, guid: 3aee06936f041f14bb65ae859464552c, type: 2}
+  - {fileID: 11400000, guid: eaa96bd0c8f75ee4d842e8dc858ecbca, type: 2}
+  - {fileID: 11400000, guid: d2537fc254c860549b823efcd68b2e2f, type: 2}
+  - {fileID: 11400000, guid: 6142e3b1b13af9849a11f2b042552dc3, type: 2}
+  - {fileID: 11400000, guid: 3b2748098f61a01479a73c7960656ca0, type: 2}
+  - {fileID: 11400000, guid: da2f7407dd9f2f64cb80f94a782dc244, type: 2}
+  - {fileID: 11400000, guid: 245620092a352e74382746b69bb36491, type: 2}
+  - {fileID: 11400000, guid: 5a4ce5abb83429a46b62003ddb601992, type: 2}
+  - {fileID: 11400000, guid: 2974b685cb522f246be963fca39ca4dc, type: 2}
   - {fileID: 11400000, guid: de6ae29ec49c4074d9072f909130dfb7, type: 2}

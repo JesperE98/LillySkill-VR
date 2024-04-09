@@ -1,0 +1,240 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
+  m_Name: 16. StreesResistence
+  m_EditorClassIdentifier: 
+  categoryName: 16
+  interviewCategoryType: 0
+  description: "F\xF6rm\xE5gan att hantera och arbeta effektivt under press och i
+    stressiga situationer."
+  categoryIsActive: 0
+  allAnswersAnswered: 0
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Vad inneb\xE4r det att vara stresst\xE5lig?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att undvika stressiga situationer helt och h\xE5llet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: Att vara immun mot stress och aldrig uppleva det.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att kunna hantera och arbeta effektivt under press och stressiga
+        f\xF6rh\xE5llanden."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att l\xE5ta stress p\xE5verka ens prestation negativt."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Varf\xF6r \xE4r stresst\xE5lighet viktigt i arbetslivet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6r att undvika alla stressiga situationer och ha en avslappnad
+        arbetsmilj\xF6."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "F\xF6r att kunna prestera p\xE5 h\xF6g niv\xE5 och beh\xE5lla
+        fokus under p\xE5frestningar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "F\xF6r att undvika arbetsuppgifter som kan vara utmanande eller
+        kr\xE4vande."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "F\xF6r att l\xE5ta stress p\xE5verka ens prestation negativt."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka f\xF6rdelar kan stresst\xE5lighet ha f\xF6r en individ?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Begr\xE4nsade m\xF6jligheter till personlig och professionell
+        tillv\xE4xt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "\xD6kad f\xF6rm\xE5ga att hantera utmaningar och motg\xE5ngar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: Minskad produktivitet och prestation under stressiga situationer.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Begr\xE4nsad f\xF6rm\xE5ga att anpassa sig till f\xF6r\xE4ndringar
+        och hantera stress."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du fr\xE4mja stresst\xE5lighet hos dig sj\xE4lv?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: Genom att undvika alla stressiga situationer och konflikter.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att anv\xE4nda avslappningstekniker som meditation eller
+        djupandning."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att l\xE5ta stress p\xE5verka din prestation negativt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att undvika att ta ansvar och l\xE4gga allt p\xE5 andra."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka faktorer kan f\xF6rs\xE4mra stresst\xE5ligheten hos en individ?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: En bra balans mellan arbete och fritid.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "En st\xF6djande och positiv arbetsmilj\xF6."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "H\xF6ga krav, tidspress och brist p\xE5 resurser."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "M\xF6jlighet att hantera och l\xF6sa problem under stress."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken roll spelar sj\xE4lvmedvetenhet i att utveckla stresst\xE5lighet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Sj\xE4lvmedvetenhet har ingen betydelse f\xF6r stresst\xE5lighet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Sj\xE4lvmedvetenhet kan hj\xE4lpa en individ att identifiera stressfaktorer
+        och utveckla strategier f\xF6r att hantera dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Sj\xE4lvmedvetenhet kan leda till \xF6kad stress och minskad stresst\xE5lighet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Sj\xE4lvmedvetenhet p\xE5verkar inte f\xF6rm\xE5gan att hantera
+        stressiga situationer."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du fr\xE4mja stresst\xE5lighet hos dina teammedlemmar?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att skapa en arbetsmilj\xF6 som \xE4r lugn och helt utan
+        stress."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att erbjuda st\xF6d och resurser f\xF6r att hantera stressiga
+        situationer."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att l\xE4gga allt ansvar p\xE5 teammedlemmarna och undvika
+        att st\xF6tta dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att undvika att ge feedback och ist\xE4llet l\xE5ta dem
+        hantera stressen sj\xE4lva."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka strategier kan vara anv\xE4ndbara f\xF6r att hantera stressiga
+      situationer?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att ignorera stressen och hoppas att den f\xF6rsvinner av sig
+        sj\xE4lv."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att kommunicera med andra och s\xF6ka st\xF6d."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att undvika att ta pauser och ist\xE4llet arbeta konstant."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att ta p\xE5 sig fler arbetsuppgifter f\xF6r att bli av med stressen."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Kan stresst\xE5lighet tr\xE4nas och utvecklas?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Nej, stresst\xE5lighet \xE4r en medf\xF6dd egenskap som inte kan
+        f\xF6r\xE4ndras."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Ja, genom att uts\xE4tta sig f\xF6r stressiga situationer och
+        l\xE4ra sig att hantera dem kan man \xF6ka sin stresst\xE5lighet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Nej, stresst\xE5lighet \xE4r en fast egenskap som inte kan p\xE5verkas."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Ja, genom att undvika stress kan man \xF6ka sin stresst\xE5lighet."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Varf\xF6r \xE4r det viktigt att utveckla stresst\xE5lighet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6r att kunna undvika stressiga situationer helt och h\xE5llet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "F\xF6r att kunna hantera utmaningar och press p\xE5 ett effektivt
+        s\xE4tt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "F\xF6r att stress \xE4r ofarligt och inte p\xE5verkar ens h\xE4lsa
+        eller prestation."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "F\xF6r att stress inte har n\xE5gon inverkan p\xE5 arbetslivet."
+      AnswerSelected: 0
+      answerType: 0

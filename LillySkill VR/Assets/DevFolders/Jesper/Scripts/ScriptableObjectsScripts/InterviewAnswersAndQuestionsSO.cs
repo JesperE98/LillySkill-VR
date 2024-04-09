@@ -20,7 +20,7 @@ namespace Jesper.InterviewAnswersAndQuestions.Data
         /// Contains a list with each category which itself contains it's own answers.
         /// </summary>
         [Tooltip("Contains a list with each category which itself contains it's own answers.")]
-        public CategoriesData[] categoriesDatas;
+        public CategoriesData[] interviewCategories;
     }
 }
 

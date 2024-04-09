@@ -17,9 +17,10 @@ namespace Jesper.Collection
         private GameObject _checkMark;
         private bool activateDeactivateQuestionCategory = false;
 
+
         public void Activate(int listIndex)
         {
-            var categoryUI = interviewAnswersAndQuestions.categoriesDatas[listIndex];
+            var categoryUI = interviewAnswersAndQuestions.interviewCategories[listIndex];
             var categoryAudio = voiceAudioDataBankScriptableObject.questions[listIndex];
 
             if (listIndex < 0)

@@ -1,0 +1,395 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
+  m_Name: 11. Accuracy
+  m_EditorClassIdentifier: 
+  categoryName: 11
+  interviewCategoryType: 0
+  description: "F\xF6rm\xE5gan att vara uppm\xE4rksam p\xE5 detaljer och utf\xF6ra
+    arbetsuppgifter utan misstag."
+  categoryIsActive: 0
+  allAnswersAnswered: 0
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Hur noggrant utf\xF6r du arbetsuppgifter och uppm\xE4rksammar
+      detaljer?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag g\xF6r det b\xE4sta jag kan, men ibland kan jag missa n\xE5gra
+        detaljer."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag \xE4r inte s\xE5 noga med detaljer, men jag f\xF6rs\xF6ker
+        g\xF6ra mitt b\xE4sta."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag \xE4r mycket noggrann och dubbelkollar alltid mitt arbete
+        f\xF6r att undvika misstag."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag l\xE4gger inte mycket vikt vid detaljer, jag f\xF6redrar att
+        arbeta snabbt."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken betydelse har noggrannhet f\xF6r dig, n\xE4r det kommer
+      till ditt arbete?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Det \xE4r inte s\xE5 viktigt, s\xE5 l\xE4nge man f\xE5r jobbet
+        gjort."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Det \xE4r viktigt, men det \xE4r inte alltid m\xF6jligt att vara
+        helt noggrann."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Det \xE4r avg\xF6rande f\xF6r att undvika misstag och uppn\xE5
+        h\xF6gsta kvalitet i mitt arbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Det \xE4r inte en prioritet f\xF6r mig, jag fokuserar mer p\xE5
+        att vara snabb och effektiv."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: Hur hanterar du misstag eller felaktigheter i ditt arbete?
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag l\xE4gger skulden p\xE5 andra om n\xE5got g\xE5r fel."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag f\xF6rs\xF6ker r\xE4tta till felet, men det \xE4r inte alltid
+        m\xF6jligt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag tar ansvar f\xF6r mina misstag och arbetar aktivt f\xF6r att
+        r\xE4tta till dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag ignorerar misstagen och hoppas att ingen m\xE4rker dem."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur viktigt \xE4r det f\xF6r dig att noggrant f\xF6lja instruktioner
+      och riktlinjer?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag f\xF6ljer dem bara om jag anser att det \xE4r n\xF6dv\xE4ndigt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag brukar f\xF6lja dem, men ibland g\xF6r jag egna \xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Det \xE4r mycket viktigt f\xF6r mig att f\xF6lja instruktioner
+        och riktlinjer noggrant."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag f\xF6ljer dem s\xE4llan d\xE5 jag f\xF6redrar att arbeta p\xE5
+        mitt s\xE4tt."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur s\xE4ker \xE4r du p\xE5 att undvika misstag i ditt arbete?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag \xE4r inte s\xE5 s\xE4ker, misstag kan h\xE4nda ibland."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag \xE4r ganska s\xE4ker, men det \xE4r om\xF6jligt att undvika
+        alla misstag."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag \xE4r mycket s\xE4ker, jag \xE4r noggrann och dubbelkollar
+        alltid mitt arbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag \xE4r inte s\xE5 bekymrad \xF6ver misstag, jag fokuserar mer
+        p\xE5 att slutf\xF6ra arbetsuppgifterna."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur noggrant l\xE4ser du genom dokument eller instruktioner innan
+      du b\xF6rjar arbeta?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag l\xE4ser dem snabbt f\xF6r att f\xE5 en \xF6vergripande f\xF6rst\xE5else."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag l\xE4ser dem noggrant och f\xF6rs\xF6ker f\xF6rst\xE5 alla
+        detaljer."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag skummar igenom dem och hoppas att jag inte missar n\xE5got
+        viktigt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag l\xE4ser dem inte alls, jag f\xF6redrar att l\xE4ra mig genom
+        att g\xF6ra."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur ofta kontrollerar du ditt arbete f\xF6r att uppt\xE4cka eventuella
+      misstag?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: Jag kontrollerar mitt arbete noggrant efter varje steg.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: Jag kontrollerar det ibland om jag har tid.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag litar p\xE5 att mitt arbete \xE4r felfritt och beh\xF6ver
+        inte kontrollera det."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag kontrollerar det s\xE4llan, jag f\xF6redrar att slutf\xF6ra
+        uppgiften snabbt."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur viktigt \xE4r det f\xF6r dig att vara uppm\xE4rksam p\xE5
+      detaljer i ditt arbete?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Det \xE4r inte s\xE5 viktigt, s\xE5 l\xE4nge jag f\xE5r jobbet
+        gjort."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Det \xE4r viktigt, men jag kan missa n\xE5gra detaljer ibland."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Det \xE4r mycket viktigt att vara uppm\xE4rksam p\xE5 detaljer
+        i mitt arbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Det spelar ingen roll f\xF6r mig, jag fokuserar mer p\xE5 att
+        vara effektiv."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken av f\xF6ljande aktiviteter visar tecken p\xE5 noggrannhet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att slutf\xF6ra uppgifter snabbt utan att dubbelkolla."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att granska och korrekturl\xE4sa dokument."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att prioritera uppgifter baserat p\xE5 personliga preferenser."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: Att delegera arbetsuppgifter till andra.
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken av f\xF6ljande situationer kr\xE4ver noggrannhet?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att skapa en lista med id\xE9er f\xF6r en gruppdiskussion."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att skjuta upp viktiga deadlines f\xF6r att undvika stress."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att slutf\xF6ra uppgifter utan att f\xF6lja instruktioner."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: Att ignorera detaljer vid rapportering av fel.
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad inneb\xE4r noggrannhet i arbetslivet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att utf\xF6ra uppgifter snabbt f\xF6r att spara tid."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att vara uppm\xE4rksam p\xE5 detaljer och undvika misstag."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att ignorera instruktioner f\xF6r att ta egna initiativ."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: Att inte prioritera arbetsuppgifter efter viktighet.
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilket av f\xF6ljande beteenden visar p\xE5 bristande noggrannhet?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: Att noggrant granska och korrigera felaktiga datum.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att skapa en detaljerad arbetsplan f\xF6r ett projekt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att slutf\xF6ra uppgifter utan att dubbelkolla resultatet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att vara flexibel och anpassa sig till \xE4ndrade omst\xE4ndigheter."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken av f\xF6ljande aktiviteter visar p\xE5 bristande noggrannhet?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: Att granska och korrigera felaktiga uppgifter innan de skickas
+        in.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att organisera och prioritera arbetsuppgifter baserat p\xE5 deadlines."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att slutf\xF6ra uppgifter utan att f\xF6lja specifika instruktioner."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att vara positiv och optimistisk inf\xF6r utmaningar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken av f\xF6ljande egenskaper \xE4r viktigast f\xF6r att vara
+      noggrann?"
+    correctAnswer: 8
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Kreativitet och t\xE4nkande utanf\xF6r boxen."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Flexibilitet och f\xF6rm\xE5ga att anpassa sig till f\xF6r\xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Uth\xE5llighet och f\xF6rm\xE5ga att h\xE5lla fast vid uppsatta
+        m\xE5l."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Uppm\xE4rksamhet p\xE5 detaljer och f\xF6rm\xE5ga att undvika
+        misstag."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken av f\xF6ljande beteenden visar tecken p\xE5 noggrannhet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att slutf\xF6ra uppgifter utan att f\xF6lja en specifik ordning."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att noggrant analysera och utv\xE4rdera resultatet av en unders\xF6kning."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att ta p\xE5 sig flera projekt samtidigt utan att organisera dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att delegera ansvar f\xF6r att undvika personligt ansvar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Varf\xF6r \xE4r noggrannhet viktigt i arbetslivet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6r att snabbt slutf\xF6ra uppgifter och \xF6ka produktiviteten."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "F\xF6r att undvika misstag och uppr\xE4tth\xE5lla kvaliteten p\xE5
+        arbetsresultat."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "F\xF6r att ta egna initiativ och driva projekt fram\xE5t."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "F\xF6r att vara flexibel och anpassa sig till \xE4ndrade omst\xE4ndigheter."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad \xE4r f\xF6rdelarna med att vara noggrann i arbetslivet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6rb\xE4ttrar kommunikationen med kollegor."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "\xD6kar effektiviteten och produktiviteten."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Skapar en positiv arbetsmilj\xF6."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "M\xF6jligg\xF6r flexibilitet och anpassning till f\xF6r\xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0

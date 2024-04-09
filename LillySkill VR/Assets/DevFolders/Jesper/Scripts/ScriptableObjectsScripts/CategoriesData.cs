@@ -82,6 +82,7 @@ namespace Jesper.InterviewAnswersAndQuestions.Data
         {
             public string AnswerAlternative;
             public string AnswerText;
+            public bool AnswerSelected;
             [Tooltip("Define the answer quality. (If the category type are situational).")]
             public AnswerType answerType;
         }
@@ -100,15 +101,14 @@ namespace Jesper.InterviewAnswersAndQuestions.Data
         /// <summary>
         /// Enum to specify the correct answer.
         /// </summary>
+        [Flags]
         [Serializable]
         public enum CorrectAnswer
         {
-            A,
-            B,
-            C,
-            D,
-            All,
-            None
+            A = 1,
+            B = 2,
+            C = 4,
+            D = 8
         }
 
         /// <summary>
@@ -116,11 +116,11 @@ namespace Jesper.InterviewAnswersAndQuestions.Data
         /// </summary>
         public enum CategoryName
         {
-            Default, AnalyticalThinking, Adaptability, Customization, DecisionMaking,
-            Empathy, EthicsAndIntegrity, Flexibility, CommunicationSkills, CollaborativeSkills,
-            ProblemSolving, Accuracy, SelfLeadership, InitiativeTaking, TimeManagement,
-            Creativity, StreesResistence, PossitiveAttitude, Leadership, Endurance,
-            WarehouseWork, RestaurantEmployee, CustomerServiceAndAdmin, HousekeepingAndHomeCleaning, ProductionAndFitter
+            Default, AnalytisktTänkande, Anpassningsbarhet, Anpassningsförmåga, Beslutsfattande,
+            Empati, EtikOchIntegritet, Flexibilitet, Kommunikationsförmåga, Samarbetsförmåga,
+            Problemlössningsförmåga, Noggrannhet, Självledarskap, Initiativtagande, Tidplanering,
+            Kreativitet, Stresstålighet, PositivAttityd, Ledarskap, Uthållighet,
+            Lagerarbete, Restaurangmedarbetare, KundtjänstOchAdmin, LokalvårdOchHemstäd, ProduktionOchMontör
         }
     }
 

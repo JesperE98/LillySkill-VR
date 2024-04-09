@@ -1,0 +1,384 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
+  m_Name: 12. SelfLeadership
+  m_EditorClassIdentifier: 
+  categoryName: 12
+  interviewCategoryType: 0
+  description: "F\xF6rm\xE5gan att ta ansvar f\xF6r sina egna handlingar, organisera
+    och prioritera arbetsuppgifter samt arbeta sj\xE4lvst\xE4ndigt."
+  categoryIsActive: 0
+  allAnswersAnswered: 0
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Vad inneb\xE4r sj\xE4lvledarskap?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att f\xF6lja strikta instruktioner utan att t\xE4nka sj\xE4lvst\xE4ndigt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att vara ansvarig f\xF6r ens egna framg\xE5ng och agera sj\xE4lvst\xE4ndigt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att v\xE4nta p\xE5 instruktioner och inte ta egna initiativ."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att delegera arbetsuppgifter till andra f\xF6r att undvika ansvar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilket av f\xF6ljande beteenden visar tecken p\xE5 bra sj\xE4lvledarskap?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att organisera och prioritera arbetsuppgifter p\xE5 ett effektivt
+        s\xE4tt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att f\xF6rlita sig p\xE5 andra f\xF6r att fatta beslut och ta
+        ansvar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att slutf\xF6ra uppgifter utan att ta h\xE4nsyn till deadlines."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att undvika f\xF6r\xE4ndringar och st\xE4ndigt h\xE5lla fast vid
+        rutiner."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Varf\xF6r \xE4r sj\xE4lvledarskap viktigt i arbetslivet?"
+    correctAnswer: 8
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6r att undvika ansvar och l\xE5ta andra fatta beslut."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "F\xF6r att vara flexibel och anpassa sig till f\xF6r\xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "F\xF6r att vara uppm\xE4rksam p\xE5 detaljer och undvika misstag."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "F\xF6r att ta ansvar f\xF6r ens egna utveckling och agera sj\xE4lvst\xE4ndigt."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken av f\xF6ljande aktiviteter visar p\xE5 bristande sj\xE4lvledarskap?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att organisera och prioritera arbetsuppgifter baserat p\xE5 deadlines."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att ta ansvar f\xF6r sina egna handlingar och resultat."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att f\xF6rlita sig p\xE5 andra f\xF6r att l\xF6sa problem och
+        fatta beslut."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att vara flexibel och anpassa sig till \xE4ndrade omst\xE4ndigheter."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken av f\xF6ljande beteenden visar tecken p\xE5 bra sj\xE4lvledarskap?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att be om tydliga instruktioner f\xF6r varje arbetsuppgift."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att ta initiativ och driva projekt fram\xE5t utan att v\xE4nta
+        p\xE5 instruktioner."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: Att delegera ansvar och undvika personligt ansvarstagande.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att vara positiv och entusiastisk inf\xF6r arbetsuppgifter och
+        utmaningar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken av f\xF6ljande situationer kr\xE4ver sj\xE4lvledarskap?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att utf\xF6ra uppgifter utan att ta h\xE4nsyn till deadlines."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att vara uppm\xE4rksam p\xE5 detaljer och undvika misstag."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att organisera och prioritera arbetsuppgifter baserat p\xE5 viktighet."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att f\xF6rlita sig p\xE5 andra f\xF6r att fatta beslut och ta
+        ansvar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad \xE4r f\xF6rdelarna med att ha sj\xE4lvledarskap i arbetslivet?"
+    correctAnswer: 8
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "\xD6kar samarbete och kommunikation med kollegor."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Fr\xE4mjar kreativitet och innovativa l\xF6sningar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "M\xF6jligg\xF6r flexibilitet och anpassning till f\xF6r\xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Alla ovanst\xE5ende svar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken av f\xF6ljande egenskaper \xE4r viktigast f\xF6r att ha
+      bra sj\xE4lvledarskap?"
+    correctAnswer: 8
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Kreativitet och t\xE4nkande utanf\xF6r boxen."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Noggrannhet och uppm\xE4rksamhet p\xE5 detaljer."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Positiv attityd och entusiasm inf\xF6r arbetsuppgifter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Uth\xE5llighet och f\xF6rm\xE5ga att h\xE5lla fast vid l\xE5ngsiktiga
+        m\xE5l."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Tar du eget ansvar f\xF6r att organisera och prioritera dina arbetsuppgifter?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Nej, jag v\xE4ntar p\xE5 instruktioner fr\xE5n mina \xF6verordnade
+        f\xF6r att organisera mina arbetsuppgifter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Ja, jag tar ansvar och g\xF6r mitt b\xE4sta f\xF6r att organisera
+        mina arbetsuppgifter, men jag har ibland sv\xE5rt att prioritera."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Ja, jag tar ansvar f\xF6r att organisera och prioritera mina arbetsuppgifter
+        p\xE5 ett effektivt s\xE4tt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Nej, jag f\xF6redrar att ha n\xE5gon som organiserar och prioriterar
+        mina arbetsuppgifter \xE5t mig."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur tar du initiativ f\xF6r att slutf\xF6ra uppgifter och projekt
+      i tid?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag v\xE4ntar p\xE5 att f\xE5 instruktioner och deadlines fr\xE5n
+        mina \xF6verordnade."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag f\xF6rs\xF6ker slutf\xF6ra uppgifter i tid, men jag beh\xF6ver
+        ibland p\xE5minnas om deadlines."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag tar initiativ f\xF6r att slutf\xF6ra uppgifter och projekt
+        i tid utan att beh\xF6va p\xE5minnas."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag l\xE4gger inte mycket vikt vid att slutf\xF6ra uppgifter i
+        tid, jag f\xF6redrar att arbeta i min takt."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur organiserar du ditt arbete f\xF6r att h\xE5lla dig sj\xE4lv
+      p\xE5 r\xE4tt sp\xE5r?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag f\xF6rlitar mig p\xE5 minnet och beh\xF6ver inte anv\xE4nda
+        n\xE5gra organisatoriska verktyg."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag anv\xE4nder ibland att-g\xF6ra-listor eller kalendrar f\xF6r
+        att organisera mitt arbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag anv\xE4nder effektiva organisatoriska verktyg f\xF6r att h\xE5lla
+        mig sj\xE4lv p\xE5 r\xE4tt sp\xE5r."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag har sv\xE5rt att organisera mitt arbete och f\xF6rlitar mig
+        p\xE5 andra f\xF6r att h\xE5lla mig p\xE5 r\xE4tt sp\xE5r."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur tar du ansvar f\xF6r att slutf\xF6ra uppgifter \xE4ven n\xE4r
+      du inte har n\xE5gon \xF6vervakning?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag beh\xF6ver \xF6vervakning f\xF6r att slutf\xF6ra uppgifter
+        effektivt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag f\xF6rs\xF6ker slutf\xF6ra uppgifter p\xE5 egen hand, men
+        jag beh\xF6ver ibland n\xE5gon som h\xE5ller mig ansvarig."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag tar fullt ansvar f\xF6r att slutf\xF6ra uppgifter \xE4ven
+        n\xE4r jag inte \xE4r \xF6vervakad."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag f\xF6redrar att inte arbeta utan \xF6vervakning och v\xE4ntar
+        p\xE5 instruktioner."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur tar du initiativ f\xF6r att f\xF6rb\xE4ttra eller effektivisera
+      arbetsprocesser?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag f\xF6ljer bara de befintliga arbetsprocesserna och g\xF6r
+        inga f\xF6r\xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag f\xF6rs\xF6ker komma med n\xE5gra f\xF6rb\xE4ttringsf\xF6rslag,
+        men det \xE4r inte alltid m\xF6jligt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag tar aktivt initiativ f\xF6r att identifiera och genomf\xF6ra
+        f\xF6rb\xE4ttringar av arbetsprocesser."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag tycker inte att det \xE4r mitt ansvar att f\xF6rb\xE4ttra
+        arbetsprocesser, det \xE4r upp till mina \xF6verordnade."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur tar du ansvar f\xF6r att h\xE5lla dig sj\xE4lv motiverad och
+      engagerad i ditt arbete?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag f\xF6rlitar mig p\xE5 att andra h\xE5ller mig motiverad och
+        engagerad."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag f\xF6rs\xF6ker h\xE5lla mig sj\xE4lv motiverad och engagerad,
+        men det \xE4r inte alltid l\xE4tt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag tar aktivt ansvar f\xF6r att h\xE5lla mig sj\xE4lv motiverad
+        och engagerad i mitt arbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag beh\xF6ver inte vara motiverad eller engagerad f\xF6r att
+        utf\xF6ra mitt arbete effektivt."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur prioriterar du dina arbetsuppgifter f\xF6r att uppn\xE5 m\xE5len
+      i tid?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Jag l\xE5ter mina \xF6verordnade best\xE4mma vilka arbetsuppgifter
+        som ska prioriteras."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Jag har sv\xE5rt att prioritera och f\xF6rlitar mig p\xE5 andra
+        f\xF6r att hj\xE4lpa mig."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Jag tar aktivt initiativ f\xF6r att prioritera mina arbetsuppgifter
+        och uppn\xE5 m\xE5len i tid."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Jag arbetar bara med uppgifterna i den ordning de kommer, oavsett
+        m\xE5l eller deadlines."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilken av f\xF6ljande aktiviteter visar tecken p\xE5 sj\xE4lvledarskap?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att f\xF6lja instruktioner utan att ifr\xE5gas\xE4tta dem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att ta ansvar f\xF6r sina egna handlingar och resultat."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att undvika f\xF6r\xE4ndringar och h\xE5lla sig till rutiner."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att delegera arbetsuppgifter till andra f\xF6r att undvika ansvar."
+      AnswerSelected: 0
+      answerType: 0

@@ -20,190 +20,230 @@ MonoBehaviour:
   interviewQuestionData:
   - QuestionAsked: 0
     QuestionText: "Hur bra \xE4r du p\xE5 att f\xF6rst\xE5 hur andra k\xE4nner?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag f\xF6rst\xE5r inte andras k\xE4nslor."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag f\xF6rs\xF6ker bara f\xF6rst\xE5 andra n\xE4r det verkligen
         \xE4r viktigt."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag f\xF6rs\xF6ker f\xF6rst\xE5 hur andra k\xE4nner genom att
         se saker fr\xE5n deras perspektiv."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag bryr mig inte om hur andra k\xE4nner."
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur reagerar du n\xE4r n\xE5gon ber\xE4ttar om ett sv\xE5rt problem
       de har?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: Jag har fullt upp med mina egna problem.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag lyssnar, men visar inget intresse eller medk\xE4nsla."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag lyssnar aktivt och visar medk\xE4nsla genom att erbjuda st\xF6d
         och f\xF6rst\xE5else."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag \xE4r inte intresserad av att h\xF6ra om andras problem. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur l\xF6ser du konflikter mellan arbetskamrater och teammedlemmar? "
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag tar parti f\xF6r en person och ignorerar den andra."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag undviker konflikten och l\xE5ter dem l\xF6sa det sj\xE4lva. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag f\xF6rs\xF6ker att hj\xE4lpa dem att n\xE5 en l\xF6sning genom
         att vara f\xF6rst\xE5ende och empatisk. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: 'Jag bryr mig inte om konflikter mellan andra. '
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur bra \xE4r du p\xE5 att f\xF6rst\xE5 icke-verbal kommunikation,
       som kroppsspr\xE5k och ansiktsuttryck? "
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag f\xF6rst\xE5r inte \xF6verhuvudtaget. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag har sv\xE5rt att m\xE4rka till det d\xE5 verbal kommunikation
         \xE4r min starka sida. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag \xE4r medveten om det och f\xF6rs\xF6ker tolka icke-verbal
         kommunikation f\xF6r att f\xF6rst\xE5 andra m\xE4nniskors k\xE4nslor och
         behov. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag l\xE4gger m\xE4rke till det men v\xE4ljer att strunta i det. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur reagerar du om du m\xE4rker att en kollega eller anst\xE4lld
       verkar k\xE4nna sig nere eller vara ledsen? "
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag bryr mig inte och g\xE5r vidare med mitt arbete. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag fr\xE5gar inte och l\xE5ter personen hantera sina egna problem. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag visar omtanke genom att fr\xE5ga hur personen m\xE5r och erbjuda
         mitt st\xF6d om det beh\xF6vs. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag ignorerar personens k\xE4nslor och forts\xE4tter som vanligt. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur skulle du hantera en situation d\xE4r en kund \xE4r missn\xF6jd
       och uppr\xF6rd? "
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag skulle ignorera kundens k\xE4nslor och inte g\xF6ra n\xE5got
         \xE5t det. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag skulle bli irriterad och tappa t\xE5lamodet med kunden. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag skulle visa f\xF6rst\xE5else f\xF6r kundens frustration och
         g\xF6ra mitt b\xE4sta f\xF6r att l\xF6sa problemet."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag skulle l\xE5ta n\xE5gon annan hantera situationen. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur bra \xE4r du p\xE5 att f\xF6rst\xE5 andra m\xE4nniskors synpunkter
       och perspektiv? "
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag har sv\xE5rt att f\xF6rst\xE5 andras perspektiv, men jag jobbar
         p\xE5 det."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag f\xF6rst\xE5r andras perspektiv, men jag h\xE5ller inte alltid
         med dem."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag f\xF6rs\xF6ker aktivt s\xE4tta mig in i andras perspektiv,
         men det \xE4r inte alltid l\xE4tt."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag bryr mig om att f\xF6rst\xE5 andras perspektiv, men jag har
         inte alltid tid. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur reagerar du om en kollega b\xF6rjade ber\xE4tta om sina personliga
       problem?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag skulle ignorera det och inte visa n\xE5got intresse f\xF6r
         deras problem. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag skulle lyssna, men inte visa n\xE5gon empati eller medk\xE4nsla. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag skulle lyssna aktivt och visa empati genom att erbjuda mitt
         st\xF6d och f\xF6rst\xE5else."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag skulle undvika att h\xF6ra om deras problem. "
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur reagerar du om du m\xE4rker att en kollega k\xE4mpar med sin
       arbetsbelastning och stress?"
-    correctAnswer: 2
+    correctAnswer: 4
     answers:
     - AnswerAlternative: A
       AnswerText: "Jag skulle inte bry mig och forts\xE4tta med mitt arbete. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag skulle be dem att hantera det sj\xE4lva och inte erbjuda n\xE5gon
         hj\xE4lp. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag skulle visa omtanke genom att erbjuda min hj\xE4lp och st\xF6d
         f\xF6r att minska deras stress. "
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: 'Jag skulle ignorera deras arbetsbelastning och stress. '
+      AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
     QuestionText: "Hur ska du inte hantera en situation d\xE4r en kund \xE4r uppr\xF6rd
       och frustrerad \xF6ver d\xE5lig kundservice?"
-    correctAnswer: 3
+    correctAnswer: 8
     answers:
     - AnswerAlternative: A
       AnswerText: Jag skulle be kunden att lugna ner sig innan jag pratar med dem.
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
       AnswerText: "Jag skulle lyssna p\xE5 kundens klagom\xE5l och f\xF6rs\xF6ka
         hitta en l\xF6sning.\_"
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag skulle be kunden om urs\xE4kt f\xF6r den d\xE5liga kundservicen
         och erbjuda en kompensation."
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
       AnswerText: "Jag skulle ignorera kundens klagom\xE5l och hoppas att de ger
         upp och g\xE5r. "
+      AnswerSelected: 0
       answerType: 0

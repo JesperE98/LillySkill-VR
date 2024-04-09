@@ -1,0 +1,372 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
+  m_Name: 14. TimeManagement
+  m_EditorClassIdentifier: 
+  categoryName: 14
+  interviewCategoryType: 0
+  description: "F\xF6rm\xE5gan att effektivt hantera sin tid och uppfylla deadlines
+    f\xF6r olika uppgifter och projekt."
+  categoryIsActive: 0
+  allAnswersAnswered: 0
+  interviewQuestionData:
+  - QuestionAsked: 0
+    QuestionText: "Vad inneb\xE4r tidsplanering i arbetslivet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att arbeta s\xE5 snabbt som m\xF6jligt f\xF6r att slutf\xF6ra
+        uppgifter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att effektivt hantera och f\xF6rdela tid f\xF6r att uppn\xE5 uppsatta
+        m\xE5l och deadlines."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att undvika att s\xE4tta deadlines och i st\xE4llet arbeta utan
+        tidsbegr\xE4nsningar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att alltid vara i tid till m\xF6ten och evenemang."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Varf\xF6r \xE4r tidsplanering viktigt p\xE5 arbetsplatsen?"
+    correctAnswer: 4
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6r att visa flexibilitet och anpassning till f\xF6r\xE4ndrade
+        omst\xE4ndigheter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "F\xF6r att undvika att slutf\xF6ra arbetsuppgifter inom deadlines."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "F\xF6r att maximera produktiviteten och uppr\xE4tth\xE5lla kvaliteten
+        p\xE5 arbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "F\xF6r att kunna ta l\xE4ngre lunchpauser och komma sent till
+        m\xF6ten."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka f\xF6rdelar kan god tidsplanering ha f\xF6r en individ?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "\xD6kad stress och \xF6verarbete."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "B\xE4ttre arbetslivsbalans och minskad stress."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: Minskad effektivitet och missade deadlines.
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "\xD6kad arbetsbelastning och bristande produktivitet."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: Hur kan du organisera din tid effektivt?
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att undvika att planera och i st\xE4llet arbeta spontant."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att prioritera uppgifter, s\xE4tta deadlines och skapa en
+        tidsplan."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att undvika att g\xF6ra en to-do-lista och i st\xE4llet
+        arbeta utan struktur. "
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att alltid arbeta \xF6vertid f\xF6r att slutf\xF6ra uppgifter."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad \xE4r konsekvenserna av d\xE5lig tidsplanering p\xE5 arbetsplatsen?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6rlorad produktivitet, missade deadlines och kvalitetsproblem."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "\xD6kad arbetslivsbalans och minskad stress."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "B\xE4ttre samarbete och kommunikation mellan teammedlemmar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "\xD6kad flexibilitet och anpassning till f\xF6r\xE4ndringar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du hantera och minska distraktioner f\xF6r att f\xF6rb\xE4ttra
+      din tidsplanering?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att arbeta i en bullrig och st\xF6rande milj\xF6."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att vara uppm\xE4rksam p\xE5 och eliminera distraktioner
+        som sociala medier eller oorganiserade arbetsytor."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att undvika att planera och ist\xE4llet arbeta utan fokus."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att alltid s\xE4ga ja till m\xF6ten och avbrott som kommer
+        upp."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du hantera och prioritera uppgifter f\xF6r att f\xF6rb\xE4ttra
+      din tidsplanering?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att undvika att prioritera och ist\xE4llet arbeta p\xE5
+        uppgifter slumpm\xE4ssigt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att identifiera och fokusera p\xE5 de viktigaste och mest
+        tidsk\xE4nsliga uppgifterna."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att l\xE5ta andra best\xE4mma vilka uppgifter som \xE4r
+        viktigast att arbeta p\xE5."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att alltid ge samma prioritet \xE5t alla uppgifter och undvika
+        att skilja dem \xE5t."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad \xE4r en tidsbudget och hur kan den hj\xE4lpa dig att hantera
+      din tid effektivt?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "En tidsbudget \xE4r en plan som visar hur mycket tid du spenderar
+        p\xE5 olika aktiviteter och uppgifter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "En tidsbudget \xE4r en lista \xF6ver uppgifter som du beh\xF6ver
+        utf\xF6ra under en dag."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "En tidsbudget \xE4r en flexibel tidsplan som inte beh\xF6ver f\xF6ljas
+        strikt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "En tidsbudget \xE4r en metod f\xF6r att undvika att s\xE4tta deadlines
+        och ist\xE4llet arbeta utan tidsbegr\xE4nsningar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vad \xE4r Parkinsons lag och hur kan det p\xE5verka din tidsplanering?"
+    correctAnswer: 1
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Parkinsons lag \xE4r principen om att arbete expanderar f\xF6r
+        att fylla den tid som \xE4r tillg\xE4nglig f\xF6r dess slutf\xF6rande."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Parkinsons lag \xE4r principen om att arbete minskar i omfattning
+        n\xE4r det n\xE4rmar sig deadline."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Parkinsons lag \xE4r principen om att arbete blir mer effektivt
+        n\xE4r det utf\xF6rs under tidspress."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Parkinsons lag \xE4r principen om att arbete b\xF6r undvikas och
+        ist\xE4llet delegeras till andra."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du utv\xE4rdera din tidsplanering och g\xF6ra f\xF6rb\xE4ttringar?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att undvika att reflektera \xF6ver din tidsanv\xE4ndning
+        och ist\xE4llet forts\xE4tta som vanligt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att regelbundet utv\xE4rdera och analysera hur du anv\xE4nder
+        din tid och identifiera omr\xE5den d\xE4r du kan g\xF6ra f\xF6rb\xE4ttringar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att j\xE4mf\xF6ra din tidsanv\xE4ndning med andra och f\xF6rs\xF6ka
+        anpassa dig till deras arbetss\xE4tt."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att undvika att s\xE4tta upp m\xE5l och ist\xE4llet arbeta
+        utan riktning."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Vilka strategier kan anv\xE4ndas f\xF6r att hantera och minska
+      stressrelaterad tidspress p\xE5 arbetsplatsen?"
+    correctAnswer: 8
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Att undvika att s\xE4tta deadlines och ist\xE4llet arbeta utan
+        tidsbegr\xE4nsningar."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Att delegera uppgifter till andra f\xF6r att minska arbetsbelastningen."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Att arbeta \xF6vertid regelbundet f\xF6r att slutf\xF6ra uppgifter
+        i tid."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Att planera och prioritera uppgifter noggrant f\xF6r att undvika
+        sista minuten-panik."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du hantera avbrott och distraktioner f\xF6r att beh\xE5lla
+      fokus och effektivitet?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att alltid s\xE4ga ja till varje avbrott och distraktion
+        som kommer upp."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att st\xE4nga av notifikationer och skapa fokustid utan
+        avbrott."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att undvika att organisera din arbetsyta och i st\xE4llet
+        l\xE5ta den vara r\xF6rig."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att arbeta i en bullrig och st\xF6rande milj\xF6 f\xF6r
+        att v\xE4nja dig vid distraktioner."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Varf\xF6r \xE4r det viktigt att vara realistisk n\xE4r du planerar
+      din tid?"
+    correctAnswer: 8
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "F\xF6r att undvika att slutf\xF6ra arbetsuppgifter inom deadlines."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "F\xF6r att visa flexibilitet och anpassning till f\xF6r\xE4ndrade
+        omst\xE4ndigheter."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "F\xF6r att undvika att s\xE4tta upp m\xE5l och i st\xE4llet arbeta
+        utan riktning."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "F\xF6r att undvika att \xF6verbelasta dig och missa deadlines
+        p\xE5 grund av orimliga f\xF6rv\xE4ntningar."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du anv\xE4nda teknik och verktyg f\xF6r att f\xF6rb\xE4ttra
+      din tidsplanering?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att undvika att anv\xE4nda teknik och ist\xE4llet f\xF6rlita
+        dig p\xE5 manuella metoder."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att anv\xE4nda kalenderappar och p\xE5minnelser f\xF6r att
+        organisera och p\xE5minna dig om uppgifter och deadlines."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att undvika att anv\xE4nda produktivitetsverktyg eftersom
+        de kan vara distraherande."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att alltid anv\xE4nda samma teknik och verktyg oavsett uppgift
+        eller situation."
+      AnswerSelected: 0
+      answerType: 0
+  - QuestionAsked: 0
+    QuestionText: "Hur kan du skapa en effektiv arbetsmilj\xF6 som fr\xE4mjar tidsplanering?"
+    correctAnswer: 2
+    answers:
+    - AnswerAlternative: A
+      AnswerText: "Genom att undvika att organisera din arbetsplats och ist\xE4llet
+        l\xE5ta den vara r\xF6rig."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: B
+      AnswerText: "Genom att skapa en ren och organiserad arbetsplats d\xE4r alla
+        n\xF6dv\xE4ndiga material och verktyg \xE4r l\xE4ttillg\xE4ngliga."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: C
+      AnswerText: "Genom att undvika att ha en fast arbetsplats och ist\xE4llet flytta
+        runt i olika milj\xF6er."
+      AnswerSelected: 0
+      answerType: 0
+    - AnswerAlternative: D
+      AnswerText: "Genom att alltid arbeta i en bullrig och st\xF6rande milj\xF6
+        f\xF6r att \xF6va p\xE5 att fokusera."
+      AnswerSelected: 0
+      answerType: 0

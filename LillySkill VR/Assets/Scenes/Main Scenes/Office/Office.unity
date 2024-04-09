@@ -2427,16 +2427,650 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2014c4977fa17374facb41a92af5eb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
+  interviewAnswersAndQuestions: {fileID: 11400000, guid: 5370448e56031854b91bddad89194e3f,
+    type: 2}
   _maxScore: 0
   _playerScore: 0
   _interviewerInterest: 2
   _tutorialDone: 0
   _interviewAreActive: 1
   _waitForAnswer: 0
-  _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
-  interviewAnswersAndQuestions: {fileID: 11400000, guid: 5370448e56031854b91bddad89194e3f,
-    type: 2}
-  _answerList: []
+  _answerList:
+  - categoryName: 0
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 1
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 2
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 3
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 4
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 5
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 6
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 7
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 8
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 9
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 10
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 11
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 12
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 13
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 14
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 15
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 16
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 17
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 18
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 19
+    answerListTexts:
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+    - answerTexts:
+      - 
+  - categoryName: 20
+    answerListTexts:
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
+    - answerTexts:
+      - 
+      - 
+      - 
+      - 
   _activeInterviewCategories: []
 --- !u!4 &302542167
 Transform:
@@ -3238,7 +3872,7 @@ MonoBehaviour:
   - {fileID: 7213868258119771249, guid: d066955e33341c246a17f60caabb7969, type: 3}
   - {fileID: 7213868258119771249, guid: 400a220cb320f684b8c2919286e70684, type: 3}
   - {fileID: 7317374047150117224, guid: 6ff6b12d2b34253499e5781097e6185d, type: 3}
-  - {fileID: 6034645255306705038, guid: 3cb0fad4e2c353a4e96538fda6c7e595, type: 3}
+  - {fileID: 5372448855299265623, guid: 3cb0fad4e2c353a4e96538fda6c7e595, type: 3}
 --- !u!4 &437061013
 Transform:
   m_ObjectHideFlags: 0
@@ -6134,7 +6768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649a479aee4fae84eb463063499c95a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _fadeScreen: {fileID: 0}
   _loopDone: 0
   _gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
 --- !u!4 &849887524
@@ -6336,7 +6969,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1322674453}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7394,6 +8028,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063233110}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1063316156
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 870724672}
+    m_Modifications:
+    - target: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372448855299265623, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_Name
+      value: Summary Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 5372448855299265623, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3cb0fad4e2c353a4e96538fda6c7e595, type: 3}
 --- !u!1 &1071714604
 GameObject:
   m_ObjectHideFlags: 0
@@ -9250,6 +9957,12 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.014531136, y: -0.02687499, z: 0.03768872}
     m_Extent: {x: 0.14101264, y: 0.038611166, z: 0.07964823}
   m_DirtyAABB: 0
+--- !u!4 &1322674453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 508489241618138037, guid: 3cb0fad4e2c353a4e96538fda6c7e595,
+    type: 3}
+  m_PrefabInstance: {fileID: 1063316156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1323024416
 GameObject:
   m_ObjectHideFlags: 0

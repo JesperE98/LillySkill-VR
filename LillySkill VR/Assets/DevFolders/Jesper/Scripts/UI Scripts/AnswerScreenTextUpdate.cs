@@ -27,8 +27,18 @@ namespace Jesper.Collection
 
         void Awake()
         {
-            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-            uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+            switch (_gameSettings.GetScene)
+            {
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+                    uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+                    gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+                    uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+                    break;
+            }
         }
 
         void Update()
