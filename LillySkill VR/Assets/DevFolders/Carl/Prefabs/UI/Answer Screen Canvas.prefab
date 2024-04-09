@@ -895,7 +895,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &62294731218655166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1348,11 +1348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameSettings: {fileID: 0}
-  _interviewAnswerLists: {fileID: 0}
-  AnswerTextObject:
-  - {fileID: 5928347287303728240}
-  - {fileID: 2460399054937913165}
-  - {fileID: 5747431646431373190}
+  interviewAnswersAndQuestions: {fileID: 0}
   textList:
   - {fileID: 526002309657459548}
   - {fileID: 8679954650350812628}

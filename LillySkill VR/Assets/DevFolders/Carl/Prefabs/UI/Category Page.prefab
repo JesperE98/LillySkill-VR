@@ -9655,7 +9655,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07244476f5c8c74d9328a2c19bb8c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
+  randomListIndex: 0
+  randomSubListIndex: 0
+  answerTypeData: 0
+  answerOption: 0
+  selectedAnswer: 0
+  gameSettings: {fileID: 0}
+  highlightGameobjects: []
 --- !u!114 &2970667953498496606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9668,7 +9674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649a479aee4fae84eb463063499c95a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
+  _fadeScreen: {fileID: 0}
+  _loopDone: 0
+  _gameSettings: {fileID: 0}
 --- !u!1 &4035873858329552259
 GameObject:
   m_ObjectHideFlags: 0
