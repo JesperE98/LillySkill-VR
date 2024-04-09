@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
   m_Name: 4. DecisionMaking
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
-  categoryName: 5
+  categoryName: 4
   interviewCategoryType: 0
   description: "F\xF6rm\xE5gan att fatta v\xE4lgrundade beslut baserade p\xE5 tillg\xE4nglig
     information och analys av alternativ."

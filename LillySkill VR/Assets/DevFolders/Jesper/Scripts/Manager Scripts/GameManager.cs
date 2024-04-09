@@ -128,7 +128,7 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// A List that stores all the wrong answers.
+    /// A List that stores all the answers.
     /// </summary>
     public List<AnswerListData> AnswerList 
     { 
@@ -469,6 +469,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void ResetInterviewData()
     {
+        Debug.Log("Reseting Values!");
         // Resets all necessary bool values back to false.
         for (int i = 0; i < interviewAnswersAndQuestions.interviewCategories.Length; i++)
         {
@@ -488,16 +489,7 @@ public class GameManager : MonoBehaviour
                             interviewAnswersAndQuestions.interviewCategories[i].interviewQuestionData[j].answers[k].AnswerSelected = false;
                         }
                     }
-                    else // Continue the loop if the category type isn't situational.
-                    {
-                        continue;
-                    }
                 }
-            }
-            else
-            {
-                // Break out of loop if no category is active.
-                break;
             }
         }
 
@@ -522,6 +514,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void ResetAllValues()
     {
+        Debug.Log("Reseting ALL values!");
         foreach (var item in interviewAnswersAndQuestions.interviewCategories)
         {
             item.categoryIsActive = false;

@@ -83,23 +83,28 @@ MonoBehaviour:
       AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
-    QuestionText: "INTE KLAR \xC4NNU!!"
-    correctAnswer: 0
+    QuestionText: Har du tagit initiativ i tidigare arbetsprojekt?
+    correctAnswer: 1
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "Ja, jag kan beskriva specifika situationer d\xE4r jag identifierade
+        m\xF6jligheter till f\xF6rb\xE4ttring eller effektivisering."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Nej, jag har inte tidigare tagit initiativ i arbetsprojekt. Jag
+        har f\xF6redragit att f\xF6lja instruktioner och arbeta enligt givna riktlinjer
+        och uppgifter."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Nej, jag anser att det inte \xE4r viktigt att ta initiativ i arbetsprojekt
+        och har d\xE4rf\xF6r inte gjort det tidigare."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: "Nej, jag f\xF6redrar att f\xF6lja instruktioner och riktlinjer
+        i st\xE4llet f\xF6r att ta egna initiativ i arbetsprojekt."
       AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0

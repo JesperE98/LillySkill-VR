@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
   m_Name: Ambience Audio Data
   m_EditorClassIdentifier: 
+  audioCategoryIsActive: 0
   sounds:
   - name: Ambience
     clip: {fileID: 8300000, guid: c5b1dc22c740da746b24942c722df27b, type: 3}
     volume: 0.45
     spatialBlend: 0
-    loop: 0
+    loop: 1

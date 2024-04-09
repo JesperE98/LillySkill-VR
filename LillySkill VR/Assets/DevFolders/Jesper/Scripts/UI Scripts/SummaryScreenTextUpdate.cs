@@ -18,7 +18,7 @@ namespace Jesper.Collection
         [SerializeField]
         private InterviewAnswersAndQuestionsSO interviewAnswersAndQuestions;
         [SerializeField]
-        private TMP_Text informationText;
+        private TMP_Text titleText, informationText;
         /// <summary>
         /// Instantiate a GameObject per active interview category.
         /// </summary>
@@ -74,23 +74,38 @@ namespace Jesper.Collection
             
         }
 
-        public void ButtonPressed()
+        public void ButtonPressed(GameObject button)
         {
-            for (int i = 0; i < gameManager.AnswerList.Count; i++)
-            {
-                //if (objCopyList[i].GetComponentInChildren<TMP_Text>().text == gameManager.AnswerList[i].categoryName.ToString())
-                //{
-                    
-                //}
+            string buttonText = button.GetComponentInChildren<TMP_Text>().text;
+            titleText.text = buttonText;
 
-                //for (int j = 0; gameManager.AnswerList[i].answerListTexts.Count; j++)
-                //{
-                //    informationText.text += gameManager.AnswerList[i].answerListTexts[j] + "\n";
-                //}
+            
+            foreach(var data in gameManager.AnswerList)
+            {
+                if(data == null)
+                {
+                    return;
+                }
+
+                if(buttonText == data.categoryName.ToString())
+                {
+                    foreach (var textElement in data.answerListTexts)
+                    {
+                        foreach(var text in textElement.answerTexts)
+                        {
+                            informationText.text += text.ToString() + "\n";
+                        }
+                        
+                    }
+                }
             }
 
-
             subMenu.SetActive(true);
+        }
+
+        public void BackButtonPressed(GameObject button)
+        {
+            informationText.text = "";
         }
     }
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0. Default
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
   categoryName: 0
-  interviewCategoryType: 1
+  interviewCategoryType: 0
   description: 
   categoryIsActive: 0
   allAnswersAnswered: 0
@@ -35,7 +35,7 @@ MonoBehaviour:
       AnswerText: "Jag \xE4r sugen p\xE5 att b\xF6rja jobba. Trots att jag \xE4nnu
         inte skaffat specifik arbetserfarenhet \xE4r jag motiverad att g\xF6ra en
         positiv inverkan."
-      AnswerSelected: 0
+      AnswerSelected: 1
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag har flera \xE5rs arbetslivserfarenhet, utrustad med en robust
@@ -386,5 +386,5 @@ MonoBehaviour:
       answerType: 2
     - AnswerAlternative: C
       AnswerText: Att vara effektiv och organiserad.
-      AnswerSelected: 0
+      AnswerSelected: 1
       answerType: 1

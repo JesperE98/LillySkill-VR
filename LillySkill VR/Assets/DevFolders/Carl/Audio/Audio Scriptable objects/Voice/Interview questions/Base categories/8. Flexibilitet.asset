@@ -55,7 +55,7 @@ MonoBehaviour:
     spatialBlend: 0
     loop: 0
   - name: Index 8
-    clip: {fileID: 8300000, guid: 0365b4c460e2c2445a08f6dff1c8753f, type: 3}
+    clip: {fileID: 8300000, guid: c199bcefbc6d4b74799fe9ee768785f0, type: 3}
     volume: 1
     spatialBlend: 0
     loop: 0

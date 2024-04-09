@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92765f8094c42884787cf1ccc2c613a2, type: 3}
   m_Name: 3. Anpassningsbarhet
   m_EditorClassIdentifier: 
-  audioCategoryIsActive: 0
+  audioCategoryIsActive: 1
   sounds:
   - name: Index 0
     clip: {fileID: 8300000, guid: 8c98488ee35d8c54fb1eaa966bdbd125, type: 3}

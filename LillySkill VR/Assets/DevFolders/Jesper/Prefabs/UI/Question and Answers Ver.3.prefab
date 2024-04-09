@@ -594,7 +594,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2768,16 +2768,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07244476f5c8c74d9328a2c19bb8c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loopDone: 0
   randomListIndex: 0
   randomSubListIndex: 0
   answerTypeData: 0
-  answerOption: 0
   selectedAnswer: 0
   gameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
   highlightGameobjects:
-  - {fileID: 4475532854080695187}
-  - {fileID: 2433909201831012156}
-  - {fileID: 8447857682967225708}
+  - intValue: 1
+    highlightedGameObject: {fileID: 4475532854080695187}
+  - intValue: 2
+    highlightedGameObject: {fileID: 2433909201831012156}
+  - intValue: 4
+    highlightedGameObject: {fileID: 8447857682967225708}
 --- !u!1 &8245632470619582651
 GameObject:
   m_ObjectHideFlags: 0
