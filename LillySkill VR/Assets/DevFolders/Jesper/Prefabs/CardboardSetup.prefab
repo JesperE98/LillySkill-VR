@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 729504350672160051}
   - component: {fileID: 2436575195550820095}
+  - component: {fileID: 7216790712016484250}
   m_Layer: 0
   m_Name: CardboardSetup
   m_TagString: Untagged
@@ -42,5 +43,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd68f027e715c44aa8d097000d4cccfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7216790712016484250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492187087665868043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621fed6f4674bff4c81761f671a382ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
