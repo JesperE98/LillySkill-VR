@@ -53,17 +53,23 @@ namespace Jesper.Collection
 
         void Update()
         {
-            if (gameManager.InterviewAreActive && loopDone == false)
+            switch (gameSettings.GetScene)
             {
-                randomListIndex = gameManager.RandomListIndex;
-                randomSubListIndex = gameManager.RandomSubListIndex;
-                categoryName = gameManager._activeInterviewCategories[randomListIndex].categoryName;
-                loopDone = true;
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    if (gameManager.InterviewAreActive && loopDone == false)
+                    {
+                        randomListIndex = gameManager.RandomListIndex;
+                        randomSubListIndex = gameManager.RandomSubListIndex;
+                        categoryName = gameManager._activeInterviewCategories[randomListIndex].categoryName;
+                        loopDone = true;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                    break;
             }
-            else
-            {
-                return;
-            }
+
 
         }
 
@@ -72,7 +78,7 @@ namespace Jesper.Collection
         /// </summary>
         public void AnswerSelected(int selectedAnswerIndex)
         {
-            if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Regular)
+            if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == InterviewCategoryType.Regular)
             {
                 // Turns off all the highlight gameobjects.
                 //foreach (GameObject obj in highlightGameobjects)
@@ -95,7 +101,7 @@ namespace Jesper.Collection
                     highlightGameobjects[selectedAnswerIndex].highlightedGameObject.SetActive(false);
                 }
             }
-            else if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Situational)
+            else if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == InterviewCategoryType.Situational)
             {
                 if (selectedAnswerIndex >= 0 && selectedAnswerIndex < highlightGameobjects.Count) // Check for valid index
                 {
@@ -155,14 +161,14 @@ namespace Jesper.Collection
         {
             var correctAnswer = gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].correctAnswer;
 
-            if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Regular)
+            if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == InterviewCategoryType.Regular)
             {
                 if (categoryName == CategoriesData.CategoryName.Default)
                 {
                     switch (selectedAnswer)
                     {
                         case AnswerOptions.A:
-                            if (correctAnswer == CategoriesData.CorrectAnswer.A)
+                            if (correctAnswer == CorrectAnswer.A)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -177,7 +183,7 @@ namespace Jesper.Collection
                             break;
 
                         case AnswerOptions.B:
-                            if (correctAnswer == CategoriesData.CorrectAnswer.B)
+                            if (correctAnswer == CorrectAnswer.B)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -192,7 +198,7 @@ namespace Jesper.Collection
                             break;
 
                         case AnswerOptions.C:
-                            if (correctAnswer == CategoriesData.CorrectAnswer.C)
+                            if (correctAnswer == CorrectAnswer.C)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -216,7 +222,7 @@ namespace Jesper.Collection
                     switch (selectedAnswer)
                     {
                         case AnswerOptions.A:
-                            if (correctAnswer == CategoriesData.CorrectAnswer.A)
+                            if (correctAnswer == CorrectAnswer.A)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -231,7 +237,7 @@ namespace Jesper.Collection
                             break;
 
                         case AnswerOptions.B:
-                            if (correctAnswer == CategoriesData.CorrectAnswer.B)
+                            if (correctAnswer == CorrectAnswer.B)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -246,7 +252,7 @@ namespace Jesper.Collection
                             break;
 
                         case AnswerOptions.C:
-                            if (correctAnswer == CategoriesData.CorrectAnswer.C)
+                            if (correctAnswer == CorrectAnswer.C)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -261,7 +267,7 @@ namespace Jesper.Collection
                             break;
 
                         case AnswerOptions.D:
-                            if (correctAnswer == CategoriesData.CorrectAnswer.D)
+                            if (correctAnswer == CorrectAnswer.D)
                             {
                                 gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                                 gameManager.InterviewerInterest += 1;
@@ -282,19 +288,19 @@ namespace Jesper.Collection
                 }
 
             }
-            else if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Situational)
+            else if (gameManager._activeInterviewCategories[randomListIndex].interviewCategoryType == InterviewCategoryType.Situational)
             {
                 foreach (var answer in gameManager._activeInterviewCategories[randomListIndex].interviewQuestionData[randomSubListIndex].answers)
                 {
                     if (answer.AnswerSelected == true)
                     {
-                        if (answer.answerType == CategoriesData.AnswerType.Good)
+                        if (answer.answerType == AnswerType.Good)
                         {
                             gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Rätt svar!");
                             gameManager.InterviewerInterest += 1;
                             gameManager.PlayerScore += 1;
                         }
-                        else if (answer.answerType == CategoriesData.AnswerType.Average)
+                        else if (answer.answerType == AnswerType.Average)
                         {
                             gameManager.AddAnswerToList("Fråga " + gameManager.AnswerPageNumber + ": Helt ok svar.");
                             gameManager.InterviewerInterest -= 1;

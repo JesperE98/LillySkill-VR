@@ -7,11 +7,16 @@ using System.Linq;
 using Unity.VisualScripting;
 using Jesper.Collection;
 using UnityEngine.Audio;
+using UnityEngine.Events;
+using UnityEditor.Experimental.GraphView;
+using Jesper.GameSettings.Data;
 
 namespace LillyCode
 {
     public class LillyUI : MonoBehaviour
     {
+        [SerializeField] private GameSettingsScriptableObject gameSettings;
+
         [Tooltip("Reference to the parent of the image gameobject")]
         [SerializeField] private GameObject lillyHelpScreen;
 
@@ -46,10 +51,18 @@ namespace LillyCode
         private UIManager uiManager;
         private GameManager gameManager;
         private bool boolSwitch = false;
+
         private void Awake()
         {
-            uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
-            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            switch (gameSettings.GetScene)
+            {
+                case GameSettingsScriptableObject.LoadedScene.Office:
+
+                    uiManager = GameObject.FindGameObjectWithTag("UIManager").GetComponent<UIManager>();
+                    gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+                    break;
+            }
         }
 
         private void Start()
@@ -57,13 +70,20 @@ namespace LillyCode
             activeScreen = 0;
             DisableUIButtons();
             
-            if (!gameManager.TutorialDone) 
+            switch (gameSettings.GetScene)
             {
-                ActivateHelpScreen(0);
-            }
-            else
-            {
-                return;
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+
+                    if (!gameManager.TutorialDone)
+                    {
+                        ActivateHelpScreen(0);
+                    }
+                    else
+                    {
+                        return;
+                    }
+
+                    break;
             }
         }
         private void Update()
@@ -74,35 +94,43 @@ namespace LillyCode
                 ShowHelpScreenInformation();
             }
 
-            if(gameManager.LillyIntroDone == false && gameManager.LillyOutroDone == false)
+            switch (gameSettings.GetScene)
             {
-                switch (activeScreen)
-                {
-                    case 2:
-                        uiManager.uiPrefabCopyList[3].SetActive(true);
-                        break;
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
 
-                    case 3:
-                        uiManager.uiPrefabCopyList[3].SetActive(false);
-                        uiManager.uiPrefabCopyList[4].SetActive(true);
-                        break;
+                    if (gameManager.LillyIntroDone == false && gameManager.LillyOutroDone == false)
+                    {
+                        switch (activeScreen)
+                        {
+                            case 2:
+                                uiManager.uiPrefabCopyList[3].SetActive(true);
+                                break;
 
-                    case 4:
-                        uiManager.uiPrefabCopyList[3].SetActive(true);
-                        uiManager.uiPrefabCopyList[4].SetActive(false);
-                        break;
+                            case 3:
+                                uiManager.uiPrefabCopyList[3].SetActive(false);
+                                uiManager.uiPrefabCopyList[4].SetActive(true);
+                                break;
 
-                    case 6:
-                        uiManager.uiPrefabCopyList[3].SetActive(false);
-                        uiManager.uiPrefabCopyList[4].SetActive(false);
-                        break;
-                }
-            }
-            else
-            {
-                return;
+                            case 4:
+                                uiManager.uiPrefabCopyList[3].SetActive(true);
+                                uiManager.uiPrefabCopyList[4].SetActive(false);
+                                break;
+
+                            case 6:
+                                uiManager.uiPrefabCopyList[3].SetActive(false);
+                                uiManager.uiPrefabCopyList[4].SetActive(false);
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        return;
+                    }
+
+                    break;
             }
         }
+
         [System.Serializable]
         public class LillyInformationScreen
         {
@@ -114,6 +142,7 @@ namespace LillyCode
             public bool lastScreen;
             [HideInInspector]
             public bool isActive;
+            public UnityEvent myEvent;
         }
 
         /// <summary>
@@ -125,9 +154,13 @@ namespace LillyCode
             {
                 lillyHelpScreen.SetActive(true);
                 activeScreen = screenIndex;
+
                 informationScreenContent[activeScreen].isActive = true;
+                informationScreenContent[activeScreen].myEvent.Invoke(); //Invokes the UnityEvent attached to the specific index
+
                 audioSource.clip = informationScreenContent[activeScreen].lillyAudioClip;
                 audioSource.outputAudioMixerGroup = voiceMixerGroup;
+
                 if (audioSource.clip != null)
                 {
                     StartCoroutine(PlayLillyAudio());
@@ -172,7 +205,16 @@ namespace LillyCode
         {
             informationScreenContent[activeScreen].isActive = false;
             lillyHelpScreen.SetActive(false);
-            gameManager.LillyIntroDone = true;
+            
+
+            switch (gameSettings.GetScene)
+            {
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+
+                    gameManager.LillyIntroDone = true;
+
+                    break;
+            }
         }
 
         /// <summary>
@@ -198,7 +240,6 @@ namespace LillyCode
             nextButtonGameObject.SetActive(false);
             closeButtonGameObject.SetActive(false);
         }
-
     }
 }
 

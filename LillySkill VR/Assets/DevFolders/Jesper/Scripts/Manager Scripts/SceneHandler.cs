@@ -10,7 +10,7 @@ namespace JespersCode
         private GameManager _gameManager;
         private AudioManager _audioManager;
 
-        [SerializeField]
+        
         private Renderer _fadeScreen;
         public bool _loopDone = false;
 
@@ -23,10 +23,6 @@ namespace JespersCode
             {
                 _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
                 _audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
-            }
-            else
-            {
-                return;
             }
 
             _fadeScreen = GameObject.Find("FadeScreen").GetComponent<Renderer>();

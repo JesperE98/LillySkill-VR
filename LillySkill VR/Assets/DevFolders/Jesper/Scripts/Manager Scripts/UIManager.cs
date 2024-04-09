@@ -55,10 +55,6 @@ namespace Jesper.Collection
                     ActivateUIPrefab();
                     break;
 
-                case GameSettingsScriptableObject.LoadedScene.Office:
-
-                    break;
-
                 case GameSettingsScriptableObject.LoadedScene.Tutorial:
                     if (uiPrefabCopyList.Count < 0)
                     {
@@ -77,10 +73,6 @@ namespace Jesper.Collection
         {
             switch (gameSettings.GetScene)
             {
-                case GameSettingsScriptableObject.LoadedScene.MainMenu:
-
-                    break;
-
                 case GameSettingsScriptableObject.LoadedScene.Office:
                     categoryName = gameManager._activeInterviewCategories[gameManager.RandomListIndex].categoryName;
 
@@ -148,15 +140,15 @@ namespace Jesper.Collection
                             break;
                     }
 
-                    if (gameManager.InterviewAreActive == true && gameManager.WaitForAnswer == false)
-                    {
+                    //if (gameManager.InterviewAreActive == true && gameManager.WaitForAnswer == false)
+                    //{
 
-                        //_gameManager.WaitForAnswer = true;
-                    }
-                    else if (gameManager.InterviewAreActive == false)
-                    {
+                    //    //_gameManager.WaitForAnswer = true;
+                    //}
+                    //else if (gameManager.InterviewAreActive == false)
+                    //{
 
-                    }
+                    //}
                     break;
 
                 case GameSettingsScriptableObject.LoadedScene.Tutorial:
@@ -174,8 +166,6 @@ namespace Jesper.Collection
 
             }
         }
-
-
     }
 }
 

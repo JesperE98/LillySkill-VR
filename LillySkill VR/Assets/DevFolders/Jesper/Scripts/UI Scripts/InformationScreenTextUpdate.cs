@@ -20,16 +20,30 @@ namespace Jesper.Collection
 
         void Awake()
         {
-            gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+            switch (_gameSettings.GetScene)
+            {
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+                    break;
+
+                case GameSettingsScriptableObject.LoadedScene.Tutorial:
+                    gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+                    break;
+            }
 
             informationPageText = GetComponent<TMP_Text>();
         }
 
         void Update()
         {
-            if (gameManager.WaitForAnswer == false)
+            switch (_gameSettings.GetScene)
             {
-                GenerateQuestionText(gameManager.RandomListIndex, gameManager.RandomSubListIndex);
+                case GameSettingsScriptableObject.LoadedScene.Office:
+                    if (gameManager.WaitForAnswer == false)
+                    {
+                        GenerateQuestionText(gameManager.RandomListIndex, gameManager.RandomSubListIndex);
+                    }
+                    break;
             }
         }
 

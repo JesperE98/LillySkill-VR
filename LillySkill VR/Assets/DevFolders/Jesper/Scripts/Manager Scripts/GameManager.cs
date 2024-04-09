@@ -5,11 +5,14 @@ using Jesper.InterviewAnswersAndQuestions.Data;
 
 public class GameManager : MonoBehaviour
 {
+    public GameSettingsScriptableObject _gameSettings;
+    public InterviewAnswersAndQuestionsSO interviewAnswersAndQuestions;
+
     private int _randomListIndex = 0;
     private int _randomSubListIndex = 0;
     private int _answerPageNumber = 1;
     [SerializeField]
-    private int _maxScore = 0;
+    private float _maxScore = 0;
     private bool _fadeInComplete = false;
     private bool _fadeOutComplete = false;
     private bool _lillyIntroDone = false;
@@ -17,6 +20,7 @@ public class GameManager : MonoBehaviour
     private bool _interviewerIntro = false;
     private bool _allQuestionsAnsweredPreviously = true;
     private bool _feedbackPageAreActive = false;
+    private bool _loopDone = false;
 
 
     [SerializeField]
@@ -30,17 +34,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private bool _waitForAnswer = false;
     [SerializeField]
-    private GameSettingsScriptableObject _gameSettings;
-    [SerializeField]
-    private InterviewAnswersAndQuestionsSO interviewAnswersAndQuestions;
-    [SerializeField]
-    protected List<string> _answerList = new List<string>();
+    protected List<AnswerListData> _answerList = new List<AnswerListData>();
 
 
     public List<CategoriesData> _activeInterviewCategories = new List<CategoriesData>();
 
 
-    public int MaxScore
+    public float MaxScore
     {
         get
         {
@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// A List that stores all the wrong answers.
     /// </summary>
-    public List<string> AnswerList 
+    public List<AnswerListData> AnswerList 
     { 
         get 
         { 
@@ -323,9 +323,27 @@ public class GameManager : MonoBehaviour
         // Goes through all active categoires and increment max score based on how many questions there is.
         for(int i = 0; i < _activeInterviewCategories.Count; i++)
         {
-            for(int j = 0; j < _activeInterviewCategories[i].interviewQuestionData.Count; j++)
+            for (int j = 0; j < _activeInterviewCategories[i].interviewQuestionData.Count; j++)
             {
-                _maxScore++;
+                if (_activeInterviewCategories[i].interviewCategoryType == CategoriesData.InterviewCategoryType.Regular)
+                {
+                    _maxScore++;
+                }
+
+                if (_activeInterviewCategories[i].interviewCategoryType == CategoriesData.InterviewCategoryType.Situational)
+                {
+                    for (int k = 0; k < _activeInterviewCategories[i].interviewQuestionData[j].answers.Length; k++)
+                    {
+                        if (_activeInterviewCategories[i].interviewQuestionData[j].answers[k].answerType == CategoriesData.AnswerType.Good)
+                        {
+                            _maxScore++;
+                        }
+                        else if (_activeInterviewCategories[i].interviewQuestionData[j].answers[k].answerType == CategoriesData.AnswerType.Average)
+                        {
+                            _maxScore += 0.5f;
+                        }
+                    }
+                }
             }
         }
     }
@@ -340,43 +358,49 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        bool anyUnansweredQuestions = false;
         bool allQuestionsAnswered = true; // Flag to track if all questions are answered.
 
         foreach (var data in _activeInterviewCategories)
         {
-            allQuestionsAnswered &= data.allAnswersAnswered; // Efficiently check if all elements are true using bitwise AND.
-
-            if (allQuestionsAnswered)
-            {
-                anyUnansweredQuestions = true;
-                break; // Exit after encountering an unanswered category (optimization)
-            }
-
-            // Additionally check if all questions within the category are answered.
+            allQuestionsAnswered &= data.allAnswersAnswered; // Check individual category completion
+            
+            // Check for unanswered questions within active categories
             if (data.categoryIsActive)
             {
                 bool allCategoryQuestionsAnswered = true;
 
+                // Ensures that all questions within the active category are answered:
                 foreach (var question in data.interviewQuestionData)
                 {
                     allCategoryQuestionsAnswered &= question.QuestionAsked;
-
-                    if (!allCategoryQuestionsAnswered)
-                    {
-                        break; // No need to continue checking questions within the category.
-                    }
                 }
-                data.allAnswersAnswered = allCategoryQuestionsAnswered; // Update category flag.
+
+                data.allAnswersAnswered = allCategoryQuestionsAnswered; // Update category flag
+
+                if (!allCategoryQuestionsAnswered)
+                {
+                    allQuestionsAnswered = false; // Mark as unanswered if any category is incomplete
+                    break; // No need to continue checking questions within the category.
+                }
+                allQuestionsAnswered = allCategoryQuestionsAnswered; // Update category flag.
             }
         }
 
-        InterviewAreActive = !anyUnansweredQuestions; // Set interview active based on overall answered state.
+        // Set InterviewAreActive based on the overall answered state
+        InterviewAreActive = !allQuestionsAnswered;
 
-        if (!anyUnansweredQuestions)
+        if (!allQuestionsAnswered)
         {
-            // Handle the case where all questions are answered (e.g., display congratulations)
-            FeedbackPageAreActive = true;
+            // Handle the case where some questions are unanswered
+        }
+        else
+        {
+            if(_loopDone == false)
+            {
+                // Handle the case where all questions are answered (e.g., display congratulations)
+                FeedbackPageAreActive = true;
+                _loopDone = true;
+            }
         }
     }
 
@@ -407,7 +431,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public virtual void DefaultValues()
     {
-        AnswerList.Clear();
+        _answerList.Clear();
         ResetInterviewData();
     }
 
@@ -417,7 +441,27 @@ public class GameManager : MonoBehaviour
     /// <param name="text"></param>
     public virtual void AddAnswerToList(string text)
     {
-        AnswerList.Add(text);
+        foreach(var data in _answerList)
+        {
+            if(data.categoryName == _activeInterviewCategories[RandomListIndex].categoryName)
+            {
+                if (_activeInterviewCategories[RandomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Regular)
+                {
+                    data.answerListTexts[RandomSubListIndex].answerTexts[0] = text;
+                }
+                else if (_activeInterviewCategories[RandomListIndex].interviewCategoryType == CategoriesData.InterviewCategoryType.Situational)
+                {
+                    for(int i = 0; i < data.answerListTexts[RandomSubListIndex].answerTexts.Count; i++)
+                    {
+                        data.answerListTexts[RandomSubListIndex].answerTexts[i] = text;
+                    }
+                }
+            }
+            else
+            {
+                continue;
+            }
+        }
     }
 
     /// <summary>
@@ -458,7 +502,6 @@ public class GameManager : MonoBehaviour
         }
 
         _activeInterviewCategories.Clear();
-        Debug.Log("All values reseted!");
 
         // Goes through all data in InterviewAnswersAndQuestions list categoriesDatas and creates deep copies of the categorys
         // that are active and adds them to the GameManagers list _activeInterviewCategories.
@@ -575,5 +618,18 @@ public class GameManager : MonoBehaviour
     private int ReturnRandomSubListIndex()
     {
         return _randomSubListIndex;
+    }
+
+    [System.Serializable]
+    public class AnswerListData
+    {
+        public CategoriesData.CategoryName categoryName;
+        public List<AnswerListText> answerListTexts;
+
+        [System.Serializable]
+        public class AnswerListText
+        {
+            public List<string> answerTexts;
+        }
     }
 }
