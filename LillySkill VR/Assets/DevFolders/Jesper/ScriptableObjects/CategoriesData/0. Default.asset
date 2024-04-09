@@ -35,7 +35,7 @@ MonoBehaviour:
       AnswerText: "Jag \xE4r sugen p\xE5 att b\xF6rja jobba. Trots att jag \xE4nnu
         inte skaffat specifik arbetserfarenhet \xE4r jag motiverad att g\xF6ra en
         positiv inverkan."
-      AnswerSelected: 1
+      AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: C
       AnswerText: "Jag har flera \xE5rs arbetslivserfarenhet, utrustad med en robust
