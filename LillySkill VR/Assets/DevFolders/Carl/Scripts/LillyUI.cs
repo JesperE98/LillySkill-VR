@@ -2,13 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System;
-using System.Linq;
-using Unity.VisualScripting;
 using Jesper.Collection;
 using UnityEngine.Audio;
 using UnityEngine.Events;
-using UnityEditor.Experimental.GraphView;
 using Jesper.GameSettings.Data;
 
 namespace LillyCode
