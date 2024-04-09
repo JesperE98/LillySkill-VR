@@ -38480,6 +38480,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1953521649187059679}
     m_Modifications:
+    - target: {fileID: 1619909853836848197, guid: b857dad5807373444a6547b1e92cc21a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0603620c5c7766c40b1c03b69697753f,
+        type: 3}
     - target: {fileID: 3786770177310764161, guid: b857dad5807373444a6547b1e92cc21a,
         type: 3}
       propertyPath: m_Pivot.x
@@ -38610,6 +38616,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1953521649187059679}
     m_Modifications:
+    - target: {fileID: 874486199144204460, guid: a4d3c3158885d2649bd61d0c1ad1b9ca,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8529bdc199f607d4d8c6cdc91fbe5988,
+        type: 3}
     - target: {fileID: 5200488170151190167, guid: a4d3c3158885d2649bd61d0c1ad1b9ca,
         type: 3}
       propertyPath: m_Name
