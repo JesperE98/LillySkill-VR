@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3122699381365229343}
   - component: {fileID: 3161354515429869093}
   - component: {fileID: 4503369114376480054}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Yes Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 5400139183478394869}
   - component: {fileID: 143826409987193798}
   - component: {fileID: 6847190249875635507}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: No Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -608,7 +608,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &5841826869744029625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,7 +646,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07244476f5c8c74d9328a2c19bb8c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GameSettings: {fileID: 11400000, guid: b72bdad36dad69749a1a03683daa7927, type: 2}
+  loopDone: 0
+  randomListIndex: 0
+  randomSubListIndex: 0
+  answerTypeData: 0
+  selectedAnswer: 0
+  gameSettings: {fileID: 0}
+  highlightGameobjects: []
 --- !u!1 &5942183423796241234
 GameObject:
   m_ObjectHideFlags: 0

@@ -3708,7 +3708,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3720536608290341013}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Voices Volume Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21326,7 +21326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6389328239067059485}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: VFX Volume Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26962,7 +26962,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6117996033138657768}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Music Volume Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32427,7 +32427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8624153794287196658}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36241,7 +36241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5125330891843072000}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Lilly Volume Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}

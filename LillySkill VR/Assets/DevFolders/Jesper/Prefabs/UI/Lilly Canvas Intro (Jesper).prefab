@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 1158999773192302949}
   - component: {fileID: 19323317420156104}
   - component: {fileID: 5971101965320353598}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1033,7 @@ GameObject:
   - component: {fileID: 4712631966354944970}
   - component: {fileID: 3691595062466014746}
   - component: {fileID: 8377758666027370687}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Close Button
   m_TagString: UIButton
   m_Icon: {fileID: 0}
@@ -1188,7 +1188,7 @@ GameObject:
   - component: {fileID: 1292234232936734402}
   - component: {fileID: 1780834986313501694}
   - component: {fileID: 8954519348674165667}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Next Button
   m_TagString: UIButton
   m_Icon: {fileID: 0}
@@ -1906,7 +1906,7 @@ GameObject:
   - component: {fileID: 7883019672942950211}
   - component: {fileID: 367356213845819451}
   - component: {fileID: 7281907788681854784}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

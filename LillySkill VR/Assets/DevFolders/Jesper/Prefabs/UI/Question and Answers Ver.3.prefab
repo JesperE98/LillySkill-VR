@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6262982487002438842}
   - component: {fileID: 6997123754834432824}
   - component: {fileID: 1304159179089638184}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: X-mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 6046453548649676271}
   - component: {fileID: 6829487754110180199}
   - component: {fileID: 316803705961889964}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: X-mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 7763331717430236474}
   - component: {fileID: 6044523443060995741}
   - component: {fileID: 6355455854956595540}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Answer C Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 9080856450446741039}
   - component: {fileID: 5384632436582698941}
   - component: {fileID: 6894645951314382362}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Check mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1172,7 +1172,7 @@ GameObject:
   - component: {fileID: 7476825318441019206}
   - component: {fileID: 3787258448757460387}
   - component: {fileID: 3593294590217771982}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Check mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,7 +1473,7 @@ GameObject:
   - component: {fileID: 5266079090247106033}
   - component: {fileID: 8879684498629639573}
   - component: {fileID: 3269549875149439974}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Check mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1548,7 +1548,7 @@ GameObject:
   - component: {fileID: 2382543756609526484}
   - component: {fileID: 7453341040547821998}
   - component: {fileID: 8499588453292405114}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Answer A Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2178,7 +2178,7 @@ GameObject:
   - component: {fileID: 4277247319591078648}
   - component: {fileID: 2856711058139773240}
   - component: {fileID: 236973138027159371}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: X-mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2306,7 +2306,7 @@ GameObject:
   - component: {fileID: 2658510711318014149}
   - component: {fileID: 6353208629589565158}
   - component: {fileID: 9020133871372817623}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Answer B Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

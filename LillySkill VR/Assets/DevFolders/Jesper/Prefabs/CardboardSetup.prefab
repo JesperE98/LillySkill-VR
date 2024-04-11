@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 729504350672160051}
-  - component: {fileID: 2436575195550820095}
+  - component: {fileID: 7876400581784437798}
   - component: {fileID: 7216790712016484250}
   m_Layer: 0
   m_Name: CardboardSetup
@@ -33,7 +33,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2436575195550820095
+--- !u!114 &7876400581784437798
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

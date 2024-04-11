@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 7830397195449554425}
   - component: {fileID: 8889524750736651851}
   - component: {fileID: 5254473771339641719}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Close Button
   m_TagString: UIButton
   m_Icon: {fileID: 0}
@@ -1007,7 +1007,7 @@ GameObject:
   - component: {fileID: 3733800521180589414}
   - component: {fileID: 867165638841018848}
   - component: {fileID: 7178546990921358204}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Next Button
   m_TagString: UIButton
   m_Icon: {fileID: 0}
@@ -1754,6 +1754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c75ea427838842409a38aff63f3cf16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameSettings: {fileID: 0}
   lillyHelpScreen: {fileID: 4012064035362783349}
   canvasText: {fileID: 3308523325636695276}
   audioSource: {fileID: 4718570899384332967}
@@ -1781,12 +1782,18 @@ MonoBehaviour:
     lillyAudioClip: {fileID: 8300000, guid: 4aa85bb01a5c46e4d9d6e126807e4342, type: 3}
     lastScreen: 0
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - index: 0
     speechText: "H\xE4r slutar denna demoversion. Vi hoppas du hade en rolig upplevelse."
     picture: 6
     lillyAudioClip: {fileID: 8300000, guid: 1f5c319c2ed4a5e489dccfd2e0081776, type: 3}
     lastScreen: 0
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - index: 0
     speechText: "Detta \xE4r bara en b\xF6rjan p\xE5 hur upplevelsen skulle kunna
       se ut, d\xE4r du tr\xE4nar p\xE5 olika fr\xE5gor som skulle kunna dyka upp
@@ -1795,12 +1802,18 @@ MonoBehaviour:
     lillyAudioClip: {fileID: 8300000, guid: dac8590fbe20b194d931805491c2d104, type: 3}
     lastScreen: 0
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - index: 0
     speechText: "I framtiden skulle vi kunna inkludera fler sp\xE4nnande upplevelser."
     picture: 0
     lillyAudioClip: {fileID: 8300000, guid: 02bbdd6684d403d4583a67e500cdd688, type: 3}
     lastScreen: 0
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - index: 0
     speechText: "Till exempel d\xE4r du har m\xF6jlighet att prata fritt med intervjuaren
       utan svarsalternativ, eller kanske till och med att ha m\xF6ten med fler \xE4n
@@ -1809,6 +1822,9 @@ MonoBehaviour:
     lillyAudioClip: {fileID: 8300000, guid: 2fd8b00009156fa49aa56f63fd71cd50, type: 3}
     lastScreen: 0
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - index: 0
     speechText: "Vi skulle verkligen uppskatta om du kunde dela dina \xE5sikter och
       tankar om upplevelsen samt eventuella id\xE9er f\xF6r framtida uppdateringar."
@@ -1816,6 +1832,9 @@ MonoBehaviour:
     lillyAudioClip: {fileID: 8300000, guid: 76c90053caf98174fa464a977ca0c022, type: 3}
     lastScreen: 0
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - index: 0
     speechText: "Din feedback \xE4r ov\xE4rderligt f\xF6r oss och kommer att hj\xE4lpa
       oss att g\xF6ra denna upplevelse \xE4nnu b\xE4ttre."
@@ -1823,6 +1842,9 @@ MonoBehaviour:
     lillyAudioClip: {fileID: 8300000, guid: ecdb9ca201a1b9e46a9a99ee0569f5d4, type: 3}
     lastScreen: 0
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - index: 0
     speechText: "Vi tackar dig s\xE5 mycket f\xF6r att du velat vara med och testa
       denna upplevelse."
@@ -1830,6 +1852,9 @@ MonoBehaviour:
     lillyAudioClip: {fileID: 8300000, guid: 98a41c009a68ea5459cc95464f05d6b6, type: 3}
     lastScreen: 0
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - index: 0
     speechText: "Vi ser fram emot att forts\xE4tta utveckla och f\xF6rb\xE4ttra Lilly
       Skill VR baserat p\xE5 era insiktsfulla kommentarer och id\xE9er."
@@ -1837,12 +1862,18 @@ MonoBehaviour:
     lillyAudioClip: {fileID: 8300000, guid: 8d682cae1594ec3479b5de926ecc96f0, type: 3}
     lastScreen: 0
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - index: 0
     speechText: "P\xE5 \xE5terseende. Hej d\xE5!"
     picture: 8
     lillyAudioClip: {fileID: 8300000, guid: 4066e4f6f65756045a168f4c5a935cdd, type: 3}
     lastScreen: 1
     isActive: 0
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &8206400893876794355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1855,10 +1886,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07244476f5c8c74d9328a2c19bb8c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loopDone: 0
   randomListIndex: 0
   randomSubListIndex: 0
   answerTypeData: 0
-  answerOption: 0
   selectedAnswer: 0
   gameSettings: {fileID: 0}
   highlightGameobjects: []
