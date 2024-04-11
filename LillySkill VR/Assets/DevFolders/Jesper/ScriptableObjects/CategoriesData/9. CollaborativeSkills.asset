@@ -86,7 +86,7 @@ MonoBehaviour:
       AnswerText: "Jag utesluter vissa kollegor fr\xE5n gemensamma aktiviteter."
       AnswerSelected: 0
       answerType: 0
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: "Hur reagerar du om du m\xE4rker att en kollega inte bidrar till
       teamets framg\xE5ng?"
     correctAnswer: 4
@@ -157,7 +157,7 @@ MonoBehaviour:
         andra ignoreras. "
       AnswerSelected: 0
       answerType: 0
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: "Hur skulle du reagera om du m\xE4rkte att en kollega beh\xF6vde
       hj\xE4lp med en uppgift? "
     correctAnswer: 4
@@ -181,7 +181,7 @@ MonoBehaviour:
         det om de beh\xF6ver det. "
       AnswerSelected: 0
       answerType: 0
-  - QuestionAsked: 0
+  - QuestionAsked: 1
     QuestionText: 'Hur skulle du motivera dina kollegor att delta i ett grupprojekt? '
     correctAnswer: 4
     answers:
