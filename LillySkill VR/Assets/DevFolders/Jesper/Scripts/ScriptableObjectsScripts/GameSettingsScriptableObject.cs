@@ -14,6 +14,8 @@ namespace Jesper.GameSettings.Data
         public float playerHighScore;
         [SerializeField]
         private LoadedScene loadedScene;
+        [SerializeField]
+        private GameObject audioManager;
 
         public LoadedScene GetScene
         {
@@ -65,6 +67,36 @@ namespace Jesper.GameSettings.Data
         protected internal void HighFidelityQuality()
         {
             QualitySettings.SetQualityLevel(2);
+        }
+
+        /// <summary>
+        /// Changes the Music AudioSource volume level.
+        /// </summary>
+        protected internal void ChangeMusicLevel(float changeVolumeTo)
+        {
+            GameObject audioMixer = GameObject.FindGameObjectWithTag("Ambience");
+
+            audioMixer.GetComponent<AudioSource>().volume = changeVolumeTo;
+        }
+
+        /// <summary>
+        /// Changes the Voice AudioSource volume level.
+        /// </summary>
+        protected internal void ChangeVoiceLevel(float changeVolumeTo)
+        {
+            GameObject audioMixer = GameObject.FindGameObjectWithTag("Voice");
+
+            audioMixer.GetComponent<AudioSource>().volume = changeVolumeTo;
+        }
+
+        /// <summary>
+        /// Changes the SFX AudioSource volume level.
+        /// </summary>
+        protected internal void ChangeSFXLevel(float changeVolumeTo)
+        {
+            GameObject audioMixer = GameObject.FindGameObjectWithTag("SFX");
+
+            audioMixer.GetComponent<AudioSource>().volume = changeVolumeTo;
         }
 
         /// <summary>

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
-  m_Name: 8. CommunicationSkills
+  m_Name: "8. Kommunikationsf\xF6rm\xE5ga"
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
   categoryName: 8
   interviewCategoryType: 0

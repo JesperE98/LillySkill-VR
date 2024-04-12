@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a186fbe3aab7b694aa2b3fb8f7658d02, type: 3}
   m_Name: GameSettingsData
   m_EditorClassIdentifier: 
-  playerHighScore: 0
+  playerHighScore: 4
   loadedScene: 0
+  audioManager: {fileID: 7906528871211606987, guid: a615f816484ca9a4397e6a5d26c76a3e,
+    type: 3}

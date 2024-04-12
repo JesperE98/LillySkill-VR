@@ -386,5 +386,5 @@ MonoBehaviour:
       answerType: 2
     - AnswerAlternative: C
       AnswerText: Att vara effektiv och organiserad.
-      AnswerSelected: 1
+      AnswerSelected: 0
       answerType: 1
