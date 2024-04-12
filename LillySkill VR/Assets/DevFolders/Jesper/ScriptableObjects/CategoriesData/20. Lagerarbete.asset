@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2941aff9990157439f03e994e07e713, type: 3}
-  m_Name: 20. WarehouseWork
+  m_Name: 20. Lagerarbete
   m_EditorClassIdentifier: Assembly-CSharp:Jesper.InterviewAnswersAndQuestions.Data:CategoriesData
   categoryName: 20
   interviewCategoryType: 1
@@ -71,23 +71,29 @@ MonoBehaviour:
       AnswerSelected: 0
       answerType: 1
   - QuestionAsked: 0
-    QuestionText: "DENNA \xC4R INTE KLAR!!!"
-    correctAnswer: 0
+    QuestionText: "Du jobbar p\xE5 ett lager och ansvarar f\xF6r att ta emot och
+      kontrollera leveranser. En dag kommer en dubbelleverans p\xE5 grund av misstag
+      vid best\xE4llning. Det finns inte tillr\xE4ckligt med utrymme f\xF6r att kunna
+      lagra alla varor. Vad g\xF6r du?"
+    correctAnswer: 3
     answers:
     - AnswerAlternative: A
-      AnswerText: 
+      AnswerText: "St\xE4ller varorna p\xE5 golvet i butiken/lagret tills du kan
+        hitta mer utrymme."
       AnswerSelected: 0
-      answerType: 0
+      answerType: 1
     - AnswerAlternative: B
-      AnswerText: 
+      AnswerText: "Kontakta min n\xE4rmaste chef och ber om hj\xE4lp."
       AnswerSelected: 0
-      answerType: 0
+      answerType: 2
     - AnswerAlternative: C
-      AnswerText: 
+      AnswerText: "Tar emot leveransen \xE4nd\xE5 och f\xF6rs\xF6ker kl\xE4mma in
+        varorna p\xE5 befintliga hyllor."
       AnswerSelected: 0
       answerType: 0
     - AnswerAlternative: D
-      AnswerText: 
+      AnswerText: "Avvisar leveransen och ber transport\xF6ren att komma tillbaka
+        senare."
       AnswerSelected: 0
       answerType: 0
   - QuestionAsked: 0
