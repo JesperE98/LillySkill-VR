@@ -16598,6 +16598,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 426886123526693142}
+  _startButton: {fileID: 0}
 --- !u!222 &94308914393273846
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17782,6 +17783,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 3439871397308092637}
+  _startButton: {fileID: 0}
 --- !u!114 &348387493621469148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18816,6 +18818,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 2607281177388445570}
+  _startButton: {fileID: 0}
 --- !u!114 &570695875920980915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19312,6 +19315,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 4922037123464961136}
+  _startButton: {fileID: 0}
 --- !u!1 &633159869240608084
 GameObject:
   m_ObjectHideFlags: 0
@@ -19493,6 +19497,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 7757772828670004669}
+  _startButton: {fileID: 0}
 --- !u!114 &672808977249187368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19600,7 +19605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &707415373010466647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20365,6 +20370,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 38947172255917041}
+  _startButton: {fileID: 0}
 --- !u!222 &843388163628344165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23507,6 +23513,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 6888328595014382574}
+  _startButton: {fileID: 0}
 --- !u!1 &1488379854345135278
 GameObject:
   m_ObjectHideFlags: 0
@@ -23829,6 +23836,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 1271540199560278010}
+  _startButton: {fileID: 0}
 --- !u!224 &1534705739805181861
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27927,6 +27935,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 4086503092175005175}
+  _startButton: {fileID: 0}
 --- !u!1 &2181412977399312042
 GameObject:
   m_ObjectHideFlags: 0
@@ -29039,6 +29048,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 5487355227591339077}
+  _startButton: {fileID: 0}
 --- !u!1 &2443587646309044425
 GameObject:
   m_ObjectHideFlags: 0
@@ -31492,6 +31502,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 6039325455277092668}
+  _startButton: {fileID: 0}
 --- !u!114 &2908135697247157952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34803,7 +34814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3602176192992616262
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37132,6 +37143,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 5411366546868090343}
+  _startButton: {fileID: 0}
 --- !u!224 &4028993847833448909
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37757,6 +37769,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 7294122192736190012}
+  _startButton: {fileID: 0}
 --- !u!1 &4156779927712785006
 GameObject:
   m_ObjectHideFlags: 0
@@ -38800,6 +38813,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 3022435868863578427}
+  _startButton: {fileID: 6723359919365488020}
 --- !u!224 &4382068805796087754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40910,6 +40924,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 4684512190125617961}
+  _startButton: {fileID: 0}
 --- !u!1 &4737905669381094114
 GameObject:
   m_ObjectHideFlags: 0
@@ -41562,6 +41577,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 111306230669474131}
+  _startButton: {fileID: 0}
 --- !u!1 &4845707940751767861
 GameObject:
   m_ObjectHideFlags: 0
@@ -45925,6 +45941,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 9221862409960279399}
+  _startButton: {fileID: 0}
 --- !u!222 &5667461838557143945
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50308,6 +50325,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 7597938196165702671}
+  _startButton: {fileID: 0}
 --- !u!222 &6623331678729707778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50655,6 +50673,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 6344906227403568922}
+  _startButton: {fileID: 0}
 --- !u!224 &6670774526476542524
 RectTransform:
   m_ObjectHideFlags: 0
@@ -51162,7 +51181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6724400248752656285
 GameObject:
   m_ObjectHideFlags: 0
@@ -55533,6 +55552,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 3135610234363079895}
+  _startButton: {fileID: 0}
 --- !u!224 &7564382561980657087
 RectTransform:
   m_ObjectHideFlags: 0
@@ -55932,6 +55952,7 @@ MonoBehaviour:
   voiceAudioDataBankScriptableObject: {fileID: 11400000, guid: 09b63514a0615be428f00e895734bbf5,
     type: 2}
   _checkMark: {fileID: 1697061212931950400}
+  _startButton: {fileID: 0}
 --- !u!1 &7609018260430408503
 GameObject:
   m_ObjectHideFlags: 0

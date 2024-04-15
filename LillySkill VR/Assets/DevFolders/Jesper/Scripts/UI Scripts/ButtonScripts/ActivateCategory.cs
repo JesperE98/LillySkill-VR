@@ -15,6 +15,8 @@ namespace Jesper.Collection
         private VoiceAudioDataBankScriptableObject voiceAudioDataBankScriptableObject;
         [SerializeField]
         private GameObject _checkMark;
+        [SerializeField]
+        private GameObject _startButton;
         private bool activateDeactivateQuestionCategory = false;
 
 
@@ -34,6 +36,7 @@ namespace Jesper.Collection
                 categoryUI.categoryIsActive = true;
                 categoryAudio.audioCategoryIsActive = true;
                 _checkMark.SetActive(true);
+                _startButton.SetActive(true);
                 activateDeactivateQuestionCategory = true;
             }
             else if (activateDeactivateQuestionCategory == true)
