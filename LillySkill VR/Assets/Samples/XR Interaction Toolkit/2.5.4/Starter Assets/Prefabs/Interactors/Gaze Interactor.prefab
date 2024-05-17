@@ -135,7 +135,6 @@ MonoBehaviour:
   m_SampleFrequency: 20
   m_HitDetectionType: 0
   m_SphereCastRadius: 0.1
-  m_ConeCastAngle: 6
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -147,7 +146,6 @@ MonoBehaviour:
   m_AutoDeselect: 1
   m_TimeToAutoDeselect: 0.25
   m_EnableUIInteraction: 1
-  m_BlockUIOnInteractableSelection: 1
   m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
@@ -160,10 +158,6 @@ MonoBehaviour:
   m_UIHoverExited:
     m_PersistentCalls:
       m_Calls: []
-  m_EnableARRaycasting: 0
-  m_OccludeARHitsWith3DObjects: 0
-  m_OccludeARHitsWith2DObjects: 0
-  m_ScaleMode: 0
   m_GazeAssistanceCalculation: 1
   m_GazeAssistanceColliderFixedSize: 1
   m_GazeAssistanceColliderScale: 1
@@ -241,7 +235,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 2069149553511882089, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_SelectAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Select
       m_Type: 1
@@ -253,7 +247,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_SelectActionValue:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Select Action Value
       m_Type: 0
@@ -265,7 +259,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_ActivateAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Activate
       m_Type: 1
@@ -277,7 +271,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_ActivateActionValue:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Activate Action Value
       m_Type: 0
@@ -289,7 +283,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_UIPressAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: UI Press
       m_Type: 1
@@ -301,7 +295,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_UIPressActionValue:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: UI Press Action Value
       m_Type: 0
@@ -313,7 +307,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_UIScrollAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: UI Scroll
       m_Type: 0
@@ -325,7 +319,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_HapticDeviceAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Haptic Device
       m_Type: 2
@@ -337,7 +331,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_RotateAnchorAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Rotate Anchor
       m_Type: 0
@@ -349,7 +343,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_DirectionalAnchorRotationAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Directional Anchor Rotation
       m_Type: 0
@@ -361,36 +355,12 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_TranslateAnchorAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Translate Anchor
       m_Type: 0
       m_ExpectedControlType: Vector2
       m_Id: 83996765-f9ca-47e0-969e-b8fa763170db
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
-  m_ScaleToggleAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Scale Toggle
-      m_Type: 1
-      m_ExpectedControlType: 
-      m_Id: cbaaadec-6494-4e38-a764-cf6099f71738
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
-  m_ScaleDeltaAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Scale Delta
-      m_Type: 0
-      m_ExpectedControlType: Vector2
-      m_Id: 84640846-a827-414a-a35d-773ed3bc62c7
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
