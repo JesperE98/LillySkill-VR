@@ -200,6 +200,7 @@ namespace LillyCode
         public void DeactivateLillyHelpScreen()
         {
             informationScreenContent[activeScreen].isActive = false;
+            audioSource.Stop();
             lillyHelpScreen.SetActive(false);
             
 
