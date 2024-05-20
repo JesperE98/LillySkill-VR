@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &6141816334043935339
+--- !u!1 &9859890320952343
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2370,9 +2370,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6052466761014620070}
-  - component: {fileID: 2035662926055734124}
-  - component: {fileID: 8345252118951859413}
+  - component: {fileID: 8285217567759941792}
+  - component: {fileID: 373653248317289824}
+  - component: {fileID: 7297332374570214505}
   m_Layer: 0
   m_Name: FadeScreen
   m_TagString: Untagged
@@ -2380,36 +2380,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!4 &6052466761014620070
+--- !u!4 &8285217567759941792
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6141816334043935339}
+  m_GameObject: {fileID: 9859890320952343}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.015}
+  m_LocalPosition: {x: 0.015, y: 0, z: 0.015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2871854915733156396}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2035662926055734124
+--- !u!33 &373653248317289824
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6141816334043935339}
+  m_GameObject: {fileID: 9859890320952343}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8345252118951859413
+--- !u!23 &7297332374570214505
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6141816334043935339}
+  m_GameObject: {fileID: 9859890320952343}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -3509,7 +3509,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9014170783809206335, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6052466761014620070}
+      addedObject: {fileID: 8285217567759941792}
     - targetCorrespondingSourceObject: {fileID: 9014170785475729501, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       insertIndex: -1
