@@ -53265,6 +53265,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8231274519053788429}
     m_Modifications:
+    - target: {fileID: 498208088631313267, guid: 0cc80f65e65576a459a282345dd92f4f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 848372728710920040, guid: 0cc80f65e65576a459a282345dd92f4f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -53325,10 +53330,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 699315419680567904}
+    - target: {fileID: 3812561904864185583, guid: 0cc80f65e65576a459a282345dd92f4f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5089615443831068168, guid: 0cc80f65e65576a459a282345dd92f4f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6994607093647198647, guid: 0cc80f65e65576a459a282345dd92f4f,
         type: 3}
       propertyPath: m_Name
       value: LILLY TUTORIAL (OCULUS VER.)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699799973816244492, guid: 0cc80f65e65576a459a282345dd92f4f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8320672992034694364, guid: 0cc80f65e65576a459a282345dd92f4f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
